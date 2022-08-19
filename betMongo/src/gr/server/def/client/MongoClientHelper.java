@@ -1,17 +1,20 @@
 package gr.server.def.client;
 
-import gr.server.application.exception.UserExistsException;
-import gr.server.data.api.model.league.League;
-import gr.server.data.user.model.User;
-import gr.server.data.user.model.UserBet;
-import gr.server.data.user.model.UserPrediction;
-
 import java.text.ParseException;
 import java.util.List;
 
 import org.bson.Document;
 
 import com.mongodb.client.ClientSession;
+
+import gr.server.application.exception.UserExistsException;
+import gr.server.data.api.model.events.Event;
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Odd;
+import gr.server.data.user.model.objects.User;
+import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserPrediction;
+import gr.server.impl.client.ApiFootballClient;
 
 public interface MongoClientHelper {
 
@@ -65,6 +68,6 @@ public interface MongoClientHelper {
 	 * 
 	 * @return
 	 */
-	List<League> getLeagues();
+	List<League> getMongoLeagues();
 
 }

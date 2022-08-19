@@ -1,7 +1,6 @@
 package gr.server.util;
 
 
-import gr.server.data.user.model.UserBet;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -14,6 +13,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import com.google.gson.Gson;
+
+import gr.server.data.user.model.objects.UserBet;
 
 public class HttpHelper {
 	

@@ -1,26 +1,29 @@
 package gr.server.transaction.helper;
 
-import gr.server.mongo.application.Mongo;
-
 import com.mongodb.client.ClientSession;
+
+import gr.server.mongo.util.SyncHelper;
 
 public abstract class TransactionalBlock {
 	
-	public ClientSession session;
+	protected ClientSession session;
 	
 	public abstract void begin() throws Exception;
 	
 	public void execute(){
 		try{
-			session = Mongo.getMongoClient().startSession();
+			session = SyncHelper.getMongoClient().startSession();
 			session.startTransaction();
 			begin();
 			
 			session.commitTransaction();
 		}catch(Exception e){
 			e.printStackTrace();
-			System.out.println("ROLLING BACK");
+			System.out.println("ROLLING BACK " + session);
 			session.abortTransaction();
+		}finally{
+			System.out.println("CLOSING " + session);
+			session.close();
 		}
 	}
 

@@ -15,8 +15,8 @@ public class TimerTaskHelper {
 	public static TimerTask getMonthChangeCheckerTask(){
 		return new TimerTask() {
 	        public void run() {
-	            System.out.println("Checking month change on: " + new Date() + "n" +
-	              "Thread's name: " + Thread.currentThread().getName());
+//	            System.out.println("Checking month change on: " + new Date() + "n" +
+//	              "Thread's name: " + Thread.currentThread().getName());
 	            
 	            if (!DateUtils.isFirstDayOfMonth()){
 	            	return;
@@ -37,9 +37,12 @@ public class TimerTaskHelper {
 	public static TimerTask deleteStaleEventsTask(){
 		return new TimerTask() {
 	        public void run() {
-	            System.out.println("Checking month change on: " + new Date() + "n" +
-	              "Thread's name: " + Thread.currentThread().getName());
-					new MongoClientHelperImpl().deletePastEvents();
+	        	new TransactionalBlock() {
+					@Override
+					public void begin() throws Exception {
+						new MongoClientHelperImpl().deletePastEvents();
+					}
+				}.execute();
 	        }
 	    };
 	}
@@ -47,7 +50,7 @@ public class TimerTaskHelper {
 	public static TimerTask refreshEventsTask(){
 		return new TimerTask() {
 	        public void run() {
-	            System.out.println("Checking month change on: " + new Date() + "n" +
+	            System.out.println("REFRESHING events change on: " + new Date() + "n" +
 	              "Thread's name: " + Thread.currentThread().getName());
 
 	            new TransactionalBlock() {
@@ -60,6 +63,7 @@ public class TimerTaskHelper {
 	        }
 	    };
 	}
+	
 
 
 	public static TimerTask deleteBountiesTask() {

@@ -10,12 +10,12 @@ package gr.server.data.enums;
  */
 public enum SupportedCountry {
 	
-	CHL (163, "Champions League"),
-	EUROPA_LEAGUE(164, "Europa League"),
-	 UEFA (165, "UEFA"),
-	 ENGLAND(169,"England"),
-	 ITALY(170,"Italy"),
-	 SPAIN(171,"Spain");
+//	CHL (163, "Champions League"),
+//	EUROPA_LEAGUE(164, "Europa League"),
+//	 UEFA (165, "UEFA"),
+	 ENGLAND(44,"England");
+//	 ITALY(170,"Italy"),
+//	 SPAIN(171,"Spain");
 	 
 	 
 	 SupportedCountry(Integer countryId, String countryName){

@@ -23,31 +23,33 @@ public class ApiFootballClient {
 	 * @throws ParseException 
 	 */
 	public static List<League> getLeagues() throws IOException, ParseException {
+		System.out.println("GETTING API FOOTBALL LEAGUES");
 		List<League> leagues = new ArrayList<League>();
 		for (SupportedCountry country : SupportedCountry.values()) {
 			String url = ApiFootBallConstants.GET_LEAGUES_FOR_COUNTRY_URL + country.getCountryId() + ApiFootBallConstants.API_FOOTBALL_KEY;
+			
+			
 			String content = new HttpHelper().fetchGetContent(url);
+			System.out.println(content);
 			List<League> leaguesOfCountry = new Gson().fromJson(content,new TypeToken<List<League>>() {}.getType());
-			List<League> leaguesWithEvents = getEventsFor(leaguesOfCountry);
+			System.out.println(leaguesOfCountry.size());
+			List<League> leaguesWithEvents = getEventsForLeagues(leaguesOfCountry);
+			System.out.println(leaguesWithEvents.size());
 			leagues.addAll(leaguesWithEvents);
 		}
 		return leagues;
 		
 	}
 
-	private static List<League> getEventsFor(List<League> leagues) throws IOException, ParseException {
-		
+	private static List<League> getEventsForLeagues(List<League> leagues) throws IOException, ParseException {
+		System.out.println("GETTING API FOOTBALL EVENTS");
 		List<League> leaguesWithEvents = new ArrayList<League>();
 		for (League league : leagues) {
 			String url = ApiFootBallConstants.GET_EVENTS_FOR_DATES + ApiFootBallConstants.LEAGUE_URL + league.getLeagueId() + ApiFootBallConstants.API_FOOTBALL_KEY;
 			
-			//Calendar calendar = Calendar.getInstance();
-			//Date today = calendar.getTime();
-			//DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");  
-			String todayString = "2019-05-29";//dateFormat.format(today);
+			String todayString = "2021-05-14";//dateFormat.format(today);
 			
-			//calendar.add(Calendar.DAY_OF_MONTH, 2);
-			String endDayString = "2019-05-30";// dateFormat.format(calendar.getTime());
+			String endDayString = "2021-05-15";// dateFormat.format(calendar.getTime());
 			
 			url = url.replace(ApiFootBallConstants.REPLACE_DATE_FROM, todayString).replace(ApiFootBallConstants.REPLACE_DATE_TO, endDayString);
 			
@@ -66,7 +68,9 @@ public class ApiFootballClient {
 				leaguesWithEvents.add(league);
 			}
 		}
-		//getOddsFor(competitions);
+
+		//TODO: get the odds here?
+		
 		return leaguesWithEvents;
 	}
 

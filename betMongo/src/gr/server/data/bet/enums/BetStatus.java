@@ -1,15 +1,24 @@
 package gr.server.data.bet.enums;
 
-public enum BetStatus  {
+import java.io.Serializable;
+
+import com.google.gson.annotations.SerializedName;
+
+public enum BetStatus implements Serializable {
 	
+	@SerializedName("1")
 	PENDING(1, "Pending"),
 	
-	PENDING_LOST(2, "Lost"),
+	@SerializedName("2")
+	SETTLED_FAVOURABLY(2, "Won"),
 	
-	SETTLED_FAVOURABLY(3, "Won"),
+	@SerializedName("3")
+	SETTLED_UNFAVOURABLY(3, "Lost"),
 	
-	SETTLED_INFAVOURABLY(4, "Lost");
+	@SerializedName("4")
+	PENDING_LOST(4, "Lost");
 	
+	private static final long serialVersionUID = 1L;
 	private String statusString;
 	private int code;
 

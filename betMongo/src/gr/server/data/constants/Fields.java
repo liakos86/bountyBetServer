@@ -2,9 +2,17 @@ package gr.server.data.constants;
 
 public interface Fields {
 
+	/**
+	 * Every mongo object holds an auto generated mongo id.
+	 */
 	public static final String MONGO_ID = "_id";
 	
-	public static final String USER_ID = "userId";
+	public static final String USERNAME = "username";
+	
+	/**
+	 * Used as foreign key for bets, awards, etc.
+	 */
+	public static final String FOREIGN_KEY_USER_ID = "userId";
 	
 	public static final String USER_BALANCE = "balance";
 
@@ -38,6 +46,5 @@ public interface Fields {
 	public static final String MATCH_FULL_DATE = "match_full_date";
 
 	public static final String MATCH_ID = "match_id";
-	
-	
+
 }

@@ -21,21 +21,23 @@ implements ServletContextListener {
 	
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
-			TimerTask monthChangeCheckerTask = TimerTaskHelper.getMonthChangeCheckerTask();
-		    Timer timer = new Timer("CheckMonthChangeTimer");
+			//TimerTask monthChangeCheckerTask = TimerTaskHelper.getMonthChangeCheckerTask();
+		    //Timer timer = new Timer("CheckMonthChangeTimer");
 		   // timer.scheduleAtFixedRate(monthChangeCheckerTask, DateUtils.getTomorrowMidnight(),  ServerConstants.DAILY_INTERVAL);
 	
 		    TimerTask deleteStaleEventsTask = TimerTaskHelper.deleteStaleEventsTask();
 		    Timer deleteEventsTimer = new Timer("deleteEventsTimer");
 		    deleteEventsTimer.schedule(deleteStaleEventsTask, 0);
 		    
+		    
+		    System.out.println("SCHEDULING");
 		    TimerTask refreshEventsTimerTask = TimerTaskHelper.refreshEventsTask();
 		    Timer refreshEventsTimer = new Timer("refreshEventsTimer");
-		    refreshEventsTimer.schedule(refreshEventsTimerTask, 0);
+		    refreshEventsTimer.schedule(refreshEventsTimerTask, 10000);
 		    
 		    
-		    TimerTask deleteInvalidBounties = TimerTaskHelper.deleteBountiesTask();
-		    Timer deleteInvalidBountiesTimer = new Timer("deleteInvalidBountiesTimer");
+		   // TimerTask deleteInvalidBounties = TimerTaskHelper.deleteBountiesTask();
+		   // Timer deleteInvalidBountiesTimer = new Timer("deleteInvalidBountiesTimer");
 		   // refreshEventsTimer.schedule(refreshEventsTimerTask, 0);
 		    
 		

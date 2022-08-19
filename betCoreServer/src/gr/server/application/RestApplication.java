@@ -1,27 +1,25 @@
 package gr.server.application;
 
-import gr.server.impl.service.MyBetOddsServiceImpl;
-
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
+import gr.server.impl.service.MyBetOddsServiceImpl;
 
 
 /**
  * Imports the classes that will provide the rest service.
  */
+@ApplicationPath("/")
 public class RestApplication  extends Application
 {
-	/**
-	 * Singleton for the mongo client.
-	 */
-	private static MongoClient mongoClient;
+//	/**
+//	 * Singleton for the mongo client.
+//	 */
+//	private static MongoClient mongoClient;
 	
     @Override
     public Set<Class<?>> getClasses() {
@@ -37,23 +35,27 @@ public class RestApplication  extends Application
     	return Collections.emptySet();
     }
     
-    /**
-	 * mongoClient is a Singleton.
-	 * We make sure here.
-	 * 
-	 * 
-	 * @return
-	 */
-	public static  MongoClient getMongoClient() {
-		if (mongoClient == null){
-			mongoClient = connect();
-		}
-		return mongoClient;
-	}
-
-	private static MongoClient connect(){
-		MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27000"));
-		return mongoClient;
-	}
+//    /**
+//	 * mongoClient is a Singleton.
+//	 * We make sure here.
+//	 * 
+//	 * 
+//	 * @return
+//	 */
+//	public static  MongoClient getMongoClient() {
+//		if (mongoClient == null){
+//			mongoClient = connect();
+//		}
+//		return mongoClient;
+//	}
+//
+//	private static MongoClient connect(){
+//		final String conn = "mongodb+srv://bountyBetUser:pf4dot4xNL7DBtsX@bountybetcluster.27d3j.mongodb.net/?retryWrites=true&w=majority";
+//
+//		MongoClientURI uri = new MongoClientURI(conn + "<dbname>?ssl=true&replicaSet=spearo-shard-0&authSource=admin&retryWrites=true&w=majority");
+//		mongoClient = new MongoClient(uri);
+//		//MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27000"));
+//		return mongoClient;
+//	}
    
 }

@@ -26,9 +26,9 @@ import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.constants.ApiFootBallConstants;
 import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.Fields;
-import gr.server.data.user.model.User;
-import gr.server.data.user.model.UserBet;
-import gr.server.data.user.model.UserPrediction;
+import gr.server.data.user.model.objects.User;
+import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserPrediction;
 
 /**
  * 
@@ -101,13 +101,11 @@ public class SyncHelper {
 		BasicDBList newBetPredictions = new BasicDBList();
 
 		for (UserPrediction prediction : userBet.getPredictions()) {
-			Document newBetPrediction = new Document("eventId",
-					prediction.getEventId())
-					.append("prediction", prediction.getPrediction())
-					.append("predictionDescription",
-							prediction.getPredictionDescription())
+			Document newBetPrediction = new Document("eventId", prediction.getEventId())
+					.append("predictionStatus", prediction.getPredictionStatus())
+					.append("predictionCategory", prediction.getPredictionCategory())
+					.append("predictionType", prediction.getPredictionType())
 					.append("oddValue", prediction.getOddValue()
-
 					);
 			newBetPredictions.add(newBetPrediction);
 		}
@@ -118,6 +116,9 @@ public class SyncHelper {
 	}
 
 	/**
+	 * If the input bet is {@link BetStatus#PENDING} we remove the bet amount from user.
+	 * If the input bet is {@link BetStatus#SETTLED_FAVOURABLY}we add the bet earnings to the user.
+	 * 
 	 * {@link User} will be updated depending on his won/lost {@link UserBet}.
 	 * 
 	 * @param userBet
@@ -127,17 +128,12 @@ public class SyncHelper {
 		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
 
 		Document userFieldsDocument = new Document();
-		if (userBet.getBetStatus() == BetStatus.SETTLED_FAVOURABLY.getCode()){//bet won
-			userFieldsDocument.append("wonSlipsCount", 1)
-			.append("wonEventsCount", userBet.getPredictions().size())
-			.append(Fields.USER_BALANCE, userBet.getPossibleEarnings());
-		}else if (userBet.getBetStatus() == BetStatus.SETTLED_INFAVOURABLY.getCode()){//bet lost
-			int correctPredictions = numOfSuccessFullPredictions(userBet);
-			userFieldsDocument.append("lostSlipsCount", 1)
-			.append("wonEventsCount", correctPredictions)
-			.append("lostEventsCount", userBet.getPredictions().size() - correctPredictions);
-		}else if (userBet.getBetStatus() == BetStatus.PENDING.getCode()){// bet placed
+		if (userBet.getBetStatus() == BetStatus.SETTLED_FAVOURABLY){//bet won
+			userFieldsDocument.append(Fields.USER_BALANCE, userBet.getPossibleEarnings());
+		}else if (userBet.getBetStatus() == BetStatus.PENDING){// bet placed
 			userFieldsDocument.append(Fields.USER_BALANCE, -1 * (userBet.getBetAmount()));
+		}else if (userBet.getBetStatus() == BetStatus.SETTLED_UNFAVOURABLY){//bet lost
+			return; //TODO: Do we need something here?
 		}
 		Document increaseOrDecreaseDocument = new Document("$inc", userFieldsDocument);
 		usersCollection.findOneAndUpdate(filter, increaseOrDecreaseDocument);
@@ -146,7 +142,7 @@ public class SyncHelper {
 	static int numOfSuccessFullPredictions(UserBet userBet){
 		int won =0;
 		for(UserPrediction prediction : userBet.getPredictions()){
-			if (prediction.getPredictionStatus() == PredictionStatus.CORRECT.getCode()){
+			if (prediction.getPredictionStatus() == PredictionStatus.CORRECT){
 				++won;
 			}
 		}
@@ -192,18 +188,17 @@ public class SyncHelper {
 	public static Document getBetDocument(UserBet userBet) {
 		Document newBet = new Document(Fields.BET_MONGO_USER_ID, userBet.getMongoUserId())
 				.append(Fields.BET_AMOUNT, userBet.getBetAmount())
-				.append(Fields.BET_STATUS, userBet.getBetStatus())
+				.append(Fields.BET_STATUS, userBet.getBetStatus().getCode())
 				.append(Fields.BET_PLACE_DATE, userBet.getBetPlaceDate())
 				.append(Fields.BET_BELONGING_MONTH, DateUtils.getPastMonthAsString(0));
 
 		BasicDBList newBetPredictions = new BasicDBList();
 
 		for (UserPrediction prediction : userBet.getPredictions()) {
-			Document newBetPrediction = new Document("eventId",
-					prediction.getEventId())
-					.append("prediction", prediction.getPrediction())
-					.append("predictionDescription",
-							prediction.getPredictionDescription())
+			Document newBetPrediction = new Document("eventId", prediction.getEventId())
+					.append("predictionType", prediction.getPredictionType().getCode())
+					.append("predictionCategory", prediction.getPredictionCategory().getCategoryCode())
+					.append("predictionStatus", prediction.getPredictionStatus().getCode())
 					.append("oddValue", prediction.getOddValue()
 
 					);
@@ -215,15 +210,7 @@ public class SyncHelper {
 	}
 
 	public static Document getNewUserDocument(String userName) {
-		 return new Document("username", userName)
-		 .append("wonEventsCount", 0)
-		 .append("lostEventsCount", 0)
-		 .append("wonSlipsCount", 0)
-		 .append("lostSlipsCount", 0)
-		 .append(Fields.USER_OVERALL_WON_EVENTS, 0)
-		 .append(Fields.USER_OVERALL_LOST_EVENTS, 0)
-		 .append(Fields.USER_OVERALL_WON_SLIPS, 0)
-		 .append(Fields.USER_OVERALL_LOST_SLIPS, 0)
+		 return new Document(Fields.USERNAME, userName)
 		 .append(Fields.USER_BALANCE, ApiFootBallConstants.STARTING_BALANCE)
 		 .append(Fields.USER_AWARDS, new BasicDBList());
 	}
@@ -262,7 +249,7 @@ public class SyncHelper {
 	}
 
 	public static void updateUserAwards(ClientSession startSession, User monthWinner, ObjectId awardId) {
-		Document userFilter = new Document(Fields.USER_ID, monthWinner.getMongoId());
+		Document userFilter = new Document(Fields.FOREIGN_KEY_USER_ID, monthWinner.getMongoId());
 		Document newAwardDocument = new Document(Fields.USER_AWARDS_IDS, awardId.toString());
 		Document pushDocument = new Document("$push", newAwardDocument);
 		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);

@@ -1,13 +1,21 @@
 package gr.server.data.bet.enums;
 
-public enum PredictionStatus {
+import java.io.Serializable;
+
+import com.google.gson.annotations.SerializedName;
+
+public enum PredictionStatus implements Serializable{
 	
+	@SerializedName("1")
 	PENDING(1, "Pending"),
 	
+	@SerializedName("2")
 	CORRECT(2, "Correct"),
 	
+	@SerializedName("3")
 	MISSED(3, "Missed");
 	
+	private static final long serialVersionUID = 1L;
 	private String statusString;
 	private int code;
 
