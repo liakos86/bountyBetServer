@@ -1,4 +1,4 @@
-package gr.server.data.user.model;
+package gr.server.data.user.model.objects;
 
 import java.io.Serializable;
 

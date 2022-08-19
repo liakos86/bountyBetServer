@@ -1,7 +1,9 @@
-package gr.server.data.user.model;
+package gr.server.data.user.model.objects;
 
 import java.io.Serializable;
 import java.util.List;
+
+import gr.server.data.bet.enums.BetStatus;
 
 
 /**
@@ -25,9 +27,9 @@ public class UserBet implements Serializable{
 	 */
 	String belongingMonth;
 	
-	Integer betStatus;
+	BetStatus betStatus;
 	
-	Integer betAmount;
+	double betAmount;
 	
 	List<UserPrediction> predictions;
 	
@@ -65,20 +67,20 @@ public class UserBet implements Serializable{
 		this.predictions = predictions;
 	}
 
-	public Integer getBetAmount() {
+	public double getBetAmount() {
 		return betAmount;
 	}
 
-	public void setBetAmount(Integer betAmount) {
+	public void setBetAmount(double betAmount) {
 		this.betAmount = betAmount;
 	}
 
 
-	public Integer getBetStatus() {
+	public BetStatus getBetStatus() {
 		return betStatus;
 	}
 
-	public void setBetStatus(Integer betStatus) {
+	public void setBetStatus(BetStatus betStatus) {
 		this.betStatus = betStatus;
 	}
 	
@@ -91,7 +93,7 @@ public class UserBet implements Serializable{
 	}
 
 	public Double getPossibleEarnings() {
-		 Double possibleEarnings = this.getBetAmount().doubleValue();
+		 Double possibleEarnings = this.getBetAmount();
 	      for (UserPrediction userPrediction : this.getPredictions()) {
 			possibleEarnings *= userPrediction.getOddValue();
 		}
