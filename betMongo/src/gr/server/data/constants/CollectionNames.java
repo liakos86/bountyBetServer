@@ -8,6 +8,7 @@ public class CollectionNames {
 	public static final String LEAGUES = "league";
 	public static final String AWARDS = "award";
 	public static final String BOUNTIES = "bounty";
+	public static final String SETTLED_EVENTS = "settledEvents";
 	
 	
 	public static final String BOUNTY_BET_DB = "bountyBetDB";

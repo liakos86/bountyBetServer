@@ -14,7 +14,7 @@ public class UserPrediction implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	String eventId;
+	int eventId;
 	
 	PredictionCategory predictionCategory;
 	
@@ -43,11 +43,11 @@ public class UserPrediction implements Serializable {
 		this.oddValue = oddValue;
 	}
 
-	public String getEventId() {
+	public int getEventId() {
 		return eventId;
 	}
 	
-	public void setEventId(String eventId) {
+	public void setEventId(int eventId) {
 		this.eventId = eventId;
 	}
 

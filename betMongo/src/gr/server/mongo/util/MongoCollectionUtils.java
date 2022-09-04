@@ -13,7 +13,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 
-import gr.server.data.api.model.events.Event;
+import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
@@ -144,29 +144,29 @@ public class MongoCollectionUtils {
 	 * @return
 	 * @throws ParseException
 	 */
-	public static Document getEventDocument(Event event) throws ParseException {
+	public static Document getEventDocument(MatchEvent event) throws ParseException {
 		//Odd odd = event.getOdd();
 		Document newOdd = new Document("odd_1", "1,8")// odd.getOdd1())
 		.append("odd_2", "3,3")// odd.getOdd2())
 		.append("odd_x", "3,6");//odd.getOddX());
 		
-		Document newEvent = new Document(Fields.MATCH_ID, event.getMatchId())
-		.append("league_id", event.getLeagueId())
-		.append("country_id", event.getCountryId())
-		.append("match_hometeam_name", event.getMatchHometeamName())
-		.append("match_awayteam_name", event.getMatchAwayteamName())
-		.append(Fields.MATCH_FULL_DATE, event.getEventMillis()) 
-		.append("match_date", event.getMatchDate())
-		.append("match_time", event.getMatchTime())
-		.append("match_live", event.getMatchLive())
-		.append("match_status", event.getMatchStatus())
-		.append("match_hometeam_score", event.getMatchHometeamScore())
-		.append("match_awayteam_score", event.getMatchAwayteamScore())
-		.append("match_hometeam_extra_score", event.getMatchHometeamScore())
-		.append("match_awayteam_extra_score", event.getMatchAwayteamScore())
-		.append("odd", newOdd);
+//		Document newEvent = new Document(Fields.MATCH_ID, event.getMatchId())
+//		.append("league_id", event.getLeagueId())
+//		.append("country_id", event.getCountryId())
+//		.append("match_hometeam_name", event.getMatchHometeamName())
+//		.append("match_awayteam_name", event.getMatchAwayteamName())
+//		.append(Fields.MATCH_FULL_DATE, event.getEventMillis()) 
+//		.append("match_date", event.getMatchDate())
+//		.append("match_time", event.getMatchTime())
+//		.append("match_live", event.getMatchLive())
+//		.append("match_status", event.getMatchStatus())
+//		.append("match_hometeam_score", event.getMatchHometeamScore())
+//		.append("match_awayteam_score", event.getMatchAwayteamScore())
+//		.append("match_hometeam_extra_score", event.getMatchHometeamScore())
+//		.append("match_awayteam_extra_score", event.getMatchAwayteamScore())
+//		.append("odd", newOdd);
 		
-		return newEvent;
+		return new Document();
 		
 	}
 
@@ -210,10 +210,11 @@ public class MongoCollectionUtils {
 	}
 
 	public static Document getLeagueDocument(League competition) {
-		return new Document("league_id", competition.getLeagueId())
-		 .append("country_id", competition.getCountryId())
-		 .append("league_name", competition.getLeagueName())
-		 .append("country_name", competition.getCountryName());
+		return new Document();
+//		"league_id", competition.getLeagueId())
+//		 .append("country_id", competition.getCountryId())
+//		 .append("league_name", competition.getLeagueName())
+//		 .append("country_name", competition.getCountryName());
 	}
 
 //	public static Document getSupportedLeagueDocument(

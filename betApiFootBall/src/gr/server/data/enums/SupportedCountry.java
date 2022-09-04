@@ -13,7 +13,8 @@ public enum SupportedCountry {
 //	CHL (163, "Champions League"),
 //	EUROPA_LEAGUE(164, "Europa League"),
 //	 UEFA (165, "UEFA"),
-	 ENGLAND(44,"England");
+//	 ENGLAND(44,"England");
+	GHANA(50, "Ghana");
 //	 ITALY(170,"Italy"),
 //	 SPAIN(171,"Spain");
 	 

@@ -1,14 +1,17 @@
 package gr.server.util;
 
-import gr.server.data.api.model.league.League;
-import gr.server.data.constants.Server;
-import gr.server.impl.client.ApiFootballClient;
-import gr.server.impl.client.MongoClientHelperImpl;
-import gr.server.transaction.helper.TransactionalBlock;
-
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimerTask;
+
+import gr.server.application.RestApplication;
+import gr.server.data.constants.Server;
+import gr.server.data.user.model.objects.SettledEvent;
+import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.impl.client.SettleEventsHelperImpl;
+import gr.server.impl.client.SportScoreClient;
+import gr.server.transaction.helper.TransactionalBlock;
 
 public class TimerTaskHelper {
 	
@@ -24,7 +27,7 @@ public class TimerTaskHelper {
 	            
 	            String monthToSettle = DateUtils.getPastMonthAsString(1);
 	           	try {
-					new MongoClientHelperImpl().settleMonthlyAward(monthToSettle);
+					//new MongoClientHelperImpl().settleMonthlyAward(monthToSettle);
 				} catch (Exception e) {
 					e.printStackTrace();
 					Server.LOG.debug("Rollback for monthly award");
@@ -40,31 +43,26 @@ public class TimerTaskHelper {
 	        	new TransactionalBlock() {
 					@Override
 					public void begin() throws Exception {
-						new MongoClientHelperImpl().deletePastEvents();
+						//new MongoClientHelperImpl().deletePastEvents();
 					}
 				}.execute();
 	        }
 	    };
 	}
 	
-	public static TimerTask refreshEventsTask(){
+	public static TimerTask settleEventsTask(){
 		return new TimerTask() {
 	        public void run() {
-	            System.out.println("REFRESHING events change on: " + new Date() + "n" +
-	              "Thread's name: " + Thread.currentThread().getName());
-
 	            new TransactionalBlock() {
 					@Override
 					public void begin() throws Exception {
-						List<League> leagues = ApiFootballClient.getLeagues();
-						new MongoClientHelperImpl().storeLeagues(session, leagues);
+						List<SettledEvent> settledEvents = new SettleEventsHelperImpl().settleEvents(session, new ArrayList<>(RestApplication.EVENTS));
+						//new MongoClientHelperImpl().storeSettledEvents(session, settledEvents);
 					}
 				}.execute();
 	        }
 	    };
 	}
-	
-
 
 	public static TimerTask deleteBountiesTask() {
 		return new TimerTask() {
@@ -75,7 +73,55 @@ public class TimerTaskHelper {
 	            new TransactionalBlock() {
 					@Override
 					public void begin() throws Exception {
-						new MongoClientHelperImpl().deleteBountiesUntil(session, DateUtils.getBountiesExpirationDate());
+						//new MongoClientHelperImpl().deleteBountiesUntil(session, DateUtils.getBountiesExpirationDate());
+					}
+				}.execute();
+	        }
+	    };
+	}
+
+
+	public static TimerTask settleBetsTask() {
+		return new TimerTask() {
+	        public void run() {
+
+	            new TransactionalBlock() {
+					@Override
+					public void begin() throws Exception {
+						//new MongoClientHelperImpl().settleBets(session, RestApplication.SETTLED);
+					}
+				}.execute();
+	        }
+	    };
+	}
+
+
+	public static TimerTask retrieveTeamsTask() {
+		return new TimerTask() {
+	        public void run() {
+	            System.out.println("GETTING TEAMS on: " + new Date() + "n" +
+	              "Thread's name: " + Thread.currentThread().getName());
+
+	            new TransactionalBlock() {
+					@Override
+					public void begin() throws Exception {
+						RestApplication.TEAMS_FOOTBALL = SportScoreClient.getTeams().getData();
+					}
+				}.execute();
+	        }
+	    };
+	}
+	
+	public static TimerTask retrieveEventsTask(){
+		return new TimerTask() {
+	        public void run() {
+	            System.out.println("REFRESHING events change on: " + new Date() + "n" +
+	              "Thread's name: " + Thread.currentThread().getName());
+
+	            new TransactionalBlock() {
+					@Override
+					public void begin() throws Exception {
+						RestApplication.EVENTS = SportScoreClient.getEvents().getData();
 					}
 				}.execute();
 	        }

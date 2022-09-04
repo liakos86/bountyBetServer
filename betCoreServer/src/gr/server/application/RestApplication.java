@@ -1,12 +1,18 @@
 package gr.server.application;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
+import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Team;
+import gr.server.data.user.model.objects.SettledEvent;
 import gr.server.impl.service.MyBetOddsServiceImpl;
 
 
@@ -20,6 +26,12 @@ public class RestApplication  extends Application
 //	 * Singleton for the mongo client.
 //	 */
 //	private static MongoClient mongoClient;
+	
+	public static List<MatchEvent> EVENTS = new ArrayList<MatchEvent>();
+	
+	public static List<Team> TEAMS_FOOTBALL = new ArrayList<Team>();
+	
+	public static List<SettledEvent> SETTLED = new ArrayList<SettledEvent>();
 	
     @Override
     public Set<Class<?>> getClasses() {

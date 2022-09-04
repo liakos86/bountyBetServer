@@ -9,38 +9,42 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-
 @WebListener
-public class BetServerContextListener
-implements ServletContextListener {
+public class BetServerContextListener implements ServletContextListener {
 
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {
 		System.out.println("SHUTTING DOWN");
 	}
-	
+
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
-			//TimerTask monthChangeCheckerTask = TimerTaskHelper.getMonthChangeCheckerTask();
-		    //Timer timer = new Timer("CheckMonthChangeTimer");
-		   // timer.scheduleAtFixedRate(monthChangeCheckerTask, DateUtils.getTomorrowMidnight(),  ServerConstants.DAILY_INTERVAL);
-	
-		    TimerTask deleteStaleEventsTask = TimerTaskHelper.deleteStaleEventsTask();
-		    Timer deleteEventsTimer = new Timer("deleteEventsTimer");
-		    deleteEventsTimer.schedule(deleteStaleEventsTask, 0);
-		    
-		    
-		    System.out.println("SCHEDULING");
-		    TimerTask refreshEventsTimerTask = TimerTaskHelper.refreshEventsTask();
-		    Timer refreshEventsTimer = new Timer("refreshEventsTimer");
-		    refreshEventsTimer.schedule(refreshEventsTimerTask, 10000);
-		    
-		    
-		   // TimerTask deleteInvalidBounties = TimerTaskHelper.deleteBountiesTask();
-		   // Timer deleteInvalidBountiesTimer = new Timer("deleteInvalidBountiesTimer");
-		   // refreshEventsTimer.schedule(refreshEventsTimerTask, 0);
-		    
-		
+
+		System.out.println("GETTING TEAMS");
+		TimerTask retrieveTeamsTimerTask = TimerTaskHelper.retrieveTeamsTask();
+		Timer retrieveTeamsTimer = new Timer("retrieveTeamsTimer");
+		retrieveTeamsTimer.schedule(retrieveTeamsTimerTask, 2000);
+
+//		TimerTask deleteStaleEventsTask = TimerTaskHelper.deleteStaleEventsTask();
+//		Timer deleteEventsTimer = new Timer("deleteEventsTimer");
+//		deleteEventsTimer.schedule(deleteStaleEventsTask, 0);
+//
+		System.out.println("SCHEDULING");
+		TimerTask refreshEventsTimerTask = TimerTaskHelper.retrieveEventsTask();
+		Timer refreshEventsTimer = new Timer("retrieveEventsTimer");
+		refreshEventsTimer.schedule(refreshEventsTimerTask, 7000);
+//
+//		System.out.println("SETTLING EVENTS");
+//		TimerTask settleEventsTimerTask = TimerTaskHelper.settleEventsTask();
+//		Timer settleEventsTimer = new Timer("settleEventsTimer");
+//		settleEventsTimer.schedule(settleEventsTimerTask, 15000);
+//
+//		System.out.println("SETTLING EVENTS");
+//		TimerTask settleBetsTimerTask = TimerTaskHelper.settleBetsTask();
+//		Timer settleBetsTimer = new Timer("settleBetsTimer");
+//		settleBetsTimer.schedule(settleBetsTimerTask, 20000);
+
+
 	}
 
 }

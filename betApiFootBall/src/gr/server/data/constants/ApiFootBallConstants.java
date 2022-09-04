@@ -31,11 +31,11 @@ public interface ApiFootBallConstants {
 
 	public static final String LEAGUE_URL = "&league_id=";
 
-	public static final String GET_ODDS_FOR_DATES_URL = "https://apiv3.apifootball.com/?action=get_odds&from="
-			+ REPLACE_DATE_FROM + "&to=" + REPLACE_DATE_TO;
-
-	public static final String GET_HISTORY_BETWEEN_URL = "https://apiv3.apifootball.com/?action=get_H2H&firstTeam="
-			+ REPLACE_TEAM_1 + "&secondTeam=" + REPLACE_TEAM_2;
+//	public static final String GET_ODDS_FOR_DATES_URL = "https://apiv3.apifootball.com/?action=get_odds&from="
+//			+ REPLACE_DATE_FROM + "&to=" + REPLACE_DATE_TO;
+//
+//	public static final String GET_HISTORY_BETWEEN_URL = "https://apiv3.apifootball.com/?action=get_H2H&firstTeam="
+//			+ REPLACE_TEAM_1 + "&secondTeam=" + REPLACE_TEAM_2;
 
 	public static final Long DAILY_INTERVAL = 1000 * 60 * 60 * 24L;
 

@@ -1,20 +1,9 @@
 package gr.server.def.client;
 
-import java.text.ParseException;
-import java.util.List;
-
-import org.bson.Document;
-
-import com.mongodb.client.ClientSession;
-
 import gr.server.application.exception.UserExistsException;
-import gr.server.data.api.model.events.Event;
-import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.Odd;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPrediction;
-import gr.server.impl.client.ApiFootballClient;
 
 public interface MongoClientHelper {
 
@@ -31,7 +20,7 @@ public interface MongoClientHelper {
 	 * and will settle it favourably or not, depending on the FT status of all its predictions.
 	 * 
 	 */
-	void settleBets();
+	//void settleBets(ClientSession session, List<SettledEvent> settled);
 	
 	/**
 	 * Creates a new {@link User} in the 'user' collection of the database.
@@ -57,7 +46,7 @@ public interface MongoClientHelper {
 	 * 
 	 * @param leagues
 	 */
-	void storeLeagues(ClientSession session, List<League> leagues) throws ParseException;
+	//void storeLeagues(ClientSession session, List<League> leagues) throws ParseException;
 	
 	/**
 	 * {@link MyBetOddsServiceImpl} will call this method upon user's REST call.
@@ -68,6 +57,6 @@ public interface MongoClientHelper {
 	 * 
 	 * @return
 	 */
-	List<League> getMongoLeagues();
+	//List<League> getMongoLeagues();
 
 }

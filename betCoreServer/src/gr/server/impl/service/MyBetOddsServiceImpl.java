@@ -14,6 +14,7 @@ import javax.ws.rs.core.Response;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import gr.server.application.RestApplication;
 import gr.server.application.exception.UserExistsException;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
@@ -38,31 +39,6 @@ implements MyBetOddsService {
 		return new MongoClientHelperImpl().getBetsForUser(id);
 	}
 	
-//	@Override
-//	@POST
-//    @Path("/placeBet")
-//	@Consumes(MediaType.APPLICATION_JSON)
-//	public String placeBet(InputStream incomingStream) {
-//		
-//		StringBuilder userPredictionBuilder = new StringBuilder();
-//		try{
-//			BufferedReader in = new BufferedReader(new InputStreamReader(incomingStream));
-//			String line = null;
-//			while((line = in.readLine()) != null){
-//				userPredictionBuilder.append(line);
-//			}
-//		}catch (Exception e){
-//			e.printStackTrace();
-//		}
-//		
-//		UserBet bet = new Gson().fromJson(userPredictionBuilder.toString(),
-//				new TypeToken<UserBet>() {}.getType());
-//		bet = new MongoClientHelperImpl().placeBet(bet);
-//		
-//		return new Gson().toJson(bet);
-//		
-//	}
-	
 	@Override
 	@POST
     @Path("/placeBet")
@@ -85,41 +61,6 @@ implements MyBetOddsService {
 		
 		return Response.ok(new Gson().toJson(newBet)).build();		
 	}
-	
-//	@Override
-//	@POST
-//    @Path("/placeBet/{userId}/{predictions}/{amount}")
-//	public UserBet placeBet(@PathParam(Fields.USER_ID) String userId, @PathParam("predictions") List<UserPrediction> predictions, @PathParam("amount") double amount) {
-//		UserBet userBet = new UserBet();
-//		userBet.setBetAmount(amount);
-//		userBet.setBetStatus(BetStatus.PENDING.getCode());
-//		userBet.setMongoUserId(userId);
-//		userBet.getPredictions().addAll(predictions);
-//		return new MongoClientHelperImpl().placeBet(userBet);
-//	}
-	
-//	@Override
-//	@POST
-//    @Path("/createUser")
-//	@Consumes(MediaType.APPLICATION_JSON)
-//	public String createUser(InputStream incomingStream) throws UserExistsException {
-//		
-//		StringBuilder userBuilder = new StringBuilder();
-//		try{
-//			BufferedReader in = new BufferedReader(new InputStreamReader(incomingStream));
-//			String line = null;
-//			while((line = in.readLine()) != null){
-//				userBuilder.append(line);
-//			}
-//		}catch (Exception e){
-//			e.printStackTrace();
-//		}
-//		
-//		User user = new Gson().fromJson(userBuilder.toString(),
-//				new TypeToken<User>() {}.getType());
-//		
-//		return new Gson().toJson(new MongoClientHelperImpl().createUser(user));
-//	}
 	
 	@Override
 	@POST
@@ -162,7 +103,9 @@ implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
 	public String getLeagues(){
-		return  new Gson().toJson(new MongoClientHelperImpl().getMongoLeagues()); 
+		System.out.println("SERVING LEAGUES");
+//		return  new Gson().toJson(new MongoClientHelperImpl().getMongoLeagues()); 
+		return  new Gson().toJson(RestApplication.EVENTS);
 	
 	}
 	
