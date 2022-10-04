@@ -13,11 +13,15 @@ public interface SportScoreApiConstants {
 	/**
 	 * '1' is for football. we need to fetch sports to iterate.
 	 */
-	String GET_EVENTS_BY_SPORT_DATE_URL = "https://sportscore1.p.rapidapi.com/sports/1/events/date/2022-08-30";
+	String GET_EVENTS_BY_SPORT_DATE_URL = "https://sportscore1.p.rapidapi.com/sports/1/events/date/";//2022-08-30
 	
 	/**
 	 * '1' is for football. we need to fetch sports to iterate.
 	 */
-	String GET_TEAMS_BY_SPORT_URL = "https://sportscore1.p.rapidapi.com/sports/1/teams";
+	//String GET_TEAMS_BY_SPORT_URL = "https://sportscore1.p.rapidapi.com/sports/1/teams";
 
+	//String GET_LEAGUES_BY_SPORT_URL = "https://sportscore1.p.rapidapi.com/sports/1/leagues";
+
+//	String GET_LIVE_EVENTS_BY_SPORT_URL = "https://sportscore1.p.rapidapi.com/sports/1/live";
+	String GET_LIVE_EVENTS_BY_SPORT_URL = "https://sportscore1.p.rapidapi.com/sports/1/events/live";
 }

@@ -2,10 +2,12 @@ package gr.server.data.constants;
 
 public interface ServerConstants {
 
-	public static final Double STARTING_BALANCE = 1000d;
+	Double STARTING_BALANCE = 1000d;
 
-	public static final String DATE_WITH_TIME_FORMAT = "yyyy-MM-dd HH:mm";
+	String DATE_WITH_TIME_FORMAT = "yyyy-MM-dd HH:mm";
 
-	public static final String AWARD_DATE_FORMAT = "yyyy-MM";
+	String AWARD_DATE_FORMAT = "yyyy-MM";
+	
+	String BASE_DATE_FORMAT = "yyyy-MM-dd";
 	
 }

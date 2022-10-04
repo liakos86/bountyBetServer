@@ -9,4 +9,13 @@
 	</parent>
 	<artifactId>betApiFootBall</artifactId>
 	
+	<dependencyManagement>
+	<dependencies>
+	<dependency>
+	<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+	</dependency>
+	</dependencies>
+	</dependencyManagement>
+	
 	</project>

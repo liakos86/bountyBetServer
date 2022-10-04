@@ -30,5 +30,9 @@ public interface MyBetOddsService {
 
 	Response createUser(String user) throws UserExistsException;
 
+	String getLive();
+
+	String getLiveUpdates();
+
 
 }

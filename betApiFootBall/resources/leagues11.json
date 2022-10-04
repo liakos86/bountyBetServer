@@ -1,0 +1,2922 @@
+{
+  "data": [
+    {
+      "id": 501,
+      "sport_id": 1,
+      "section_id": 86,
+      "slug": "france-national-1",
+      "name_translations": {
+        "en": "National 1",
+        "ru": "Национальный чемпионат (Насьональ)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/france-national-1.png",
+      "start_date": "2022-08-12 17:30:00",
+      "end_date": "2023-05-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "France",
+        "flag": "france"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "39%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.56"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 86,
+        "sport_id": 1,
+        "slug": "france",
+        "name": "France",
+        "priority": 6,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 502,
+      "sport_id": 1,
+      "section_id": 86,
+      "slug": "france-ligue-2",
+      "name_translations": {
+        "en": "Ligue 2",
+        "ru": "Лига 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/france-ligue-2.png",
+      "start_date": "2022-07-30 13:00:00",
+      "end_date": "2023-06-03 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "France",
+        "flag": "france"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.83"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.44"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 86,
+        "sport_id": 1,
+        "slug": "france",
+        "name": "France",
+        "priority": 6,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 503,
+      "sport_id": 1,
+      "section_id": 86,
+      "slug": "france-trophee-des-champions",
+      "name_translations": {
+        "en": "Trophée des Champions",
+        "ru": "Суперкубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/france-trophee-des-champions.png",
+      "start_date": "2022-07-31 18:00:00",
+      "end_date": "2022-08-01 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "France",
+        "flag": "france"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.00"
+        },
+        {
+          "name": "Red cards",
+          "value": "1.00"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 86,
+        "sport_id": 1,
+        "slug": "france",
+        "name": "France",
+        "priority": 6,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 504,
+      "sport_id": 1,
+      "section_id": 86,
+      "slug": "france-division-1-feminines",
+      "name_translations": {
+        "en": "Division 1, Feminines",
+        "ru": "Чемпионат Франции, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/france-division-1-feminines.png",
+      "start_date": "2022-09-09 19:00:00",
+      "end_date": "2023-05-28 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 86,
+        "sport_id": 1,
+        "slug": "france",
+        "name": "France",
+        "priority": 6,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 505,
+      "sport_id": 1,
+      "section_id": 86,
+      "slug": "france-championnat-national-u19",
+      "name_translations": {
+        "en": "Championnat National U19",
+        "ru": "Национальный чемпионат, U19"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/france-championnat-national-u19.png",
+      "start_date": "2022-08-20 09:00:00",
+      "end_date": "2023-06-04 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.31"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 86,
+        "sport_id": 1,
+        "slug": "france",
+        "name": "France",
+        "priority": 6,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 506,
+      "sport_id": 1,
+      "section_id": 86,
+      "slug": "france-coupe-de-france-women",
+      "name_translations": {
+        "en": "Coupe de France, Women",
+        "ru": "Кубок Франции, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/france-coupe-de-france-women.png",
+      "start_date": "2022-01-08 13:30:00",
+      "end_date": "2022-05-15 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "France",
+        "flag": "france"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 86,
+        "sport_id": 1,
+        "slug": "france",
+        "name": "France",
+        "priority": 6,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 507,
+      "sport_id": 1,
+      "section_id": 87,
+      "slug": "georgia-erovnuli-liga",
+      "name_translations": {
+        "en": "Erovnuli Liga",
+        "ru": "Эровнули Лигу"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/georgia-erovnuli-liga.png",
+      "start_date": "2022-02-25 15:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Georgia",
+        "flag": "georgia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.74"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.25"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 18,
+      "section": {
+        "id": 87,
+        "sport_id": 1,
+        "slug": "georgia",
+        "name": "Georgia",
+        "priority": 0,
+        "flag": "georgia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 508,
+      "sport_id": 1,
+      "section_id": 87,
+      "slug": "georgia-erovnuli-liga-2",
+      "name_translations": {
+        "en": "Erovnuli Liga 2",
+        "ru": "Эровнули Лигу 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/georgia-erovnuli-liga-2.png",
+      "start_date": "2022-03-01 10:30:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Georgia",
+        "flag": "georgia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.63"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 87,
+        "sport_id": 1,
+        "slug": "georgia",
+        "name": "Georgia",
+        "priority": 0,
+        "flag": "georgia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 509,
+      "sport_id": 1,
+      "section_id": 87,
+      "slug": "georgia-cup",
+      "name_translations": {
+        "en": "Cup",
+        "ru": "Кубок Грузии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/georgia-cup.png",
+      "start_date": "2022-08-06 13:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Georgia",
+        "flag": "georgia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.14"
+        },
+        {
+          "name": "Home team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.41"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 87,
+        "sport_id": 1,
+        "slug": "georgia",
+        "name": "Georgia",
+        "priority": 0,
+        "flag": "georgia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 510,
+      "sport_id": 1,
+      "section_id": 87,
+      "slug": "georgia-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Грузии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/georgia-super-cup.png",
+      "start_date": "2022-02-20 14:00:00",
+      "end_date": "2022-02-21 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Georgia",
+        "flag": "georgia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 87,
+        "sport_id": 1,
+        "slug": "georgia",
+        "name": "Georgia",
+        "priority": 0,
+        "flag": "georgia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 511,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-super-cup.png",
+      "start_date": "2022-07-30 18:30:00",
+      "end_date": "2022-07-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "8.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "6.00"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 512,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-bundesliga",
+      "name_translations": {
+        "en": "Bundesliga",
+        "ru": "Бундеслига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-bundesliga.png",
+      "start_date": "2022-08-05 18:30:00",
+      "end_date": "2023-06-07 23:59:00",
+      "priority": 280,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.93"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.07"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.19"
+        }
+      ],
+      "most_count": 31,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 513,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-dfb-pokal",
+      "name_translations": {
+        "en": "DFB Pokal",
+        "ru": "Кубок (DFB Pokal)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-dfb-pokal.png",
+      "start_date": "2022-07-29 16:01:00",
+      "end_date": "2023-06-03 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "9%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "69%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.69"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.09"
+        }
+      ],
+      "most_count": 20,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 514,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-3-liga",
+      "name_translations": {
+        "en": "3. Liga",
+        "ru": "Третья лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-3-liga.png",
+      "start_date": "2022-07-22 17:00:00",
+      "end_date": "2023-05-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.74"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 515,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-dfb-pokal-women",
+      "name_translations": {
+        "en": "DFB Pokal, Women",
+        "ru": "Кубок (DFB Pokal), Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-dfb-pokal-women.png",
+      "start_date": "2022-08-20 11:00:00",
+      "end_date": "2023-05-18 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "62%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 516,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-telekom-cup",
+      "name_translations": {
+        "en": "Telekom Cup",
+        "ru": "Кубок Телеком"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-telekom-cup.png",
+      "start_date": "2022-07-16 17:00:00",
+      "end_date": "2022-07-17 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "2"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.00"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 517,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-2-bundesliga-women",
+      "name_translations": {
+        "en": "2. Bundesliga, Women",
+        "ru": "Вторая Бундеслига, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-2-bundesliga-women.png",
+      "start_date": "2022-08-27 12:00:00",
+      "end_date": "2023-05-29 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.87"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 518,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-2-bundesliga",
+      "name_translations": {
+        "en": "2. Bundesliga",
+        "ru": "Вторая Бундеслига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-2-bundesliga.png",
+      "start_date": "2022-07-15 18:30:00",
+      "end_date": "2023-06-08 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.98"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.64"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.13"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 519,
+      "sport_id": 1,
+      "section_id": 88,
+      "slug": "germany-women-bundesliga",
+      "name_translations": {
+        "en": "Women Bundesliga",
+        "ru": "Женщины Бундеслига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-women-bundesliga.png",
+      "start_date": "2022-09-16 17:15:00",
+      "end_date": "2023-05-28 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.39"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 88,
+        "sport_id": 1,
+        "slug": "germany",
+        "name": "Germany",
+        "priority": 8,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 520,
+      "sport_id": 1,
+      "section_id": 89,
+      "slug": "ghana-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ghana-premier-league.png",
+      "start_date": "2022-09-10 14:00:00",
+      "end_date": "2023-06-19 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ghana",
+        "flag": "ghana"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "19%"
+        }
+      ],
+      "most_count": 24,
+      "section": {
+        "id": 89,
+        "sport_id": 1,
+        "slug": "ghana",
+        "name": "Ghana",
+        "priority": 0,
+        "flag": "ghana"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 521,
+      "sport_id": 1,
+      "section_id": 89,
+      "slug": "ghana-fa-cup",
+      "name_translations": {
+        "en": "FA Cup",
+        "ru": "Кубок Англии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ghana-fa-cup.png",
+      "start_date": "2022-03-26 15:00:00",
+      "end_date": "2022-09-01 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ghana",
+        "flag": "ghana"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "13%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.27"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 89,
+        "sport_id": 1,
+        "slug": "ghana",
+        "name": "Ghana",
+        "priority": 0,
+        "flag": "ghana"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 522,
+      "sport_id": 1,
+      "section_id": 90,
+      "slug": "gibraltar-national-league",
+      "name_translations": {
+        "en": "National League",
+        "ru": "Национальная Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/gibraltar-national-league.png",
+      "start_date": "2022-09-30 18:45:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Gibraltar",
+        "flag": "gibraltar"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "27"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "20%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "60%"
+        }
+      ],
+      "most_count": 24,
+      "section": {
+        "id": 90,
+        "sport_id": 1,
+        "slug": "gibraltar",
+        "name": "Gibraltar",
+        "priority": 0,
+        "flag": "gibraltar"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 523,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-super-league",
+      "name_translations": {
+        "en": "Super League",
+        "ru": "Суперлига Греции"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-super-league.png",
+      "start_date": "2022-08-19 18:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.26"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.50"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.21"
+        }
+      ],
+      "most_count": 46,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 524,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-super-league-2",
+      "name_translations": {
+        "en": "Super League 2",
+        "ru": "Вторая Суперлига Греции"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-super-league-2.png",
+      "start_date": "2021-11-06 12:45:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Greece",
+        "flag": "greece"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.16"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 525,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-greece-cup",
+      "name_translations": {
+        "en": "Greece Cup",
+        "ru": "Кубок Греции"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-greece-cup.png",
+      "start_date": "2022-09-27 13:00:00",
+      "end_date": "2023-05-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Greece",
+        "flag": "greece"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": 28,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 526,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-1",
+      "name_translations": {
+        "en": "3rd League, Group 1",
+        "ru": "3 Лига, Группа 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-1.png",
+      "start_date": "2018-09-30 13:00:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 527,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-cup-of-3rd-league",
+      "name_translations": {
+        "en": "Cup of 3rd League",
+        "ru": "Кубок 3-Й Лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-cup-of-3rd-league.png",
+      "start_date": "2016-10-16 08:00:00",
+      "end_date": "2017-05-29 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.68"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 528,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-u20-super-league",
+      "name_translations": {
+        "en": "U20 Super League",
+        "ru": "U20 Суперлига"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2017-08-26 07:00:00",
+      "end_date": "2018-06-04 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 529,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-super-league-women",
+      "name_translations": {
+        "en": "Super League, Women",
+        "ru": "Суперлига, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-super-league-women.png",
+      "start_date": "2021-10-03 11:00:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Greece",
+        "flag": "greece"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.18"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.23"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 530,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-u19-super-league",
+      "name_translations": {
+        "en": "U19 Super League",
+        "ru": "U19 Суперлига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-u19-super-league.png",
+      "start_date": "2022-09-03 08:30:00",
+      "end_date": "2023-03-12 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 531,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-8",
+      "name_translations": {
+        "en": "3rd League, Group 8",
+        "ru": "3 Лига, Группа 8"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-8.png",
+      "start_date": "2018-09-30 11:00:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 532,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-7",
+      "name_translations": {
+        "en": "3rd League, Group 7",
+        "ru": "3 Лига, Группа 7"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-7.png",
+      "start_date": "2018-09-29 13:00:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 533,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-6",
+      "name_translations": {
+        "en": "3rd League, Group 6",
+        "ru": "3 Лига, Группа 6"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-6.png",
+      "start_date": "2018-09-29 11:45:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 534,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-4",
+      "name_translations": {
+        "en": "3rd League, Group 4",
+        "ru": "3 Лига, Группа 4"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-4.png",
+      "start_date": "2018-09-30 13:00:00",
+      "end_date": "2019-04-15 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.65"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 535,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-5",
+      "name_translations": {
+        "en": "3rd League, Group 5",
+        "ru": "3 Лига, Группа 5"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-5.png",
+      "start_date": "2018-09-30 13:00:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 536,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-2",
+      "name_translations": {
+        "en": "3rd League, Group 2",
+        "ru": "3 Лига, Группа 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-2.png",
+      "start_date": "2018-09-30 13:00:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 537,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-group-3",
+      "name_translations": {
+        "en": "3rd League, Group 3",
+        "ru": "3 Лига, Группа 3"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-group-3.png",
+      "start_date": "2018-09-30 13:00:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 538,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-3rd-league-playoff-stage",
+      "name_translations": {
+        "en": "3rd League, Playoff stage",
+        "ru": "3-Я Лига, Этап Плей-Офф"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-3rd-league-playoff-stage.png",
+      "start_date": "2019-05-05 12:30:00",
+      "end_date": "2019-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 539,
+      "sport_id": 1,
+      "section_id": 91,
+      "slug": "greece-football-league",
+      "name_translations": {
+        "en": "Football League",
+        "ru": "Греческая футбольная лига (Бета Этники)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/greece-football-league.png",
+      "start_date": "2020-11-08 11:00:00",
+      "end_date": "2021-06-28 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 91,
+        "sport_id": 1,
+        "slug": "greece",
+        "name": "Greece",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 540,
+      "sport_id": 1,
+      "section_id": 92,
+      "slug": "guatemala-liga-nacional-clausura",
+      "name_translations": {
+        "en": "Liga Nacional, Clausura",
+        "ru": "Чемпионат Гватемалы (Лига Насьональ, Клаусура)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/guatemala-liga-nacional-clausura.png",
+      "start_date": "2022-01-16 00:00:00",
+      "end_date": "2022-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Guatemala",
+        "flag": "guatemala"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.44"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "21%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.79"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 31,
+      "section": {
+        "id": 92,
+        "sport_id": 1,
+        "slug": "guatemala",
+        "name": "Guatemala",
+        "priority": 0,
+        "flag": "guatemala"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 541,
+      "sport_id": 1,
+      "section_id": 92,
+      "slug": "guatemala-liga-nacional-apertura",
+      "name_translations": {
+        "en": "Liga Nacional, Apertura",
+        "ru": "Чемпионат Гватемалы (Лига Насьональ, Апертура)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/guatemala-liga-nacional-apertura.png",
+      "start_date": "2022-07-23 21:00:00",
+      "end_date": "2023-02-28 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Guatemala",
+        "flag": "guatemala"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.62"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "14%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.08"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 92,
+        "sport_id": 1,
+        "slug": "guatemala",
+        "name": "Guatemala",
+        "priority": 0,
+        "flag": "guatemala"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 542,
+      "sport_id": 1,
+      "section_id": 93,
+      "slug": "honduras-liga-nacional",
+      "name_translations": {
+        "en": "Liga Nacional",
+        "ru": "Лига Насьональ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/honduras-liga-nacional.png",
+      "start_date": "2019-05-05 21:00:00",
+      "end_date": "2019-05-13 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 30,
+      "section": {
+        "id": 93,
+        "sport_id": 1,
+        "slug": "honduras",
+        "name": "Honduras",
+        "priority": 0,
+        "flag": "honduras"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 543,
+      "sport_id": 1,
+      "section_id": 93,
+      "slug": "honduras-liga-nacional-apertura",
+      "name_translations": {
+        "en": "Liga Nacional, Apertura",
+        "ru": "Лига Насьональ, Апертура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/honduras-liga-nacional-apertura.png",
+      "start_date": "2022-07-31 00:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Honduras",
+        "flag": "honduras"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.89"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.91"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 32,
+      "section": {
+        "id": 93,
+        "sport_id": 1,
+        "slug": "honduras",
+        "name": "Honduras",
+        "priority": 0,
+        "flag": "honduras"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 544,
+      "sport_id": 1,
+      "section_id": 93,
+      "slug": "honduras-liga-nacional-clausura",
+      "name_translations": {
+        "en": "Liga Nacional, Clausura",
+        "ru": "Лига Насьональ, Клаусура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/honduras-liga-nacional-clausura.png",
+      "start_date": "2022-01-19 23:00:00",
+      "end_date": "2022-05-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Honduras",
+        "flag": "honduras"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.47"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 33,
+      "section": {
+        "id": 93,
+        "sport_id": 1,
+        "slug": "honduras",
+        "name": "Honduras",
+        "priority": 0,
+        "flag": "honduras"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 545,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-nb-i",
+      "name_translations": {
+        "en": "NB I",
+        "ru": "Высшая лига (OTP Банк Лига)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-nb-i.png",
+      "start_date": "2022-07-29 18:00:00",
+      "end_date": "2023-05-28 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Hungary",
+        "flag": "hungary"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "33"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.88"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 32,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 546,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-liga-kupa",
+      "name_translations": {
+        "en": "Liga Kupa",
+        "ru": "Кубок Венгерской лиги"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-09-02 11:00:00",
+      "end_date": "2015-06-03 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.02"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 547,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-magyar-kupa",
+      "name_translations": {
+        "en": "Magyar Kupa",
+        "ru": "Кубок Венгрии (Magyar Kupa)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-magyar-kupa.png",
+      "start_date": "2022-09-17 11:00:00",
+      "end_date": "2023-05-03 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Hungary",
+        "flag": "hungary"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "12"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.56"
+        },
+        {
+          "name": "Home team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Draws",
+          "value": "3%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "75%"
+        }
+      ],
+      "most_count": 23,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 548,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Венгрии"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2015-07-05 18:15:00",
+      "end_date": "2015-07-06 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 549,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-nb-ii-keleti",
+      "name_translations": {
+        "en": "NB II Keleti",
+        "ru": "NB II Келети"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2012-08-17 13:00:00",
+      "end_date": "2013-06-16 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 550,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-nb-ii-nyugati",
+      "name_translations": {
+        "en": "NB II Nyugati",
+        "ru": "NB II Ньюгати"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2012-08-18 14:00:00",
+      "end_date": "2013-06-16 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.85"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 11,
+    "from": 501,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 550,
+    "total": 1753
+  }
+}

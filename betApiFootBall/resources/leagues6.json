@@ -1,0 +1,2963 @@
+{
+  "data": [
+    {
+      "id": 251,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-laliga",
+      "name_translations": {
+        "en": "LaLiga",
+        "ru": "Ла Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-laliga.png",
+      "start_date": "2022-08-12 19:00:00",
+      "end_date": "2023-06-04 00:00:00",
+      "priority": 295,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "6.08"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.48"
+        }
+      ],
+      "most_count": 34,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 252,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-copa-del-rey",
+      "name_translations": {
+        "en": "Copa del Rey",
+        "ru": "Кубок Испании"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-copa-del-rey.png",
+      "start_date": "2021-11-17 14:00:00",
+      "end_date": "2022-04-23 23:59:00",
+      "priority": 210,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.51"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.13"
+        }
+      ],
+      "most_count": 31,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 253,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-supercopa-de-catalunya",
+      "name_translations": {
+        "en": "Supercopa de Catalunya",
+        "ru": "Суперкубок Каталонии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-supercopa-de-catalunya.png",
+      "start_date": "2014-10-29 20:30:00",
+      "end_date": "2014-10-30 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 254,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-primera-division-femenina",
+      "name_translations": {
+        "en": "Primera División Femenina",
+        "ru": "Примера, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-primera-division-femenina.png",
+      "start_date": "2022-09-11 13:00:00",
+      "end_date": "2023-05-21 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.18"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.14"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 255,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-copa-de-sm-la-reina",
+      "name_translations": {
+        "en": "Copa de SM La Reina",
+        "ru": "Кубок Королевы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-copa-de-sm-la-reina.png",
+      "start_date": "2021-10-06 14:15:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.96"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 256,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-copa-federacion",
+      "name_translations": {
+        "en": "Copa Federacion",
+        "ru": "Кубок федерации"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-copa-federacion.png",
+      "start_date": "2021-10-06 15:00:00",
+      "end_date": "2021-11-24 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 257,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-supercup-women",
+      "name_translations": {
+        "en": "Supercup, Women",
+        "ru": "Суперкубок, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-supercup-women.png",
+      "start_date": "2022-01-19 18:15:00",
+      "end_date": "2022-01-24 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 258,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-laliga-2",
+      "name_translations": {
+        "en": "LaLiga 2",
+        "ru": "Второй дивизион, LaLiga 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-laliga-2.png",
+      "start_date": "2022-08-12 19:00:00",
+      "end_date": "2023-06-19 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.14"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.96"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.43"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 259,
+      "sport_id": 1,
+      "section_id": 32,
+      "slug": "spain-segunda-division-b",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Сегунда B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-segunda-division-b.png",
+      "start_date": "2022-09-03 14:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.34"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.37"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 32,
+        "sport_id": 1,
+        "slug": "spain",
+        "name": "Spain",
+        "priority": 9,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 260,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-allsvenskan",
+      "name_translations": {
+        "en": "Allsvenskan",
+        "ru": "Высшая лига, Аллсвенскан"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-allsvenskan.png",
+      "start_date": "2022-04-02 13:00:00",
+      "end_date": "2022-11-13 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.68"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.79"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 24,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 261,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-superettan",
+      "name_translations": {
+        "en": "Superettan",
+        "ru": "Суперэттан"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-superettan.png",
+      "start_date": "2022-04-02 13:00:00",
+      "end_date": "2022-11-13 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.96"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.75"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.11"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 262,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-1-norra",
+      "name_translations": {
+        "en": "Division 1, Norra",
+        "ru": "Дивизион 1, Норра"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-1-norra.png",
+      "start_date": "2022-04-02 11:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.11"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.05"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 263,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-1-sodra",
+      "name_translations": {
+        "en": "Division 1, Södra",
+        "ru": "Дивизион 1, Сёдра"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-1-sodra.png",
+      "start_date": "2022-04-02 11:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.82"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.94"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 264,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-mellersta-gotaland",
+      "name_translations": {
+        "en": "Division 2, Mellersta Gotaland",
+        "ru": "Второй дивизион, Меллерста Гёталанд"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2009-04-18 11:00:00",
+      "end_date": "2009-10-04 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 265,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-norra-svealand",
+      "name_translations": {
+        "en": "Division 2, Norra Svealand",
+        "ru": "Второй дивизион, Норра Свеланд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-norra-svealand.png",
+      "start_date": "2022-04-02 10:30:00",
+      "end_date": "2022-11-07 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.30"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 266,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-norrland",
+      "name_translations": {
+        "en": "Division 2, Norrland",
+        "ru": "Второй дивизион, Норрланд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-norrland.png",
+      "start_date": "2022-04-02 11:00:00",
+      "end_date": "2022-11-06 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 267,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-sodra-gotaland",
+      "name_translations": {
+        "en": "Division 2, Södra Götaland",
+        "ru": "Второй дивизион, Södra Götaland"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-sodra-gotaland.png",
+      "start_date": "2022-04-02 11:30:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.81"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 268,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-vastra-gotaland",
+      "name_translations": {
+        "en": "Division 2, Västra Götaland",
+        "ru": "Второй дивизион, Вестра Гёталанд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-vastra-gotaland.png",
+      "start_date": "2022-04-01 17:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.64"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 269,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-sodra-svealand",
+      "name_translations": {
+        "en": "Division 2, Södra Svealand",
+        "ru": "Второй дивизион, Södra Svealand"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-sodra-svealand.png",
+      "start_date": "2022-04-02 12:00:00",
+      "end_date": "2022-11-06 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.44"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.61"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 270,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-svenska-cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Кубок Швеции"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-svenska-cupen.png",
+      "start_date": "2022-06-15 17:00:00",
+      "end_date": "2023-08-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 271,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-damallsvenskan",
+      "name_translations": {
+        "en": "Damallsvenskan",
+        "ru": "Дамаллсвенскан"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-damallsvenskan.png",
+      "start_date": "2022-03-26 13:00:00",
+      "end_date": "2022-11-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.83"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 272,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-ostra-gotaland",
+      "name_translations": {
+        "en": "Division 2, Ostra Gotaland",
+        "ru": "Второй дивизион, Остра Гёталанд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-ostra-gotaland.png",
+      "start_date": "2020-04-03 17:00:00",
+      "end_date": "2020-11-25 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.55"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 273,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Швеции"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2015-11-08 18:30:00",
+      "end_date": "2015-11-09 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.00"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 274,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-super-cup-women",
+      "name_translations": {
+        "en": "Super Cup Women",
+        "ru": "Суперкубок Швеции, Женщины"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2016-03-16 18:00:00",
+      "end_date": "2016-03-17 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 275,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-2-norra-gotaland",
+      "name_translations": {
+        "en": "Division 2, Norra Götaland",
+        "ru": "Второй дивизион, Норра Гёталанд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-2-norra-gotaland.png",
+      "start_date": "2022-04-02 12:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Sweden",
+        "flag": "sweden"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "28"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.96"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.12"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 276,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-svenska-cupen-women",
+      "name_translations": {
+        "en": "Svenska Cupen, Women",
+        "ru": "Кубок Швеции, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-svenska-cupen-women.png",
+      "start_date": "2021-09-28 17:30:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.14"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.09"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 277,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-div-2-promotion-round",
+      "name_translations": {
+        "en": "Div 2, Promotion round",
+        "ru": "Второй дивизион, Раунд Продвижения"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-div-2-promotion-round.png",
+      "start_date": "2020-11-01 12:00:00",
+      "end_date": "2021-12-06 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "40%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "0%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 278,
+      "sport_id": 1,
+      "section_id": 33,
+      "slug": "sweden-division-1-relegationpromotion",
+      "name_translations": {
+        "en": "Division 1, Relegation/Promotion",
+        "ru": "Дивизион 1, Понижение / Продвижение"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sweden-division-1-relegationpromotion.png",
+      "start_date": "2021-12-02 18:00:00",
+      "end_date": "2021-12-05 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.50"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 33,
+        "sport_id": 1,
+        "slug": "sweden",
+        "name": "Sweden",
+        "priority": 0,
+        "flag": "sweden"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 279,
+      "sport_id": 1,
+      "section_id": 34,
+      "slug": "switzerland-super-league",
+      "name_translations": {
+        "en": "Super League",
+        "ru": "Суперлига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/switzerland-super-league.png",
+      "start_date": "2022-07-16 16:00:00",
+      "end_date": "2023-06-12 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Switzerland",
+        "flag": "switzerland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.08"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.38"
+        }
+      ],
+      "most_count": 27,
+      "section": {
+        "id": 34,
+        "sport_id": 1,
+        "slug": "switzerland",
+        "name": "Switzerland",
+        "priority": 0,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 280,
+      "sport_id": 1,
+      "section_id": 34,
+      "slug": "switzerland-challenge-league",
+      "name_translations": {
+        "en": "Challenge League",
+        "ru": "Вторая Лига (Челлендж-лига)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/switzerland-challenge-league.png",
+      "start_date": "2022-07-15 17:30:00",
+      "end_date": "2023-06-12 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Switzerland",
+        "flag": "switzerland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.10"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.31"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 34,
+        "sport_id": 1,
+        "slug": "switzerland",
+        "name": "Switzerland",
+        "priority": 0,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 281,
+      "sport_id": 1,
+      "section_id": 34,
+      "slug": "switzerland-schweizer-cup",
+      "name_translations": {
+        "en": "Schweizer Cup",
+        "ru": "Кубок Швейцарии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/switzerland-schweizer-cup.png",
+      "start_date": "2022-08-19 17:00:00",
+      "end_date": "2023-06-04 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Switzerland",
+        "flag": "switzerland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "5.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "10%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "83%"
+        }
+      ],
+      "most_count": 19,
+      "section": {
+        "id": 34,
+        "sport_id": 1,
+        "slug": "switzerland",
+        "name": "Switzerland",
+        "priority": 0,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 282,
+      "sport_id": 1,
+      "section_id": 34,
+      "slug": "switzerland-erste-liga-promotion",
+      "name_translations": {
+        "en": "Erste Liga Promotion",
+        "ru": "Первая лига Промоушен"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/switzerland-erste-liga-promotion.png",
+      "start_date": "2022-08-06 14:00:00",
+      "end_date": "2023-05-27 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.42"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 34,
+        "sport_id": 1,
+        "slug": "switzerland",
+        "name": "Switzerland",
+        "priority": 0,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 283,
+      "sport_id": 1,
+      "section_id": 34,
+      "slug": "switzerland-nla-women",
+      "name_translations": {
+        "en": "NLA, Women",
+        "ru": "Национальная лига Б, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/switzerland-nla-women.png",
+      "start_date": "2022-08-20 14:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 22,
+      "section": {
+        "id": 34,
+        "sport_id": 1,
+        "slug": "switzerland",
+        "name": "Switzerland",
+        "priority": 0,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 284,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-super-lig",
+      "name_translations": {
+        "en": "Süper Lig",
+        "ru": "Суперлига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-super-lig.png",
+      "start_date": "2022-08-05 18:00:00",
+      "end_date": "2023-05-28 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Turkey",
+        "flag": "turkey"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.03"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.19"
+        }
+      ],
+      "most_count": 22,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 285,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-turkiye-kupasi",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Кубок Турции"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-turkiye-kupasi.png",
+      "start_date": "2021-09-07 12:00:00",
+      "end_date": "2022-05-26 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Turkey",
+        "flag": "turkey"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "9"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.10"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "19%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.95"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 18,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 286,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-tff-2-lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "Вторая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-tff-2-lig.png",
+      "start_date": "2022-08-27 14:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Turkey",
+        "flag": "turkey"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 287,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-tff-1-lig",
+      "name_translations": {
+        "en": "TFF 1. Lig",
+        "ru": "Первая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-tff-1-lig.png",
+      "start_date": "2022-08-12 18:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.41"
+        },
+        {
+          "name": "Home team wins",
+          "value": "23%"
+        },
+        {
+          "name": "Draws",
+          "value": "45%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.23"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.27"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 288,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-tff-super-kupa",
+      "name_translations": {
+        "en": "TFF Süper Kupa",
+        "ru": "Суперкубок Турции"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-tff-super-kupa.png",
+      "start_date": "2022-07-30 17:45:00",
+      "end_date": "2022-07-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Qatar",
+        "flag": "qatar",
+        "city": "Doha"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.00"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 289,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-spor-toto-cup",
+      "name_translations": {
+        "en": "Spor Toto Cup",
+        "ru": "Spor Toto Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2012-04-14 12:00:00",
+      "end_date": "2012-05-18 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 290,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-tff-3-lig-group-3",
+      "name_translations": {
+        "en": "TFF 3. Lig, Group 3",
+        "ru": "TFF 3. Лиг, Группа 3"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-tff-3-lig-group-3.png",
+      "start_date": "2022-09-03 13:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 291,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-tff-3-lig-group-2",
+      "name_translations": {
+        "en": "TFF 3. Lig, Group 2",
+        "ru": "TFF 3. Лиг, Группа 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-tff-3-lig-group-2.png",
+      "start_date": "2022-09-03 14:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.36"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 292,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-tff-3-lig-group-1",
+      "name_translations": {
+        "en": "TFF 3. Lig, Group 1",
+        "ru": "TFF 3. Лиг, Группа 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-tff-3-lig-group-1.png",
+      "start_date": "2022-09-03 14:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 293,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-u19-lig-elit-a",
+      "name_translations": {
+        "en": "U19 Lig, Elit A",
+        "ru": "U19 Lig, Elit A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-u19-lig-elit-a.png",
+      "start_date": "2021-10-29 09:00:00",
+      "end_date": "2022-06-30 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.99"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.72"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 294,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-u19-lig-elit-b",
+      "name_translations": {
+        "en": "U19 Lig, Elit B",
+        "ru": "U19 Lig, Elit B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-u19-lig-elit-b.png",
+      "start_date": "2021-11-20 09:00:00",
+      "end_date": "2022-06-30 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.48"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 295,
+      "sport_id": 1,
+      "section_id": 36,
+      "slug": "ukraine-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ukraine-premier-league.png",
+      "start_date": "2022-08-23 10:00:00",
+      "end_date": "2023-06-04 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ukraine",
+        "flag": "ukraine"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.20"
+        },
+        {
+          "name": "Home team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 36,
+        "sport_id": 1,
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "priority": 0,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 296,
+      "sport_id": 1,
+      "section_id": 36,
+      "slug": "ukraine-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Украины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ukraine-super-cup.png",
+      "start_date": "2021-07-24 18:00:00",
+      "end_date": "2021-09-23 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Ukraine",
+        "flag": "ukraine"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "10.00"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 36,
+        "sport_id": 1,
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "priority": 0,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 297,
+      "sport_id": 1,
+      "section_id": 36,
+      "slug": "ukraine-ukraine-cup",
+      "name_translations": {
+        "en": "Ukraine Cup",
+        "ru": "Кубок Украины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ukraine-ukraine-cup.png",
+      "start_date": "2021-08-17 14:00:00",
+      "end_date": "2022-05-11 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ukraine",
+        "flag": "ukraine"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.58"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 36,
+        "sport_id": 1,
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "priority": 0,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 298,
+      "sport_id": 1,
+      "section_id": 36,
+      "slug": "ukraine-persha-liha",
+      "name_translations": {
+        "en": "Persha Liha",
+        "ru": "Первая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ukraine-persha-liha.png",
+      "start_date": "2022-08-27 09:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "14%"
+        },
+        {
+          "name": "Draws",
+          "value": "58%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 36,
+        "sport_id": 1,
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "priority": 0,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 299,
+      "sport_id": 1,
+      "section_id": 36,
+      "slug": "ukraine-u21",
+      "name_translations": {
+        "en": "U21",
+        "ru": "U21"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ukraine-u21.png",
+      "start_date": "2020-08-20 08:00:00",
+      "end_date": "2021-05-15 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Ukraine",
+        "flag": "ukraine"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.82"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 36,
+        "sport_id": 1,
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "priority": 0,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 300,
+      "sport_id": 1,
+      "section_id": 36,
+      "slug": "ukraine-u19",
+      "name_translations": {
+        "en": "U19",
+        "ru": "U19"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ukraine-u19.png",
+      "start_date": "2022-08-22 08:00:00",
+      "end_date": "2023-06-02 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.85"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 36,
+        "sport_id": 1,
+        "slug": "ukraine",
+        "name": "Ukraine",
+        "priority": 0,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 6,
+    "from": 251,
+    "last_page": 34,
+    "per_page": 50,
+    "to": 300,
+    "total": 1695
+  }
+}

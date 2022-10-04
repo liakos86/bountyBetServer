@@ -1,13 +1,20 @@
 package gr.server.application;
 
-import gr.server.util.TimerTaskHelper;
-
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
+
+import gr.server.data.api.websocket.SportScoreWebSocketClient;
+import gr.server.data.global.helper.ApiDataFetchHelper;
+import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
+import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
+import gr.server.util.TimerTaskHelper;
 
 @WebListener
 public class BetServerContextListener implements ServletContextListener {
@@ -16,35 +23,51 @@ public class BetServerContextListener implements ServletContextListener {
 	public void contextDestroyed(ServletContextEvent arg0) {
 		System.out.println("SHUTTING DOWN");
 	}
-
+	
+	/**
+	 * First we retrieve all the matches for today.
+	 * After that we retrieve the current live matches once.
+	 * Finally we open a persistent web socket connection with the api server.
+	 * Any changes will be pushed back to the server.
+	 */
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
+		
+		MockApiDataFetchHelper.fetchLeagues();
+		
+		ApiDataFetchHelper.fetchEvents(false);
+		
+		ApiDataFetchHelper.fetchEvents(true);
+		
+		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
+		
+		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
+		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
+		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
+		
+		//		System.out.println("SCHEDULING");
+//		TimerTask mockGoalsTimerTask = TimerTaskHelper.mockLiveEventsTask();
+//		Timer mockGoalsTimer = new Timer("mockGoalsTimer");
+//		mockGoalsTimer.schedule(mockGoalsTimerTask, 15000, 10000);
+		
+//		System.out.println("SCHEDULING");
+//		TimerTask refreshLeaguesTimerTask = TimerTaskHelper.retrieveLeaguesTask();
+//		Timer refreshLeaguesTimer = new Timer("refreshLeaguesTimer");
+//		refreshLeaguesTimer.schedule(refreshLeaguesTimerTask, 4000);
+	}
 
-		System.out.println("GETTING TEAMS");
-		TimerTask retrieveTeamsTimerTask = TimerTaskHelper.retrieveTeamsTask();
-		Timer retrieveTeamsTimer = new Timer("retrieveTeamsTimer");
-		retrieveTeamsTimer.schedule(retrieveTeamsTimerTask, 2000);
 
-//		TimerTask deleteStaleEventsTask = TimerTaskHelper.deleteStaleEventsTask();
-//		Timer deleteEventsTimer = new Timer("deleteEventsTimer");
-//		deleteEventsTimer.schedule(deleteStaleEventsTask, 0);
-//
-		System.out.println("SCHEDULING");
-		TimerTask refreshEventsTimerTask = TimerTaskHelper.retrieveEventsTask();
-		Timer refreshEventsTimer = new Timer("retrieveEventsTimer");
-		refreshEventsTimer.schedule(refreshEventsTimerTask, 7000);
-//
-//		System.out.println("SETTLING EVENTS");
-//		TimerTask settleEventsTimerTask = TimerTaskHelper.settleEventsTask();
-//		Timer settleEventsTimer = new Timer("settleEventsTimer");
-//		settleEventsTimer.schedule(settleEventsTimerTask, 15000);
-//
-//		System.out.println("SETTLING EVENTS");
-//		TimerTask settleBetsTimerTask = TimerTaskHelper.settleBetsTask();
-//		Timer settleBetsTimer = new Timer("settleBetsTimer");
-//		settleBetsTimer.schedule(settleBetsTimerTask, 20000);
-
-
+	private SportScoreWebSocketClient initiateWebSocket() {
+		URI uri = null;
+		try {
+			uri = new URI("wss://tipsscore.com:2083/app/7UXH2sNFqpVAO6FebyTKpujgfy8BUnM?protocol=7&client=js&version=5.0.3&flash=false");
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+			return null;
+		}
+		SportScoreWebSocketClient client = new SportScoreWebSocketClient(uri, new WebSocketMessageHandlerImpl());
+		client.sendMessage("{\"event\":\"pusher:subscribe\",\"data\":{\"channel\":\"en-football-list\"}}");
+		return client;
 	}
 
 }

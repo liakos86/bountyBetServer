@@ -1,0 +1,2771 @@
+{
+  "data": [
+    {
+      "id": 351,
+      "sport_id": 1,
+      "section_id": 46,
+      "slug": "montenegro-druga-liga-crne-gore",
+      "name_translations": {
+        "en": "Druga liga Crne Gore",
+        "ru": "Вторая лига Черногории"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/montenegro-druga-liga-crne-gore.png",
+      "start_date": "2022-08-17 15:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Montenegro",
+        "flag": "montenegro"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.34"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 46,
+        "sport_id": 1,
+        "slug": "montenegro",
+        "name": "Montenegro",
+        "priority": 0,
+        "flag": "montenegro"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 352,
+      "sport_id": 1,
+      "section_id": 46,
+      "slug": "montenegro-cup",
+      "name_translations": {
+        "en": "Cup",
+        "ru": "Кубок Черногории"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/montenegro-cup.png",
+      "start_date": "2022-09-07 14:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 46,
+        "sport_id": 1,
+        "slug": "montenegro",
+        "name": "Montenegro",
+        "priority": 0,
+        "flag": "montenegro"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 353,
+      "sport_id": 1,
+      "section_id": 47,
+      "slug": "pakistan-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/pakistan-premier-league.png",
+      "start_date": "2021-08-14 15:00:00",
+      "end_date": "2021-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.99"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 47,
+        "sport_id": 1,
+        "slug": "pakistan",
+        "name": "Pakistan",
+        "priority": 0,
+        "flag": "pakistan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 354,
+      "sport_id": 1,
+      "section_id": 48,
+      "slug": "panama-liga-nacional-de-ascenso",
+      "name_translations": {
+        "en": "Liga Nacional de Ascenso",
+        "ru": "Вторая лига"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 48,
+        "sport_id": 1,
+        "slug": "panama",
+        "name": "Panama",
+        "priority": 0,
+        "flag": "panama"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 355,
+      "sport_id": 1,
+      "section_id": 48,
+      "slug": "panama-liga-panamena-de-futbol-clausura",
+      "name_translations": {
+        "en": "Liga Panamena de Futbol, Clausura",
+        "ru": "Лига Панаменья, Клаусура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/panama-liga-panamena-de-futbol-clausura.png",
+      "start_date": "2022-07-16 21:00:00",
+      "end_date": "2023-02-28 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Panama",
+        "flag": "panama"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.22"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.42"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 48,
+        "sport_id": 1,
+        "slug": "panama",
+        "name": "Panama",
+        "priority": 0,
+        "flag": "panama"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 356,
+      "sport_id": 1,
+      "section_id": 48,
+      "slug": "panama-liga-panamena-de-futbol-apertura",
+      "name_translations": {
+        "en": "Liga Panamena de Futbol, Apertura",
+        "ru": "Лига Панаменья, Апертура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/panama-liga-panamena-de-futbol-apertura.png",
+      "start_date": "2022-02-05 01:00:00",
+      "end_date": "2022-06-07 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.60"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 48,
+        "sport_id": 1,
+        "slug": "panama",
+        "name": "Panama",
+        "priority": 0,
+        "flag": "panama"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 357,
+      "sport_id": 1,
+      "section_id": 49,
+      "slug": "bahrain-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bahrain-premier-league.png",
+      "start_date": "2022-09-11 14:05:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Bahrain",
+        "flag": "bahrain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": 34,
+      "section": {
+        "id": 49,
+        "sport_id": 1,
+        "slug": "bahrain",
+        "name": "Bahrain",
+        "priority": 0,
+        "flag": "bahrain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 358,
+      "sport_id": 1,
+      "section_id": 49,
+      "slug": "bahrain-king-of-bahrain-cup",
+      "name_translations": {
+        "en": "King of Bahrain Cup",
+        "ru": "Кубок короля Бахрейна"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bahrain-king-of-bahrain-cup.png",
+      "start_date": "2021-09-23 15:15:00",
+      "end_date": "2022-03-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Bahrain",
+        "flag": "bahrain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "40%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "13%"
+        }
+      ],
+      "most_count": 33,
+      "section": {
+        "id": 49,
+        "sport_id": 1,
+        "slug": "bahrain",
+        "name": "Bahrain",
+        "priority": 0,
+        "flag": "bahrain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 359,
+      "sport_id": 1,
+      "section_id": 49,
+      "slug": "bahrain-2nd-division",
+      "name_translations": {
+        "en": "2nd Division",
+        "ru": "Второй дивизион"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-09-08 15:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Bahrain",
+        "flag": "bahrain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 49,
+        "sport_id": 1,
+        "slug": "bahrain",
+        "name": "Bahrain",
+        "priority": 0,
+        "flag": "bahrain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 360,
+      "sport_id": 1,
+      "section_id": 49,
+      "slug": "bahrain-federation-cup",
+      "name_translations": {
+        "en": "Federation Cup",
+        "ru": "Кубок Федерации"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bahrain-federation-cup.png",
+      "start_date": "2022-09-23 15:45:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Bahrain",
+        "flag": "bahrain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "75%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 49,
+        "sport_id": 1,
+        "slug": "bahrain",
+        "name": "Bahrain",
+        "priority": 0,
+        "flag": "bahrain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 361,
+      "sport_id": 1,
+      "section_id": 50,
+      "slug": "philippines-philippines-football-league",
+      "name_translations": {
+        "en": "Philippines Football League",
+        "ru": "Высшая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/philippines-philippines-football-league.png",
+      "start_date": "2022-08-07 08:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Philippines",
+        "flag": "philippines"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.56"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 50,
+        "sport_id": 1,
+        "slug": "philippines",
+        "name": "Philippines",
+        "priority": 0,
+        "flag": "philippines"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 362,
+      "sport_id": 1,
+      "section_id": 50,
+      "slug": "philippines-united-football-league-division-2",
+      "name_translations": {
+        "en": "United Football League, Division 2",
+        "ru": "Второй дивизион"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 50,
+        "sport_id": 1,
+        "slug": "philippines",
+        "name": "Philippines",
+        "priority": 0,
+        "flag": "philippines"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 363,
+      "sport_id": 1,
+      "section_id": 50,
+      "slug": "philippines-fa-league-cup",
+      "name_translations": {
+        "en": "FA League Cup",
+        "ru": "Кубок Филиппин"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-09-20 06:15:00",
+      "end_date": "2014-11-07 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.35"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 50,
+        "sport_id": 1,
+        "slug": "philippines",
+        "name": "Philippines",
+        "priority": 0,
+        "flag": "philippines"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 364,
+      "sport_id": 1,
+      "section_id": 51,
+      "slug": "senegal-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/senegal-premier-league.png",
+      "start_date": "2022-10-15 15:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Senegal",
+        "flag": "senegal"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.60"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 51,
+        "sport_id": 1,
+        "slug": "senegal",
+        "name": "Senegal",
+        "priority": 0,
+        "flag": "senegal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 365,
+      "sport_id": 1,
+      "section_id": 52,
+      "slug": "south-africa-premier-soccer-league",
+      "name_translations": {
+        "en": "Premier Soccer League",
+        "ru": "Премьер-лига ЮАР"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-africa-premier-soccer-league.png",
+      "start_date": "2022-08-05 17:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "South Africa",
+        "flag": "south-africa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.89"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.43"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 52,
+        "sport_id": 1,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "priority": 0,
+        "flag": "south-africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 366,
+      "sport_id": 1,
+      "section_id": 52,
+      "slug": "south-africa-fa-cup",
+      "name_translations": {
+        "en": "FA Cup",
+        "ru": "Кубок ЮАР"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-africa-fa-cup.png",
+      "start_date": "2022-02-04 13:00:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "South Africa",
+        "flag": "south-africa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "5"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Draws",
+          "value": "37%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 52,
+        "sport_id": 1,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "priority": 0,
+        "flag": "south-africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 367,
+      "sport_id": 1,
+      "section_id": 52,
+      "slug": "south-africa-mtn-8",
+      "name_translations": {
+        "en": "MTN 8",
+        "ru": "Кубок Восьми (MTN8)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-africa-mtn-8.png",
+      "start_date": "2022-08-27 13:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "South Africa",
+        "flag": "south-africa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.83"
+        },
+        {
+          "name": "Home team wins",
+          "value": "17%"
+        },
+        {
+          "name": "Draws",
+          "value": "66%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 52,
+        "sport_id": 1,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "priority": 0,
+        "flag": "south-africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 368,
+      "sport_id": 1,
+      "section_id": 52,
+      "slug": "south-africa-league-cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Кубок Лиги ЮАР"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-africa-league-cup.png",
+      "start_date": "2019-10-18 18:00:00",
+      "end_date": "2019-12-24 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "South Africa",
+        "flag": "south-africa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.80"
+        },
+        {
+          "name": "Home team wins",
+          "value": "20%"
+        },
+        {
+          "name": "Draws",
+          "value": "47%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 52,
+        "sport_id": 1,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "priority": 0,
+        "flag": "south-africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 369,
+      "sport_id": 1,
+      "section_id": 52,
+      "slug": "south-africa-national-first-division",
+      "name_translations": {
+        "en": "National First Division",
+        "ru": "Первый дивизион ЮАР"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-africa-national-first-division.png",
+      "start_date": "2022-09-02 13:00:00",
+      "end_date": "2023-05-14 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.98"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 52,
+        "sport_id": 1,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "priority": 0,
+        "flag": "south-africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 370,
+      "sport_id": 1,
+      "section_id": 52,
+      "slug": "south-africa-black-label-cup",
+      "name_translations": {
+        "en": "Black Label Cup",
+        "ru": "Кубок Carling Black Label"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-africa-black-label-cup.png",
+      "start_date": "2021-08-01 15:00:00",
+      "end_date": "2021-08-02 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "South Africa",
+        "flag": "south-africa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 52,
+        "sport_id": 1,
+        "slug": "south-africa",
+        "name": "South Africa",
+        "priority": 0,
+        "flag": "south-africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 371,
+      "sport_id": 1,
+      "section_id": 53,
+      "slug": "thailand-thai-league-1",
+      "name_translations": {
+        "en": "Thai League 1",
+        "ru": "Тайская Лига 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/thailand-thai-league-1.png",
+      "start_date": "2022-08-12 12:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Thailand",
+        "flag": "thailand"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.57"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.39"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 53,
+        "sport_id": 1,
+        "slug": "thailand",
+        "name": "Thailand",
+        "priority": 0,
+        "flag": "thailand"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 372,
+      "sport_id": 1,
+      "section_id": 53,
+      "slug": "thailand-thai-league-2",
+      "name_translations": {
+        "en": "Thai League 2",
+        "ru": "Тайская Лига 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/thailand-thai-league-2.png",
+      "start_date": "2022-08-12 11:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Thailand",
+        "flag": "thailand"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 53,
+        "sport_id": 1,
+        "slug": "thailand",
+        "name": "Thailand",
+        "priority": 0,
+        "flag": "thailand"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 373,
+      "sport_id": 1,
+      "section_id": 54,
+      "slug": "tunisia-ligue-1",
+      "name_translations": {
+        "en": "Ligue 1",
+        "ru": "Лига 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/tunisia-ligue-1.png",
+      "start_date": "2022-09-30 14:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Tunisia",
+        "flag": "tunisia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.70"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.73"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 31,
+      "section": {
+        "id": 54,
+        "sport_id": 1,
+        "slug": "tunisia",
+        "name": "Tunisia",
+        "priority": 0,
+        "flag": "tunisia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 374,
+      "sport_id": 1,
+      "section_id": 54,
+      "slug": "tunisia-tunisian-cup",
+      "name_translations": {
+        "en": "Tunisian Cup",
+        "ru": "Кубок Туниса"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/tunisia-tunisian-cup.png",
+      "start_date": "2022-06-01 15:00:00",
+      "end_date": "2022-09-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Tunisia",
+        "flag": "tunisia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.62"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.10"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 54,
+        "sport_id": 1,
+        "slug": "tunisia",
+        "name": "Tunisia",
+        "priority": 0,
+        "flag": "tunisia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 375,
+      "sport_id": 1,
+      "section_id": 54,
+      "slug": "tunisia-ligue-2",
+      "name_translations": {
+        "en": "Ligue 2",
+        "ru": "Лига 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/tunisia-ligue-2.png",
+      "start_date": "2021-11-13 13:00:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.85"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "15%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.16"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 54,
+        "sport_id": 1,
+        "slug": "tunisia",
+        "name": "Tunisia",
+        "priority": 0,
+        "flag": "tunisia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 376,
+      "sport_id": 1,
+      "section_id": 55,
+      "slug": "united-arab-emirates-uae-pro-league",
+      "name_translations": {
+        "en": "UAE Pro-League",
+        "ru": "Про-Лига (Лига стран Залива)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/united-arab-emirates-uae-pro-league.png",
+      "start_date": "2022-09-02 13:45:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.82"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 55,
+        "sport_id": 1,
+        "slug": "united-arab-emirates",
+        "name": "United Arab Emirates",
+        "priority": 0,
+        "flag": "united-arab-emirates"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 377,
+      "sport_id": 1,
+      "section_id": 55,
+      "slug": "united-arab-emirates-league-cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Кубок лиги ОАЭ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/united-arab-emirates-league-cup.png",
+      "start_date": "2022-10-11 13:15:00",
+      "end_date": "2023-05-17 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.74"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.85"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.09"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 55,
+        "sport_id": 1,
+        "slug": "united-arab-emirates",
+        "name": "United Arab Emirates",
+        "priority": 0,
+        "flag": "united-arab-emirates"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 378,
+      "sport_id": 1,
+      "section_id": 55,
+      "slug": "united-arab-emirates-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок ОАЭ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/united-arab-emirates-super-cup.png",
+      "start_date": "2021-01-22 16:00:00",
+      "end_date": "2022-01-07 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "United Arab Emirates",
+        "flag": "united-arab-emirates",
+        "city": "Al Ain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "0%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.00"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 55,
+        "sport_id": 1,
+        "slug": "united-arab-emirates",
+        "name": "United Arab Emirates",
+        "priority": 0,
+        "flag": "united-arab-emirates"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 379,
+      "sport_id": 1,
+      "section_id": 55,
+      "slug": "united-arab-emirates-presidents-cup",
+      "name_translations": {
+        "en": "Presidents Cup",
+        "ru": "Кубок президента ОАЭ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/united-arab-emirates-presidents-cup.png",
+      "start_date": "2021-12-20 12:45:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 55,
+        "sport_id": 1,
+        "slug": "united-arab-emirates",
+        "name": "United Arab Emirates",
+        "priority": 0,
+        "flag": "united-arab-emirates"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 380,
+      "sport_id": 1,
+      "section_id": 55,
+      "slug": "united-arab-emirates-division-1",
+      "name_translations": {
+        "en": "Division 1",
+        "ru": "Первый дивизион ОАЭ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/united-arab-emirates-division-1.png",
+      "start_date": "2022-09-10 13:40:00",
+      "end_date": "2023-05-21 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "United Arab Emirates",
+        "flag": "united-arab-emirates"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "28"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 55,
+        "sport_id": 1,
+        "slug": "united-arab-emirates",
+        "name": "United Arab Emirates",
+        "priority": 0,
+        "flag": "united-arab-emirates"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 381,
+      "sport_id": 1,
+      "section_id": 56,
+      "slug": "uzbekistan-pfl",
+      "name_translations": {
+        "en": "PFL",
+        "ru": "Суперлига, ПФЛ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/uzbekistan-pfl.png",
+      "start_date": "2022-03-02 13:30:00",
+      "end_date": "2022-12-26 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Uzbekistan",
+        "flag": "uzbekistan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.01"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 56,
+        "sport_id": 1,
+        "slug": "uzbekistan",
+        "name": "Uzbekistan",
+        "priority": 0,
+        "flag": "uzbekistan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 382,
+      "sport_id": 1,
+      "section_id": 56,
+      "slug": "uzbekistan-league-cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Кубок Лиги Узбекистана"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/uzbekistan-league-cup.png",
+      "start_date": "2019-05-31 14:00:00",
+      "end_date": "2019-12-05 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.79"
+        },
+        {
+          "name": "Home team wins",
+          "value": "64%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 56,
+        "sport_id": 1,
+        "slug": "uzbekistan",
+        "name": "Uzbekistan",
+        "priority": 0,
+        "flag": "uzbekistan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 383,
+      "sport_id": 1,
+      "section_id": 57,
+      "slug": "venezuela-primera-division",
+      "name_translations": {
+        "en": "Primera División",
+        "ru": "Высший Дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/venezuela-primera-division.png",
+      "start_date": "2022-02-24 21:00:00",
+      "end_date": "2022-12-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Venezuela",
+        "flag": "venezuela"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.21"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 57,
+        "sport_id": 1,
+        "slug": "venezuela",
+        "name": "Venezuela",
+        "priority": 0,
+        "flag": "venezuela"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 384,
+      "sport_id": 1,
+      "section_id": 57,
+      "slug": "venezuela-segunda-division",
+      "name_translations": {
+        "en": "Segunda División",
+        "ru": "Второй дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/venezuela-segunda-division.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 57,
+        "sport_id": 1,
+        "slug": "venezuela",
+        "name": "Venezuela",
+        "priority": 0,
+        "flag": "venezuela"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 385,
+      "sport_id": 1,
+      "section_id": 57,
+      "slug": "venezuela-copa-venezuela",
+      "name_translations": {
+        "en": "Copa Venezuela",
+        "ru": "Кубок Венесуэлы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/venezuela-copa-venezuela.png",
+      "start_date": "2019-10-16 20:00:00",
+      "end_date": "2019-12-01 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.05"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 57,
+        "sport_id": 1,
+        "slug": "venezuela",
+        "name": "Venezuela",
+        "priority": 0,
+        "flag": "venezuela"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 386,
+      "sport_id": 1,
+      "section_id": 58,
+      "slug": "vietnam-v-league",
+      "name_translations": {
+        "en": "V-League",
+        "ru": "Высшая Лига (V-League)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/vietnam-v-league.png",
+      "start_date": "2022-02-25 10:00:00",
+      "end_date": "2022-11-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Vietnam",
+        "flag": "vietnam"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.43"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.76"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 58,
+        "sport_id": 1,
+        "slug": "vietnam",
+        "name": "Vietnam",
+        "priority": 0,
+        "flag": "vietnam"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 387,
+      "sport_id": 1,
+      "section_id": 58,
+      "slug": "vietnam-v-league-2",
+      "name_translations": {
+        "en": "V-League 2",
+        "ru": "Первый дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/vietnam-v-league-2.png",
+      "start_date": "2022-03-04 08:30:00",
+      "end_date": "2022-11-30 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "11"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.33"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 58,
+        "sport_id": 1,
+        "slug": "vietnam",
+        "name": "Vietnam",
+        "priority": 0,
+        "flag": "vietnam"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 388,
+      "sport_id": 1,
+      "section_id": 58,
+      "slug": "vietnam-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Вьетнама"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/vietnam-super-cup.png",
+      "start_date": "2021-01-09 09:45:00",
+      "end_date": "2021-01-10 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Vietnam",
+        "flag": "vietnam"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 58,
+        "sport_id": 1,
+        "slug": "vietnam",
+        "name": "Vietnam",
+        "priority": 0,
+        "flag": "vietnam"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 389,
+      "sport_id": 1,
+      "section_id": 58,
+      "slug": "vietnam-vietnam-cup",
+      "name_translations": {
+        "en": "Vietnam Cup",
+        "ru": "Кубок Вьетнама"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/vietnam-vietnam-cup.png",
+      "start_date": "2022-04-05 10:00:00",
+      "end_date": "2022-09-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Vietnam",
+        "flag": "vietnam"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "19%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 58,
+        "sport_id": 1,
+        "slug": "vietnam",
+        "name": "Vietnam",
+        "priority": 0,
+        "flag": "vietnam"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 390,
+      "sport_id": 1,
+      "section_id": 59,
+      "slug": "kosovo-superliga-e-kosoves",
+      "name_translations": {
+        "en": "Superliga e Kosovës",
+        "ru": "Райфайзен Суперлига Косово"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kosovo-superliga-e-kosoves.png",
+      "start_date": "2022-08-13 15:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "33"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.17"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 59,
+        "sport_id": 1,
+        "slug": "kosovo",
+        "name": "Kosovo",
+        "priority": 0,
+        "flag": "kosovo"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 391,
+      "sport_id": 1,
+      "section_id": 59,
+      "slug": "kosovo-liga-e-pare",
+      "name_translations": {
+        "en": "Liga e Parë",
+        "ru": "Первая лига Косова"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kosovo-liga-e-pare.png",
+      "start_date": "2022-08-19 15:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 59,
+        "sport_id": 1,
+        "slug": "kosovo",
+        "name": "Kosovo",
+        "priority": 0,
+        "flag": "kosovo"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 392,
+      "sport_id": 1,
+      "section_id": 59,
+      "slug": "kosovo-kupa-e-kosoves",
+      "name_translations": {
+        "en": "Kupa e Kosovës",
+        "ru": "Кубок Косова"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kosovo-kupa-e-kosoves.png",
+      "start_date": "2021-12-01 11:30:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kosovo",
+        "flag": "kosovo"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.15"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.33"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 59,
+        "sport_id": 1,
+        "slug": "kosovo",
+        "name": "Kosovo",
+        "priority": 0,
+        "flag": "kosovo"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 393,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/uganda-premier-league.png",
+      "start_date": "2022-09-30 13:00:00",
+      "end_date": "2023-05-28 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Uganda",
+        "flag": "uganda"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "43%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "14%"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 394,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-super-8",
+      "name_translations": {
+        "en": "Super 8",
+        "ru": "Супер 8"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/uganda-super-8.png",
+      "start_date": "2019-07-31 13:00:00",
+      "end_date": "2019-08-26 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.08"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 395,
+      "sport_id": 1,
+      "section_id": 61,
+      "slug": "palestine-gaza-strip-premier-league",
+      "name_translations": {
+        "en": "Gaza Strip Premier League",
+        "ru": "Лига сектора Газа"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/palestine-gaza-strip-premier-league.png",
+      "start_date": "2022-09-09 13:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Palestine",
+        "flag": "palestine"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Draws",
+          "value": "48%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 61,
+        "sport_id": 1,
+        "slug": "palestine",
+        "name": "Palestine",
+        "priority": 0,
+        "flag": "palestine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 396,
+      "sport_id": 1,
+      "section_id": 61,
+      "slug": "palestine-west-bank-league",
+      "name_translations": {
+        "en": "West Bank League",
+        "ru": "Премьер-лига Западного берега"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/palestine-west-bank-league.png",
+      "start_date": "2022-09-09 13:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 61,
+        "sport_id": 1,
+        "slug": "palestine",
+        "name": "Palestine",
+        "priority": 0,
+        "flag": "palestine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 397,
+      "sport_id": 1,
+      "section_id": 61,
+      "slug": "palestine-west-bank-cup",
+      "name_translations": {
+        "en": "West Bank Cup",
+        "ru": "Суперкубок Западного берега"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2019-03-08 13:00:00",
+      "end_date": "2019-06-30 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Total prize money",
+          "value": "15000"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 61,
+        "sport_id": 1,
+        "slug": "palestine",
+        "name": "Palestine",
+        "priority": 0,
+        "flag": "palestine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 398,
+      "sport_id": 1,
+      "section_id": 61,
+      "slug": "palestine-gaza-strip-cup",
+      "name_translations": {
+        "en": "Gaza Strip Cup",
+        "ru": "Кубок сектора Газа"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/palestine-gaza-strip-cup.png",
+      "start_date": "2020-03-16 12:30:00",
+      "end_date": "2020-06-10 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.21"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "7%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 61,
+        "sport_id": 1,
+        "slug": "palestine",
+        "name": "Palestine",
+        "priority": 0,
+        "flag": "palestine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 399,
+      "sport_id": 1,
+      "section_id": 62,
+      "slug": "tanzania-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/tanzania-premier-league.png",
+      "start_date": "2022-08-15 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Tanzania",
+        "flag": "tanzania"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.20"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": 27,
+      "section": {
+        "id": 62,
+        "sport_id": 1,
+        "slug": "tanzania",
+        "name": "Tanzania",
+        "priority": 0,
+        "flag": "tanzania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 400,
+      "sport_id": 1,
+      "section_id": 63,
+      "slug": "zambia-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/zambia-premier-league.png",
+      "start_date": "2022-08-20 11:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Zambia",
+        "flag": "zambia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "40%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 63,
+        "sport_id": 1,
+        "slug": "zambia",
+        "name": "Zambia",
+        "priority": 0,
+        "flag": "zambia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 8,
+    "from": 351,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 400,
+    "total": 1753
+  }
+}

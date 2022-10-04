@@ -2,6 +2,7 @@ package gr.server.util;
 
 
 import gr.server.data.constants.ApiFootBallConstants;
+import gr.server.data.constants.ServerConstants;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -43,6 +44,10 @@ public class DateUtils {
 		Calendar instance = Calendar.getInstance();
 		instance.add(Calendar.DATE, -8);
 		return instance.getTime();
+	}
+	
+	public static String todayStr() {
+		return new SimpleDateFormat(ServerConstants.BASE_DATE_FORMAT).format(new Date());
 	}
 
 }

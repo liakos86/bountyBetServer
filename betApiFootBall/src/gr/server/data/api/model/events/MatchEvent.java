@@ -2,21 +2,23 @@ package gr.server.data.api.model.events;
 
 import java.util.Map;
 
+import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.league.Challenge;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
-import gr.server.data.api.model.league.Sport;
 import gr.server.data.api.model.league.Team;
+import gr.server.data.api.model.league.TimeDetails;
 
 public class MatchEvent {
 	
-	Sport sport; 
+	ChangeEvent changeEvent;
+	boolean markedForRemoval;
+	
+	Object sport; 
 	
 	Integer id;
 	Integer sport_id;
-	Integer home_team_id;
-	Integer away_team_id;
 	Integer league_id;
 	Integer challenge_id;
 	Integer season_id;
@@ -25,13 +27,20 @@ public class MatchEvent {
 	
 	String slug;
 	String name;
+	
+	String start_at;
 	String status;
 	String status_more;
-	String time_details;
+	String status_loc;
 	
+	String status_for_client;
+	TimeDetails time_details;
+	Object time_live; // can be string or int. e.g. 54 or 'Halhtime'.
+	
+	Integer home_team_id;
+	Integer away_team_id;
 	Team home_team;
 	Team away_team;
-	String start_at;
 	Integer priority;
 	Score home_score;
 	Score away_score;
@@ -60,10 +69,27 @@ public class MatchEvent {
 	Challenge challenge; 
 	Season season; 
 	Section section;
-	public Sport getSport() {
+	
+	public boolean homeGoalScored(Score homeScoreNew) {
+		if (this.home_score == null) {
+			return false;
+		}
+		
+		return this.home_score.scoreChanged(homeScoreNew);
+	}
+	
+	public boolean awayGoalScored(Score awayScoreNew) {
+		if (this.away_score == null) {
+			return false;
+		}
+		
+		return this.away_score.scoreChanged(awayScoreNew);
+	}
+	
+	public Object getSport() {
 		return sport;
 	}
-	public void setSport(Sport sport) {
+	public void setSport(Object sport) {
 		this.sport = sport;
 	}
 	public Integer getId() {
@@ -144,10 +170,10 @@ public class MatchEvent {
 	public void setStatus_more(String status_more) {
 		this.status_more = status_more;
 	}
-	public String getTime_details() {
+	public TimeDetails getTime_details() {
 		return time_details;
 	}
-	public void setTime_details(String time_details) {
+	public void setTime_details(TimeDetails time_details) {
 		this.time_details = time_details;
 	}
 	public Team getHome_team() {
@@ -337,6 +363,58 @@ public class MatchEvent {
 		this.section = section;
 	}
 	
+	public String getStatus_loc() {
+		return status_loc;
+	}
+
+	public void setStatus_loc(String status_loc) {
+		this.status_loc = status_loc;
+	}
 	
+	public Object getTime_live() {
+		return time_live;
+	}
+
+	public void setTime_live(Object time_live) {
+		this.time_live = time_live;
+	}
+
+	public String getStatus_for_client() {
+		return status_for_client;
+	}
+
+	public void setStatus_for_client(String status_for_client) {
+		this.status_for_client = status_for_client;
+	}
+
+	public ChangeEvent getChangeEvent() {
+		return changeEvent;
+	}
+
+	public void setChangeEvent(ChangeEvent changeEvent) {
+		this.changeEvent = changeEvent;
+	}
+
+	public boolean isMarkedForRemoval() {
+		return markedForRemoval;
+	}
+
+	public void setMarkedForRemoval(boolean markedForRemoval) {
+		this.markedForRemoval = markedForRemoval;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof MatchEvent)) {
+			return false;
+		}
+		MatchEvent other = (MatchEvent) obj;
+		return this.id.equals(other.id);
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.id * 37;
+	}
 	
 }

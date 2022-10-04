@@ -1,19 +1,19 @@
 package gr.server.application;
 
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
+import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.Team;
-import gr.server.data.user.model.objects.SettledEvent;
 import gr.server.impl.service.MyBetOddsServiceImpl;
+import gr.server.util.DateUtils;
 
 
 /**
@@ -27,11 +27,20 @@ public class RestApplication  extends Application
 //	 */
 //	private static MongoClient mongoClient;
 	
-	public static List<MatchEvent> EVENTS = new ArrayList<MatchEvent>();
+	public static Map<Integer, League> LEAGUES = new HashMap<>();
 	
-	public static List<Team> TEAMS_FOOTBALL = new ArrayList<Team>();
+	public static Map<Integer, MatchEvent> TODAY_EVENTS_PER_ID = new HashMap<>();
+
+	public static Map<String, ChangeEvent> LIVE_CHANGES_PER_EVENT = new HashMap<>();
 	
-	public static List<SettledEvent> SETTLED = new ArrayList<SettledEvent>();
+	public static Map<String, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = new HashMap<>();
+	
+	public static Map<League, Map<Integer, MatchEvent>> LIVE_EVENTS_PER_LEAGUE = new HashMap<>();
+	
+	static {
+		EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.todayStr(), new HashMap<>());
+	}
+	
 	
     @Override
     public Set<Class<?>> getClasses() {

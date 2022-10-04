@@ -1,6 +1,10 @@
 package gr.server.impl.service;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -16,6 +20,8 @@ import com.google.gson.reflect.TypeToken;
 
 import gr.server.application.RestApplication;
 import gr.server.application.exception.UserExistsException;
+import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.League;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.user.model.objects.User;
@@ -23,6 +29,7 @@ import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPrediction;
 import gr.server.def.service.MyBetOddsService;
 import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.util.DateUtils;
 
 
 @Path("/betServer")
@@ -103,9 +110,68 @@ implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
 	public String getLeagues(){
-		System.out.println("SERVING LEAGUES");
-//		return  new Gson().toJson(new MongoClientHelperImpl().getMongoLeagues()); 
-		return  new Gson().toJson(RestApplication.EVENTS);
+		System.out.println("SERVING LEAGUES FOR TODAY");
+		List<League> todayLeagues = new ArrayList<>();
+		
+		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
+		for (Map.Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
+			League league = entry.getKey();
+			if (league == null) {
+				continue;
+			}
+			
+			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
+			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
+			league.setLiveMatchEvents(events);
+			events.forEach(e->e.setLeague(null));
+			todayLeagues.add(league);
+		}
+		
+		for (League l : todayLeagues) {
+			League league = RestApplication.LEAGUES.get(l.getId());
+			if (league != null) {
+				System.out.println("Priority is " + l.getPriority() + " and will be " + league.getPriority());
+				l.setPriority(league.getPriority());
+				continue;
+			}
+			
+			System.out.println("NO league for " + l.getName());
+		}
+		
+		Collections.sort(todayLeagues);
+		return  new Gson().toJson(todayLeagues);
+	
+	}
+	
+	@Override
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/getLive")
+	public String getLive(){
+		List<League> leagues = new ArrayList<>();
+		for (Entry<League, Map<Integer, MatchEvent>> entry : RestApplication.LIVE_EVENTS_PER_LEAGUE.entrySet()) {
+			League league = entry.getKey();
+			if (league == null) {
+				continue;
+			}
+			
+			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
+			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
+			league.setLiveMatchEvents(events);
+			events.forEach(e->fixEvent(e));
+			leagues.add(league);
+		}
+		
+		return  new Gson().toJson(leagues);
+	}
+
+	@Override
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/getLiveUpdates")
+	public String getLiveUpdates(){
+		System.out.println("SERVING GOALS");
+		return  new Gson().toJson(RestApplication.LIVE_CHANGES_PER_EVENT);
 	
 	}
 	
@@ -116,6 +182,13 @@ implements MyBetOddsService {
 	public String getLeaderBoard(){
 		return  new Gson().toJson(new MongoClientHelperImpl().retrieveLeaderBoard()); 
 	
+	}
+
+	private void fixEvent(MatchEvent e) {
+		e.setLeague(null);
+		if (e.getStatus_for_client() == null) {
+			e.setStatus_for_client(e.getStatus());
+		}
 	}
 
 }

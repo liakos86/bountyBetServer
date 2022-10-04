@@ -1,0 +1,2889 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "sport_id": 1,
+      "section_id": 1,
+      "slug": "northern-ireland-premiership",
+      "name_translations": {
+        "en": "Premiership",
+        "ru": "Премьершип"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/northern-ireland-premiership.png",
+      "start_date": "2022-08-12 18:45:00",
+      "end_date": "2023-06-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Northern Ireland",
+        "flag": "northern-ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 1,
+        "sport_id": 1,
+        "slug": "northern-ireland",
+        "name": "Northern Ireland",
+        "priority": 0,
+        "flag": "northern-ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 2,
+      "sport_id": 1,
+      "section_id": 1,
+      "slug": "northern-ireland-league-cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Кубок лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/northern-ireland-league-cup.png",
+      "start_date": "2022-09-13 18:00:00",
+      "end_date": "2023-04-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Northern Ireland",
+        "flag": "northern-ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.29"
+        },
+        {
+          "name": "Home team wins",
+          "value": "65%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "15%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 1,
+        "sport_id": 1,
+        "slug": "northern-ireland",
+        "name": "Northern Ireland",
+        "priority": 0,
+        "flag": "northern-ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 3,
+      "sport_id": 1,
+      "section_id": 1,
+      "slug": "northern-ireland-championship-1",
+      "name_translations": {
+        "en": "Championship 1",
+        "ru": "Лига 1, Чемпионшип"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/northern-ireland-championship-1.png",
+      "start_date": "2022-08-13 14:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Northern Ireland",
+        "flag": "northern-ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "32"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 1,
+        "sport_id": 1,
+        "slug": "northern-ireland",
+        "name": "Northern Ireland",
+        "priority": 0,
+        "flag": "northern-ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 4,
+      "sport_id": 1,
+      "section_id": 1,
+      "slug": "northern-ireland-irish-cup",
+      "name_translations": {
+        "en": "Irish Cup",
+        "ru": "Кубок Северной Ирландии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/northern-ireland-irish-cup.png",
+      "start_date": "2022-01-07 19:45:00",
+      "end_date": "2022-05-08 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Northern Ireland",
+        "flag": "northern-ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.19"
+        }
+      ],
+      "most_count": 43,
+      "section": {
+        "id": 1,
+        "sport_id": 1,
+        "slug": "northern-ireland",
+        "name": "Northern Ireland",
+        "priority": 0,
+        "flag": "northern-ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 5,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-cymru-premier",
+      "name_translations": {
+        "en": "Cymru Premier",
+        "ru": "Премьер-лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/wales-cymru-premier.png",
+      "start_date": "2022-08-12 18:45:00",
+      "end_date": "2023-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Wales",
+        "flag": "wales"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "32"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.94"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.11"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 6,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-league-cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Кубок валлийской лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/wales-league-cup.png",
+      "start_date": "2022-07-22 18:30:00",
+      "end_date": "2023-03-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Wales",
+        "flag": "wales"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 7,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-faw-welsh-cup",
+      "name_translations": {
+        "en": "FAW Welsh Cup",
+        "ru": "Кубок Уэльса"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/wales-faw-welsh-cup.png",
+      "start_date": "2022-09-17 13:00:00",
+      "end_date": "2023-04-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "7"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.24"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": 23,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-welsh-league-division-one",
+      "name_translations": {
+        "en": "Welsh League Division One",
+        "ru": "Первая лига Уэльса"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2018-08-10 18:30:00",
+      "end_date": "2019-05-11 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-huws-gray-alliance",
+      "name_translations": {
+        "en": "Huws Gray Alliance",
+        "ru": "Cymru Alliance"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2018-08-10 18:30:00",
+      "end_date": "2019-04-28 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Wales",
+        "flag": "wales"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.18"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-cymru-north",
+      "name_translations": {
+        "en": "Cymru North",
+        "ru": "Cymru Север"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/wales-cymru-north.png",
+      "start_date": "2022-07-29 18:30:00",
+      "end_date": "2023-04-10 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Wales",
+        "flag": "wales"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 11,
+      "sport_id": 1,
+      "section_id": 2,
+      "slug": "wales-cymru-south",
+      "name_translations": {
+        "en": "Cymru South",
+        "ru": "Cymru Юг"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/wales-cymru-south.png",
+      "start_date": "2022-07-29 18:30:00",
+      "end_date": "2023-04-10 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Wales",
+        "flag": "wales"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 2,
+        "sport_id": 1,
+        "slug": "wales",
+        "name": "Wales",
+        "priority": 0,
+        "flag": "wales"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 12,
+      "sport_id": 1,
+      "section_id": 3,
+      "slug": "morocco-botola",
+      "name_translations": {
+        "en": "Botola",
+        "ru": "Чемпионат Марокко"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/morocco-botola.png",
+      "start_date": "2021-09-10 18:15:00",
+      "end_date": "2022-07-10 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Morocco",
+        "flag": "morocco"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.58"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 20,
+      "section": {
+        "id": 3,
+        "sport_id": 1,
+        "slug": "morocco",
+        "name": "Morocco",
+        "priority": 0,
+        "flag": "morocco"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 13,
+      "sport_id": 1,
+      "section_id": 3,
+      "slug": "morocco-morocco-cup",
+      "name_translations": {
+        "en": "Morocco Cup",
+        "ru": "Кубок Трона Марокко"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/morocco-morocco-cup.png",
+      "start_date": "2022-03-11 19:30:00",
+      "end_date": "2022-08-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Morocco",
+        "flag": "morocco"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "40%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.48"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 3,
+        "sport_id": 1,
+        "slug": "morocco",
+        "name": "Morocco",
+        "priority": 0,
+        "flag": "morocco"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 14,
+      "sport_id": 1,
+      "section_id": 3,
+      "slug": "morocco-botola-2",
+      "name_translations": {
+        "en": "Botola 2",
+        "ru": "Второй дивизион (Ботола 2)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/morocco-botola-2.png",
+      "start_date": "2021-09-10 16:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Morocco",
+        "flag": "morocco"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.08"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.10"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 3,
+        "sport_id": 1,
+        "slug": "morocco",
+        "name": "Morocco",
+        "priority": 0,
+        "flag": "morocco"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 15,
+      "sport_id": 1,
+      "section_id": 4,
+      "slug": "armenia-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/armenia-premier-league.png",
+      "start_date": "2022-07-29 13:45:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Armenia",
+        "flag": "armenia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.24"
+        },
+        {
+          "name": "Home team wins",
+          "value": "19%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.24"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 4,
+        "sport_id": 1,
+        "slug": "armenia",
+        "name": "Armenia",
+        "priority": 0,
+        "flag": "armenia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 16,
+      "sport_id": 1,
+      "section_id": 4,
+      "slug": "armenia-first-league",
+      "name_translations": {
+        "en": "First League",
+        "ru": "Первая Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/armenia-first-league.png",
+      "start_date": "2022-08-03 13:45:00",
+      "end_date": "2023-05-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Armenia",
+        "flag": "armenia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "28"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "5%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 4,
+        "sport_id": 1,
+        "slug": "armenia",
+        "name": "Armenia",
+        "priority": 0,
+        "flag": "armenia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 17,
+      "sport_id": 1,
+      "section_id": 4,
+      "slug": "armenia-armenian-cup",
+      "name_translations": {
+        "en": "Armenian Cup",
+        "ru": "Кубок Армении"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/armenia-armenian-cup.png",
+      "start_date": "2021-09-15 11:30:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Armenia",
+        "flag": "armenia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.18"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 4,
+        "sport_id": 1,
+        "slug": "armenia",
+        "name": "Armenia",
+        "priority": 0,
+        "flag": "armenia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 18,
+      "sport_id": 1,
+      "section_id": 4,
+      "slug": "armenia-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/armenia-super-cup.png",
+      "start_date": "2021-09-24 14:30:00",
+      "end_date": "2021-09-24 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Armenia",
+        "flag": "armenia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 4,
+        "sport_id": 1,
+        "slug": "armenia",
+        "name": "Armenia",
+        "priority": 0,
+        "flag": "armenia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 19,
+      "sport_id": 1,
+      "section_id": 5,
+      "slug": "costa-rica-primera-division-apertura",
+      "name_translations": {
+        "en": "Primera Division, Apertura",
+        "ru": "Примера Дивизион, Апертура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/costa-rica-primera-division-apertura.png",
+      "start_date": "2022-07-19 21:00:00",
+      "end_date": "2022-11-07 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.93"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.33"
+        }
+      ],
+      "most_count": 35,
+      "section": {
+        "id": 5,
+        "sport_id": 1,
+        "slug": "costa-rica",
+        "name": "Costa Rica",
+        "priority": 0,
+        "flag": "costa-rica"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 20,
+      "sport_id": 1,
+      "section_id": 5,
+      "slug": "costa-rica-primera-division-clausura",
+      "name_translations": {
+        "en": "Primera Division, Clausura",
+        "ru": "Примера Дивизион, Клаусура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/costa-rica-primera-division-clausura.png",
+      "start_date": "2022-01-11 21:00:00",
+      "end_date": "2022-06-14 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Costa Rica",
+        "flag": "costa-rica"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.68"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "21%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.03"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 34,
+      "section": {
+        "id": 5,
+        "sport_id": 1,
+        "slug": "costa-rica",
+        "name": "Costa Rica",
+        "priority": 0,
+        "flag": "costa-rica"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 21,
+      "sport_id": 1,
+      "section_id": 5,
+      "slug": "costa-rica-liga-de-ascenso-apertura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Apertura",
+        "ru": "Лига Де Аценсо, Апертура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso-apertura.png",
+      "start_date": "2022-07-29 21:00:00",
+      "end_date": "2022-12-19 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.07"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.76"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.17"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 5,
+        "sport_id": 1,
+        "slug": "costa-rica",
+        "name": "Costa Rica",
+        "priority": 0,
+        "flag": "costa-rica"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 22,
+      "sport_id": 1,
+      "section_id": 5,
+      "slug": "costa-rica-liga-de-ascenso-clausura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Clausura",
+        "ru": "Лига Де Аценсо, Клаусура"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso-clausura.png",
+      "start_date": "2022-01-15 20:00:00",
+      "end_date": "2022-05-23 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Costa Rica",
+        "flag": "costa-rica"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.93"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.17"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 5,
+        "sport_id": 1,
+        "slug": "costa-rica",
+        "name": "Costa Rica",
+        "priority": 0,
+        "flag": "costa-rica"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 23,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-national-league-south",
+      "name_translations": {
+        "en": "National League South",
+        "ru": "Национальная Лига Юг"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-national-league-south.png",
+      "start_date": "2022-08-06 14:00:00",
+      "end_date": "2023-05-14 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "6"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.83"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 24,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-national-league-north",
+      "name_translations": {
+        "en": "National League North",
+        "ru": "Национальная Лига Север"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-national-league-north.png",
+      "start_date": "2022-08-06 14:00:00",
+      "end_date": "2023-05-14 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "6"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.35"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 25,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-fa-trophy",
+      "name_translations": {
+        "en": "FA Trophy",
+        "ru": "FA Trophy"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-fa-trophy.png",
+      "start_date": "2021-11-13 15:00:00",
+      "end_date": "2022-05-22 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "England",
+        "flag": "england"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 26,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-northern-premier-league-premier-division",
+      "name_translations": {
+        "en": "Northern Premier League, Premier Division",
+        "ru": "Северная Премьер-Лига, Премьер Дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-northern-premier-league-premier-division.png",
+      "start_date": "2022-08-13 14:00:00",
+      "end_date": "2023-05-14 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "7"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "46"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 27,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-southern-football-league-premier-division",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division",
+        "ru": "Южная Футбольная Лига, Премьер Дивизион"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2017-08-12 14:00:00",
+      "end_date": "2018-05-28 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "7"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "46"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.39"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 28,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-premier-league-2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-premier-league-2.png",
+      "start_date": "2022-08-05 14:00:00",
+      "end_date": "2023-05-01 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "England",
+        "flag": "england"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 29,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-isthmian-football-league-premier-division",
+      "name_translations": {
+        "en": "Isthmian Football League, Premier Division",
+        "ru": "Истмианская Футбольная Лига, Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-isthmian-football-league-premier-division.png",
+      "start_date": "2022-08-13 14:00:00",
+      "end_date": "2023-05-07 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "7"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.93"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 30,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-premier-league-cup",
+      "name_translations": {
+        "en": "Premier League Cup",
+        "ru": "Премьер-Лиги По Футболу"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-premier-league-cup.png",
+      "start_date": "2022-03-09 18:00:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "55%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 31,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-fa-trophy-qualification",
+      "name_translations": {
+        "en": "FA Trophy, Qualification",
+        "ru": "FA Trophy, Квалификация"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-fa-trophy-qualification.png",
+      "start_date": "2021-10-09 14:00:00",
+      "end_date": "2021-11-11 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.21"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 32,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-fa-womens-super-league-2",
+      "name_translations": {
+        "en": "FA Womens Super League 2",
+        "ru": "FA Женская Суперлига 2"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 33,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-southern-football-league-premier-division-south",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division South",
+        "ru": "Южная Футбольная Лига, Премьер Дивизион Юг"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-southern-football-league-premier-division-south.png",
+      "start_date": "2022-08-06 14:00:00",
+      "end_date": "2023-05-14 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "7"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.31"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 34,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-southern-football-league-premier-division-central",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division Central",
+        "ru": "Южная Футбольная Лига, Премьер-Лига Центральный"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-southern-football-league-premier-division-central.png",
+      "start_date": "2022-08-06 14:00:00",
+      "end_date": "2023-05-14 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "England",
+        "flag": "england"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "7"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.22"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 35,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-fa-wsl-continental-cup-women",
+      "name_translations": {
+        "en": "FA WSL Continental Cup, Women",
+        "ru": "Континентальный Кубок WSL, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-fa-wsl-continental-cup-women.png",
+      "start_date": "2022-01-19 19:00:00",
+      "end_date": "2022-03-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "England",
+        "flag": "england"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.29"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "1%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 36,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-professional-development-league",
+      "name_translations": {
+        "en": "Professional Development League",
+        "ru": "Профессионального Развития Футбола"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/england-amateur-professional-development-league.png",
+      "start_date": "2022-08-08 10:00:00",
+      "end_date": "2023-05-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "England",
+        "flag": "england"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 37,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-regionalliga-nord",
+      "name_translations": {
+        "en": "Regionalliga Nord",
+        "ru": "Регионаллига Норд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-regionalliga-nord.png",
+      "start_date": "2022-07-30 11:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.34"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.98"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 38,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-regionalliga-south",
+      "name_translations": {
+        "en": "Regionalliga South",
+        "ru": "Регионаллига Юг"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2011-08-05 17:00:00",
+      "end_date": "2012-05-21 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.99"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 39,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-oberliga-baden-wuerttemberg",
+      "name_translations": {
+        "en": "Oberliga Baden Wuerttemberg",
+        "ru": "Оберлига Баден Вюртемберг"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-baden-wuerttemberg.png",
+      "start_date": "2022-08-05 17:00:00",
+      "end_date": "2023-05-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "40"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.30"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.28"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 40,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-bayernliga",
+      "name_translations": {
+        "en": "Bayernliga",
+        "ru": "Бавария"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2011-07-22 17:00:00",
+      "end_date": "2012-06-08 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.11"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 41,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-oberliga-nofv-nord",
+      "name_translations": {
+        "en": "Oberliga NOFV Nord",
+        "ru": "Оберлига НОФВ Норд"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-nofv-nord.png",
+      "start_date": "2022-08-05 17:45:00",
+      "end_date": "2023-06-11 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.47"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.17"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 42,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-oberliga-westfalen",
+      "name_translations": {
+        "en": "Oberliga Westfalen",
+        "ru": "Оберлига Вестфалия"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-westfalen.png",
+      "start_date": "2022-08-13 15:00:00",
+      "end_date": "2023-05-29 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "65%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.35"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 43,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-oberliga-nofv-sud",
+      "name_translations": {
+        "en": "Oberliga NOFV Süd",
+        "ru": "Оберлига NOFV Süd"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-nofv-sud.png",
+      "start_date": "2022-08-05 17:00:00",
+      "end_date": "2023-06-11 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 44,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-hessenliga",
+      "name_translations": {
+        "en": "Hessenliga",
+        "ru": "Гессенлига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-hessenliga.png",
+      "start_date": "2022-07-29 17:00:00",
+      "end_date": "2023-05-18 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "32"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.84"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 45,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-oberliga-southwest",
+      "name_translations": {
+        "en": "Oberliga Southwest",
+        "ru": "Оберлига Юго-Запад"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2011-08-05 17:00:00",
+      "end_date": "2012-05-28 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 46,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-regionalliga-west",
+      "name_translations": {
+        "en": "Regionalliga West",
+        "ru": "Регионаллига Запад"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-regionalliga-west.png",
+      "start_date": "2022-07-22 17:30:00",
+      "end_date": "2023-05-13 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.98"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.31"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 47,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-nrw-liga",
+      "name_translations": {
+        "en": "NRW-Liga",
+        "ru": "Nrw-Лига"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2011-08-06 13:00:00",
+      "end_date": "2012-06-10 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.39"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 48,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-bremen-liga",
+      "name_translations": {
+        "en": "Bremen-Liga",
+        "ru": "Бремен-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-bremen-liga.png",
+      "start_date": "2022-08-12 17:00:00",
+      "end_date": "2023-05-14 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.38"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 49,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-oberliga-hamburg",
+      "name_translations": {
+        "en": "Oberliga Hamburg",
+        "ru": "Оберлига Гамбург"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-hamburg.png",
+      "start_date": "2022-07-29 17:00:00",
+      "end_date": "2023-05-07 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.63"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 50,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-schleswig-holstein-liga",
+      "name_translations": {
+        "en": "Schleswig-Holstein-Liga",
+        "ru": "Шлезвиг-Гольштейн-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/germany-amateur-schleswig-holstein-liga.png",
+      "start_date": "2022-07-29 17:00:00",
+      "end_date": "2023-05-20 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.84"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.24"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 34,
+    "per_page": 50,
+    "to": 50,
+    "total": 1695
+  }
+}

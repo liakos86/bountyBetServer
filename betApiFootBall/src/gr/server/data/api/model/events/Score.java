@@ -52,4 +52,9 @@ public class Score {
 		this.normal_time = normal_time;
 	}
 	
+	
+	public boolean scoreChanged(Score score) {
+		return ! (score.current == this.current && score.display == this.display);
+	}
+	
 }
