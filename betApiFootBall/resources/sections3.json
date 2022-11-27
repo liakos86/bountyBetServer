@@ -1,0 +1,406 @@
+{
+  "data": [
+    {
+      "id": 468,
+      "sport_id": 1,
+      "slug": "laos",
+      "name": "Laos",
+      "name_translations": {
+        "en": "Laos"
+      },
+      "priority": null,
+      "flag": "laos"
+    },
+    {
+      "id": 473,
+      "sport_id": 1,
+      "slug": "namibia",
+      "name": "Namibia",
+      "name_translations": {
+        "en": "Namibia"
+      },
+      "priority": null,
+      "flag": "namibia"
+    },
+    {
+      "id": 474,
+      "sport_id": 1,
+      "slug": "grenada",
+      "name": "Grenada",
+      "name_translations": {
+        "en": "Grenada"
+      },
+      "priority": 0,
+      "flag": "grenada"
+    },
+    {
+      "id": 475,
+      "sport_id": 1,
+      "slug": "sierra-leone",
+      "name": "Sierra Leone",
+      "name_translations": {
+        "en": "Sierra Leone"
+      },
+      "priority": null,
+      "flag": "sierra-leone"
+    },
+    {
+      "id": 476,
+      "sport_id": 1,
+      "slug": "lesotho",
+      "name": "Lesotho",
+      "name_translations": {
+        "en": "Lesotho"
+      },
+      "priority": null,
+      "flag": "lesotho"
+    },
+    {
+      "id": 477,
+      "sport_id": 1,
+      "slug": "samoa",
+      "name": "Samoa",
+      "name_translations": {
+        "en": "Samoa"
+      },
+      "priority": null,
+      "flag": "samoa"
+    },
+    {
+      "id": 481,
+      "sport_id": 1,
+      "slug": "russia-amateur",
+      "name": "Russia Amateur",
+      "name_translations": {
+        "en": "Russia Amateur"
+      },
+      "priority": 0,
+      "flag": "russia"
+    },
+    {
+      "id": 484,
+      "sport_id": 1,
+      "slug": "new-caledonia",
+      "name": "New Caledonia",
+      "name_translations": {
+        "en": "New Caledonia"
+      },
+      "priority": null,
+      "flag": "new-caledonia"
+    },
+    {
+      "id": 485,
+      "sport_id": 1,
+      "slug": "brunei",
+      "name": "Brunei",
+      "name_translations": {
+        "en": "Brunei"
+      },
+      "priority": null,
+      "flag": "brunei"
+    },
+    {
+      "id": 486,
+      "sport_id": 1,
+      "slug": "grenada-2",
+      "name": "Grenada",
+      "name_translations": {
+        "en": "Grenada"
+      },
+      "priority": null,
+      "flag": "grenada"
+    },
+    {
+      "id": 487,
+      "sport_id": 1,
+      "slug": "international-clubs",
+      "name": "International Clubs",
+      "name_translations": {
+        "en": "International Clubs"
+      },
+      "priority": null,
+      "flag": "international"
+    },
+    {
+      "id": 488,
+      "sport_id": 1,
+      "slug": "belgium-amateur",
+      "name": "Belgium Amateur",
+      "name_translations": {
+        "en": "Belgium Amateur"
+      },
+      "priority": 0,
+      "flag": "belgium"
+    },
+    {
+      "id": 489,
+      "sport_id": 1,
+      "slug": "poland-amateur",
+      "name": "Poland Amateur",
+      "name_translations": {
+        "en": "Poland Amateur"
+      },
+      "priority": 0,
+      "flag": "poland"
+    },
+    {
+      "id": 493,
+      "sport_id": 1,
+      "slug": "slovenia-amateur",
+      "name": "Slovenia Amateur",
+      "name_translations": {
+        "en": "Slovenia Amateur"
+      },
+      "priority": 0,
+      "flag": "slovenia"
+    },
+    {
+      "id": 499,
+      "sport_id": 1,
+      "slug": "greece-amateur",
+      "name": "Greece Amateur",
+      "name_translations": {
+        "en": "Greece Amateur"
+      },
+      "priority": 0,
+      "flag": "greece"
+    },
+    {
+      "id": 500,
+      "sport_id": 1,
+      "slug": "france-amateur",
+      "name": "France Amateur",
+      "name_translations": {
+        "en": "France Amateur"
+      },
+      "priority": 0,
+      "flag": "france"
+    },
+    {
+      "id": 501,
+      "sport_id": 1,
+      "slug": "timor-leste",
+      "name": "Timor Leste",
+      "name_translations": {
+        "en": "Timor Leste"
+      },
+      "priority": null,
+      "flag": "timor-leste"
+    },
+    {
+      "id": 502,
+      "sport_id": 1,
+      "slug": "vanuatu",
+      "name": "Vanuatu",
+      "name_translations": {
+        "en": "Vanuatu"
+      },
+      "priority": null,
+      "flag": "vanuatu"
+    },
+    {
+      "id": 505,
+      "sport_id": 1,
+      "slug": "saotomeandprincipe",
+      "name": "SaoTomeandPrincipe",
+      "name_translations": {
+        "en": "SaoTomeandPrincipe"
+      },
+      "priority": 0,
+      "flag": "saotomeandprincipe"
+    },
+    {
+      "id": 506,
+      "sport_id": 1,
+      "slug": "montenegro-amateur",
+      "name": "Montenegro Amateur",
+      "name_translations": {
+        "en": "Montenegro Amateur"
+      },
+      "priority": 0,
+      "flag": "montenegro"
+    },
+    {
+      "id": 507,
+      "sport_id": 1,
+      "slug": "japan-amateur",
+      "name": "Japan Amateur",
+      "name_translations": {
+        "en": "Japan Amateur"
+      },
+      "priority": null,
+      "flag": "japan"
+    },
+    {
+      "id": 509,
+      "sport_id": 1,
+      "slug": "martinique",
+      "name": "Martinique",
+      "name_translations": {
+        "en": "Martinique"
+      },
+      "priority": null,
+      "flag": "martinique"
+    },
+    {
+      "id": 512,
+      "sport_id": 1,
+      "slug": "st-lucia",
+      "name": "St Lucia",
+      "name_translations": {
+        "en": "St Lucia"
+      },
+      "priority": null,
+      "flag": "saint-lucia"
+    },
+    {
+      "id": 513,
+      "sport_id": 1,
+      "slug": "comoros",
+      "name": "Comoros",
+      "name_translations": {
+        "en": "Comoros"
+      },
+      "priority": null,
+      "flag": "comoros"
+    },
+    {
+      "id": 517,
+      "sport_id": 1,
+      "slug": "seychelles",
+      "name": "Seychelles",
+      "name_translations": {
+        "en": "Seychelles"
+      },
+      "priority": null,
+      "flag": "seychelles"
+    },
+    {
+      "id": 518,
+      "sport_id": 1,
+      "slug": "morocco-amateur",
+      "name": "Morocco Amateur",
+      "name_translations": {
+        "en": "Morocco Amateur"
+      },
+      "priority": 0,
+      "flag": "morocco"
+    },
+    {
+      "id": 520,
+      "sport_id": 1,
+      "slug": "swaziland",
+      "name": "Swaziland",
+      "name_translations": {
+        "en": "Swaziland"
+      },
+      "priority": null,
+      "flag": "swaziland"
+    },
+    {
+      "id": 525,
+      "sport_id": 1,
+      "slug": "djibouti",
+      "name": "Djibouti",
+      "name_translations": {
+        "en": "Djibouti"
+      },
+      "priority": null,
+      "flag": "djibouti"
+    },
+    {
+      "id": 526,
+      "sport_id": 1,
+      "slug": "suriname",
+      "name": "Suriname",
+      "name_translations": {
+        "en": "Suriname"
+      },
+      "priority": null,
+      "flag": "surinam"
+    },
+    {
+      "id": 530,
+      "sport_id": 1,
+      "slug": "cape-verde",
+      "name": "Cape Verde",
+      "name_translations": {
+        "en": "Cape Verde"
+      },
+      "priority": 0,
+      "flag": "cape-verde"
+    },
+    {
+      "id": 533,
+      "sport_id": 1,
+      "slug": "chile-amateur",
+      "name": "Chile Amateur",
+      "name_translations": {
+        "en": "Chile Amateur"
+      },
+      "priority": 0,
+      "flag": "chile"
+    },
+    {
+      "id": 535,
+      "sport_id": 1,
+      "slug": "gabon",
+      "name": "Gabon",
+      "name_translations": {
+        "en": "Gabon"
+      },
+      "priority": 0,
+      "flag": "gabon"
+    },
+    {
+      "id": 536,
+      "sport_id": 1,
+      "slug": "ukraine-amateur",
+      "name": "Ukraine Amateur",
+      "name_translations": {
+        "en": "Ukraine Amateur"
+      },
+      "priority": null,
+      "flag": "ukraine"
+    },
+    {
+      "id": 537,
+      "sport_id": 1,
+      "slug": "switzerland-amateur",
+      "name": "Switzerland Amateur",
+      "name_translations": {
+        "en": "Switzerland Amateur"
+      },
+      "priority": null,
+      "flag": "switzerland"
+    },
+    {
+      "id": 538,
+      "sport_id": 1,
+      "slug": "brazil-amateur",
+      "name": "Brazil Amateur",
+      "name_translations": {
+        "en": "Brazil Amateur"
+      },
+      "priority": null,
+      "flag": "brazil"
+    },
+    {
+      "id": 540,
+      "sport_id": 1,
+      "slug": "scotland-amateur",
+      "name": "Scotland Amateur",
+      "name_translations": {
+        "en": "Scotland Amateur"
+      },
+      "priority": 0,
+      "flag": "scotland"
+    }
+  ],
+  "meta": {
+    "current_page": 3,
+    "from": 201,
+    "per_page": 100,
+    "to": 236
+  }
+}

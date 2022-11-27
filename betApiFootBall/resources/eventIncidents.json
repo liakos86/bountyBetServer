@@ -1,0 +1,749 @@
+{
+  "data": [
+    {
+      "id": 59649819,
+      "event_id": 1456251,
+      "incident_type": "period",
+      "time": 45,
+      "time_over": null,
+      "order": 2,
+      "text": "HT 0 - 0",
+      "scoring_team": null,
+      "player_team": null,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": null,
+      "player_two_in": null
+    },
+    {
+      "id": 59650876,
+      "event_id": 1456251,
+      "incident_type": "card",
+      "time": 44,
+      "time_over": null,
+      "order": 0,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": "Yellow",
+      "is_missed": null,
+      "reason": "Foul",
+      "length": null,
+      "player": {
+        "id": 50330,
+        "sport_id": 1,
+        "slug": "bernard",
+        "name": "Bernard",
+        "name_translations": {
+          "en": "Bernard"
+        },
+        "name_short": "Bernard",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/bernard.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": null
+    },
+    {
+      "id": 59650877,
+      "event_id": 1456251,
+      "incident_type": "card",
+      "time": 45,
+      "time_over": null,
+      "order": 1,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": "Yellow",
+      "is_missed": null,
+      "reason": "Argument",
+      "length": null,
+      "player": {
+        "id": 31991,
+        "sport_id": 1,
+        "slug": "sebastien-mladen",
+        "name": "Sebastian Mladen",
+        "name_translations": {
+          "en": "Sebastien Mladen"
+        },
+        "name_short": "S. Mladen",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/sebastien-mladen.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": null
+    },
+    {
+      "id": 59651086,
+      "event_id": 1456251,
+      "incident_type": "period",
+      "time": 90,
+      "time_over": null,
+      "order": 19,
+      "text": "FT 0 - 1",
+      "scoring_team": null,
+      "player_team": null,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": null,
+      "player_two_in": null
+    },
+    {
+      "id": 59651873,
+      "event_id": 1456251,
+      "incident_type": "card",
+      "time": 60,
+      "time_over": null,
+      "order": 3,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": "Yellow",
+      "is_missed": null,
+      "reason": "Foul",
+      "length": null,
+      "player": {
+        "id": 80492,
+        "sport_id": 1,
+        "slug": "deybi-flores",
+        "name": "Deybi Flores",
+        "name_translations": {
+          "en": "Deybi Flores"
+        },
+        "name_short": "D. Flores",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/deybi-flores.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": null
+    },
+    {
+      "id": 59651874,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 61,
+      "time_over": null,
+      "order": 4,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 68329,
+        "sport_id": 1,
+        "slug": "nadrey-dago",
+        "name": "Nadrey Dago",
+        "name_translations": {
+          "en": "Nadrey Dago"
+        },
+        "name_short": "N. Dago",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/nadrey-dago.png",
+        "position": "F",
+        "position_name": "Forward"
+      },
+      "player_two_in": {
+        "id": 44664,
+        "sport_id": 1,
+        "slug": "levan-shengelia",
+        "name": "Levan Shengelia",
+        "name_translations": {
+          "en": "Levan Shengelia"
+        },
+        "name_short": "L. Shengelia",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/levan-shengelia.png",
+        "position": "F",
+        "position_name": "Forward"
+      }
+    },
+    {
+      "id": 59652686,
+      "event_id": 1456251,
+      "incident_type": "card",
+      "time": 71,
+      "time_over": null,
+      "order": 5,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": "Yellow",
+      "is_missed": null,
+      "reason": "Foul",
+      "length": null,
+      "player": {
+        "id": 504,
+        "sport_id": 1,
+        "slug": "ruben-perez",
+        "name": "Rubén Pérez",
+        "name_translations": {
+          "en": "Rubén Pérez"
+        },
+        "name_short": "R. Pérez",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/ruben-perez.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": null
+    },
+    {
+      "id": 59652975,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 76,
+      "time_over": null,
+      "order": 8,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 79520,
+        "sport_id": 1,
+        "slug": "diamantis-chouchoumis",
+        "name": "Diamantis Chouchoumis",
+        "name_translations": {
+          "en": "Diamantis Chouchoumis"
+        },
+        "name_short": "D. Chouchoumis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/diamantis-chouchoumis.png",
+        "position": "D",
+        "position_name": "Defender"
+      },
+      "player_two_in": {
+        "id": 79159,
+        "sport_id": 1,
+        "slug": "ilias-chatzitheodoridis",
+        "name": "Ilias Chatzitheodoridis",
+        "name_translations": {
+          "en": "Ilias Chatzitheodoridis"
+        },
+        "name_short": "I. Chatzitheodoridis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/ilias-chatzitheodoridis.png",
+        "position": "D",
+        "position_name": "Defender"
+      }
+    },
+    {
+      "id": 59653284,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 76,
+      "time_over": null,
+      "order": 7,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 520285,
+        "sport_id": 1,
+        "slug": "johan-martensson-2",
+        "name": "Johan Martensson",
+        "name_translations": {
+          "en": "Johan Martensson"
+        },
+        "name_short": "J. Martensson",
+        "has_photo": false,
+        "photo": "https://tipsscore.com/resb/no-photo.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": {
+        "id": 31991,
+        "sport_id": 1,
+        "slug": "sebastien-mladen",
+        "name": "Sebastian Mladen",
+        "name_translations": {
+          "en": "Sebastien Mladen"
+        },
+        "name_short": "S. Mladen",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/sebastien-mladen.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      }
+    },
+    {
+      "id": 59653285,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 76,
+      "time_over": null,
+      "order": 9,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 416450,
+        "sport_id": 1,
+        "slug": "giorgos-bagiannidis",
+        "name": "Giorgos Vagiannidis",
+        "name_translations": {
+          "en": "Giorgos Bagiannidis"
+        },
+        "name_short": "G. Vagiannidis",
+        "has_photo": false,
+        "photo": "https://tipsscore.com/resb/no-photo.png",
+        "position": "D",
+        "position_name": "Defender"
+      },
+      "player_two_in": {
+        "id": 79139,
+        "sport_id": 1,
+        "slug": "dimitrios-kourbelis",
+        "name": "Dimitrios Kourbelis",
+        "name_translations": {
+          "en": "Dimitrios Kourbelis"
+        },
+        "name_short": "D. Kourbelis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/dimitrios-kourbelis.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      }
+    },
+    {
+      "id": 59653286,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 76,
+      "time_over": null,
+      "order": 10,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 79480,
+        "sport_id": 1,
+        "slug": "fotis-ioannidis",
+        "name": "Fotis Ioannidis",
+        "name_translations": {
+          "en": "Fotis Ioannidis"
+        },
+        "name_short": "F. Ioannidis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/fotis-ioannidis.png",
+        "position": "F",
+        "position_name": "Forward"
+      },
+      "player_two_in": {
+        "id": 47389,
+        "sport_id": 1,
+        "slug": "benjamin-verbic",
+        "name": "Benjamin Verbič",
+        "name_translations": {
+          "en": "Benjamin Verbič"
+        },
+        "name_short": "B. Verbič",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/benjamin-verbic.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      }
+    },
+    {
+      "id": 59653287,
+      "event_id": 1456251,
+      "incident_type": "goal",
+      "time": 78,
+      "time_over": null,
+      "order": 11,
+      "text": null,
+      "scoring_team": 2,
+      "player_team": 2,
+      "home_score": 0,
+      "away_score": 1,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 79480,
+        "sport_id": 1,
+        "slug": "fotis-ioannidis",
+        "name": "Fotis Ioannidis",
+        "name_translations": {
+          "en": "Fotis Ioannidis"
+        },
+        "name_short": "F. Ioannidis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/fotis-ioannidis.png",
+        "position": "F",
+        "position_name": "Forward"
+      },
+      "player_two_in": {
+        "id": 39395,
+        "sport_id": 1,
+        "slug": "juankar",
+        "name": "Juankar",
+        "name_translations": {
+          "en": "Juankar"
+        },
+        "name_short": "Juankar",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/juankar.png",
+        "position": "D",
+        "position_name": "Defender"
+      }
+    },
+    {
+      "id": 59653986,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 84,
+      "time_over": null,
+      "order": 12,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 52411,
+        "sport_id": 1,
+        "slug": "nikolaos-karelis",
+        "name": "Nikolaos Karelis",
+        "name_translations": {
+          "en": "Nikolaos Karelis"
+        },
+        "name_short": "N. Karelis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/nikolaos-karelis.png",
+        "position": "F",
+        "position_name": "Forward"
+      },
+      "player_two_in": {
+        "id": 85972,
+        "sport_id": 1,
+        "slug": "jonathan-morsay",
+        "name": "Jonathan Morsay",
+        "name_translations": {
+          "en": "Jonathan Morsay"
+        },
+        "name_short": "J. Morsay",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/jonathan-morsay.png",
+        "position": "F",
+        "position_name": "Forward"
+      }
+    },
+    {
+      "id": 59653987,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 85,
+      "time_over": null,
+      "order": 13,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 67552,
+        "sport_id": 1,
+        "slug": "enis-cokaj",
+        "name": "Enis Çokaj",
+        "name_translations": {
+          "en": "Enis Cokaj"
+        },
+        "name_short": "E. Çokaj",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/enis-cokaj.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": {
+        "id": 29702,
+        "sport_id": 1,
+        "slug": "andraz-sporar",
+        "name": "Andraž Šporar",
+        "name_translations": {
+          "en": "Andraž Šporar"
+        },
+        "name_short": "A. Šporar",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/andraz-sporar.png",
+        "position": "F",
+        "position_name": "Forward"
+      }
+    },
+    {
+      "id": 59653988,
+      "event_id": 1456251,
+      "incident_type": "card",
+      "time": 88,
+      "time_over": null,
+      "order": 14,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": "Yellow",
+      "is_missed": null,
+      "reason": "Foul",
+      "length": null,
+      "player": {
+        "id": 77616,
+        "sport_id": 1,
+        "slug": "adam-gnezda-cerin",
+        "name": "Adam Gnezda Čerin",
+        "name_translations": {
+          "en": "Adam Gnezda Čerin"
+        },
+        "name_short": "A. G. Čerin",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/adam-gnezda-cerin.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": null
+    },
+    {
+      "id": 59654442,
+      "event_id": 1456251,
+      "incident_type": "injuryTime",
+      "time": 90,
+      "time_over": null,
+      "order": 15,
+      "text": "Injury time 4'",
+      "scoring_team": null,
+      "player_team": null,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": 4,
+      "player": null,
+      "player_two_in": null
+    },
+    {
+      "id": 59654443,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 90,
+      "time_over": 1,
+      "order": 16,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 31989,
+        "sport_id": 1,
+        "slug": "cristian-ganea",
+        "name": "Cristian Ganea",
+        "name_translations": {
+          "en": "Cristian Ganea"
+        },
+        "name_short": "C. Ganea",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/cristian-ganea.png",
+        "position": "D",
+        "position_name": "Defender"
+      },
+      "player_two_in": {
+        "id": 39395,
+        "sport_id": 1,
+        "slug": "juankar",
+        "name": "Juankar",
+        "name_translations": {
+          "en": "Juankar"
+        },
+        "name_short": "Juankar",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/juankar.png",
+        "position": "D",
+        "position_name": "Defender"
+      }
+    },
+    {
+      "id": 59654444,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 90,
+      "time_over": 1,
+      "order": 17,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 2,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 44790,
+        "sport_id": 1,
+        "slug": "zvonimir-sarlija",
+        "name": "Zvonimir Šarlija",
+        "name_translations": {
+          "en": "Zvonimir Šarlija"
+        },
+        "name_short": "Z. Šarlija",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/zvonimir-sarlija.png",
+        "position": "D",
+        "position_name": "Defender"
+      },
+      "player_two_in": {
+        "id": 50330,
+        "sport_id": 1,
+        "slug": "bernard",
+        "name": "Bernard",
+        "name_translations": {
+          "en": "Bernard"
+        },
+        "name_short": "Bernard",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/bernard.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      }
+    },
+    {
+      "id": 59654844,
+      "event_id": 1456251,
+      "incident_type": "card",
+      "time": 90,
+      "time_over": 2,
+      "order": 18,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": "Yellow",
+      "is_missed": null,
+      "reason": "Foul",
+      "length": null,
+      "player": {
+        "id": 79146,
+        "sport_id": 1,
+        "slug": "konstantinos-apostolakis",
+        "name": "Konstantinos Apostolakis",
+        "name_translations": {
+          "en": "Konstantinos Apostolakis"
+        },
+        "name_short": "K. Apostolakis",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/konstantinos-apostolakis.png",
+        "position": "D",
+        "position_name": "Defender"
+      },
+      "player_two_in": null
+    },
+    {
+      "id": 59655277,
+      "event_id": 1456251,
+      "incident_type": "substitution",
+      "time": 75,
+      "time_over": null,
+      "order": 6,
+      "text": null,
+      "scoring_team": null,
+      "player_team": 1,
+      "home_score": null,
+      "away_score": null,
+      "card_type": null,
+      "is_missed": null,
+      "reason": null,
+      "length": null,
+      "player": {
+        "id": 79145,
+        "sport_id": 1,
+        "slug": "dimitrios-kolovos",
+        "name": "Dimitrios Kolovos",
+        "name_translations": {
+          "en": "Dimitrios Kolovos"
+        },
+        "name_short": "D. Kolovos",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/dimitrios-kolovos.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      },
+      "player_two_in": {
+        "id": 79406,
+        "sport_id": 1,
+        "slug": "jorge-diaz-2",
+        "name": "Jorge Díaz",
+        "name_translations": {
+          "en": "Jorge Díaz"
+        },
+        "name_short": "J. Díaz",
+        "has_photo": true,
+        "photo": "https://tipsscore.com/resb/player/jorge-diaz-2.png",
+        "position": "M",
+        "position_name": "Midfielder"
+      }
+    }
+  ],
+  "meta": null
+}

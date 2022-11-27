@@ -1,0 +1,2773 @@
+{
+  "data": [
+    {
+      "id": 901,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-mineiro-modulo-i",
+      "name_translations": {
+        "en": "Mineiro, Módulo I",
+        "ru": "Минейро, Модуло I"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-mineiro-modulo-i.png",
+      "start_date": "2022-01-26 00:00:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "11"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.22"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.31"
+        }
+      ],
+      "most_count": 45,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 902,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-pernambucano-serie-a1",
+      "name_translations": {
+        "en": "Pernambucano, Série A1",
+        "ru": "Пернамбукано, Сери А1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-pernambucano-serie-a1.png",
+      "start_date": "2022-01-22 19:30:00",
+      "end_date": "2022-04-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.96"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.29"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 42,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 903,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-goiano-1-divisao",
+      "name_translations": {
+        "en": "Goiano, 1 Divisão",
+        "ru": "Гояно, 1 Дивизан"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-goiano-1-divisao.png",
+      "start_date": "2022-01-25 22:30:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "14"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 28,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 904,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paranaense-1-divisao",
+      "name_translations": {
+        "en": "Paranaense, 1 Divisão",
+        "ru": "Паранайнс, 1 Дивизан"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paranaense-1-divisao.png",
+      "start_date": "2022-01-22 19:00:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.34"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "21%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 38,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 905,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasileiro-serie-b",
+      "name_translations": {
+        "en": "Brasileiro Série B",
+        "ru": "Brasileiro Série B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasileiro-serie-b.png",
+      "start_date": "2022-04-08 22:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.70"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.24"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 906,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paulista-serie-a2",
+      "name_translations": {
+        "en": "Paulista, Série A2",
+        "ru": "Паулиста, Сериа А2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paulista-serie-a2.png",
+      "start_date": "2022-01-23 19:00:00",
+      "end_date": "2022-04-19 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "19"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 907,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasileiro-serie-c",
+      "name_translations": {
+        "en": "Brasileiro Série C",
+        "ru": "Бразилио Серие С"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasileiro-serie-c.png",
+      "start_date": "2022-04-09 14:00:00",
+      "end_date": "2022-10-10 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "19"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.40"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 908,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-copa-do-nordeste",
+      "name_translations": {
+        "en": "Copa do Nordeste",
+        "ru": "Копа Ду Нордесте"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-copa-do-nordeste.png",
+      "start_date": "2022-01-22 20:45:00",
+      "end_date": "2022-04-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.39"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "19%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 909,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paulista-serie-a3",
+      "name_translations": {
+        "en": "Paulista, Série A3",
+        "ru": "Паулиста, Сери А3"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paulista-serie-a3.png",
+      "start_date": "2022-01-29 18:00:00",
+      "end_date": "2022-05-24 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "15"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.05"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 910,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-primeira-liga-do-brasil",
+      "name_translations": {
+        "en": "Primeira Liga do Brasil",
+        "ru": "Примера Лига До Бразилии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-primeira-liga-do-brasil.png",
+      "start_date": "2017-01-24 22:00:00",
+      "end_date": "2017-10-12 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.74"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "39%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "13%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 911,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-u20-campeonato-brasileiro",
+      "name_translations": {
+        "en": "U20 Campeonato Brasileiro",
+        "ru": "U20 Кампеонато Бразилия"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-u20-campeonato-brasileiro.png",
+      "start_date": "2022-06-04 14:00:00",
+      "end_date": "2022-09-08 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "19"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.93"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 912,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-u20-copa-do-brasil",
+      "name_translations": {
+        "en": "U20 Copa do Brasil",
+        "ru": "U20 Копа До Бразилии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-u20-copa-do-brasil.png",
+      "start_date": "2022-09-27 18:00:00",
+      "end_date": "2022-11-13 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.88"
+        },
+        {
+          "name": "Home team wins",
+          "value": "69%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "16%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 913,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-copa-verde",
+      "name_translations": {
+        "en": "Copa Verde",
+        "ru": "Копа Верде"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-copa-verde.png",
+      "start_date": "2022-10-25 20:00:00",
+      "end_date": "2022-11-16 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 914,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasileiro-serie-a-women",
+      "name_translations": {
+        "en": "Brasileiro Série A, Women",
+        "ru": "Brasileiro Série A, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasileiro-serie-a-women.png",
+      "start_date": "2022-03-05 00:00:00",
+      "end_date": "2022-09-26 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.89"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.26"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 915,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-alagoano",
+      "name_translations": {
+        "en": "Alagoano",
+        "ru": "Алагоано"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-alagoano.png",
+      "start_date": "2022-01-20 23:00:00",
+      "end_date": "2022-04-15 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.39"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 40,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 916,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paraibano",
+      "name_translations": {
+        "en": "Paraibano",
+        "ru": "Парайбано"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paraibano.png",
+      "start_date": "2022-02-03 22:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.16"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 30,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 917,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-u20-paulista",
+      "name_translations": {
+        "en": "U20 Paulista",
+        "ru": "U20 Паулиста"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-u20-paulista.png",
+      "start_date": "2022-05-04 18:00:00",
+      "end_date": "2022-11-10 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.86"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.08"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 918,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasileiro-serie-d",
+      "name_translations": {
+        "en": "Brasileiro Série D",
+        "ru": "Бразилия S DIE"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasileiro-serie-d.png",
+      "start_date": "2022-04-17 18:00:00",
+      "end_date": "2022-09-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.24"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.42"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 919,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-copa-paulista",
+      "name_translations": {
+        "en": "Copa Paulista",
+        "ru": "Копа Паулиста"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-copa-paulista.png",
+      "start_date": "2022-07-01 23:00:00",
+      "end_date": "2022-10-17 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.41"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.41"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 920,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-u20-copa-sao-paulo-de-juniores",
+      "name_translations": {
+        "en": "U20 Copa Sao Paulo de Juniores",
+        "ru": "U20 Копа Сан-Паулу Де Хуниорес"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-u20-copa-sao-paulo-de-juniores.png",
+      "start_date": "2022-01-02 16:45:00",
+      "end_date": "2022-01-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.82"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 921,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-u20-copa-internacional-ipiranga",
+      "name_translations": {
+        "en": "U20 Copa Internacional Ipiranga",
+        "ru": "U20 Copa Internacional Ipiranga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-u20-copa-internacional-ipiranga.png",
+      "start_date": "2019-11-30 18:30:00",
+      "end_date": "2019-12-20 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 922,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-potiguar",
+      "name_translations": {
+        "en": "Potiguar",
+        "ru": "Потигуар"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-potiguar.png",
+      "start_date": "2022-01-09 18:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": 56,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 923,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-maranhense",
+      "name_translations": {
+        "en": "Maranhense",
+        "ru": "Маранхенсе"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-maranhense.png",
+      "start_date": "2022-01-20 22:30:00",
+      "end_date": "2022-08-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.68"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": 33,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 924,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-sergipano",
+      "name_translations": {
+        "en": "Sergipano",
+        "ru": "Сергипано"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-sergipano.png",
+      "start_date": "2022-01-15 19:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": 35,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 925,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paraense",
+      "name_translations": {
+        "en": "Paraense",
+        "ru": "Параенс"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paraense.png",
+      "start_date": "2022-01-26 21:00:00",
+      "end_date": "2022-05-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.47"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": 48,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 926,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-mato-grossense",
+      "name_translations": {
+        "en": "Mato-Grossense",
+        "ru": "Мато-Гроссенсе"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-mato-grossense.png",
+      "start_date": "2022-01-22 19:30:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 24,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 927,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-sul-mato-grossense",
+      "name_translations": {
+        "en": "Sul-Mato-Grossense",
+        "ru": "Сул-Мато-Гроссенсе"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-sul-mato-grossense.png",
+      "start_date": "2022-02-02 18:00:00",
+      "end_date": "2022-04-26 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.56"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 928,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasiliense",
+      "name_translations": {
+        "en": "Brasiliense",
+        "ru": "Brasiliense"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasiliense.png",
+      "start_date": "2022-01-22 18:30:00",
+      "end_date": "2022-04-10 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 929,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-amazonense",
+      "name_translations": {
+        "en": "Amazonense",
+        "ru": "Amazonense"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-amazonense.png",
+      "start_date": "2022-01-26 19:00:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.84"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 43,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 930,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-piauiense",
+      "name_translations": {
+        "en": "Piauiense",
+        "ru": "Piauiense"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-piauiense.png",
+      "start_date": "2022-01-15 19:00:00",
+      "end_date": "2022-04-15 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": 31,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 931,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-potiguar-2nd-phase",
+      "name_translations": {
+        "en": "Potiguar, 2nd Phase",
+        "ru": "Потигуар, 2-Й Этап"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-potiguar-2nd-phase.png",
+      "start_date": "2020-02-09 20:00:00",
+      "end_date": "2020-09-09 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 932,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-potiguar-grand-final",
+      "name_translations": {
+        "en": "Potiguar, Grand Final",
+        "ru": "Потигуар, Гранд Финал"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-potiguar-grand-final.png",
+      "start_date": "2019-04-18 00:30:00",
+      "end_date": "2019-04-25 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 933,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-amapaense",
+      "name_translations": {
+        "en": "Amapaense",
+        "ru": "Amapaense"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-amapaense.png",
+      "start_date": "2022-04-28 23:15:00",
+      "end_date": "2022-07-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.91"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.25"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.28"
+        }
+      ],
+      "most_count": 17,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 934,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paulista-women",
+      "name_translations": {
+        "en": "Paulista, Women",
+        "ru": "Паулиста, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paulista-women.png",
+      "start_date": "2022-08-10 18:00:00",
+      "end_date": "2022-12-22 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.26"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 935,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-supercopa-do-brasil",
+      "name_translations": {
+        "en": "Supercopa do Brasil",
+        "ru": "Суперкопа До Бразилии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-supercopa-do-brasil.png",
+      "start_date": "2022-02-20 19:00:00",
+      "end_date": "2022-02-21 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil",
+        "city": "Cuiabá"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "6.00"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 936,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-capixaba",
+      "name_translations": {
+        "en": "Capixaba",
+        "ru": "Capixaba"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-capixaba.png",
+      "start_date": "2022-01-29 18:00:00",
+      "end_date": "2022-05-10 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.08"
+        }
+      ],
+      "most_count": 37,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 937,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-rondoniense",
+      "name_translations": {
+        "en": "Rondoniense",
+        "ru": "Rondoniense"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-rondoniense.png",
+      "start_date": "2022-02-20 18:45:00",
+      "end_date": "2022-05-10 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.87"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 938,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-acreano",
+      "name_translations": {
+        "en": "Acreano",
+        "ru": "Акреано"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-acreano.png",
+      "start_date": "2022-02-13 20:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.73"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 30,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 939,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-tocantinense",
+      "name_translations": {
+        "en": "Tocantinense",
+        "ru": "Токантиненсе"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-tocantinense.png",
+      "start_date": "2022-01-22 19:00:00",
+      "end_date": "2022-04-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 940,
+      "sport_id": 1,
+      "section_id": 136,
+      "slug": "cambodia-cambodian-league",
+      "name_translations": {
+        "en": "Cambodian League",
+        "ru": "Лига Камбоджи"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/cambodia-cambodian-league.png",
+      "start_date": "2022-03-05 08:45:00",
+      "end_date": "2022-12-01 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.74"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.26"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 136,
+        "sport_id": 1,
+        "slug": "cambodia",
+        "name": "Cambodia",
+        "priority": 0,
+        "flag": "cambodia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 7992,
+      "sport_id": 1,
+      "section_id": 276,
+      "slug": "turkey-amateur-u21-ligi",
+      "name_translations": {
+        "en": "U21 Ligi",
+        "ru": "U21 Лиги"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2018-08-10 14:00:00",
+      "end_date": "2019-05-27 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 276,
+        "sport_id": 1,
+        "slug": "turkey-amateur",
+        "name": "Turkey Amateur",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 7993,
+      "sport_id": 1,
+      "section_id": 276,
+      "slug": "turkey-amateur-u21-1-lig",
+      "name_translations": {
+        "en": "U21 1. Lig",
+        "ru": "U21 1. Lig"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2018-08-10 14:00:00",
+      "end_date": "2019-05-20 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.91"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 276,
+        "sport_id": 1,
+        "slug": "turkey-amateur",
+        "name": "Turkey Amateur",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8001,
+      "sport_id": 1,
+      "section_id": 276,
+      "slug": "turkey-amateur-a2-league",
+      "name_translations": {
+        "en": "A2 League",
+        "ru": "Лига A2"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2013-09-16 12:00:00",
+      "end_date": "2014-05-31 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 276,
+        "sport_id": 1,
+        "slug": "turkey-amateur",
+        "name": "Turkey Amateur",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8026,
+      "sport_id": 1,
+      "section_id": 107,
+      "slug": "kuwait-emir-cup",
+      "name_translations": {
+        "en": "Emir Cup",
+        "ru": "Кубок эмира Катара"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kuwait-emir-cup.png",
+      "start_date": "2022-04-01 14:15:00",
+      "end_date": "2022-12-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kuwait",
+        "flag": "kuwait"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.29"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 107,
+        "sport_id": 1,
+        "slug": "kuwait",
+        "name": "Kuwait",
+        "priority": 0,
+        "flag": "kuwait"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8031,
+      "sport_id": 1,
+      "section_id": 116,
+      "slug": "moldova-federation-cup",
+      "name_translations": {
+        "en": "Federation Cup",
+        "ru": "Кубок Федерации Молдавии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/moldova-federation-cup.png",
+      "start_date": "2020-02-22 09:00:00",
+      "end_date": "2020-03-09 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.05"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 116,
+        "sport_id": 1,
+        "slug": "moldova",
+        "name": "Moldova",
+        "priority": 0,
+        "flag": "moldova"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8046,
+      "sport_id": 1,
+      "section_id": 22,
+      "slug": "australia-npl-south-australia-women-premier-league",
+      "name_translations": {
+        "en": "NPL, South Australia, Women Premier League",
+        "ru": "NPL, Южная Австралия, Женская Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/australia-npl-south-australia-women-premier-league.png",
+      "start_date": "2022-03-06 07:30:00",
+      "end_date": "2022-09-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Australia",
+        "flag": "australia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.52"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 22,
+        "sport_id": 1,
+        "slug": "australia",
+        "name": "Australia",
+        "priority": 0,
+        "flag": "australia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8047,
+      "sport_id": 1,
+      "section_id": 22,
+      "slug": "australia-brisbane-premier-league-women",
+      "name_translations": {
+        "en": "Brisbane Premier League, Women ",
+        "ru": "Брисбен Премьер Лига, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/australia-brisbane-premier-league-women.png",
+      "start_date": "2021-03-12 10:30:00",
+      "end_date": "2021-10-17 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 22,
+        "sport_id": 1,
+        "slug": "australia",
+        "name": "Australia",
+        "priority": 0,
+        "flag": "australia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8050,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasileiro-serie-a2-women",
+      "name_translations": {
+        "en": "Brasileiro Serie A2, Women",
+        "ru": "Бразилия Серия A2, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasileiro-serie-a2-women.png",
+      "start_date": "2022-06-11 13:00:00",
+      "end_date": "2022-09-18 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.92"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.13"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8071,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-roraimense",
+      "name_translations": {
+        "en": "Roraimense",
+        "ru": "Рорайменсе"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-roraimense.png",
+      "start_date": "2022-03-05 20:00:00",
+      "end_date": "2022-04-28 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8072,
+      "sport_id": 1,
+      "section_id": 54,
+      "slug": "tunisia-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Туниса"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/tunisia-super-cup.png",
+      "start_date": "2021-09-25 16:30:00",
+      "end_date": "2021-09-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Tunisia",
+        "flag": "tunisia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 54,
+        "sport_id": 1,
+        "slug": "tunisia",
+        "name": "Tunisia",
+        "priority": 0,
+        "flag": "tunisia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 19,
+    "from": 901,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 950,
+    "total": 1766
+  }
+}

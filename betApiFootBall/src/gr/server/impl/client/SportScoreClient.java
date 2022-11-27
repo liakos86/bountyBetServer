@@ -10,6 +10,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.model.events.Events;
+import gr.server.data.api.model.league.League;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.util.HttpHelper;
 
@@ -48,7 +49,6 @@ public class SportScoreClient {
 	 * @throws InterruptedException 
 	 */
 	public static Events getEvents(boolean live) throws IOException, ParseException, InterruptedException, URISyntaxException {
-//		System.out.println("GETTING API EVENTS");
 		String url = null;
 		
 		if (live) {
@@ -61,31 +61,19 @@ public class SportScoreClient {
 		}
 
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
-//		System.out.println(content);
 		
 		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
-		//System.out.println(events.getData().get(0).getHome_team().getName());
+		events.getData().forEach(e->e.getStart_at());//TODO: not here
 		return events;
 	}
 	
 	
+	public static League getLeagueById(Integer leagueId) throws IOException {
+		String url = SportScoreApiConstants.GET_LEAGUE_BY_ID_URL + leagueId;
+		String content = new HttpHelper().fetchGetContentWithHeaders(url);
+		
+		League league= new Gson().fromJson(content, new TypeToken<League>() {}.getType());
+		return league;
+	}
 	
-	/**
-	 * Gets a list of the leagues for the countries we support.
-	 * 
-	 * @throws IOException
-	 * @throws ParseException
-	 * @throws URISyntaxException
-	 * @throws InterruptedException
-	 */
-//	public static Leagues getLeagues() throws IOException, ParseException, InterruptedException, URISyntaxException {
-//		System.out.println("GETTING API LEAGUES");
-//		String url = SportScoreApiConstants.GET_LEAGUES_BY_SPORT_URL;
-//		String content = new HttpHelper().fetchGetContentWithHeaders(url);
-//		Leagues leagues = new Gson().fromJson(content, new TypeToken<Leagues>() {
-//		}.getType());
-//		return leagues;
-//
-//	}
-
 }

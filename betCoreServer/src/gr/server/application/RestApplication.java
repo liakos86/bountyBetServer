@@ -12,6 +12,7 @@ import javax.ws.rs.core.Application;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
 import gr.server.impl.service.MyBetOddsServiceImpl;
 import gr.server.util.DateUtils;
 
@@ -27,9 +28,13 @@ public class RestApplication  extends Application
 //	 */
 //	private static MongoClient mongoClient;
 	
+//	public static Map<Integer, Integer> LEAGUE_PRIORITIES;
+	
+	public static Map<Integer, Section> SECTIONS = new HashMap<>();
+	
 	public static Map<Integer, League> LEAGUES = new HashMap<>();
 	
-	public static Map<Integer, MatchEvent> TODAY_EVENTS_PER_ID = new HashMap<>();
+	public static Map<Integer, Integer> PRIORITY_PER_LEAGUE = new HashMap<>();
 
 	public static Map<String, ChangeEvent> LIVE_CHANGES_PER_EVENT = new HashMap<>();
 	
@@ -39,6 +44,13 @@ public class RestApplication  extends Application
 	
 	static {
 		EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.todayStr(), new HashMap<>());
+		
+//		LEAGUE_PRIORITIES.put(317, Integer.MIN_VALUE);
+//		LEAGUE_PRIORITIES.put(251, Integer.MIN_VALUE+1);
+//		LEAGUE_PRIORITIES.put(512, Integer.MIN_VALUE+2);
+//		LEAGUE_PRIORITIES.put(592, Integer.MIN_VALUE+3);
+//		LEAGUE_PRIORITIES.put(498, Integer.MIN_VALUE+4);
+		
 	}
 	
 	

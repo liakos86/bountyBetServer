@@ -2,6 +2,7 @@ package gr.server.impl.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -28,8 +29,10 @@ import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPrediction;
 import gr.server.def.service.MyBetOddsService;
+import gr.server.email.EmailSendUtil;
 import gr.server.impl.client.MongoClientHelperImpl;
 import gr.server.util.DateUtils;
+import gr.server.util.SecureUtils;
 
 
 @Path("/betServer")
@@ -51,8 +54,8 @@ implements MyBetOddsService {
     @Path("/placeBet")
 	@Consumes("application/json; charset=UTF-8")
 	@Produces("application/json; charset=UTF-8")
-	public Response placeBet(String userBet) {
-		UserBet newBet =  new Gson().fromJson(userBet,
+	public Response placeBet(String userBetJson) {
+		UserBet newBet =  new Gson().fromJson(userBetJson,
 				new TypeToken<UserBet>() {}.getType());
 		
 		/**
@@ -71,32 +74,29 @@ implements MyBetOddsService {
 	
 	@Override
 	@POST
-    @Path("/createUser")
+    @Path("/registerUser")
 	@Consumes("application/json; charset=UTF-8")
 	@Produces("application/json; charset=UTF-8")
-	public Response createUser(String user) throws UserExistsException {
-		User newUser = new Gson().fromJson(user, new TypeToken<User>() {}.getType());
+	public Response registerUser(String userJson) throws Exception{
+		User newUser = new Gson().fromJson(userJson, new TypeToken<User>() {}.getType());
+		String userEmail = SecureUtils.decode(newUser.getEmail());
+		newUser.setEmail(userEmail);
 		newUser = new MongoClientHelperImpl().createUser(newUser);
+		if (newUser.getErrorMessage() == null && newUser.getMongoId() != null) {
+			EmailSendUtil.doSend(userEmail);
+		}
 		return Response.ok(new Gson().toJson(newUser)).build();	
 	}
 	
-
-//	@Override
-//	@GET
-//    @Path("/{id}/delete")
-//	public Response deletePerson(@PathParam("id") int id) {
-//		Response response = new Response();
-//		if(persons.get(id) == null){
-//			response.setStatus(false);
-//			response.setMessage("Person Doesn't Exists");
-//			return response;
-//		}
-//		persons.remove(id);
-//		response.setStatus(true);
-//		response.setMessage("Person deleted successfully");
-//		return response;
-//	}
-//
+	@Override
+	@GET
+	@Produces( MediaType.TEXT_HTML)
+	@Path("{email}/validateUser")
+	public String validateUser(@PathParam("email") String email) throws Exception {
+		new MongoClientHelperImpl().validateUser(email);
+		return "<html><head><body>Your email is validated. Please return to the app and Login again.</body></head></html>";	
+	}
+	
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -109,8 +109,7 @@ implements MyBetOddsService {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
-	public String getLeagues(){
-		System.out.println("SERVING LEAGUES FOR TODAY");
+	public Response getLeagues(){
 		List<League> todayLeagues = new ArrayList<>();
 		
 		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
@@ -120,26 +119,21 @@ implements MyBetOddsService {
 				continue;
 			}
 			
+			if (league.getSection_id() > 0) {
+				league.setSection(RestApplication.SECTIONS.get(league.getSection_id()));
+			}
+			
 			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
 			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
 			league.setLiveMatchEvents(events);
 			events.forEach(e->e.setLeague(null));
+			Collections.sort(league.getLiveMatchEvents());
 			todayLeagues.add(league);
 		}
 		
-		for (League l : todayLeagues) {
-			League league = RestApplication.LEAGUES.get(l.getId());
-			if (league != null) {
-				System.out.println("Priority is " + l.getPriority() + " and will be " + league.getPriority());
-				l.setPriority(league.getPriority());
-				continue;
-			}
-			
-			System.out.println("NO league for " + l.getName());
-		}
-		
 		Collections.sort(todayLeagues);
-		return  new Gson().toJson(todayLeagues);
+		
+		return  Response.ok(new Gson().toJson(todayLeagues)).build();
 	
 	}
 	
@@ -149,18 +143,30 @@ implements MyBetOddsService {
 	@Path("/getLive")
 	public String getLive(){
 		List<League> leagues = new ArrayList<>();
-		for (Entry<League, Map<Integer, MatchEvent>> entry : RestApplication.LIVE_EVENTS_PER_LEAGUE.entrySet()) {
+		for (Entry<League, Map<Integer, MatchEvent>> entry : new HashMap<>(RestApplication.LIVE_EVENTS_PER_LEAGUE).entrySet()) {
 			League league = entry.getKey();
 			if (league == null) {
+				RestApplication.LIVE_EVENTS_PER_LEAGUE.remove(league);
 				continue;
 			}
 			
+			
 			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
+			if (eventsOfLeagueMap == null || eventsOfLeagueMap.isEmpty()) {
+				continue;
+			}
+			
 			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
 			league.setLiveMatchEvents(events);
+			if (league.getSection_id() > 0) {
+				league.setSection(RestApplication.SECTIONS.get(league.getSection_id()));
+			}
 			events.forEach(e->fixEvent(e));
+			Collections.sort(events);
 			leagues.add(league);
 		}
+		
+		Collections.sort(leagues);
 		
 		return  new Gson().toJson(leagues);
 	}

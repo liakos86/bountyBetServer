@@ -1,0 +1,2857 @@
+{
+  "data": [
+    {
+      "id": 851,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-1",
+      "name_translations": {
+        "en": "Tercera Division, Group 1",
+        "ru": "Tercera Division, Группа 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-1.png",
+      "start_date": "2022-09-10 17:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.59"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 852,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-2",
+      "name_translations": {
+        "en": "Tercera Division, Group 2",
+        "ru": "Tercera Division, Группа 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-2.png",
+      "start_date": "2022-09-11 10:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.23"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "47%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 853,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-3",
+      "name_translations": {
+        "en": "Tercera Division, Group 3",
+        "ru": "Tercera Division, Группа 3"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-3.png",
+      "start_date": "2022-09-10 14:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.20"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 854,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-4",
+      "name_translations": {
+        "en": "Tercera Division, Group 4",
+        "ru": "Tercera Division, Группа 4"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-4.png",
+      "start_date": "2022-09-10 09:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.83"
+        },
+        {
+          "name": "Home team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 855,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-5",
+      "name_translations": {
+        "en": "Tercera Division, Group 5",
+        "ru": "Tercera Division, Группа 5"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-5.png",
+      "start_date": "2022-09-10 18:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "40"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.65"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 856,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-6",
+      "name_translations": {
+        "en": "Tercera Division, Group 6",
+        "ru": "Tercera Division, Группа 6"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-6.png",
+      "start_date": "2022-09-10 16:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 857,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-7",
+      "name_translations": {
+        "en": "Tercera Division, Group 7",
+        "ru": "Tercera Division, Группа 7"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-7.png",
+      "start_date": "2022-09-11 09:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 858,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-8",
+      "name_translations": {
+        "en": "Tercera Division, Group 8",
+        "ru": "Tercera Division, Группа 8"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-8.png",
+      "start_date": "2022-09-10 15:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.65"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "36%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 859,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-9",
+      "name_translations": {
+        "en": "Tercera Division, Group 9",
+        "ru": "Tercera Division, Группа 9"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-9.png",
+      "start_date": "2022-09-10 10:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.65"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 860,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-10",
+      "name_translations": {
+        "en": "Tercera Division, Group 10",
+        "ru": "Tercera Division, Группа 10"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-10.png",
+      "start_date": "2022-09-10 15:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.88"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 861,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-11",
+      "name_translations": {
+        "en": "Tercera Division, Group 11",
+        "ru": "Tercera Division, Группа 11"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-11.png",
+      "start_date": "2022-09-10 14:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "40"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 862,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-12",
+      "name_translations": {
+        "en": "Tercera Division, Group 12",
+        "ru": "Tercera Division, Группа 12"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-12.png",
+      "start_date": "2022-09-09 20:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 863,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-13",
+      "name_translations": {
+        "en": "Tercera Division, Group 13",
+        "ru": "Tercera Division, Группа 13"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-13.png",
+      "start_date": "2022-09-11 08:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.55"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 864,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-14",
+      "name_translations": {
+        "en": "Tercera Division, Group 14",
+        "ru": "Tercera Division, Группа 14"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-14.png",
+      "start_date": "2022-09-11 10:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.30"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 865,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-15",
+      "name_translations": {
+        "en": "Tercera Division, Group 15",
+        "ru": "Tercera Division, Группа 15"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-15.png",
+      "start_date": "2022-09-10 14:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 866,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-16",
+      "name_translations": {
+        "en": "Tercera Division, Group 16",
+        "ru": "Tercera Division, Группа 16"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-16.png",
+      "start_date": "2022-09-10 16:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 867,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-17",
+      "name_translations": {
+        "en": "Tercera Division, Group 17",
+        "ru": "Tercera Division, Группа 17"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-17.png",
+      "start_date": "2022-09-10 15:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Spain",
+        "flag": "spain"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.41"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 868,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division-group-18",
+      "name_translations": {
+        "en": "Tercera Division, Group 18",
+        "ru": "Tercera Division, Группа 18"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division-group-18.png",
+      "start_date": "2022-09-10 15:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.34"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 869,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-world-cup-qual-caf",
+      "name_translations": {
+        "en": "World Cup Qual. CAF",
+        "ru": "Чемпионат мира Qual. CAF"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-world-cup-qual-caf.png",
+      "start_date": "2019-09-04 13:00:00",
+      "end_date": "2022-03-29 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.42"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 870,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-africa-cup-of-nations",
+      "name_translations": {
+        "en": "Africa Cup of Nations",
+        "ru": "Кубок африканских наций"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-africa-cup-of-nations.png",
+      "start_date": "2022-01-09 16:00:00",
+      "end_date": "2022-02-06 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Cameroon",
+        "flag": "cameroon"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.96"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.27"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 871,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-african-nations-championship",
+      "name_translations": {
+        "en": "African Nations Championship",
+        "ru": "Чемпионат африканских наций"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-african-nations-championship.png",
+      "start_date": "2021-01-16 16:00:00",
+      "end_date": "2021-02-08 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Cameroon",
+        "flag": "cameroon"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.88"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.13"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 872,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-u23-caf-championship",
+      "name_translations": {
+        "en": "U23 CAF Championship",
+        "ru": "CAF Чемпионшип, U23"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-u23-caf-championship.png",
+      "start_date": "2019-11-08 17:00:00",
+      "end_date": "2019-11-23 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Egypt",
+        "flag": "egypt"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "23%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "46%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 873,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-caf-champions-league",
+      "name_translations": {
+        "en": "CAF Champions League",
+        "ru": "Лига Чемпионов КАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-caf-champions-league.png",
+      "start_date": "2022-09-09 16:00:00",
+      "end_date": "2023-06-11 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 874,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-caf-confederations-cup",
+      "name_translations": {
+        "en": "CAF Confederations Cup",
+        "ru": "Кубок Конфедерации КАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-caf-confederations-cup.png",
+      "start_date": "2022-09-09 13:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.66"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "13%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 875,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-caf-super-cup",
+      "name_translations": {
+        "en": "CAF Super Cup",
+        "ru": "Суперкубок КАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-caf-super-cup.png",
+      "start_date": "2022-09-10 19:00:00",
+      "end_date": "2022-09-11 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.00"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 876,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-africa-cup-of-nations-qual",
+      "name_translations": {
+        "en": "Africa Cup of Nations Qual.",
+        "ru": "Кубок африканских наций, Отборочный"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-africa-cup-of-nations-qual.png",
+      "start_date": "2022-06-01 16:00:00",
+      "end_date": "2023-03-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.16"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 877,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-u20-africa-cup-of-nations",
+      "name_translations": {
+        "en": "U20 Africa Cup of Nations",
+        "ru": "Кубок африканских наций, U20"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-u20-africa-cup-of-nations.png",
+      "start_date": "2021-02-15 13:00:00",
+      "end_date": "2021-03-06 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Mauritania",
+        "flag": "mauritania"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 878,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-cosafa-cup",
+      "name_translations": {
+        "en": "COSAFA Cup",
+        "ru": "Кубок КОСАФА"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-cosafa-cup.png",
+      "start_date": "2022-07-05 12:00:00",
+      "end_date": "2022-07-17 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "South Africa",
+        "flag": "south-africa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "5"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.26"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.09"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 879,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-african-games",
+      "name_translations": {
+        "en": "African Games",
+        "ru": "Африканские игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-african-games.png",
+      "start_date": "2019-08-16 12:00:00",
+      "end_date": "2019-08-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Ghana",
+        "flag": "ghana",
+        "city": "Accra"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 880,
+      "sport_id": 1,
+      "section_id": 125,
+      "slug": "africa-africa-cup-of-nations-women",
+      "name_translations": {
+        "en": "Africa Cup of Nations, Women",
+        "ru": "КАФ, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/africa-africa-cup-of-nations-women.png",
+      "start_date": "2022-07-02 20:30:00",
+      "end_date": "2022-07-23 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.68"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 125,
+        "sport_id": 1,
+        "slug": "africa",
+        "name": "Africa",
+        "priority": 16,
+        "flag": "africa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 881,
+      "sport_id": 1,
+      "section_id": 126,
+      "slug": "rwanda-national-football-league",
+      "name_translations": {
+        "en": "National Football League",
+        "ru": "Национальная Футбольная Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/rwanda-national-football-league.png",
+      "start_date": "2022-08-19 13:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.41"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": 18,
+      "section": {
+        "id": 126,
+        "sport_id": 1,
+        "slug": "rwanda",
+        "name": "Rwanda",
+        "priority": 0,
+        "flag": "rwanda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 882,
+      "sport_id": 1,
+      "section_id": 127,
+      "slug": "congo-republic-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/congo-republic-premier-league.png",
+      "start_date": "2021-12-11 13:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 127,
+        "sport_id": 1,
+        "slug": "congo-republic",
+        "name": "Congo Republic",
+        "priority": 0,
+        "flag": "congo"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 883,
+      "sport_id": 1,
+      "section_id": 128,
+      "slug": "nicaragua-primera-division",
+      "name_translations": {
+        "en": "Primera Division",
+        "ru": "Примера-Дивизион Никарагуа"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/nicaragua-primera-division.png",
+      "start_date": "2022-07-09 23:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "18%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.67"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 27,
+      "section": {
+        "id": 128,
+        "sport_id": 1,
+        "slug": "nicaragua",
+        "name": "Nicaragua",
+        "priority": 0,
+        "flag": "nicaragua"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 884,
+      "sport_id": 1,
+      "section_id": 129,
+      "slug": "myanmar-national-league",
+      "name_translations": {
+        "en": "National League",
+        "ru": "Национальная Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/myanmar-national-league.png",
+      "start_date": "2022-06-25 08:30:00",
+      "end_date": "2022-11-06 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.41"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 129,
+        "sport_id": 1,
+        "slug": "myanmar",
+        "name": "Myanmar",
+        "priority": 0,
+        "flag": "burma"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 885,
+      "sport_id": 1,
+      "section_id": 130,
+      "slug": "zimbabwe-premier-soccer-league",
+      "name_translations": {
+        "en": "Premier Soccer League",
+        "ru": "Премьер-лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/zimbabwe-premier-soccer-league.png",
+      "start_date": "2021-11-06 13:00:00",
+      "end_date": "2022-05-01 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.14"
+        }
+      ],
+      "most_count": 16,
+      "section": {
+        "id": 130,
+        "sport_id": 1,
+        "slug": "zimbabwe",
+        "name": "Zimbabwe",
+        "priority": 0,
+        "flag": "zimbabwe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 886,
+      "sport_id": 1,
+      "section_id": 131,
+      "slug": "trinidad-and-tobago-premier-football-league",
+      "name_translations": {
+        "en": "Premier Football League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/trinidad-and-tobago-premier-football-league.png",
+      "start_date": "2019-12-13 19:30:00",
+      "end_date": "2020-06-01 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.01"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 131,
+        "sport_id": 1,
+        "slug": "trinidad-and-tobago",
+        "name": "Trinidad and Tobago",
+        "priority": 0,
+        "flag": "trinidad-and-tobago"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 887,
+      "sport_id": 1,
+      "section_id": 132,
+      "slug": "botswana-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/botswana-premier-league.png",
+      "start_date": "2021-10-30 13:30:00",
+      "end_date": "2022-05-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.07"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 132,
+        "sport_id": 1,
+        "slug": "botswana",
+        "name": "Botswana",
+        "priority": 0,
+        "flag": "botswana"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 888,
+      "sport_id": 1,
+      "section_id": 133,
+      "slug": "bangladesh-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bangladesh-premier-league.png",
+      "start_date": "2022-02-03 09:00:00",
+      "end_date": "2022-07-04 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.56"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.18"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 133,
+        "sport_id": 1,
+        "slug": "bangladesh",
+        "name": "Bangladesh",
+        "priority": 0,
+        "flag": "bangladesh"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 889,
+      "sport_id": 1,
+      "section_id": 134,
+      "slug": "north-macedonia-1-mfl",
+      "name_translations": {
+        "en": "1. MFL",
+        "ru": "Чемпионат Северной Македонии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-macedonia-1-mfl.png",
+      "start_date": "2022-08-06 15:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "North Macedonia",
+        "flag": "macedonia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "33"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.52"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 134,
+        "sport_id": 1,
+        "slug": "north-macedonia",
+        "name": "North Macedonia",
+        "priority": 0,
+        "flag": "macedonia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 890,
+      "sport_id": 1,
+      "section_id": 134,
+      "slug": "north-macedonia-north-macedonia-cup",
+      "name_translations": {
+        "en": "North Macedonia Cup",
+        "ru": "Кубок Северной Македонии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-macedonia-north-macedonia-cup.png",
+      "start_date": "2022-09-14 13:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "North Macedonia",
+        "flag": "macedonia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "5"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.76"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "62%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 134,
+        "sport_id": 1,
+        "slug": "north-macedonia",
+        "name": "North Macedonia",
+        "priority": 0,
+        "flag": "macedonia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 891,
+      "sport_id": 1,
+      "section_id": 134,
+      "slug": "north-macedonia-2-mfl",
+      "name_translations": {
+        "en": "2. MFL",
+        "ru": "Македонская вторая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-macedonia-2-mfl.png",
+      "start_date": "2022-08-13 15:00:00",
+      "end_date": "2023-05-14 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "North Macedonia",
+        "flag": "macedonia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "27"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.66"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 134,
+        "sport_id": 1,
+        "slug": "north-macedonia",
+        "name": "North Macedonia",
+        "priority": 0,
+        "flag": "macedonia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 892,
+      "sport_id": 1,
+      "section_id": 134,
+      "slug": "north-macedonia-supercup",
+      "name_translations": {
+        "en": "Supercup",
+        "ru": "Суперкубок Македонии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-macedonia-supercup.png",
+      "start_date": "2015-09-23 18:00:00",
+      "end_date": "2015-09-24 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 134,
+        "sport_id": 1,
+        "slug": "north-macedonia",
+        "name": "North Macedonia",
+        "priority": 0,
+        "flag": "macedonia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 893,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-carioca-serie-a",
+      "name_translations": {
+        "en": "Carioca, Série A",
+        "ru": "Кариока, Сери А"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-carioca-serie-a.png",
+      "start_date": "2019-12-22 18:00:00",
+      "end_date": "2020-05-11 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.13"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 37,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 894,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-brasileiro-serie-a",
+      "name_translations": {
+        "en": "Brasileiro Série A",
+        "ru": "Бразилия Série A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-brasileiro-serie-a.png",
+      "start_date": "2022-04-09 19:30:00",
+      "end_date": "2022-11-14 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.96"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.29"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 895,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-paulista-serie-a1",
+      "name_translations": {
+        "en": "Paulista, Série A1",
+        "ru": "Паулиста, Серия А1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-paulista-serie-a1.png",
+      "start_date": "2022-01-23 19:00:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.82"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.22"
+        }
+      ],
+      "most_count": 30,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 896,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-copa-do-brasil",
+      "name_translations": {
+        "en": "Copa do Brasil",
+        "ru": "Копа До Бразилии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-copa-do-brasil.png",
+      "start_date": "2022-02-22 19:30:00",
+      "end_date": "2022-10-20 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "8"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.31"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.70"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.08"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 897,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-baiano",
+      "name_translations": {
+        "en": "Baiano",
+        "ru": "Байано"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-baiano.png",
+      "start_date": "2022-01-15 19:00:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": 49,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 898,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-catarinense",
+      "name_translations": {
+        "en": "Catarinense",
+        "ru": "Catarinense"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-catarinense.png",
+      "start_date": "2022-01-22 19:30:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 18,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 899,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-gaucho",
+      "name_translations": {
+        "en": "Gaúcho",
+        "ru": "Гаучо"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-gaucho.png",
+      "start_date": "2022-01-26 19:00:00",
+      "end_date": "2022-04-05 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "11"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.07"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "14%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.46"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 45,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 900,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-cearense-serie-a",
+      "name_translations": {
+        "en": "Cearense, Série A",
+        "ru": "Cearense, Série A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/brazil-cearense-serie-a.png",
+      "start_date": "2022-01-08 18:00:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.35"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "37%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": 45,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 18,
+    "from": 851,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 900,
+    "total": 1766
+  }
+}

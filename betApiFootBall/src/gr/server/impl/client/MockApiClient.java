@@ -13,8 +13,12 @@ import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.MatchEventIncidents;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Leagues;
+import gr.server.data.api.model.league.Seasons;
+import gr.server.data.api.model.league.Sections;
+import gr.server.data.api.model.league.Standings;
 import gr.server.data.api.model.league.Teams;
 import gr.server.util.MockHttpHelper;
 
@@ -74,12 +78,12 @@ public class MockApiClient {
 	 * @throws InterruptedException
 	 */
 	public static Leagues getLeaguesFromFile()
-			throws IOException, ParseException, InterruptedException, URISyntaxException {
+			 {
 		System.out.println("GETTING MOCK API LEAGUES");
 
 		Leagues leagues = new Leagues();
 
-		for (int i = 1; i < 12; i++) {
+		for (int i = 1; i < 20; i++) {
 
 			try {
 				String content = new MockHttpHelper().mockGetContentWithHeaders("leagues" + i + ".json");
@@ -91,11 +95,16 @@ public class MockApiClient {
 				continue;
 			}
 		}
+		
+		leagues.getData().forEach(l-> l.setName(l.getName_translations().get("en")));
+		
+		leagues.getData().forEach(l-> {if (l.getId() ==0) {System.out.println("League " + l.getName());}} );
+		
 		return leagues;
 
 	}
 
-	public static Teams getTeamsFromFile() throws IOException, ParseException, InterruptedException, URISyntaxException {
+	public static Teams getTeamsFromFile() {
 		System.out.println("GETTING MOCK API TEAMS");
 
 		Teams teams = new Teams();
@@ -114,6 +123,66 @@ public class MockApiClient {
 		}
 		return teams;
 
+	}
+
+	public static Sections getSectionsFromFile() {
+		System.out.println("GETTING MOCK API SECTIONS");
+
+		Sections sections = new Sections();
+
+		for (int i = 1; i < 5; i++) {
+
+			try {
+				String content = new MockHttpHelper().mockGetContentWithHeaders("sections" + i + ".json");
+				Sections sectionsInner = new Sections();
+				sectionsInner = new Gson().fromJson(content, new TypeToken<Sections>() {}.getType());
+				sections.getData().addAll(sectionsInner.getData());
+			} catch (Exception e) {
+				continue;
+			}
+		}
+		return sections;
+	}
+	
+	public static Standings getStandingsFromFile() {
+		Standings standings = new Standings();
+		for (int i = 1; i < 2; i++) {
+			try {
+				String content = new MockHttpHelper().mockGetContentWithHeaders("standings" + i + ".json");
+				Standings stds = new Standings();
+				stds = new Gson().fromJson(content, new TypeToken<Standings>() {}.getType());
+				standings.getData().addAll(stds.getData());
+			} catch (Exception e) {
+				continue;
+			}
+		}
+		return standings;
+	}
+
+	public static Seasons getSeasonsFromFile() {
+		Seasons seasons = new Seasons();
+		for (int i = 1; i < 2; i++) {
+			try {
+				String content = new MockHttpHelper().mockGetContentWithHeaders("seasons" + i + ".json");
+				Seasons stds = new Seasons();
+				stds = new Gson().fromJson(content, new TypeToken<Seasons>() {}.getType());
+				seasons.getData().addAll(stds.getData());
+			} catch (Exception e) {
+				continue;
+			}
+		}
+		return seasons;
+	}
+	
+	public static MatchEventIncidents getMatchIncidentsFromFile() {
+		try {
+			String content = new MockHttpHelper().mockGetContentWithHeaders("eventIncidents.json");
+			System.out.println(content);
+			MatchEventIncidents incidents = new Gson().fromJson(content, new TypeToken<MatchEventIncidents>() {}.getType());
+			return incidents;
+		} catch (Exception e) {
+			return null;
+		}
 	}
 
 }

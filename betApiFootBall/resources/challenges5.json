@@ -1,0 +1,1310 @@
+{
+  "data": [
+    {
+      "id": 401,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 402,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj-1",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 403,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj-2",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 404,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj-3",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 405,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj-4",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 406,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj-5",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 407,
+      "sport_id": 1,
+      "league_id": 196,
+      "slug": "clj-6",
+      "name": "CLJ",
+      "name_translations": {
+        "en": "CLJ",
+        "ru": "CLJ"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 408,
+      "sport_id": 1,
+      "league_id": 198,
+      "slug": "u18-clj",
+      "name": "U18 CLJ",
+      "name_translations": {
+        "en": "U18 CLJ",
+        "ru": "U18 CLJ"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 409,
+      "sport_id": 1,
+      "league_id": 203,
+      "slug": "primeira-liga",
+      "name": "Primeira Liga",
+      "name_translations": {
+        "en": "Primeira Liga",
+        "ru": "Примера Лига"
+      },
+      "order": 57,
+      "priority": 0
+    },
+    {
+      "id": 410,
+      "sport_id": 1,
+      "league_id": 203,
+      "slug": "primeira-liga-1",
+      "name": "Primeira Liga",
+      "name_translations": {
+        "en": "Primeira Liga",
+        "ru": "Примера Лига"
+      },
+      "order": 56,
+      "priority": 0
+    },
+    {
+      "id": 411,
+      "sport_id": 1,
+      "league_id": 204,
+      "slug": "segunda-liga",
+      "name": "Segunda Liga",
+      "name_translations": {
+        "en": "Segunda Liga",
+        "ru": "Сегунда Лига"
+      },
+      "order": 55,
+      "priority": 0
+    },
+    {
+      "id": 412,
+      "sport_id": 1,
+      "league_id": 204,
+      "slug": "segunda-liga-1",
+      "name": "Segunda Liga",
+      "name_translations": {
+        "en": "Segunda Liga",
+        "ru": "Сегунда Лига"
+      },
+      "order": 54,
+      "priority": 0
+    },
+    {
+      "id": 413,
+      "sport_id": 1,
+      "league_id": 206,
+      "slug": "taca-de-portugal",
+      "name": "Taça de Portugal",
+      "name_translations": {
+        "en": "Taça de Portugal",
+        "ru": "Тача Де Португалия"
+      },
+      "order": 53,
+      "priority": 0
+    },
+    {
+      "id": 414,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 52,
+      "priority": 0
+    },
+    {
+      "id": 415,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-1",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 51,
+      "priority": 0
+    },
+    {
+      "id": 416,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-2",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 50,
+      "priority": 0
+    },
+    {
+      "id": 417,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-3",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 49,
+      "priority": 0
+    },
+    {
+      "id": 418,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-4",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 48,
+      "priority": 0
+    },
+    {
+      "id": 419,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-5",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 47,
+      "priority": 0
+    },
+    {
+      "id": 420,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-6",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 46,
+      "priority": 0
+    },
+    {
+      "id": 421,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-7",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 45,
+      "priority": 0
+    },
+    {
+      "id": 422,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-8",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 44,
+      "priority": 0
+    },
+    {
+      "id": 423,
+      "sport_id": 1,
+      "league_id": 205,
+      "slug": "taca-da-liga-9",
+      "name": "Taça da Liga",
+      "name_translations": {
+        "en": "Taça da Liga",
+        "ru": "Таца Да Лига"
+      },
+      "order": 43,
+      "priority": 0
+    },
+    {
+      "id": 424,
+      "sport_id": 1,
+      "league_id": 207,
+      "slug": "supertaca",
+      "name": "Supertaça",
+      "name_translations": {
+        "en": "Supertaça",
+        "ru": "Supertaça"
+      },
+      "order": 42,
+      "priority": 0
+    },
+    {
+      "id": 425,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 41,
+      "priority": 0
+    },
+    {
+      "id": 426,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-1",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 40,
+      "priority": 0
+    },
+    {
+      "id": 427,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-2",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 39,
+      "priority": 0
+    },
+    {
+      "id": 428,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-3",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 38,
+      "priority": 0
+    },
+    {
+      "id": 429,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-4",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 37,
+      "priority": 0
+    },
+    {
+      "id": 430,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-5",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 36,
+      "priority": 0
+    },
+    {
+      "id": 431,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-6",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 35,
+      "priority": 0
+    },
+    {
+      "id": 432,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-7",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 34,
+      "priority": 0
+    },
+    {
+      "id": 433,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-8",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 33,
+      "priority": 0
+    },
+    {
+      "id": 434,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-9",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 32,
+      "priority": 0
+    },
+    {
+      "id": 435,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-10",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 31,
+      "priority": 0
+    },
+    {
+      "id": 436,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-11",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 29,
+      "priority": 0
+    },
+    {
+      "id": 437,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-12",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 438,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-13",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 439,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-14",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 440,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-15",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 441,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-16",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 24,
+      "priority": 0
+    },
+    {
+      "id": 442,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-17",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 443,
+      "sport_id": 1,
+      "league_id": 210,
+      "slug": "campeonato-de-portugal-18",
+      "name": "Campeonato de Portugal",
+      "name_translations": {
+        "en": "Campeonato de Portugal",
+        "ru": "Кампеонато Де Португалия"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 444,
+      "sport_id": 1,
+      "league_id": 211,
+      "slug": "campeonato-nacional-feminino",
+      "name": "Campeonato Nacional Feminino",
+      "name_translations": {
+        "en": "Campeonato Nacional Feminino",
+        "ru": "Campeonato Nacional Feminino"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 445,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 446,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-1",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 447,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-2",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 448,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-3",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 449,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-4",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 450,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-5",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 451,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-6",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 452,
+      "sport_id": 1,
+      "league_id": 208,
+      "slug": "u19-championship-7",
+      "name": "U19 Championship",
+      "name_translations": {
+        "en": "U19 Championship",
+        "ru": "По Футболу До 19 Лет"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 453,
+      "sport_id": 1,
+      "league_id": 212,
+      "slug": "u23-championship",
+      "name": "U23 Championship",
+      "name_translations": {
+        "en": "U23 Championship",
+        "ru": "По Футболу До 23 Лет"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 454,
+      "sport_id": 1,
+      "league_id": 212,
+      "slug": "u23-championship-1",
+      "name": "U23 Championship",
+      "name_translations": {
+        "en": "U23 Championship",
+        "ru": "По Футболу До 23 Лет"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 455,
+      "sport_id": 1,
+      "league_id": 212,
+      "slug": "u23-championship-2",
+      "name": "U23 Championship",
+      "name_translations": {
+        "en": "U23 Championship",
+        "ru": "По Футболу До 23 Лет"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 456,
+      "sport_id": 1,
+      "league_id": 214,
+      "slug": "liga-i",
+      "name": "Liga I",
+      "name_translations": {
+        "en": "Liga I",
+        "ru": "Лига Я"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 457,
+      "sport_id": 1,
+      "league_id": 214,
+      "slug": "liga-i-1",
+      "name": "Liga I",
+      "name_translations": {
+        "en": "Liga I",
+        "ru": "Лига Я"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 458,
+      "sport_id": 1,
+      "league_id": 214,
+      "slug": "liga-i-2",
+      "name": "Liga I",
+      "name_translations": {
+        "en": "Liga I",
+        "ru": "Лига Я"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 459,
+      "sport_id": 1,
+      "league_id": 214,
+      "slug": "liga-i-3",
+      "name": "Liga I",
+      "name_translations": {
+        "en": "Liga I",
+        "ru": "Лига Я"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 460,
+      "sport_id": 1,
+      "league_id": 216,
+      "slug": "liga-2-3",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 461,
+      "sport_id": 1,
+      "league_id": 216,
+      "slug": "liga-2-4",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 462,
+      "sport_id": 1,
+      "league_id": 216,
+      "slug": "liga-2-5",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 463,
+      "sport_id": 1,
+      "league_id": 216,
+      "slug": "liga-2-6",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 464,
+      "sport_id": 1,
+      "league_id": 216,
+      "slug": "liga-2-7",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 465,
+      "sport_id": 1,
+      "league_id": 215,
+      "slug": "romania-cup",
+      "name": "Romania Cup",
+      "name_translations": {
+        "en": "Romania Cup",
+        "ru": "Кубок Румынии"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 466,
+      "sport_id": 1,
+      "league_id": 219,
+      "slug": "cupa-ligii",
+      "name": "Cupa Ligii",
+      "name_translations": {
+        "en": "Cupa Ligii",
+        "ru": "Кубок Лиги"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 467,
+      "sport_id": 1,
+      "league_id": 218,
+      "slug": "super-cup-6",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 468,
+      "sport_id": 1,
+      "league_id": 220,
+      "slug": "premier-liga",
+      "name": "Premier Liga",
+      "name_translations": {
+        "en": "Premier Liga",
+        "ru": "Премьер Лига"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 469,
+      "sport_id": 1,
+      "league_id": 220,
+      "slug": "premier-liga-1",
+      "name": "Premier Liga",
+      "name_translations": {
+        "en": "Premier Liga",
+        "ru": "Премьер Лига"
+      },
+      "order": 24,
+      "priority": 0
+    },
+    {
+      "id": 470,
+      "sport_id": 1,
+      "league_id": 220,
+      "slug": "premier-liga-2",
+      "name": "Premier Liga",
+      "name_translations": {
+        "en": "Premier Liga",
+        "ru": "Премьер Лига"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 471,
+      "sport_id": 1,
+      "league_id": 220,
+      "slug": "premier-liga-3",
+      "name": "Premier Liga",
+      "name_translations": {
+        "en": "Premier Liga",
+        "ru": "Премьер Лига"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 472,
+      "sport_id": 1,
+      "league_id": 221,
+      "slug": "football-national-league",
+      "name": "Football National League",
+      "name_translations": {
+        "en": "Football National League",
+        "ru": "Футбол Национальная Лига"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 473,
+      "sport_id": 1,
+      "league_id": 221,
+      "slug": "football-national-league-1",
+      "name": "Football National League",
+      "name_translations": {
+        "en": "Football National League",
+        "ru": "Футбол Национальная Лига"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 474,
+      "sport_id": 1,
+      "league_id": 221,
+      "slug": "football-national-league-2",
+      "name": "Football National League",
+      "name_translations": {
+        "en": "Football National League",
+        "ru": "Футбол Национальная Лига"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 475,
+      "sport_id": 1,
+      "league_id": 226,
+      "slug": "pfl-center",
+      "name": "PFL, Center",
+      "name_translations": {
+        "en": "PFL, Center",
+        "ru": "ПФЛ, Центр"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 476,
+      "sport_id": 1,
+      "league_id": 224,
+      "slug": "pfl-east",
+      "name": "PFL, East",
+      "name_translations": {
+        "en": "PFL, East",
+        "ru": "ПФЛ, Восток"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 477,
+      "sport_id": 1,
+      "league_id": 225,
+      "slug": "pfl-south",
+      "name": "PFL, South",
+      "name_translations": {
+        "en": "PFL, South",
+        "ru": "ПФЛ, Юг"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 478,
+      "sport_id": 1,
+      "league_id": 225,
+      "slug": "pfl-south-1",
+      "name": "PFL, South",
+      "name_translations": {
+        "en": "PFL, South",
+        "ru": "ПФЛ, Юг"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 479,
+      "sport_id": 1,
+      "league_id": 225,
+      "slug": "pfl-south-2",
+      "name": "PFL, South",
+      "name_translations": {
+        "en": "PFL, South",
+        "ru": "ПФЛ, Юг"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 480,
+      "sport_id": 1,
+      "league_id": 225,
+      "slug": "pfl-south-3",
+      "name": "PFL, South",
+      "name_translations": {
+        "en": "PFL, South",
+        "ru": "ПФЛ, Юг"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 481,
+      "sport_id": 1,
+      "league_id": 225,
+      "slug": "pfl-south-4",
+      "name": "PFL, South",
+      "name_translations": {
+        "en": "PFL, South",
+        "ru": "ПФЛ, Юг"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 482,
+      "sport_id": 1,
+      "league_id": 228,
+      "slug": "pfl-west",
+      "name": "PFL, West",
+      "name_translations": {
+        "en": "PFL, West",
+        "ru": "ПФЛ, Запад"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 483,
+      "sport_id": 1,
+      "league_id": 223,
+      "slug": "youth-league",
+      "name": "Youth League",
+      "name_translations": {
+        "en": "Youth League",
+        "ru": "Молодежная Лига"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 484,
+      "sport_id": 1,
+      "league_id": 223,
+      "slug": "youth-league-1",
+      "name": "Youth League",
+      "name_translations": {
+        "en": "Youth League",
+        "ru": "Молодежная Лига"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 485,
+      "sport_id": 1,
+      "league_id": 223,
+      "slug": "youth-league-2",
+      "name": "Youth League",
+      "name_translations": {
+        "en": "Youth League",
+        "ru": "Молодежная Лига"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 486,
+      "sport_id": 1,
+      "league_id": 229,
+      "slug": "premier-league-women",
+      "name": "Premier League, Women",
+      "name_translations": {
+        "en": "Premier League, Women",
+        "ru": "Премьер Лига, Женщины"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 487,
+      "sport_id": 1,
+      "league_id": 230,
+      "slug": "russian-cup",
+      "name": "Russian Cup",
+      "name_translations": {
+        "en": "Russian Cup",
+        "ru": "России По Футболу"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 488,
+      "sport_id": 1,
+      "league_id": 222,
+      "slug": "super-cup-7",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 489,
+      "sport_id": 1,
+      "league_id": 227,
+      "slug": "pfl-ural-povolzhye",
+      "name": "PFL, Ural-Povolzhye",
+      "name_translations": {
+        "en": "PFL, Ural-Povolzhye",
+        "ru": "ПФЛ, Урал-Поволжье"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 490,
+      "sport_id": 1,
+      "league_id": 232,
+      "slug": "saudi-professional-league",
+      "name": "Saudi Professional League",
+      "name_translations": {
+        "en": "Saudi Professional League",
+        "ru": "Саудовская Профессиональная Лига"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 491,
+      "sport_id": 1,
+      "league_id": 232,
+      "slug": "saudi-professional-league-1",
+      "name": "Saudi Professional League",
+      "name_translations": {
+        "en": "Saudi Professional League",
+        "ru": "Саудовская Профессиональная Лига"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 492,
+      "sport_id": 1,
+      "league_id": 234,
+      "slug": "kings-cup",
+      "name": "King's Cup",
+      "name_translations": {
+        "en": "King's Cup",
+        "ru": "Короля Футбола"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 493,
+      "sport_id": 1,
+      "league_id": 236,
+      "slug": "division-1-1",
+      "name": "Division 1",
+      "name_translations": {
+        "en": "Division 1",
+        "ru": "Дивизион 1"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 494,
+      "sport_id": 1,
+      "league_id": 236,
+      "slug": "division-1-2",
+      "name": "Division 1",
+      "name_translations": {
+        "en": "Division 1",
+        "ru": "Дивизион 1"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 495,
+      "sport_id": 1,
+      "league_id": 235,
+      "slug": "super-cup-8",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 1,
+      "priority": 0
+    },
+    {
+      "id": 496,
+      "sport_id": 1,
+      "league_id": 237,
+      "slug": "premier-league-5",
+      "name": "Premier League",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 497,
+      "sport_id": 1,
+      "league_id": 238,
+      "slug": "singapore-cup",
+      "name": "Singapore Cup",
+      "name_translations": {
+        "en": "Singapore Cup",
+        "ru": "Сингапура По Футболу"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 498,
+      "sport_id": 1,
+      "league_id": 239,
+      "slug": "league-cup-8",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 499,
+      "sport_id": 1,
+      "league_id": 239,
+      "slug": "league-cup-9",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 500,
+      "sport_id": 1,
+      "league_id": 239,
+      "slug": "league-cup-10",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 4,
+      "priority": 0
+    }
+  ],
+  "meta": {
+    "current_page": 5,
+    "from": 401,
+    "per_page": 100,
+    "to": 500
+  }
+}

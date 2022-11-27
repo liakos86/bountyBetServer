@@ -1,0 +1,2641 @@
+{
+  "data": [
+    {
+      "id": 701,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-east-asian-championship",
+      "name_translations": {
+        "en": "East Asian Championship",
+        "ru": "Чемпионат Восточной Азии по футболу"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-east-asian-championship.png",
+      "start_date": "2022-07-19 10:20:00",
+      "end_date": "2022-07-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.50"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 702,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-east-asian-championship-women",
+      "name_translations": {
+        "en": "East Asian Championship, Women",
+        "ru": "Чемпионат Восточной Азии по футболу, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-east-asian-championship-women.png",
+      "start_date": "2022-07-19 07:00:00",
+      "end_date": "2022-07-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.83"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 703,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-afc-champions-league",
+      "name_translations": {
+        "en": "AFC Champions League",
+        "ru": "Лига Чемпионов АФК"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-afc-champions-league.png",
+      "start_date": "2022-03-08 08:30:00",
+      "end_date": "2023-02-26 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.98"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.38"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.14"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 704,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-asian-games-mens-round-2",
+      "name_translations": {
+        "en": "Asian Games Men's Round 2",
+        "ru": "Азиатские Игры. Мужчины. Раунд 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-asian-games-mens-round-2.png",
+      "start_date": "2010-11-07 08:00:00",
+      "end_date": "2010-12-26 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 705,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-aff-suzuki-cup",
+      "name_translations": {
+        "en": "AFF Suzuki Cup",
+        "ru": "Кубок Сузуки"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-aff-suzuki-cup.png",
+      "start_date": "2022-12-20 09:00:00",
+      "end_date": "2023-01-16 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.92"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.12"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 706,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-gulf-cup",
+      "name_translations": {
+        "en": "Gulf Cup",
+        "ru": "Кубок Залива"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-gulf-cup.png",
+      "start_date": "2019-11-26 16:30:00",
+      "end_date": "2019-12-09 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Kuwait",
+        "flag": "kuwait"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.93"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 707,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-afc-cup",
+      "name_translations": {
+        "en": "AFC Cup",
+        "ru": "АФК По Футболу"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-afc-cup.png",
+      "start_date": "2022-04-05 11:15:00",
+      "end_date": "2022-10-22 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.73"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.08"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 708,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-waff-championship",
+      "name_translations": {
+        "en": "WAFF Championship",
+        "ru": "Чемпионат Федерации футбола Западной Азии (WAFF Championship)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-waff-championship.png",
+      "start_date": "2019-07-30 16:30:00",
+      "end_date": "2019-08-15 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 709,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-afc-olympic-games",
+      "name_translations": {
+        "en": "AFC Olympic Games",
+        "ru": "АФК Олимпийские Игры"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2011-09-21 10:30:00",
+      "end_date": "2012-04-30 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.20"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 710,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u22-afc-championship",
+      "name_translations": {
+        "en": "U22 AFC Championship",
+        "ru": "АФК По Футболу До 22 Лет"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-01-11 13:00:00",
+      "end_date": "2014-01-27 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.23"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 711,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-afc-asian-cup-women",
+      "name_translations": {
+        "en": "AFC Asian Cup, Women",
+        "ru": "Азии По Футболу Среди Женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-afc-asian-cup-women.png",
+      "start_date": "2022-01-20 10:00:00",
+      "end_date": "2022-02-06 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "India",
+        "flag": "india"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.52"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 712,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-afc-challenge-cup",
+      "name_translations": {
+        "en": "AFC Challenge Cup",
+        "ru": "АФК По Вызову"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-05-19 11:00:00",
+      "end_date": "2014-06-01 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 713,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-asian-games",
+      "name_translations": {
+        "en": "Asian Games",
+        "ru": "Игры По Футболу"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-asian-games.png",
+      "start_date": "2018-08-10 09:00:00",
+      "end_date": "2018-09-02 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "46%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 714,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-asian-games-women",
+      "name_translations": {
+        "en": "Asian Games Women",
+        "ru": "Азиатские Игры Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-asian-games-women.png",
+      "start_date": "2014-09-14 05:00:00",
+      "end_date": "2018-09-01 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "7.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 715,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u19-afc-championship",
+      "name_translations": {
+        "en": "U19 AFC Championship",
+        "ru": "АФК По Футболу До 19 Лет"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-u19-afc-championship.png",
+      "start_date": "2018-10-18 09:00:00",
+      "end_date": "2018-11-05 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.70"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 716,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u19-afc-championship-women",
+      "name_translations": {
+        "en": "U19 AFC Championship, Women",
+        "ru": "АФК По Футболу До 19 Лет, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-u19-afc-championship-women.png",
+      "start_date": "2019-10-27 09:00:00",
+      "end_date": "2019-11-11 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 717,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u23-waff-championship",
+      "name_translations": {
+        "en": "U23 WAFF Championship",
+        "ru": "U23 WAFF Чемпионат"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-u23-waff-championship.png",
+      "start_date": "2021-10-04 12:30:00",
+      "end_date": "2021-10-12 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.83"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 718,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u23-afc-championship-qualification",
+      "name_translations": {
+        "en": "U23 AFC Championship, Qualification",
+        "ru": "U23 AFC Championship, Квалификация"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-u23-afc-championship-qualification.png",
+      "start_date": "2021-10-23 04:00:00",
+      "end_date": "2021-10-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 719,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u23-afc-championship",
+      "name_translations": {
+        "en": "U23 AFC Championship",
+        "ru": "АФК По Футболу До 23 Лет"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-u23-afc-championship.png",
+      "start_date": "2022-06-01 13:00:00",
+      "end_date": "2022-06-19 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Uzbekistan",
+        "flag": "uzbekistan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.13"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.34"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 720,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-saff-championship",
+      "name_translations": {
+        "en": "SAFF Championship",
+        "ru": "SAFF По Футболу"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-saff-championship.png",
+      "start_date": "2021-10-01 11:00:00",
+      "end_date": "2021-10-16 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Bangladesh",
+        "flag": "bangladesh"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 721,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-afc-olympic-qualification-women",
+      "name_translations": {
+        "en": "AFC Olympic Qualification, Women",
+        "ru": "АФК Олимпийская Квалификация, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-afc-olympic-qualification-women.png",
+      "start_date": "2020-02-13 08:30:00",
+      "end_date": "2021-04-13 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "67%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 722,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-kings-cup",
+      "name_translations": {
+        "en": "King's Cup",
+        "ru": "Короля Футбола"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-kings-cup.png",
+      "start_date": "2022-09-22 10:30:00",
+      "end_date": "2022-09-25 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Thailand",
+        "flag": "thailand"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 723,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-asian-games-women-1",
+      "name_translations": {
+        "en": "Asian Games, Women",
+        "ru": "Азиатские Игры, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-asian-games-women-1.png",
+      "start_date": "2018-08-16 08:00:00",
+      "end_date": "2018-08-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.26"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "1%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 724,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-u22-southeast-asian-games",
+      "name_translations": {
+        "en": "U22 Southeast Asian Games ",
+        "ru": "U22 Юго-Восточной Азии Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-u22-southeast-asian-games.png",
+      "start_date": "2022-05-06 09:00:00",
+      "end_date": "2022-05-22 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.38"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 725,
+      "sport_id": 1,
+      "section_id": 118,
+      "slug": "asia-southeast-asian-games-women",
+      "name_translations": {
+        "en": "Southeast Asian Games, Women",
+        "ru": "Игры полуострова Юго-Восточной Азии, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/asia-southeast-asian-games-women.png",
+      "start_date": "2022-05-09 12:00:00",
+      "end_date": "2022-05-22 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.31"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 118,
+        "sport_id": 1,
+        "slug": "asia",
+        "name": "Asia",
+        "priority": 17,
+        "flag": "asia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 726,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-world-cup",
+      "name_translations": {
+        "en": "World Cup",
+        "ru": "Чемпионат мира"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-world-cup.png",
+      "start_date": "2022-11-20 16:00:00",
+      "end_date": "2022-12-18 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Qatar",
+        "flag": "qatar"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.48"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 727,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-international-champions-cup",
+      "name_translations": {
+        "en": "International Champions Cup",
+        "ru": "Международный кубок чемпионов"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-international-champions-cup.png",
+      "start_date": "2019-07-17 01:00:00",
+      "end_date": "2019-08-11 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.06"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.00"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.39"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 728,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-club-friendly-games",
+      "name_translations": {
+        "en": "Club Friendly Games",
+        "ru": "Клубные товарищеские матчи"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-club-friendly-games.png",
+      "start_date": "2021-12-29 18:30:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.26"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 729,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-int-friendly-games",
+      "name_translations": {
+        "en": "Int. Friendly Games",
+        "ru": "Int. Товарищеский матчи"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-int-friendly-games.png",
+      "start_date": "2022-01-01 16:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.85"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 730,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-algarve-cup-women",
+      "name_translations": {
+        "en": "Algarve Cup Women",
+        "ru": "Кубок Алгарве, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-algarve-cup-women.png",
+      "start_date": "2022-02-16 12:00:00",
+      "end_date": "2022-02-23 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Portugal",
+        "flag": "portugal"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.43"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "56%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 731,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-olympic-games",
+      "name_translations": {
+        "en": "Olympic Games",
+        "ru": "Олимпийские игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-olympic-games.png",
+      "start_date": "2021-07-22 07:30:00",
+      "end_date": "2021-08-07 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan",
+        "city": "Tokyo"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.91"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.66"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.38"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 732,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-olympic-games-women",
+      "name_translations": {
+        "en": "Olympic Games Women",
+        "ru": "Олимпийские игры, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-olympic-games-women.png",
+      "start_date": "2021-07-21 07:30:00",
+      "end_date": "2021-08-06 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan",
+        "city": "Tokyo"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.88"
+        },
+        {
+          "name": "Home team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.62"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.12"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 733,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u21-toulon-tournament",
+      "name_translations": {
+        "en": "U21 Toulon Tournament",
+        "ru": "Турнир в Тулоне, U21"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u21-toulon-tournament.png",
+      "start_date": "2014-05-21 15:15:00",
+      "end_date": "2014-06-02 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.05"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 734,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u20-world-cup",
+      "name_translations": {
+        "en": "U20 World Cup",
+        "ru": "Чемпионат мира, U20"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u20-world-cup.png",
+      "start_date": "2019-05-23 16:00:00",
+      "end_date": "2019-06-16 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Poland",
+        "flag": "poland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.29"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.23"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 735,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-confederations-cup",
+      "name_translations": {
+        "en": "Confederations Cup",
+        "ru": "Кубок конфедераций"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-confederations-cup.png",
+      "start_date": "2017-06-17 15:00:00",
+      "end_date": "2017-07-03 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.69"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.25"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 736,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-peace-cup",
+      "name_translations": {
+        "en": "Peace Cup",
+        "ru": "Мировой кубок"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2012-07-19 10:00:00",
+      "end_date": "2012-07-23 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "75%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 737,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-uhrencup",
+      "name_translations": {
+        "en": "Uhrencup",
+        "ru": "Кубок часов, Uhrencup"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-uhrencup.png",
+      "start_date": "2019-07-09 18:00:00",
+      "end_date": "2019-07-14 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Switzerland",
+        "flag": "switzerland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 738,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-russian-railways-cup",
+      "name_translations": {
+        "en": "Russian Railways Cup",
+        "ru": "Кубок РЖД"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2008-08-01 15:00:00",
+      "end_date": "2008-08-04 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "75%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 739,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-wembley-cup",
+      "name_translations": {
+        "en": "Wembley Cup",
+        "ru": "Кубок Уэмбли"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2009-07-24 16:15:00",
+      "end_date": "2009-07-27 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 740,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u20-womens-world-cup",
+      "name_translations": {
+        "en": "U20 Women's World Cup",
+        "ru": "Чемпионат мира, Женщины, U20"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u20-womens-world-cup.png",
+      "start_date": "2022-08-10 17:00:00",
+      "end_date": "2022-08-29 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Costa Rica",
+        "flag": "costa-rica"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.03"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 741,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u17-womens-world-cup",
+      "name_translations": {
+        "en": "U17 Womens World Cup",
+        "ru": "Чемпионат мира, Женщины, U17"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u17-womens-world-cup.png",
+      "start_date": "2022-10-11 11:00:00",
+      "end_date": "2022-10-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 742,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-int-friendly-games-women",
+      "name_translations": {
+        "en": "Int. Friendly Games, Women",
+        "ru": "Int. Товарищеские матчи, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-int-friendly-games-women.png",
+      "start_date": "2022-02-12 13:00:00",
+      "end_date": "2022-12-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 743,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u21-friendly-games",
+      "name_translations": {
+        "en": "U21 Friendly Games",
+        "ru": "Товарищеский матчи, U21"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u21-friendly-games.png",
+      "start_date": "2022-03-25 15:15:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.47"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 744,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u20-friendly-games",
+      "name_translations": {
+        "en": "U20 Friendly Games",
+        "ru": "Товарищеские матчи, U20"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u20-friendly-games.png",
+      "start_date": "2022-03-24 15:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.35"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 745,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u19-friendly-games",
+      "name_translations": {
+        "en": "U19 Friendly Games",
+        "ru": "Товарищеский матчи, U19"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u19-friendly-games.png",
+      "start_date": "2022-02-11 09:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.65"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.24"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 746,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u18-friendly-games",
+      "name_translations": {
+        "en": "U18 Friendly Games",
+        "ru": "Товарищеский матчи, U18"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u18-friendly-games.png",
+      "start_date": "2022-06-09 09:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 747,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u17-friendly-games",
+      "name_translations": {
+        "en": "U17 Friendly Games",
+        "ru": "Товарищеские матчи, U17"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u17-friendly-games.png",
+      "start_date": "2022-02-15 12:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 748,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-audi-cup",
+      "name_translations": {
+        "en": "Audi Cup",
+        "ru": "Кубок Audi"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-audi-cup.png",
+      "start_date": "2019-07-30 16:00:00",
+      "end_date": "2019-08-01 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.00"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 749,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-copa-del-sol",
+      "name_translations": {
+        "en": "Copa del Sol",
+        "ru": "Copa del Sol"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-01-27 12:00:00",
+      "end_date": "2014-02-07 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "69%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 750,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-cyprus-women-cup",
+      "name_translations": {
+        "en": "Cyprus Women Cup",
+        "ru": "Кубок Кипра, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-cyprus-women-cup.png",
+      "start_date": "2020-03-05 11:00:00",
+      "end_date": "2020-04-20 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Cyprus",
+        "flag": "cyprus"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Draws",
+          "value": "67%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 15,
+    "from": 701,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 750,
+    "total": 1760
+  }
+}

@@ -19,7 +19,6 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
@@ -211,21 +210,17 @@ public class SyncHelper {
 		return newBet;
 	}
 
-	public static Document getNewUserDocument(String userName) {
-		 return new Document(Fields.USERNAME, userName)
+	public static Document getNewUserDocument(User user) {
+		 return new Document(Fields.USERNAME, user.getUsername())
+				 .append(Fields.EMAIL, user.getEmail())
+				 .append(Fields.PASSWORD, user.getPassword())
+				 .append(Fields.VALIDATED, false)
 		 .append(Fields.USER_BALANCE, ApiFootBallConstants.STARTING_BALANCE)
 		 .append(Fields.USER_AWARDS, new BasicDBList());
 	}
 
-	public static Document getLeagueDocument(League competition) {
-		return new Document();
-//		"league_id", competition.getLeagueId())
-//		 .append("country_id", competition.getCountryId())
-//		 .append("league_name", competition.getLeagueName())
-//		 .append("country_name", competition.getCountryName());
-	}
 
-	public static Document getOrDocument(String string,
+	public static Document getOrDocument(
 			List<Document> possibleValues) {
 		BasicDBList orList = new BasicDBList();
 		for (Document document : possibleValues){
@@ -275,6 +270,14 @@ public class SyncHelper {
 	public static void deleteMany(String collectionName, Document deleteFilter) {
 		MongoCollection<Document> collection = getMongoCollection(collectionName);
 		collection.deleteMany(deleteFilter);
+	}
+	
+	public static void validateUser(ClientSession startSession, String email) {
+		Document userFilter = new Document(Fields.EMAIL, email);
+		Document validDoc = new Document(Fields.VALIDATED, true);
+		Document pushDocument = new Document("$set", validDoc);
+		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);
+		usersCollection.findOneAndUpdate(startSession, userFilter, pushDocument);
 	}
 	
 	//********************************************************************//

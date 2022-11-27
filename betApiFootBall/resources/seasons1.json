@@ -1,0 +1,1053 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "league_id": 317,
+      "slug": "2019-2020",
+      "name": "Premier League 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 317,
+        "sport_id": 1,
+        "section_id": 40,
+        "slug": "england-premier-league",
+        "name": "Premier League",
+        "name_translations": {
+          "en": "Premier League",
+          "ru": "Премьер-Лига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/england-premier-league.png"
+      }
+    },
+    {
+      "id": 2,
+      "league_id": 251,
+      "slug": "2019-2020",
+      "name": "LaLiga 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 251,
+        "sport_id": 1,
+        "section_id": 32,
+        "slug": "spain-laliga",
+        "name": "LaLiga",
+        "name_translations": {
+          "en": "LaLiga",
+          "ru": "Ла Лига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/spain-laliga.png"
+      }
+    },
+    {
+      "id": 3,
+      "league_id": 7138,
+      "slug": "2020",
+      "name": "2020 ATP Buenos Aires, Argentina Men Singles",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 7138,
+        "sport_id": 2,
+        "section_id": 145,
+        "slug": "atp-buenos-aires",
+        "name": "Buenos Aires",
+        "name_translations": {
+          "en": "Buenos Aires"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/atp-buenos-aires.png"
+      }
+    },
+    {
+      "id": 4,
+      "league_id": 7236,
+      "slug": "2020",
+      "name": "2020 ATP Marseille, France Men Singles",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 7236,
+        "sport_id": 2,
+        "section_id": 145,
+        "slug": "atp-marseille",
+        "name": "Marseille",
+        "name_translations": {
+          "en": "Marseille"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/atp-marseille.png"
+      }
+    },
+    {
+      "id": 5,
+      "league_id": 7314,
+      "slug": "2020",
+      "name": "2020 ATP New York, USA Men Singles",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 7314,
+        "sport_id": 2,
+        "section_id": 145,
+        "slug": "atp-new-york",
+        "name": "New York",
+        "name_translations": {
+          "en": "New York"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/atp-new-york.png"
+      }
+    },
+    {
+      "id": 6,
+      "league_id": 7197,
+      "slug": "2020",
+      "name": "2020 ATP Rotterdam, Netherlands Men Singles",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 7197,
+        "sport_id": 2,
+        "section_id": 145,
+        "slug": "atp-rotterdam",
+        "name": "Rotterdam",
+        "name_translations": {
+          "en": "Rotterdam"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/atp-rotterdam.png"
+      }
+    },
+    {
+      "id": 7,
+      "league_id": 6938,
+      "slug": "2020",
+      "name": "2020 WTA Dubai, UAE Women Singles",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 6938,
+        "sport_id": 2,
+        "section_id": 144,
+        "slug": "wta-dubai",
+        "name": "Dubai",
+        "name_translations": {
+          "en": "Dubai"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/wta-dubai.png"
+      }
+    },
+    {
+      "id": 8,
+      "league_id": 7421,
+      "slug": "2020",
+      "name": "NBA All Star Game 2020",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 7421,
+        "sport_id": 3,
+        "section_id": 168,
+        "slug": "usa-nba-all-star-game",
+        "name": "NBA All Star Game",
+        "name_translations": {
+          "en": "NBA All Star Game",
+          "ru": "НБА, Матч всех звёзд"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/usa-nba-all-star-game.png"
+      }
+    },
+    {
+      "id": 9,
+      "league_id": 7469,
+      "slug": "2019-2020",
+      "name": "A1 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7469,
+        "sport_id": 3,
+        "section_id": 181,
+        "slug": "greece-a1",
+        "name": "A1",
+        "name_translations": {
+          "en": "A1",
+          "ru": "А1"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/greece-a1.png"
+      }
+    },
+    {
+      "id": 10,
+      "league_id": 7390,
+      "slug": "2019-2020",
+      "name": "LNB 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7390,
+        "sport_id": 3,
+        "section_id": 157,
+        "slug": "argentina-lnb",
+        "name": "LNB",
+        "name_translations": {
+          "en": "LNB",
+          "ru": "Лига А, ЛНБ"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/argentina-lnb.png"
+      }
+    },
+    {
+      "id": 11,
+      "league_id": 7588,
+      "slug": "2019-2020",
+      "name": "NHL 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7588,
+        "sport_id": 4,
+        "section_id": 199,
+        "slug": "usa-nhl",
+        "name": "NHL",
+        "name_translations": {
+          "en": "NHL",
+          "ru": "НХЛ"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/usa-nhl.png"
+      }
+    },
+    {
+      "id": 12,
+      "league_id": 7820,
+      "slug": "2019-2020",
+      "name": "SuperLega 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7820,
+        "sport_id": 5,
+        "section_id": 240,
+        "slug": "italy-superlega",
+        "name": "SuperLega",
+        "name_translations": {
+          "en": "SuperLega",
+          "ru": "Суперлега"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/italy-superlega.png"
+      }
+    },
+    {
+      "id": 13,
+      "league_id": 7741,
+      "slug": "2019-2020",
+      "name": "A1 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7741,
+        "sport_id": 5,
+        "section_id": 238,
+        "slug": "greece-a1-1",
+        "name": "A1",
+        "name_translations": {
+          "en": "A1",
+          "ru": "А1"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/greece-a1-1.png"
+      }
+    },
+    {
+      "id": 14,
+      "league_id": 7703,
+      "slug": "2019-2020",
+      "name": "Liga Siatkowki 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7703,
+        "sport_id": 5,
+        "section_id": 227,
+        "slug": "poland-liga-siatkowki",
+        "name": "Liga Siatkowki",
+        "name_translations": {
+          "en": "Liga Siatkowki",
+          "ru": "Лига Сятковки"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/poland-liga-siatkowki.png"
+      }
+    },
+    {
+      "id": 15,
+      "league_id": 7942,
+      "slug": "2019-2020",
+      "name": "Champions League 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7942,
+        "sport_id": 6,
+        "section_id": 270,
+        "slug": "international-champions-league-2",
+        "name": "Champions League",
+        "name_translations": {
+          "en": "Champions League",
+          "ru": "Лига чемпионов"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/international-champions-league-2.png"
+      }
+    },
+    {
+      "id": 16,
+      "league_id": 7925,
+      "slug": "2019-2020",
+      "name": "Bundesliga 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7925,
+        "sport_id": 6,
+        "section_id": 267,
+        "slug": "germany-bundesliga-1",
+        "name": "Bundesliga",
+        "name_translations": {
+          "en": "Bundesliga",
+          "ru": "Бундеслига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/germany-bundesliga-1.png"
+      }
+    },
+    {
+      "id": 17,
+      "league_id": 7884,
+      "slug": "2019-2020",
+      "name": "Liga Asobal 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7884,
+        "sport_id": 6,
+        "section_id": 255,
+        "slug": "spain-asobal",
+        "name": "ASOBAL",
+        "name_translations": {
+          "en": "ASOBAL",
+          "ru": "ASOBAL"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/spain-asobal.png"
+      }
+    },
+    {
+      "id": 18,
+      "league_id": 512,
+      "slug": "2019-2020",
+      "name": "Bundesliga 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 512,
+        "sport_id": 1,
+        "section_id": 88,
+        "slug": "germany-bundesliga",
+        "name": "Bundesliga",
+        "name_translations": {
+          "en": "Bundesliga",
+          "ru": "Бундеслига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/germany-bundesliga.png"
+      }
+    },
+    {
+      "id": 19,
+      "league_id": 592,
+      "slug": "2019-2020",
+      "name": "Serie A 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 592,
+        "sport_id": 1,
+        "section_id": 101,
+        "slug": "italy-serie-a",
+        "name": "Serie A",
+        "name_translations": {
+          "en": "Serie A",
+          "ru": "Серия А"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/italy-serie-a.png"
+      }
+    },
+    {
+      "id": 20,
+      "league_id": 7255,
+      "slug": "2020",
+      "name": "2020 ATP Delray Beach, USA Men Singles",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 7255,
+        "sport_id": 2,
+        "section_id": 145,
+        "slug": "atp-delray-beach",
+        "name": "Delray Beach",
+        "name_translations": {
+          "en": "Delray Beach"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/atp-delray-beach.png"
+      }
+    },
+    {
+      "id": 21,
+      "league_id": 7439,
+      "slug": "2019-2020",
+      "name": "BLB 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7439,
+        "sport_id": 3,
+        "section_id": 170,
+        "slug": "belgium-blb",
+        "name": "BLB",
+        "name_translations": {
+          "en": "BLB",
+          "ru": "BLB"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/belgium-blb.png"
+      }
+    },
+    {
+      "id": 22,
+      "league_id": 7909,
+      "slug": "2019-2020",
+      "name": "Handboldligaen 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7909,
+        "sport_id": 6,
+        "section_id": 264,
+        "slug": "denmark-handboldligaen",
+        "name": "Handboldligaen",
+        "name_translations": {
+          "en": "Handboldligaen"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/denmark-handboldligaen.png"
+      }
+    },
+    {
+      "id": 23,
+      "league_id": 7901,
+      "slug": "2019-2020",
+      "name": "HLA 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7901,
+        "sport_id": 6,
+        "section_id": 262,
+        "slug": "austria-spusu-liga",
+        "name": "spusu LIGA",
+        "name_translations": {
+          "en": "spusu LIGA",
+          "ru": "Чемпионат Австрии (spusu)"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/austria-spusu-liga.png"
+      }
+    },
+    {
+      "id": 24,
+      "league_id": 7907,
+      "slug": "2019-2020",
+      "name": "Premijer Liga 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7907,
+        "sport_id": 6,
+        "section_id": 263,
+        "slug": "croatia-premijer-liga",
+        "name": "Premijer Liga",
+        "name_translations": {
+          "en": "Premijer Liga",
+          "ru": "Премьер Лига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/croatia-premijer-liga.png"
+      }
+    },
+    {
+      "id": 25,
+      "league_id": 7897,
+      "slug": "2019-2020",
+      "name": "Extraliga 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7897,
+        "sport_id": 6,
+        "section_id": 259,
+        "slug": "czech-republic-extraliga-2",
+        "name": "Extraliga",
+        "name_translations": {
+          "en": "Extraliga",
+          "ru": "Экстралига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/czech-republic-extraliga-2.png"
+      }
+    },
+    {
+      "id": 26,
+      "league_id": 7913,
+      "slug": "2019-2020",
+      "name": "1. Division 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7913,
+        "sport_id": 6,
+        "section_id": 264,
+        "slug": "denmark-1-division",
+        "name": "1. Division",
+        "name_translations": {
+          "en": "1. Division",
+          "ru": "1. Дивизион"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/denmark-1-division.png"
+      }
+    },
+    {
+      "id": 27,
+      "league_id": 1,
+      "slug": "2019-2020",
+      "name": "Premiership 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 1,
+        "sport_id": 1,
+        "section_id": 1,
+        "slug": "northern-ireland-premiership",
+        "name": "Premiership",
+        "name_translations": {
+          "en": "Premiership",
+          "ru": "Премьершип"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/northern-ireland-premiership.png"
+      }
+    },
+    {
+      "id": 29,
+      "league_id": 2,
+      "slug": "2019-2020",
+      "name": "League Cup 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 2,
+        "sport_id": 1,
+        "section_id": 1,
+        "slug": "northern-ireland-league-cup",
+        "name": "League Cup",
+        "name_translations": {
+          "en": "League Cup",
+          "ru": "Кубок лиги"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/northern-ireland-league-cup.png"
+      }
+    },
+    {
+      "id": 31,
+      "league_id": 3,
+      "slug": "2019-2020",
+      "name": "Championship 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 3,
+        "sport_id": 1,
+        "section_id": 1,
+        "slug": "northern-ireland-championship-1",
+        "name": "Championship 1",
+        "name_translations": {
+          "en": "Championship 1",
+          "ru": "Лига 1, Чемпионшип"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/northern-ireland-championship-1.png"
+      }
+    },
+    {
+      "id": 33,
+      "league_id": 4,
+      "slug": "2019-2020",
+      "name": "Irish Cup 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 4,
+        "sport_id": 1,
+        "section_id": 1,
+        "slug": "northern-ireland-irish-cup",
+        "name": "Irish Cup",
+        "name_translations": {
+          "en": "Irish Cup",
+          "ru": "Кубок Северной Ирландии"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/northern-ireland-irish-cup.png"
+      }
+    },
+    {
+      "id": 35,
+      "league_id": 5,
+      "slug": "2019-2020",
+      "name": "Cymru Premier 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 5,
+        "sport_id": 1,
+        "section_id": 2,
+        "slug": "wales-cymru-premier",
+        "name": "Cymru Premier",
+        "name_translations": {
+          "en": "Cymru Premier",
+          "ru": "Премьер-лига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/wales-cymru-premier.png"
+      }
+    },
+    {
+      "id": 37,
+      "league_id": 6,
+      "slug": "2019-2020",
+      "name": "League Cup 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 6,
+        "sport_id": 1,
+        "section_id": 2,
+        "slug": "wales-league-cup",
+        "name": "League Cup",
+        "name_translations": {
+          "en": "League Cup",
+          "ru": "Кубок валлийской лиги"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/wales-league-cup.png"
+      }
+    },
+    {
+      "id": 39,
+      "league_id": 7,
+      "slug": "2019-2020",
+      "name": "FAW Welsh Cup 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 7,
+        "sport_id": 1,
+        "section_id": 2,
+        "slug": "wales-faw-welsh-cup",
+        "name": "FAW Welsh Cup",
+        "name_translations": {
+          "en": "FAW Welsh Cup",
+          "ru": "Кубок Уэльса"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/wales-faw-welsh-cup.png"
+      }
+    },
+    {
+      "id": 43,
+      "league_id": 10,
+      "slug": "2019-2020",
+      "name": "Cymru Championship North 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 10,
+        "sport_id": 1,
+        "section_id": 2,
+        "slug": "wales-cymru-north",
+        "name": "Cymru North",
+        "name_translations": {
+          "en": "Cymru North",
+          "ru": "Cymru Север"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/wales-cymru-north.png"
+      }
+    },
+    {
+      "id": 44,
+      "league_id": 11,
+      "slug": "2019-2020",
+      "name": "Cymru Championship South 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 11,
+        "sport_id": 1,
+        "section_id": 2,
+        "slug": "wales-cymru-south",
+        "name": "Cymru South",
+        "name_translations": {
+          "en": "Cymru South",
+          "ru": "Cymru Юг"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/wales-cymru-south.png"
+      }
+    },
+    {
+      "id": 45,
+      "league_id": 12,
+      "slug": "2019-2020",
+      "name": "Botola 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 12,
+        "sport_id": 1,
+        "section_id": 3,
+        "slug": "morocco-botola",
+        "name": "Botola",
+        "name_translations": {
+          "en": "Botola",
+          "ru": "Чемпионат Марокко"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/morocco-botola.png"
+      }
+    },
+    {
+      "id": 47,
+      "league_id": 13,
+      "slug": "2019",
+      "name": "Morocco Cup 2019",
+      "year_start": 2019,
+      "year_end": null,
+      "league": {
+        "id": 13,
+        "sport_id": 1,
+        "section_id": 3,
+        "slug": "morocco-morocco-cup",
+        "name": "Morocco Cup",
+        "name_translations": {
+          "en": "Morocco Cup",
+          "ru": "Кубок Трона Марокко"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/morocco-morocco-cup.png"
+      }
+    },
+    {
+      "id": 49,
+      "league_id": 14,
+      "slug": "2019-2020",
+      "name": "Botola 2 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 14,
+        "sport_id": 1,
+        "section_id": 3,
+        "slug": "morocco-botola-2",
+        "name": "Botola 2",
+        "name_translations": {
+          "en": "Botola 2",
+          "ru": "Второй дивизион (Ботола 2)"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/morocco-botola-2.png"
+      }
+    },
+    {
+      "id": 51,
+      "league_id": 15,
+      "slug": "2019-2020",
+      "name": "Premier League 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 15,
+        "sport_id": 1,
+        "section_id": 4,
+        "slug": "armenia-premier-league",
+        "name": "Premier League",
+        "name_translations": {
+          "en": "Premier League",
+          "ru": "Премьер-Лига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/armenia-premier-league.png"
+      }
+    },
+    {
+      "id": 53,
+      "league_id": 16,
+      "slug": "2019-2020",
+      "name": "First League 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 16,
+        "sport_id": 1,
+        "section_id": 4,
+        "slug": "armenia-first-league",
+        "name": "First League",
+        "name_translations": {
+          "en": "First League",
+          "ru": "Первая Лига"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/armenia-first-league.png"
+      }
+    },
+    {
+      "id": 55,
+      "league_id": 17,
+      "slug": "2019-2020",
+      "name": "Armenian Cup 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 17,
+        "sport_id": 1,
+        "section_id": 4,
+        "slug": "armenia-armenian-cup",
+        "name": "Armenian Cup",
+        "name_translations": {
+          "en": "Armenian Cup",
+          "ru": "Кубок Армении"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/armenia-armenian-cup.png"
+      }
+    },
+    {
+      "id": 57,
+      "league_id": 18,
+      "slug": "2019",
+      "name": "Super Cup 2019",
+      "year_start": 2019,
+      "year_end": null,
+      "league": {
+        "id": 18,
+        "sport_id": 1,
+        "section_id": 4,
+        "slug": "armenia-super-cup",
+        "name": "Super Cup",
+        "name_translations": {
+          "en": "Super Cup",
+          "ru": "Суперкубок"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/armenia-super-cup.png"
+      }
+    },
+    {
+      "id": 58,
+      "league_id": 19,
+      "slug": "2019-2020",
+      "name": "Primera Division 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 19,
+        "sport_id": 1,
+        "section_id": 5,
+        "slug": "costa-rica-primera-division-apertura",
+        "name": "Primera Division, Apertura",
+        "name_translations": {
+          "en": "Primera Division, Apertura",
+          "ru": "Примера Дивизион, Апертура"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/costa-rica-primera-division-apertura.png"
+      }
+    },
+    {
+      "id": 60,
+      "league_id": 20,
+      "slug": "2019-2020",
+      "name": "Primera Division, Clausura 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 20,
+        "sport_id": 1,
+        "section_id": 5,
+        "slug": "costa-rica-primera-division-clausura",
+        "name": "Primera Division, Clausura",
+        "name_translations": {
+          "en": "Primera Division, Clausura",
+          "ru": "Примера Дивизион, Клаусура"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/costa-rica-primera-division-clausura.png"
+      }
+    },
+    {
+      "id": 62,
+      "league_id": 21,
+      "slug": "2019",
+      "name": "Liga de Ascenso, Apertura 2019",
+      "year_start": 2019,
+      "year_end": null,
+      "league": {
+        "id": 21,
+        "sport_id": 1,
+        "section_id": 5,
+        "slug": "costa-rica-liga-de-ascenso-apertura",
+        "name": "Liga de Ascenso, Apertura",
+        "name_translations": {
+          "en": "Liga de Ascenso, Apertura",
+          "ru": "Лига Де Аценсо, Апертура"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso-apertura.png"
+      }
+    },
+    {
+      "id": 64,
+      "league_id": 22,
+      "slug": "2020",
+      "name": "Liga de Ascenso, Clausura 2020",
+      "year_start": 2020,
+      "year_end": null,
+      "league": {
+        "id": 22,
+        "sport_id": 1,
+        "section_id": 5,
+        "slug": "costa-rica-liga-de-ascenso-clausura",
+        "name": "Liga de Ascenso, Clausura",
+        "name_translations": {
+          "en": "Liga de Ascenso, Clausura",
+          "ru": "Лига Де Аценсо, Клаусура"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso-clausura.png"
+      }
+    },
+    {
+      "id": 66,
+      "league_id": 23,
+      "slug": "2019-2020",
+      "name": "National League South 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 23,
+        "sport_id": 1,
+        "section_id": 6,
+        "slug": "england-amateur-national-league-south",
+        "name": "National League South",
+        "name_translations": {
+          "en": "National League South",
+          "ru": "Национальная Лига Юг"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/england-amateur-national-league-south.png"
+      }
+    },
+    {
+      "id": 68,
+      "league_id": 24,
+      "slug": "2019-2020",
+      "name": "National League North 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 24,
+        "sport_id": 1,
+        "section_id": 6,
+        "slug": "england-amateur-national-league-north",
+        "name": "National League North",
+        "name_translations": {
+          "en": "National League North",
+          "ru": "Национальная Лига Север"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/england-amateur-national-league-north.png"
+      }
+    },
+    {
+      "id": 70,
+      "league_id": 25,
+      "slug": "2019-2020",
+      "name": "FA Trophy 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 25,
+        "sport_id": 1,
+        "section_id": 6,
+        "slug": "england-amateur-fa-trophy",
+        "name": "FA Trophy",
+        "name_translations": {
+          "en": "FA Trophy",
+          "ru": "FA Trophy"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/england-amateur-fa-trophy.png"
+      }
+    },
+    {
+      "id": 72,
+      "league_id": 26,
+      "slug": "2019-2020",
+      "name": "Northern League, Pr. Div 19/20",
+      "year_start": 2019,
+      "year_end": 2020,
+      "league": {
+        "id": 26,
+        "sport_id": 1,
+        "section_id": 6,
+        "slug": "england-amateur-northern-premier-league-premier-division",
+        "name": "Northern Premier League, Premier Division",
+        "name_translations": {
+          "en": "Northern Premier League, Premier Division",
+          "ru": "Северная Премьер-Лига, Премьер Дивизион"
+        },
+        "has_logo": true,
+        "logo": "https://tipsscore.com/resb/league/england-amateur-northern-premier-league-premier-division.png"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "per_page": 50,
+    "to": 50
+  }
+}

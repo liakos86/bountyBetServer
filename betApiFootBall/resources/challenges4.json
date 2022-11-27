@@ -1,0 +1,1310 @@
+{
+  "data": [
+    {
+      "id": 301,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-3",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 55,
+      "priority": 0
+    },
+    {
+      "id": 302,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-4",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 54,
+      "priority": 0
+    },
+    {
+      "id": 303,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-5",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 53,
+      "priority": 0
+    },
+    {
+      "id": 304,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-6",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 52,
+      "priority": 0
+    },
+    {
+      "id": 305,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-7",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 51,
+      "priority": 0
+    },
+    {
+      "id": 306,
+      "sport_id": 1,
+      "league_id": 158,
+      "slug": "primera-b",
+      "name": "Primera B",
+      "name_translations": {
+        "en": "Primera B",
+        "ru": "Примера Б"
+      },
+      "order": 50,
+      "priority": 0
+    },
+    {
+      "id": 307,
+      "sport_id": 1,
+      "league_id": 158,
+      "slug": "primera-b-1",
+      "name": "Primera B",
+      "name_translations": {
+        "en": "Primera B",
+        "ru": "Примера Б"
+      },
+      "order": 49,
+      "priority": 0
+    },
+    {
+      "id": 308,
+      "sport_id": 1,
+      "league_id": 158,
+      "slug": "primera-b-2",
+      "name": "Primera B",
+      "name_translations": {
+        "en": "Primera B",
+        "ru": "Примера Б"
+      },
+      "order": 48,
+      "priority": 0
+    },
+    {
+      "id": 309,
+      "sport_id": 1,
+      "league_id": 158,
+      "slug": "primera-b-3",
+      "name": "Primera B",
+      "name_translations": {
+        "en": "Primera B",
+        "ru": "Примера Б"
+      },
+      "order": 47,
+      "priority": 0
+    },
+    {
+      "id": 310,
+      "sport_id": 1,
+      "league_id": 158,
+      "slug": "primera-b-4",
+      "name": "Primera B",
+      "name_translations": {
+        "en": "Primera B",
+        "ru": "Примера Б"
+      },
+      "order": 46,
+      "priority": 0
+    },
+    {
+      "id": 311,
+      "sport_id": 1,
+      "league_id": 158,
+      "slug": "primera-b-5",
+      "name": "Primera B",
+      "name_translations": {
+        "en": "Primera B",
+        "ru": "Примера Б"
+      },
+      "order": 45,
+      "priority": 0
+    },
+    {
+      "id": 312,
+      "sport_id": 1,
+      "league_id": 161,
+      "slug": "primera-c",
+      "name": "Primera C",
+      "name_translations": {
+        "en": "Primera C",
+        "ru": "Primera C"
+      },
+      "order": 43,
+      "priority": 0
+    },
+    {
+      "id": 313,
+      "sport_id": 1,
+      "league_id": 161,
+      "slug": "primera-c-1",
+      "name": "Primera C",
+      "name_translations": {
+        "en": "Primera C",
+        "ru": "Primera C"
+      },
+      "order": 42,
+      "priority": 0
+    },
+    {
+      "id": 314,
+      "sport_id": 1,
+      "league_id": 161,
+      "slug": "primera-c-2",
+      "name": "Primera C",
+      "name_translations": {
+        "en": "Primera C",
+        "ru": "Primera C"
+      },
+      "order": 41,
+      "priority": 0
+    },
+    {
+      "id": 315,
+      "sport_id": 1,
+      "league_id": 161,
+      "slug": "primera-c-3",
+      "name": "Primera C",
+      "name_translations": {
+        "en": "Primera C",
+        "ru": "Primera C"
+      },
+      "order": 40,
+      "priority": 0
+    },
+    {
+      "id": 316,
+      "sport_id": 1,
+      "league_id": 161,
+      "slug": "primera-c-4",
+      "name": "Primera C",
+      "name_translations": {
+        "en": "Primera C",
+        "ru": "Primera C"
+      },
+      "order": 39,
+      "priority": 0
+    },
+    {
+      "id": 317,
+      "sport_id": 1,
+      "league_id": 156,
+      "slug": "copa-argentina",
+      "name": "Copa Argentina",
+      "name_translations": {
+        "en": "Copa Argentina",
+        "ru": "Копа Аргентина"
+      },
+      "order": 38,
+      "priority": 0
+    },
+    {
+      "id": 318,
+      "sport_id": 1,
+      "league_id": 162,
+      "slug": "copa-de-la-superliga",
+      "name": "Copa de la Superliga",
+      "name_translations": {
+        "en": "Copa de la Superliga",
+        "ru": "Копа Де Ла Суперлига"
+      },
+      "order": 37,
+      "priority": 0
+    },
+    {
+      "id": 319,
+      "sport_id": 1,
+      "league_id": 159,
+      "slug": "super-cup-4",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 36,
+      "priority": 0
+    },
+    {
+      "id": 320,
+      "sport_id": 1,
+      "league_id": 157,
+      "slug": "torneos-de-verano",
+      "name": "Torneos de Verano",
+      "name_translations": {
+        "en": "Torneos de Verano",
+        "ru": "Торнеос Де Верано"
+      },
+      "order": 35,
+      "priority": 0
+    },
+    {
+      "id": 321,
+      "sport_id": 1,
+      "league_id": 164,
+      "slug": "primera-d-metropolitana",
+      "name": "Primera D Metropolitana",
+      "name_translations": {
+        "en": "Primera D Metropolitana",
+        "ru": "Примера Д Метрополитана"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 322,
+      "sport_id": 1,
+      "league_id": 162,
+      "slug": "copa-de-la-superliga-1",
+      "name": "Copa de la Superliga",
+      "name_translations": {
+        "en": "Copa de la Superliga",
+        "ru": "Копа Де Ла Суперлига"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 323,
+      "sport_id": 1,
+      "league_id": 162,
+      "slug": "copa-de-la-superliga-2",
+      "name": "Copa de la Superliga",
+      "name_translations": {
+        "en": "Copa de la Superliga",
+        "ru": "Копа Де Ла Суперлига"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 324,
+      "sport_id": 1,
+      "league_id": 165,
+      "slug": "a-league",
+      "name": "A-League",
+      "name_translations": {
+        "en": "A-League",
+        "ru": "ЛИГА"
+      },
+      "order": 141,
+      "priority": 0
+    },
+    {
+      "id": 325,
+      "sport_id": 1,
+      "league_id": 165,
+      "slug": "a-league-1",
+      "name": "A-League",
+      "name_translations": {
+        "en": "A-League",
+        "ru": "ЛИГА"
+      },
+      "order": 140,
+      "priority": 0
+    },
+    {
+      "id": 326,
+      "sport_id": 1,
+      "league_id": 177,
+      "slug": "w-league",
+      "name": "W-League",
+      "name_translations": {
+        "en": "W-League",
+        "ru": "W-Лига"
+      },
+      "order": 139,
+      "priority": 0
+    },
+    {
+      "id": 327,
+      "sport_id": 1,
+      "league_id": 177,
+      "slug": "w-league-1",
+      "name": "W-League",
+      "name_translations": {
+        "en": "W-League",
+        "ru": "W-Лига"
+      },
+      "order": 138,
+      "priority": 0
+    },
+    {
+      "id": 328,
+      "sport_id": 1,
+      "league_id": 176,
+      "slug": "ffa-cup",
+      "name": "FFA Cup",
+      "name_translations": {
+        "en": "FFA Cup",
+        "ru": "Кубок ФФА"
+      },
+      "order": 137,
+      "priority": 0
+    },
+    {
+      "id": 329,
+      "sport_id": 1,
+      "league_id": 173,
+      "slug": "national-premier-league-finals",
+      "name": "National Premier League Finals",
+      "name_translations": {
+        "en": "National Premier League Finals",
+        "ru": "Национальной Премьер-Лиги По Футболу"
+      },
+      "order": 136,
+      "priority": 0
+    },
+    {
+      "id": 330,
+      "sport_id": 1,
+      "league_id": 173,
+      "slug": "national-premier-league-finals-1",
+      "name": "National Premier League Finals",
+      "name_translations": {
+        "en": "National Premier League Finals",
+        "ru": "Национальной Премьер-Лиги По Футболу"
+      },
+      "order": 135,
+      "priority": 0
+    },
+    {
+      "id": 331,
+      "sport_id": 1,
+      "league_id": 168,
+      "slug": "npl-capital-football",
+      "name": "NPL, Capital Football",
+      "name_translations": {
+        "en": "NPL, Capital Football",
+        "ru": "NPL, Столичный Футбол"
+      },
+      "order": 134,
+      "priority": 0
+    },
+    {
+      "id": 332,
+      "sport_id": 1,
+      "league_id": 168,
+      "slug": "npl-capital-football-1",
+      "name": "NPL, Capital Football",
+      "name_translations": {
+        "en": "NPL, Capital Football",
+        "ru": "NPL, Столичный Футбол"
+      },
+      "order": 133,
+      "priority": 0
+    },
+    {
+      "id": 333,
+      "sport_id": 1,
+      "league_id": 168,
+      "slug": "npl-capital-football-2",
+      "name": "NPL, Capital Football",
+      "name_translations": {
+        "en": "NPL, Capital Football",
+        "ru": "NPL, Столичный Футбол"
+      },
+      "order": 132,
+      "priority": 0
+    },
+    {
+      "id": 334,
+      "sport_id": 1,
+      "league_id": 168,
+      "slug": "npl-capital-football-3",
+      "name": "NPL, Capital Football",
+      "name_translations": {
+        "en": "NPL, Capital Football",
+        "ru": "NPL, Столичный Футбол"
+      },
+      "order": 131,
+      "priority": 0
+    },
+    {
+      "id": 335,
+      "sport_id": 1,
+      "league_id": 171,
+      "slug": "npl-new-south-wales",
+      "name": "NPL, New South Wales",
+      "name_translations": {
+        "en": "NPL, New South Wales",
+        "ru": "NPL, Новый Южный Уэльс"
+      },
+      "order": 130,
+      "priority": 0
+    },
+    {
+      "id": 336,
+      "sport_id": 1,
+      "league_id": 171,
+      "slug": "npl-new-south-wales-1",
+      "name": "NPL, New South Wales",
+      "name_translations": {
+        "en": "NPL, New South Wales",
+        "ru": "NPL, Новый Южный Уэльс"
+      },
+      "order": 129,
+      "priority": 0
+    },
+    {
+      "id": 337,
+      "sport_id": 1,
+      "league_id": 171,
+      "slug": "npl-new-south-wales-2",
+      "name": "NPL, New South Wales",
+      "name_translations": {
+        "en": "NPL, New South Wales",
+        "ru": "NPL, Новый Южный Уэльс"
+      },
+      "order": 127,
+      "priority": 0
+    },
+    {
+      "id": 338,
+      "sport_id": 1,
+      "league_id": 175,
+      "slug": "npl-northern-new-south-wales",
+      "name": "NPL, Northern New South Wales",
+      "name_translations": {
+        "en": "NPL, Northern New South Wales",
+        "ru": "NPL, Северный Новый Южный Уэльс"
+      },
+      "order": 126,
+      "priority": 0
+    },
+    {
+      "id": 339,
+      "sport_id": 1,
+      "league_id": 175,
+      "slug": "npl-northern-new-south-wales-1",
+      "name": "NPL, Northern New South Wales",
+      "name_translations": {
+        "en": "NPL, Northern New South Wales",
+        "ru": "NPL, Северный Новый Южный Уэльс"
+      },
+      "order": 125,
+      "priority": 0
+    },
+    {
+      "id": 340,
+      "sport_id": 1,
+      "league_id": 169,
+      "slug": "npl-queensland",
+      "name": "NPL, Queensland",
+      "name_translations": {
+        "en": "NPL, Queensland",
+        "ru": "NPL, Квинсленд"
+      },
+      "order": 124,
+      "priority": 0
+    },
+    {
+      "id": 341,
+      "sport_id": 1,
+      "league_id": 169,
+      "slug": "npl-queensland-1",
+      "name": "NPL, Queensland",
+      "name_translations": {
+        "en": "NPL, Queensland",
+        "ru": "NPL, Квинсленд"
+      },
+      "order": 123,
+      "priority": 0
+    },
+    {
+      "id": 342,
+      "sport_id": 1,
+      "league_id": 169,
+      "slug": "npl-queensland-2",
+      "name": "NPL, Queensland",
+      "name_translations": {
+        "en": "NPL, Queensland",
+        "ru": "NPL, Квинсленд"
+      },
+      "order": 122,
+      "priority": 0
+    },
+    {
+      "id": 343,
+      "sport_id": 1,
+      "league_id": 169,
+      "slug": "npl-queensland-3",
+      "name": "NPL, Queensland",
+      "name_translations": {
+        "en": "NPL, Queensland",
+        "ru": "NPL, Квинсленд"
+      },
+      "order": 121,
+      "priority": 0
+    },
+    {
+      "id": 344,
+      "sport_id": 1,
+      "league_id": 167,
+      "slug": "npl-south-australia",
+      "name": "NPL, South Australia",
+      "name_translations": {
+        "en": "NPL, South Australia",
+        "ru": "NPL, Южная Австралия"
+      },
+      "order": 120,
+      "priority": 0
+    },
+    {
+      "id": 345,
+      "sport_id": 1,
+      "league_id": 167,
+      "slug": "npl-south-australia-1",
+      "name": "NPL, South Australia",
+      "name_translations": {
+        "en": "NPL, South Australia",
+        "ru": "NPL, Южная Австралия"
+      },
+      "order": 118,
+      "priority": 0
+    },
+    {
+      "id": 346,
+      "sport_id": 1,
+      "league_id": 167,
+      "slug": "npl-south-australia-2",
+      "name": "NPL, South Australia",
+      "name_translations": {
+        "en": "NPL, South Australia",
+        "ru": "NPL, Южная Австралия"
+      },
+      "order": 117,
+      "priority": 0
+    },
+    {
+      "id": 347,
+      "sport_id": 1,
+      "league_id": 167,
+      "slug": "npl-south-australia-3",
+      "name": "NPL, South Australia",
+      "name_translations": {
+        "en": "NPL, South Australia",
+        "ru": "NPL, Южная Австралия"
+      },
+      "order": 116,
+      "priority": 0
+    },
+    {
+      "id": 348,
+      "sport_id": 1,
+      "league_id": 167,
+      "slug": "npl-south-australia-4",
+      "name": "NPL, South Australia",
+      "name_translations": {
+        "en": "NPL, South Australia",
+        "ru": "NPL, Южная Австралия"
+      },
+      "order": 115,
+      "priority": 0
+    },
+    {
+      "id": 349,
+      "sport_id": 1,
+      "league_id": 174,
+      "slug": "npl-tasmania",
+      "name": "NPL, Tasmania",
+      "name_translations": {
+        "en": "NPL, Tasmania",
+        "ru": "NPL, Тасмания"
+      },
+      "order": 114,
+      "priority": 0
+    },
+    {
+      "id": 350,
+      "sport_id": 1,
+      "league_id": 172,
+      "slug": "npl-victoria",
+      "name": "NPL, Victoria",
+      "name_translations": {
+        "en": "NPL, Victoria",
+        "ru": "NPL, Виктория"
+      },
+      "order": 113,
+      "priority": 0
+    },
+    {
+      "id": 351,
+      "sport_id": 1,
+      "league_id": 172,
+      "slug": "npl-victoria-1",
+      "name": "NPL, Victoria",
+      "name_translations": {
+        "en": "NPL, Victoria",
+        "ru": "NPL, Виктория"
+      },
+      "order": 112,
+      "priority": 0
+    },
+    {
+      "id": 352,
+      "sport_id": 1,
+      "league_id": 170,
+      "slug": "npl-western-australia",
+      "name": "NPL, Western Australia",
+      "name_translations": {
+        "en": "NPL, Western Australia",
+        "ru": "NPL, Западная Австралия"
+      },
+      "order": 111,
+      "priority": 0
+    },
+    {
+      "id": 353,
+      "sport_id": 1,
+      "league_id": 170,
+      "slug": "npl-western-australia-1",
+      "name": "NPL, Western Australia",
+      "name_translations": {
+        "en": "NPL, Western Australia",
+        "ru": "NPL, Западная Австралия"
+      },
+      "order": 110,
+      "priority": 0
+    },
+    {
+      "id": 354,
+      "sport_id": 1,
+      "league_id": 170,
+      "slug": "npl-western-australia-2",
+      "name": "NPL, Western Australia",
+      "name_translations": {
+        "en": "NPL, Western Australia",
+        "ru": "NPL, Западная Австралия"
+      },
+      "order": 109,
+      "priority": 0
+    },
+    {
+      "id": 355,
+      "sport_id": 1,
+      "league_id": 170,
+      "slug": "npl-western-australia-3",
+      "name": "NPL, Western Australia",
+      "name_translations": {
+        "en": "NPL, Western Australia",
+        "ru": "NPL, Западная Австралия"
+      },
+      "order": 108,
+      "priority": 0
+    },
+    {
+      "id": 356,
+      "sport_id": 1,
+      "league_id": 166,
+      "slug": "brisbane-premier-league",
+      "name": "Brisbane Premier League",
+      "name_translations": {
+        "en": "Brisbane Premier League",
+        "ru": "Брисбен Премьер-Лига"
+      },
+      "order": 107,
+      "priority": 0
+    },
+    {
+      "id": 357,
+      "sport_id": 1,
+      "league_id": 166,
+      "slug": "brisbane-premier-league-1",
+      "name": "Brisbane Premier League",
+      "name_translations": {
+        "en": "Brisbane Premier League",
+        "ru": "Брисбен Премьер-Лига"
+      },
+      "order": 106,
+      "priority": 0
+    },
+    {
+      "id": 358,
+      "sport_id": 1,
+      "league_id": 166,
+      "slug": "brisbane-premier-league-2",
+      "name": "Brisbane Premier League",
+      "name_translations": {
+        "en": "Brisbane Premier League",
+        "ru": "Брисбен Премьер-Лига"
+      },
+      "order": 105,
+      "priority": 0
+    },
+    {
+      "id": 359,
+      "sport_id": 1,
+      "league_id": 185,
+      "slug": "y-league",
+      "name": "Y-League",
+      "name_translations": {
+        "en": "Y-League",
+        "ru": "Y-Лига"
+      },
+      "order": 104,
+      "priority": 0
+    },
+    {
+      "id": 360,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 32,
+      "priority": 0
+    },
+    {
+      "id": 361,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-1",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 31,
+      "priority": 0
+    },
+    {
+      "id": 362,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-2",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 30,
+      "priority": 0
+    },
+    {
+      "id": 363,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-3",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 29,
+      "priority": 0
+    },
+    {
+      "id": 364,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-4",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 365,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-5",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 366,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-6",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 367,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-7",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 368,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-8",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 24,
+      "priority": 0
+    },
+    {
+      "id": 369,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-9",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 370,
+      "sport_id": 1,
+      "league_id": 186,
+      "slug": "liga-1-10",
+      "name": "Liga 1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Лига 1"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 371,
+      "sport_id": 1,
+      "league_id": 188,
+      "slug": "liga-2",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 372,
+      "sport_id": 1,
+      "league_id": 188,
+      "slug": "liga-2-1",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 373,
+      "sport_id": 1,
+      "league_id": 188,
+      "slug": "liga-2-2",
+      "name": "Liga 2",
+      "name_translations": {
+        "en": "Liga 2",
+        "ru": "Лига 2"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 374,
+      "sport_id": 1,
+      "league_id": 187,
+      "slug": "copa-inca",
+      "name": "Copa Inca",
+      "name_translations": {
+        "en": "Copa Inca",
+        "ru": "Копа Инка"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 375,
+      "sport_id": 1,
+      "league_id": 187,
+      "slug": "copa-inca-1",
+      "name": "Copa Inca",
+      "name_translations": {
+        "en": "Copa Inca",
+        "ru": "Копа Инка"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 376,
+      "sport_id": 1,
+      "league_id": 187,
+      "slug": "copa-inca-2",
+      "name": "Copa Inca",
+      "name_translations": {
+        "en": "Copa Inca",
+        "ru": "Копа Инка"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 377,
+      "sport_id": 1,
+      "league_id": 187,
+      "slug": "copa-inca-3",
+      "name": "Copa Inca",
+      "name_translations": {
+        "en": "Copa Inca",
+        "ru": "Копа Инка"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 378,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 379,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-1",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 380,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-2",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 381,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-3",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 382,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-4",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 383,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-5",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 384,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-6",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 385,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-7",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 386,
+      "sport_id": 1,
+      "league_id": 189,
+      "slug": "copa-bicentenario-8",
+      "name": "Copa Bicentenario",
+      "name_translations": {
+        "en": "Copa Bicentenario",
+        "ru": "Copa Bicentenario"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 387,
+      "sport_id": 1,
+      "league_id": 190,
+      "slug": "supercopa-peruana",
+      "name": "Supercopa Peruana",
+      "name_translations": {
+        "en": "Supercopa Peruana",
+        "ru": "Суперкопа Перуана"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 388,
+      "sport_id": 1,
+      "league_id": 191,
+      "slug": "ekstraklasa",
+      "name": "Ekstraklasa",
+      "name_translations": {
+        "en": "Ekstraklasa",
+        "ru": "Экстракласа"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 389,
+      "sport_id": 1,
+      "league_id": 191,
+      "slug": "ekstraklasa-1",
+      "name": "Ekstraklasa",
+      "name_translations": {
+        "en": "Ekstraklasa",
+        "ru": "Экстракласа"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 390,
+      "sport_id": 1,
+      "league_id": 191,
+      "slug": "ekstraklasa-2",
+      "name": "Ekstraklasa",
+      "name_translations": {
+        "en": "Ekstraklasa",
+        "ru": "Экстракласа"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 391,
+      "sport_id": 1,
+      "league_id": 191,
+      "slug": "ekstraklasa-3",
+      "name": "Ekstraklasa",
+      "name_translations": {
+        "en": "Ekstraklasa",
+        "ru": "Экстракласа"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 392,
+      "sport_id": 1,
+      "league_id": 192,
+      "slug": "i-liga",
+      "name": "I Liga",
+      "name_translations": {
+        "en": "I Liga",
+        "ru": "Я Лига"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 393,
+      "sport_id": 1,
+      "league_id": 192,
+      "slug": "i-liga-1",
+      "name": "I Liga",
+      "name_translations": {
+        "en": "I Liga",
+        "ru": "Я Лига"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 394,
+      "sport_id": 1,
+      "league_id": 195,
+      "slug": "ii-liga",
+      "name": "II Liga",
+      "name_translations": {
+        "en": "II Liga",
+        "ru": "II Лига"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 395,
+      "sport_id": 1,
+      "league_id": 200,
+      "slug": "iii-liga-group-1",
+      "name": "III Liga, Group 1",
+      "name_translations": {
+        "en": "III Liga, Group 1",
+        "ru": "III Лига, Группа 1"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 396,
+      "sport_id": 1,
+      "league_id": 201,
+      "slug": "iii-liga-group-2",
+      "name": "III Liga, Group 2",
+      "name_translations": {
+        "en": "III Liga, Group 2",
+        "ru": "III Лига, Группа 2"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 397,
+      "sport_id": 1,
+      "league_id": 199,
+      "slug": "iii-liga-group-3",
+      "name": "III Liga, Group 3",
+      "name_translations": {
+        "en": "III Liga, Group 3",
+        "ru": "III Лига, Группа 3"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 398,
+      "sport_id": 1,
+      "league_id": 202,
+      "slug": "iii-liga-group-4",
+      "name": "III Liga, Group 4",
+      "name_translations": {
+        "en": "III Liga, Group 4",
+        "ru": "III Лига, Группа 4"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 399,
+      "sport_id": 1,
+      "league_id": 193,
+      "slug": "puchar-polski",
+      "name": "Puchar Polski",
+      "name_translations": {
+        "en": "Puchar Polski",
+        "ru": "Puchar Polski"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 400,
+      "sport_id": 1,
+      "league_id": 194,
+      "slug": "super-cup-5",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 10,
+      "priority": 0
+    }
+  ],
+  "meta": {
+    "current_page": 4,
+    "from": 301,
+    "per_page": 100,
+    "to": 400
+  }
+}

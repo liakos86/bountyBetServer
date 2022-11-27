@@ -1,5 +1,8 @@
 package gr.server.data.api.model.events;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 import gr.server.data.api.enums.ChangeEvent;
@@ -9,8 +12,11 @@ import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
+import gr.server.data.constants.SportScoreApiConstants;
 
-public class MatchEvent {
+public class MatchEvent implements Comparable<MatchEvent>{
+	
+	MatchEventIncidents incidents;
 	
 	ChangeEvent changeEvent;
 	boolean markedForRemoval;
@@ -28,7 +34,12 @@ public class MatchEvent {
 	String slug;
 	String name;
 	
-	String start_at;
+	String start_at;//2022-09-05 00:00:00
+	
+	Integer start_hour;
+	
+	Integer start_minute;
+	
 	String status;
 	String status_more;
 	String status_loc;
@@ -189,11 +200,38 @@ public class MatchEvent {
 		this.away_team = away_team;
 	}
 	public String getStart_at() {
+		String format = SportScoreApiConstants.MATCH_START_TIME_FORMAT;
+		try {
+			Date parse = new SimpleDateFormat(format).parse(start_at);
+			this.start_hour = parse.getHours();
+			this.start_minute = parse.getMinutes();
+		} catch (ParseException e) {
+			System.out.println("START HOUR ERROR");
+			e.printStackTrace();
+		}
 		return start_at;
 	}
 	public void setStart_at(String start_at) {
 		this.start_at = start_at;
 	}
+	
+	
+	public Integer getStart_hour() {
+		return start_hour;
+	}
+
+	public void setStart_hour(Integer start_hour) {
+		this.start_hour = start_hour;
+	}
+
+	public Integer getStart_minute() {
+		return start_minute;
+	}
+
+	public void setStart_minute(Integer start_minute) {
+		this.start_minute = start_minute;
+	}
+
 	public Integer getPriority() {
 		return priority;
 	}
@@ -403,6 +441,14 @@ public class MatchEvent {
 		this.markedForRemoval = markedForRemoval;
 	}
 
+	public MatchEventIncidents getIncidents() {
+		return incidents;
+	}
+
+	public void setIncidents(MatchEventIncidents incidents) {
+		this.incidents = incidents;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof MatchEvent)) {
@@ -415,6 +461,31 @@ public class MatchEvent {
 	@Override
 	public int hashCode() {
 		return this.id * 37;
+	}
+
+	@Override
+	public int compareTo(MatchEvent other) {
+
+		if (this.time_live != null && other.time_live == null) {
+			return 1;
+		}
+		
+		if (this.time_live == null && other.time_live != null) {
+			return -1;
+		}
+		
+		if (this.time_live == null && other.time_live == null) {
+			SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
+			try {
+				Date thisDate = matchTimeFormat.parse(this.start_at);
+				Date otherDate = matchTimeFormat.parse(other.start_at);
+				return (int) (thisDate.getTime() - otherDate.getTime());
+			} catch (ParseException e) {
+				return -1;
+			}
+		}
+		
+		return 0;
 	}
 	
 }

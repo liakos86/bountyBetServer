@@ -31,7 +31,18 @@ public interface MongoClientHelper {
 	 * @return
 	 * @throws UserExistsException
 	 */
-	public User createUser(User user) throws UserExistsException;
+	public User createUser(User user);
+	
+	/**
+	 * Creates a new {@link User} in the 'user' collection of the database.
+	 * In case a {@link Document} with the same username already exists,
+	 * a {@link UserExistsException} is thrown.
+	 * 
+	 * @param user
+	 * @return
+	 * @throws UserExistsException
+	 */
+	public void validateUser(String email);
 	
 	/**
 	 * Called to fetch the open bets for a {@link User}.

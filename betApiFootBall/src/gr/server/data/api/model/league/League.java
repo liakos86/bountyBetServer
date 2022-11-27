@@ -8,6 +8,8 @@ import gr.server.data.api.model.events.MatchEvent;
 
 public class League implements Comparable<League>{
 	
+	List<Season> seasons = new ArrayList<>();
+	
 	List<MatchEvent> liveMatchEvents = new ArrayList<>();
 	
 	Sport sport;
@@ -181,6 +183,18 @@ public class League implements Comparable<League>{
 	public void setLiveMatchEvents(List<MatchEvent> liveMatchEvents) {
 		this.liveMatchEvents = liveMatchEvents;
 	}
+	
+	public List<Season> getSeasons() {
+		if (this.seasons == null) {
+			seasons = new ArrayList<>();
+		}
+		
+		return seasons;
+	}
+
+	public void setSeasons(List<Season> seasons) {
+		this.seasons = seasons;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -200,7 +214,7 @@ public class League implements Comparable<League>{
 	@Override
 	public String toString() {
 		if (this.name != null) {
-			return name;
+			return id + ": " + name;
 		}
 		
 		return String.valueOf(this.id);
@@ -208,11 +222,22 @@ public class League implements Comparable<League>{
 
 	@Override
 	public int compareTo(League other) {
-		if (this.priority == null) {
-			return -1;
+		
+		
+		if (this.section != null) {
+			if (other.section == null) {
+				return -1;
+			}
+			
+			return other.section.priority - this.section.priority;
 		}
 		
-		if (other.priority == null) {
+		
+		if (this.priority == null || this.priority == 0) {
+			return Integer.MAX_VALUE;
+		}
+		
+		if (other.priority == null || other.priority == 0) {
 			return 1;
 		}
 		

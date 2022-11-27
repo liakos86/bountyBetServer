@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.ws.rs.core.Response;
 
-import gr.server.application.exception.UserExistsException;
 import gr.server.data.user.model.objects.UserBet;
 
 /**
@@ -20,7 +19,11 @@ public interface MyBetOddsService {
 
 	List<UserBet> getMyOpenBets(String id);
 
-	String getLeagues();
+	/**
+	 * 
+	 * @return Sections with leagues.
+	 */
+	Response getLeagues();
 
 	Response getUser(String id);
 
@@ -28,7 +31,9 @@ public interface MyBetOddsService {
 
 	Response placeBet(String userBet);
 
-	Response createUser(String user) throws UserExistsException;
+	Response registerUser(String user) throws Exception;
+
+	String validateUser(String email) throws Exception;
 
 	String getLive();
 

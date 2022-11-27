@@ -1,0 +1,2839 @@
+{
+  "data": [
+    {
+      "id": 601,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-coppa-italia-serie-c",
+      "name_translations": {
+        "en": "Coppa Italia Serie C",
+        "ru": "Coppa Italia Серия C"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-coppa-italia-serie-c.png",
+      "start_date": "2022-10-04 12:30:00",
+      "end_date": "2023-04-11 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 602,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-supercoppa-di-lega-di-seconda-divisione",
+      "name_translations": {
+        "en": "Supercoppa di Lega di Seconda Divisione",
+        "ru": "Суперкубок 2го дивизиона"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-05-11 13:00:00",
+      "end_date": "2014-05-19 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 603,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-supercoppa-serie-c",
+      "name_translations": {
+        "en": "Supercoppa Serie C",
+        "ru": "Суперкубок Серия С"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-supercoppa-serie-c.png",
+      "start_date": "2022-04-30 14:30:00",
+      "end_date": "2022-05-14 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.67"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.67"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 604,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-a",
+      "name_translations": {
+        "en": "Serie D, Girone A",
+        "ru": "Серия D, Жироне А"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-a.png",
+      "start_date": "2022-09-03 14:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.73"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 605,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-b",
+      "name_translations": {
+        "en": "Serie D, Girone B",
+        "ru": "Серия D, Girone B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-b.png",
+      "start_date": "2022-09-04 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 606,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-c",
+      "name_translations": {
+        "en": "Serie D, Girone C",
+        "ru": "Серия D, Girone C"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-c.png",
+      "start_date": "2022-09-04 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 607,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-d",
+      "name_translations": {
+        "en": "Serie D, Girone D",
+        "ru": "Серия D, Жироне D"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-d.png",
+      "start_date": "2022-09-04 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "39%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 608,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-e",
+      "name_translations": {
+        "en": "Serie D, Girone E",
+        "ru": "Серия D, Жироне E"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-e.png",
+      "start_date": "2022-09-03 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 609,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-f",
+      "name_translations": {
+        "en": "Serie D, Girone F",
+        "ru": "Серия D, Girone F"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-f.png",
+      "start_date": "2022-09-04 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.80"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 610,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-g",
+      "name_translations": {
+        "en": "Serie D, Girone G",
+        "ru": "Серия D, Girone G"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-g.png",
+      "start_date": "2022-09-04 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 611,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-h",
+      "name_translations": {
+        "en": "Serie D, Girone H",
+        "ru": "Серия D, Girone H"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-h.png",
+      "start_date": "2022-09-04 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.55"
+        },
+        {
+          "name": "Home team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 612,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-girone-i",
+      "name_translations": {
+        "en": "Serie D, Girone I",
+        "ru": "Серия D, Жироне I"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-girone-i.png",
+      "start_date": "2022-09-18 13:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.18"
+        },
+        {
+          "name": "Home team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "53%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 613,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-primavera-cup",
+      "name_translations": {
+        "en": "Primavera Cup",
+        "ru": "Кубок Примаверы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-primavera-cup.png",
+      "start_date": "2022-08-24 09:00:00",
+      "end_date": "2023-04-26 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 614,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-d-champion-phase",
+      "name_translations": {
+        "en": "Serie D, Champion Phase",
+        "ru": "Серия D, Чемпион Фаза"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-d-champion-phase.png",
+      "start_date": "2022-05-22 14:00:00",
+      "end_date": "2022-06-15 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 615,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-supercoppa-primavera",
+      "name_translations": {
+        "en": "Supercoppa Primavera",
+        "ru": "Суперкубок Примаверы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-supercoppa-primavera.png",
+      "start_date": "2021-12-09 16:00:00",
+      "end_date": "2021-12-10 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 616,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-campionato-primavera-1",
+      "name_translations": {
+        "en": "Campionato Primavera 1",
+        "ru": "Примавера (Campionato Primavera 1)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-campionato-primavera-1.png",
+      "start_date": "2022-08-19 15:30:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.91"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 617,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-campionato-primavera-2",
+      "name_translations": {
+        "en": "Campionato Primavera 2",
+        "ru": "Кампионато Примавера 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-campionato-primavera-2.png",
+      "start_date": "2022-09-10 09:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "0"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.77"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 618,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-a-femminile",
+      "name_translations": {
+        "en": "Serie A Femminile",
+        "ru": "Женская серия А"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-a-femminile.png",
+      "start_date": "2022-08-27 18:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 619,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-c-girone-a",
+      "name_translations": {
+        "en": "Serie C, Girone A",
+        "ru": "Серия С, Жироне А"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-c-girone-a.png",
+      "start_date": "2022-09-03 15:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "36%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 620,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-c-girone-c",
+      "name_translations": {
+        "en": "Serie C, Girone C",
+        "ru": "Серия С, Жироне С"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-c-girone-c.png",
+      "start_date": "2022-09-04 15:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 621,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-c-girone-b",
+      "name_translations": {
+        "en": "Serie C, Girone B",
+        "ru": "Серия С, Жироне Б"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-c-girone-b.png",
+      "start_date": "2022-09-04 12:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.07"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 622,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-c-promotion-playoffs",
+      "name_translations": {
+        "en": "Serie C,  Promotion Playoffs",
+        "ru": "Серия C, Акция Плей-Офф"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-c-promotion-playoffs.png",
+      "start_date": "2022-05-01 12:30:00",
+      "end_date": "2022-06-13 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.15"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.97"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 623,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-coppa-italia-women",
+      "name_translations": {
+        "en": "Coppa Italia, Women",
+        "ru": "Кубок Италии, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-coppa-italia-women.png",
+      "start_date": "2022-01-29 11:00:00",
+      "end_date": "2022-05-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.31"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 624,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-c-relegation-play-out",
+      "name_translations": {
+        "en": "Serie C,  Relegation Play Out",
+        "ru": "Серия C, Понижение Play Out"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-c-relegation-play-out.png",
+      "start_date": "2022-05-07 14:30:00",
+      "end_date": "2022-05-15 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "70%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "10%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "7.60"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.20"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 625,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-b",
+      "name_translations": {
+        "en": "Serie B",
+        "ru": "Серия B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-b.png",
+      "start_date": "2022-08-12 18:45:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.77"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.37"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 626,
+      "sport_id": 1,
+      "section_id": 102,
+      "slug": "jamaica-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/jamaica-premier-league.png",
+      "start_date": "2022-01-16 18:00:00",
+      "end_date": "2022-10-10 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.37"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.77"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 102,
+        "sport_id": 1,
+        "slug": "jamaica",
+        "name": "Jamaica",
+        "priority": 0,
+        "flag": "jamaica"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 627,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-j-league-cup",
+      "name_translations": {
+        "en": "J. League Cup",
+        "ru": "Кубок Джей-лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-j-league-cup.png",
+      "start_date": "2022-02-23 05:00:00",
+      "end_date": "2022-10-22 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.87"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.50"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 628,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-jleague",
+      "name_translations": {
+        "en": "J.League",
+        "ru": "Первый дивизион Джей-лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-jleague.png",
+      "start_date": "2022-02-18 10:00:00",
+      "end_date": "2022-11-13 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.49"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.27"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.15"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 629,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-emperor-cup",
+      "name_translations": {
+        "en": "Emperor Cup",
+        "ru": "Кубок Императора"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-emperor-cup.png",
+      "start_date": "2022-05-21 03:00:00",
+      "end_date": "2022-10-16 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.24"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.81"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 630,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Японии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-super-cup.png",
+      "start_date": "2022-02-12 04:35:00",
+      "end_date": "2022-02-13 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 631,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-jleague-2",
+      "name_translations": {
+        "en": "J.League 2",
+        "ru": "Второй дивизион Джей-лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-jleague-2.png",
+      "start_date": "2022-02-19 04:00:00",
+      "end_date": "2022-10-23 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "42"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.19"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 632,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-jleague-3",
+      "name_translations": {
+        "en": "J.League 3",
+        "ru": "Третий дивизион Джей-лиги"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-jleague-3.png",
+      "start_date": "2022-03-12 04:00:00",
+      "end_date": "2022-11-20 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.50"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.00"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 633,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-japan-football-league",
+      "name_translations": {
+        "en": "Japan Football League",
+        "ru": "Японская футбольная лига"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 634,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-nadeshiko-league-div-1-women",
+      "name_translations": {
+        "en": "Nadeshiko League, Div. 1, Women",
+        "ru": "1-й дивизион Надэсико лиги, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/japan-nadeshiko-league-div-1-women.png",
+      "start_date": "2022-03-19 04:00:00",
+      "end_date": "2022-11-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Japan",
+        "flag": "japan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.13"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 635,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-j-league-new-year-cup",
+      "name_translations": {
+        "en": "J-League New Year Cup",
+        "ru": "Джей-лиги Новогодний Кубок"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2017-01-22 04:00:00",
+      "end_date": "2017-02-27 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.07"
+        },
+        {
+          "name": "Home team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 636,
+      "sport_id": 1,
+      "section_id": 103,
+      "slug": "japan-nadeshiko-league-cup-2-women-group-a",
+      "name_translations": {
+        "en": "Nadeshiko League Cup 2, Women, Group A",
+        "ru": "Второй дивизион, Женщины, Группа A"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 103,
+        "sport_id": 1,
+        "slug": "japan",
+        "name": "Japan",
+        "priority": 0,
+        "flag": "japan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 637,
+      "sport_id": 1,
+      "section_id": 104,
+      "slug": "jordan-jordan-league",
+      "name_translations": {
+        "en": "Jordan League",
+        "ru": "Про-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/jordan-jordan-league.png",
+      "start_date": "2022-04-08 16:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Jordan",
+        "flag": "jordan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.52"
+        }
+      ],
+      "most_count": 34,
+      "section": {
+        "id": 104,
+        "sport_id": 1,
+        "slug": "jordan",
+        "name": "Jordan",
+        "priority": 0,
+        "flag": "jordan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 638,
+      "sport_id": 1,
+      "section_id": 104,
+      "slug": "jordan-jordan-cup",
+      "name_translations": {
+        "en": "Jordan Cup",
+        "ru": "Кубок Иордании"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/jordan-jordan-cup.png",
+      "start_date": "2022-08-18 15:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Jordan",
+        "flag": "jordan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "12%"
+        }
+      ],
+      "most_count": 20,
+      "section": {
+        "id": 104,
+        "sport_id": 1,
+        "slug": "jordan",
+        "name": "Jordan",
+        "priority": 0,
+        "flag": "jordan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 639,
+      "sport_id": 1,
+      "section_id": 104,
+      "slug": "jordan-jordan-1st-division",
+      "name_translations": {
+        "en": "Jordan 1st Division",
+        "ru": "Первый дивизион Иордании"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/jordan-jordan-1st-division.png",
+      "start_date": "2022-08-07 14:00:00",
+      "end_date": "2022-11-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Jordan",
+        "flag": "jordan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.66"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.07"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 104,
+        "sport_id": 1,
+        "slug": "jordan",
+        "name": "Jordan",
+        "priority": 0,
+        "flag": "jordan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 640,
+      "sport_id": 1,
+      "section_id": 105,
+      "slug": "kazakhstan-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kazakhstan-premier-league.png",
+      "start_date": "2022-03-05 08:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kazakhstan",
+        "flag": "kazakhstan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.62"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 105,
+        "sport_id": 1,
+        "slug": "kazakhstan",
+        "name": "Kazakhstan",
+        "priority": 0,
+        "flag": "kazakhstan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 641,
+      "sport_id": 1,
+      "section_id": 105,
+      "slug": "kazakhstan-kazakhstan-cup",
+      "name_translations": {
+        "en": "Kazakhstan Cup",
+        "ru": "Кубок Казахстана"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kazakhstan-kazakhstan-cup.png",
+      "start_date": "2022-05-04 09:00:00",
+      "end_date": "2022-11-12 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kazakhstan",
+        "flag": "kazakhstan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.34"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 105,
+        "sport_id": 1,
+        "slug": "kazakhstan",
+        "name": "Kazakhstan",
+        "priority": 0,
+        "flag": "kazakhstan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 642,
+      "sport_id": 1,
+      "section_id": 105,
+      "slug": "kazakhstan-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Казахстана"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kazakhstan-super-cup.png",
+      "start_date": "2022-03-02 13:30:00",
+      "end_date": "2022-03-03 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kazakhstan",
+        "flag": "kazakhstan"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 105,
+        "sport_id": 1,
+        "slug": "kazakhstan",
+        "name": "Kazakhstan",
+        "priority": 0,
+        "flag": "kazakhstan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 643,
+      "sport_id": 1,
+      "section_id": 105,
+      "slug": "kazakhstan-1-division",
+      "name_translations": {
+        "en": "1. Division",
+        "ru": "Первый дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kazakhstan-1-division.png",
+      "start_date": "2022-04-16 09:00:00",
+      "end_date": "2022-11-06 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.59"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.54"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 105,
+        "sport_id": 1,
+        "slug": "kazakhstan",
+        "name": "Kazakhstan",
+        "priority": 0,
+        "flag": "kazakhstan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 644,
+      "sport_id": 1,
+      "section_id": 106,
+      "slug": "kenya-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kenya-premier-league.png",
+      "start_date": "2022-09-10 12:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kenya",
+        "flag": "kenya"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.23"
+        },
+        {
+          "name": "Home team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.24"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.00"
+        }
+      ],
+      "most_count": 18,
+      "section": {
+        "id": 106,
+        "sport_id": 1,
+        "slug": "kenya",
+        "name": "Kenya",
+        "priority": 0,
+        "flag": "kenya"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 645,
+      "sport_id": 1,
+      "section_id": 107,
+      "slug": "kuwait-crown-prince-cup",
+      "name_translations": {
+        "en": "Crown Prince Cup",
+        "ru": "Кубок кронпринца Кувейта"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kuwait-crown-prince-cup.png",
+      "start_date": "2022-10-18 16:00:00",
+      "end_date": "2023-05-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 107,
+        "sport_id": 1,
+        "slug": "kuwait",
+        "name": "Kuwait",
+        "priority": 0,
+        "flag": "kuwait"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 646,
+      "sport_id": 1,
+      "section_id": 107,
+      "slug": "kuwait-federation-cup",
+      "name_translations": {
+        "en": "Federation Cup",
+        "ru": "Кубок Федерации Кувейта"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kuwait-federation-cup.png",
+      "start_date": "2022-09-20 15:15:00",
+      "end_date": "2023-04-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kuwait",
+        "flag": "kuwait"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 107,
+        "sport_id": 1,
+        "slug": "kuwait",
+        "name": "Kuwait",
+        "priority": 0,
+        "flag": "kuwait"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 647,
+      "sport_id": 1,
+      "section_id": 107,
+      "slug": "kuwait-kuwait-league",
+      "name_translations": {
+        "en": "Kuwait League",
+        "ru": "Кувейт Премьер-Лига (STC Premier League)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kuwait-kuwait-league.png",
+      "start_date": "2022-08-25 15:50:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "28"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.62"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 17,
+      "section": {
+        "id": 107,
+        "sport_id": 1,
+        "slug": "kuwait",
+        "name": "Kuwait",
+        "priority": 0,
+        "flag": "kuwait"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 648,
+      "sport_id": 1,
+      "section_id": 107,
+      "slug": "kuwait-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Кувейта"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kuwait-super-cup.png",
+      "start_date": "2022-11-06 16:15:00",
+      "end_date": "2022-11-07 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Kuwait",
+        "flag": "kuwait"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 107,
+        "sport_id": 1,
+        "slug": "kuwait",
+        "name": "Kuwait",
+        "priority": 0,
+        "flag": "kuwait"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 649,
+      "sport_id": 1,
+      "section_id": 108,
+      "slug": "latvia-virsliga",
+      "name_translations": {
+        "en": "Virsliga",
+        "ru": "Высшая лига (Вирслига Оптибет)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/latvia-virsliga.png",
+      "start_date": "2022-03-11 16:00:00",
+      "end_date": "2022-11-20 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Latvia",
+        "flag": "latvia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.15"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 108,
+        "sport_id": 1,
+        "slug": "latvia",
+        "name": "Latvia",
+        "priority": 0,
+        "flag": "latvia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 650,
+      "sport_id": 1,
+      "section_id": 108,
+      "slug": "latvia-1liga",
+      "name_translations": {
+        "en": "1.Liga",
+        "ru": "Лига 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/latvia-1liga.png",
+      "start_date": "2022-04-08 15:00:00",
+      "end_date": "2022-11-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Latvia",
+        "flag": "latvia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.79"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.29"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 108,
+        "sport_id": 1,
+        "slug": "latvia",
+        "name": "Latvia",
+        "priority": 0,
+        "flag": "latvia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 13,
+    "from": 601,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 650,
+    "total": 1760
+  }
+}

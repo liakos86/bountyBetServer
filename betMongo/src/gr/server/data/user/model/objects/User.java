@@ -19,12 +19,24 @@ implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	boolean validated;
+	
+	/**
+	 * 
+	 */
+	String errorMessage;
 
 	/**
 	 * Unique object id as defined by mongoDb during insert.
 	 */
 	String mongoId;
 
+	/**
+	 * The unique email that the app user will demand.
+	 */
+	String email;
+	
 	/**
 	 * The unique username that the app user will demand.
 	 */
@@ -120,6 +132,34 @@ implements Serializable{
 
 	public void setBounties(List<UserBounty> bounties) {
 		this.bounties = bounties;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public boolean isValidated() {
+		return validated;
+	}
+
+	public void setValidated(boolean validated) {
+		this.validated = validated;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
 	}
 	
 }

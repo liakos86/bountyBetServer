@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebListener;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
 import gr.server.data.global.helper.ApiDataFetchHelper;
 import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
+import gr.server.email.EmailSendUtil;
 import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
 import gr.server.util.TimerTaskHelper;
 
@@ -33,27 +34,22 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		
-		MockApiDataFetchHelper.fetchLeagues();
+//		MockApiDataFetchHelper.fetchSections();
+//		
+//		MockApiDataFetchHelper.fetchLeagues();
+//		
+//		ApiDataFetchHelper.fetchEventsIntoLeagues(false);
+//		
+//		ApiDataFetchHelper.fetchEventsIntoLeagues(true);
+//		
+//		MockApiDataFetchHelper.fetchSeasonsStandingsIntoLeagues();
+//		
+//		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
+//		
+//		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
+//		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
+//		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
 		
-		ApiDataFetchHelper.fetchEvents(false);
-		
-		ApiDataFetchHelper.fetchEvents(true);
-		
-		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
-		
-		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
-		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
-		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
-		
-		//		System.out.println("SCHEDULING");
-//		TimerTask mockGoalsTimerTask = TimerTaskHelper.mockLiveEventsTask();
-//		Timer mockGoalsTimer = new Timer("mockGoalsTimer");
-//		mockGoalsTimer.schedule(mockGoalsTimerTask, 15000, 10000);
-		
-//		System.out.println("SCHEDULING");
-//		TimerTask refreshLeaguesTimerTask = TimerTaskHelper.retrieveLeaguesTask();
-//		Timer refreshLeaguesTimer = new Timer("refreshLeaguesTimer");
-//		refreshLeaguesTimer.schedule(refreshLeaguesTimerTask, 4000);
 	}
 
 

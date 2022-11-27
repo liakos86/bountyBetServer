@@ -24,7 +24,7 @@ implements WebSocketMessageHandler{
 				.replace("\"home_score\":[]", "\"home_score\": null")
 				.replace("\"away_score\":[]", "\"away_score\": null");
 		//System.out.println("CONVERTED " + replacedMsg);
-		System.out.println(msg);
+//		System.out.println(msg);
 		Updates updates = new Gson().fromJson(replacedMsg, new TypeToken<Updates>() {}.getType());
 		LiveUpdatesHelper.updateLiveDetails(updates);
 	}

@@ -1,0 +1,2747 @@
+{
+  "data": [
+    {
+      "id": 551,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-nb-ii",
+      "name_translations": {
+        "en": "NB II",
+        "ru": "Венгерский национальный чемпионат II"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-nb-ii.png",
+      "start_date": "2022-07-30 15:30:00",
+      "end_date": "2023-06-04 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Hungary",
+        "flag": "hungary"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.56"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 552,
+      "sport_id": 1,
+      "section_id": 94,
+      "slug": "hungary-nb-i-women",
+      "name_translations": {
+        "en": "NB I, Women",
+        "ru": "Высшая лига (OTP Банк Лига), Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-nb-i-women.png",
+      "start_date": "2022-08-12 15:30:00",
+      "end_date": "2023-06-15 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Hungary",
+        "flag": "hungary"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.76"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.20"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 94,
+        "sport_id": 1,
+        "slug": "hungary",
+        "name": "Hungary",
+        "priority": 0,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 553,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-urvalsdeild",
+      "name_translations": {
+        "en": "Urvalsdeild",
+        "ru": "Высшая избранная лига (Urvalsdeild)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-urvalsdeild.png",
+      "start_date": "2022-04-18 19:15:00",
+      "end_date": "2022-10-29 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.97"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 27,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 554,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-bikarinn",
+      "name_translations": {
+        "en": "Bikarinn",
+        "ru": "Бикаринн"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-bikarinn.png",
+      "start_date": "2022-04-08 18:00:00",
+      "end_date": "2022-10-02 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.12"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.34"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 555,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-1-deild",
+      "name_translations": {
+        "en": "1. deild",
+        "ru": "Первый дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-1-deild.png",
+      "start_date": "2022-05-05 19:15:00",
+      "end_date": "2022-09-17 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.49"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.04"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 556,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Исландии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-super-cup.png",
+      "start_date": "2022-04-10 20:00:00",
+      "end_date": "2022-04-11 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 557,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-league-cup-a",
+      "name_translations": {
+        "en": "League Cup A",
+        "ru": "Кубок Исландии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-league-cup-a.png",
+      "start_date": "2022-02-03 19:30:00",
+      "end_date": "2022-04-02 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 558,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-urvalsdeild-women",
+      "name_translations": {
+        "en": "Urvalsdeild, Women",
+        "ru": "Избранная лига (Urvalsdeild), Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-urvalsdeild-women.png",
+      "start_date": "2022-04-26 18:00:00",
+      "end_date": "2022-10-01 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.59"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": 17,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 559,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-2-deild",
+      "name_translations": {
+        "en": "2. deild",
+        "ru": "Второй дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-2-deild.png",
+      "start_date": "2022-05-06 19:15:00",
+      "end_date": "2022-09-17 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.71"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 560,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-1-deild-women",
+      "name_translations": {
+        "en": "1 deild women",
+        "ru": "Первый дивизион, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-1-deild-women.png",
+      "start_date": "2022-05-05 19:15:00",
+      "end_date": "2022-09-16 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.40"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 561,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-cup-women",
+      "name_translations": {
+        "en": "Cup, Women",
+        "ru": "Кубок Исландии, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-cup-women.png",
+      "start_date": "2022-02-23 18:00:00",
+      "end_date": "2022-08-27 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "5%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.21"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 562,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-league-cup-a-women",
+      "name_translations": {
+        "en": "League Cup A, Women",
+        "ru": "Кубок Исландии, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-league-cup-a-women.png",
+      "start_date": "2022-02-11 19:00:00",
+      "end_date": "2022-04-02 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "64%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 563,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-super-cup-women",
+      "name_translations": {
+        "en": "Super Cup, Women",
+        "ru": "Суперкубок Исландии, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-super-cup-women.png",
+      "start_date": "2022-04-18 16:00:00",
+      "end_date": "2022-04-19 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 10,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 564,
+      "sport_id": 1,
+      "section_id": 95,
+      "slug": "iceland-3-deild",
+      "name_translations": {
+        "en": "3. deild",
+        "ru": "Третий дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iceland-3-deild.png",
+      "start_date": "2022-05-06 19:00:00",
+      "end_date": "2022-09-18 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iceland",
+        "flag": "iceland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "22"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.33"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 95,
+        "sport_id": 1,
+        "slug": "iceland",
+        "name": "Iceland",
+        "priority": 0,
+        "flag": "iceland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 565,
+      "sport_id": 1,
+      "section_id": 96,
+      "slug": "india-i-league",
+      "name_translations": {
+        "en": "I-League",
+        "ru": "Высшая лига (I-Лига)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/india-i-league.png",
+      "start_date": "2021-12-26 08:30:00",
+      "end_date": "2022-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "India",
+        "flag": "india"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "20"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.43"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 96,
+        "sport_id": 1,
+        "slug": "india",
+        "name": "India",
+        "priority": 0,
+        "flag": "india"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 566,
+      "sport_id": 1,
+      "section_id": 96,
+      "slug": "india-indian-super-league",
+      "name_translations": {
+        "en": "Indian Super League",
+        "ru": "Суперлига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/india-indian-super-league.png",
+      "start_date": "2022-10-07 14:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "India",
+        "flag": "india"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "20"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.08"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.54"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 96,
+        "sport_id": 1,
+        "slug": "india",
+        "name": "India",
+        "priority": 0,
+        "flag": "india"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 567,
+      "sport_id": 1,
+      "section_id": 96,
+      "slug": "india-calcutta-1st-division",
+      "name_translations": {
+        "en": "Calcutta 1st Division",
+        "ru": "Калькутта Первый дивизион"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 96,
+        "sport_id": 1,
+        "slug": "india",
+        "name": "India",
+        "priority": 0,
+        "flag": "india"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 568,
+      "sport_id": 1,
+      "section_id": 96,
+      "slug": "india-calcutta-premier-division",
+      "name_translations": {
+        "en": "Calcutta Premier Division",
+        "ru": "Калькутта Премьер дивизион"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 96,
+        "sport_id": 1,
+        "slug": "india",
+        "name": "India",
+        "priority": 0,
+        "flag": "india"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 569,
+      "sport_id": 1,
+      "section_id": 96,
+      "slug": "india-federation-cup",
+      "name_translations": {
+        "en": "Federation Cup",
+        "ru": "Кубок Федерации"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2017-05-07 10:30:00",
+      "end_date": "2017-06-30 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.55"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 96,
+        "sport_id": 1,
+        "slug": "india",
+        "name": "India",
+        "priority": 0,
+        "flag": "india"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 570,
+      "sport_id": 1,
+      "section_id": 96,
+      "slug": "india-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Индии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/india-super-cup.png",
+      "start_date": "2019-03-15 11:30:00",
+      "end_date": "2019-04-14 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "India",
+        "flag": "india"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 96,
+        "sport_id": 1,
+        "slug": "india",
+        "name": "India",
+        "priority": 0,
+        "flag": "india"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 571,
+      "sport_id": 1,
+      "section_id": 97,
+      "slug": "indonesia-liga-1",
+      "name_translations": {
+        "en": "Liga 1",
+        "ru": "Первая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/indonesia-liga-1.png",
+      "start_date": "2022-07-23 08:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Indonesia",
+        "flag": "indonesia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.76"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.94"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 97,
+        "sport_id": 1,
+        "slug": "indonesia",
+        "name": "Indonesia",
+        "priority": 0,
+        "flag": "indonesia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 572,
+      "sport_id": 1,
+      "section_id": 97,
+      "slug": "indonesia-liga-2-relegation-round",
+      "name_translations": {
+        "en": "Liga 2, Relegation Round",
+        "ru": "Вторая лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/indonesia-liga-2-relegation-round.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 97,
+        "sport_id": 1,
+        "slug": "indonesia",
+        "name": "Indonesia",
+        "priority": 0,
+        "flag": "indonesia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 573,
+      "sport_id": 1,
+      "section_id": 98,
+      "slug": "iran-persian-gulf-league",
+      "name_translations": {
+        "en": "Persian Gulf League",
+        "ru": "Лига Персидского Залива"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iran-persian-gulf-league.png",
+      "start_date": "2022-08-12 14:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "1.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "44%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.26"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 98,
+        "sport_id": 1,
+        "slug": "iran",
+        "name": "Iran",
+        "priority": 0,
+        "flag": "iran"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 574,
+      "sport_id": 1,
+      "section_id": 98,
+      "slug": "iran-azadegan-league",
+      "name_translations": {
+        "en": "Azadegan League",
+        "ru": "Лига Азадеган"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iran-azadegan-league.png",
+      "start_date": "2022-08-27 14:15:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "34"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.05"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "42%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 98,
+        "sport_id": 1,
+        "slug": "iran",
+        "name": "Iran",
+        "priority": 0,
+        "flag": "iran"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 575,
+      "sport_id": 1,
+      "section_id": 98,
+      "slug": "iran-hazfi-cup",
+      "name_translations": {
+        "en": "Hazfi Cup",
+        "ru": "Кубок Хазфи"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/iran-hazfi-cup.png",
+      "start_date": "2021-12-19 10:30:00",
+      "end_date": "2022-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Iran",
+        "flag": "iran"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "39%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "19%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.19"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 98,
+        "sport_id": 1,
+        "slug": "iran",
+        "name": "Iran",
+        "priority": 0,
+        "flag": "iran"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 576,
+      "sport_id": 1,
+      "section_id": 99,
+      "slug": "ireland-premier-division",
+      "name_translations": {
+        "en": "Premier Division",
+        "ru": "Премьер Дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ireland-premier-division.png",
+      "start_date": "2022-02-18 19:45:00",
+      "end_date": "2022-11-13 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ireland",
+        "flag": "ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "36"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.43"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.41"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 99,
+        "sport_id": 1,
+        "slug": "ireland",
+        "name": "Ireland",
+        "priority": 0,
+        "flag": "ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 577,
+      "sport_id": 1,
+      "section_id": 99,
+      "slug": "ireland-first-division",
+      "name_translations": {
+        "en": "First Division",
+        "ru": "Первый Дивизион"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ireland-first-division.png",
+      "start_date": "2022-02-18 19:45:00",
+      "end_date": "2022-10-21 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ireland",
+        "flag": "ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "27"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.45"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 99,
+        "sport_id": 1,
+        "slug": "ireland",
+        "name": "Ireland",
+        "priority": 0,
+        "flag": "ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 578,
+      "sport_id": 1,
+      "section_id": 99,
+      "slug": "ireland-league-cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Кубок лиги (Эйрком Премьер)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ireland-league-cup.png",
+      "start_date": "2020-03-08 15:30:00",
+      "end_date": "2020-09-14 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Ireland",
+        "flag": "ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "75%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 99,
+        "sport_id": 1,
+        "slug": "ireland",
+        "name": "Ireland",
+        "priority": 0,
+        "flag": "ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 579,
+      "sport_id": 1,
+      "section_id": 99,
+      "slug": "ireland-fai-cup",
+      "name_translations": {
+        "en": "FAI Cup",
+        "ru": "Кубок Ирландии (ФАИ)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ireland-fai-cup.png",
+      "start_date": "2022-07-29 18:30:00",
+      "end_date": "2022-11-13 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ireland",
+        "flag": "ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": 25,
+      "section": {
+        "id": 99,
+        "sport_id": 1,
+        "slug": "ireland",
+        "name": "Ireland",
+        "priority": 0,
+        "flag": "ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 580,
+      "sport_id": 1,
+      "section_id": 99,
+      "slug": "ireland-fai-presidents-cup",
+      "name_translations": {
+        "en": "FAI Presidents Cup",
+        "ru": "Президентский кубок Ирландии (ФАИ)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/ireland-fai-presidents-cup.png",
+      "start_date": "2022-02-11 20:00:00",
+      "end_date": "2022-02-12 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Ireland",
+        "flag": "ireland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 99,
+        "sport_id": 1,
+        "slug": "ireland",
+        "name": "Ireland",
+        "priority": 0,
+        "flag": "ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 581,
+      "sport_id": 1,
+      "section_id": 99,
+      "slug": "ireland-prom-to-eirecom-league",
+      "name_translations": {
+        "en": "Prom to Eirecom League",
+        "ru": "Выход в Лигу Eirecom"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 99,
+        "sport_id": 1,
+        "slug": "ireland",
+        "name": "Ireland",
+        "priority": 0,
+        "flag": "ireland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 582,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-premier-league",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/israel-premier-league.png",
+      "start_date": "2022-08-20 15:00:00",
+      "end_date": "2023-05-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "26"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.79"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": 23,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 583,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-state-cup",
+      "name_translations": {
+        "en": "State Cup",
+        "ru": "Кубок Израиля"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/israel-state-cup.png",
+      "start_date": "2022-10-18 11:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "13"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.31"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": 24,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 584,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-national-league",
+      "name_translations": {
+        "en": "National League",
+        "ru": "Национальная лига Израиля"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/israel-national-league.png",
+      "start_date": "2022-08-18 17:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "2"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 585,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-super-cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "Суперкубок Израиля"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/israel-super-cup.png",
+      "start_date": "2022-07-16 17:30:00",
+      "end_date": "2022-07-17 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.00"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 586,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-liga-alef",
+      "name_translations": {
+        "en": "Liga Alef",
+        "ru": "Третий дивизион (Лига Алеф)"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 587,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-liga-bet-south-b",
+      "name_translations": {
+        "en": "Liga Bet South B",
+        "ru": "Лига Бет (Юг Б)"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2021-03-29 12:00:00",
+      "end_date": "2021-07-01 14:30:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.35"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 588,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-liga-bet-south-a",
+      "name_translations": {
+        "en": "Liga Bet South A",
+        "ru": "Лига Бет (Юг)"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.85"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.02"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 589,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-league-cup-premier",
+      "name_translations": {
+        "en": "League Cup, Premier",
+        "ru": "Кубок лиги, Премьер"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/israel-league-cup-premier.png",
+      "start_date": "2022-07-14 17:00:00",
+      "end_date": "2023-01-19 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.25"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 590,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-league-cup-national",
+      "name_translations": {
+        "en": "League Cup, National",
+        "ru": "Кубок лиги, Националь"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/israel-league-cup-national.png",
+      "start_date": "2022-08-01 16:30:00",
+      "end_date": "2022-09-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "5"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.18"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.18"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 591,
+      "sport_id": 1,
+      "section_id": 100,
+      "slug": "israel-ligat-al-women",
+      "name_translations": {
+        "en": "Ligat Al, Women",
+        "ru": "Чемпионат Израиля, Женщины"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-09-22 15:30:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 100,
+        "sport_id": 1,
+        "slug": "israel",
+        "name": "Israel",
+        "priority": 0,
+        "flag": "israel"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 592,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-a",
+      "name_translations": {
+        "en": "Serie A",
+        "ru": "Серия А"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-a.png",
+      "start_date": "2022-08-13 16:30:00",
+      "end_date": "2023-06-04 23:59:00",
+      "priority": 290,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "1"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.54"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.19"
+        }
+      ],
+      "most_count": 36,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 593,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-coppa-italia",
+      "name_translations": {
+        "en": "Coppa Italia",
+        "ru": "Кубок Италии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-coppa-italia.png",
+      "start_date": "2022-07-30 16:00:00",
+      "end_date": "2023-05-24 23:59:00",
+      "priority": 210,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "7"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "65%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.65"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.05"
+        }
+      ],
+      "most_count": 14,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 594,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-supercoppa",
+      "name_translations": {
+        "en": "Supercoppa",
+        "ru": "Суперкубок Италии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-supercoppa.png",
+      "start_date": "2023-01-18 20:00:00",
+      "end_date": "2023-01-19 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Draws",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "6.00"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 595,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-berlusconi-trophy",
+      "name_translations": {
+        "en": "Berlusconi Trophy",
+        "ru": "Трофей Берлускони"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2012-08-19 19:00:00",
+      "end_date": "2012-08-20 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 596,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-serie-c-playoffs",
+      "name_translations": {
+        "en": "Serie C, Playoffs",
+        "ru": "Серия C, Плей-Офф"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-serie-c-playoffs.png",
+      "start_date": "2013-09-01 18:30:00",
+      "end_date": "2014-06-09 21:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 597,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-lega-pro-girone-b",
+      "name_translations": {
+        "en": "Lega Pro, Girone B",
+        "ru": "Lega Pro, Жироне Б"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2013-08-30 18:45:00",
+      "end_date": "2016-06-06 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "3"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "38"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.41"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 598,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-lega-pro-sec-div-gir-a",
+      "name_translations": {
+        "en": "Lega Pro Sec Div, Gir A",
+        "ru": "Lega Pro Sec Div, Gir A"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2013-06-09 14:00:00",
+      "end_date": "2014-06-09 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 599,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-lega-pro-sec-div-gir-b",
+      "name_translations": {
+        "en": "Lega Pro Sec Div, Gir B",
+        "ru": "Lega Pro Sec Div, Gir B"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2013-09-01 13:00:00",
+      "end_date": "2014-06-09 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 600,
+      "sport_id": 1,
+      "section_id": 101,
+      "slug": "italy-lega-pro-seconda-divisione",
+      "name_translations": {
+        "en": "Lega Pro Seconda Divisione",
+        "ru": "Lega Pro Seconda Divisione"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2010-08-29 14:00:00",
+      "end_date": "2011-06-27 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 101,
+        "sport_id": 1,
+        "slug": "italy",
+        "name": "Italy",
+        "priority": 7,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 12,
+    "from": 551,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 600,
+    "total": 1760
+  }
+}

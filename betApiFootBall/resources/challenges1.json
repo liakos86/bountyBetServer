@@ -1,0 +1,1310 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "sport_id": 1,
+      "league_id": 1,
+      "slug": "premiership",
+      "name": "Premiership",
+      "name_translations": {
+        "en": "Premiership",
+        "ru": "По Футболу"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 2,
+      "sport_id": 1,
+      "league_id": 1,
+      "slug": "premiership-1",
+      "name": "Premiership",
+      "name_translations": {
+        "en": "Premiership",
+        "ru": "По Футболу"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 3,
+      "sport_id": 1,
+      "league_id": 3,
+      "slug": "championship-1",
+      "name": "Championship 1",
+      "name_translations": {
+        "en": "Championship 1",
+        "ru": "По Футболу 1"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 4,
+      "sport_id": 1,
+      "league_id": 3,
+      "slug": "championship-1-1",
+      "name": "Championship 1",
+      "name_translations": {
+        "en": "Championship 1",
+        "ru": "По Футболу 1"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 5,
+      "sport_id": 1,
+      "league_id": 3,
+      "slug": "championship-1-2",
+      "name": "Championship 1",
+      "name_translations": {
+        "en": "Championship 1",
+        "ru": "По Футболу 1"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 6,
+      "sport_id": 1,
+      "league_id": 3,
+      "slug": "championship-1-3",
+      "name": "Championship 1",
+      "name_translations": {
+        "en": "Championship 1",
+        "ru": "По Футболу 1"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 7,
+      "sport_id": 1,
+      "league_id": 3,
+      "slug": "championship-1-4",
+      "name": "Championship 1",
+      "name_translations": {
+        "en": "Championship 1",
+        "ru": "По Футболу 1"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 8,
+      "sport_id": 1,
+      "league_id": 4,
+      "slug": "irish-cup",
+      "name": "Irish Cup",
+      "name_translations": {
+        "en": "Irish Cup",
+        "ru": "Ирландии По Футболу"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 9,
+      "sport_id": 1,
+      "league_id": 2,
+      "slug": "league-cup",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 10,
+      "sport_id": 1,
+      "league_id": 5,
+      "slug": "cymru-premier",
+      "name": "Cymru Premier",
+      "name_translations": {
+        "en": "Cymru Premier",
+        "ru": "Cymru Premier"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 11,
+      "sport_id": 1,
+      "league_id": 5,
+      "slug": "cymru-premier-1",
+      "name": "Cymru Premier",
+      "name_translations": {
+        "en": "Cymru Premier",
+        "ru": "Cymru Premier"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 12,
+      "sport_id": 1,
+      "league_id": 5,
+      "slug": "cymru-premier-2",
+      "name": "Cymru Premier",
+      "name_translations": {
+        "en": "Cymru Premier",
+        "ru": "Cymru Premier"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 13,
+      "sport_id": 1,
+      "league_id": 5,
+      "slug": "cymru-premier-3",
+      "name": "Cymru Premier",
+      "name_translations": {
+        "en": "Cymru Premier",
+        "ru": "Cymru Premier"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 14,
+      "sport_id": 1,
+      "league_id": 10,
+      "slug": "cymru-north",
+      "name": "Cymru North",
+      "name_translations": {
+        "en": "Cymru North",
+        "ru": "Cymru North"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 15,
+      "sport_id": 1,
+      "league_id": 11,
+      "slug": "cymru-south",
+      "name": "Cymru South",
+      "name_translations": {
+        "en": "Cymru South",
+        "ru": "Cymru Юг"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 16,
+      "sport_id": 1,
+      "league_id": 7,
+      "slug": "faw-welsh-cup",
+      "name": "FAW Welsh Cup",
+      "name_translations": {
+        "en": "FAW Welsh Cup",
+        "ru": "Кубок Уэльса FAW"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 17,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-1",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 18,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-2",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 19,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-3",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 20,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-4",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 21,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-5",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 22,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-6",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 23,
+      "sport_id": 1,
+      "league_id": 6,
+      "slug": "league-cup-7",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 24,
+      "sport_id": 1,
+      "league_id": 12,
+      "slug": "botola",
+      "name": "Botola",
+      "name_translations": {
+        "en": "Botola",
+        "ru": "Ботола"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 25,
+      "sport_id": 1,
+      "league_id": 14,
+      "slug": "botola-2",
+      "name": "Botola 2",
+      "name_translations": {
+        "en": "Botola 2",
+        "ru": "Ботола 2"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 26,
+      "sport_id": 1,
+      "league_id": 13,
+      "slug": "morocco-cup",
+      "name": "Morocco Cup",
+      "name_translations": {
+        "en": "Morocco Cup",
+        "ru": "Кубок Марокко"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 27,
+      "sport_id": 1,
+      "league_id": 15,
+      "slug": "premier-league",
+      "name": "Premier League",
+      "name_translations": {
+        "en": "Premier League",
+        "ru": "Премьер-Лига"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 28,
+      "sport_id": 1,
+      "league_id": 16,
+      "slug": "first-league",
+      "name": "First League",
+      "name_translations": {
+        "en": "First League",
+        "ru": "Первая Лига"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 29,
+      "sport_id": 1,
+      "league_id": 17,
+      "slug": "armenian-cup",
+      "name": "Armenian Cup",
+      "name_translations": {
+        "en": "Armenian Cup",
+        "ru": "Армении По Футболу"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 30,
+      "sport_id": 1,
+      "league_id": 18,
+      "slug": "super-cup",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 1,
+      "priority": 0
+    },
+    {
+      "id": 31,
+      "sport_id": 1,
+      "league_id": 19,
+      "slug": "primera-division-apertura",
+      "name": "Primera Division, Apertura",
+      "name_translations": {
+        "en": "Primera Division, Apertura",
+        "ru": "Примера Дивизион, Апертура"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 32,
+      "sport_id": 1,
+      "league_id": 19,
+      "slug": "primera-division-apertura-1",
+      "name": "Primera Division, Apertura",
+      "name_translations": {
+        "en": "Primera Division, Apertura",
+        "ru": "Примера Дивизион, Апертура"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 33,
+      "sport_id": 1,
+      "league_id": 19,
+      "slug": "primera-division-apertura-2",
+      "name": "Primera Division, Apertura",
+      "name_translations": {
+        "en": "Primera Division, Apertura",
+        "ru": "Примера Дивизион, Апертура"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 34,
+      "sport_id": 1,
+      "league_id": 19,
+      "slug": "primera-division-apertura-3",
+      "name": "Primera Division, Apertura",
+      "name_translations": {
+        "en": "Primera Division, Apertura",
+        "ru": "Примера Дивизион, Апертура"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 35,
+      "sport_id": 1,
+      "league_id": 20,
+      "slug": "primera-division-clausura",
+      "name": "Primera Division, Clausura",
+      "name_translations": {
+        "en": "Primera Division, Clausura",
+        "ru": "Примера Дивизион, Клаусура"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 36,
+      "sport_id": 1,
+      "league_id": 20,
+      "slug": "primera-division-clausura-1",
+      "name": "Primera Division, Clausura",
+      "name_translations": {
+        "en": "Primera Division, Clausura",
+        "ru": "Примера Дивизион, Клаусура"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 37,
+      "sport_id": 1,
+      "league_id": 20,
+      "slug": "primera-division-clausura-2",
+      "name": "Primera Division, Clausura",
+      "name_translations": {
+        "en": "Primera Division, Clausura",
+        "ru": "Примера Дивизион, Клаусура"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 38,
+      "sport_id": 1,
+      "league_id": 21,
+      "slug": "liga-de-ascenso-apertura",
+      "name": "Liga de Ascenso, Apertura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Apertura",
+        "ru": "Лига Де Аценсо, Апертура"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 39,
+      "sport_id": 1,
+      "league_id": 21,
+      "slug": "liga-de-ascenso-apertura-1",
+      "name": "Liga de Ascenso, Apertura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Apertura",
+        "ru": "Лига Де Аценсо, Апертура"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 40,
+      "sport_id": 1,
+      "league_id": 21,
+      "slug": "liga-de-ascenso-apertura-2",
+      "name": "Liga de Ascenso, Apertura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Apertura",
+        "ru": "Лига Де Аценсо, Апертура"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 41,
+      "sport_id": 1,
+      "league_id": 22,
+      "slug": "liga-de-ascenso-clausura",
+      "name": "Liga de Ascenso, Clausura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Clausura",
+        "ru": "Лига Де Аценсо, Клаусура"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 42,
+      "sport_id": 1,
+      "league_id": 22,
+      "slug": "liga-de-ascenso-clausura-1",
+      "name": "Liga de Ascenso, Clausura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Clausura",
+        "ru": "Лига Де Аценсо, Клаусура"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 43,
+      "sport_id": 1,
+      "league_id": 22,
+      "slug": "liga-de-ascenso-clausura-2",
+      "name": "Liga de Ascenso, Clausura",
+      "name_translations": {
+        "en": "Liga de Ascenso, Clausura",
+        "ru": "Лига Де Аценсо, Клаусура"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 44,
+      "sport_id": 1,
+      "league_id": 24,
+      "slug": "national-league-north",
+      "name": "National League North",
+      "name_translations": {
+        "en": "National League North",
+        "ru": "Национальная Лига Север"
+      },
+      "order": 76,
+      "priority": 0
+    },
+    {
+      "id": 45,
+      "sport_id": 1,
+      "league_id": 24,
+      "slug": "national-league-north-1",
+      "name": "National League North",
+      "name_translations": {
+        "en": "National League North",
+        "ru": "Национальная Лига Север"
+      },
+      "order": 75,
+      "priority": 0
+    },
+    {
+      "id": 46,
+      "sport_id": 1,
+      "league_id": 23,
+      "slug": "national-league-south",
+      "name": "National League South",
+      "name_translations": {
+        "en": "National League South",
+        "ru": "Национальная Лига Юг"
+      },
+      "order": 74,
+      "priority": 0
+    },
+    {
+      "id": 47,
+      "sport_id": 1,
+      "league_id": 23,
+      "slug": "national-league-south-1",
+      "name": "National League South",
+      "name_translations": {
+        "en": "National League South",
+        "ru": "Национальная Лига Юг"
+      },
+      "order": 73,
+      "priority": 0
+    },
+    {
+      "id": 48,
+      "sport_id": 1,
+      "league_id": 26,
+      "slug": "northern-premier-league-premier-division",
+      "name": "Northern Premier League, Premier Division",
+      "name_translations": {
+        "en": "Northern Premier League, Premier Division",
+        "ru": "Северная Премьер-Лига, Премьер Дивизион"
+      },
+      "order": 72,
+      "priority": 0
+    },
+    {
+      "id": 49,
+      "sport_id": 1,
+      "league_id": 26,
+      "slug": "northern-premier-league-premier-division-1",
+      "name": "Northern Premier League, Premier Division",
+      "name_translations": {
+        "en": "Northern Premier League, Premier Division",
+        "ru": "Северная Премьер-Лига, Премьер Дивизион"
+      },
+      "order": 71,
+      "priority": 0
+    },
+    {
+      "id": 50,
+      "sport_id": 1,
+      "league_id": 26,
+      "slug": "northern-premier-league-premier-division-2",
+      "name": "Northern Premier League, Premier Division",
+      "name_translations": {
+        "en": "Northern Premier League, Premier Division",
+        "ru": "Северная Премьер-Лига, Премьер Дивизион"
+      },
+      "order": 70,
+      "priority": 0
+    },
+    {
+      "id": 51,
+      "sport_id": 1,
+      "league_id": 34,
+      "slug": "southern-football-league-premier-division-central",
+      "name": "Southern Football League, Premier Division Central",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division Central",
+        "ru": "Южная Футбольная Лига, Премьер-Лига Центральный"
+      },
+      "order": 69,
+      "priority": 0
+    },
+    {
+      "id": 52,
+      "sport_id": 1,
+      "league_id": 34,
+      "slug": "southern-football-league-premier-division-central-1",
+      "name": "Southern Football League, Premier Division Central",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division Central",
+        "ru": "Южная Футбольная Лига, Премьер-Лига Центральный"
+      },
+      "order": 68,
+      "priority": 0
+    },
+    {
+      "id": 53,
+      "sport_id": 1,
+      "league_id": 34,
+      "slug": "southern-football-league-premier-division-central-2",
+      "name": "Southern Football League, Premier Division Central",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division Central",
+        "ru": "Южная Футбольная Лига, Премьер-Лига Центральный"
+      },
+      "order": 67,
+      "priority": 0
+    },
+    {
+      "id": 54,
+      "sport_id": 1,
+      "league_id": 33,
+      "slug": "southern-football-league-premier-division-south",
+      "name": "Southern Football League, Premier Division South",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division South",
+        "ru": "Южная Футбольная Лига, Премьер Дивизион Юг"
+      },
+      "order": 66,
+      "priority": 0
+    },
+    {
+      "id": 55,
+      "sport_id": 1,
+      "league_id": 33,
+      "slug": "southern-football-league-premier-division-south-1",
+      "name": "Southern Football League, Premier Division South",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division South",
+        "ru": "Южная Футбольная Лига, Премьер Дивизион Юг"
+      },
+      "order": 65,
+      "priority": 0
+    },
+    {
+      "id": 56,
+      "sport_id": 1,
+      "league_id": 33,
+      "slug": "southern-football-league-premier-division-south-2",
+      "name": "Southern Football League, Premier Division South",
+      "name_translations": {
+        "en": "Southern Football League, Premier Division South",
+        "ru": "Южная Футбольная Лига, Премьер Дивизион Юг"
+      },
+      "order": 64,
+      "priority": 0
+    },
+    {
+      "id": 57,
+      "sport_id": 1,
+      "league_id": 29,
+      "slug": "isthmian-football-league-premier-division",
+      "name": "Isthmian Football League, Premier Division",
+      "name_translations": {
+        "en": "Isthmian Football League, Premier Division",
+        "ru": "Истмианская Футбольная Лига, Премьер-Лига"
+      },
+      "order": 63,
+      "priority": 0
+    },
+    {
+      "id": 58,
+      "sport_id": 1,
+      "league_id": 29,
+      "slug": "isthmian-football-league-premier-division-1",
+      "name": "Isthmian Football League, Premier Division",
+      "name_translations": {
+        "en": "Isthmian Football League, Premier Division",
+        "ru": "Истмианская Футбольная Лига, Премьер-Лига"
+      },
+      "order": 62,
+      "priority": 0
+    },
+    {
+      "id": 59,
+      "sport_id": 1,
+      "league_id": 29,
+      "slug": "isthmian-football-league-premier-division-2",
+      "name": "Isthmian Football League, Premier Division",
+      "name_translations": {
+        "en": "Isthmian Football League, Premier Division",
+        "ru": "Истмианская Футбольная Лига, Премьер-Лига"
+      },
+      "order": 61,
+      "priority": 0
+    },
+    {
+      "id": 60,
+      "sport_id": 1,
+      "league_id": 25,
+      "slug": "fa-trophy",
+      "name": "FA Trophy",
+      "name_translations": {
+        "en": "FA Trophy",
+        "ru": "FA Trophy"
+      },
+      "order": 60,
+      "priority": 0
+    },
+    {
+      "id": 61,
+      "sport_id": 1,
+      "league_id": 31,
+      "slug": "fa-trophy-qualification",
+      "name": "FA Trophy, Qualification",
+      "name_translations": {
+        "en": "FA Trophy, Qualification",
+        "ru": "FA Trophy, Квалификация"
+      },
+      "order": 59,
+      "priority": 0
+    },
+    {
+      "id": 62,
+      "sport_id": 1,
+      "league_id": 35,
+      "slug": "fa-wsl-continental-cup-women",
+      "name": "FA WSL Continental Cup, Women",
+      "name_translations": {
+        "en": "FA WSL Continental Cup, Women",
+        "ru": "Континентальный Кубок WSL, Женщины"
+      },
+      "order": 58,
+      "priority": 0
+    },
+    {
+      "id": 63,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 57,
+      "priority": 0
+    },
+    {
+      "id": 64,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-1",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 56,
+      "priority": 0
+    },
+    {
+      "id": 65,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-2",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 55,
+      "priority": 0
+    },
+    {
+      "id": 66,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-3",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 54,
+      "priority": 0
+    },
+    {
+      "id": 67,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-4",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 53,
+      "priority": 0
+    },
+    {
+      "id": 68,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-5",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 52,
+      "priority": 0
+    },
+    {
+      "id": 69,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-6",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 51,
+      "priority": 0
+    },
+    {
+      "id": 70,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-7",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 50,
+      "priority": 0
+    },
+    {
+      "id": 71,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-8",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 49,
+      "priority": 0
+    },
+    {
+      "id": 72,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-9",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 48,
+      "priority": 0
+    },
+    {
+      "id": 73,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-10",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 47,
+      "priority": 0
+    },
+    {
+      "id": 74,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-11",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 46,
+      "priority": 0
+    },
+    {
+      "id": 75,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-12",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 45,
+      "priority": 0
+    },
+    {
+      "id": 76,
+      "sport_id": 1,
+      "league_id": 28,
+      "slug": "premier-league-2-13",
+      "name": "Premier League 2",
+      "name_translations": {
+        "en": "Premier League 2",
+        "ru": "Премьер-Лига 2"
+      },
+      "order": 44,
+      "priority": 0
+    },
+    {
+      "id": 77,
+      "sport_id": 1,
+      "league_id": 36,
+      "slug": "professional-development-league",
+      "name": "Professional Development League",
+      "name_translations": {
+        "en": "Professional Development League",
+        "ru": "Профессионального Развития Футбола"
+      },
+      "order": 43,
+      "priority": 0
+    },
+    {
+      "id": 78,
+      "sport_id": 1,
+      "league_id": 30,
+      "slug": "premier-league-cup",
+      "name": "Premier League Cup",
+      "name_translations": {
+        "en": "Premier League Cup",
+        "ru": "Премьер-Лиги По Футболу"
+      },
+      "order": 42,
+      "priority": 0
+    },
+    {
+      "id": 79,
+      "sport_id": 1,
+      "league_id": 37,
+      "slug": "regionalliga-nord",
+      "name": "Regionalliga Nord",
+      "name_translations": {
+        "en": "Regionalliga Nord",
+        "ru": "Регионаллига Норд"
+      },
+      "order": 77,
+      "priority": 0
+    },
+    {
+      "id": 80,
+      "sport_id": 1,
+      "league_id": 37,
+      "slug": "regionalliga-nord-1",
+      "name": "Regionalliga Nord",
+      "name_translations": {
+        "en": "Regionalliga Nord",
+        "ru": "Регионаллига Норд"
+      },
+      "order": 76,
+      "priority": 0
+    },
+    {
+      "id": 81,
+      "sport_id": 1,
+      "league_id": 37,
+      "slug": "regionalliga-nord-2",
+      "name": "Regionalliga Nord",
+      "name_translations": {
+        "en": "Regionalliga Nord",
+        "ru": "Регионаллига Норд"
+      },
+      "order": 75,
+      "priority": 0
+    },
+    {
+      "id": 82,
+      "sport_id": 1,
+      "league_id": 57,
+      "slug": "regionalliga-nordost",
+      "name": "Regionalliga Nordost",
+      "name_translations": {
+        "en": "Regionalliga Nordost",
+        "ru": "Регионаллига Нордост"
+      },
+      "order": 74,
+      "priority": 0
+    },
+    {
+      "id": 83,
+      "sport_id": 1,
+      "league_id": 46,
+      "slug": "regionalliga-west",
+      "name": "Regionalliga West",
+      "name_translations": {
+        "en": "Regionalliga West",
+        "ru": "Регионаллига Запад"
+      },
+      "order": 73,
+      "priority": 0
+    },
+    {
+      "id": 84,
+      "sport_id": 1,
+      "league_id": 56,
+      "slug": "regionalliga-sudwest",
+      "name": "Regionalliga Südwest",
+      "name_translations": {
+        "en": "Regionalliga Südwest",
+        "ru": "Regionalliga Südwest"
+      },
+      "order": 72,
+      "priority": 0
+    },
+    {
+      "id": 85,
+      "sport_id": 1,
+      "league_id": 56,
+      "slug": "regionalliga-sudwest-1",
+      "name": "Regionalliga Südwest",
+      "name_translations": {
+        "en": "Regionalliga Südwest",
+        "ru": "Regionalliga Südwest"
+      },
+      "order": 71,
+      "priority": 0
+    },
+    {
+      "id": 86,
+      "sport_id": 1,
+      "league_id": 58,
+      "slug": "regionalliga-bayern",
+      "name": "Regionalliga Bayern",
+      "name_translations": {
+        "en": "Regionalliga Bayern",
+        "ru": "Регионаллига Бавария"
+      },
+      "order": 70,
+      "priority": 0
+    },
+    {
+      "id": 87,
+      "sport_id": 1,
+      "league_id": 58,
+      "slug": "regionalliga-bayern-1",
+      "name": "Regionalliga Bayern",
+      "name_translations": {
+        "en": "Regionalliga Bayern",
+        "ru": "Регионаллига Бавария"
+      },
+      "order": 69,
+      "priority": 0
+    },
+    {
+      "id": 88,
+      "sport_id": 1,
+      "league_id": 64,
+      "slug": "regionalliga-playoffs",
+      "name": "Regionalliga Playoffs",
+      "name_translations": {
+        "en": "Regionalliga Playoffs",
+        "ru": "Регионаллига Плей-Офф"
+      },
+      "order": 68,
+      "priority": 0
+    },
+    {
+      "id": 89,
+      "sport_id": 1,
+      "league_id": 59,
+      "slug": "bayernliga-nord",
+      "name": "Bayernliga Nord",
+      "name_translations": {
+        "en": "Bayernliga Nord",
+        "ru": "Бавария Норд"
+      },
+      "order": 67,
+      "priority": 0
+    },
+    {
+      "id": 90,
+      "sport_id": 1,
+      "league_id": 60,
+      "slug": "bayernliga-sud",
+      "name": "Bayernliga Süd",
+      "name_translations": {
+        "en": "Bayernliga Süd",
+        "ru": "Бавария Суд"
+      },
+      "order": 66,
+      "priority": 0
+    },
+    {
+      "id": 91,
+      "sport_id": 1,
+      "league_id": 60,
+      "slug": "bayernliga-sud-1",
+      "name": "Bayernliga Süd",
+      "name_translations": {
+        "en": "Bayernliga Süd",
+        "ru": "Бавария Суд"
+      },
+      "order": 65,
+      "priority": 0
+    },
+    {
+      "id": 92,
+      "sport_id": 1,
+      "league_id": 48,
+      "slug": "bremen-liga",
+      "name": "Bremen-Liga",
+      "name_translations": {
+        "en": "Bremen-Liga",
+        "ru": "Бремен-Лига"
+      },
+      "order": 64,
+      "priority": 0
+    },
+    {
+      "id": 93,
+      "sport_id": 1,
+      "league_id": 49,
+      "slug": "oberliga-hamburg",
+      "name": "Oberliga Hamburg",
+      "name_translations": {
+        "en": "Oberliga Hamburg",
+        "ru": "Оберлига Гамбург"
+      },
+      "order": 63,
+      "priority": 0
+    },
+    {
+      "id": 94,
+      "sport_id": 1,
+      "league_id": 49,
+      "slug": "oberliga-hamburg-1",
+      "name": "Oberliga Hamburg",
+      "name_translations": {
+        "en": "Oberliga Hamburg",
+        "ru": "Оберлига Гамбург"
+      },
+      "order": 62,
+      "priority": 0
+    },
+    {
+      "id": 95,
+      "sport_id": 1,
+      "league_id": 50,
+      "slug": "schleswig-holstein-liga",
+      "name": "Schleswig-Holstein-Liga",
+      "name_translations": {
+        "en": "Schleswig-Holstein-Liga",
+        "ru": "Шлезвиг-Гольштейн-Лига"
+      },
+      "order": 61,
+      "priority": 0
+    },
+    {
+      "id": 96,
+      "sport_id": 1,
+      "league_id": 54,
+      "slug": "oberliga-niedersachsen",
+      "name": "Oberliga Niedersachsen",
+      "name_translations": {
+        "en": "Oberliga Niedersachsen",
+        "ru": "Оберлига Niedersachsen"
+      },
+      "order": 60,
+      "priority": 0
+    },
+    {
+      "id": 97,
+      "sport_id": 1,
+      "league_id": 54,
+      "slug": "oberliga-niedersachsen-1",
+      "name": "Oberliga Niedersachsen",
+      "name_translations": {
+        "en": "Oberliga Niedersachsen",
+        "ru": "Оберлига Niedersachsen"
+      },
+      "order": 59,
+      "priority": 0
+    },
+    {
+      "id": 98,
+      "sport_id": 1,
+      "league_id": 54,
+      "slug": "oberliga-niedersachsen-2",
+      "name": "Oberliga Niedersachsen",
+      "name_translations": {
+        "en": "Oberliga Niedersachsen",
+        "ru": "Оберлига Niedersachsen"
+      },
+      "order": 58,
+      "priority": 0
+    },
+    {
+      "id": 99,
+      "sport_id": 1,
+      "league_id": 54,
+      "slug": "oberliga-niedersachsen-3",
+      "name": "Oberliga Niedersachsen",
+      "name_translations": {
+        "en": "Oberliga Niedersachsen",
+        "ru": "Оберлига Niedersachsen"
+      },
+      "order": 57,
+      "priority": 0
+    },
+    {
+      "id": 100,
+      "sport_id": 1,
+      "league_id": 54,
+      "slug": "oberliga-niedersachsen-4",
+      "name": "Oberliga Niedersachsen",
+      "name_translations": {
+        "en": "Oberliga Niedersachsen",
+        "ru": "Оберлига Niedersachsen"
+      },
+      "order": 56,
+      "priority": 0
+    }
+  ],
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "per_page": 100,
+    "to": 100
+  }
+}

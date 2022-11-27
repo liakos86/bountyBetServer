@@ -9,6 +9,8 @@
 	</parent>
 	<artifactId>betApiFootBall</artifactId>
 	
+	
+	
 	<dependencyManagement>
 	<dependencies>
 	<dependency>
@@ -17,5 +19,6 @@
 	</dependency>
 	</dependencies>
 	</dependencyManagement>
+	
 	
 	</project>

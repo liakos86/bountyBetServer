@@ -1,0 +1,1310 @@
+{
+  "data": [
+    {
+      "id": 501,
+      "sport_id": 1,
+      "league_id": 239,
+      "slug": "league-cup-11",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 502,
+      "sport_id": 1,
+      "league_id": 239,
+      "slug": "league-cup-12",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 503,
+      "sport_id": 1,
+      "league_id": 239,
+      "slug": "league-cup-13",
+      "name": "League Cup",
+      "name_translations": {
+        "en": "League Cup",
+        "ru": "Футбольной Лиги"
+      },
+      "order": 1,
+      "priority": 0
+    },
+    {
+      "id": 504,
+      "sport_id": 1,
+      "league_id": 240,
+      "slug": "superliga-7",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 505,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 506,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga-1",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 507,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga-2",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 508,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga-3",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 509,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga-4",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 510,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga-5",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 511,
+      "sport_id": 1,
+      "league_id": 241,
+      "slug": "2-liga-6",
+      "name": "2. Liga",
+      "name_translations": {
+        "en": "2. Liga",
+        "ru": "2. Лига"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 512,
+      "sport_id": 1,
+      "league_id": 242,
+      "slug": "slovensky-pohar",
+      "name": "Slovensky Pohar",
+      "name_translations": {
+        "en": "Slovensky Pohar",
+        "ru": "Словенский Погар"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 513,
+      "sport_id": 1,
+      "league_id": 243,
+      "slug": "super-cup-9",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 514,
+      "sport_id": 1,
+      "league_id": 244,
+      "slug": "u19",
+      "name": "U19",
+      "name_translations": {
+        "en": "U19",
+        "ru": "U19"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 515,
+      "sport_id": 1,
+      "league_id": 244,
+      "slug": "u19-2",
+      "name": "U19",
+      "name_translations": {
+        "en": "U19",
+        "ru": "U19"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 516,
+      "sport_id": 1,
+      "league_id": 246,
+      "slug": "prvaliga",
+      "name": "PrvaLiga",
+      "name_translations": {
+        "en": "PrvaLiga",
+        "ru": "Првалига"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 517,
+      "sport_id": 1,
+      "league_id": 246,
+      "slug": "prvaliga-1",
+      "name": "PrvaLiga",
+      "name_translations": {
+        "en": "PrvaLiga",
+        "ru": "Првалига"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 518,
+      "sport_id": 1,
+      "league_id": 249,
+      "slug": "2-snl",
+      "name": "2. SNL",
+      "name_translations": {
+        "en": "2. SNL",
+        "ru": "2. SNL"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 519,
+      "sport_id": 1,
+      "league_id": 247,
+      "slug": "slovenia-cup",
+      "name": "Slovenia Cup",
+      "name_translations": {
+        "en": "Slovenia Cup",
+        "ru": "Словении По Футболу"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 520,
+      "sport_id": 1,
+      "league_id": 248,
+      "slug": "super-cup-10",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 1,
+      "priority": 0
+    },
+    {
+      "id": 521,
+      "sport_id": 1,
+      "league_id": 251,
+      "slug": "laliga",
+      "name": "LaLiga",
+      "name_translations": {
+        "en": "LaLiga",
+        "ru": "Ла Лига"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 522,
+      "sport_id": 1,
+      "league_id": 258,
+      "slug": "laliga-2",
+      "name": "LaLiga 2",
+      "name_translations": {
+        "en": "LaLiga 2",
+        "ru": "Лалига 2"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 523,
+      "sport_id": 1,
+      "league_id": 258,
+      "slug": "laliga-2-1",
+      "name": "LaLiga 2",
+      "name_translations": {
+        "en": "LaLiga 2",
+        "ru": "Лалига 2"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 524,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 525,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b-1",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 526,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b-2",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 527,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b-3",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 528,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b-4",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 529,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b-5",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 530,
+      "sport_id": 1,
+      "league_id": 259,
+      "slug": "segunda-division-b-6",
+      "name": "Segunda División B",
+      "name_translations": {
+        "en": "Segunda División B",
+        "ru": "Segunda División B"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 531,
+      "sport_id": 1,
+      "league_id": 252,
+      "slug": "copa-del-rey",
+      "name": "Copa del Rey",
+      "name_translations": {
+        "en": "Copa del Rey",
+        "ru": "Копа Дель Рей"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 532,
+      "sport_id": 1,
+      "league_id": 250,
+      "slug": "super-cup-11",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 533,
+      "sport_id": 1,
+      "league_id": 254,
+      "slug": "primera-division-femenina",
+      "name": "Primera División Femenina",
+      "name_translations": {
+        "en": "Primera División Femenina",
+        "ru": "Primera División Femenina"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 534,
+      "sport_id": 1,
+      "league_id": 256,
+      "slug": "copa-federacion",
+      "name": "Copa Federacion",
+      "name_translations": {
+        "en": "Copa Federacion",
+        "ru": "Copa Federacion"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 535,
+      "sport_id": 1,
+      "league_id": 260,
+      "slug": "allsvenskan",
+      "name": "Allsvenskan",
+      "name_translations": {
+        "en": "Allsvenskan",
+        "ru": "Allsvenskan"
+      },
+      "order": 50,
+      "priority": 0
+    },
+    {
+      "id": 536,
+      "sport_id": 1,
+      "league_id": 260,
+      "slug": "allsvenskan-1",
+      "name": "Allsvenskan",
+      "name_translations": {
+        "en": "Allsvenskan",
+        "ru": "Allsvenskan"
+      },
+      "order": 49,
+      "priority": 0
+    },
+    {
+      "id": 537,
+      "sport_id": 1,
+      "league_id": 261,
+      "slug": "superettan",
+      "name": "Superettan",
+      "name_translations": {
+        "en": "Superettan",
+        "ru": "Суперэттан"
+      },
+      "order": 48,
+      "priority": 0
+    },
+    {
+      "id": 538,
+      "sport_id": 1,
+      "league_id": 261,
+      "slug": "superettan-1",
+      "name": "Superettan",
+      "name_translations": {
+        "en": "Superettan",
+        "ru": "Суперэттан"
+      },
+      "order": 47,
+      "priority": 0
+    },
+    {
+      "id": 539,
+      "sport_id": 1,
+      "league_id": 262,
+      "slug": "division-1-norra",
+      "name": "Division 1, Norra",
+      "name_translations": {
+        "en": "Division 1, Norra",
+        "ru": "Дивизион 1, Норра"
+      },
+      "order": 45,
+      "priority": 0
+    },
+    {
+      "id": 540,
+      "sport_id": 1,
+      "league_id": 263,
+      "slug": "division-1-sodra",
+      "name": "Division 1, Södra",
+      "name_translations": {
+        "en": "Division 1, Södra",
+        "ru": "Дивизион 1, Сёдра"
+      },
+      "order": 44,
+      "priority": 0
+    },
+    {
+      "id": 541,
+      "sport_id": 1,
+      "league_id": 266,
+      "slug": "division-2-norrland",
+      "name": "Division 2, Norrland",
+      "name_translations": {
+        "en": "Division 2, Norrland",
+        "ru": "Дивизион 2, Норрланд"
+      },
+      "order": 43,
+      "priority": 0
+    },
+    {
+      "id": 542,
+      "sport_id": 1,
+      "league_id": 266,
+      "slug": "division-2-norrland-1",
+      "name": "Division 2, Norrland",
+      "name_translations": {
+        "en": "Division 2, Norrland",
+        "ru": "Дивизион 2, Норрланд"
+      },
+      "order": 42,
+      "priority": 0
+    },
+    {
+      "id": 543,
+      "sport_id": 1,
+      "league_id": 266,
+      "slug": "division-2-norrland-2",
+      "name": "Division 2, Norrland",
+      "name_translations": {
+        "en": "Division 2, Norrland",
+        "ru": "Дивизион 2, Норрланд"
+      },
+      "order": 41,
+      "priority": 0
+    },
+    {
+      "id": 544,
+      "sport_id": 1,
+      "league_id": 266,
+      "slug": "division-2-norrland-3",
+      "name": "Division 2, Norrland",
+      "name_translations": {
+        "en": "Division 2, Norrland",
+        "ru": "Дивизион 2, Норрланд"
+      },
+      "order": 40,
+      "priority": 0
+    },
+    {
+      "id": 545,
+      "sport_id": 1,
+      "league_id": 265,
+      "slug": "division-2-norra-svealand",
+      "name": "Division 2, Norra Svealand",
+      "name_translations": {
+        "en": "Division 2, Norra Svealand",
+        "ru": "Дивизион 2, Норра Свеланд"
+      },
+      "order": 39,
+      "priority": 0
+    },
+    {
+      "id": 546,
+      "sport_id": 1,
+      "league_id": 265,
+      "slug": "division-2-norra-svealand-1",
+      "name": "Division 2, Norra Svealand",
+      "name_translations": {
+        "en": "Division 2, Norra Svealand",
+        "ru": "Дивизион 2, Норра Свеланд"
+      },
+      "order": 38,
+      "priority": 0
+    },
+    {
+      "id": 547,
+      "sport_id": 1,
+      "league_id": 265,
+      "slug": "division-2-norra-svealand-2",
+      "name": "Division 2, Norra Svealand",
+      "name_translations": {
+        "en": "Division 2, Norra Svealand",
+        "ru": "Дивизион 2, Норра Свеланд"
+      },
+      "order": 37,
+      "priority": 0
+    },
+    {
+      "id": 548,
+      "sport_id": 1,
+      "league_id": 269,
+      "slug": "division-2-sodra-svealand",
+      "name": "Division 2, Södra Svealand",
+      "name_translations": {
+        "en": "Division 2, Södra Svealand",
+        "ru": "Дивизион 2, Södra Svealand"
+      },
+      "order": 36,
+      "priority": 0
+    },
+    {
+      "id": 549,
+      "sport_id": 1,
+      "league_id": 269,
+      "slug": "division-2-sodra-svealand-1",
+      "name": "Division 2, Södra Svealand",
+      "name_translations": {
+        "en": "Division 2, Södra Svealand",
+        "ru": "Дивизион 2, Södra Svealand"
+      },
+      "order": 35,
+      "priority": 0
+    },
+    {
+      "id": 550,
+      "sport_id": 1,
+      "league_id": 269,
+      "slug": "division-2-sodra-svealand-2",
+      "name": "Division 2, Södra Svealand",
+      "name_translations": {
+        "en": "Division 2, Södra Svealand",
+        "ru": "Дивизион 2, Södra Svealand"
+      },
+      "order": 34,
+      "priority": 0
+    },
+    {
+      "id": 551,
+      "sport_id": 1,
+      "league_id": 272,
+      "slug": "division-2-ostra-gotaland",
+      "name": "Division 2, Ostra Gotaland",
+      "name_translations": {
+        "en": "Division 2, Ostra Gotaland",
+        "ru": "Дивизион 2, Остра Гёталанд"
+      },
+      "order": 33,
+      "priority": 0
+    },
+    {
+      "id": 552,
+      "sport_id": 1,
+      "league_id": 272,
+      "slug": "division-2-ostra-gotaland-1",
+      "name": "Division 2, Ostra Gotaland",
+      "name_translations": {
+        "en": "Division 2, Ostra Gotaland",
+        "ru": "Дивизион 2, Остра Гёталанд"
+      },
+      "order": 32,
+      "priority": 0
+    },
+    {
+      "id": 553,
+      "sport_id": 1,
+      "league_id": 268,
+      "slug": "division-2-vastra-gotaland",
+      "name": "Division 2, Västra Götaland ",
+      "name_translations": {
+        "en": "Division 2, Västra Götaland ",
+        "ru": "Дивизион 2, Вестра Гёталанд"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 554,
+      "sport_id": 1,
+      "league_id": 268,
+      "slug": "division-2-vastra-gotaland-1",
+      "name": "Division 2, Västra Götaland ",
+      "name_translations": {
+        "en": "Division 2, Västra Götaland ",
+        "ru": "Дивизион 2, Вестра Гёталанд"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 555,
+      "sport_id": 1,
+      "league_id": 268,
+      "slug": "division-2-vastra-gotaland-2",
+      "name": "Division 2, Västra Götaland ",
+      "name_translations": {
+        "en": "Division 2, Västra Götaland ",
+        "ru": "Дивизион 2, Вестра Гёталанд"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 556,
+      "sport_id": 1,
+      "league_id": 277,
+      "slug": "div-2-promotion-round",
+      "name": "Div 2, Promotion round",
+      "name_translations": {
+        "en": "Div 2, Promotion round",
+        "ru": "Div 2, Раунд Продвижения"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 557,
+      "sport_id": 1,
+      "league_id": 275,
+      "slug": "division-2-norra-gotaland",
+      "name": "Division 2, Norra Götaland",
+      "name_translations": {
+        "en": "Division 2, Norra Götaland",
+        "ru": "Дивизион 2, Норра Гёталанд"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 558,
+      "sport_id": 1,
+      "league_id": 275,
+      "slug": "division-2-norra-gotaland-1",
+      "name": "Division 2, Norra Götaland",
+      "name_translations": {
+        "en": "Division 2, Norra Götaland",
+        "ru": "Дивизион 2, Норра Гёталанд"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 559,
+      "sport_id": 1,
+      "league_id": 271,
+      "slug": "damallsvenskan",
+      "name": "Damallsvenskan",
+      "name_translations": {
+        "en": "Damallsvenskan",
+        "ru": "Damallsvenskan"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 560,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 561,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-1",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 562,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-2",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 563,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-3",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 564,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-4",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 565,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-5",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 566,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-6",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 567,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-7",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 568,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-8",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 569,
+      "sport_id": 1,
+      "league_id": 270,
+      "slug": "svenska-cupen-9",
+      "name": "Svenska Cupen",
+      "name_translations": {
+        "en": "Svenska Cupen",
+        "ru": "Свенска Купен"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 570,
+      "sport_id": 1,
+      "league_id": 273,
+      "slug": "super-cup-12",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 571,
+      "sport_id": 1,
+      "league_id": 274,
+      "slug": "super-cup-women",
+      "name": "Super Cup Women",
+      "name_translations": {
+        "en": "Super Cup Women",
+        "ru": "По Футболу Среди Женщин"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 572,
+      "sport_id": 1,
+      "league_id": 276,
+      "slug": "svenska-cupen-women",
+      "name": "Svenska Cupen, Women",
+      "name_translations": {
+        "en": "Svenska Cupen, Women",
+        "ru": "Svenska Cupen, Женщины"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 573,
+      "sport_id": 1,
+      "league_id": 279,
+      "slug": "super-league",
+      "name": "Super League",
+      "name_translations": {
+        "en": "Super League",
+        "ru": "Суперлига"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 574,
+      "sport_id": 1,
+      "league_id": 279,
+      "slug": "super-league-1",
+      "name": "Super League",
+      "name_translations": {
+        "en": "Super League",
+        "ru": "Суперлига"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 575,
+      "sport_id": 1,
+      "league_id": 280,
+      "slug": "challenge-league",
+      "name": "Challenge League",
+      "name_translations": {
+        "en": "Challenge League",
+        "ru": "Лига Вызова"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 576,
+      "sport_id": 1,
+      "league_id": 282,
+      "slug": "erste-liga-promotion",
+      "name": "Erste Liga Promotion",
+      "name_translations": {
+        "en": "Erste Liga Promotion",
+        "ru": "Эрсте Лига Продвижение"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 577,
+      "sport_id": 1,
+      "league_id": 281,
+      "slug": "schweizer-cup",
+      "name": "Schweizer Cup",
+      "name_translations": {
+        "en": "Schweizer Cup",
+        "ru": "Кубок Швейцера"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 578,
+      "sport_id": 1,
+      "league_id": 284,
+      "slug": "super-lig",
+      "name": "Süper Lig",
+      "name_translations": {
+        "en": "Süper Lig",
+        "ru": "Süper Lig"
+      },
+      "order": 38,
+      "priority": 0
+    },
+    {
+      "id": 579,
+      "sport_id": 1,
+      "league_id": 284,
+      "slug": "super-lig-1",
+      "name": "Süper Lig",
+      "name_translations": {
+        "en": "Süper Lig",
+        "ru": "Süper Lig"
+      },
+      "order": 37,
+      "priority": 0
+    },
+    {
+      "id": 580,
+      "sport_id": 1,
+      "league_id": 284,
+      "slug": "super-lig-2",
+      "name": "Süper Lig",
+      "name_translations": {
+        "en": "Süper Lig",
+        "ru": "Süper Lig"
+      },
+      "order": 36,
+      "priority": 0
+    },
+    {
+      "id": 581,
+      "sport_id": 1,
+      "league_id": 287,
+      "slug": "tff-1-lig",
+      "name": "TFF 1. Lig",
+      "name_translations": {
+        "en": "TFF 1. Lig",
+        "ru": "TFF 1. Lig"
+      },
+      "order": 35,
+      "priority": 0
+    },
+    {
+      "id": 582,
+      "sport_id": 1,
+      "league_id": 287,
+      "slug": "tff-1-lig-1",
+      "name": "TFF 1. Lig",
+      "name_translations": {
+        "en": "TFF 1. Lig",
+        "ru": "TFF 1. Lig"
+      },
+      "order": 34,
+      "priority": 0
+    },
+    {
+      "id": 583,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 33,
+      "priority": 0
+    },
+    {
+      "id": 584,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-1",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 32,
+      "priority": 0
+    },
+    {
+      "id": 585,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-2",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 31,
+      "priority": 0
+    },
+    {
+      "id": 586,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-3",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 30,
+      "priority": 0
+    },
+    {
+      "id": 587,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-4",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 29,
+      "priority": 0
+    },
+    {
+      "id": 588,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-5",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 589,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-6",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 590,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-7",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 591,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-8",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 592,
+      "sport_id": 1,
+      "league_id": 285,
+      "slug": "turkiye-kupasi-9",
+      "name": "Türkiye Kupası",
+      "name_translations": {
+        "en": "Türkiye Kupası",
+        "ru": "Тюркские Купасы"
+      },
+      "order": 24,
+      "priority": 0
+    },
+    {
+      "id": 593,
+      "sport_id": 1,
+      "league_id": 288,
+      "slug": "tff-super-kupa",
+      "name": "TFF Süper Kupa",
+      "name_translations": {
+        "en": "TFF Süper Kupa",
+        "ru": "TFF Süper Kupa"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 594,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 595,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig-1",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 596,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig-2",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 597,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig-3",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 598,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig-4",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 599,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig-5",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 600,
+      "sport_id": 1,
+      "league_id": 286,
+      "slug": "tff-2-lig-6",
+      "name": "TFF 2. Lig",
+      "name_translations": {
+        "en": "TFF 2. Lig",
+        "ru": "TFF 2. Lig"
+      },
+      "order": 17,
+      "priority": 0
+    }
+  ],
+  "meta": {
+    "current_page": 6,
+    "from": 501,
+    "per_page": 100,
+    "to": 600
+  }
+}

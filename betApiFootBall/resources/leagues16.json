@@ -1,0 +1,2551 @@
+{
+  "data": [
+    {
+      "id": 751,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u23-friendly-games",
+      "name_translations": {
+        "en": "U23 Friendly Games",
+        "ru": "Товарищеский матчи, U23"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u23-friendly-games.png",
+      "start_date": "2022-01-30 15:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.51"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 752,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u20-viareggio-cup",
+      "name_translations": {
+        "en": "U20 Viareggio Cup",
+        "ru": "Кубок Виареджио, U20"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u20-viareggio-cup.png",
+      "start_date": "2022-03-16 14:00:00",
+      "end_date": "2022-03-30 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.53"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 753,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-emirates-cup",
+      "name_translations": {
+        "en": "Emirates Cup",
+        "ru": "Кубок «Эмирейтс»"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-emirates-cup.png",
+      "start_date": "2022-07-30 11:30:00",
+      "end_date": "2022-07-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.00"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 754,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-premier-league-asia-trophy",
+      "name_translations": {
+        "en": "Premier League Asia Trophy",
+        "ru": "Премьер-Лига Азия Трофи"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-premier-league-asia-trophy.png",
+      "start_date": "2019-07-17 10:00:00",
+      "end_date": "2019-07-21 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 755,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u18-valentin-granatkin-memorial-cup",
+      "name_translations": {
+        "en": "U18 Valentin Granatkin Memorial Cup",
+        "ru": "Мемориал Гранаткина, U18"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u18-valentin-granatkin-memorial-cup.png",
+      "start_date": "2019-06-04 09:00:00",
+      "end_date": "2019-06-15 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 756,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u21-commonwealth-states-cup",
+      "name_translations": {
+        "en": "U21 Commonwealth States Cup",
+        "ru": "Кубок Содружества, U21"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u21-commonwealth-states-cup.png",
+      "start_date": "2016-01-17 09:00:00",
+      "end_date": "2016-01-23 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 757,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-copa-suruga-bank",
+      "name_translations": {
+        "en": "Copa Suruga Bank",
+        "ru": "Кубок Джей-лиги и Южноамериканского кубка"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-copa-suruga-bank.png",
+      "start_date": "2019-08-07 10:00:00",
+      "end_date": "2019-08-08 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 758,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-berlusconi-trophy",
+      "name_translations": {
+        "en": "Berlusconi Trophy",
+        "ru": "Трофей Луиджи Берлускони"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2015-10-21 16:00:00",
+      "end_date": "2015-10-22 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 759,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u23-toulon-tournament",
+      "name_translations": {
+        "en": "U23 Toulon Tournament",
+        "ru": "U23 Тулон Турнир"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u23-toulon-tournament.png",
+      "start_date": "2022-05-29 12:00:00",
+      "end_date": "2022-06-12 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.19"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.12"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 760,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u19-cee-cup",
+      "name_translations": {
+        "en": "U19 CEE Cup",
+        "ru": "U19 CEE Cup"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u19-cee-cup.png",
+      "start_date": "2022-07-22 13:00:00",
+      "end_date": "2022-07-26 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.44"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "45%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "11%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 761,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-joan-gamper-trophy",
+      "name_translations": {
+        "en": "Joan Gamper Trophy",
+        "ru": "Джоан Гампер Трофи"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2015-08-05 20:00:00",
+      "end_date": "2015-08-06 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.00"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 762,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u19-friendly-games-women",
+      "name_translations": {
+        "en": "U19 Friendly Games, Women",
+        "ru": "Товарищеские матчи, U19, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u19-friendly-games-women.png",
+      "start_date": "2022-02-15 13:00:00",
+      "end_date": "2022-12-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 763,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-shebelieves-cup-women",
+      "name_translations": {
+        "en": "SheBelieves Cup, Women",
+        "ru": "Кубок Shebelieves, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-shebelieves-cup-women.png",
+      "start_date": "2022-02-18 01:00:00",
+      "end_date": "2022-02-23 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "USA",
+        "flag": "usa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 764,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-olympic-games-qualification-concacafconmebol-playoffs",
+      "name_translations": {
+        "en": "Olympic Games Qualification, CONCACAF/CONMEBOL Playoffs",
+        "ru": "Олимпийские игры, Плей-Офф"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-olympic-games-qualification-concacafconmebol-playoffs.png",
+      "start_date": "2016-03-25 21:00:00",
+      "end_date": "2016-03-31 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 765,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-tournament-of-nations-women",
+      "name_translations": {
+        "en": "Tournament of Nations, Women",
+        "ru": "Турнир Наций, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-tournament-of-nations-women.png",
+      "start_date": "2018-07-26 20:15:00",
+      "end_date": "2018-08-03 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 766,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-world-cup-qualification-inter-confederation-playoffs",
+      "name_translations": {
+        "en": "World Cup Qualification, Inter-Confederation Playoffs",
+        "ru": "Чемпионат мира, Отборочные - Плей-Офф"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-world-cup-qualification-inter-confederation-playoffs.png",
+      "start_date": "2022-06-13 18:00:00",
+      "end_date": "2022-06-14 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "0.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.50"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.50"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 767,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-florida-cup",
+      "name_translations": {
+        "en": "Florida Cup",
+        "ru": "Кубок Флориды"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-florida-cup.png",
+      "start_date": "2022-07-17 02:00:00",
+      "end_date": "2022-07-24 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "USA",
+        "flag": "usa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.00"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 768,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-atlantic-cup",
+      "name_translations": {
+        "en": "Atlantic Cup",
+        "ru": "Кубок Атлантики"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-atlantic-cup.png",
+      "start_date": "2022-02-03 15:00:00",
+      "end_date": "2022-02-11 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Portugal",
+        "flag": "portugal",
+        "city": "Algarve"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.55"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 769,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-intercontinental-cup",
+      "name_translations": {
+        "en": "Intercontinental Cup",
+        "ru": "Межконтинентальный кубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-intercontinental-cup.png",
+      "start_date": "2019-07-07 14:30:00",
+      "end_date": "2019-07-20 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "India",
+        "flag": "india",
+        "city": "Mumbai"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 770,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-international-champions-cup-women",
+      "name_translations": {
+        "en": "International Champions Cup, Women",
+        "ru": "Международный кубок чемпионов, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-international-champions-cup-women.png",
+      "start_date": "2022-08-18 01:05:00",
+      "end_date": "2022-08-21 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 771,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-campeones-cup",
+      "name_translations": {
+        "en": "Campeones Cup",
+        "ru": "Кубок Campeones"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-campeones-cup.png",
+      "start_date": "2022-09-14 23:30:00",
+      "end_date": "2022-09-15 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 772,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-world-cup-women-concacafconmebol-qual-playoffs",
+      "name_translations": {
+        "en": "World Cup, Women, CONCACAF/CONMEBOL Qual. Playoffs",
+        "ru": "Чемпионат мира, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-world-cup-women-concacafconmebol-qual-playoffs.png",
+      "start_date": "2018-11-08 22:00:00",
+      "end_date": "2018-11-15 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 773,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-four-nations-women",
+      "name_translations": {
+        "en": "Four Nations, Women",
+        "ru": "Кубок четырёх наций, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-four-nations-women.png",
+      "start_date": "2019-01-17 07:00:00",
+      "end_date": "2019-01-21 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "China",
+        "flag": "china",
+        "city": "Meizhou"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 774,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-viareggio-cup-women",
+      "name_translations": {
+        "en": "Viareggio Cup, Women",
+        "ru": "Турнир Виареджо, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-viareggio-cup-women.png",
+      "start_date": "2022-03-17 14:00:00",
+      "end_date": "2022-03-25 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "75%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 775,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-pan-american-games-women",
+      "name_translations": {
+        "en": "Pan American Games, Women",
+        "ru": "Панамериканские игры, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-pan-american-games-women.png",
+      "start_date": "2019-07-28 15:00:00",
+      "end_date": "2019-08-11 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Chile",
+        "flag": "chile",
+        "city": "Santiago"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 776,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-pan-american-games",
+      "name_translations": {
+        "en": "Pan American Games",
+        "ru": "Панамериканские игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-pan-american-games.png",
+      "start_date": "2019-07-29 15:00:00",
+      "end_date": "2019-08-11 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Chile",
+        "flag": "chile",
+        "city": "Santiago"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 777,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-arab-club-champions-cup",
+      "name_translations": {
+        "en": "Arab Club Champions Cup",
+        "ru": "Арабская лига чемпионов"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-arab-club-champions-cup.png",
+      "start_date": "2019-08-26 17:15:00",
+      "end_date": "2021-08-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.37"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.35"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 778,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-pinatar-cup-women",
+      "name_translations": {
+        "en": "Pinatar Cup, Women",
+        "ru": "Кубок Пинатар, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-pinatar-cup-women.png",
+      "start_date": "2022-02-16 14:30:00",
+      "end_date": "2022-02-22 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 779,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-tournoi-de-france-women",
+      "name_translations": {
+        "en": "Tournoi de France, Women",
+        "ru": "Турни де Франс, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-tournoi-de-france-women.png",
+      "start_date": "2022-02-16 18:00:00",
+      "end_date": "2022-02-23 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "France",
+        "flag": "france"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.83"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 780,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-u17-world-cup",
+      "name_translations": {
+        "en": "U17 World Cup",
+        "ru": "Чемпионат мира, U17"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-u17-world-cup.png",
+      "start_date": "2019-10-26 20:00:00",
+      "end_date": "2019-11-18 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.08"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.04"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 781,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-world-cup-women",
+      "name_translations": {
+        "en": "World Cup Women",
+        "ru": "Чемпионат мира, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-world-cup-women.png",
+      "start_date": "2019-06-07 19:00:00",
+      "end_date": "2019-07-08 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "France",
+        "flag": "france"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.81"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.48"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.08"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 782,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-club-world-cup",
+      "name_translations": {
+        "en": "Club World Cup",
+        "ru": "Клубный чемпионат мира"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-club-world-cup.png",
+      "start_date": "2022-02-03 16:30:00",
+      "end_date": "2022-02-13 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "United Arab Emirates",
+        "flag": "united-arab-emirates"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "62%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.25"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.50"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 783,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-world-cup-qual-concacaf",
+      "name_translations": {
+        "en": "World Cup Qual. CONCACAF",
+        "ru": "Чемпионат мира, КОНКАКАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-world-cup-qual-concacaf.png",
+      "start_date": "2021-03-24 20:00:00",
+      "end_date": "2022-03-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.97"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.71"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 784,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-gold-cup",
+      "name_translations": {
+        "en": "CONCACAF Gold Cup",
+        "ru": "Кубок КОНКАКАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-gold-cup.png",
+      "start_date": "2021-07-02 20:30:00",
+      "end_date": "2021-08-03 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "USA",
+        "flag": "usa"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.23"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.50"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.20"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 785,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-superliga",
+      "name_translations": {
+        "en": "SuperLiga",
+        "ru": "Суперлига"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2010-07-15 00:00:00",
+      "end_date": "2010-09-03 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 786,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-champions-league",
+      "name_translations": {
+        "en": "CONCACAF Champions League",
+        "ru": "Лига Чемпионов КОНКАКАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-champions-league.png",
+      "start_date": "2022-02-16 01:00:00",
+      "end_date": "2022-05-07 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "64%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "11%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.14"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.14"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 787,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-u20-concacaf-championship",
+      "name_translations": {
+        "en": "U20 CONCACAF Championship",
+        "ru": "КОНКАКАФ По Футболу До 20 Лет"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-u20-concacaf-championship.png",
+      "start_date": "2022-06-18 20:00:00",
+      "end_date": "2022-07-04 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "6"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.87"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.21"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.10"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 788,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-gold-cup-qual",
+      "name_translations": {
+        "en": "CONCACAF Gold Cup Qual.",
+        "ru": "Кубок КОНКАКАФ Qual."
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-gold-cup-qual.png",
+      "start_date": "2011-01-14 22:00:00",
+      "end_date": "2011-01-24 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 789,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-caribbean-cup",
+      "name_translations": {
+        "en": "Caribbean Cup",
+        "ru": "Карибский Кубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-caribbean-cup.png",
+      "start_date": "2014-11-11 22:30:00",
+      "end_date": "2014-11-19 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "36%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 790,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-copa-centroamericana",
+      "name_translations": {
+        "en": "Copa Centroamericana",
+        "ru": "Copa Centroamericana"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-copa-centroamericana.png",
+      "start_date": "2017-01-13 21:00:00",
+      "end_date": "2017-01-23 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.80"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 791,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-u17-concacaf-women-championship",
+      "name_translations": {
+        "en": "U17 CONCACAF Women Championship",
+        "ru": "U17 КОНКАКАФ Чемпионат Женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-u17-concacaf-women-championship.png",
+      "start_date": "2022-04-23 20:00:00",
+      "end_date": "2022-05-09 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "65%"
+        },
+        {
+          "name": "Draws",
+          "value": "5%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 792,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-u20-concacaf-womens-championship",
+      "name_translations": {
+        "en": "U20 CONCACAF Women's Championship",
+        "ru": "U20 КОНКАКАФ Чемпионат Женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-u20-concacaf-womens-championship.png",
+      "start_date": "2022-02-25 20:00:00",
+      "end_date": "2022-03-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Dominican Republic",
+        "flag": "dominican-rep"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 793,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-womens-championship",
+      "name_translations": {
+        "en": "CONCACAF Women's Championship",
+        "ru": "Чемпионат КОНКАКАФ Среди Женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-womens-championship.png",
+      "start_date": "2022-07-04 23:00:00",
+      "end_date": "2022-07-19 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "69%"
+        },
+        {
+          "name": "Draws",
+          "value": "6%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.38"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.19"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 794,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-u17-concacaf-championship",
+      "name_translations": {
+        "en": "U17 CONCACAF Championship",
+        "ru": "КОНКАКАФ, U17"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-u17-concacaf-championship.png",
+      "start_date": "2019-05-01 14:00:00",
+      "end_date": "2019-05-17 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 795,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-champions-cup",
+      "name_translations": {
+        "en": "CONCACAF Champions Cup",
+        "ru": "Кубок КОНКАКАФ"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 796,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-olympic-qualifications-women",
+      "name_translations": {
+        "en": "CONCACAF Olympic Qualifications, Women",
+        "ru": "КОНКАКАФ Олимпийские Квалификации, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-olympic-qualifications-women.png",
+      "start_date": "2020-01-28 23:00:00",
+      "end_date": "2020-02-11 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 797,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-league",
+      "name_translations": {
+        "en": "CONCACAF League",
+        "ru": "Лига КОНКАКАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-league.png",
+      "start_date": "2022-07-27 00:00:00",
+      "end_date": "2022-11-04 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "5"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.37"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 798,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-central-american-and-caribbean-games-women",
+      "name_translations": {
+        "en": "Central American and Caribbean Games, Women",
+        "ru": "Игры Центральной Америки и Карибского бассейна, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-central-american-and-caribbean-games-women.png",
+      "start_date": "2018-07-22 21:00:00",
+      "end_date": "2018-08-01 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 799,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-central-american-and-caribbean-games",
+      "name_translations": {
+        "en": "Central American and Caribbean Games",
+        "ru": "Игры Центральной Америки и Карибского бассейна"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-central-american-and-caribbean-games.png",
+      "start_date": "2018-07-22 21:00:00",
+      "end_date": "2018-08-02 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 800,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-copa-premier-centroamericana",
+      "name_translations": {
+        "en": "Copa Premier Centroamericana",
+        "ru": "Копа Премьер Centroamericana"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-copa-premier-centroamericana.png",
+      "start_date": "2019-07-12 01:00:00",
+      "end_date": "2020-01-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 16,
+    "from": 751,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 800,
+    "total": 1760
+  }
+}

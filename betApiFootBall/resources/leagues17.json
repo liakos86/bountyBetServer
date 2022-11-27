@@ -1,0 +1,2598 @@
+{
+  "data": [
+    {
+      "id": 801,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-leagues-cup",
+      "name_translations": {
+        "en": "Leagues Cup",
+        "ru": "Кубок Лиг"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-leagues-cup.png",
+      "start_date": "2021-08-11 00:00:00",
+      "end_date": "2021-09-23 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 802,
+      "sport_id": 1,
+      "section_id": 120,
+      "slug": "north-central-america-concacaf-nations-league",
+      "name_translations": {
+        "en": "CONCACAF Nations League",
+        "ru": "Лига Наций КОНКАКАФ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-nations-league.png",
+      "start_date": "2022-06-02 20:00:00",
+      "end_date": "2023-07-01 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.12"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.12"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 120,
+        "sport_id": 1,
+        "slug": "north-central-america",
+        "name": "North & Central America",
+        "priority": 15,
+        "flag": "north-and-central-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 803,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-copa-america",
+      "name_translations": {
+        "en": "Copa América",
+        "ru": "Кубок Америки"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-copa-america.png",
+      "start_date": "2021-06-13 21:00:00",
+      "end_date": "2021-07-11 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Ecuador",
+        "flag": "ecuador"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "18%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.18"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.21"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 804,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-world-cup-qual-conmebol",
+      "name_translations": {
+        "en": "World Cup Qual. CONMEBOL",
+        "ru": "Чемпионат мира Qual, КОНМЕБОЛ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-world-cup-qual-conmebol.png",
+      "start_date": "2020-10-08 22:30:00",
+      "end_date": "2021-11-22 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.51"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.67"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.25"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 805,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-conmebol-libertadores",
+      "name_translations": {
+        "en": "CONMEBOL Libertadores",
+        "ru": "Кубок Либертадорес (Copa CONMEBOL Libertadores)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-libertadores.png",
+      "start_date": "2022-02-09 00:30:00",
+      "end_date": "2022-10-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.47"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.40"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.27"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 806,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-conmebol-sudamericana",
+      "name_translations": {
+        "en": "CONMEBOL Sudamericana",
+        "ru": "Южноамериканский кубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-sudamericana.png",
+      "start_date": "2022-03-08 22:15:00",
+      "end_date": "2022-10-02 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.38"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.34"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 807,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-conmebol-recopa",
+      "name_translations": {
+        "en": "CONMEBOL Recopa",
+        "ru": "Рекопа Южной Америки"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-recopa.png",
+      "start_date": "2022-02-24 00:30:00",
+      "end_date": "2022-03-04 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.50"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 808,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-u20-conmebol-championship",
+      "name_translations": {
+        "en": "U20 CONMEBOL Championship",
+        "ru": "Чемпионат Южной Америки, U20 CONMEBOL"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-u20-conmebol-championship.png",
+      "start_date": "2019-01-17 20:10:00",
+      "end_date": "2019-02-12 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Chile",
+        "flag": "chile"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 809,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-u20-conmebol-libertadores",
+      "name_translations": {
+        "en": "U20 CONMEBOL Libertadores",
+        "ru": "U20 CONMEBOL Либертадорес"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-u20-conmebol-libertadores.png",
+      "start_date": "2022-02-05 20:00:00",
+      "end_date": "2022-02-21 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Ecuador",
+        "flag": "ecuador"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 810,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-u20-conmebol-championship-women",
+      "name_translations": {
+        "en": "U20 CONMEBOL Championship, Women",
+        "ru": "Чемпионат Южной Америки, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-u20-conmebol-championship-women.png",
+      "start_date": "2022-04-06 20:00:00",
+      "end_date": "2022-04-25 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Chile",
+        "flag": "chile"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.31"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.19"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.12"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 811,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-u17-conmebol-championship",
+      "name_translations": {
+        "en": "U17 CONMEBOL Championship",
+        "ru": "Чемпионат Южной Америки, U17"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-u17-conmebol-championship.png",
+      "start_date": "2019-03-21 22:10:00",
+      "end_date": "2019-04-16 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 12,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 812,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-conmebol-libertadores-women",
+      "name_translations": {
+        "en": "CONMEBOL Libertadores, Women",
+        "ru": "Кубок Либертадорес, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-libertadores-women.png",
+      "start_date": "2021-11-03 20:30:00",
+      "end_date": "2021-11-21 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Brazil",
+        "flag": "brazil"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 813,
+      "sport_id": 1,
+      "section_id": 121,
+      "slug": "south-america-conmebol-pre-olympic-tournament",
+      "name_translations": {
+        "en": "CONMEBOL Pre-Olympic Tournament",
+        "ru": "Предолимпийский турнир КОНМЕБОЛ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-pre-olympic-tournament.png",
+      "start_date": "2020-01-18 23:00:00",
+      "end_date": "2020-02-10 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.83"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 121,
+        "sport_id": 1,
+        "slug": "south-america",
+        "name": "South America",
+        "priority": 18,
+        "flag": "south-america"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 814,
+      "sport_id": 1,
+      "section_id": 122,
+      "slug": "oceania-world-cup-qual-ofc",
+      "name_translations": {
+        "en": "World Cup Qual. OFC",
+        "ru": "Чемпионат мира (ОФК)"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/oceania-world-cup-qual-ofc.png",
+      "start_date": "2022-03-14 07:00:00",
+      "end_date": "2022-03-30 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.27"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 122,
+        "sport_id": 1,
+        "slug": "oceania",
+        "name": "Oceania",
+        "priority": 14,
+        "flag": "oceania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 815,
+      "sport_id": 1,
+      "section_id": 122,
+      "slug": "oceania-ofc-champions-league",
+      "name_translations": {
+        "en": "OFC Champions League",
+        "ru": "Лига чемпионов ОФК"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/oceania-ofc-champions-league.png",
+      "start_date": "2022-08-04 00:00:00",
+      "end_date": "2022-08-17 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "5"
+        },
+        {
+          "name": "Average goals",
+          "value": "3.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "6%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "47%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 122,
+        "sport_id": 1,
+        "slug": "oceania",
+        "name": "Oceania",
+        "priority": 14,
+        "flag": "oceania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 816,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-super-cup",
+      "name_translations": {
+        "en": "UEFA Super Cup",
+        "ru": "Суперкубок УЕФА"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-super-cup.png",
+      "start_date": "2022-08-10 19:00:00",
+      "end_date": "2022-08-11 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Finland",
+        "flag": "finland",
+        "city": "Helsinki"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "1.00"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 817,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-champions-league",
+      "name_translations": {
+        "en": "UEFA Champions League",
+        "ru": "Лига Чемпионов УЕФА"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-champions-league.png",
+      "start_date": "2022-06-21 13:00:00",
+      "end_date": "2023-06-10 00:00:00",
+      "priority": 320,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "4.50"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.09"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 818,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-europa-league",
+      "name_translations": {
+        "en": "UEFA Europa League",
+        "ru": "Лига Европы УЕФА"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-europa-league.png",
+      "start_date": "2022-08-04 16:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 310,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.36"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.15"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 819,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-euro-cup-qualification",
+      "name_translations": {
+        "en": "Euro Cup Qualification",
+        "ru": "Квалификация чемпионата Европы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-euro-cup-qualification.png",
+      "start_date": "2019-03-21 15:00:00",
+      "end_date": "2020-11-13 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.15"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.76"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.09"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 820,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-baltic-league",
+      "name_translations": {
+        "en": "Baltic League",
+        "ru": "Балтийская лига"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2010-09-21 16:00:00",
+      "end_date": "2011-07-04 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 821,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u17-european-championship",
+      "name_translations": {
+        "en": "U17 European Championship",
+        "ru": "U17 Чемпионат Европы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u17-european-championship.png",
+      "start_date": "2022-05-16 14:30:00",
+      "end_date": "2022-06-01 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Israel",
+        "flag": "israel"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.26"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": 9,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 822,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u21-european-championship",
+      "name_translations": {
+        "en": "U21 European Championship",
+        "ru": "U21 Чемпионат Европы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u21-european-championship.png",
+      "start_date": "2021-03-24 17:00:00",
+      "end_date": "2021-06-07 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Slovenia",
+        "flag": "slovenia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.68"
+        },
+        {
+          "name": "Home team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "5.06"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.32"
+        }
+      ],
+      "most_count": 5,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 823,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-womens-euro",
+      "name_translations": {
+        "en": "Women's Euro",
+        "ru": "Чемпионат Европы среди женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-womens-euro.png",
+      "start_date": "2022-07-06 19:00:00",
+      "end_date": "2022-07-31 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "England",
+        "flag": "england"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.06"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "16%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.23"
+        }
+      ],
+      "most_count": 8,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 824,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-cup-women",
+      "name_translations": {
+        "en": "UEFA Cup, Women",
+        "ru": "Лига чемпионов УЕФА среди женщин"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2008-11-05 17:00:00",
+      "end_date": "2009-05-24 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.07"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 825,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u19-european-womens-championship",
+      "name_translations": {
+        "en": "U19 European Women's Championship",
+        "ru": "U19 Чемпионат Европы Среди Женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u19-european-womens-championship.png",
+      "start_date": "2022-06-27 09:00:00",
+      "end_date": "2022-07-09 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Scotland",
+        "flag": "scotland"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.80"
+        },
+        {
+          "name": "Home team wins",
+          "value": "73%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "13%"
+        }
+      ],
+      "most_count": 6,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 826,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-champions-league-women",
+      "name_translations": {
+        "en": "UEFA Champions League, Women",
+        "ru": "Лига Чемпионов УЕФА, Женщины"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-champions-league-women.png",
+      "start_date": "2022-08-18 08:00:00",
+      "end_date": "2023-06-04 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.56"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 827,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-setanta-sports-cup",
+      "name_translations": {
+        "en": "Setanta Sports Cup",
+        "ru": "Кубок Сетанта Спортс"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2014-02-24 19:45:00",
+      "end_date": "2014-05-12 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.23"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "54%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 828,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u19-european-womens-championship-qualif",
+      "name_translations": {
+        "en": "U19 European Women's Championship Qualif.",
+        "ru": "U19 Чемпионат Европы Среди Женщин Квалиф."
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u19-european-womens-championship-qualif.png",
+      "start_date": "2022-10-04 09:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.11"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 829,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u19-european-championship-qualif",
+      "name_translations": {
+        "en": "U19 European Championship Qualif.",
+        "ru": "U19 Чемпионат Европы Qualif."
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u19-european-championship-qualif.png",
+      "start_date": "2022-09-21 10:00:00",
+      "end_date": "2023-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 830,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u17-euro-womens-qual",
+      "name_translations": {
+        "en": "U17 Euro Womens, Qual",
+        "ru": "U17 Euro Womens, Qual"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u17-euro-womens-qual.png",
+      "start_date": "2022-03-08 11:00:00",
+      "end_date": "2022-04-13 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.66"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "6%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 831,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u17-european-championship-qual",
+      "name_translations": {
+        "en": "U17 European Championship, Qual.",
+        "ru": "U17 Чемпионат Европы, Qual."
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u17-european-championship-qual.png",
+      "start_date": "2021-09-23 10:00:00",
+      "end_date": "2022-04-26 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 832,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-world-cup-women-qual",
+      "name_translations": {
+        "en": "World Cup Women Qual.",
+        "ru": "Чемпионат Европы, Женщин Qual."
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-world-cup-women-qual.png",
+      "start_date": "2021-09-16 16:00:00",
+      "end_date": "2022-10-11 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.40"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 833,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-womens-euro-qualification",
+      "name_translations": {
+        "en": "Women's Euro, Qualification",
+        "ru": "Чемпионат Европы среди женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-womens-euro-qualification.png",
+      "start_date": "2019-08-29 15:30:00",
+      "end_date": "2021-04-13 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "11"
+        },
+        {
+          "name": "Average goals",
+          "value": "4.01"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.04"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.01"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 834,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-dublin-super-cup",
+      "name_translations": {
+        "en": "Dublin Super Cup",
+        "ru": "Dublin Super Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2011-07-30 13:00:00",
+      "end_date": "2011-08-01 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "75%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 835,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u17-european-womens-championship",
+      "name_translations": {
+        "en": "U17 European Womens Championship",
+        "ru": "U17 Чемпионат Европы Среди Женщин"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u17-european-womens-championship.png",
+      "start_date": "2022-05-03 12:00:00",
+      "end_date": "2022-05-15 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Bosnia & Herzegovina",
+        "flag": "bosnia-herzegovina"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.06"
+        },
+        {
+          "name": "Home team wins",
+          "value": "62%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 836,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u18-slovakia-cup",
+      "name_translations": {
+        "en": "U18 Slovakia Cup",
+        "ru": "U18 Кубок Словакии"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u18-slovakia-cup.png",
+      "start_date": "2019-05-20 10:00:00",
+      "end_date": "2019-05-25 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Slovakia",
+        "flag": "slovakia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 837,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-baltic-cup",
+      "name_translations": {
+        "en": "Baltic Cup",
+        "ru": "Балтийский Кубок"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-baltic-cup.png",
+      "start_date": "2022-11-16 13:00:00",
+      "end_date": "2021-06-10 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 13,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 838,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-nextgen-series",
+      "name_translations": {
+        "en": "NextGen Series",
+        "ru": "NextGen Series"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2013-02-19 18:00:00",
+      "end_date": "2013-04-02 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 839,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-youth-league",
+      "name_translations": {
+        "en": "UEFA Youth League",
+        "ru": "Юношеская Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-youth-league.png",
+      "start_date": "2014-09-16 13:00:00",
+      "end_date": "2015-04-28 21:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.59"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.20"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.03"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 840,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-youth-league-1",
+      "name_translations": {
+        "en": "UEFA Youth League",
+        "ru": "Юношеская Лига"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-youth-league-1.png",
+      "start_date": "2022-09-06 09:30:00",
+      "end_date": "2023-04-24 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.43"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": 2,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 841,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-olympic-qualifications-women",
+      "name_translations": {
+        "en": "UEFA Olympic Qualifications, Women",
+        "ru": "УЕФА Олимпийские Квалификации, Женщины"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2016-03-02 18:30:00",
+      "end_date": "2016-03-13 22:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 842,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u21-baltic-cup",
+      "name_translations": {
+        "en": "U21 Baltic Cup ",
+        "ru": "U21 Балтийский Кубок"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 843,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-baltic-cup-u19",
+      "name_translations": {
+        "en": "Baltic Cup U19",
+        "ru": "Балтийский кубок, до 19 лет"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 844,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-baltic-winter-cup",
+      "name_translations": {
+        "en": "Baltic Winter Cup",
+        "ru": "Зимний Кубок По Футболу"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 845,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-uefa-nations-league",
+      "name_translations": {
+        "en": "UEFA Nations League",
+        "ru": "Лига Наций УЕФА"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-uefa-nations-league.png",
+      "start_date": "2022-06-01 16:00:00",
+      "end_date": "2024-03-26 00:00:00",
+      "priority": 100,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.62"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.97"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.13"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 846,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-euro-cup",
+      "name_translations": {
+        "en": "Euro Cup",
+        "ru": "Чемпионат Европы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-euro-cup.png",
+      "start_date": "2021-06-11 19:00:00",
+      "end_date": "2021-07-11 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Germany",
+        "flag": "germany"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.96"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.12"
+        }
+      ],
+      "most_count": 3,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 847,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-czech-slovak-supercup",
+      "name_translations": {
+        "en": "Czech-Slovak Supercup",
+        "ru": "Чешско-Словацкий Суперкубок"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2019-07-06 16:00:00",
+      "end_date": "2019-07-07 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "6.00"
+        },
+        {
+          "name": "Total prize money",
+          "value": "60000"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 848,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-world-cup-qual-uefa",
+      "name_translations": {
+        "en": "World Cup Qual. UEFA",
+        "ru": "Отборочный турнир Чемпионата мира, Qual. UEFA"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-world-cup-qual-uefa.png",
+      "start_date": "2021-03-24 17:00:00",
+      "end_date": "2022-03-29 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "3.92"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.13"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 849,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u21-euro-qualification",
+      "name_translations": {
+        "en": "U21 Euro Qualification",
+        "ru": "U21 Евро Квалификация"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u21-euro-qualification.png",
+      "start_date": "2021-03-25 15:30:00",
+      "end_date": "2022-11-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.05"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.05"
+        },
+        {
+          "name": "Red cards",
+          "value": "0.06"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 850,
+      "sport_id": 1,
+      "section_id": 123,
+      "slug": "europe-u19-european-championship",
+      "name_translations": {
+        "en": "U19 European Championship",
+        "ru": "U19 Чемпионат Европы"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/europe-u19-european-championship.png",
+      "start_date": "2022-06-18 15:30:00",
+      "end_date": "2022-07-01 23:59:00",
+      "priority": 0,
+      "host": {
+        "country": "Armenia",
+        "flag": "armenia"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.06"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.13"
+        }
+      ],
+      "most_count": 11,
+      "section": {
+        "id": 123,
+        "sport_id": 1,
+        "slug": "europe",
+        "name": "Europe",
+        "priority": 19,
+        "flag": "europe"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 17,
+    "from": 801,
+    "last_page": 36,
+    "per_page": 50,
+    "to": 850,
+    "total": 1760
+  }
+}

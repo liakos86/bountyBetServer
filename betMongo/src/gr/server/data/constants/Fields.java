@@ -9,6 +9,13 @@ public interface Fields {
 	
 	public static final String USERNAME = "username";
 	
+	public static final String PASSWORD = "password";
+	
+	public static final String EMAIL = "email";
+	
+	public static final String VALIDATED = "validated";
+	
+	
 	/**
 	 * Used as foreign key for bets, awards, etc.
 	 */

@@ -1,0 +1,1310 @@
+{
+  "data": [
+    {
+      "id": 201,
+      "sport_id": 1,
+      "league_id": 114,
+      "slug": "fa-cup-1",
+      "name": "FA Cup",
+      "name_translations": {
+        "en": "FA Cup",
+        "ru": "Кубок Англии"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 202,
+      "sport_id": 1,
+      "league_id": 115,
+      "slug": "division-1",
+      "name": "Division 1",
+      "name_translations": {
+        "en": "Division 1",
+        "ru": "Дивизион 1"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 203,
+      "sport_id": 1,
+      "league_id": 117,
+      "slug": "stars-league",
+      "name": "Stars League",
+      "name_translations": {
+        "en": "Stars League",
+        "ru": "Звезд Футбола"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 204,
+      "sport_id": 1,
+      "league_id": 117,
+      "slug": "stars-league-1",
+      "name": "Stars League",
+      "name_translations": {
+        "en": "Stars League",
+        "ru": "Звезд Футбола"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 205,
+      "sport_id": 1,
+      "league_id": 118,
+      "slug": "stars-cup",
+      "name": "Stars Cup",
+      "name_translations": {
+        "en": "Stars Cup",
+        "ru": "Звезд Футбола"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 206,
+      "sport_id": 1,
+      "league_id": 118,
+      "slug": "stars-cup-1",
+      "name": "Stars Cup",
+      "name_translations": {
+        "en": "Stars Cup",
+        "ru": "Звезд Футбола"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 207,
+      "sport_id": 1,
+      "league_id": 118,
+      "slug": "stars-cup-2",
+      "name": "Stars Cup",
+      "name_translations": {
+        "en": "Stars Cup",
+        "ru": "Звезд Футбола"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 208,
+      "sport_id": 1,
+      "league_id": 118,
+      "slug": "stars-cup-3",
+      "name": "Stars Cup",
+      "name_translations": {
+        "en": "Stars Cup",
+        "ru": "Звезд Футбола"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 209,
+      "sport_id": 1,
+      "league_id": 120,
+      "slug": "qatar-cup",
+      "name": "Qatar Cup",
+      "name_translations": {
+        "en": "Qatar Cup",
+        "ru": "Катара По Футболу"
+      },
+      "order": 1,
+      "priority": 0
+    },
+    {
+      "id": 210,
+      "sport_id": 1,
+      "league_id": 121,
+      "slug": "danmarksserien-pulje-1",
+      "name": "Danmarksserien, Pulje 1",
+      "name_translations": {
+        "en": "Danmarksserien, Pulje 1",
+        "ru": "Danmarksserien, Pulje 1"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 211,
+      "sport_id": 1,
+      "league_id": 121,
+      "slug": "danmarksserien-pulje-1-1",
+      "name": "Danmarksserien, Pulje 1",
+      "name_translations": {
+        "en": "Danmarksserien, Pulje 1",
+        "ru": "Danmarksserien, Pulje 1"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 212,
+      "sport_id": 1,
+      "league_id": 121,
+      "slug": "danmarksserien-pulje-1-2",
+      "name": "Danmarksserien, Pulje 1",
+      "name_translations": {
+        "en": "Danmarksserien, Pulje 1",
+        "ru": "Danmarksserien, Pulje 1"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 213,
+      "sport_id": 1,
+      "league_id": 122,
+      "slug": "danmarksserien-pulje-2",
+      "name": "Danmarksserien, Pulje 2",
+      "name_translations": {
+        "en": "Danmarksserien, Pulje 2",
+        "ru": "Danmarksserien, Pulje 2"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 214,
+      "sport_id": 1,
+      "league_id": 123,
+      "slug": "danmarksserien-pulje-3",
+      "name": "Danmarksserien, Pulje 3",
+      "name_translations": {
+        "en": "Danmarksserien, Pulje 3",
+        "ru": "Danmarksserien, Pulje 3"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 215,
+      "sport_id": 1,
+      "league_id": 125,
+      "slug": "danmarksserien-pulje-4",
+      "name": "Danmarksserien, Pulje 4",
+      "name_translations": {
+        "en": "Danmarksserien, Pulje 4",
+        "ru": "Danmarksserien, Pulje 4"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 216,
+      "sport_id": 1,
+      "league_id": 128,
+      "slug": "regionalliga-centre",
+      "name": "Regionalliga Centre",
+      "name_translations": {
+        "en": "Regionalliga Centre",
+        "ru": "Регионаллига Центр"
+      },
+      "order": 39,
+      "priority": 0
+    },
+    {
+      "id": 217,
+      "sport_id": 1,
+      "league_id": 128,
+      "slug": "regionalliga-centre-1",
+      "name": "Regionalliga Centre",
+      "name_translations": {
+        "en": "Regionalliga Centre",
+        "ru": "Регионаллига Центр"
+      },
+      "order": 38,
+      "priority": 0
+    },
+    {
+      "id": 218,
+      "sport_id": 1,
+      "league_id": 126,
+      "slug": "regionalliga-east",
+      "name": "Regionalliga East",
+      "name_translations": {
+        "en": "Regionalliga East",
+        "ru": "Регионаллига Восток"
+      },
+      "order": 37,
+      "priority": 0
+    },
+    {
+      "id": 219,
+      "sport_id": 1,
+      "league_id": 126,
+      "slug": "regionalliga-east-1",
+      "name": "Regionalliga East",
+      "name_translations": {
+        "en": "Regionalliga East",
+        "ru": "Регионаллига Восток"
+      },
+      "order": 36,
+      "priority": 0
+    },
+    {
+      "id": 220,
+      "sport_id": 1,
+      "league_id": 126,
+      "slug": "regionalliga-east-2",
+      "name": "Regionalliga East",
+      "name_translations": {
+        "en": "Regionalliga East",
+        "ru": "Регионаллига Восток"
+      },
+      "order": 35,
+      "priority": 0
+    },
+    {
+      "id": 221,
+      "sport_id": 1,
+      "league_id": 127,
+      "slug": "regionalliga-west-1",
+      "name": "Regionalliga West",
+      "name_translations": {
+        "en": "Regionalliga West",
+        "ru": "Регионаллига Запад"
+      },
+      "order": 34,
+      "priority": 0
+    },
+    {
+      "id": 222,
+      "sport_id": 1,
+      "league_id": 127,
+      "slug": "regionalliga-west-2",
+      "name": "Regionalliga West",
+      "name_translations": {
+        "en": "Regionalliga West",
+        "ru": "Регионаллига Запад"
+      },
+      "order": 33,
+      "priority": 0
+    },
+    {
+      "id": 223,
+      "sport_id": 1,
+      "league_id": 129,
+      "slug": "regionalliga-salzburg",
+      "name": "Regionalliga Salzburg",
+      "name_translations": {
+        "en": "Regionalliga Salzburg",
+        "ru": "Regionalliga Зальцбург"
+      },
+      "order": 32,
+      "priority": 0
+    },
+    {
+      "id": 224,
+      "sport_id": 1,
+      "league_id": 129,
+      "slug": "regionalliga-salzburg-1",
+      "name": "Regionalliga Salzburg",
+      "name_translations": {
+        "en": "Regionalliga Salzburg",
+        "ru": "Regionalliga Зальцбург"
+      },
+      "order": 31,
+      "priority": 0
+    },
+    {
+      "id": 225,
+      "sport_id": 1,
+      "league_id": 129,
+      "slug": "regionalliga-salzburg-2",
+      "name": "Regionalliga Salzburg",
+      "name_translations": {
+        "en": "Regionalliga Salzburg",
+        "ru": "Regionalliga Зальцбург"
+      },
+      "order": 30,
+      "priority": 0
+    },
+    {
+      "id": 226,
+      "sport_id": 1,
+      "league_id": 132,
+      "slug": "regionalliga-tirol",
+      "name": "Regionalliga Tirol",
+      "name_translations": {
+        "en": "Regionalliga Tirol",
+        "ru": "Регионаллига Тироль"
+      },
+      "order": 29,
+      "priority": 0
+    },
+    {
+      "id": 227,
+      "sport_id": 1,
+      "league_id": 132,
+      "slug": "regionalliga-tirol-1",
+      "name": "Regionalliga Tirol",
+      "name_translations": {
+        "en": "Regionalliga Tirol",
+        "ru": "Регионаллига Тироль"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 228,
+      "sport_id": 1,
+      "league_id": 131,
+      "slug": "eliteliga-vorarlberg",
+      "name": "Eliteliga Vorarlberg",
+      "name_translations": {
+        "en": "Eliteliga Vorarlberg",
+        "ru": "Элителига Форарльберг"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 229,
+      "sport_id": 1,
+      "league_id": 131,
+      "slug": "eliteliga-vorarlberg-1",
+      "name": "Eliteliga Vorarlberg",
+      "name_translations": {
+        "en": "Eliteliga Vorarlberg",
+        "ru": "Элителига Форарльберг"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 230,
+      "sport_id": 1,
+      "league_id": 130,
+      "slug": "bundesliga-women",
+      "name": "Bundesliga, Women",
+      "name_translations": {
+        "en": "Bundesliga, Women",
+        "ru": "Бундеслига, Женщины"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 231,
+      "sport_id": 1,
+      "league_id": 133,
+      "slug": "eredivisie",
+      "name": "Eredivisie",
+      "name_translations": {
+        "en": "Eredivisie",
+        "ru": "Eredivisie"
+      },
+      "order": 31,
+      "priority": 0
+    },
+    {
+      "id": 232,
+      "sport_id": 1,
+      "league_id": 133,
+      "slug": "eredivisie-1",
+      "name": "Eredivisie",
+      "name_translations": {
+        "en": "Eredivisie",
+        "ru": "Eredivisie"
+      },
+      "order": 30,
+      "priority": 0
+    },
+    {
+      "id": 233,
+      "sport_id": 1,
+      "league_id": 133,
+      "slug": "eredivisie-2",
+      "name": "Eredivisie",
+      "name_translations": {
+        "en": "Eredivisie",
+        "ru": "Eredivisie"
+      },
+      "order": 29,
+      "priority": 0
+    },
+    {
+      "id": 234,
+      "sport_id": 1,
+      "league_id": 133,
+      "slug": "eredivisie-3",
+      "name": "Eredivisie",
+      "name_translations": {
+        "en": "Eredivisie",
+        "ru": "Eredivisie"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 235,
+      "sport_id": 1,
+      "league_id": 133,
+      "slug": "eredivisie-4",
+      "name": "Eredivisie",
+      "name_translations": {
+        "en": "Eredivisie",
+        "ru": "Eredivisie"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 236,
+      "sport_id": 1,
+      "league_id": 134,
+      "slug": "eerste-divisie",
+      "name": "Eerste Divisie",
+      "name_translations": {
+        "en": "Eerste Divisie",
+        "ru": "Eerste Divisie"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 237,
+      "sport_id": 1,
+      "league_id": 139,
+      "slug": "tweede-divisie",
+      "name": "Tweede Divisie",
+      "name_translations": {
+        "en": "Tweede Divisie",
+        "ru": "Твид Дивизия"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 238,
+      "sport_id": 1,
+      "league_id": 135,
+      "slug": "knvb-beker",
+      "name": "KNVB beker",
+      "name_translations": {
+        "en": "KNVB beker",
+        "ru": "КНВБ Бекер"
+      },
+      "order": 24,
+      "priority": 0
+    },
+    {
+      "id": 239,
+      "sport_id": 1,
+      "league_id": 136,
+      "slug": "johan-cruijff-schaal",
+      "name": "Johan Cruijff Schaal",
+      "name_translations": {
+        "en": "Johan Cruijff Schaal",
+        "ru": "Йохан Круифф Шааль"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 240,
+      "sport_id": 1,
+      "league_id": 138,
+      "slug": "eredivisie-women",
+      "name": "Eredivisie, Women",
+      "name_translations": {
+        "en": "Eredivisie, Women",
+        "ru": "Eredivisie, Женщины"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 241,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 242,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-1",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 243,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-2",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 244,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-3",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 245,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-4",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 246,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-5",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 12,
+      "priority": 0
+    },
+    {
+      "id": 247,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-6",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 11,
+      "priority": 0
+    },
+    {
+      "id": 248,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-7",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 249,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-8",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 250,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-9",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 251,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-10",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 252,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-11",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 6,
+      "priority": 0
+    },
+    {
+      "id": 253,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-12",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 5,
+      "priority": 0
+    },
+    {
+      "id": 254,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-13",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 4,
+      "priority": 0
+    },
+    {
+      "id": 255,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-14",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 3,
+      "priority": 0
+    },
+    {
+      "id": 256,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-15",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 2,
+      "priority": 0
+    },
+    {
+      "id": 257,
+      "sport_id": 1,
+      "league_id": 137,
+      "slug": "beloften-eredivisie-16",
+      "name": "Beloften Eredivisie",
+      "name_translations": {
+        "en": "Beloften Eredivisie",
+        "ru": "Beloften Eredivisie"
+      },
+      "order": 1,
+      "priority": 0
+    },
+    {
+      "id": 258,
+      "sport_id": 1,
+      "league_id": 140,
+      "slug": "1-liga",
+      "name": "1. Liga",
+      "name_translations": {
+        "en": "1. Liga",
+        "ru": "1. Лига"
+      },
+      "order": 41,
+      "priority": 0
+    },
+    {
+      "id": 259,
+      "sport_id": 1,
+      "league_id": 140,
+      "slug": "1-liga-1",
+      "name": "1. Liga",
+      "name_translations": {
+        "en": "1. Liga",
+        "ru": "1. Лига"
+      },
+      "order": 40,
+      "priority": 0
+    },
+    {
+      "id": 260,
+      "sport_id": 1,
+      "league_id": 140,
+      "slug": "1-liga-2",
+      "name": "1. Liga",
+      "name_translations": {
+        "en": "1. Liga",
+        "ru": "1. Лига"
+      },
+      "order": 39,
+      "priority": 0
+    },
+    {
+      "id": 261,
+      "sport_id": 1,
+      "league_id": 140,
+      "slug": "1-liga-3",
+      "name": "1. Liga",
+      "name_translations": {
+        "en": "1. Liga",
+        "ru": "1. Лига"
+      },
+      "order": 38,
+      "priority": 0
+    },
+    {
+      "id": 262,
+      "sport_id": 1,
+      "league_id": 140,
+      "slug": "1-liga-4",
+      "name": "1. Liga",
+      "name_translations": {
+        "en": "1. Liga",
+        "ru": "1. Лига"
+      },
+      "order": 37,
+      "priority": 0
+    },
+    {
+      "id": 263,
+      "sport_id": 1,
+      "league_id": 141,
+      "slug": "fnl",
+      "name": "FNL",
+      "name_translations": {
+        "en": "FNL",
+        "ru": "ФНЛ"
+      },
+      "order": 36,
+      "priority": 0
+    },
+    {
+      "id": 264,
+      "sport_id": 1,
+      "league_id": 149,
+      "slug": "cfl",
+      "name": "CFL",
+      "name_translations": {
+        "en": "CFL",
+        "ru": "CFL"
+      },
+      "order": 35,
+      "priority": 0
+    },
+    {
+      "id": 265,
+      "sport_id": 1,
+      "league_id": 149,
+      "slug": "cfl-1",
+      "name": "CFL",
+      "name_translations": {
+        "en": "CFL",
+        "ru": "CFL"
+      },
+      "order": 34,
+      "priority": 0
+    },
+    {
+      "id": 266,
+      "sport_id": 1,
+      "league_id": 149,
+      "slug": "cfl-2",
+      "name": "CFL",
+      "name_translations": {
+        "en": "CFL",
+        "ru": "CFL"
+      },
+      "order": 33,
+      "priority": 0
+    },
+    {
+      "id": 267,
+      "sport_id": 1,
+      "league_id": 148,
+      "slug": "msfl",
+      "name": "MSFL",
+      "name_translations": {
+        "en": "MSFL",
+        "ru": "MSFL"
+      },
+      "order": 32,
+      "priority": 0
+    },
+    {
+      "id": 268,
+      "sport_id": 1,
+      "league_id": 142,
+      "slug": "cup",
+      "name": "Cup",
+      "name_translations": {
+        "en": "Cup",
+        "ru": "Кубок"
+      },
+      "order": 31,
+      "priority": 0
+    },
+    {
+      "id": 269,
+      "sport_id": 1,
+      "league_id": 143,
+      "slug": "super-cup-2",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 30,
+      "priority": 0
+    },
+    {
+      "id": 270,
+      "sport_id": 1,
+      "league_id": 145,
+      "slug": "1-liga-women",
+      "name": "1. Liga, Women",
+      "name_translations": {
+        "en": "1. Liga, Women",
+        "ru": "1. Лига, Женщины"
+      },
+      "order": 29,
+      "priority": 0
+    },
+    {
+      "id": 271,
+      "sport_id": 1,
+      "league_id": 145,
+      "slug": "1-liga-women-1",
+      "name": "1. Liga, Women",
+      "name_translations": {
+        "en": "1. Liga, Women",
+        "ru": "1. Лига, Женщины"
+      },
+      "order": 28,
+      "priority": 0
+    },
+    {
+      "id": 272,
+      "sport_id": 1,
+      "league_id": 145,
+      "slug": "1-liga-women-2",
+      "name": "1. Liga, Women",
+      "name_translations": {
+        "en": "1. Liga, Women",
+        "ru": "1. Лига, Женщины"
+      },
+      "order": 27,
+      "priority": 0
+    },
+    {
+      "id": 273,
+      "sport_id": 1,
+      "league_id": 145,
+      "slug": "1-liga-women-3",
+      "name": "1. Liga, Women",
+      "name_translations": {
+        "en": "1. Liga, Women",
+        "ru": "1. Лига, Женщины"
+      },
+      "order": 26,
+      "priority": 0
+    },
+    {
+      "id": 274,
+      "sport_id": 1,
+      "league_id": 146,
+      "slug": "winter-league",
+      "name": "Winter League",
+      "name_translations": {
+        "en": "Winter League",
+        "ru": "Футбольная Лига"
+      },
+      "order": 25,
+      "priority": 0
+    },
+    {
+      "id": 275,
+      "sport_id": 1,
+      "league_id": 146,
+      "slug": "winter-league-1",
+      "name": "Winter League",
+      "name_translations": {
+        "en": "Winter League",
+        "ru": "Футбольная Лига"
+      },
+      "order": 24,
+      "priority": 0
+    },
+    {
+      "id": 276,
+      "sport_id": 1,
+      "league_id": 146,
+      "slug": "winter-league-2",
+      "name": "Winter League",
+      "name_translations": {
+        "en": "Winter League",
+        "ru": "Футбольная Лига"
+      },
+      "order": 23,
+      "priority": 0
+    },
+    {
+      "id": 277,
+      "sport_id": 1,
+      "league_id": 146,
+      "slug": "winter-league-3",
+      "name": "Winter League",
+      "name_translations": {
+        "en": "Winter League",
+        "ru": "Футбольная Лига"
+      },
+      "order": 22,
+      "priority": 0
+    },
+    {
+      "id": 278,
+      "sport_id": 1,
+      "league_id": 146,
+      "slug": "winter-league-4",
+      "name": "Winter League",
+      "name_translations": {
+        "en": "Winter League",
+        "ru": "Футбольная Лига"
+      },
+      "order": 21,
+      "priority": 0
+    },
+    {
+      "id": 279,
+      "sport_id": 1,
+      "league_id": 146,
+      "slug": "winter-league-5",
+      "name": "Winter League",
+      "name_translations": {
+        "en": "Winter League",
+        "ru": "Футбольная Лига"
+      },
+      "order": 20,
+      "priority": 0
+    },
+    {
+      "id": 280,
+      "sport_id": 1,
+      "league_id": 144,
+      "slug": "u19-1st-division",
+      "name": "U19 1st Division",
+      "name_translations": {
+        "en": "U19 1st Division",
+        "ru": "U19 1-Й Дивизион"
+      },
+      "order": 19,
+      "priority": 0
+    },
+    {
+      "id": 281,
+      "sport_id": 1,
+      "league_id": 144,
+      "slug": "u19-1st-division-1",
+      "name": "U19 1st Division",
+      "name_translations": {
+        "en": "U19 1st Division",
+        "ru": "U19 1-Й Дивизион"
+      },
+      "order": 18,
+      "priority": 0
+    },
+    {
+      "id": 282,
+      "sport_id": 1,
+      "league_id": 147,
+      "slug": "u21",
+      "name": "U21",
+      "name_translations": {
+        "en": "U21",
+        "ru": "U21"
+      },
+      "order": 17,
+      "priority": 0
+    },
+    {
+      "id": 283,
+      "sport_id": 1,
+      "league_id": 147,
+      "slug": "u21-1",
+      "name": "U21",
+      "name_translations": {
+        "en": "U21",
+        "ru": "U21"
+      },
+      "order": 16,
+      "priority": 0
+    },
+    {
+      "id": 284,
+      "sport_id": 1,
+      "league_id": 147,
+      "slug": "u21-2",
+      "name": "U21",
+      "name_translations": {
+        "en": "U21",
+        "ru": "U21"
+      },
+      "order": 15,
+      "priority": 0
+    },
+    {
+      "id": 285,
+      "sport_id": 1,
+      "league_id": 147,
+      "slug": "u21-3",
+      "name": "U21",
+      "name_translations": {
+        "en": "U21",
+        "ru": "U21"
+      },
+      "order": 14,
+      "priority": 0
+    },
+    {
+      "id": 286,
+      "sport_id": 1,
+      "league_id": 147,
+      "slug": "u21-4",
+      "name": "U21",
+      "name_translations": {
+        "en": "U21",
+        "ru": "U21"
+      },
+      "order": 13,
+      "priority": 0
+    },
+    {
+      "id": 287,
+      "sport_id": 1,
+      "league_id": 150,
+      "slug": "ligue-1",
+      "name": "Ligue 1",
+      "name_translations": {
+        "en": "Ligue 1",
+        "ru": "Лига 1"
+      },
+      "order": 10,
+      "priority": 0
+    },
+    {
+      "id": 288,
+      "sport_id": 1,
+      "league_id": 152,
+      "slug": "ligue-2",
+      "name": "Ligue 2",
+      "name_translations": {
+        "en": "Ligue 2",
+        "ru": "Лига 2"
+      },
+      "order": 9,
+      "priority": 0
+    },
+    {
+      "id": 289,
+      "sport_id": 1,
+      "league_id": 151,
+      "slug": "algerian-cup",
+      "name": "Algerian Cup",
+      "name_translations": {
+        "en": "Algerian Cup",
+        "ru": "Алжира По Футболу"
+      },
+      "order": 8,
+      "priority": 0
+    },
+    {
+      "id": 290,
+      "sport_id": 1,
+      "league_id": 153,
+      "slug": "super-cup-3",
+      "name": "Super Cup",
+      "name_translations": {
+        "en": "Super Cup",
+        "ru": "По Футболу"
+      },
+      "order": 7,
+      "priority": 0
+    },
+    {
+      "id": 291,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 65,
+      "priority": 0
+    },
+    {
+      "id": 292,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga-1",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 64,
+      "priority": 0
+    },
+    {
+      "id": 293,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga-2",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 63,
+      "priority": 0
+    },
+    {
+      "id": 294,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga-3",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 62,
+      "priority": 0
+    },
+    {
+      "id": 295,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga-4",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 61,
+      "priority": 0
+    },
+    {
+      "id": 296,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga-5",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 60,
+      "priority": 0
+    },
+    {
+      "id": 297,
+      "sport_id": 1,
+      "league_id": 154,
+      "slug": "superliga-6",
+      "name": "Superliga",
+      "name_translations": {
+        "en": "Superliga",
+        "ru": "Суперлига"
+      },
+      "order": 59,
+      "priority": 0
+    },
+    {
+      "id": 298,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 58,
+      "priority": 0
+    },
+    {
+      "id": 299,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-1",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 57,
+      "priority": 0
+    },
+    {
+      "id": 300,
+      "sport_id": 1,
+      "league_id": 155,
+      "slug": "primera-b-nacional-2",
+      "name": "Primera B Nacional",
+      "name_translations": {
+        "en": "Primera B Nacional",
+        "ru": "Primera B Nacional"
+      },
+      "order": 56,
+      "priority": 0
+    }
+  ],
+  "meta": {
+    "current_page": 3,
+    "from": 201,
+    "per_page": 100,
+    "to": 300
+  }
+}

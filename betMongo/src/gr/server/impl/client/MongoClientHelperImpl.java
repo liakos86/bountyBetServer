@@ -1,5 +1,6 @@
 package gr.server.impl.client;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.bson.Document;
@@ -12,7 +13,6 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import gr.server.application.exception.UserExistsException;
 import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.Fields;
 import gr.server.data.user.model.objects.User;
@@ -21,6 +21,7 @@ import gr.server.data.user.model.objects.UserBet;
 import gr.server.def.client.MongoClientHelper;
 import gr.server.mongo.util.Executor;
 import gr.server.mongo.util.SyncHelper;
+import gr.server.transaction.helper.TransactionalBlock;
 
 public class MongoClientHelperImpl implements MongoClientHelper {
 
@@ -30,24 +31,40 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 	 */
 
 	@Override
-	public User createUser(User user) throws UserExistsException {
+	public User createUser(User user) {
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> users = client.getDatabase(CollectionNames.BOUNTY_BET_DB)
 				.getCollection(CollectionNames.USERS);
-
-		Document existingUser = new Document(Fields.USERNAME, user.getUsername());
-		FindIterable<Document> find = users.find(existingUser);
-
-		Document first = find.first();
-		if (first != null) {
-			throw new UserExistsException("User " + user.getUsername() + " already exists");
+		
+		Document existingUserName =  new Document(Fields.USERNAME, user.getUsername());
+		Document existingEmail = new Document(Fields.EMAIL, user.getEmail());
+		List<Document> filters = new ArrayList<>();
+		filters.add(existingEmail);
+		filters.add(existingUserName);
+		Document orDocument = SyncHelper.getOrDocument(filters);
+		
+		FindIterable<Document> find = users.find(orDocument);
+		Document existingUser = find.first();
+		if (existingUser != null) {
+			
+			boolean isValid = existingUser.getBoolean(Fields.VALIDATED);
+			if (isValid) {
+				user.setErrorMessage("Username or email already used");
+			}else {
+				user.setErrorMessage( user.getEmail() + " needs to validate email");
+			}
+			
+			return user;
+//			throw new UserExistsException("User " + user.getUsername() + " or " + user.getEmail() + " already exists");
 		}
-
-		Document newUser = SyncHelper.getNewUserDocument(user.getUsername());
+		
+		Document newUser = SyncHelper.getNewUserDocument(user);
 		users.insertOne(newUser);
 
 		User createdUser = new User(newUser.getObjectId(Fields.MONGO_ID).toString());
 		createdUser.setUsername(newUser.getString(Fields.USERNAME));
+		createdUser.setEmail(newUser.getString(Fields.EMAIL));
+		//createdUser.setPassword(newUser.getString(Fields.PASSWORD));
 		//createdUser.setPosition(SyncHelper.userPosition(createdUser));//TODO later
 		return createdUser;
 	}
@@ -388,4 +405,15 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 //		
 //	}
 //
+
+	
+	@Override
+	public void validateUser(String email) {
+		new TransactionalBlock() {
+			@Override
+			public void begin() throws Exception {
+				SyncHelper.validateUser(session, email);
+			}
+		}.execute();
+	}
 }

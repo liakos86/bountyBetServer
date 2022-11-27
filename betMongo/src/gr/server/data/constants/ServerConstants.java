@@ -10,4 +10,6 @@ public interface ServerConstants {
 	
 	String BASE_DATE_FORMAT = "yyyy-MM-dd";
 	
+	String URL_FORMAT = "mF=!72kg*&;.J^1]";
+	
 }
