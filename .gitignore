@@ -4,3 +4,4 @@ target
 .settings
 .git
 logs
+**/IgnoreConstants.java

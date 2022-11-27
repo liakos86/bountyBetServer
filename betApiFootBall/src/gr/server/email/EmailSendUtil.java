@@ -10,13 +10,14 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import gr.server.data.constants.IgnoreConstants;
+
 public class EmailSendUtil {
 	
 	public static void doSend(String email) {
-		
-		  String host="smtp.gmail.com";  
-		  final String user="";//change accordingly  
-		  final String password="";//   change accordingly  
+		  final String host= IgnoreConstants.SMTP_HOST;  
+		  final String user= IgnoreConstants.MAIL_USER;
+		  final String password= IgnoreConstants.MAIL_PASS;  
 		    		  
 		   //Get the session object  
 		   Properties props = new Properties();  

@@ -85,16 +85,18 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 		FindIterable<Document> find = users.find(orDocument);
 		Document existingUser = find.first();
 		if (existingUser != null) {
-			
 			boolean isValid = existingUser.getBoolean(Fields.VALIDATED);
-			if (isValid) {
-				user.setErrorMessage("Username or email already used");
-			}else {
+			if (!isValid) {
 				user.setErrorMessage( user.getEmail() + " needs to validate email");
+			}else if (!user.getPassword().trim().equals(existingUser.getString(Fields.PASSWORD))){
+				user.setErrorMessage("Wrong username or password");
+			}else {
+				user = userFromMongoDocument(existingUser);
 			}
 			
 			return user;
-//			throw new UserExistsException("User " + user.getUsername() + " or " + user.getEmail() + " already exists");
+		}else {
+			user.setErrorMessage("User not found");
 		}
 		
 		Document newUser = SyncHelper.getNewUserDocument(user);
@@ -116,20 +118,27 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 				.getCollection(CollectionNames.USERS);
 		FindIterable<Document> usersFromMongo = users.find(new Document(Fields.MONGO_ID, new ObjectId(mongoId)));
 
-		if (!usersFromMongo.iterator().hasNext()) {
+		Document userFromMongo = usersFromMongo.first();
+		
+		return userFromMongoDocument(userFromMongo);
+		
+	}
+	
+	User userFromMongoDocument(Document userFromMongo) {
+		if (userFromMongo == null) {
 			return null;
 		}
-
-		Document userFromMongo = usersFromMongo.iterator().next();
+		
 		String userString = userFromMongo.toJson();
-		User finalUser = new Gson().fromJson(userString, new TypeToken<User>() {
-		}.getType());
+		User finalUser = new Gson().fromJson(userString, new TypeToken<User>() {}.getType());
+		String mongoId = userFromMongo.getObjectId(Fields.MONGO_ID).toString();
 		finalUser.setUserBets(getBetsForUser(mongoId));
 		finalUser.setUserAwards(getAwardsForUser(mongoId));
-		finalUser.setMongoId(userFromMongo.getObjectId(Fields.MONGO_ID).toString());
+		finalUser.setMongoId(mongoId);
 		finalUser.setPosition(SyncHelper.userPosition(finalUser));
 		return finalUser;
 	}
+	
 //
 //	/**
 //	 * We receive a list of leagues.
