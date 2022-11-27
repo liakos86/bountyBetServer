@@ -51,6 +51,15 @@ public interface MongoClientHelper {
 	 * @return
 	 */
 	User getUser(String id);
+
+	/**
+	 * Retrieves a user via login.
+	 * Later {@link #getUser(String)} will be used.
+	 * 
+	 * @param user
+	 * @return
+	 */
+	User loginUser(User user);
 	
 	/**
 	 * {@link ApiFootballClient} will call this method to store the newly fetched leagues with their competitions, events, etc.

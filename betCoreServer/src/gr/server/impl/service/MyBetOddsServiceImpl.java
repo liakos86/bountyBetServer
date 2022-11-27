@@ -89,6 +89,19 @@ implements MyBetOddsService {
 	}
 	
 	@Override
+	@POST
+    @Path("/loginUser")
+	@Consumes("application/json; charset=UTF-8")
+	@Produces("application/json; charset=UTF-8")
+	public Response loginUser(String userJson) throws Exception{
+		User newUser = new Gson().fromJson(userJson, new TypeToken<User>() {}.getType());
+		String userEmail = SecureUtils.decode(newUser.getEmail());
+		newUser.setEmail(userEmail);
+		newUser = new MongoClientHelperImpl().loginUser(newUser);
+		return Response.ok(new Gson().toJson(newUser)).build();	
+	}
+	
+	@Override
 	@GET
 	@Produces( MediaType.TEXT_HTML)
 	@Path("{email}/validateUser")

@@ -68,6 +68,46 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 		//createdUser.setPosition(SyncHelper.userPosition(createdUser));//TODO later
 		return createdUser;
 	}
+	
+	@Override
+	public User loginUser(User user) {
+		MongoClient client = SyncHelper.getMongoClient();
+		MongoCollection<Document> users = client.getDatabase(CollectionNames.BOUNTY_BET_DB)
+				.getCollection(CollectionNames.USERS);
+		
+		Document existingUserName =  new Document(Fields.USERNAME, user.getUsername());
+		Document existingEmail = new Document(Fields.EMAIL, user.getEmail());
+		List<Document> filters = new ArrayList<>();
+		filters.add(existingEmail);
+		filters.add(existingUserName);
+		Document orDocument = SyncHelper.getOrDocument(filters);
+		
+		FindIterable<Document> find = users.find(orDocument);
+		Document existingUser = find.first();
+		if (existingUser != null) {
+			
+			boolean isValid = existingUser.getBoolean(Fields.VALIDATED);
+			if (isValid) {
+				user.setErrorMessage("Username or email already used");
+			}else {
+				user.setErrorMessage( user.getEmail() + " needs to validate email");
+			}
+			
+			return user;
+//			throw new UserExistsException("User " + user.getUsername() + " or " + user.getEmail() + " already exists");
+		}
+		
+		Document newUser = SyncHelper.getNewUserDocument(user);
+		users.insertOne(newUser);
+
+		User createdUser = new User(newUser.getObjectId(Fields.MONGO_ID).toString());
+		createdUser.setUsername(newUser.getString(Fields.USERNAME));
+		createdUser.setEmail(newUser.getString(Fields.EMAIL));
+		//createdUser.setPassword(newUser.getString(Fields.PASSWORD));
+		//createdUser.setPosition(SyncHelper.userPosition(createdUser));//TODO later
+		return createdUser;
+	}
+
 
 	@Override
 	public User getUser(String mongoId) {

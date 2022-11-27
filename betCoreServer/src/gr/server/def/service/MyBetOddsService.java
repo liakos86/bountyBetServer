@@ -32,6 +32,8 @@ public interface MyBetOddsService {
 	Response placeBet(String userBet);
 
 	Response registerUser(String user) throws Exception;
+	
+	Response loginUser(String user) throws Exception;
 
 	String validateUser(String email) throws Exception;
 

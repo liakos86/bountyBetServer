@@ -15,11 +15,9 @@ public class EmailSendUtil {
 	public static void doSend(String email) {
 		
 		  String host="smtp.gmail.com";  
-		  final String user="liakos86@gmail.com";//change accordingly  
-		  final String password="kkpdkymqvwuwmeaw";//   "hu6R*#LS]-0";//change accordingly  
-		    
-		  //String to="liakos86@gmail.com";//change accordingly  
-		  
+		  final String user="";//change accordingly  
+		  final String password="";//   change accordingly  
+		    		  
 		   //Get the session object  
 		   Properties props = new Properties();  
 		   props.put("mail.smtp.host",host);
