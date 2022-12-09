@@ -1,10 +1,6 @@
 package gr.server.def.service;
 
-import java.util.List;
-
 import javax.ws.rs.core.Response;
-
-import gr.server.data.user.model.objects.UserBet;
 
 /**
  * Rest service for sending data to the mobile devices.
@@ -17,7 +13,7 @@ public interface MyBetOddsService {
 	
 //	String createUser(InputStream incomingStream) throws UserExistsException;
 
-	List<UserBet> getMyOpenBets(String id);
+//	List<UserBet> getMyOpenBets(String id);
 
 	/**
 	 * 
@@ -39,7 +35,7 @@ public interface MyBetOddsService {
 
 	String getLive();
 
-	String getLiveUpdates();
+	//String getLiveUpdates();
 
 
 }

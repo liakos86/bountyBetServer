@@ -2,6 +2,7 @@ package gr.server.data.user.model.objects;
 
 import java.io.Serializable;
 
+import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.bet.enums.PredictionCategory;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.bet.enums.PredictionType;
@@ -15,6 +16,8 @@ public class UserPrediction implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	int eventId;
+	
+	MatchEvent event;
 	
 	PredictionCategory predictionCategory;
 	
@@ -74,13 +77,13 @@ public class UserPrediction implements Serializable {
 	public void setPredictionCategory(PredictionCategory predictionCategory) {
 		this.predictionCategory = predictionCategory;
 	}
-	
-	
 
-//	public static void copyFields(UserPrediction sourcePrediction, UserPrediction destinationPrediction) {
-//		destinationPrediction.setOddValue(sourcePrediction.getOddValue());
-//		destinationPrediction.setPrediction(sourcePrediction.getPrediction());
-//		destinationPrediction.setPredictionStatus(sourcePrediction.getPredictionStatus());
-//	}
+	public MatchEvent getEvent() {
+		return event;
+	}
 
+	public void setEvent(MatchEvent event) {
+		this.event = event;
+	}
+	
 }

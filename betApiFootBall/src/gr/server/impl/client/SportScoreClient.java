@@ -48,25 +48,34 @@ public class SportScoreClient {
 	 * @throws URISyntaxException 
 	 * @throws InterruptedException 
 	 */
-	public static Events getEvents(boolean live) throws IOException, ParseException, InterruptedException, URISyntaxException {
-		String url = null;
+	public static Events getEvents(Date date) throws IOException, ParseException, InterruptedException, URISyntaxException {
+		String url = SportScoreApiConstants.GET_EVENTS_BY_SPORT_DATE_URL;
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.GET_EVENTS_DATE_FORMAT);
+		String today = simpleDateFormat.format(date);
+		url += today;
 		
-		if (live) {
-			url = SportScoreApiConstants.GET_LIVE_EVENTS_BY_SPORT_URL;
-		}else {
-			url = SportScoreApiConstants.GET_EVENTS_BY_SPORT_DATE_URL;
-			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-			String today = simpleDateFormat.format(new Date());
-			url += today;
-		}
-
+		String content = new HttpHelper().fetchGetContentWithHeaders(url);
+		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
+		events.getData().forEach(e->e.getStart_at());//TODO: not here
+		return events;
+	}
+	
+	/**
+	 * Gets a list of the leagues for the countries we support.
+	 * 
+	 * @throws IOException
+	 * @throws ParseException 
+	 * @throws URISyntaxException 
+	 * @throws InterruptedException 
+	 */
+	public static Events getLiveEvents() throws IOException, ParseException, InterruptedException, URISyntaxException {
+		String url = SportScoreApiConstants.GET_LIVE_EVENTS_BY_SPORT_URL;
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 		
 		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
 		events.getData().forEach(e->e.getStart_at());//TODO: not here
 		return events;
 	}
-	
 	
 	public static League getLeagueById(Integer leagueId) throws IOException {
 		String url = SportScoreApiConstants.GET_LEAGUE_BY_ID_URL + leagueId;

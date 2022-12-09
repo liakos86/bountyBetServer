@@ -116,29 +116,29 @@ public class SyncHelper {
 		return newBet;
 	}
 
-	/**
-	 * If the input bet is {@link BetStatus#PENDING} we remove the bet amount from user.
-	 * If the input bet is {@link BetStatus#SETTLED_FAVOURABLY}we add the bet earnings to the user.
-	 * 
-	 * {@link User} will be updated depending on his won/lost {@link UserBet}.
-	 * 
-	 * @param userBet
-	 */
-	public static void updateUser(UserBet userBet) {
-		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);
-		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
-
-		Document userFieldsDocument = new Document();
-		if (userBet.getBetStatus() == BetStatus.SETTLED_FAVOURABLY){//bet won
-			userFieldsDocument.append(Fields.USER_BALANCE, userBet.getPossibleEarnings());
-		}else if (userBet.getBetStatus() == BetStatus.PENDING){// bet placed
-			userFieldsDocument.append(Fields.USER_BALANCE, -1 * (userBet.getBetAmount()));
-		}else if (userBet.getBetStatus() == BetStatus.SETTLED_UNFAVOURABLY){//bet lost
-			return; //TODO: Do we need something here?
-		}
-		Document increaseOrDecreaseDocument = new Document("$inc", userFieldsDocument);
-		usersCollection.findOneAndUpdate(filter, increaseOrDecreaseDocument);
-	}
+//	/**
+//	 * If the input bet is {@link BetStatus#PENDING} we remove the bet amount from user.
+//	 * If the input bet is {@link BetStatus#SETTLED_FAVOURABLY}we add the bet earnings to the user.
+//	 * 
+//	 * {@link User} will be updated depending on his won/lost {@link UserBet}.
+//	 * 
+//	 * @param userBet
+//	 */
+//	public static void updateUser(UserBet userBet) {
+//		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);
+//		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
+//
+//		Document userFieldsDocument = new Document();
+//		if (userBet.getBetStatus() == BetStatus.SETTLED_FAVOURABLY){//bet won
+//			userFieldsDocument.append(Fields.USER_BALANCE, userBet.getPossibleEarnings());
+//		}else if (userBet.getBetStatus() == BetStatus.PENDING){// bet placed
+//			userFieldsDocument.append(Fields.USER_BALANCE, -1 * (userBet.getBetAmount()));
+//		}else if (userBet.getBetStatus() == BetStatus.SETTLED_UNFAVOURABLY){//bet lost
+//			return; //TODO: Do we need something here?
+//		}
+//		Document increaseOrDecreaseDocument = new Document("$inc", userFieldsDocument);
+//		usersCollection.findOneAndUpdate(filter, increaseOrDecreaseDocument);
+//	}
 	
 	static int numOfSuccessFullPredictions(UserBet userBet){
 		int won =0;
@@ -284,7 +284,7 @@ public class SyncHelper {
 
 
    // @SuppressWarnings("resource")
-	static MongoCollection<Document> getMongoCollection(String collectionName){
+	public static MongoCollection<Document> getMongoCollection(String collectionName){
     	getMongoClient();
     	
     	MongoDatabase database = MONGO_CLIENT.getDatabase(CollectionNames.BOUNTY_BET_DB);

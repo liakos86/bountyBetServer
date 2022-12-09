@@ -3,55 +3,36 @@ package gr.server.application;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
 import gr.server.impl.service.MyBetOddsServiceImpl;
-import gr.server.util.DateUtils;
 
 
 /**
  * Imports the classes that will provide the rest service.
  */
 @ApplicationPath("/")
-public class RestApplication  extends Application
-{
-//	/**
-//	 * Singleton for the mongo client.
-//	 */
-//	private static MongoClient mongoClient;
-	
-//	public static Map<Integer, Integer> LEAGUE_PRIORITIES;
+public class RestApplication  
+extends Application{
+
 	
 	public static Map<Integer, Section> SECTIONS = new HashMap<>();
 	
 	public static Map<Integer, League> LEAGUES = new HashMap<>();
 	
-	public static Map<Integer, Integer> PRIORITY_PER_LEAGUE = new HashMap<>();
-
-	public static Map<String, ChangeEvent> LIVE_CHANGES_PER_EVENT = new HashMap<>();
-	
-	public static Map<String, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = new HashMap<>();
+	public static Map<String, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = new LinkedHashMap<>();
 	
 	public static Map<League, Map<Integer, MatchEvent>> LIVE_EVENTS_PER_LEAGUE = new HashMap<>();
-	
-	static {
-		EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.todayStr(), new HashMap<>());
-		
-//		LEAGUE_PRIORITIES.put(317, Integer.MIN_VALUE);
-//		LEAGUE_PRIORITIES.put(251, Integer.MIN_VALUE+1);
-//		LEAGUE_PRIORITIES.put(512, Integer.MIN_VALUE+2);
-//		LEAGUE_PRIORITIES.put(592, Integer.MIN_VALUE+3);
-//		LEAGUE_PRIORITIES.put(498, Integer.MIN_VALUE+4);
-		
-	}
+
+	public static Map<Integer, MatchEvent> ALL_EVENTS = new HashMap<>();
 	
 	
     @Override

@@ -3,6 +3,7 @@ package gr.server.impl.service;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -20,9 +21,10 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.application.RestApplication;
-import gr.server.application.exception.UserExistsException;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.Score;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Team;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.user.model.objects.User;
@@ -31,7 +33,6 @@ import gr.server.data.user.model.objects.UserPrediction;
 import gr.server.def.service.MyBetOddsService;
 import gr.server.email.EmailSendUtil;
 import gr.server.impl.client.MongoClientHelperImpl;
-import gr.server.util.DateUtils;
 import gr.server.util.SecureUtils;
 
 
@@ -42,12 +43,12 @@ public class MyBetOddsServiceImpl
 implements MyBetOddsService {
 
 	
-	@Override
-	@GET
-    @Path("/{id}/myOpenBets")
-	public List<UserBet> getMyOpenBets(@PathParam("id") String id) {
-		return new MongoClientHelperImpl().getBetsForUser(id);
-	}
+//	@Override
+//	@GET
+//    @Path("/{id}/myOpenBets")
+//	public List<UserBet> getMyOpenBets(@PathParam("id") String id) {
+//		return new MongoClientHelperImpl().getBetsForUser(id);
+//	}
 	
 	@Override
 	@POST
@@ -67,9 +68,9 @@ implements MyBetOddsService {
 			betPrediction.setPredictionStatus(PredictionStatus.PENDING);
 		}
 		
-		newBet = new MongoClientHelperImpl().placeBet(newBet);
+		new MongoClientHelperImpl().placeBet(newBet);
 		
-		return Response.ok(new Gson().toJson(newBet)).build();		
+		return getUser(newBet.getMongoUserId());	
 	}
 	
 	@Override
@@ -115,17 +116,50 @@ implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("getUser/{id}")
 	public Response getUser(@PathParam("id") String id) {
-		return Response.ok(new Gson().toJson(new MongoClientHelperImpl().getUser(id))).build();	
+		User user = new MongoClientHelperImpl().getUser(id);
+		user.getUserBets().forEach(b-> b.getPredictions().forEach(
+				p -> {
+					MatchEvent event = RestApplication.ALL_EVENTS.get(p.getEventId());
+					if (event == null) {
+						event = mockEvent();
+					}
+					
+					p.setEvent(event);
+				}));
+		String userJson = new Gson().toJson(user);
+		return Response.ok(userJson).build();
 	}
 	
+	/**
+	 * TODO: if a match is not in memory we should call SPORTSCORE API to retrieve it.
+	 * 
+	 * @return
+	 */
+	private MatchEvent mockEvent() {
+		MatchEvent mockEvent = new MatchEvent();
+		mockEvent.setId(-1);
+		Team mockTeam = new Team();
+		mockTeam.setName("Mockalona");
+		mockEvent.setHome_team(mockTeam );
+		mockEvent.setAway_team(mockTeam);
+		Score mockScore = new Score();
+		mockScore.setCurrent(1);
+		mockEvent.setHome_score(mockScore );
+		mockEvent.setAway_score(mockScore);
+		return mockEvent;
+	}
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
 	public Response getLeagues(){
-		List<League> todayLeagues = new ArrayList<>();
+		Map<String, List<League>> leaguesPerDay = new LinkedHashMap<>();
 		
-		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
+		for ( Map.Entry<String, Map<League, Map<Integer, MatchEvent>>> dailyEntry : RestApplication.EVENTS_PER_DAY_PER_LEAGUE.entrySet()) {
+		List<League> dailyLeagues = new ArrayList<>();
+		
+		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = dailyEntry.getValue();
 		for (Map.Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
 			League league = entry.getKey();
 			if (league == null) {
@@ -141,12 +175,14 @@ implements MyBetOddsService {
 			league.setLiveMatchEvents(events);
 			events.forEach(e->e.setLeague(null));
 			Collections.sort(league.getLiveMatchEvents());
-			todayLeagues.add(league);
+			dailyLeagues.add(league);
 		}
 		
-		Collections.sort(todayLeagues);
+		Collections.sort(dailyLeagues);
+		leaguesPerDay.put(dailyEntry.getKey(), dailyLeagues);
+		}
 		
-		return  Response.ok(new Gson().toJson(todayLeagues)).build();
+		return  Response.ok(new Gson().toJson(leaguesPerDay)).build();
 	
 	}
 	
@@ -184,15 +220,15 @@ implements MyBetOddsService {
 		return  new Gson().toJson(leagues);
 	}
 
-	@Override
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/getLiveUpdates")
-	public String getLiveUpdates(){
-		System.out.println("SERVING GOALS");
-		return  new Gson().toJson(RestApplication.LIVE_CHANGES_PER_EVENT);
-	
-	}
+//	@Override
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	@Path("/getLiveUpdates")
+//	public String getLiveUpdates(){
+//		System.out.println("SERVING GOALS");
+//		return  new Gson().toJson(RestApplication.LIVE_CHANGES_PER_EVENT);
+//	
+//	}
 	
 	@Override
 	@GET

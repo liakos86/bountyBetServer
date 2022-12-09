@@ -13,7 +13,6 @@ import javax.servlet.annotation.WebListener;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
 import gr.server.data.global.helper.ApiDataFetchHelper;
 import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
-import gr.server.email.EmailSendUtil;
 import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
 import gr.server.util.TimerTaskHelper;
 
@@ -34,21 +33,15 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		
-//		MockApiDataFetchHelper.fetchSections();
-//		
-//		MockApiDataFetchHelper.fetchLeagues();
-//		
-//		ApiDataFetchHelper.fetchEventsIntoLeagues(false);
-//		
-//		ApiDataFetchHelper.fetchEventsIntoLeagues(true);
-//		
-//		MockApiDataFetchHelper.fetchSeasonsStandingsIntoLeagues();
-//		
-//		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
-//		
-//		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
-//		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
-//		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
+		MockApiDataFetchHelper.fetchSections();
+		MockApiDataFetchHelper.fetchLeagues();
+		ApiDataFetchHelper.fetchEventsIntoLeagues();
+		ApiDataFetchHelper.fetchLiveEventsIntoLeagues();
+		MockApiDataFetchHelper.fetchSeasonsStandingsIntoLeagues();
+		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
+		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
+		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
+		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
 		
 	}
 

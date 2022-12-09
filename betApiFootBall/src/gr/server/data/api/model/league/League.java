@@ -243,5 +243,15 @@ public class League implements Comparable<League>{
 		
 		return this.priority - other.priority;
 	}
+
+	
+	public League deepCopy() {
+		League copy = new League(id);
+		copy.setSport(sport);
+		copy.setSection(section);
+		copy.setSeasons(seasons);
+		copy.setLiveMatchEvents(new ArrayList<>());
+		return copy;
+	}
     
 }

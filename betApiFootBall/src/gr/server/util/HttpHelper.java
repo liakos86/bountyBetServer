@@ -3,6 +3,7 @@ package gr.server.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -42,7 +43,10 @@ public class HttpHelper {
         connection.addRequestProperty(SportScoreApiConstants.RAPID_API_HEADER_KEY, SportScoreApiConstants.RAPID_API_HEADER_VALUE);
         int responseCode = connection.getResponseCode();
         if (responseCode == OK) {
-            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        	
+        	InputStream decompressedStream = StreamHelper.decompressStream(connection.getInputStream());
+        	
+            BufferedReader in = new BufferedReader(new InputStreamReader(decompressedStream));
             String inputLine;
             StringBuffer response2 = new StringBuffer();
             while ((inputLine = in.readLine()) != null) {

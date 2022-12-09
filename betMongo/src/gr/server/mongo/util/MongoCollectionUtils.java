@@ -145,28 +145,24 @@ public class MongoCollectionUtils {
 	 * @throws ParseException
 	 */
 	public static Document getEventDocument(MatchEvent event) throws ParseException {
-		//Odd odd = event.getOdd();
-		Document newOdd = new Document("odd_1", "1,8")// odd.getOdd1())
-		.append("odd_2", "3,3")// odd.getOdd2())
-		.append("odd_x", "3,6");//odd.getOddX());
 		
-//		Document newEvent = new Document(Fields.MATCH_ID, event.getMatchId())
+		Document newEvent = new Document(Fields.ID, event.getId())
 //		.append("league_id", event.getLeagueId())
 //		.append("country_id", event.getCountryId())
-//		.append("match_hometeam_name", event.getMatchHometeamName())
-//		.append("match_awayteam_name", event.getMatchAwayteamName())
+		.append("match_hometeam_name", event.getHome_team().getName())
+		.append("match_awayteam_name", event.getAway_team().getName())
 //		.append(Fields.MATCH_FULL_DATE, event.getEventMillis()) 
 //		.append("match_date", event.getMatchDate())
 //		.append("match_time", event.getMatchTime())
 //		.append("match_live", event.getMatchLive())
 //		.append("match_status", event.getMatchStatus())
-//		.append("match_hometeam_score", event.getMatchHometeamScore())
-//		.append("match_awayteam_score", event.getMatchAwayteamScore())
+		.append("match_hometeam_score", event.getHome_score().getCurrent())
+		.append("match_awayteam_score", event.getAway_score().getCurrent());
 //		.append("match_hometeam_extra_score", event.getMatchHometeamScore())
 //		.append("match_awayteam_extra_score", event.getMatchAwayteamScore())
 //		.append("odd", newOdd);
 		
-		return new Document();
+		return newEvent;
 		
 	}
 

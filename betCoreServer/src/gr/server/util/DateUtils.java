@@ -49,5 +49,9 @@ public class DateUtils {
 	public static String todayStr() {
 		return new SimpleDateFormat(ServerConstants.BASE_DATE_FORMAT).format(new Date());
 	}
+	
+	public static String dateStr(Date date) {
+		return new SimpleDateFormat(ServerConstants.BASE_DATE_FORMAT).format(date);
+	}
 
 }

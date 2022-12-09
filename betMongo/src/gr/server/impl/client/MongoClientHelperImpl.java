@@ -13,6 +13,7 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.Fields;
 import gr.server.data.user.model.objects.User;
@@ -94,20 +95,11 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 				user = userFromMongoDocument(existingUser);
 			}
 			
-			return user;
 		}else {
 			user.setErrorMessage("User not found");
 		}
 		
-		Document newUser = SyncHelper.getNewUserDocument(user);
-		users.insertOne(newUser);
-
-		User createdUser = new User(newUser.getObjectId(Fields.MONGO_ID).toString());
-		createdUser.setUsername(newUser.getString(Fields.USERNAME));
-		createdUser.setEmail(newUser.getString(Fields.EMAIL));
-		//createdUser.setPassword(newUser.getString(Fields.PASSWORD));
-		//createdUser.setPosition(SyncHelper.userPosition(createdUser));//TODO later
-		return createdUser;
+		return user;
 	}
 
 
@@ -120,8 +112,10 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 
 		Document userFromMongo = usersFromMongo.first();
 		
-		return userFromMongoDocument(userFromMongo);
-		
+		User user = userFromMongoDocument(userFromMongo);
+		user.setUserBets(getBetsForUser(mongoId));
+		user.setUserAwards(getAwardsForUser(mongoId));
+		return user;
 	}
 	
 	User userFromMongoDocument(Document userFromMongo) {
@@ -132,65 +126,65 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 		String userString = userFromMongo.toJson();
 		User finalUser = new Gson().fromJson(userString, new TypeToken<User>() {}.getType());
 		String mongoId = userFromMongo.getObjectId(Fields.MONGO_ID).toString();
-		finalUser.setUserBets(getBetsForUser(mongoId));
-		finalUser.setUserAwards(getAwardsForUser(mongoId));
+		
 		finalUser.setMongoId(mongoId);
 		finalUser.setPosition(SyncHelper.userPosition(finalUser));
 		return finalUser;
 	}
 	
-//
-//	/**
-//	 * We receive a list of leagues.
-//	 * we store the leagues without their events.
-//	 * We also store the events separately.
-//	 */
-//	@Override
-//	public void storeLeagues(ClientSession session, List<League> leagues) throws ParseException {
-//		List<Document> newLeagues = new ArrayList<Document>();
-//		for (League league : leagues) {
-//			Document newLeague = SyncHelper.getLeagueDocument(league);
-//			newLeagues.add(newLeague);
-//			storeEvents(session, league.getEvents());
-//		}
-//
-//		MongoClient client = SyncHelper.getMongoClient();
-//		MongoCollection<Document> leaguesCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB)
-//				.getCollection(CollectionNames.LEAGUES);
-//		
-//		leaguesCollection.deleteMany(session, new Document());
-//		
-//		leaguesCollection.insertMany(session, newLeagues);
-//	}
-//
-//	@Override
-//	public List<League> getMongoLeagues() {
-//		Executor<League> executor = new Executor<League>(new TypeToken<League>() {
-//		});
-//		List<League> leagues = SyncHelper.get(CollectionNames.LEAGUES, new Document(), executor);
-//		for (League league : leagues) {
-//			Document eventsFilter = new Document("league_id", league.getLeagueId()).append("country_id",
-//					league.getCountryId());
-//			Executor<Event> eventsExecutor = new Executor<Event>(new TypeToken<Event>() {
-//			});
-//			List<Event> leagueEvents = SyncHelper.get(CollectionNames.EVENTS, eventsFilter, eventsExecutor);
-//			league.setEvents(leagueEvents);
-//		}
-//
-//		return leagues;
-//	}
-//
 	@Override
-	public UserBet placeBet(UserBet userBet) {
+	public void placeBet(UserBet userBet) {
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoDatabase database = client.getDatabase(CollectionNames.BOUNTY_BET_DB);
 		MongoCollection<Document> betsCollection = database.getCollection(CollectionNames.BETS);
 		Document newBet = SyncHelper.getBetDocument(userBet);
 		betsCollection.insertOne(newBet);
 		userBet.setMongoId(newBet.getObjectId(Fields.MONGO_ID).toString());
-		//SyncHelper.updateUser(userBet);
-		return userBet;
+		updateUserBalance(userBet);
 	}
+	
+	/**
+	 * If the input bet is {@link BetStatus#PENDING} we remove the bet amount from user.
+	 * If the input bet is {@link BetStatus#SETTLED_FAVOURABLY}we add the bet earnings to the user.
+	 * 
+	 * {@link User} will be updated depending on his won/lost {@link UserBet}.
+	 * 
+	 * @param userBet
+	 */
+	public void updateUserBalance(UserBet userBet) {
+		MongoCollection<Document> usersCollection = SyncHelper.getMongoCollection(CollectionNames.USERS);
+		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
+
+		Document userFieldsDocument = new Document().append(Fields.USER_BALANCE, -1 * (userBet.getBetAmount()));
+		
+		Document increaseOrDecreaseDocument = new Document("$inc", userFieldsDocument);
+		usersCollection.findOneAndUpdate(filter, increaseOrDecreaseDocument);
+	}
+	
+	/**
+	 * If the input bet is {@link BetStatus#PENDING} we remove the bet amount from user.
+	 * If the input bet is {@link BetStatus#SETTLED_FAVOURABLY}we add the bet earnings to the user.
+	 * 
+	 * {@link User} will be updated depending on his won/lost {@link UserBet}.
+	 * 
+	 * @param userBet
+	 */
+	public static void updateUser(UserBet userBet) {
+		MongoCollection<Document> usersCollection = SyncHelper.getMongoCollection(CollectionNames.USERS);
+		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
+
+		Document userFieldsDocument = new Document();
+		if (userBet.getBetStatus() == BetStatus.SETTLED_FAVOURABLY){//bet won
+			userFieldsDocument.append(Fields.USER_BALANCE, userBet.getPossibleEarnings());
+		}else if (userBet.getBetStatus() == BetStatus.PENDING){// bet placed
+			userFieldsDocument.append(Fields.USER_BALANCE, -1 * (userBet.getBetAmount()));
+		}else if (userBet.getBetStatus() == BetStatus.SETTLED_UNFAVOURABLY){//bet lost
+			return; //TODO: Do we need something here?
+		}
+		Document increaseOrDecreaseDocument = new Document("$inc", userFieldsDocument);
+		usersCollection.findOneAndUpdate(filter, increaseOrDecreaseDocument);
+	}
+	
 //
 //	@Override
 //	public void settleBets(ClientSession session, List<SettledEvent> settled) {
@@ -343,8 +337,7 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 	 */
 	public List<UserBet> getBetsForUser(String userId) {
 		Document userBetsFilter = new Document(Fields.BET_MONGO_USER_ID, userId);
-		Executor<UserBet> betsExecutor = new Executor<UserBet>(new TypeToken<UserBet>() {
-		});
+		Executor<UserBet> betsExecutor = new Executor<UserBet>(new TypeToken<UserBet>() {});
 		List<UserBet> bets = SyncHelper.get(CollectionNames.BETS, userBetsFilter, betsExecutor);
 		return bets;
 	}

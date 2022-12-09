@@ -13,7 +13,7 @@ public interface MongoClientHelper {
 	 * @param userBet
 	 * @return
 	 */
-	public UserBet placeBet(UserBet userBet);
+	public void placeBet(UserBet userBet);
 	
 	/**
 	 * For every open {@link UserBet}, the system will iterate through its {@link UserPrediction}s

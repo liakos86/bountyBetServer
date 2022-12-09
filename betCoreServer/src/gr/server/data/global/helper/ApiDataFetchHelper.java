@@ -29,6 +29,42 @@ public class ApiDataFetchHelper {
 	}
 	
 	/**
+	 * Gets the football events for multiple days.
+	 * 
+	 */
+	public static void fetchEventsIntoLeagues() {
+		List<Date> datesToFetch = getDatesToFetchList();
+		
+		for (Date date : datesToFetch) {
+			List<MatchEvent> events = new ArrayList<>();
+			try {
+				events = SportScoreClient.getEvents(date).getData();
+				events.forEach(e -> RestApplication.ALL_EVENTS.put(e.getId(), e));
+			} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
+				System.out.println("EVENTS ERROR " + date);
+				e.printStackTrace();
+				return;
+			}
+			
+			splitEventsIntoLeaguesAndDays(date, events);
+		}
+
+	}
+	
+	private static List<Date> getDatesToFetchList() {
+		List<Date> datesToFetch = new ArrayList<>();
+		Calendar instance = Calendar.getInstance();
+		instance.add(Calendar.DATE, -1);
+		Date yesterday = instance.getTime();
+		datesToFetch.add(yesterday);
+		datesToFetch.add(new Date());
+		instance.add(Calendar.DATE, 2);
+		Date tomorrow = instance.getTime();
+		datesToFetch.add(tomorrow);
+		return datesToFetch;
+	}
+
+	/**
 	 * Gets the football events .
 	 * If live events are requested {@link SportScoreApiConstants#GET_LIVE_EVENTS_BY_SPORT_URL}.
 	 * If not, {@link SportScoreApiConstants#GET_EVENTS_BY_SPORT_DATE_URL} is used with 'today' as param.
@@ -40,73 +76,57 @@ public class ApiDataFetchHelper {
 	 * 
 	 * @param live
 	 */
-	public static void fetchEventsIntoLeagues(boolean live) {
+	public static void fetchLiveEventsIntoLeagues() {
 		List<MatchEvent> events = new ArrayList<>();
 		try {
-			events = SportScoreClient.getEvents(live).getData();
+			events = SportScoreClient.getLiveEvents().getData();
+			events.forEach(e -> RestApplication.ALL_EVENTS.put(e.getId(), e));
 		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
-			System.out.println("LIVE EVENTS ERROR " + live);
+			System.out.println("LIVE EVENTS ERROR ");
 			e.printStackTrace();
 			return;
 		}
 		
-		if (live) {
-			
-			/**
-			 * TODO: fixme
-			 */
-			
-			MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
-			events.forEach(e-> e.setIncidents(matchEventIncidents));
-			
-			System.out.println("LIVE ARE " + events.size());
-			events.forEach(e->calculateLiveMinute(e));
-			splitEventsIntoLiveLeagues(events);
-		}else {
-			splitEventsIntoLeagues(events);
-		}
+		/**
+		 * TODO: fixme
+		 */
+		
+		MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
+		events.forEach(e-> e.setIncidents(matchEventIncidents));
+		
+		System.out.println("LIVE ARE " + events.size());
+		events.forEach(e->calculateLiveMinute(e));
+		splitEventsIntoLiveLeagues(events);
 
 	}
 
-	private static void calculateLiveMinute(MatchEvent event) {
-		
-		if (!"inprogress".equals(event.getStatus())) {
+
+	private static void calculateLiveMinute(MatchEvent matchEvent) {
+		if (! "inprogress".equals(matchEvent.getStatus())) {
 			return;
 		}
 		
-		Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
-		long millisNow = cal.getTimeInMillis();
+		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
+		matchTimeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 		
-		//millisNow = Instant.now().getEpochSecond();
-		
-		String start_at = event.getStart_at();
-		Date matchStart = null;
 		try {
-			matchStart = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT).parse(start_at);
+			Date matchTime = matchTimeFormat.parse(matchEvent.getStart_at());
+			long x = new Date().getTime() - matchTime.getTime();
+			matchEvent.setTime_live(x/60000);
+			matchEvent.setStatus_for_client(x/60000 + "'");
 		} catch (ParseException e) {
-			return;
+			e.printStackTrace();
 		}
-		
-		long millisMatchStart = matchStart.getTime();
-		
-		
-		
-		long millisLive = millisNow - millisMatchStart;
-		if (event.getId().equals(1240160)) {
-			System.out.println("match start is " + matchStart);
-			System.out.println("now is " + cal.getTime());
-		System.out.println("millis start " + millisMatchStart + " millis now " + millisNow);
-		
-		}
-		int minuteLive = (int) (millisLive / 60000);
-		
-		event.setStatus_for_client(minuteLive + "'");
 		
 	}
 
 	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
 		for (MatchEvent matchEvent : events) {
-			fixMatchMinute(matchEvent);
+//			try {
+//				fixMatchMinute(matchEvent);
+//			} catch (ParseException e) {
+//				e.printStackTrace();
+//			}
 			
 			League matchLeague = matchEvent.getLeague();
 			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
@@ -118,17 +138,27 @@ public class ApiDataFetchHelper {
 		}
 	}
 
-	private static void fixMatchMinute(MatchEvent matchEvent) {
-		if (! "inprogress".equals(matchEvent.getStatus())) {
-			return;
-		}
-		
-	}
+//	private static void fixMatchMinute(MatchEvent matchEvent) throws ParseException {
+//		if (! "inprogress".equals(matchEvent.getStatus())) {
+//			return;
+//		}
+//		
+//		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
+//		matchTimeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
+//		
+//		Date matchTime = matchTimeFormat.parse(matchEvent.getStart_at());
+//		
+//		
+//		long x = new Date().getTime() - matchTime.getTime();
+//		matchEvent.setTime_live(x/60000);
+//		
+//		
+//	}
 
-	private static void splitEventsIntoLeagues(List<MatchEvent> events) {
+	private static void splitEventsIntoLeaguesAndDays(Date date, List<MatchEvent> events) {
 		Map<League, Map<Integer, MatchEvent>> leaguesWithEvents = new HashMap<>();
 		for (MatchEvent event : events) {
-			League league = RestApplication.LEAGUES.get(event.getLeague_id());
+			League league = event.getLeague();// RestApplication.LEAGUES.get(event.getLeague_id());
 			if (league == null) {
 				league = event.getLeague();
 			}
@@ -140,7 +170,7 @@ public class ApiDataFetchHelper {
 			leaguesWithEvents.get(league).put(event.getId(), event);
 		}
 		
-		RestApplication.EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.todayStr(), leaguesWithEvents);
+		RestApplication.EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.dateStr(date), leaguesWithEvents);
 		
 	}
 

@@ -15,6 +15,7 @@ public interface Fields {
 	
 	public static final String VALIDATED = "validated";
 	
+	public static final String ID = "id";
 	
 	/**
 	 * Used as foreign key for bets, awards, etc.
@@ -52,6 +53,6 @@ public interface Fields {
 
 	public static final String MATCH_FULL_DATE = "match_full_date";
 
-	public static final String MATCH_ID = "match_id";
+	//public static final String MATCH_ID = "match_id";
 
 }
