@@ -122,12 +122,6 @@ public class ApiDataFetchHelper {
 
 	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
 		for (MatchEvent matchEvent : events) {
-//			try {
-//				fixMatchMinute(matchEvent);
-//			} catch (ParseException e) {
-//				e.printStackTrace();
-//			}
-			
 			League matchLeague = matchEvent.getLeague();
 			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
 			if (leagueEvents == null) {
@@ -137,23 +131,6 @@ public class ApiDataFetchHelper {
 			RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague).put(matchEvent.getId(), matchEvent);
 		}
 	}
-
-//	private static void fixMatchMinute(MatchEvent matchEvent) throws ParseException {
-//		if (! "inprogress".equals(matchEvent.getStatus())) {
-//			return;
-//		}
-//		
-//		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-//		matchTimeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
-//		
-//		Date matchTime = matchTimeFormat.parse(matchEvent.getStart_at());
-//		
-//		
-//		long x = new Date().getTime() - matchTime.getTime();
-//		matchEvent.setTime_live(x/60000);
-//		
-//		
-//	}
 
 	private static void splitEventsIntoLeaguesAndDays(Date date, List<MatchEvent> events) {
 		Map<League, Map<Integer, MatchEvent>> leaguesWithEvents = new HashMap<>();
