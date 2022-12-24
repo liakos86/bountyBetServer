@@ -24,9 +24,11 @@ import gr.server.application.RestApplication;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.Score;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
+import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPrediction;
@@ -42,13 +44,6 @@ import gr.server.util.SecureUtils;
 public class MyBetOddsServiceImpl 
 implements MyBetOddsService {
 
-	
-//	@Override
-//	@GET
-//    @Path("/{id}/myOpenBets")
-//	public List<UserBet> getMyOpenBets(@PathParam("id") String id) {
-//		return new MongoClientHelperImpl().getBetsForUser(id);
-//	}
 	
 	@Override
 	@POST
@@ -96,9 +91,13 @@ implements MyBetOddsService {
 	@Produces("application/json; charset=UTF-8")
 	public Response loginUser(String userJson) throws Exception{
 		User newUser = new Gson().fromJson(userJson, new TypeToken<User>() {}.getType());
-		String userEmail = SecureUtils.decode(newUser.getEmail());
+		String userEmail = SecureUtils.decode(newUser.getEmail().trim());
 		newUser.setEmail(userEmail);
 		newUser = new MongoClientHelperImpl().loginUser(newUser);
+		if (newUser.getErrorMessage() == null) {
+			newUser = getUserFromMongoId(newUser.getMongoId());
+			System.out.println("RETURNING "+newUser.getEmail());
+		}
 		return Response.ok(new Gson().toJson(newUser)).build();	
 	}
 	
@@ -116,16 +115,7 @@ implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("getUser/{id}")
 	public Response getUser(@PathParam("id") String id) {
-		User user = new MongoClientHelperImpl().getUser(id);
-		user.getUserBets().forEach(b-> b.getPredictions().forEach(
-				p -> {
-					MatchEvent event = RestApplication.ALL_EVENTS.get(p.getEventId());
-					if (event == null) {
-						event = mockEvent();
-					}
-					
-					p.setEvent(event);
-				}));
+		User user = getUserFromMongoId(id);
 		String userJson = new Gson().toJson(user);
 		return Response.ok(userJson).build();
 	}
@@ -140,12 +130,14 @@ implements MyBetOddsService {
 		mockEvent.setId(-1);
 		Team mockTeam = new Team();
 		mockTeam.setName("Mockalona");
+		mockTeam.setLogo("https://tipsscore.com/resb/no-league.png");
 		mockEvent.setHome_team(mockTeam );
 		mockEvent.setAway_team(mockTeam);
 		Score mockScore = new Score();
 		mockScore.setCurrent(1);
 		mockEvent.setHome_score(mockScore );
 		mockEvent.setAway_score(mockScore);
+		mockEvent.setStatus(MatchEventStatus.FINISHED.getStatusStr());
 		return mockEvent;
 	}
 
@@ -157,29 +149,30 @@ implements MyBetOddsService {
 		Map<String, List<League>> leaguesPerDay = new LinkedHashMap<>();
 		
 		for ( Map.Entry<String, Map<League, Map<Integer, MatchEvent>>> dailyEntry : RestApplication.EVENTS_PER_DAY_PER_LEAGUE.entrySet()) {
-		List<League> dailyLeagues = new ArrayList<>();
-		
-		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = dailyEntry.getValue();
-		for (Map.Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
-			League league = entry.getKey();
-			if (league == null) {
-				continue;
+			List<League> dailyLeagues = new ArrayList<>();
+			
+			Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = dailyEntry.getValue();
+			for (Map.Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
+				League league = entry.getKey();
+				if (league.getSection_id() > 0) {
+					Section section = RestApplication.SECTIONS.get(league.getSection_id());
+					league.setSection(section);
+				}
+				
+				Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
+				List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
+				league.setMatchEvents(events);
+				events.forEach(e->e.setLeague(null));
+				Collections.sort(league.getMatchEvents());
+				dailyLeagues.add(league);
 			}
 			
-			if (league.getSection_id() > 0) {
-				league.setSection(RestApplication.SECTIONS.get(league.getSection_id()));
-			}
+			Collections.sort(dailyLeagues);
 			
-			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
-			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
-			league.setLiveMatchEvents(events);
-			events.forEach(e->e.setLeague(null));
-			Collections.sort(league.getLiveMatchEvents());
-			dailyLeagues.add(league);
-		}
-		
-		Collections.sort(dailyLeagues);
-		leaguesPerDay.put(dailyEntry.getKey(), dailyLeagues);
+			if (dailyEntry.getKey().contains("23"))
+				dailyLeagues.forEach(l-> System.out.println(l));
+			
+			leaguesPerDay.put(dailyEntry.getKey(), dailyLeagues);
 		}
 		
 		return  Response.ok(new Gson().toJson(leaguesPerDay)).build();
@@ -206,7 +199,7 @@ implements MyBetOddsService {
 			}
 			
 			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
-			league.setLiveMatchEvents(events);
+			league.setMatchEvents(events);
 			if (league.getSection_id() > 0) {
 				league.setSection(RestApplication.SECTIONS.get(league.getSection_id()));
 			}
@@ -220,22 +213,12 @@ implements MyBetOddsService {
 		return  new Gson().toJson(leagues);
 	}
 
-//	@Override
-//	@GET
-//	@Produces(MediaType.APPLICATION_JSON)
-//	@Path("/getLiveUpdates")
-//	public String getLiveUpdates(){
-//		System.out.println("SERVING GOALS");
-//		return  new Gson().toJson(RestApplication.LIVE_CHANGES_PER_EVENT);
-//	
-//	}
-	
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeaderBoard")
-	public String getLeaderBoard(){
-		return  new Gson().toJson(new MongoClientHelperImpl().retrieveLeaderBoard()); 
+	public Response getLeaderBoard(){
+		return  Response.ok(new Gson().toJson(new MongoClientHelperImpl().retrieveLeaderBoard())).build(); 
 	
 	}
 
@@ -244,6 +227,29 @@ implements MyBetOddsService {
 		if (e.getStatus_for_client() == null) {
 			e.setStatus_for_client(e.getStatus());
 		}
+	}
+	
+	/**
+	 * Every prediction of every bet has an eventId, which is the match that corresponds to it.
+	 * We try to find the match in the cache. Obviously it is not always there.
+	 * 
+	 * TODO: call api.
+	 * 
+	 * @param mongoId
+	 * @return
+	 */
+	private User getUserFromMongoId(String mongoId) {
+		User user = new MongoClientHelperImpl().getUser(mongoId);
+		user.getUserBets().forEach(b-> b.getPredictions().forEach(
+				p -> {
+					MatchEvent event = RestApplication.ALL_EVENTS.get(p.getEventId());
+					if (event == null) {
+						event = mockEvent();
+					}
+					
+					p.setEvent(event);
+				}));
+		return user;
 	}
 
 }

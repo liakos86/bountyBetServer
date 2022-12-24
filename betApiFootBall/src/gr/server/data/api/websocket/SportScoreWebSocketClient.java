@@ -70,6 +70,14 @@ public class SportScoreWebSocketClient {
         System.out.println("Handle byte buffer");
     }
 
+   /**
+    * TODO: Socket might close with 1006.
+    * 
+    * Check time outs!
+    * 
+    * @param session
+    * @param closeReason
+    */
 	@OnClose
 	public void onClose(Session session, CloseReason closeReason) {
 		System.out.println("--- Session: " + session.getId());

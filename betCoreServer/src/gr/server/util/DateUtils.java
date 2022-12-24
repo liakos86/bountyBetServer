@@ -1,7 +1,6 @@
 package gr.server.util;
 
 
-import gr.server.data.constants.ApiFootBallConstants;
 import gr.server.data.constants.ServerConstants;
 
 import java.text.SimpleDateFormat;
@@ -27,7 +26,7 @@ public class DateUtils {
 
 	@SuppressWarnings("deprecation")
 	public static String getPastMonthAsString(Integer monthsToSubtract) {
-		SimpleDateFormat df = new SimpleDateFormat(ApiFootBallConstants.AWARD_DATE_FORMAT);
+		SimpleDateFormat df = new SimpleDateFormat();
 		Date date = new Date();
 		date.setMonth(date.getMonth() - monthsToSubtract);
 		String format = df.format(date);

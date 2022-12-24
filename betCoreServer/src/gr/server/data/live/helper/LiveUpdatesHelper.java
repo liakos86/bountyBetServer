@@ -1,24 +1,32 @@
 package gr.server.data.live.helper;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 
 import gr.server.application.RestApplication;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.Score;
 import gr.server.data.api.model.events.Updates;
 import gr.server.data.api.model.league.League;
-import gr.server.data.constants.SportScoreApiConstants;
+import gr.server.data.enums.MatchEventPeriodStatus;
+import gr.server.data.enums.MatchEventStatus;
 import gr.server.util.DateUtils;
 
 public class LiveUpdatesHelper {
 	
-
+	/**
+	 * Multiple match updates arrive here.
+	 * The reference match might belong to a league that has no live events yet.
+	 * We retrieve the league in that case.
+	 * Also the reference match might not be in the live matches of the league.
+	 * TODO: we need to fetch the match and then put it in the list of the live matches of the league.
+	 * 
+	 * @param updates
+	 */
 	public static void updateLiveDetails(Updates updates) {
 		if (updates == null || updates.getData() == null || updates.getData().getData().isEmpty()) {
 			System.out.println("NO DATA UPDATES");
@@ -27,66 +35,114 @@ public class LiveUpdatesHelper {
 		
 		List<MatchEvent> liveUpdates = updates.getData().getData();
 		for (MatchEvent liveEvent : liveUpdates) {
-			if (liveEvent.getLeague_id() == null || liveEvent.getId() == null) {
-				continue;
-			}
+			createLiveEntryForUnknownLeague(liveEvent);
+			createLiveEntryForTheMissingLeague(liveEvent);
+			createLiveEntryForTheMissingMatch(liveEvent);
 			
-			// no entry for the league
 			League league = new League(liveEvent.getLeague_id());
 			Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
-			if (leagueMap == null) {
-				fixTheMissingLeague(liveEvent, league);
-				leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
-			}
-			
-			// no entry for the match
 			MatchEvent matchEvent = leagueMap.get(liveEvent.getId());
-			if (matchEvent == null) {
-				continue;
+			if (matchEvent == null) {// no live details yet for the match
+				System.out.println("*************** NO MATCH!!! ************");
 			}
 			
 			checkHomeGoal(matchEvent, liveEvent);
-			
 			checkAwayGoal(matchEvent, liveEvent);
-						
-			getStatusForClient(matchEvent, liveEvent);
-			
+			updateStatus(matchEvent, liveEvent);
 			checkMarkForRemoval(matchEvent, liveEvent);
 			if (matchEvent.isMarkedForRemoval()) {
 				leagueMap.remove(matchEvent.getId());
 				continue;
 			}
-			
 		
 		}
 	}
 	
-	private static void fixTheMissingLeague(MatchEvent liveEvent, League league) {
+	/**
+	 * If the input live event belongs to a league that is missing from the {@link RestApplication#LIVE_EVENTS_PER_LEAGUE}.
+	 * We find the actual league from the {@link RestApplication#EVENTS_PER_DAY_PER_LEAGUE},
+	 * 
+	 * @param liveEvent
+	 * @param league
+	 */
+	private static void createLiveEntryForTheMissingLeague(MatchEvent liveEvent) {
+		League league = new League(liveEvent.getLeague_id());
+		if (RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league) != null) {//live events exist for the league
+			return;
+		}
+		
 		Map<Integer, MatchEvent> leagueMap = new HashMap<>();
 		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
-		for ( Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
-			if (entry.getKey() == null) {
-				continue;
-			}
-			
-			if (entry.getKey().getId() == liveEvent.getLeague_id()) {
-				league = entry.getKey();
-			}
-		}
+		
+		int id = league.getId();
+		league = todayLeaguesWithEvents.keySet().stream().filter(l->l.getId()==id).collect(Collectors.toList()).get(0);
 		
 		Map<Integer, MatchEvent> leagueEvents = todayLeaguesWithEvents.get(league);
 		MatchEvent matchEvent = leagueEvents.get(liveEvent.getId());
 		leagueMap.put(liveEvent.getId(), matchEvent);
 		RestApplication.LIVE_EVENTS_PER_LEAGUE.put(league, leagueMap);
-		System.out.println("********* LEAGUE " + league + " WAS ADDED ***************");
+	}
+	
+	/**
+	 * If the input live event has no league id,
+	 * We find the actual league from the {@link RestApplication#EVENTS_PER_DAY_PER_LEAGUE}, 
+	 * searching with the event id.
+	 * 
+	 * @param liveEvent
+	 */
+	private static void createLiveEntryForUnknownLeague(MatchEvent liveEvent) {
+		if (liveEvent.getLeague_id() != null) {
+			return;
+		}
+		
+		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
+		
+		League unknownLeague = null;
+		for(Entry<League, Map<Integer, MatchEvent>> todayLeagueEntry : todayLeaguesWithEvents.entrySet()) {
+			Map<Integer, MatchEvent> todayLeagueEvents = todayLeagueEntry.getValue();
+			MatchEvent matchEvent = todayLeagueEvents.get(liveEvent.getId());
+			if (matchEvent != null) {
+				unknownLeague = todayLeagueEntry.getKey();
+				liveEvent.setLeague_id(unknownLeague.getId());
+				liveEvent.setLeague(unknownLeague);
+				break;
+			}
+		}
+		
+		RestApplication.LIVE_EVENTS_PER_LEAGUE.put(unknownLeague, new HashMap<>());
+		System.out.println("********* LEAGUE " + unknownLeague + " WAS ADDED ***************");
+	}
+	
+	/**
+	 * If the input live event belongs to a league that is missing from the {@link RestApplication#LIVE_EVENTS_PER_LEAGUE}.
+	 * We find the actual league from the {@link RestApplication#EVENTS_PER_DAY_PER_LEAGUE},
+	 *  
+	 * 
+	 * @param liveEvent
+	 * @param league
+	 */
+	private static void createLiveEntryForTheMissingMatch(MatchEvent liveEvent) {
+		League league = new League(liveEvent.getLeague_id());
+		Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
+		MatchEvent matchEvent = leagueMap.get(liveEvent.getId());
+		if (matchEvent != null) {//live details exist for the match
+			return;
+		}
+		
+		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
+		Map<Integer, MatchEvent> leagueEvents = todayLeaguesWithEvents.get(league);
+		liveEvent = leagueEvents.get(liveEvent.getId());
+		liveEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
+		liveEvent.setMain_odds(null);
+		leagueMap.put(liveEvent.getId(), liveEvent);
+		RestApplication.MINUTE_TRACKER.track(liveEvent);
+		System.out.println("********* TRACKING " + liveEvent + " ***************");
 	}
 
 	private static void checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) {
 		if (matchEvent.getAway_score() == null) {
-			System.out.println("NO AWAY SCORE ********************** " + matchEvent.getAway_team().getName());
-			return;
+			matchEvent.setAway_score(new Score());
 		}
-		
 		
 		if (liveEvent.getAway_score() == null) {
 			return;
@@ -103,10 +159,8 @@ public class LiveUpdatesHelper {
 
 	private static void checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) {
 		if (matchEvent.getHome_score() == null) {
-			System.out.println("NO HOME SCORE ********************** "  + matchEvent.getHome_team().getName());
-			return;
+			matchEvent.setHome_score(new Score());
 		}
-		
 		
 		if (liveEvent.getHome_score() == null) {
 			return;
@@ -123,53 +177,42 @@ public class LiveUpdatesHelper {
 
 	private static void checkMarkForRemoval(MatchEvent matchEvent, MatchEvent liveEvent) {
 		if (liveEvent.getTime_live().toString().equalsIgnoreCase("Ended") 
-				|| liveEvent.getStatus().equalsIgnoreCase("finished") 
-				|| liveEvent.getStatus_loc().equalsIgnoreCase("finished")) {
+				|| liveEvent.getStatus().equalsIgnoreCase("finished") ) {
+//				|| liveEvent.getStatus_loc().equalsIgnoreCase("finished")) {
 			matchEvent.setMarkedForRemoval(true);
+			RestApplication.MINUTE_TRACKER.discard(liveEvent);
 		}
 	}
 
-	public static void getStatusForClient(MatchEvent matchEvent, MatchEvent liveEvent) {
+	public static void updateStatus(MatchEvent matchEvent, MatchEvent liveEvent) {
+		System.out.println();
+		System.out.print(liveEvent.getId() + " ** LIVE EVENT HAS: time live " + liveEvent.getTime_live());
+		System.out.print( " *** : time det " + liveEvent.getTime_details());
+		System.out.print( " *** : status " + liveEvent.getStatus());
+		System.out.print(" *** : status more " + liveEvent.getStatus_more());
+		
+		matchEvent.setStatus(liveEvent.getStatus());//remove?
+		
 		Object time_live = liveEvent.getTime_live();
 		if (time_live == null) {
 			return;
 		}
 		
-		String time_live_str = time_live.toString().replace(" ", "");
-		if ("1sthalf".equalsIgnoreCase(time_live_str) 
-				|| "2ndhalf".equalsIgnoreCase(time_live_str) ) {
+		String time_live_str = time_live.toString();
+		MatchEventPeriodStatus liveEventPeriodStatus = MatchEventPeriodStatus.fromStatusMoreText(time_live_str);
+		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(liveEventPeriodStatus)
+				|| MatchEventPeriodStatus.INPROGRESS_1ST_HALF.equals(liveEventPeriodStatus)
+					|| MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(liveEventPeriodStatus)) {
+			matchEvent.setStatus_more(liveEventPeriodStatus.getStatusStr());
+			matchEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
 			return;
 		}
 		
-		if ("inprogress".equalsIgnoreCase(time_live_str) && matchEvent.getStatus_for_client() != null) {
-			System.out.println("INPROGRESS " + matchEvent.getHome_team().getName());
+		if (MatchEventStatus.FINISHED.equals(MatchEventStatus.fromStatusText(liveEvent.getStatus()))){
+			matchEvent.setStatus(MatchEventStatus.FINISHED.getStatusStr());
+			matchEvent.setStatus_more(MatchEventPeriodStatus.GAME_FINISHED.getStatusStr());
 			return;
 		}
-		
-		if ("inprogress".equalsIgnoreCase(time_live_str) && matchEvent.getStatus_for_client() == null) {
-			try {
-				Date matchDateTime = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT).parse(matchEvent.getStart_at());
-				time_live = (int)  (new Date().getTime() - matchDateTime.getTime() / 60);
-			} catch (ParseException e) {
-				return;
-			}
-		}
-		
-		try{
-			int parseInt = ((Double) time_live).intValue();
-			time_live_str = parseInt + "'";
-		}catch (Exception e) {
-			try {
-				int parseInt = Integer.parseInt(time_live_str);
-				time_live_str = parseInt + "'";
-			}catch(Exception e2) {
-				//return?
-			}
-		}
-		
-		matchEvent.setStatus_for_client(time_live_str);
-		matchEvent.setStatus_loc(liveEvent.getStatus_loc());
-		matchEvent.setStatus(liveEvent.getStatus());
 		
 	}
 

@@ -62,4 +62,9 @@ public class Section implements Serializable{
 		this.name_translations = name_translations;
 	}
 	
+	@Override
+	public String toString() {
+		return "Section: " + this.name + " with priority " + this.priority;
+	}
+	
 }

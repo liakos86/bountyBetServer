@@ -115,6 +115,7 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 		User user = userFromMongoDocument(userFromMongo);
 		user.setUserBets(getBetsForUser(mongoId));
 		user.setUserAwards(getAwardsForUser(mongoId));
+		
 		return user;
 	}
 	
@@ -128,6 +129,7 @@ public class MongoClientHelperImpl implements MongoClientHelper {
 		String mongoId = userFromMongo.getObjectId(Fields.MONGO_ID).toString();
 		
 		finalUser.setMongoId(mongoId);
+		finalUser.setPassword(null);
 		finalUser.setPosition(SyncHelper.userPosition(finalUser));
 		return finalUser;
 	}

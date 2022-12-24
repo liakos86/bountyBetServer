@@ -5,6 +5,8 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
@@ -19,13 +21,11 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import gr.server.data.api.model.league.League;
-import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.bet.enums.PredictionType;
-import gr.server.data.constants.ApiFootBallConstants;
 import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.Fields;
+import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.user.model.objects.SettledEvent;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
@@ -74,6 +74,7 @@ public class SyncHelper {
 			 E object = (E) e.execute(json);
 			 if (object instanceof User){//very very dirty
 				((User) object).setMongoId(document.getObjectId(Fields.MONGO_ID).toString()); 
+				((User) object).setUserBets(new ArrayList<>());
 			 }
 			list.add(object);
 		 }
@@ -215,7 +216,7 @@ public class SyncHelper {
 				 .append(Fields.EMAIL, user.getEmail())
 				 .append(Fields.PASSWORD, user.getPassword())
 				 .append(Fields.VALIDATED, false)
-		 .append(Fields.USER_BALANCE, ApiFootBallConstants.STARTING_BALANCE)
+		 .append(Fields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
 		 .append(Fields.USER_AWARDS, new BasicDBList());
 	}
 
@@ -255,7 +256,7 @@ public class SyncHelper {
 	}
 
 	public static void restoreUserBalance(ClientSession startSession) {
-		Document balanceFilter = new Document(Fields.USER_BALANCE, ApiFootBallConstants.STARTING_BALANCE);
+		Document balanceFilter = new Document(Fields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE);
 		Document setBalance = new Document("$set", balanceFilter);
 		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);
 		usersCollection.updateMany(startSession, new Document(), setBalance);
@@ -299,6 +300,9 @@ public class SyncHelper {
     		        .applyConnectionString(connectionString)
     		        .build();
     		MONGO_CLIENT = MongoClients.create(settings);
+    		
+    		Logger logger = Logger.getLogger("org.mongodb.driver");
+    		logger.setLevel(Level.OFF);
     		
 //    		MongoClientURI uri = new MongoClientURI(conn + "<dbname>?ssl=true&replicaSet=spearo-shard-0&authSource=admin&retryWrites=true&w=majority");
 //    		mongoClient = new MongoClient(uri);

@@ -10,7 +10,15 @@ public enum MatchEventStatus {
 	
 	POSTPONED("postponed"),
 	
-	FINISHED("finished");
+	FINISHED("finished"),
+	
+	DELAYED("delayed"),
+	
+	INTERRUPTED("interrupted"),
+	
+	SUSPENDED("suspended"),
+	
+    WILL_CONTINUE ("willcontinue");
 
 	private String statusStr;
 
@@ -18,7 +26,7 @@ public enum MatchEventStatus {
 		this.statusStr = statusStr;
 	}
 	
-	MatchEventStatus ofStatus(String str) {
+	public static MatchEventStatus fromStatusText(String str) {
 		for (MatchEventStatus status : MatchEventStatus.values()) {
 			if (status.statusStr.equals(str)) {
 				return status;
@@ -28,4 +36,8 @@ public enum MatchEventStatus {
 		return null;
 	}
 
+	public String getStatusStr() {
+		return statusStr;
+	}
+	
 }

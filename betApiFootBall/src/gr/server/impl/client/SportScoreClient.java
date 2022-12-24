@@ -4,13 +4,17 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
+import gr.server.data.api.model.league.Sections;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.util.HttpHelper;
 
@@ -84,5 +88,17 @@ public class SportScoreClient {
 		League league= new Gson().fromJson(content, new TypeToken<League>() {}.getType());
 		return league;
 	}
-	
+
+	public static List<Section> getSections() throws IOException {
+		List<Section> allSections = new ArrayList<>();
+		
+		String url = SportScoreApiConstants.GET_SECTIONS_BY_SPORT_URL;
+		for (int page = 1; page <=3; page++) {
+			String content = new HttpHelper().fetchGetContentWithHeaders(url+page);
+			Sections pageSections = new Gson().fromJson(content, new TypeToken<Sections>() {}.getType());
+			allSections.addAll(pageSections.getData());
+		}
+
+		return allSections;
+	}
 }

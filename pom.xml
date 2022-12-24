@@ -144,6 +144,7 @@
 	<modules>
 		<module>betApiFootBall</module>
 		<module>betCoreServer</module>
+		<module>betCoreCommon</module>
 		<module>betMongo</module>
 	</modules>
 

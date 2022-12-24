@@ -17,9 +17,9 @@ import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
-import gr.server.data.constants.ApiFootBallConstants;
 import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.Fields;
+import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPrediction;
@@ -201,7 +201,7 @@ public class MongoCollectionUtils {
 		 .append(Fields.USER_OVERALL_LOST_EVENTS, 0)
 		 .append(Fields.USER_OVERALL_WON_SLIPS, 0)
 		 .append(Fields.USER_OVERALL_LOST_SLIPS, 0)
-		 .append(Fields.USER_BALANCE, ApiFootBallConstants.STARTING_BALANCE)
+		 .append(Fields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
 		 .append(Fields.USER_AWARDS, new BasicDBList());
 	}
 
@@ -258,7 +258,7 @@ public class MongoCollectionUtils {
 	}
 
 	public static void restoreUserBalance(ClientSession startSession) {
-		Document balanceFilter = new Document(Fields.USER_BALANCE, ApiFootBallConstants.STARTING_BALANCE);
+		Document balanceFilter = new Document(Fields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE);
 		Document setBalance = new Document("$set", balanceFilter);
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> usersCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.USERS);

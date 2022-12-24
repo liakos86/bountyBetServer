@@ -8,13 +8,6 @@ import javax.ws.rs.core.Response;
  */
 public interface MyBetOddsService {
 
-	
-//	String placeBet(InputStream incoming);
-	
-//	String createUser(InputStream incomingStream) throws UserExistsException;
-
-//	List<UserBet> getMyOpenBets(String id);
-
 	/**
 	 * 
 	 * @return Sections with leagues.
@@ -23,7 +16,7 @@ public interface MyBetOddsService {
 
 	Response getUser(String id);
 
-	String getLeaderBoard();
+	Response getLeaderBoard();
 
 	Response placeBet(String userBet);
 

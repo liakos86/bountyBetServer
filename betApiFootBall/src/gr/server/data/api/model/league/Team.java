@@ -214,4 +214,9 @@ public class Team {
 		this.details = details;
 	}
 	
+	@Override
+	public String toString() {
+		return "Team:"+this.name;
+	}
+	
 }

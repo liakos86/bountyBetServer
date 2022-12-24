@@ -33,12 +33,21 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		
-		MockApiDataFetchHelper.fetchSections();
+		ApiDataFetchHelper.fetchSections();
+		System.out.println(RestApplication.SECTIONS.size() + " SECTIONS **********");
+		
 		MockApiDataFetchHelper.fetchLeagues();
-		ApiDataFetchHelper.fetchEventsIntoLeagues();
 		ApiDataFetchHelper.fetchLiveEventsIntoLeagues();
+		ApiDataFetchHelper.fetchEventsIntoLeagues();
 		MockApiDataFetchHelper.fetchSeasonsStandingsIntoLeagues();
 		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
+		
+		
+		TimerTask liveMatchMinuteUpdateTimerTask = TimerTaskHelper.liveMatchMinuteUpdateTimerTask();
+		Timer liveMatchMinuteUpdateTimer = new Timer("liveMatchMinuteUpdateTimer");
+		liveMatchMinuteUpdateTimer.schedule(liveMatchMinuteUpdateTimerTask,  new Date(), 60000);
+		
+		
 		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
 		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
 		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);

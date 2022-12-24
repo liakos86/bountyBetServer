@@ -12,4 +12,6 @@ public interface ServerConstants {
 	
 	String URL_FORMAT = "mF=!72kg*&;.J^1]";
 	
+	String GMT = "GMT";
+	
 }

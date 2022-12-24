@@ -11,6 +11,14 @@ public class Score {
 	int period_2;
 	
 	int normal_time;
+	
+	public Score() {
+		this.current = 0;
+		this.display = 0;
+		this.period_1 = 0;
+		this.period_2 = 0;
+		this.normal_time = 0;
+	}
 
 	public int getCurrent() {
 		return current;

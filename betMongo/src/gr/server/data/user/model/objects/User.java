@@ -1,7 +1,7 @@
 package gr.server.data.user.model.objects;
 
 
-import gr.server.data.constants.ApiFootBallConstants;
+import gr.server.data.constants.SportScoreApiConstants;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -64,7 +64,7 @@ implements Serializable{
 
 	public User(String mongoId) {
 		this.mongoId = mongoId;
-		this.balance = ApiFootBallConstants.STARTING_BALANCE;
+		this.balance = SportScoreApiConstants.STARTING_BALANCE;
 		this.lostEventsCount = 0;
 		this.lostSlipsCount = 0;
 		this.wonEventsCount = 0;
@@ -152,6 +152,10 @@ implements Serializable{
 
 	public String getPassword() {
 		return password;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getErrorMessage() {

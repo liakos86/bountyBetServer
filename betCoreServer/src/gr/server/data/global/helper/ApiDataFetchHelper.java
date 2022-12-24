@@ -3,19 +3,18 @@ package gr.server.data.global.helper;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TimeZone;
 
 import gr.server.application.RestApplication;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.SportScoreClient;
@@ -39,7 +38,11 @@ public class ApiDataFetchHelper {
 			List<MatchEvent> events = new ArrayList<>();
 			try {
 				events = SportScoreClient.getEvents(date).getData();
-				events.forEach(e -> RestApplication.ALL_EVENTS.put(e.getId(), e));
+				events.forEach(e -> { if (!RestApplication.ALL_EVENTS.containsKey(e.getId())) {
+												RestApplication.ALL_EVENTS.put(e.getId(), e);
+										}
+									}
+				);
 			} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
 				System.out.println("EVENTS ERROR " + date);
 				e.printStackTrace();
@@ -50,7 +53,7 @@ public class ApiDataFetchHelper {
 		}
 
 	}
-	
+
 	private static List<Date> getDatesToFetchList() {
 		List<Date> datesToFetch = new ArrayList<>();
 		Calendar instance = Calendar.getInstance();
@@ -94,30 +97,10 @@ public class ApiDataFetchHelper {
 		MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
 		events.forEach(e-> e.setIncidents(matchEventIncidents));
 		
-		System.out.println("LIVE ARE " + events.size());
-		events.forEach(e->calculateLiveMinute(e));
+		events.forEach(e-> RestApplication.MINUTE_TRACKER.track(e));
+		
 		splitEventsIntoLiveLeagues(events);
 
-	}
-
-
-	private static void calculateLiveMinute(MatchEvent matchEvent) {
-		if (! "inprogress".equals(matchEvent.getStatus())) {
-			return;
-		}
-		
-		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-		matchTimeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
-		
-		try {
-			Date matchTime = matchTimeFormat.parse(matchEvent.getStart_at());
-			long x = new Date().getTime() - matchTime.getTime();
-			matchEvent.setTime_live(x/60000);
-			matchEvent.setStatus_for_client(x/60000 + "'");
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		
 	}
 
 	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
@@ -132,41 +115,66 @@ public class ApiDataFetchHelper {
 		}
 	}
 
+	/**
+	 * Input is a date with all its games.
+	 * We find the league that every game belongs to and add the game to that league's games.
+	 * TODO: a null league appears in some games. we create a dummy league and assign all those games.
+	 * 
+	 * @param date
+	 * @param events
+	 */
 	private static void splitEventsIntoLeaguesAndDays(Date date, List<MatchEvent> events) {
 		Map<League, Map<Integer, MatchEvent>> leaguesWithEvents = new HashMap<>();
 		for (MatchEvent event : events) {
-			League league = event.getLeague();// RestApplication.LEAGUES.get(event.getLeague_id());
+			League league = event.getLeague();
 			if (league == null) {
-				league = event.getLeague();
+				league = RestApplication.LEAGUES.get(event.getLeague_id());
+				if (league == null) {
+					league = createDummyLeague();
+				}
+				event.setLeague(league);
 			}
 			
-			if (!leaguesWithEvents.containsKey(league)) {
-				leaguesWithEvents.put(league, new HashMap<>());
+			Map<Integer, MatchEvent> leagueEvents = leaguesWithEvents.get(league);
+			if (leagueEvents == null) {
+				leagueEvents = new HashMap<>();
+				leaguesWithEvents.put(league, leagueEvents);
 			}
 			
-			leaguesWithEvents.get(league).put(event.getId(), event);
+			if (RestApplication.ALL_EVENTS.containsKey(event.getId())){
+				leagueEvents.put(event.getId(), RestApplication.ALL_EVENTS.get(event.getId()));
+			}else {
+				leagueEvents.put(event.getId(), event);
+			}
 		}
 		
 		RestApplication.EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.dateStr(date), leaguesWithEvents);
 		
 	}
 
-	public static void fetchSpecificLeague(Integer league_id) {
+	private static League createDummyLeague() {
+		League league = new League(Integer.MIN_VALUE);
+		league.setName("Other");
+		Section section = new Section();
+		section.setId(Integer.MIN_VALUE);
+		section.setName("Other Section");
+		section.setPriority(0);
+		section.setSport_id(1);
+		league.setSection(section);
 		
-		Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(new League(league_id));
-		if (leagueMap != null) {
-			System.out.println("LEAGUE EXISTS " + league_id);
-			return;
-		}
+		league.setLogo("https://tipsscore.com/resb/no-league.png");
+		league.setHas_logo(true);
+		return league;
+	}
 
+	public static void fetchSections() {
 		try {
-			League newLeague = SportScoreClient.getLeagueById(league_id);
-			RestApplication.LIVE_EVENTS_PER_LEAGUE.put(newLeague, new HashMap<>());
+			SportScoreClient.getSections().forEach(s -> RestApplication.SECTIONS.put(s.getId(), s));
+			SportScoreClient.getSections().forEach(s -> System.out.println(s.getName() + " with priority " + s.getPriority()));
 		} catch (IOException e) {
-			System.out.println("FETCH LEAGUE ERROR " + league_id);
+			System.out.println("SECTIONS ERROR");
 			e.printStackTrace();
 		}
-		
 	}
 
 }

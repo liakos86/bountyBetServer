@@ -10,7 +10,7 @@ public class League implements Comparable<League>{
 	
 	List<Season> seasons = new ArrayList<>();
 	
-	List<MatchEvent> liveMatchEvents = new ArrayList<>();
+	List<MatchEvent> matchEvents = new ArrayList<>();
 	
 	Sport sport;
 	
@@ -176,12 +176,12 @@ public class League implements Comparable<League>{
 		this.most_count = most_count;
 	}
 	
-	public List<MatchEvent> getLiveMatchEvents() {
-		return liveMatchEvents;
+	public List<MatchEvent> getMatchEvents() {
+		return matchEvents;
 	}
 
-	public void setLiveMatchEvents(List<MatchEvent> liveMatchEvents) {
-		this.liveMatchEvents = liveMatchEvents;
+	public void setMatchEvents(List<MatchEvent> matchEvents) {
+		this.matchEvents = matchEvents;
 	}
 	
 	public List<Season> getSeasons() {
@@ -214,7 +214,10 @@ public class League implements Comparable<League>{
 	@Override
 	public String toString() {
 		if (this.name != null) {
-			return id + ": " + name;
+			if (this.section !=null)
+				return this.name + " with priority: " + this.priority + " and with Section: "  + this.section;
+			else
+				return this.name + " with priority: " + this.priority ;
 		}
 		
 		return String.valueOf(this.id);
@@ -222,26 +225,19 @@ public class League implements Comparable<League>{
 
 	@Override
 	public int compareTo(League other) {
-		
-		
-		if (this.section != null) {
-			if (other.section == null) {
-				return -1;
-			}
-			
-			return other.section.priority - this.section.priority;
-		}
-		
-		
-		if (this.priority == null || this.priority == 0) {
-			return Integer.MAX_VALUE;
-		}
-		
-		if (other.priority == null || other.priority == 0) {
+		if (this.section == null) {
 			return 1;
 		}
 		
-		return this.priority - other.priority;
+		if (other.section == null) {
+			return -1;
+		}
+		
+		if (this.section.priority == other.section.priority ) {
+			return 0;
+		}
+		
+		return other.section.priority - this.section.priority;
 	}
 
 	
@@ -250,7 +246,7 @@ public class League implements Comparable<League>{
 		copy.setSport(sport);
 		copy.setSection(section);
 		copy.setSeasons(seasons);
-		copy.setLiveMatchEvents(new ArrayList<>());
+		copy.setMatchEvents(new ArrayList<>());
 		return copy;
 	}
     
