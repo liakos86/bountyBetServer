@@ -170,7 +170,6 @@ public class ApiDataFetchHelper {
 	public static void fetchSections() {
 		try {
 			SportScoreClient.getSections().forEach(s -> RestApplication.SECTIONS.put(s.getId(), s));
-			SportScoreClient.getSections().forEach(s -> System.out.println(s.getName() + " with priority " + s.getPriority()));
 		} catch (IOException e) {
 			System.out.println("SECTIONS ERROR");
 			e.printStackTrace();

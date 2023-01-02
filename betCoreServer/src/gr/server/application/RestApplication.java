@@ -54,6 +54,10 @@ extends Application{
 	 */
 	public static Map<Integer, MatchEvent> ALL_EVENTS = new HashMap<>();
 	
+	/**
+	 * 
+	 */
+	public static SoccerEventsTopicProducer SOCCER_EVENTS_TOPIC_PRODUCER = new SoccerEventsTopicProducer();
 	
     @Override
     public Set<Class<?>> getClasses() {

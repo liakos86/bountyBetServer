@@ -6,7 +6,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
+import javax.jms.JMSException;
+
 import gr.server.application.RestApplication;
+import gr.server.application.SoccerEventsTopicProducer;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.Score;
@@ -18,6 +21,8 @@ import gr.server.util.DateUtils;
 
 public class LiveUpdatesHelper {
 	
+	SoccerEventsTopicProducer topicProducer = RestApplication.SOCCER_EVENTS_TOPIC_PRODUCER;
+	
 	/**
 	 * Multiple match updates arrive here.
 	 * The reference match might belong to a league that has no live events yet.
@@ -26,8 +31,9 @@ public class LiveUpdatesHelper {
 	 * TODO: we need to fetch the match and then put it in the list of the live matches of the league.
 	 * 
 	 * @param updates
+	 * @throws JMSException 
 	 */
-	public static void updateLiveDetails(Updates updates) {
+	public void updateLiveDetails(Updates updates) throws JMSException {
 		if (updates == null || updates.getData() == null || updates.getData().getData().isEmpty()) {
 			System.out.println("NO DATA UPDATES");
 			return;
@@ -65,7 +71,7 @@ public class LiveUpdatesHelper {
 	 * @param liveEvent
 	 * @param league
 	 */
-	private static void createLiveEntryForTheMissingLeague(MatchEvent liveEvent) {
+	private void createLiveEntryForTheMissingLeague(MatchEvent liveEvent) {
 		League league = new League(liveEvent.getLeague_id());
 		if (RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league) != null) {//live events exist for the league
 			return;
@@ -90,7 +96,7 @@ public class LiveUpdatesHelper {
 	 * 
 	 * @param liveEvent
 	 */
-	private static void createLiveEntryForUnknownLeague(MatchEvent liveEvent) {
+	private void createLiveEntryForUnknownLeague(MatchEvent liveEvent) {
 		if (liveEvent.getLeague_id() != null) {
 			return;
 		}
@@ -121,7 +127,7 @@ public class LiveUpdatesHelper {
 	 * @param liveEvent
 	 * @param league
 	 */
-	private static void createLiveEntryForTheMissingMatch(MatchEvent liveEvent) {
+	private void createLiveEntryForTheMissingMatch(MatchEvent liveEvent) {
 		League league = new League(liveEvent.getLeague_id());
 		Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
 		MatchEvent matchEvent = leagueMap.get(liveEvent.getId());
@@ -139,7 +145,7 @@ public class LiveUpdatesHelper {
 		System.out.println("********* TRACKING " + liveEvent + " ***************");
 	}
 
-	private static void checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) {
+	private void checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
 		if (matchEvent.getAway_score() == null) {
 			matchEvent.setAway_score(new Score());
 		}
@@ -150,6 +156,7 @@ public class LiveUpdatesHelper {
 		
 		if (matchEvent.awayGoalScored(liveEvent.getAway_score())) {
 			matchEvent.setChangeEvent(ChangeEvent.AWAY_GOAL);
+			produceTopicMessage(liveEvent, ChangeEvent.AWAY_GOAL);
 		} else {
 			matchEvent.setChangeEvent(ChangeEvent.NONE);
 		}
@@ -157,7 +164,16 @@ public class LiveUpdatesHelper {
 		matchEvent.setAway_score(liveEvent.getAway_score());
 	}
 
-	private static void checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) {
+	private void produceTopicMessage(MatchEvent liveEvent, ChangeEvent event) throws JMSException {
+		Map<String, Object> msg = new HashMap<>();
+		msg.put("eventId", liveEvent.getId());
+		msg.put("changeEvent", event);
+		msg.put("homeScore", liveEvent.getHome_score());
+		msg.put("awayScore", liveEvent.getAway_score());
+		topicProducer.sendTopicMessage(msg);
+	}
+
+	private void checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
 		if (matchEvent.getHome_score() == null) {
 			matchEvent.setHome_score(new Score());
 		}
@@ -168,6 +184,7 @@ public class LiveUpdatesHelper {
 
 		if (matchEvent.homeGoalScored(liveEvent.getHome_score())) {
 			matchEvent.setChangeEvent(ChangeEvent.HOME_GOAL);
+			produceTopicMessage(liveEvent, ChangeEvent.HOME_GOAL);
 		} else {
 			matchEvent.setChangeEvent(ChangeEvent.NONE);
 		}
@@ -185,11 +202,11 @@ public class LiveUpdatesHelper {
 	}
 
 	public static void updateStatus(MatchEvent matchEvent, MatchEvent liveEvent) {
-		System.out.println();
-		System.out.print(liveEvent.getId() + " ** LIVE EVENT HAS: time live " + liveEvent.getTime_live());
-		System.out.print( " *** : time det " + liveEvent.getTime_details());
-		System.out.print( " *** : status " + liveEvent.getStatus());
-		System.out.print(" *** : status more " + liveEvent.getStatus_more());
+//		System.out.println();
+//		System.out.print(liveEvent.getId() + " ** LIVE EVENT HAS: time live " + liveEvent.getTime_live());
+//		System.out.print( " *** : time det " + liveEvent.getTime_details());
+//		System.out.print( " *** : status " + liveEvent.getStatus());
+//		System.out.print(" *** : status more " + liveEvent.getStatus_more());
 		
 		matchEvent.setStatus(liveEvent.getStatus());//remove?
 		

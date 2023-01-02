@@ -44,6 +44,9 @@ public class SportScoreWebSocketClient {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        
+        
+        
     }
 
 	@OnOpen

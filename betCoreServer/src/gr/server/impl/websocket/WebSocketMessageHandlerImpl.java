@@ -1,5 +1,7 @@
 package gr.server.impl.websocket;
 
+import javax.jms.JMSException;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -9,6 +11,8 @@ import gr.server.def.websocket.WebSocketMessageHandler;
 
 public class WebSocketMessageHandlerImpl
 implements WebSocketMessageHandler{
+	
+	LiveUpdatesHelper helper = new LiveUpdatesHelper();
 	
 	public void handleMessage(String msg) {
 		if (msg.equals("{\"event\":\"pusher:pong\"}") || msg.startsWith("{\"event\":\"pusher_internal:subscription_succeeded\"")) {
@@ -26,7 +30,12 @@ implements WebSocketMessageHandler{
 		//System.out.println("CONVERTED " + replacedMsg);
 //		System.out.println(msg);
 		Updates updates = new Gson().fromJson(replacedMsg, new TypeToken<Updates>() {}.getType());
-		LiveUpdatesHelper.updateLiveDetails(updates);
+		try {
+			helper.updateLiveDetails(updates);
+		} catch (JMSException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
