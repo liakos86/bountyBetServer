@@ -19,7 +19,7 @@ implements WebSocketMessageHandler{
 			return;
 		}
 		
-		//System.out.println("RECEIVED " + msg);
+		System.out.println("RECEIVED " + msg);
 		String replacedMsg = msg
 				.replace("\\\"", "\"")
 				.replace("\"{", "{")
@@ -27,8 +27,6 @@ implements WebSocketMessageHandler{
 				.replace("\"main_odds\":[]", "\"main_odds\": null")
 				.replace("\"home_score\":[]", "\"home_score\": null")
 				.replace("\"away_score\":[]", "\"away_score\": null");
-		//System.out.println("CONVERTED " + replacedMsg);
-//		System.out.println(msg);
 		Updates updates = new Gson().fromJson(replacedMsg, new TypeToken<Updates>() {}.getType());
 		try {
 			helper.updateLiveDetails(updates);

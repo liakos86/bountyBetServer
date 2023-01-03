@@ -19,7 +19,13 @@ public enum ChangeEvent implements Serializable{
 	MATCH_START(3),
 
 	@SerializedName("4")
-	RED_CARD(4);
+	RED_CARD(4),
+	
+	@SerializedName("5")
+	HALF_TIME(5),
+	
+	@SerializedName("6")
+	MATCH_END(6);
 	
 	private static final long serialVersionUID = 1L;
 

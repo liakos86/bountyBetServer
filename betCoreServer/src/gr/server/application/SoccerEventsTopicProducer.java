@@ -76,13 +76,11 @@ implements ExceptionListener {
 		TextMessage testMessage;
 		try {
 			testMessage = session.createTextMessage();
-//			for (Entry<String, Object> e : msg.entrySet()) {
-//				testMessage.setStringProperty(e.getKey(), e.getValue().toString());
-//			}
-			String json = new Gson().toJson(new ChangeEventSoccer(msg));
+			ChangeEventSoccer changeEventSoccer = new ChangeEventSoccer(msg);
+			String json = new Gson().toJson(changeEventSoccer);
 			testMessage.setText(json);
 			producer.send(testMessage);
-			System.out.println("SENDING: " + json);
+			System.out.println("SENDING: " + changeEventSoccer.getChangeEvent());
 		} catch (JMSException e) {
 			connection.close();
 			connected = false;

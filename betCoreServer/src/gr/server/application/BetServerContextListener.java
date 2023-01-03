@@ -33,16 +33,17 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		
-		ApiDataFetchHelper.fetchSections();
-		System.out.println(RestApplication.SECTIONS.size() + " SECTIONS **********");
+		MockApiDataFetchHelper.fetchSections();
+		//ApiDataFetchHelper.fetchSections();
+		//System.out.println(RestApplication.SECTIONS.size() + " SECTIONS **********");
 		
 		MockApiDataFetchHelper.fetchLeagues();
-		ApiDataFetchHelper.fetchLiveEventsIntoLeagues();
+//		ApiDataFetchHelper.fetchLiveEventsIntoLeagues();
 		ApiDataFetchHelper.fetchEventsIntoLeagues();
 		MockApiDataFetchHelper.fetchSeasonsStandingsIntoLeagues();
 		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
 		
-		
+		//TODO: Device should track time
 		TimerTask liveMatchMinuteUpdateTimerTask = TimerTaskHelper.liveMatchMinuteUpdateTimerTask();
 		Timer liveMatchMinuteUpdateTimer = new Timer("liveMatchMinuteUpdateTimer");
 		liveMatchMinuteUpdateTimer.schedule(liveMatchMinuteUpdateTimerTask,  new Date(), 60000);
@@ -51,6 +52,12 @@ public class BetServerContextListener implements ServletContextListener {
 		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
 		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
 		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
+		
+		
+		TimerTask activeMqTimerTask = TimerTaskHelper.sendTopicMessageTask();
+		Timer activeMqTimerTaskTimer = new Timer("activeMqTimerTaskTimer");
+		activeMqTimerTaskTimer.schedule(activeMqTimerTask,  new Date(), 20000);
+		
 		
 	}
 

@@ -126,14 +126,17 @@ public class LiveUpdatesHelper {
 	 * 
 	 * @param liveEvent
 	 * @param league
+	 * @throws JMSException 
 	 */
-	private void createLiveEntryForTheMissingMatch(MatchEvent liveEvent) {
+	private void createLiveEntryForTheMissingMatch(MatchEvent liveEvent) throws JMSException {
 		League league = new League(liveEvent.getLeague_id());
 		Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
 		MatchEvent matchEvent = leagueMap.get(liveEvent.getId());
 		if (matchEvent != null) {//live details exist for the match
 			return;
 		}
+		
+		produceTopicMessage(liveEvent, ChangeEvent.MATCH_START);
 		
 		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
 		Map<Integer, MatchEvent> leagueEvents = todayLeaguesWithEvents.get(league);
