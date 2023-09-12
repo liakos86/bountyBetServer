@@ -3,25 +3,20 @@ package gr.server.data.live.helper;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.stream.Collectors;
 
 import javax.jms.JMSException;
 
 import gr.server.application.RestApplication;
-import gr.server.application.SoccerEventsTopicProducer;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.Score;
 import gr.server.data.api.model.events.Updates;
-import gr.server.data.api.model.league.League;
 import gr.server.data.enums.MatchEventPeriodStatus;
 import gr.server.data.enums.MatchEventStatus;
-import gr.server.util.DateUtils;
 
 public class LiveUpdatesHelper {
 	
-	SoccerEventsTopicProducer topicProducer = RestApplication.SOCCER_EVENTS_TOPIC_PRODUCER;
+//	SoccerEventsTopicProducer topicProducer = RestApplication.SOCCER_EVENTS_TOPIC_PRODUCER;
 	
 	/**
 	 * Multiple match updates arrive here.
@@ -41,113 +36,14 @@ public class LiveUpdatesHelper {
 		
 		List<MatchEvent> liveUpdates = updates.getData().getData();
 		for (MatchEvent liveEvent : liveUpdates) {
-			createLiveEntryForUnknownLeague(liveEvent);
-			createLiveEntryForTheMissingLeague(liveEvent);
-			createLiveEntryForTheMissingMatch(liveEvent);
+			MatchEvent relatedMatch = RestApplication.ALL_EVENTS.get(liveEvent.getId());
 			
-			League league = new League(liveEvent.getLeague_id());
-			Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
-			MatchEvent matchEvent = leagueMap.get(liveEvent.getId());
-			if (matchEvent == null) {// no live details yet for the match
-				System.out.println("*************** NO MATCH!!! ************");
-			}
-			
-			checkHomeGoal(matchEvent, liveEvent);
-			checkAwayGoal(matchEvent, liveEvent);
-			updateStatus(matchEvent, liveEvent);
-			checkMarkForRemoval(matchEvent, liveEvent);
-			if (matchEvent.isMarkedForRemoval()) {
-				leagueMap.remove(matchEvent.getId());
-				continue;
-			}
-		
+			checkHomeGoal(relatedMatch, liveEvent);
+			checkAwayGoal(relatedMatch, liveEvent);
+			checkMatchStatus(relatedMatch, liveEvent);
 		}
 	}
-	
-	/**
-	 * If the input live event belongs to a league that is missing from the {@link RestApplication#LIVE_EVENTS_PER_LEAGUE}.
-	 * We find the actual league from the {@link RestApplication#EVENTS_PER_DAY_PER_LEAGUE},
-	 * 
-	 * @param liveEvent
-	 * @param league
-	 */
-	private void createLiveEntryForTheMissingLeague(MatchEvent liveEvent) {
-		League league = new League(liveEvent.getLeague_id());
-		if (RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league) != null) {//live events exist for the league
-			return;
-		}
 		
-		Map<Integer, MatchEvent> leagueMap = new HashMap<>();
-		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
-		
-		int id = league.getId();
-		league = todayLeaguesWithEvents.keySet().stream().filter(l->l.getId()==id).collect(Collectors.toList()).get(0);
-		
-		Map<Integer, MatchEvent> leagueEvents = todayLeaguesWithEvents.get(league);
-		MatchEvent matchEvent = leagueEvents.get(liveEvent.getId());
-		leagueMap.put(liveEvent.getId(), matchEvent);
-		RestApplication.LIVE_EVENTS_PER_LEAGUE.put(league, leagueMap);
-	}
-	
-	/**
-	 * If the input live event has no league id,
-	 * We find the actual league from the {@link RestApplication#EVENTS_PER_DAY_PER_LEAGUE}, 
-	 * searching with the event id.
-	 * 
-	 * @param liveEvent
-	 */
-	private void createLiveEntryForUnknownLeague(MatchEvent liveEvent) {
-		if (liveEvent.getLeague_id() != null) {
-			return;
-		}
-		
-		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
-		
-		League unknownLeague = null;
-		for(Entry<League, Map<Integer, MatchEvent>> todayLeagueEntry : todayLeaguesWithEvents.entrySet()) {
-			Map<Integer, MatchEvent> todayLeagueEvents = todayLeagueEntry.getValue();
-			MatchEvent matchEvent = todayLeagueEvents.get(liveEvent.getId());
-			if (matchEvent != null) {
-				unknownLeague = todayLeagueEntry.getKey();
-				liveEvent.setLeague_id(unknownLeague.getId());
-				liveEvent.setLeague(unknownLeague);
-				break;
-			}
-		}
-		
-		RestApplication.LIVE_EVENTS_PER_LEAGUE.put(unknownLeague, new HashMap<>());
-		System.out.println("********* LEAGUE " + unknownLeague + " WAS ADDED ***************");
-	}
-	
-	/**
-	 * If the input live event belongs to a league that is missing from the {@link RestApplication#LIVE_EVENTS_PER_LEAGUE}.
-	 * We find the actual league from the {@link RestApplication#EVENTS_PER_DAY_PER_LEAGUE},
-	 *  
-	 * 
-	 * @param liveEvent
-	 * @param league
-	 * @throws JMSException 
-	 */
-	private void createLiveEntryForTheMissingMatch(MatchEvent liveEvent) throws JMSException {
-		League league = new League(liveEvent.getLeague_id());
-		Map<Integer, MatchEvent> leagueMap = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(league);
-		MatchEvent matchEvent = leagueMap.get(liveEvent.getId());
-		if (matchEvent != null) {//live details exist for the match
-			return;
-		}
-		
-		produceTopicMessage(liveEvent, ChangeEvent.MATCH_START);
-		
-		Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(DateUtils.todayStr());
-		Map<Integer, MatchEvent> leagueEvents = todayLeaguesWithEvents.get(league);
-		liveEvent = leagueEvents.get(liveEvent.getId());
-		liveEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
-		liveEvent.setMain_odds(null);
-		leagueMap.put(liveEvent.getId(), liveEvent);
-		RestApplication.MINUTE_TRACKER.track(liveEvent);
-		System.out.println("********* TRACKING " + liveEvent + " ***************");
-	}
-
 	private void checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
 		if (matchEvent.getAway_score() == null) {
 			matchEvent.setAway_score(new Score());
@@ -158,22 +54,19 @@ public class LiveUpdatesHelper {
 		}
 		
 		if (matchEvent.awayGoalScored(liveEvent.getAway_score())) {
-			matchEvent.setChangeEvent(ChangeEvent.AWAY_GOAL);
+			matchEvent.setAway_score(liveEvent.getAway_score());
 			produceTopicMessage(liveEvent, ChangeEvent.AWAY_GOAL);
-		} else {
-			matchEvent.setChangeEvent(ChangeEvent.NONE);
-		}
+		} 
 		
-		matchEvent.setAway_score(liveEvent.getAway_score());
 	}
 
-	private void produceTopicMessage(MatchEvent liveEvent, ChangeEvent event) throws JMSException {
+	private void produceTopicMessage(MatchEvent liveEvent, ChangeEvent event) {
 		Map<String, Object> msg = new HashMap<>();
 		msg.put("eventId", liveEvent.getId());
 		msg.put("changeEvent", event);
 		msg.put("homeScore", liveEvent.getHome_score());
 		msg.put("awayScore", liveEvent.getAway_score());
-		topicProducer.sendTopicMessage(msg);
+		RestApplication.sendTopicMessage(msg);
 	}
 
 	private void checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
@@ -186,52 +79,71 @@ public class LiveUpdatesHelper {
 		}
 
 		if (matchEvent.homeGoalScored(liveEvent.getHome_score())) {
-			matchEvent.setChangeEvent(ChangeEvent.HOME_GOAL);
-			produceTopicMessage(liveEvent, ChangeEvent.HOME_GOAL);
-		} else {
-			matchEvent.setChangeEvent(ChangeEvent.NONE);
+			matchEvent.setHome_score(liveEvent.getHome_score());
+			produceTopicMessage(matchEvent, ChangeEvent.HOME_GOAL);
 		}
 		
-		matchEvent.setHome_score(liveEvent.getHome_score());
 	}
 
-	private static void checkMarkForRemoval(MatchEvent matchEvent, MatchEvent liveEvent) {
-		if (liveEvent.getTime_live().toString().equalsIgnoreCase("Ended") 
-				|| liveEvent.getStatus().equalsIgnoreCase("finished") ) {
-//				|| liveEvent.getStatus_loc().equalsIgnoreCase("finished")) {
-			matchEvent.setMarkedForRemoval(true);
-			RestApplication.MINUTE_TRACKER.discard(liveEvent);
-		}
-	}
 
-	public static void updateStatus(MatchEvent matchEvent, MatchEvent liveEvent) {
-//		System.out.println();
-//		System.out.print(liveEvent.getId() + " ** LIVE EVENT HAS: time live " + liveEvent.getTime_live());
-//		System.out.print( " *** : time det " + liveEvent.getTime_details());
-//		System.out.print( " *** : status " + liveEvent.getStatus());
-//		System.out.print(" *** : status more " + liveEvent.getStatus_more());
+	public void checkMatchStatus(MatchEvent relatedEvent, MatchEvent liveEvent) throws JMSException {
+		String previousStatusTxt = relatedEvent.getStatus();
+		MatchEventStatus previousStatus = MatchEventStatus.fromStatusText(previousStatusTxt);
 		
-		matchEvent.setStatus(liveEvent.getStatus());//remove?
+		String previousStatusMoreTxt = relatedEvent.getStatus_more();
+		MatchEventPeriodStatus previousStatusMore = MatchEventPeriodStatus.fromStatusMoreText(previousStatusMoreTxt);
 		
 		Object time_live = liveEvent.getTime_live();
 		if (time_live == null) {
+			System.out.println("***************** TIME LIVE NULL");
 			return;
 		}
 		
 		String time_live_str = time_live.toString();
 		MatchEventPeriodStatus liveEventPeriodStatus = MatchEventPeriodStatus.fromStatusMoreText(time_live_str);
-		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(liveEventPeriodStatus)
-				|| MatchEventPeriodStatus.INPROGRESS_1ST_HALF.equals(liveEventPeriodStatus)
-					|| MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(liveEventPeriodStatus)) {
-			matchEvent.setStatus_more(liveEventPeriodStatus.getStatusStr());
-			matchEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
-			return;
+		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(liveEventPeriodStatus)){
+			if (MatchEventPeriodStatus.INPROGRESS_HALFTIME != previousStatusMore) {
+				produceTopicMessage(relatedEvent, ChangeEvent.HALF_TIME);
+			}
+			
+			relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
+			relatedEvent.setStatus_more(MatchEventPeriodStatus.INPROGRESS_HALFTIME.getStatusStr());
 		}
 		
-		if (MatchEventStatus.FINISHED.equals(MatchEventStatus.fromStatusText(liveEvent.getStatus()))){
-			matchEvent.setStatus(MatchEventStatus.FINISHED.getStatusStr());
-			matchEvent.setStatus_more(MatchEventPeriodStatus.GAME_FINISHED.getStatusStr());
-			return;
+		else if (MatchEventPeriodStatus.INPROGRESS_1ST_HALF.equals(liveEventPeriodStatus)) {
+			
+			if (previousStatusMore == null 
+					|| previousStatusMore == MatchEventPeriodStatus.FINAL_RESULT_ONLY
+					|| previousStatusMore == MatchEventPeriodStatus.EMPTY
+					|| previousStatus == MatchEventStatus.NOTSTARTED) {
+				System.out.println("MATCH START " + relatedEvent.getHome_team().getName());
+				produceTopicMessage(relatedEvent, ChangeEvent.MATCH_START);
+			}
+			
+			relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
+			relatedEvent.setStatus_more(MatchEventPeriodStatus.INPROGRESS_1ST_HALF.getStatusStr());
+		}
+		
+		else if (MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(liveEventPeriodStatus)) {
+	    	if (MatchEventPeriodStatus.INPROGRESS_HALFTIME == previousStatusMore) {
+	    		produceTopicMessage(relatedEvent, ChangeEvent.SECOND_HALF_START);
+	    	}
+	    	
+	    	relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
+			relatedEvent.setStatus_more(MatchEventPeriodStatus.INPROGRESS_2ND_HALF.getStatusStr());
+	    	
+	    }
+
+		else if (MatchEventStatus.FINISHED.equals(MatchEventStatus.fromStatusText(liveEvent.getStatus()))){
+	    	if (MatchEventPeriodStatus.GAME_FINISHED != previousStatusMore) {
+	    		produceTopicMessage(relatedEvent, ChangeEvent.MATCH_END);
+	    	}
+	    	
+			relatedEvent.setStatus(MatchEventStatus.FINISHED.getStatusStr());
+			relatedEvent.setStatus_more(MatchEventPeriodStatus.GAME_FINISHED.getStatusStr());
+			
+		}else {
+			System.out.println("******************* OOOOOOOOOOPS no change status for " + liveEvent.getId() + " --- " + liveEvent.getStatus() + " ---- " + liveEvent.getStatus_more() + " --- " + liveEvent.getTime_live());
 		}
 		
 	}

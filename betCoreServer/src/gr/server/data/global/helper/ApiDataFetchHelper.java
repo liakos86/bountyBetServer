@@ -12,11 +12,9 @@ import java.util.Map;
 
 import gr.server.application.RestApplication;
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.api.model.events.MatchEventIncidents;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
 import gr.server.data.enums.MatchEventStatus;
-import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.SportScoreClient;
 import gr.server.util.DateUtils;
 
@@ -35,24 +33,31 @@ public class ApiDataFetchHelper {
 		List<Date> datesToFetch = getDatesToFetchList();
 		
 		for (Date date : datesToFetch) {
-			List<MatchEvent> events = new ArrayList<>();
-			try {
-				events = SportScoreClient.getEvents(date).getData();
-				events.forEach(e -> { if (!RestApplication.ALL_EVENTS.containsKey(e.getId())) {
-												RestApplication.ALL_EVENTS.put(e.getId(), e);
-										}
-									}
-				);
-			} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
-				System.out.println("EVENTS ERROR " + date);
-				e.printStackTrace();
-				return;
-			}
-			
+			List<MatchEvent> events = eventsForDate(date);
 			splitEventsIntoLeaguesAndDays(date, events);
 			splitEventsIntoLiveLeagues(events);
 		}
 
+	}
+	
+	public static List<MatchEvent> eventsForDate(Date date){
+		List<MatchEvent> events = new ArrayList<>();
+		
+		
+		try {
+			
+			events = SportScoreClient.getEvents(date).getData();
+			events.forEach(e -> { if (!RestApplication.ALL_EVENTS.containsKey(e.getId())) {
+											RestApplication.ALL_EVENTS.put(e.getId(), e);
+									}
+								}
+			);
+		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
+			System.out.println("EVENTS ERROR " + date);
+			e.printStackTrace();
+		}
+		
+		return events;
 	}
 
 	private static List<Date> getDatesToFetchList() {
@@ -106,14 +111,6 @@ public class ApiDataFetchHelper {
 
 	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
 		
-		/**
-		 * 
-		 * TODO: REMOVE
-		 * 
-		 * MANUALLY creating live match.
-		 * 
-		 */
-		events.get(0).setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
 		
 		for (MatchEvent matchEvent : events) {
 			if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(matchEvent.getStatus()))) {
@@ -122,28 +119,27 @@ public class ApiDataFetchHelper {
 			
 			System.out.println("********* LIVE MATCH FOUND");
 			
-			League matchLeague = matchEvent.getLeague();
-			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
-			if (leagueEvents == null) {
-				RestApplication.LIVE_EVENTS_PER_LEAGUE.put(matchLeague, new HashMap<>());
-			}
+//			League matchLeague = matchEvent.getLeague();
+//			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
+//			if (leagueEvents == null) {
+//				RestApplication.LIVE_EVENTS_PER_LEAGUE.put(matchLeague, new HashMap<>());
+//			}
 
 			//MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
 			//matchEvent.setIncidents(matchEventIncidents);
-			RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague).put(matchEvent.getId(), matchEvent);
-			RestApplication.MINUTE_TRACKER.track(matchEvent);
+//			RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague).put(matchEvent.getId(), matchEvent);
+			//RestApplication.MINUTE_TRACKER.track(matchEvent);
 		}
 		
-		int liveLeagues = RestApplication.LIVE_EVENTS_PER_LEAGUE.size();
-		System.out.println("LIVE: " + liveLeagues);
-		
+//		int liveLeagues = RestApplication.LIVE_EVENTS_PER_LEAGUE.size();
+//		System.out.println("LIVE: " + liveLeagues);
 		
 	}
 
+	
 	/**
 	 * Input is a date with all its games.
 	 * We find the league that every game belongs to and add the game to that league's games.
-	 * TODO: a null league appears in some games. we create a dummy league and assign all those games.
 	 * 
 	 * @param date
 	 * @param events
@@ -154,8 +150,10 @@ public class ApiDataFetchHelper {
 			League league = event.getLeague();
 			if (league == null) {
 				league = RestApplication.LEAGUES.get(event.getLeague_id());
-				if (league == null) {
+				if (league == null) {//can be null because we fetch mock leagues to reduce calls
+					System.out.println("CREATING DUMMY LEAGUE FOR " + event.getLeague_id());
 					league = createDummyLeague();
+					RestApplication.LEAGUES.put(event.getLeague_id(), league);
 				}
 				event.setLeague(league);
 			}

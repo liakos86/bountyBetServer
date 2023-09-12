@@ -8,12 +8,17 @@ import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.bet.enums.PredictionType;
 
 
-public class UserPrediction implements Serializable {
+public class UserPrediction 
+implements Serializable {
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	String mongoId;
+
+	String mongoBetId;
 
 	int eventId;
 	
@@ -84,6 +89,22 @@ public class UserPrediction implements Serializable {
 
 	public void setEvent(MatchEvent event) {
 		this.event = event;
+	}
+
+	public String getMongoId() {
+		return mongoId;
+	}
+
+	public void setMongoId(String mongoId) {
+		this.mongoId = mongoId;
+	}
+
+	public String getMongoBetId() {
+		return mongoBetId;
+	}
+
+	public void setMongoBetId(String mongoBetId) {
+		this.mongoBetId = mongoBetId;
 	}
 	
 }

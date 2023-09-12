@@ -18,7 +18,7 @@ import gr.server.data.api.model.league.League;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.constants.CollectionNames;
-import gr.server.data.constants.Fields;
+import gr.server.data.constants.MongoFields;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
@@ -35,7 +35,7 @@ public class MongoCollectionUtils {
 			 String json = document.toJson();
 			 E object = (E) e.execute(json);
 			 if (object instanceof UserBet){
-				 ((UserBet)object).setMongoId(document.getObjectId(Fields.MONGO_ID).toString());
+				 ((UserBet)object).setMongoId(document.getObjectId(MongoFields.MONGO_ID).toString());
 			 }
 			 
 			list.add(object);
@@ -51,7 +51,7 @@ public class MongoCollectionUtils {
 			 String json = document.toJson();
 			 E object = (E) e.execute(json);
 			 if (object instanceof User){//very very dirty
-				((User) object).setMongoId(document.getObjectId(Fields.MONGO_ID).toString()); 
+				((User) object).setMongoId(document.getObjectId(MongoFields.MONGO_ID).toString()); 
 			 }
 			list.add(object);
 		 }
@@ -61,7 +61,7 @@ public class MongoCollectionUtils {
 	public static UserBet updateBet(UserBet userBet){
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> collection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.BETS);
-		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoId()) );
+		Document filter = new Document(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()) );
 		Document updateFieldDocument = new Document("betStatus", userBet.getBetStatus());
 		for (int i =0; i < userBet.getPredictions().size(); i++){
 			updateFieldDocument.append("predictions."+String.valueOf(i)+".predictionStatus", userBet.getPredictions().get(i).getPredictionStatus());
@@ -76,7 +76,7 @@ public class MongoCollectionUtils {
 		Document newBet = new Document("mongoUserId", userBet.getMongoUserId())
 				.append("betAmount", userBet.getBetAmount())
 				.append("betStatus", userBet.getBetStatus())
-				.append(Fields.BET_PLACE_DATE, userBet.getBetPlaceDate());
+				.append(MongoFields.BET_PLACE_DATE, userBet.getBetPlaceDate());
 
 		BasicDBList newBetPredictions = new BasicDBList();
 
@@ -105,20 +105,20 @@ public class MongoCollectionUtils {
 	public static void updateUser(UserBet userBet) {
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> usersCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.USERS);
-		Document filter = new Document(Fields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
+		Document filter = new Document(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
 
 		Document userFieldsDocument = new Document();
 		if (userBet.getBetStatus() == BetStatus.SETTLED_FAVOURABLY){//bet won
 			userFieldsDocument.append("wonSlipsCount", 1)
 			.append("wonEventsCount", userBet.getPredictions().size())
-			.append(Fields.USER_BALANCE, userBet.getPossibleEarnings());
+			.append(MongoFields.USER_BALANCE, userBet.getPossibleEarnings());
 		}else if (userBet.getBetStatus() == BetStatus.SETTLED_UNFAVOURABLY){//bet lost
 			int correctPredictions = numOfSuccessFullPredictions(userBet);
 			userFieldsDocument.append("lostSlipsCount", 1)
 			.append("wonEventsCount", correctPredictions)
 			.append("lostEventsCount", userBet.getPredictions().size() - correctPredictions);
 		}else if (userBet.getBetStatus() == BetStatus.PENDING){// bet placed
-			userFieldsDocument.append(Fields.USER_BALANCE, -1 * (userBet.getBetAmount()));
+			userFieldsDocument.append(MongoFields.USER_BALANCE, -1 * (userBet.getBetAmount()));
 		}
 		Document increaseOrDecreaseDocument = new Document("$inc", userFieldsDocument);
 		usersCollection.findOneAndUpdate(filter, increaseOrDecreaseDocument);
@@ -146,7 +146,7 @@ public class MongoCollectionUtils {
 	 */
 	public static Document getEventDocument(MatchEvent event) throws ParseException {
 		
-		Document newEvent = new Document(Fields.ID, event.getId())
+		Document newEvent = new Document(MongoFields.ID, event.getId())
 //		.append("league_id", event.getLeagueId())
 //		.append("country_id", event.getCountryId())
 		.append("match_hometeam_name", event.getHome_team().getName())
@@ -167,11 +167,11 @@ public class MongoCollectionUtils {
 	}
 
 	public static Document getBetDocument(UserBet userBet) {
-		Document newBet = new Document(Fields.BET_MONGO_USER_ID, userBet.getMongoUserId())
-				.append(Fields.BET_AMOUNT, userBet.getBetAmount())
-				.append(Fields.BET_STATUS, userBet.getBetStatus())
-				.append(Fields.BET_PLACE_DATE, userBet.getBetPlaceDate())
-				.append(Fields.BET_BELONGING_MONTH, DateUtils.getPastMonthAsString(0));
+		Document newBet = new Document(MongoFields.BET_MONGO_USER_ID, userBet.getMongoUserId())
+				.append(MongoFields.BET_AMOUNT, userBet.getBetAmount())
+				.append(MongoFields.BET_STATUS, userBet.getBetStatus())
+				.append(MongoFields.BET_PLACE_DATE, userBet.getBetPlaceDate())
+				.append(MongoFields.BET_BELONGING_MONTH, DateUtils.getPastMonthAsString(0));
 
 		BasicDBList newBetPredictions = new BasicDBList();
 
@@ -197,12 +197,12 @@ public class MongoCollectionUtils {
 		 .append("lostEventsCount", 0)
 		 .append("wonSlipsCount", 0)
 		 .append("lostSlipsCount", 0)
-		 .append(Fields.USER_OVERALL_WON_EVENTS, 0)
-		 .append(Fields.USER_OVERALL_LOST_EVENTS, 0)
-		 .append(Fields.USER_OVERALL_WON_SLIPS, 0)
-		 .append(Fields.USER_OVERALL_LOST_SLIPS, 0)
-		 .append(Fields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
-		 .append(Fields.USER_AWARDS, new BasicDBList());
+		 .append(MongoFields.USER_OVERALL_WON_EVENTS, 0)
+		 .append(MongoFields.USER_OVERALL_LOST_EVENTS, 0)
+		 .append(MongoFields.USER_OVERALL_WON_SLIPS, 0)
+		 .append(MongoFields.USER_OVERALL_LOST_SLIPS, 0)
+		 .append(MongoFields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
+		 .append(MongoFields.USER_AWARDS, new BasicDBList());
 	}
 
 	public static Document getLeagueDocument(League competition) {
@@ -231,7 +231,7 @@ public class MongoCollectionUtils {
 	
 	public static long userPosition(User user){
 		Document userBalance = new Document("$gt", user.getBalance());
-		Document greaterBalancedUsers = new Document(Fields.USER_BALANCE, userBalance);
+		Document greaterBalancedUsers = new Document(MongoFields.USER_BALANCE, userBalance);
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> usersCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.USERS);
 		return usersCollection.countDocuments(greaterBalancedUsers);
@@ -239,9 +239,9 @@ public class MongoCollectionUtils {
 
 	public static Document createAwardFor(ClientSession startSession, User monthWinner) {
 		Document awardDocument = new Document();
-		awardDocument.append(Fields.AWARD_WINNER, monthWinner.getMongoId())
-		.append(Fields.AWARD_MONTH, DateUtils.getPastMonthAsString(0))
-		.append(Fields.AWARD_BALANCE, monthWinner.getBalance());
+		awardDocument.append(MongoFields.AWARD_WINNER, monthWinner.getMongoId())
+		.append(MongoFields.AWARD_MONTH, DateUtils.getPastMonthAsString(0))
+		.append(MongoFields.AWARD_BALANCE, monthWinner.getBalance());
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> awardsCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.AWARDS);
 		awardsCollection.insertOne(startSession, awardDocument);
@@ -249,8 +249,8 @@ public class MongoCollectionUtils {
 	}
 
 	public static void updateUserAwards(ClientSession startSession, User monthWinner, ObjectId awardId) {
-		Document userFilter = new Document(Fields.FOREIGN_KEY_USER_ID, monthWinner.getMongoId());
-		Document newAwardDocument = new Document(Fields.USER_AWARDS_IDS, awardId.toString());
+		Document userFilter = new Document(MongoFields.FOREIGN_KEY_USER_ID, monthWinner.getMongoId());
+		Document newAwardDocument = new Document(MongoFields.USER_AWARDS_IDS, awardId.toString());
 		Document pushDocument = new Document("$push", newAwardDocument);
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> usersCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.USERS);
@@ -258,7 +258,7 @@ public class MongoCollectionUtils {
 	}
 
 	public static void restoreUserBalance(ClientSession startSession) {
-		Document balanceFilter = new Document(Fields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE);
+		Document balanceFilter = new Document(MongoFields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE);
 		Document setBalance = new Document("$set", balanceFilter);
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> usersCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.USERS);
@@ -266,7 +266,7 @@ public class MongoCollectionUtils {
 	}
 
 	public static void deleteUserBetsFor(ClientSession startSession, String pastMonthAsString) {
-		Document belongingMonthFilter = new Document(Fields.BET_BELONGING_MONTH, pastMonthAsString);
+		Document belongingMonthFilter = new Document(MongoFields.BET_BELONGING_MONTH, pastMonthAsString);
 		MongoClient client = SyncHelper.getMongoClient();
 		MongoCollection<Document> betsCollection = client.getDatabase(CollectionNames.BOUNTY_BET_DB).getCollection(CollectionNames.BETS);
 		betsCollection.deleteMany(startSession, belongingMonthFilter);

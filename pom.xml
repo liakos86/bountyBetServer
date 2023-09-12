@@ -38,13 +38,11 @@
 	<dependencies>
 	
 	<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
-<dependency>
-    <groupId>javax.mail</groupId>
-    <artifactId>mail</artifactId>
-    <version>1.4.7</version>
-</dependency>
-
-
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>1.4.7</version>
+		</dependency>
 
 
 		<dependency>
@@ -73,6 +71,21 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.activemq</groupId>
+		    <artifactId>activemq-all</artifactId>
+		    <version>5.17.3</version>
+		    <scope>provided</scope>
+		</dependency>
+
+		
+		<dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>6.0</version>
+      <scope>provided</scope>
+    </dependency>
 
 		<!-- API, java.xml.bind module -->
 		<dependency>

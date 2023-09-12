@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import gr.server.application.RestApplication;
+import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Leagues;
 import gr.server.data.api.model.league.Season;
@@ -23,6 +24,11 @@ public class MockApiDataFetchHelper {
 	public static void fetchSections() {
 		Sections sectionsFromFile = MockApiClient.getSectionsFromFile();
 		sectionsFromFile.getData().forEach(l -> RestApplication.SECTIONS.put(l.getId(), l));
+	}
+	
+	public static Events fetchEvents(String filename) {
+		Events eventsFromFile = MockApiClient.getEventsFromFile(filename);
+		return eventsFromFile;
 	}
 
 	static Standings fetchLeagueStandings() {

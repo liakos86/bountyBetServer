@@ -2,11 +2,9 @@ package gr.server.impl.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -26,15 +24,13 @@ import gr.server.data.api.model.events.Score;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
-import gr.server.data.bet.enums.BetStatus;
-import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
-import gr.server.data.user.model.objects.UserPrediction;
 import gr.server.def.service.MyBetOddsService;
 import gr.server.email.EmailSendUtil;
 import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.mongo.util.SyncHelper;
 import gr.server.util.SecureUtils;
 
 
@@ -54,18 +50,10 @@ implements MyBetOddsService {
 		UserBet newBet =  new Gson().fromJson(userBetJson,
 				new TypeToken<UserBet>() {}.getType());
 		
-		/**
-		 * TODO: validations
-		 */
-		
-		newBet.setBetStatus(BetStatus.PENDING);
-		for (UserPrediction betPrediction: newBet.getPredictions()) {
-			betPrediction.setPredictionStatus(PredictionStatus.PENDING);
-		}
-		
-		new MongoClientHelperImpl().placeBet(newBet);
+		SyncHelper.placeBet(newBet);
 		
 		return getUser(newBet.getMongoUserId());	
+		
 	}
 	
 	@Override
@@ -162,15 +150,20 @@ implements MyBetOddsService {
 				Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
 				List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
 				league.setMatchEvents(events);
-				events.forEach(e->e.setLeague(null));
+				events.forEach(e->e.setLeague(null));//prevent stackoverflow
 				Collections.sort(league.getMatchEvents());
 				dailyLeagues.add(league);
+				
+				Integer priorityOverride = RestApplication.PRIORITIES_OVERRIDDE.get(league.getId());
+				if (priorityOverride!=null && priorityOverride > 0) {
+					league.setPriority(priorityOverride);
+				}else if (league.getPriority() == null) {
+					league.setPriority(0);
+				}
+				
 			}
 			
 			Collections.sort(dailyLeagues);
-			
-			if (dailyEntry.getKey().contains("23"))
-				dailyLeagues.forEach(l-> System.out.println(l));
 			
 			leaguesPerDay.put(dailyEntry.getKey(), dailyLeagues);
 		}
@@ -179,39 +172,39 @@ implements MyBetOddsService {
 	
 	}
 	
-	@Override
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/getLive")
-	public String getLive(){
-		List<League> leagues = new ArrayList<>();
-		for (Entry<League, Map<Integer, MatchEvent>> entry : new HashMap<>(RestApplication.LIVE_EVENTS_PER_LEAGUE).entrySet()) {
-			League league = entry.getKey();
-			if (league == null) {
-				RestApplication.LIVE_EVENTS_PER_LEAGUE.remove(league);
-				continue;
-			}
-			
-			
-			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
-			if (eventsOfLeagueMap == null || eventsOfLeagueMap.isEmpty()) {
-				continue;
-			}
-			
-			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
-			league.setMatchEvents(events);
-			if (league.getSection_id() > 0) {
-				league.setSection(RestApplication.SECTIONS.get(league.getSection_id()));
-			}
-			events.forEach(e->fixEvent(e));
-			Collections.sort(events);
-			leagues.add(league);
-		}
-		
-		Collections.sort(leagues);
-		
-		return  new Gson().toJson(leagues);
-	}
+//	@Override
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	@Path("/getLive")
+//	public String getLive(){
+//		List<League> leagues = new ArrayList<>();
+//		for (Entry<League, Map<Integer, MatchEvent>> entry : new HashMap<>(RestApplication.LIVE_EVENTS_PER_LEAGUE).entrySet()) {
+//			League league = entry.getKey();
+//			if (league == null) {
+//				RestApplication.LIVE_EVENTS_PER_LEAGUE.remove(league);
+//				continue;
+//			}
+//			
+//			
+//			Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
+//			if (eventsOfLeagueMap == null || eventsOfLeagueMap.isEmpty()) {
+//				continue;
+//			}
+//			
+//			List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
+//			league.setMatchEvents(events);
+//			if (league.getSection_id() > 0) {
+//				league.setSection(RestApplication.SECTIONS.get(league.getSection_id()));
+//			}
+//			events.forEach(e->fixEvent(e));
+//			Collections.sort(events);
+//			leagues.add(league);
+//		}
+//		
+//		Collections.sort(leagues);
+//		
+//		return  new Gson().toJson(leagues);
+//	}
 
 	@Override
 	@GET
@@ -219,16 +212,8 @@ implements MyBetOddsService {
 	@Path("/getLeaderBoard")
 	public Response getLeaderBoard(){
 		return  Response.ok(new Gson().toJson(new MongoClientHelperImpl().retrieveLeaderBoard())).build(); 
-	
 	}
 
-	private void fixEvent(MatchEvent e) {
-		e.setLeague(null);
-		if (e.getStatus_for_client() == null) {
-			e.setStatus_for_client(e.getStatus());
-		}
-	}
-	
 	/**
 	 * Every prediction of every bet has an eventId, which is the match that corresponds to it.
 	 * We try to find the match in the cache. Obviously it is not always there.
@@ -241,7 +226,10 @@ implements MyBetOddsService {
 	private User getUserFromMongoId(String mongoId) {
 		User user = new MongoClientHelperImpl().getUser(mongoId);
 		user.getUserBets().forEach(b-> b.getPredictions().forEach(
-				p -> {
+			p -> {
+					/**
+					 * TODO: Call api here? or save event info in mongo?
+					 */
 					MatchEvent event = RestApplication.ALL_EVENTS.get(p.getEventId());
 					if (event == null) {
 						event = mockEvent();

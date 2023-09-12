@@ -19,6 +19,7 @@ implements WebSocketMessageHandler{
 			return;
 		}
 		
+		
 		System.out.println("RECEIVED " + msg);
 		String replacedMsg = msg
 				.replace("\\\"", "\"")

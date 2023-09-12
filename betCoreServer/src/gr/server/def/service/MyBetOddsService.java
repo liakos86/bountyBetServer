@@ -26,7 +26,7 @@ public interface MyBetOddsService {
 
 	String validateUser(String email) throws Exception;
 
-	String getLive();
+//	String getLive();
 
 	//String getLiveUpdates();
 

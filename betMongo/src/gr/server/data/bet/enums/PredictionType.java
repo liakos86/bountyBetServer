@@ -12,10 +12,10 @@ public enum PredictionType implements Serializable{
 	HOME_WIN(PredictionCategory.FINAL_RESULT, 1),
 	
 	@SerializedName("2")
-	DRAW(PredictionCategory.FINAL_RESULT, 2),
+	AWAY_WIN(PredictionCategory.FINAL_RESULT, 2),
 	
 	@SerializedName("3")
-	AWAY_WIN(PredictionCategory.FINAL_RESULT, 3);
+	DRAW(PredictionCategory.FINAL_RESULT, 3);
 	
 	private static final long serialVersionUID = 1L;
 	private int code;
@@ -38,5 +38,14 @@ public enum PredictionType implements Serializable{
 		List<Integer> codes = new ArrayList<>();
 		predictionTypes.forEach(predictionType -> codes.add(predictionType.getCode()));
 		return codes;
+	}
+
+	public static PredictionType fromCode(int winner_code) {
+		for (PredictionType predType : PredictionType.values()) {
+			if (predType.code == winner_code) {
+				return predType;
+			}
+		}
+		return null;
 	}
 }

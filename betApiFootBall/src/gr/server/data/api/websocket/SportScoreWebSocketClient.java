@@ -22,33 +22,16 @@ public class SportScoreWebSocketClient {
 	
 	Session userSession = null;
     private WebSocketMessageHandler messageHandler;
+    private URI webSocketUri;
 
     public SportScoreWebSocketClient(URI endpointURI, WebSocketMessageHandler handler) {
     	this.messageHandler = handler;
+    	this.webSocketUri = endpointURI;
     	
-        try {
-        	final ClientManager client = ClientManager.createClient();
-        	System.getProperties().put(SSLContextConfigurator.TRUST_STORE_FILE, "cacerts.jks");
-        	System.getProperties().put(SSLContextConfigurator.TRUST_STORE_PASSWORD, "");
-        	final SSLContextConfigurator defaultConfig = new SSLContextConfigurator();
-        	defaultConfig.retrieve(System.getProperties());
-
-        	SSLEngineConfigurator sslEngineConfigurator =
-        	    new SSLEngineConfigurator(defaultConfig, true, false, false);
-        	client.getProperties().put(ClientProperties.SSL_ENGINE_CONFIGURATOR,
-        	    sslEngineConfigurator);
-        	client.connectToServer(this , endpointURI);
-        	
-//            WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-//            container.connectToServer(this, endpointURI);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        
-        
+        connect();
         
     }
-
+    
 	@OnOpen
 	public void onOpen(Session session) {
 		System.out.println("--- Connected " + session.getId());
@@ -86,6 +69,12 @@ public class SportScoreWebSocketClient {
 		System.out.println("--- Session: " + session.getId());
 		System.out.println("--- Closing because: " + closeReason);
 		this.userSession = null;
+		
+		connect();
+		System.out.println("--- RECONNECTED!!!!!! " + closeReason);
+		System.out.println("--- RECONNECTED!!!!!! " + closeReason);
+		System.out.println("--- RECONNECTED!!!!!! " + closeReason);
+		System.out.println("--- RECONNECTED!!!!!! " + closeReason);
 	}
 
 	public void sendMessage(String message) {
@@ -94,6 +83,25 @@ public class SportScoreWebSocketClient {
 		}
 		
 		this.userSession.getAsyncRemote().sendText(message);
+	}
+	
+	private void connect() {
+		try {
+        	final ClientManager client = ClientManager.createClient();
+        	System.getProperties().put(SSLContextConfigurator.TRUST_STORE_FILE, "cacerts.jks");
+        	System.getProperties().put(SSLContextConfigurator.TRUST_STORE_PASSWORD, "");
+        	final SSLContextConfigurator defaultConfig = new SSLContextConfigurator();
+        	defaultConfig.retrieve(System.getProperties());
+
+        	SSLEngineConfigurator sslEngineConfigurator =
+        	    new SSLEngineConfigurator(defaultConfig, true, false, false);
+        	client.getProperties().put(ClientProperties.SSL_ENGINE_CONFIGURATOR,
+        	    sslEngineConfigurator);
+        	client.connectToServer(this , webSocketUri);
+        	
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 	}
 	
 }

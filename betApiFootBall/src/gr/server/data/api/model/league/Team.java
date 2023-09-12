@@ -216,7 +216,7 @@ public class Team {
 	
 	@Override
 	public String toString() {
-		return "Team:"+this.name;
+		return "Team:"+this.name + "  -  " + this.id;
 	}
 	
 }

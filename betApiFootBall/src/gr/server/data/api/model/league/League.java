@@ -225,19 +225,10 @@ public class League implements Comparable<League>{
 
 	@Override
 	public int compareTo(League other) {
-		if (this.section == null) {
-			return 1;
-		}
 		
-		if (other.section == null) {
-			return -1;
-		}
 		
-		if (this.section.priority == other.section.priority ) {
-			return 0;
-		}
 		
-		return other.section.priority - this.section.priority;
+		return other.priority - this.priority;
 	}
 
 	

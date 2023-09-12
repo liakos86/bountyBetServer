@@ -4,10 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
-import java.util.TimeZone;
 
-import gr.server.common.CommonConstants;
-import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.league.Challenge;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Season;
@@ -15,14 +12,12 @@ import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
 import gr.server.data.constants.SportScoreApiConstants;
-import gr.server.data.enums.MatchEventPeriodStatus;
-import gr.server.data.enums.MatchEventStatus;
 
 public class MatchEvent implements Comparable<MatchEvent> {
 
 	MatchEventIncidents incidents;
 
-	ChangeEvent changeEvent;
+	//ChangeEvent changeEvent;
 	boolean markedForRemoval;
 
 	Object sport;
@@ -40,15 +35,15 @@ public class MatchEvent implements Comparable<MatchEvent> {
 
 	String start_at;// 2022-09-05 00:00:00
 
-	Integer start_hour;
-
-	Integer start_minute;
+//	Integer start_hour;
+//
+//	Integer start_minute;
 
 	String status;
 	String status_more;
 	//String status_loc;
 
-	String status_for_client;
+	//String status_for_client;
 	TimeDetails time_details;
 	Object time_live; // can be string or int. e.g. 54 or 'Halftime'.
 
@@ -238,15 +233,15 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	}
 
 	public String getStart_at() {
-		String format = SportScoreApiConstants.MATCH_START_TIME_FORMAT;
-		try {
-			Date parse = new SimpleDateFormat(format).parse(start_at);
-			this.start_hour = parse.getHours();
-			this.start_minute = parse.getMinutes();
-		} catch (ParseException e) {
-			System.out.println("START HOUR ERROR");
-			e.printStackTrace();
-		}
+//		String format = SportScoreApiConstants.MATCH_START_TIME_FORMAT;
+//		try {
+//			Date parse = new SimpleDateFormat(format).parse(start_at);
+//			this.start_hour = parse.getHours();
+//			this.start_minute = parse.getMinutes();
+//		} catch (ParseException e) {
+//			System.out.println("START HOUR ERROR");
+//			e.printStackTrace();
+//		}
 		return start_at;
 	}
 
@@ -254,21 +249,21 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.start_at = start_at;
 	}
 
-	public Integer getStart_hour() {
-		return start_hour;
-	}
-
-	public void setStart_hour(Integer start_hour) {
-		this.start_hour = start_hour;
-	}
-
-	public Integer getStart_minute() {
-		return start_minute;
-	}
-
-	public void setStart_minute(Integer start_minute) {
-		this.start_minute = start_minute;
-	}
+//	public Integer getStart_hour() {
+//		return start_hour;
+//	}
+//
+//	public void setStart_hour(Integer start_hour) {
+//		this.start_hour = start_hour;
+//	}
+//
+//	public Integer getStart_minute() {
+//		return start_minute;
+//	}
+//
+//	public void setStart_minute(Integer start_minute) {
+//		this.start_minute = start_minute;
+//	}
 
 	public Integer getPriority() {
 		return priority;
@@ -510,21 +505,21 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.time_live = time_live;
 	}
 
-	public String getStatus_for_client() {
-		return status_for_client;
-	}
+//	public String getStatus_for_client() {
+//		return status_for_client;
+//	}
+//
+//	public void setStatus_for_client(String status_for_client) {
+//		this.status_for_client = status_for_client;
+//	}
 
-	public void setStatus_for_client(String status_for_client) {
-		this.status_for_client = status_for_client;
-	}
-
-	public ChangeEvent getChangeEvent() {
-		return changeEvent;
-	}
-
-	public void setChangeEvent(ChangeEvent changeEvent) {
-		this.changeEvent = changeEvent;
-	}
+//	public ChangeEvent getChangeEvent() {
+//		return changeEvent;
+//	}
+//
+//	public void setChangeEvent(ChangeEvent changeEvent) {
+//		this.changeEvent = changeEvent;
+//	}
 
 	public boolean isMarkedForRemoval() {
 		return markedForRemoval;
@@ -542,46 +537,46 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.incidents = incidents;
 	}
 
-	public void calculateLiveMinute() {
-		if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(this.getStatus()))) {
-			return;
-		}
-
-		MatchEventPeriodStatus matchEventPeriodStatus = MatchEventPeriodStatus.fromStatusMoreText(this.getStatus_more());
-		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(matchEventPeriodStatus)) {
-			this.status_for_client = MatchEventPeriodStatus.INPROGRESS_HALFTIME.getStatusStr();
-			return;
-		}
-
-		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-		matchTimeFormat.setTimeZone(TimeZone.getTimeZone(CommonConstants.GMT));
-
-		Date matchTime = null;
-		try {
-			matchTime = matchTimeFormat.parse(getStart_at());
-		} catch (ParseException e) {
-			return;
-		}
-
-		long x = new Date().getTime() - matchTime.getTime();
-		int minute = (int) (x / 60000);
-		if (MatchEventPeriodStatus.INPROGRESS_1ST_HALF.equals(matchEventPeriodStatus)) {
-			if (minute > 45) {
-				this.status_for_client = "45+";
-			} else {
-				this.status_for_client = String.valueOf(minute);
-			}
-		} else if (MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(matchEventPeriodStatus)) {
-			if (minute > 90) {
-				this.status_for_client = "90+";
-			} else {
-				this.status_for_client = String.valueOf(minute);
-			}
-		} else {// TODO: in prog extra
-			this.status_for_client = "INV!";
-		}
-
-	}
+//	public void calculateLiveMinute() {
+//		if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(this.getStatus()))) {
+//			return;
+//		}
+//
+//		MatchEventPeriodStatus matchEventPeriodStatus = MatchEventPeriodStatus.fromStatusMoreText(this.getStatus_more());
+//		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(matchEventPeriodStatus)) {
+//			this.status_for_client = MatchEventPeriodStatus.INPROGRESS_HALFTIME.getStatusStr();
+//			return;
+//		}
+//
+//		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
+//		matchTimeFormat.setTimeZone(TimeZone.getTimeZone(CommonConstants.GMT));
+//
+//		Date matchTime = null;
+//		try {
+//			matchTime = matchTimeFormat.parse(getStart_at());
+//		} catch (ParseException e) {
+//			return;
+//		}
+//
+//		long x = new Date().getTime() - matchTime.getTime();
+//		int minute = (int) (x / 60000);
+//		if (MatchEventPeriodStatus.INPROGRESS_1ST_HALF.equals(matchEventPeriodStatus)) {
+//			if (minute > 45) {
+//				this.status_for_client = "45+";
+//			} else {
+//				this.status_for_client = String.valueOf(minute);
+//			}
+//		} else if (MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(matchEventPeriodStatus)) {
+//			if (minute > 90) {
+//				this.status_for_client = "90+";
+//			} else {
+//				this.status_for_client = String.valueOf(minute);
+//			}
+//		} else {// TODO: in prog extra
+//			this.status_for_client = "INV!";
+//		}
+//
+//	}
 
 	@Override
 	public boolean equals(Object obj) {

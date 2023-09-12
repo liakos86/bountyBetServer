@@ -4,6 +4,18 @@ import java.io.Serializable;
 
 import com.google.gson.annotations.SerializedName;
 
+import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserPrediction;
+
+/**
+ * 
+ * This is the status of a single {@link UserPrediction}, which belongs to a {@link UserBet}.
+ * When a bet is placed this status is Pending.
+ * Every x minutes a timer task might update the status, if the related event has finished.
+ * 
+ * @author liako
+ *
+ */
 public enum PredictionStatus implements Serializable{
 	
 	@SerializedName("1")
