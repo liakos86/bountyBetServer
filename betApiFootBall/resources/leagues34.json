@@ -1,0 +1,2391 @@
+{
+  "data": [
+    {
+      "id": 9683,
+      "sport_id": 1,
+      "section_id": 70,
+      "slug": "bolivia-copa-simon-bolivar",
+      "name_translations": {
+        "en": "Copa Simón Bolívar"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": 4,
+      "section": {
+        "id": 70,
+        "sport_id": 1,
+        "slug": "bolivia",
+        "name": "Bolivia",
+        "priority": 0,
+        "flag": "bolivia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9684,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-caras-severin",
+      "name_translations": {
+        "en": "Liga 4 Caras Severin"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.43"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9685,
+      "sport_id": 1,
+      "section_id": 13,
+      "slug": "usa-mls-preseason-2",
+      "name_translations": {
+        "en": "MLS Preseason"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-01-22 20:00:00",
+      "end_date": "2022-07-20 07:50:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Draws",
+          "value": "39%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.25"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 13,
+        "sport_id": 1,
+        "slug": "usa",
+        "name": "USA",
+        "priority": 0,
+        "flag": "usa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9686,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-voronezh-cup",
+      "name_translations": {
+        "en": "Voronezh Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.25"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9687,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-cluj",
+      "name_translations": {
+        "en": "Liga 4 Cluj"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.12"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "4%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9688,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-voronezhskaya-oblast-super-cup",
+      "name_translations": {
+        "en": "Voronezhskaya oblast Super Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9689,
+      "sport_id": 1,
+      "section_id": 489,
+      "slug": "poland-amateur-v-liga-red-box-wielkopolska",
+      "name_translations": {
+        "en": "V. Liga - Red Box Wielkopolska"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.10"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 489,
+        "sport_id": 1,
+        "slug": "poland-amateur",
+        "name": "Poland Amateur",
+        "priority": 0,
+        "flag": "poland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9699,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-timis",
+      "name_translations": {
+        "en": "Liga 4 Timiș"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9700,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-maramures",
+      "name_translations": {
+        "en": "Liga 4 Maramureș"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.99"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9701,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-constanta",
+      "name_translations": {
+        "en": "Liga 4 Constanta"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.44"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9706,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-salaj",
+      "name_translations": {
+        "en": "Liga 4 Sălaj"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9707,
+      "sport_id": 1,
+      "section_id": 477,
+      "slug": "samoa-upolu-national-league",
+      "name_translations": {
+        "en": "Upolu National League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.85"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 477,
+        "sport_id": 1,
+        "slug": "samoa",
+        "name": "Samoa",
+        "priority": null,
+        "flag": "samoa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9708,
+      "sport_id": 1,
+      "section_id": 440,
+      "slug": "netherlands-amateur-4e-klasse-zondag-a",
+      "name_translations": {
+        "en": "4e Klasse Zondag - A"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 440,
+        "sport_id": 1,
+        "slug": "netherlands-amateur",
+        "name": "Netherlands Amateur",
+        "priority": 0,
+        "flag": "netherlands"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9709,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-a-eps-anatolikis-attikis",
+      "name_translations": {
+        "en": "A EPS Anatolikis Attikis"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9716,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-nl-sjever",
+      "name_translations": {
+        "en": "3. NL - Sjever"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9717,
+      "sport_id": 1,
+      "section_id": 423,
+      "slug": "bosnia-herzegovina-amateurs-kantonalna-liga-zdk",
+      "name_translations": {
+        "en": "Kantonalna Liga ZDK"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 423,
+        "sport_id": 1,
+        "slug": "bosnia-herzegovina-amateurs",
+        "name": "Bosnia & Herzegovina Amateurs",
+        "priority": 0,
+        "flag": "bosnia-and-herzegovina-s"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9718,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-dambovita",
+      "name_translations": {
+        "en": "Liga 4 Dambovita"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.77"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9723,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-a-eps-kykladon",
+      "name_translations": {
+        "en": "A EPS Kykladon"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "8%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9724,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-landesliga-mittelrhein",
+      "name_translations": {
+        "en": "Landesliga Mittelrhein"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.77"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9725,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-dolj",
+      "name_translations": {
+        "en": "Liga 4 Dolj"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.11"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9726,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-premier-league-2-div-2",
+      "name_translations": {
+        "en": "Premier League 2, Div. 2"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-08-05 12:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9727,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-olimpbet-moscow-celebrity-cup",
+      "name_translations": {
+        "en": "Olimpbet Moscow Celebrity Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.81"
+        },
+        {
+          "name": "Home team wins",
+          "value": "31%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9728,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-1-znl-brodsko-posavska",
+      "name_translations": {
+        "en": "1. ŽNL Brodsko-posavska"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "61%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9729,
+      "sport_id": 1,
+      "section_id": 445,
+      "slug": "bulgaria-amateur-chetvarta-liga-og-sofia",
+      "name_translations": {
+        "en": "Chetvarta liga - OG Sofia"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.29"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 445,
+        "sport_id": 1,
+        "slug": "bulgaria-amateur",
+        "name": "Bulgaria Amateur",
+        "priority": 0,
+        "flag": "bulgaria"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9730,
+      "sport_id": 1,
+      "section_id": 489,
+      "slug": "poland-amateur-iv-liga-malopolska",
+      "name_translations": {
+        "en": "IV. Liga - Małopolska"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.71"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 489,
+        "sport_id": 1,
+        "slug": "poland-amateur",
+        "name": "Poland Amateur",
+        "priority": 0,
+        "flag": "poland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9735,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-gorj",
+      "name_translations": {
+        "en": "Liga 4 Gorj"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9736,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-lipetsk-region-football-championship-of-russia",
+      "name_translations": {
+        "en": "Lipetsk Region Football Championship of Russia"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9737,
+      "sport_id": 1,
+      "section_id": 489,
+      "slug": "poland-amateur-iv-liga-forbet",
+      "name_translations": {
+        "en": "IV LIGA \"Forbet\""
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 489,
+        "sport_id": 1,
+        "slug": "poland-amateur",
+        "name": "Poland Amateur",
+        "priority": 0,
+        "flag": "poland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9738,
+      "sport_id": 1,
+      "section_id": 335,
+      "slug": "burundi-ligue-a",
+      "name_translations": {
+        "en": "Ligue A"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-08-12 13:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.22"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 335,
+        "sport_id": 1,
+        "slug": "burundi",
+        "name": "Burundi",
+        "priority": null,
+        "flag": "burundi"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9740,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-championat-lipetskoy-oblasti",
+      "name_translations": {
+        "en": "Championat Lipetskoy Oblasti"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9741,
+      "sport_id": 1,
+      "section_id": 489,
+      "slug": "poland-amateur-krakow-klasa-okregowa",
+      "name_translations": {
+        "en": "Kraków Klasa Okręgowa"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.21"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "49%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 489,
+        "sport_id": 1,
+        "slug": "poland-amateur",
+        "name": "Poland Amateur",
+        "priority": 0,
+        "flag": "poland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9748,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-hunedoara",
+      "name_translations": {
+        "en": "Liga 4 Hunedoara"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9749,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-nl-istok",
+      "name_translations": {
+        "en": "3. NL - Istok"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9750,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-nl-zapad",
+      "name_translations": {
+        "en": " 3. NL - Zapad"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "29%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9751,
+      "sport_id": 1,
+      "section_id": 77,
+      "slug": "croatia-2-nl",
+      "name_translations": {
+        "en": "2. NL"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.62"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 77,
+        "sport_id": 1,
+        "slug": "croatia",
+        "name": "Croatia",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9752,
+      "sport_id": 1,
+      "section_id": 536,
+      "slug": "ukraine-amateur-kyiv-oblast-championship",
+      "name_translations": {
+        "en": "Kyiv Oblast Championship"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 536,
+        "sport_id": 1,
+        "slug": "ukraine-amateur",
+        "name": "Ukraine Amateur",
+        "priority": null,
+        "flag": "ukraine"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9754,
+      "sport_id": 1,
+      "section_id": 6,
+      "slug": "england-amateur-isthmian-league-south-east-division",
+      "name_translations": {
+        "en": "Isthmian League, South East Division"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.89"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 6,
+        "sport_id": 1,
+        "slug": "england-amateur",
+        "name": "England Amateur",
+        "priority": 0,
+        "flag": "england"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9755,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-nl-jug",
+      "name_translations": {
+        "en": "3. NL - Jug"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "63%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "19%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9756,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-lipetsk-oblast-cup",
+      "name_translations": {
+        "en": "Lipetsk Oblast Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9766,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-nl-centar",
+      "name_translations": {
+        "en": "3. NL - Centar"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.08"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9767,
+      "sport_id": 1,
+      "section_id": 493,
+      "slug": "slovenia-amateur-mnz-nova-gorica",
+      "name_translations": {
+        "en": "MNZ Nova Gorica"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.70"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 493,
+        "sport_id": 1,
+        "slug": "slovenia-amateur",
+        "name": "Slovenia Amateur",
+        "priority": 0,
+        "flag": "slovenia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9771,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-iasi",
+      "name_translations": {
+        "en": "Liga 4 Iasi"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.68"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "47%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9772,
+      "sport_id": 1,
+      "section_id": 114,
+      "slug": "malta-isa-malta",
+      "name_translations": {
+        "en": "ISA Malta"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.88"
+        },
+        {
+          "name": "Home team wins",
+          "value": "71%"
+        },
+        {
+          "name": "Draws",
+          "value": "5%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 114,
+        "sport_id": 1,
+        "slug": "malta",
+        "name": "Malta",
+        "priority": 0,
+        "flag": "malta"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9773,
+      "sport_id": 1,
+      "section_id": 537,
+      "slug": "switzerland-amateur-1-liga",
+      "name_translations": {
+        "en": "1. Liga"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 537,
+        "sport_id": 1,
+        "slug": "switzerland-amateur",
+        "name": "Switzerland Amateur",
+        "priority": null,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9774,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-mehedinti",
+      "name_translations": {
+        "en": "Liga 4 Mehedinti"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.91"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9787,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-ub",
+      "name_translations": {
+        "en": "Opštinska liga Ub"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.06"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9788,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-moscow-cup",
+      "name_translations": {
+        "en": "Moscow Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.62"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9789,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-arges-seria-nord",
+      "name_translations": {
+        "en": "Liga 5 Arges Seria Nord"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.54"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9790,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-2-znl-pozesko-slavonska",
+      "name_translations": {
+        "en": "2. ŽNL Požeško-slavonska"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 9791,
+      "sport_id": 1,
+      "section_id": 440,
+      "slug": "netherlands-amateur-4e-klasse-zaterdag-14",
+      "name_translations": {
+        "en": "4e Klasse Zaterdag - 14"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "37%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 440,
+        "sport_id": 1,
+        "slug": "netherlands-amateur",
+        "name": "Netherlands Amateur",
+        "priority": 0,
+        "flag": "netherlands"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 34,
+    "from": 1651,
+    "last_page": 37,
+    "per_page": 50,
+    "to": 1700,
+    "total": 1841
+  }
+}

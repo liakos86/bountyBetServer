@@ -1,0 +1,2211 @@
+{
+  "data": [
+    {
+      "id": 8090,
+      "sport_id": 1,
+      "section_id": 373,
+      "slug": "norway-amateur-3-division-avdeling-10",
+      "name_translations": {
+        "en": "3 Division, Avdeling 10",
+        "ru": "3 Дивизион, Авделинг 10"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 373,
+        "sport_id": 1,
+        "slug": "norway-amateur",
+        "name": "Norway Amateur",
+        "priority": 0,
+        "flag": "norway"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8091,
+      "sport_id": 1,
+      "section_id": 373,
+      "slug": "norway-amateur-3-division-avdeling-9",
+      "name_translations": {
+        "en": "3 Division, Avdeling 9",
+        "ru": "3 Дивизион, Авделинг 9"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 373,
+        "sport_id": 1,
+        "slug": "norway-amateur",
+        "name": "Norway Amateur",
+        "priority": 0,
+        "flag": "norway"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8092,
+      "sport_id": 1,
+      "section_id": 373,
+      "slug": "norway-amateur-3-division-avdeling-12",
+      "name_translations": {
+        "en": "3 Division, Avdeling 12",
+        "ru": "3 Дивизион, Авделинг 12"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 373,
+        "sport_id": 1,
+        "slug": "norway-amateur",
+        "name": "Norway Amateur",
+        "priority": 0,
+        "flag": "norway"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8093,
+      "sport_id": 1,
+      "section_id": 373,
+      "slug": "norway-amateur-3-division-avdeling-8",
+      "name_translations": {
+        "en": "3 Division, Avdeling 8",
+        "ru": "3 Дивизион, Авделинг 8"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 373,
+        "sport_id": 1,
+        "slug": "norway-amateur",
+        "name": "Norway Amateur",
+        "priority": 0,
+        "flag": "norway"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8094,
+      "sport_id": 1,
+      "section_id": 373,
+      "slug": "norway-amateur-3-division-avdeling-11",
+      "name_translations": {
+        "en": "3 Division, Avdeling 11",
+        "ru": "3 Дивизион, Авделинг 11"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 373,
+        "sport_id": 1,
+        "slug": "norway-amateur",
+        "name": "Norway Amateur",
+        "priority": 0,
+        "flag": "norway"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8098,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-liga-pro-12-mins-play",
+      "name_translations": {
+        "en": "eSoccer Liga Pro - 12 mins play",
+        "ru": "Esoccer Liga Pro - 12 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-liga-pro-12-mins-play.png",
+      "start_date": "2020-04-01 08:30:00",
+      "end_date": "2020-12-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8099,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-battle-champions-league-b-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer Battle Champions League B - 8 mins play",
+        "ru": "Esoccer Лига Чемпионов Битвы B - 8 Минут"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-battle-champions-league-b-8-mins-play.png",
+      "start_date": "2020-04-01 13:50:00",
+      "end_date": "2020-12-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8100,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-battle-champions-league-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer Battle Champions League - 8 mins play",
+        "ru": "Лига Чемпионов Esoccer Battle - 8 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-battle-champions-league-8-mins-play.png",
+      "start_date": "2020-04-01 16:16:00",
+      "end_date": "2020-12-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8101,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-12-mins-play",
+      "name_translations": {
+        "en": "eSoccer - 12 mins play",
+        "ru": "Esoccer - 12 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-12-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8102,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-10-mins-play",
+      "name_translations": {
+        "en": "eSoccer - 10 mins play",
+        "ru": "Esoccer - 10 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-10-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8103,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer - 8 mins play",
+        "ru": "Esoccer - 8 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-8-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8104,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-6-mins-play",
+      "name_translations": {
+        "en": "eSoccer - 6 mins play",
+        "ru": "Esoccer - 6 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-6-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8105,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-battle-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer Battle - 8 mins play",
+        "ru": "Esoccer Battle - 8 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-battle-8-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8106,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-battle-premier-league-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer Battle Premier League - 8 mins play",
+        "ru": "Esoccer Battle Premier League - 8 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-battle-premier-league-8-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8107,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-battle-international-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer Battle International - 8 mins play",
+        "ru": "Esoccer Battle International - 8 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-esoccer-battle-international-8-mins-play.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8108,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-esoccer-battle-bundesliga-8-mins-play",
+      "name_translations": {
+        "en": "eSoccer Battle Bundesliga - 8 mins play",
+        "ru": "Esoccer Battle Bundesliga - 8 Минут Игры"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8110,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-eligamx-fifa-2020-12-mins-play",
+      "name_translations": {
+        "en": "eLigaMX FIFA 2020 - 12  mins play",
+        "ru": "Eligamx FIFA 2020 - 12 Минут Игры"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-eligamx-fifa-2020-12-mins-play.png",
+      "start_date": "2020-04-10 19:00:00",
+      "end_date": "2020-12-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8112,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-rpl-pro-series-pes2020-10-mins-play",
+      "name_translations": {
+        "en": "RPL Pro Series PES2020 - 10 mins play",
+        "ru": "RPL Pro Series PES2020 - 10 Минут Игры"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8113,
+      "sport_id": 1,
+      "section_id": 392,
+      "slug": "simulated-reality-league-premier-league-srl",
+      "name_translations": {
+        "en": "Premier League SRL",
+        "ru": "Премьер Лига SRL"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/simulated-reality-league-premier-league-srl.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.70"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 392,
+        "sport_id": 1,
+        "slug": "simulated-reality-league",
+        "name": "Simulated Reality League",
+        "priority": null,
+        "flag": "simulated-reality-league"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8115,
+      "sport_id": 1,
+      "section_id": 128,
+      "slug": "nicaragua-u20-liga-primera-juvenil",
+      "name_translations": {
+        "en": "U20 Liga Primera Juvenil",
+        "ru": "Лига Примера Ювенил, U20"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/nicaragua-u20-liga-primera-juvenil.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 128,
+        "sport_id": 1,
+        "slug": "nicaragua",
+        "name": "Nicaragua",
+        "priority": 0,
+        "flag": "nicaragua"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8152,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-epl-invitational-fifa-20-12-mins",
+      "name_translations": {
+        "en": "ePL Invitational FIFA 20 - 12 mins"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-epl-invitational-fifa-20-12-mins.png",
+      "start_date": "2020-05-05 14:00:00",
+      "end_date": "2020-12-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8161,
+      "sport_id": 1,
+      "section_id": 399,
+      "slug": "turkmenistan-turkmenistan-first-league",
+      "name_translations": {
+        "en": "Turkmenistan First League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 399,
+        "sport_id": 1,
+        "slug": "turkmenistan",
+        "name": "Turkmenistan",
+        "priority": null,
+        "flag": "turkmenistan"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8164,
+      "sport_id": 1,
+      "section_id": 13,
+      "slug": "usa-nwsl-challenge-cup",
+      "name_translations": {
+        "en": "NWSL Challenge Cup"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/usa-nwsl-challenge-cup.png",
+      "start_date": "2022-03-18 23:30:00",
+      "end_date": "2022-05-08 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "36%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 13,
+        "sport_id": 1,
+        "slug": "usa",
+        "name": "USA",
+        "priority": 0,
+        "flag": "usa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8183,
+      "sport_id": 1,
+      "section_id": 5,
+      "slug": "costa-rica-liga-de-ascenso",
+      "name_translations": {
+        "en": "Liga de Ascenso"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso.png",
+      "start_date": "2020-06-16 20:00:00",
+      "end_date": "2020-06-23 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 5,
+        "sport_id": 1,
+        "slug": "costa-rica",
+        "name": "Costa Rica",
+        "priority": 0,
+        "flag": "costa-rica"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8191,
+      "sport_id": 1,
+      "section_id": 392,
+      "slug": "simulated-reality-league-turkey-super-lig-srl",
+      "name_translations": {
+        "en": "Turkey Super Lig SRL"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 392,
+        "sport_id": 1,
+        "slug": "simulated-reality-league",
+        "name": "Simulated Reality League",
+        "priority": null,
+        "flag": "simulated-reality-league"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8195,
+      "sport_id": 1,
+      "section_id": 67,
+      "slug": "belarus-vysshaya-league-women",
+      "name_translations": {
+        "en": "Vysshaya League, Women"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/belarus-vysshaya-league-women.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 67,
+        "sport_id": 1,
+        "slug": "belarus",
+        "name": "Belarus",
+        "priority": 0,
+        "flag": "belarus"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8196,
+      "sport_id": 1,
+      "section_id": 392,
+      "slug": "simulated-reality-league-austrian-bundesliga-srl",
+      "name_translations": {
+        "en": "Austrian Bundesliga SRL"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 392,
+        "sport_id": 1,
+        "slug": "simulated-reality-league",
+        "name": "Simulated Reality League",
+        "priority": null,
+        "flag": "simulated-reality-league"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8197,
+      "sport_id": 1,
+      "section_id": 392,
+      "slug": "simulated-reality-league-european-championship-srl",
+      "name_translations": {
+        "en": "European Championship SRL"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 392,
+        "sport_id": 1,
+        "slug": "simulated-reality-league",
+        "name": "Simulated Reality League",
+        "priority": null,
+        "flag": "simulated-reality-league"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8220,
+      "sport_id": 1,
+      "section_id": 411,
+      "slug": "mongolia-super-cup",
+      "name_translations": {
+        "en": "Super Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2020-07-01 10:00:00",
+      "end_date": "2020-07-01 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Away team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 411,
+        "sport_id": 1,
+        "slug": "mongolia",
+        "name": "Mongolia",
+        "priority": null,
+        "flag": "mongolia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8234,
+      "sport_id": 1,
+      "section_id": 392,
+      "slug": "simulated-reality-league-russia-premier-league-srl",
+      "name_translations": {
+        "en": "Russia Premier League SRL"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 392,
+        "sport_id": 1,
+        "slug": "simulated-reality-league",
+        "name": "Simulated Reality League",
+        "priority": null,
+        "flag": "simulated-reality-league"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8236,
+      "sport_id": 1,
+      "section_id": 77,
+      "slug": "croatia-3-hnl-promotion-playoff",
+      "name_translations": {
+        "en": "3. HNL Promotion Playoff"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-3-hnl-promotion-playoff.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 77,
+        "sport_id": 1,
+        "slug": "croatia",
+        "name": "Croatia",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8239,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-tercera-division",
+      "name_translations": {
+        "en": "Tercera Division"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-tercera-division.png",
+      "start_date": "2022-05-21 10:00:00",
+      "end_date": "2022-05-22 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.44"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "45%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "11%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "2.67"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8261,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-eredivisie-comeback-tournament",
+      "name_translations": {
+        "en": "Eredivisie Comeback Tournament"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/world-eredivisie-comeback-tournament.png",
+      "start_date": "2020-08-07 16:45:00",
+      "end_date": "2020-08-27 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.29"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8264,
+      "sport_id": 1,
+      "section_id": 115,
+      "slug": "mexico-liga-de-expansion-mx",
+      "name_translations": {
+        "en": "Liga de Expansion MX"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/mexico-liga-de-expansion-mx.png",
+      "start_date": "2020-08-18 22:00:00",
+      "end_date": "2020-12-21 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.52"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 115,
+        "sport_id": 1,
+        "slug": "mexico",
+        "name": "Mexico",
+        "priority": 0,
+        "flag": "mexico"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8297,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-4-nl-srediste-zagreb",
+      "name_translations": {
+        "en": "4. NL Središte Zagreb"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-4-nl-srediste-zagreb.png",
+      "start_date": "2020-08-22 15:30:01",
+      "end_date": "2021-05-23 07:15:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.11"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8298,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-mznl-sb-pz",
+      "name_translations": {
+        "en": "MŽNL SB-PŽ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-mznl-sb-pz.png",
+      "start_date": "2022-08-27 15:30:00",
+      "end_date": "2021-05-22 08:33:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.59"
+        },
+        {
+          "name": "Home team wins",
+          "value": "66%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "21%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8303,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-4-nl-ns-rijeka",
+      "name_translations": {
+        "en": "4. NL NS Rijeka"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-4-nl-ns-rijeka.png",
+      "start_date": "2022-09-03 15:00:00",
+      "end_date": "2022-05-27 14:24:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8304,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-mznl-osijek-vinkovci",
+      "name_translations": {
+        "en": "MŽNL Osijek-Vinkovci"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-mznl-osijek-vinkovci.png",
+      "start_date": "2022-08-20 16:00:09",
+      "end_date": "2022-06-11 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8305,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-4-nl-bj-kc-vt",
+      "name_translations": {
+        "en": "4. NL BJ-KC-VT"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-4-nl-bj-kc-vt.png",
+      "start_date": "2022-08-27 15:30:00",
+      "end_date": "2021-05-22 08:11:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8306,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-4-nl-ck-vz",
+      "name_translations": {
+        "en": "4. NL ČK-VŽ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-4-nl-ck-vz.png",
+      "start_date": "2022-08-20 15:30:00",
+      "end_date": "2022-07-03 07:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.56"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8307,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-1-znl-karlovac",
+      "name_translations": {
+        "en": "1. ŽNL Karlovac"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-karlovac.png",
+      "start_date": "2022-08-28 08:00:28",
+      "end_date": "2022-07-03 07:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.29"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8310,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-2-znl-karlovac",
+      "name_translations": {
+        "en": "2. ŽNL Karlovac"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-2-znl-karlovac.png",
+      "start_date": "2022-08-27 15:30:02",
+      "end_date": "2022-07-03 07:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8311,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-jznl-zagrebacka",
+      "name_translations": {
+        "en": "JŽNL Zagrebačka "
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-jznl-zagrebacka.png",
+      "start_date": "2022-08-27 15:30:06",
+      "end_date": "2022-05-29 10:05:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8312,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-1-znl-zadarska",
+      "name_translations": {
+        "en": "1. ŽNL Zadarska"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-zadarska.png",
+      "start_date": "2022-09-10 15:00:15",
+      "end_date": "2022-05-29 20:39:27",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.54"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8313,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-zona-podunavsko-sumadijska",
+      "name_translations": {
+        "en": "Zona Podunavsko-Šumadijska"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-zona-podunavsko-sumadijska.png",
+      "start_date": "2022-08-20 15:00:03",
+      "end_date": "2021-05-22 10:48:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "69%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8314,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-vojvodanska-liga-sever",
+      "name_translations": {
+        "en": "Vojvođanska Liga \"Sever\""
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-vojvodanska-liga-sever.png",
+      "start_date": "2022-08-13 15:00:00",
+      "end_date": "2022-06-05 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.65"
+        },
+        {
+          "name": "Home team wins",
+          "value": "62%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8315,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-1-znl-primorsko-goranska",
+      "name_translations": {
+        "en": "1. ŽNL Primorsko-goranska"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-primorsko-goranska.png",
+      "start_date": "2021-09-05 15:00:00",
+      "end_date": "2021-05-22 10:11:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.47"
+        },
+        {
+          "name": "Home team wins",
+          "value": "66%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "17%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8316,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-meduopstinska-liga-raca-knic-batocina",
+      "name_translations": {
+        "en": " Međuopštinska liga Rača-Knić-Batočina"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-meduopstinska-liga-raca-knic-batocina.png",
+      "start_date": "2020-08-23 15:30:00",
+      "end_date": "2021-05-22 11:36:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.75"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8317,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-sumadijska-okruzna-liga",
+      "name_translations": {
+        "en": "Šumadijska Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-sumadijska-okruzna-liga.png",
+      "start_date": "2022-08-13 18:00:52",
+      "end_date": "2021-05-22 11:24:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.87"
+        },
+        {
+          "name": "Home team wins",
+          "value": "65%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "24%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8318,
+      "sport_id": 1,
+      "section_id": 35,
+      "slug": "turkey-3-lig-group-4",
+      "name_translations": {
+        "en": "3. Lig , Group 4"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-3-lig-group-4.png",
+      "start_date": "2020-09-20 11:00:00",
+      "end_date": "2021-07-28 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "4"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "30"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 35,
+        "sport_id": 1,
+        "slug": "turkey",
+        "name": "Turkey",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 20,
+    "from": 951,
+    "last_page": 37,
+    "per_page": 50,
+    "to": 1000,
+    "total": 1841
+  }
+}

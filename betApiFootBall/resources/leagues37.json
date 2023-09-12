@@ -1,0 +1,1793 @@
+{
+  "data": [
+    {
+      "id": 10131,
+      "sport_id": 1,
+      "section_id": 450,
+      "slug": "nepal-a-division-league",
+      "name_translations": {
+        "en": "A-Division League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 450,
+        "sport_id": 1,
+        "slug": "nepal",
+        "name": "Nepal",
+        "priority": null,
+        "flag": "nepal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10141,
+      "sport_id": 1,
+      "section_id": 440,
+      "slug": "netherlands-amateur-6e-klasse-12-oost",
+      "name_translations": {
+        "en": "6e Klasse - 12 Oost"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.77"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 440,
+        "sport_id": 1,
+        "slug": "netherlands-amateur",
+        "name": "Netherlands Amateur",
+        "priority": 0,
+        "flag": "netherlands"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10143,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-mures",
+      "name_translations": {
+        "en": "Liga 5 Mureș"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "64%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10144,
+      "sport_id": 1,
+      "section_id": 540,
+      "slug": "scotland-amateur-highland-league",
+      "name_translations": {
+        "en": "Highland League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": 18,
+      "section": {
+        "id": 540,
+        "sport_id": 1,
+        "slug": "scotland-amateur",
+        "name": "Scotland Amateur",
+        "priority": 0,
+        "flag": "scotland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10150,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-gorj",
+      "name_translations": {
+        "en": "Liga 5 Gorj"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "59%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10151,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-4-mures-2",
+      "name_translations": {
+        "en": "Liga 4 Mureș"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.14"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10152,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-mff-presidents-cup",
+      "name_translations": {
+        "en": "MFF President's Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10154,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-ialomita",
+      "name_translations": {
+        "en": "Liga 5 Ialomita"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.15"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10159,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-iasi",
+      "name_translations": {
+        "en": "Liga 5 Iasi"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.49"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10162,
+      "sport_id": 1,
+      "section_id": 119,
+      "slug": "world-conmebol-uefa-cup-of-champions-women",
+      "name_translations": {
+        "en": "CONMEBOL UEFA Cup of Champions, Women"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 119,
+        "sport_id": 1,
+        "slug": "world",
+        "name": "World",
+        "priority": 20,
+        "flag": "international"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10163,
+      "sport_id": 1,
+      "section_id": 537,
+      "slug": "switzerland-amateur-2-liga-ftc",
+      "name_translations": {
+        "en": "2. Liga FTC"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.40"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 537,
+        "sport_id": 1,
+        "slug": "switzerland-amateur",
+        "name": "Switzerland Amateur",
+        "priority": null,
+        "flag": "switzerland"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10170,
+      "sport_id": 1,
+      "section_id": 63,
+      "slug": "zambia-national-division-one",
+      "name_translations": {
+        "en": "National Division One"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 63,
+        "sport_id": 1,
+        "slug": "zambia",
+        "name": "Zambia",
+        "priority": 0,
+        "flag": "zambia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10181,
+      "sport_id": 1,
+      "section_id": 500,
+      "slug": "france-amateur-nouvelle-aquitaine-national-3",
+      "name_translations": {
+        "en": "Nouvelle-Aquitaine National 3"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.69"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 500,
+        "sport_id": 1,
+        "slug": "france-amateur",
+        "name": "France Amateur",
+        "priority": 0,
+        "flag": "france"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10192,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-olt",
+      "name_translations": {
+        "en": "Liga 5 Olt"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "57%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10193,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-a-eps-kozanis",
+      "name_translations": {
+        "en": "A EPS Kozanis"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.91"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10194,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-moscow-championship-division-b",
+      "name_translations": {
+        "en": "Moscow Championship - Division B"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10217,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-3rd-division-buganda-region",
+      "name_translations": {
+        "en": "3rd Division - Buganda Region"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "12%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10218,
+      "sport_id": 1,
+      "section_id": 89,
+      "slug": "ghana-division-one",
+      "name_translations": {
+        "en": "Division One"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.88"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 89,
+        "sport_id": 1,
+        "slug": "ghana",
+        "name": "Ghana",
+        "priority": 0,
+        "flag": "ghana"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10219,
+      "sport_id": 1,
+      "section_id": 115,
+      "slug": "mexico-liga-premier-serie-b-clausura",
+      "name_translations": {
+        "en": "Liga Premier Serie B, Clausura"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 115,
+        "sport_id": 1,
+        "slug": "mexico",
+        "name": "Mexico",
+        "priority": 0,
+        "flag": "mexico"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10220,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-a-eps-kerkyras",
+      "name_translations": {
+        "en": "A EPS Kerkyras"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.30"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10221,
+      "sport_id": 1,
+      "section_id": 115,
+      "slug": "mexico-liga-premier-serie-a-clausura",
+      "name_translations": {
+        "en": "Liga Premier Serie A, Clausura"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 115,
+        "sport_id": 1,
+        "slug": "mexico",
+        "name": "Mexico",
+        "priority": 0,
+        "flag": "mexico"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10222,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-5-prahova",
+      "name_translations": {
+        "en": "Liga 5 Prahova"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10223,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-3rd-division-kampala-region",
+      "name_translations": {
+        "en": "3rd Division - Kampala Region"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.51"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10224,
+      "sport_id": 1,
+      "section_id": 466,
+      "slug": "romania-amateur-liga-6-prahova",
+      "name_translations": {
+        "en": "Liga 6 Prahova"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.60"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 466,
+        "sport_id": 1,
+        "slug": "romania-amateur",
+        "name": "Romania Amateur",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10225,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-3rd-division-eastern-region",
+      "name_translations": {
+        "en": "3rd Division - Eastern Region"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.67"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10229,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-3rd-division-western-region",
+      "name_translations": {
+        "en": "3rd Division - Western Region"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10230,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-b-eps-kozanis",
+      "name_translations": {
+        "en": "B EPS Kozanis"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.74"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10231,
+      "sport_id": 1,
+      "section_id": 538,
+      "slug": "brazil-amateur-cearense-serie-b",
+      "name_translations": {
+        "en": "Cearense, Serie B"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": 4,
+      "section": {
+        "id": 538,
+        "sport_id": 1,
+        "slug": "brazil-amateur",
+        "name": "Brazil Amateur",
+        "priority": null,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10236,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-c-eps-chanion",
+      "name_translations": {
+        "en": "C EPS Chanion"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10239,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-3rd-division-north-east-region",
+      "name_translations": {
+        "en": "3rd Division - North-East Region"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.11"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10240,
+      "sport_id": 1,
+      "section_id": 60,
+      "slug": "uganda-3rd-division-west-nile-region",
+      "name_translations": {
+        "en": "3rd Division - West Nile Region"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "16%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 60,
+        "sport_id": 1,
+        "slug": "uganda",
+        "name": "Uganda",
+        "priority": 0,
+        "flag": "uganda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10245,
+      "sport_id": 1,
+      "section_id": 311,
+      "slug": "antigua-and-barbuda-abfa-premier-league",
+      "name_translations": {
+        "en": "ABFA Premier League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 311,
+        "sport_id": 1,
+        "slug": "antigua-and-barbuda",
+        "name": "Antigua and Barbuda",
+        "priority": null,
+        "flag": "antigua-and-barbuda"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10252,
+      "sport_id": 1,
+      "section_id": 440,
+      "slug": "netherlands-amateur-6e-klasse-zondag-11",
+      "name_translations": {
+        "en": "6e Klasse Zondag - 11"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "7.14"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 440,
+        "sport_id": 1,
+        "slug": "netherlands-amateur",
+        "name": "Netherlands Amateur",
+        "priority": 0,
+        "flag": "netherlands"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10258,
+      "sport_id": 1,
+      "section_id": 114,
+      "slug": "malta-izibet-amateur-league",
+      "name_translations": {
+        "en": "IZIBET Amateur League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.10"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 114,
+        "sport_id": 1,
+        "slug": "malta",
+        "name": "Malta",
+        "priority": 0,
+        "flag": "malta"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10259,
+      "sport_id": 1,
+      "section_id": 383,
+      "slug": "malawi-tnm-super-league",
+      "name_translations": {
+        "en": "TNM Super League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 383,
+        "sport_id": 1,
+        "slug": "malawi",
+        "name": "Malawi",
+        "priority": null,
+        "flag": "malawi"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10260,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-recopa-catarinense",
+      "name_translations": {
+        "en": "Recopa Catarinense"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10262,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-copa-alagoas-2",
+      "name_translations": {
+        "en": "Copa Alagoas"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10263,
+      "sport_id": 1,
+      "section_id": 135,
+      "slug": "brazil-recopa-gaucha",
+      "name_translations": {
+        "en": "Recopa Gaucha"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 135,
+        "sport_id": 1,
+        "slug": "brazil",
+        "name": "Brazil",
+        "priority": 0,
+        "flag": "brazil"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10270,
+      "sport_id": 1,
+      "section_id": 7,
+      "slug": "germany-amateur-verbandsliga-hessen-mitte",
+      "name_translations": {
+        "en": "Verbandsliga Hessen Mitte"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 7,
+        "sport_id": 1,
+        "slug": "germany-amateur",
+        "name": "Germany Amateur",
+        "priority": 0,
+        "flag": "germany"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10272,
+      "sport_id": 1,
+      "section_id": 21,
+      "slug": "argentina-supercopa-internacional",
+      "name_translations": {
+        "en": "Supercopa Internacional"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 21,
+        "sport_id": 1,
+        "slug": "argentina",
+        "name": "Argentina",
+        "priority": 0,
+        "flag": "argentina"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 10273,
+      "sport_id": 1,
+      "section_id": 499,
+      "slug": "greece-amateur-a-eps-fokidas",
+      "name_translations": {
+        "en": "A EPS Fokidas"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 499,
+        "sport_id": 1,
+        "slug": "greece-amateur",
+        "name": "Greece Amateur",
+        "priority": 0,
+        "flag": "greece"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 37,
+    "from": 1801,
+    "last_page": 37,
+    "per_page": 50,
+    "to": 1841,
+    "total": 1841
+  }
+}

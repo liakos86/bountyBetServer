@@ -1,0 +1,2396 @@
+{
+  "data": [
+    {
+      "id": 8778,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-2-znl-brodsko-posavska-a",
+      "name_translations": {
+        "en": "2. ŽNL Brodsko-posavska - A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-2-znl-brodsko-posavska-a.png",
+      "start_date": "2022-08-27 15:30:00",
+      "end_date": "2022-06-12 21:06:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8779,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-bekes-megye-ii-a-csoport",
+      "name_translations": {
+        "en": "Békés Megye II. \"A\" csoport"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-amateur-bekes-megye-ii-a-csoport.png",
+      "start_date": "2020-08-15 15:00:50",
+      "end_date": "2021-06-12 08:05:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.51"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8780,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-lazio-girone-b",
+      "name_translations": {
+        "en": "Eccellenza Lazio Girone B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-lazio-girone-b.png",
+      "start_date": "2022-09-04 09:00:02",
+      "end_date": "2021-06-30 08:36:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.81"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8781,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-1-znl-medimurje",
+      "name_translations": {
+        "en": "1. ŽNL Međimurje"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-medimurje.png",
+      "start_date": "2022-08-20 15:30:00",
+      "end_date": "2022-05-27 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.64"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8782,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-toscana-girone-a",
+      "name_translations": {
+        "en": "Eccellenza Toscana Girone A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-toscana-girone-a.png",
+      "start_date": "2022-09-11 13:00:08",
+      "end_date": "2022-03-13 10:44:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.70"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8783,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-sardegna",
+      "name_translations": {
+        "en": "Eccellenza Sardegna"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-sardegna.png",
+      "start_date": "2022-08-28 14:00:01",
+      "end_date": "2021-06-30 08:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "28%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8784,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-znl-krizevci",
+      "name_translations": {
+        "en": "3. ŽNL Križevci"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-krizevci.png",
+      "start_date": "2020-08-30 15:00:39",
+      "end_date": "2021-06-30 09:24:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8785,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-bekes-megye-ii-b-csoport",
+      "name_translations": {
+        "en": "Békés Megye II. \"B\" csoport"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-amateur-bekes-megye-ii-b-csoport.png",
+      "start_date": "2020-08-15 15:00:19",
+      "end_date": "2021-06-19 11:41:00",
+      "priority": 0,
+      "host": {
+        "country": "Hungary",
+        "flag": "hungary"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8786,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-umbria",
+      "name_translations": {
+        "en": "Eccellenza Umbria"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-umbria.png",
+      "start_date": "2022-09-04 14:00:03",
+      "end_date": "2022-04-15 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.87"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "27%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8787,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-piemonte",
+      "name_translations": {
+        "en": "Eccellenza Piemonte"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-piemonte.png",
+      "start_date": "2022-09-11 13:00:00",
+      "end_date": "2022-05-08 08:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.10"
+        },
+        {
+          "name": "Home team wins",
+          "value": "30%"
+        },
+        {
+          "name": "Draws",
+          "value": "37%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8788,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-calabria",
+      "name_translations": {
+        "en": "Eccellenza Calabria"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-calabria.png",
+      "start_date": "2022-09-11 13:30:08",
+      "end_date": "2021-06-30 08:44:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8789,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-lazio-girone-c",
+      "name_translations": {
+        "en": "Eccellenza Lazio Girone C"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-lazio-girone-c.png",
+      "start_date": "2021-09-19 09:00:16",
+      "end_date": "2021-06-30 08:50:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8791,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-zajecarska-okruzna-liga",
+      "name_translations": {
+        "en": "Zaječarska Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-zajecarska-okruzna-liga.png",
+      "start_date": "2021-08-21 15:00:13",
+      "end_date": "2021-06-20 08:05:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.93"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8804,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-molise",
+      "name_translations": {
+        "en": "Eccellenza Molise"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-molise.png",
+      "start_date": "2022-09-17 13:00:15",
+      "end_date": "2021-06-30 09:58:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8806,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-lombardia-girone-a",
+      "name_translations": {
+        "en": "Eccellenza Lombardia Girone A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-lombardia-girone-a.png",
+      "start_date": "2022-09-04 13:30:05",
+      "end_date": "2022-04-17 22:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.01"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8807,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-prva-rasinska-okruzna-liga",
+      "name_translations": {
+        "en": "Prva Rasinska Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-prva-rasinska-okruzna-liga.png",
+      "start_date": "2022-08-07 15:30:00",
+      "end_date": "2021-06-30 10:32:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.81"
+        },
+        {
+          "name": "Home team wins",
+          "value": "60%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8808,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-bacs-kiskun-megye-i-osztaly",
+      "name_translations": {
+        "en": "Bács-Kiskun Megye I. osztály"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-amateur-bacs-kiskun-megye-i-osztaly.png",
+      "start_date": "2021-08-21 15:00:00",
+      "end_date": "2021-05-29 09:08:00",
+      "priority": 0,
+      "host": {
+        "country": "Hungary",
+        "flag": "hungary"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8809,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-lombardia-girone-b",
+      "name_translations": {
+        "en": "Eccellenza Lombardia Girone B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-lombardia-girone-b.png",
+      "start_date": "2022-09-04 13:30:00",
+      "end_date": "2022-06-05 22:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.10"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8810,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-piemonte-girone-b",
+      "name_translations": {
+        "en": "Eccellenza Piemonte Girone B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-piemonte-girone-b.png",
+      "start_date": "2022-09-11 13:00:00",
+      "end_date": "2022-05-08 08:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "42%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8811,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-trentino-alto-adige",
+      "name_translations": {
+        "en": "Eccellenza Trentino - Alto Adige"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-trentino-alto-adige.png",
+      "start_date": "2022-09-04 13:30:00",
+      "end_date": "2022-05-21 22:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Division level",
+          "value": "5"
+        },
+        {
+          "name": "Number of rounds",
+          "value": "12"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8812,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-lombardia-girone-c",
+      "name_translations": {
+        "en": "Eccellenza Lombardia Girone C"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-lombardia-girone-c.png",
+      "start_date": "2022-09-04 13:30:04",
+      "end_date": "2022-04-17 22:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "45%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8815,
+      "sport_id": 1,
+      "section_id": 423,
+      "slug": "bosnia-herzegovina-amateurs-mznl-hbzzhz",
+      "name_translations": {
+        "en": "MŽNL HBŽ/ZHŽ"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bosnia-herzegovina-amateurs-mznl-hbzzhz.png",
+      "start_date": "2022-09-11 14:30:01",
+      "end_date": "2022-05-28 17:47:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.19"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 423,
+        "sport_id": 1,
+        "slug": "bosnia-herzegovina-amateurs",
+        "name": "Bosnia & Herzegovina Amateurs",
+        "priority": 0,
+        "flag": "bosnia-and-herzegovina-s"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8816,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-andalucia-division-honor-senior-group-1b",
+      "name_translations": {
+        "en": "Andalucia Division Honor Senior - Group 1B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-andalucia-division-honor-senior-group-1b.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Number of rounds",
+          "value": "18"
+        },
+        {
+          "name": "Average goals",
+          "value": "2.58"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8817,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-tolna-megye-ii-osztaly",
+      "name_translations": {
+        "en": "Tolna Megye II. osztály"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/hungary-amateur-tolna-megye-ii-osztaly.png",
+      "start_date": "2021-08-28 15:00:00",
+      "end_date": "2022-07-03 08:50:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8818,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-andalucia-division-honor-senior-g1-ascenso",
+      "name_translations": {
+        "en": "Andalucia Division Honor Senior - G1 Ascenso"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-andalucia-division-honor-senior-g1-ascenso.png",
+      "start_date": "2021-03-21 11:00:00",
+      "end_date": "2021-05-16 07:18:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.13"
+        },
+        {
+          "name": "Home team wins",
+          "value": "28%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8819,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-andalucia-division-honor-senior-g1-descenso",
+      "name_translations": {
+        "en": "Andalucia Division Honor Senior - G1 Descenso"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/spain-amateur-andalucia-division-honor-senior-g1-descenso.png",
+      "start_date": "2021-03-21 11:00:00",
+      "end_date": "2021-06-06 07:20:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.74"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "25%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8820,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-nograd-megyei-i-osztaly",
+      "name_translations": {
+        "en": "Nógrád Megyei I. osztály"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2021-08-14 15:00:00",
+      "end_date": "2022-06-29 23:13:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.73"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "38%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8823,
+      "sport_id": 1,
+      "section_id": 26,
+      "slug": "romania-liga-iii-seria-7",
+      "name_translations": {
+        "en": "Liga III Seria 7"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/romania-liga-iii-seria-7.png",
+      "start_date": "2022-08-26 15:00:00",
+      "end_date": "2021-06-30 08:20:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.55"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 26,
+        "sport_id": 1,
+        "slug": "romania",
+        "name": "Romania",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8824,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-veneto-girone-a",
+      "name_translations": {
+        "en": "Eccellenza Veneto Girone A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-veneto-girone-a.png",
+      "start_date": "2022-09-11 13:30:00",
+      "end_date": "2022-05-09 22:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.59"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "30%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8825,
+      "sport_id": 1,
+      "section_id": 20,
+      "slug": "algeria-league-cup",
+      "name_translations": {
+        "en": "League Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2021-04-16 21:30:00",
+      "end_date": "2021-08-10 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.95"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "31%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "16%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 20,
+        "sport_id": 1,
+        "slug": "algeria",
+        "name": "Algeria",
+        "priority": 0,
+        "flag": "algeria"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8826,
+      "sport_id": 1,
+      "section_id": 15,
+      "slug": "qatar-qfa-cup",
+      "name_translations": {
+        "en": "QFA Cup"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-04-03 19:00:00",
+      "end_date": "2022-06-30 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.02"
+        },
+        {
+          "name": "Home team wins",
+          "value": "36%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.60"
+        }
+      ],
+      "most_count": 1,
+      "section": {
+        "id": 15,
+        "sport_id": 1,
+        "slug": "qatar",
+        "name": "Qatar",
+        "priority": 0,
+        "flag": "qatar"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8827,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-veneto-girone-b",
+      "name_translations": {
+        "en": "Eccellenza Veneto Girone B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-veneto-girone-b.png",
+      "start_date": "2022-09-10 15:00:04",
+      "end_date": "2022-05-09 22:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Italy",
+        "flag": "italy"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8828,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-liguria-girone-a",
+      "name_translations": {
+        "en": "Eccellenza Liguria Girone A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-liguria-girone-a.png",
+      "start_date": "2022-09-04 13:00:04",
+      "end_date": "2021-06-30 10:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.93"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8839,
+      "sport_id": 1,
+      "section_id": 430,
+      "slug": "dr-congo-vodacom-ligue-1",
+      "name_translations": {
+        "en": "Vodacom Ligue 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/dr-congo-vodacom-ligue-1.png",
+      "start_date": "2021-09-15 13:00:00",
+      "end_date": "2021-05-23 08:06:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.01"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 430,
+        "sport_id": 1,
+        "slug": "dr-congo",
+        "name": "DR Congo",
+        "priority": null,
+        "flag": "dr-congo"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8840,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-nograd-megyei-ii-osztaly",
+      "name_translations": {
+        "en": "Nógrád Megyei II. osztály"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8841,
+      "sport_id": 1,
+      "section_id": 13,
+      "slug": "usa-ncaa-division-i-national-championship-2",
+      "name_translations": {
+        "en": "NCAA Division I National Championship"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 13,
+        "sport_id": 1,
+        "slug": "usa",
+        "name": "USA",
+        "priority": 0,
+        "flag": "usa"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8842,
+      "sport_id": 1,
+      "section_id": 462,
+      "slug": "hungary-amateur-pest-megye-ii-osztaly-eszak",
+      "name_translations": {
+        "en": "Pest Megye II. osztály - Észak"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2020-08-22 15:00:01",
+      "end_date": "2021-06-20 05:29:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.54"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 462,
+        "sport_id": 1,
+        "slug": "hungary-amateur",
+        "name": "Hungary Amateur",
+        "priority": null,
+        "flag": "hungary"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8845,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-lucani",
+      "name_translations": {
+        "en": "Opštinska liga Lučani"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-09-11 14:00:24",
+      "end_date": "2022-06-19 08:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8850,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-toscana-girone-b",
+      "name_translations": {
+        "en": "Eccellenza Toscana Girone B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/italy-amateur-eccellenza-toscana-girone-b.png",
+      "start_date": "2022-09-11 13:00:10",
+      "end_date": "2022-03-13 10:44:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.48"
+        },
+        {
+          "name": "Home team wins",
+          "value": "47%"
+        },
+        {
+          "name": "Draws",
+          "value": "26%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8856,
+      "sport_id": 1,
+      "section_id": 467,
+      "slug": "italy-amateur-eccellenza-liguria-girone-b",
+      "name_translations": {
+        "en": "Eccellenza Liguria Girone B"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 467,
+        "sport_id": 1,
+        "slug": "italy-amateur",
+        "name": "Italy Amateur",
+        "priority": 0,
+        "flag": "italy"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8857,
+      "sport_id": 1,
+      "section_id": 26,
+      "slug": "romania-liga-iii-play-off",
+      "name_translations": {
+        "en": "Liga III Play-off"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2021-05-07 15:00:41",
+      "end_date": "2021-06-30 08:20:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.28"
+        },
+        {
+          "name": "Home team wins",
+          "value": "39%"
+        },
+        {
+          "name": "Draws",
+          "value": "39%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 26,
+        "sport_id": 1,
+        "slug": "romania",
+        "name": "Romania",
+        "priority": 0,
+        "flag": "romania"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8858,
+      "sport_id": 1,
+      "section_id": 276,
+      "slug": "turkey-amateur-3-lig-playoffs",
+      "name_translations": {
+        "en": "3. Lig Playoffs"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/turkey-amateur-3-lig-playoffs.png",
+      "start_date": "2021-05-06 13:00:00",
+      "end_date": "2021-05-31 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.27"
+        },
+        {
+          "name": "Home team wins",
+          "value": "27%"
+        },
+        {
+          "name": "Draws",
+          "value": "38%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "35%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 276,
+        "sport_id": 1,
+        "slug": "turkey-amateur",
+        "name": "Turkey Amateur",
+        "priority": 0,
+        "flag": "turkey"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8859,
+      "sport_id": 1,
+      "section_id": 124,
+      "slug": "spain-amateur-division-honor-regional-ascenso",
+      "name_translations": {
+        "en": "Division Honor Regional - Ascenso"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 124,
+        "sport_id": 1,
+        "slug": "spain-amateur",
+        "name": "Spain Amateur",
+        "priority": 0,
+        "flag": "spain"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8868,
+      "sport_id": 1,
+      "section_id": 474,
+      "slug": "grenada-premier-league",
+      "name_translations": {
+        "en": "Premier League"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/grenada-premier-league.png",
+      "start_date": "2021-05-08 23:15:00",
+      "end_date": "2021-09-19 08:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.70"
+        },
+        {
+          "name": "Home team wins",
+          "value": "59%"
+        },
+        {
+          "name": "Draws",
+          "value": "11%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 474,
+        "sport_id": 1,
+        "slug": "grenada",
+        "name": "Grenada",
+        "priority": 0,
+        "flag": "grenada"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8869,
+      "sport_id": 1,
+      "section_id": 475,
+      "slug": "sierra-leone-premier-league",
+      "name_translations": {
+        "en": "Premier League"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/sierra-leone-premier-league.png",
+      "start_date": "2022-12-09 16:15:56",
+      "end_date": "2021-07-23 07:46:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "1.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "38%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 475,
+        "sport_id": 1,
+        "slug": "sierra-leone",
+        "name": "Sierra Leone",
+        "priority": null,
+        "flag": "sierra-leone"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8878,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-znl-koprivnica",
+      "name_translations": {
+        "en": "3. ŽNL Koprivnica"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-koprivnica.png",
+      "start_date": "2022-08-21 15:30:00",
+      "end_date": "2022-07-02 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.50"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8891,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-2-znl-varazdinska",
+      "name_translations": {
+        "en": "2. ŽNL Varaždinska"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-2-znl-varazdinska.png",
+      "start_date": "2022-08-20 15:30:00",
+      "end_date": "2022-06-12 05:50:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "37%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8893,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-voronezhskaya-oblast",
+      "name_translations": {
+        "en": "Voronezhskaya oblast "
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/russia-amateur-voronezhskaya-oblast.png",
+      "start_date": "2022-05-01 13:00:00",
+      "end_date": "2021-12-04 12:26:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.37"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "12%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "44%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8895,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-lfl-center",
+      "name_translations": {
+        "en": "LFL, Center"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/russia-amateur-lfl-center.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8899,
+      "sport_id": 1,
+      "section_id": 481,
+      "slug": "russia-amateur-gorod-voronezh",
+      "name_translations": {
+        "en": "Gorod Voronezh"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/russia-amateur-gorod-voronezh.png",
+      "start_date": "2022-05-04 13:30:20",
+      "end_date": "2021-11-30 13:47:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.37"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "43%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 481,
+        "sport_id": 1,
+        "slug": "russia-amateur",
+        "name": "Russia Amateur",
+        "priority": 0,
+        "flag": "russia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 26,
+    "from": 1251,
+    "last_page": 37,
+    "per_page": 50,
+    "to": 1300,
+    "total": 1841
+  }
+}

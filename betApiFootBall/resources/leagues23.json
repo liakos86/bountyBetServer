@@ -1,0 +1,2309 @@
+{
+  "data": [
+    {
+      "id": 8511,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-meduopstinska-liga-dunav",
+      "name_translations": {
+        "en": "Međuopštinska liga Dunav"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-meduopstinska-liga-dunav.png",
+      "start_date": "2022-08-28 15:00:00",
+      "end_date": "2021-06-20 07:08:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.30"
+        },
+        {
+          "name": "Home team wins",
+          "value": "80%"
+        },
+        {
+          "name": "Draws",
+          "value": "4%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "16%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8512,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-lajkovac-ljig-mionica",
+      "name_translations": {
+        "en": "Opštinska Liga Lajkovac-Ljig-Mionica"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-opstinska-liga-lajkovac-ljig-mionica.png",
+      "start_date": "2021-09-19 09:00:00",
+      "end_date": "2021-06-06 16:43:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.09"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8515,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-moravicka-okruzna-liga-grupa-a",
+      "name_translations": {
+        "en": "Moravička Okružna Liga - Grupa A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-moravicka-okruzna-liga-grupa-a.png",
+      "start_date": "2022-08-20 15:00:00",
+      "end_date": "2021-06-20 12:54:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.73"
+        },
+        {
+          "name": "Home team wins",
+          "value": "53%"
+        },
+        {
+          "name": "Draws",
+          "value": "7%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8516,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-backa-palanka",
+      "name_translations": {
+        "en": "Opštinska Liga Bačka Palanka"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-opstinska-liga-backa-palanka.png",
+      "start_date": "2020-08-30 14:30:02",
+      "end_date": "2021-06-06 08:28:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.38"
+        },
+        {
+          "name": "Home team wins",
+          "value": "54%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8517,
+      "sport_id": 1,
+      "section_id": 391,
+      "slug": "esoccer-hrvatski-telekom-eliga-finals",
+      "name_translations": {
+        "en": "Hrvatski Telekom eLiga Finals"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/esoccer-hrvatski-telekom-eliga-finals.png",
+      "start_date": "2021-04-21 16:00:00",
+      "end_date": "2021-06-30 11:39:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "9.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "35%"
+        },
+        {
+          "name": "Draws",
+          "value": "3%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "62%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 391,
+        "sport_id": 1,
+        "slug": "esoccer",
+        "name": "eSoccer",
+        "priority": 19,
+        "flag": "esoccer"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8518,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-kolubarska-okruzna-liga",
+      "name_translations": {
+        "en": "Kolubarska Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-kolubarska-okruzna-liga.png",
+      "start_date": "2022-08-13 15:30:00",
+      "end_date": "2021-06-06 07:29:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8519,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-beja-ii-divisao-serie-c",
+      "name_translations": {
+        "en": "A.F. Beja II Divisão Série C"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-beja-ii-divisao-serie-c.png",
+      "start_date": "2022-09-24 15:00:25",
+      "end_date": "2022-03-05 09:30:42",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.03"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "49%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8520,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-zona-zapadno-moravska",
+      "name_translations": {
+        "en": "Zona Zapadno-Moravska"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-zona-zapadno-moravska.png",
+      "start_date": "2022-08-20 15:00:22",
+      "end_date": "2021-06-06 11:51:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.73"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "14%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8521,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-zabari",
+      "name_translations": {
+        "en": "Opštinska Liga Žabari"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-opstinska-liga-zabari.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8522,
+      "sport_id": 1,
+      "section_id": 114,
+      "slug": "malta-bov-gfl-first-division",
+      "name_translations": {
+        "en": "BOV GFL First Division"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/malta-bov-gfl-first-division.png",
+      "start_date": "2022-09-09 16:00:19",
+      "end_date": "2022-04-04 19:55:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.17"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 114,
+        "sport_id": 1,
+        "slug": "malta",
+        "name": "Malta",
+        "priority": 0,
+        "flag": "malta"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8523,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-znl-viroviticko-podravska-zapad",
+      "name_translations": {
+        "en": "3. ŽNL Virovitičko-podravska - Zapad"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-viroviticko-podravska-zapad.png",
+      "start_date": "2022-09-03 15:00:00",
+      "end_date": "2022-06-01 09:19:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.66"
+        },
+        {
+          "name": "Home team wins",
+          "value": "69%"
+        },
+        {
+          "name": "Draws",
+          "value": "9%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "22%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8524,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-pfl-sremska-mitrovica",
+      "name_translations": {
+        "en": "PFL Sremska Mitrovica"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-pfl-sremska-mitrovica.png",
+      "start_date": "2022-08-13 15:00:11",
+      "end_date": "2021-06-06 14:24:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.72"
+        },
+        {
+          "name": "Home team wins",
+          "value": "62%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "23%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8525,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-beja-ii-divisao-serie-a",
+      "name_translations": {
+        "en": "A.F. Beja II Divisão Série A"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-beja-ii-divisao-serie-a.png",
+      "start_date": "2022-09-24 15:00:53",
+      "end_date": "2022-03-05 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.47"
+        },
+        {
+          "name": "Home team wins",
+          "value": "55%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "30%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8528,
+      "sport_id": 1,
+      "section_id": 44,
+      "slug": "serbia-srpska-liga-beograd",
+      "name_translations": {
+        "en": "Srpska Liga Beograd"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-srpska-liga-beograd.png",
+      "start_date": "2022-08-12 15:00:00",
+      "end_date": "2021-06-06 08:01:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "44%"
+        },
+        {
+          "name": "Draws",
+          "value": "24%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 44,
+        "sport_id": 1,
+        "slug": "serbia",
+        "name": "Serbia",
+        "priority": 0,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8529,
+      "sport_id": 1,
+      "section_id": 44,
+      "slug": "serbia-srpska-liga-istok",
+      "name_translations": {
+        "en": "Srpska Liga Istok"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-srpska-liga-istok.png",
+      "start_date": "2022-08-13 15:30:11",
+      "end_date": "2021-06-13 08:06:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.94"
+        },
+        {
+          "name": "Home team wins",
+          "value": "50%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "32%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 44,
+        "sport_id": 1,
+        "slug": "serbia",
+        "name": "Serbia",
+        "priority": 0,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8530,
+      "sport_id": 1,
+      "section_id": 44,
+      "slug": "serbia-srpska-liga-vojvodina",
+      "name_translations": {
+        "en": "Srpska Liga Vojvodina"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-srpska-liga-vojvodina.png",
+      "start_date": "2022-08-13 15:00:00",
+      "end_date": "2021-06-05 08:10:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.63"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "16%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 44,
+        "sport_id": 1,
+        "slug": "serbia",
+        "name": "Serbia",
+        "priority": 0,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8531,
+      "sport_id": 1,
+      "section_id": 44,
+      "slug": "serbia-srpska-liga-zapad",
+      "name_translations": {
+        "en": "Srpska Liga Zapad"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-srpska-liga-zapad.png",
+      "start_date": "2022-08-13 15:30:16",
+      "end_date": "2022-06-30 07:26:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.43"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "28%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 44,
+        "sport_id": 1,
+        "slug": "serbia",
+        "name": "Serbia",
+        "priority": 0,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8534,
+      "sport_id": 1,
+      "section_id": 114,
+      "slug": "malta-bov-gfl-second-division",
+      "name_translations": {
+        "en": "BOV GFL Second Division"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/malta-bov-gfl-second-division.png",
+      "start_date": "2022-10-16 12:00:32",
+      "end_date": "2022-04-04 17:02:56",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.47"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 114,
+        "sport_id": 1,
+        "slug": "malta",
+        "name": "Malta",
+        "priority": 0,
+        "flag": "malta"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8545,
+      "sport_id": 1,
+      "section_id": 115,
+      "slug": "mexico-liga-de-expansion-mx-clausura",
+      "name_translations": {
+        "en": "Liga de Expansion MX, Clausura"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/mexico-liga-de-expansion-mx-clausura.png",
+      "start_date": "2021-01-12 23:00:00",
+      "end_date": "2021-05-23 23:59:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 115,
+        "sport_id": 1,
+        "slug": "mexico",
+        "name": "Mexico",
+        "priority": 0,
+        "flag": "mexico"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8546,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-beja-ii-divisao-serie-b",
+      "name_translations": {
+        "en": "A.F. Beja II Divisão Série B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-beja-ii-divisao-serie-b.png",
+      "start_date": "2022-09-24 15:00:00",
+      "end_date": "2022-03-05 09:44:36",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.04"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "15%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8547,
+      "sport_id": 1,
+      "section_id": 441,
+      "slug": "mauritius-mauritian-premier-league",
+      "name_translations": {
+        "en": "Mauritian Premier League"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/mauritius-mauritian-premier-league.png",
+      "start_date": "2022-10-28 14:30:27",
+      "end_date": "2022-07-03 21:10:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.05"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "35%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "40%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 441,
+        "sport_id": 1,
+        "slug": "mauritius",
+        "name": "Mauritius",
+        "priority": null,
+        "flag": "mauritius"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8550,
+      "sport_id": 1,
+      "section_id": 115,
+      "slug": "mexico-liga-de-expansion-mx-clausura-1",
+      "name_translations": {
+        "en": "Liga de Expansion MX, Clausura"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/mexico-liga-de-expansion-mx-clausura-1.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 115,
+        "sport_id": 1,
+        "slug": "mexico",
+        "name": "Mexico",
+        "priority": 0,
+        "flag": "mexico"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8551,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-prva-beogradska-liga-b",
+      "name_translations": {
+        "en": "Prva Beogradska Liga B"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-prva-beogradska-liga-b.png",
+      "start_date": "2022-08-20 15:00:44",
+      "end_date": "2021-09-02 09:26:48",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "51%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8552,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-2-znl-vukovarsko-srijemska-ns-vinkovci",
+      "name_translations": {
+        "en": "2. ŽNL Vukovarsko-srijemska NS Vinkovci"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-2-znl-vukovarsko-srijemska-ns-vinkovci.png",
+      "start_date": "2022-08-27 15:00:32",
+      "end_date": "2022-07-03 09:21:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.42"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "6%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "42%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8554,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-porto-i-divisao-serie-1",
+      "name_translations": {
+        "en": "A.F. Porto I Divisão Série 1"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-porto-i-divisao-serie-1.png",
+      "start_date": "2022-09-25 14:00:00",
+      "end_date": "2021-06-06 13:38:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "46%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8555,
+      "sport_id": 1,
+      "section_id": 106,
+      "slug": "kenya-national-super-league",
+      "name_translations": {
+        "en": "National Super League"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/kenya-national-super-league.png",
+      "start_date": "2022-11-26 12:00:00",
+      "end_date": "2022-03-12 15:26:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.32"
+        },
+        {
+          "name": "Home team wins",
+          "value": "21%"
+        },
+        {
+          "name": "Draws",
+          "value": "22%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "57%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 106,
+        "sport_id": 1,
+        "slug": "kenya",
+        "name": "Kenya",
+        "priority": 0,
+        "flag": "kenya"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8556,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-raska-okruzna-liga",
+      "name_translations": {
+        "en": "Raška Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-raska-okruzna-liga.png",
+      "start_date": "2020-08-29 14:30:00",
+      "end_date": "2021-06-06 11:33:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.57"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8557,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-borska-okruzna-liga",
+      "name_translations": {
+        "en": "Borska Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-borska-okruzna-liga.png",
+      "start_date": "2020-08-22 15:00:29",
+      "end_date": "2021-06-06 11:44:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.16"
+        },
+        {
+          "name": "Home team wins",
+          "value": "59%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8558,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-castel-branco-liga-leitao-beirao",
+      "name_translations": {
+        "en": "A.F. Castel Branco Liga Leitão Beirão"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8559,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-velika-plana",
+      "name_translations": {
+        "en": "Opštinska Liga Velika Plana"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-opstinska-liga-velika-plana.png",
+      "start_date": "2020-09-13 13:00:00",
+      "end_date": "2021-06-06 12:15:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.61"
+        },
+        {
+          "name": "Home team wins",
+          "value": "43%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "39%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8560,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-lisboa-ii-divisao-serie-2",
+      "name_translations": {
+        "en": "A.F. Lisboa II Divisão Série 2"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-lisboa-ii-divisao-serie-2.png",
+      "start_date": "2020-10-04 14:00:00",
+      "end_date": "2021-06-13 07:39:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Draws",
+          "value": "23%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8561,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-podunavska-okruzna-liga",
+      "name_translations": {
+        "en": "Podunavska Okružna Liga"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-podunavska-okruzna-liga.png",
+      "start_date": "2021-08-21 15:00:00",
+      "end_date": "2022-06-21 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.36"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8562,
+      "sport_id": 1,
+      "section_id": 445,
+      "slug": "bulgaria-amateur-third-league-southeast",
+      "name_translations": {
+        "en": "Third League Southeast"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bulgaria-amateur-third-league-southeast.png",
+      "start_date": "2022-08-06 15:30:00",
+      "end_date": "2021-06-13 14:56:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.92"
+        },
+        {
+          "name": "Home team wins",
+          "value": "45%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 445,
+        "sport_id": 1,
+        "slug": "bulgaria-amateur",
+        "name": "Bulgaria Amateur",
+        "priority": 0,
+        "flag": "bulgaria"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8563,
+      "sport_id": 1,
+      "section_id": 447,
+      "slug": "maldives-dhivehi-premier-league",
+      "name_translations": {
+        "en": "Dhivehi Premier League"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/maldives-dhivehi-premier-league.png",
+      "start_date": "2020-12-13 11:00:43",
+      "end_date": "2021-05-31 08:41:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.30"
+        },
+        {
+          "name": "Home team wins",
+          "value": "40%"
+        },
+        {
+          "name": "Draws",
+          "value": "34%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "26%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 447,
+        "sport_id": 1,
+        "slug": "maldives",
+        "name": "Maldives",
+        "priority": null,
+        "flag": "maldives"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8564,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-1-znl-viroviticko-podravska",
+      "name_translations": {
+        "en": "1. ŽNL Virovitičko-podravska"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-viroviticko-podravska.png",
+      "start_date": "2022-08-21 15:30:00",
+      "end_date": "2022-06-18 08:32:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "5.33"
+        },
+        {
+          "name": "Home team wins",
+          "value": "67%"
+        },
+        {
+          "name": "Draws",
+          "value": "13%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "20%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8565,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-prva-beogradska-liga-c",
+      "name_translations": {
+        "en": "Prva Beogradska Liga C"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-prva-beogradska-liga-c.png",
+      "start_date": "2022-08-21 09:00:00",
+      "end_date": "2021-06-20 14:07:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.86"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "19%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "33%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8568,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-opstinska-liga-sopot",
+      "name_translations": {
+        "en": "Opštinska liga Sopot"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-opstinska-liga-sopot.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8569,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-meduopstinska-liga-macva",
+      "name_translations": {
+        "en": "Međuopštinska Liga Mačva"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-meduopstinska-liga-macva.png",
+      "start_date": "",
+      "end_date": "",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8576,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-2-znl-viroviticko-podravska-istok",
+      "name_translations": {
+        "en": "2. ŽNL Virovitičko-podravska - Istok"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-2-znl-viroviticko-podravska-istok.png",
+      "start_date": "2022-09-03 15:00:00",
+      "end_date": "2021-06-13 10:18:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.51"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "17%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8577,
+      "sport_id": 1,
+      "section_id": 445,
+      "slug": "bulgaria-amateur-third-league-northeast",
+      "name_translations": {
+        "en": "Third League Northeast"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/bulgaria-amateur-third-league-northeast.png",
+      "start_date": "2022-08-13 15:00:13",
+      "end_date": "2021-06-13 11:14:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.45"
+        },
+        {
+          "name": "Home team wins",
+          "value": "56%"
+        },
+        {
+          "name": "Draws",
+          "value": "8%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "36%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 445,
+        "sport_id": 1,
+        "slug": "bulgaria-amateur",
+        "name": "Bulgaria Amateur",
+        "priority": 0,
+        "flag": "bulgaria"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8582,
+      "sport_id": 1,
+      "section_id": 12,
+      "slug": "andorra-super-cup",
+      "name_translations": {
+        "en": "Super Cup"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/andorra-super-cup.png",
+      "start_date": "2022-09-04 16:00:00",
+      "end_date": "2022-09-05 00:00:00",
+      "priority": 0,
+      "host": {
+        "country": "Andorra",
+        "flag": "andorra"
+      },
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "100%"
+        }
+      ],
+      "most_count": 7,
+      "section": {
+        "id": 12,
+        "sport_id": 1,
+        "slug": "andorra",
+        "name": "Andorra",
+        "priority": 0,
+        "flag": "andorra"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8594,
+      "sport_id": 1,
+      "section_id": 328,
+      "slug": "ethiopia-premier-league",
+      "name_translations": {
+        "en": "Premier League"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-09-30 00:00:00",
+      "end_date": "2023-05-31 00:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.46"
+        },
+        {
+          "name": "Home team wins",
+          "value": "26%"
+        },
+        {
+          "name": "Draws",
+          "value": "33%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "41%"
+        },
+        {
+          "name": "Yellow cards",
+          "value": "0.49"
+        }
+      ],
+      "most_count": 15,
+      "section": {
+        "id": 328,
+        "sport_id": 1,
+        "slug": "ethiopia",
+        "name": "Ethiopia",
+        "priority": null,
+        "flag": "ethiopia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8595,
+      "sport_id": 1,
+      "section_id": 418,
+      "slug": "croatia-amateur-3-znl-viroviticko-podravska-istok",
+      "name_translations": {
+        "en": "3. ŽNL Virovitičko-podravska - Istok"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-viroviticko-podravska-istok.png",
+      "start_date": "2022-09-03 15:00:00",
+      "end_date": "2021-06-13 12:17:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "6.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "33%"
+        },
+        {
+          "name": "Draws",
+          "value": "0%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "67%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 418,
+        "sport_id": 1,
+        "slug": "croatia-amateur",
+        "name": "Croatia Amateur",
+        "priority": 0,
+        "flag": "croatia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8596,
+      "sport_id": 1,
+      "section_id": 308,
+      "slug": "gambia-gfa-first-division",
+      "name_translations": {
+        "en": "GFA First Division"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/gambia-gfa-first-division.png",
+      "start_date": "2021-11-19 16:00:59",
+      "end_date": "2022-08-01 04:02:25",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.12"
+        },
+        {
+          "name": "Home team wins",
+          "value": "34%"
+        },
+        {
+          "name": "Draws",
+          "value": "32%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 308,
+        "sport_id": 1,
+        "slug": "gambia",
+        "name": "Gambia",
+        "priority": null,
+        "flag": "gambia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8597,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-pfl-pancevo",
+      "name_translations": {
+        "en": "PFL Pančevo"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-pfl-pancevo.png",
+      "start_date": "2022-08-13 15:00:00",
+      "end_date": "2022-06-10 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.78"
+        },
+        {
+          "name": "Home team wins",
+          "value": "49%"
+        },
+        {
+          "name": "Draws",
+          "value": "20%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "31%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8598,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-zona-centar",
+      "name_translations": {
+        "en": "Zona \"Centar\""
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-zona-centar.png",
+      "start_date": "2022-08-14 15:30:08",
+      "end_date": "2022-06-05 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "18%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "34%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8599,
+      "sport_id": 1,
+      "section_id": 432,
+      "slug": "portugal-amateur-af-porto-i-divisao-serie-2",
+      "name_translations": {
+        "en": "A.F. Porto I Divisão Série 2"
+      },
+      "has_logo": false,
+      "logo": "https://tipsscore.com/resb/no-league.png",
+      "start_date": "2022-09-25 14:00:00",
+      "end_date": "2021-06-13 10:47:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "25%"
+        },
+        {
+          "name": "Draws",
+          "value": "50%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "25%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 432,
+        "sport_id": 1,
+        "slug": "portugal-amateur",
+        "name": "Portugal Amateur",
+        "priority": null,
+        "flag": "portugal"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8600,
+      "sport_id": 1,
+      "section_id": 441,
+      "slug": "mauritius-national-division-one",
+      "name_translations": {
+        "en": "National Division One"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/mauritius-national-division-one.png",
+      "start_date": "2022-10-30 10:00:12",
+      "end_date": "2022-07-02 08:42:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "2.90"
+        },
+        {
+          "name": "Home team wins",
+          "value": "48%"
+        },
+        {
+          "name": "Draws",
+          "value": "4%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "48%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 441,
+        "sport_id": 1,
+        "slug": "mauritius",
+        "name": "Mauritius",
+        "priority": null,
+        "flag": "mauritius"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8601,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-zona-istok",
+      "name_translations": {
+        "en": "Zona \"Istok\""
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-zona-istok.png",
+      "start_date": "2021-08-21 15:00:00",
+      "end_date": "2022-06-05 22:00:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "4.00"
+        },
+        {
+          "name": "Home team wins",
+          "value": "63%"
+        },
+        {
+          "name": "Draws",
+          "value": "10%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    },
+    {
+      "id": 8602,
+      "sport_id": 1,
+      "section_id": 419,
+      "slug": "serbia-amateur-meduopstinska-liga-fsro-kraljevo",
+      "name_translations": {
+        "en": "Međuopštinska liga FSRO - Kraljevo"
+      },
+      "has_logo": true,
+      "logo": "https://tipsscore.com/resb/league/serbia-amateur-meduopstinska-liga-fsro-kraljevo.png",
+      "start_date": "2020-08-30 09:00:00",
+      "end_date": "2021-06-20 07:57:00",
+      "priority": 0,
+      "host": null,
+      "tennis_points": 0,
+      "facts": [
+        {
+          "name": "Average goals",
+          "value": "3.29"
+        },
+        {
+          "name": "Home team wins",
+          "value": "52%"
+        },
+        {
+          "name": "Draws",
+          "value": "21%"
+        },
+        {
+          "name": "Away team wins",
+          "value": "27%"
+        }
+      ],
+      "most_count": null,
+      "section": {
+        "id": 419,
+        "sport_id": 1,
+        "slug": "serbia-amateur",
+        "name": "Serbia Amateur",
+        "priority": null,
+        "flag": "serbia"
+      },
+      "sport": {
+        "id": 1,
+        "slug": "football",
+        "name": "Football"
+      }
+    }
+  ],
+  "meta": {
+    "current_page": 23,
+    "from": 1101,
+    "last_page": 37,
+    "per_page": 50,
+    "to": 1150,
+    "total": 1841
+  }
+}
