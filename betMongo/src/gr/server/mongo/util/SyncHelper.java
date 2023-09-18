@@ -4,8 +4,8 @@ package gr.server.mongo.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Level;
+//import org.apache.log4j.Logger;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
@@ -274,8 +274,8 @@ public class SyncHelper {
     		        .build();
     		MONGO_CLIENT = MongoClients.create(settings);
     		
-    		Logger logger = Logger.getLogger("org.mongodb.driver");
-    		logger.setLevel(Level.INFO);
+//    		Logger logger = Logger.getLogger("org.mongodb.driver");
+//    		logger.setLevel(Level.INFO);
     	}
 		
 		return MONGO_CLIENT;

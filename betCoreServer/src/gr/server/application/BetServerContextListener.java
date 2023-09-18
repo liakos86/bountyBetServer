@@ -47,7 +47,7 @@ public class BetServerContextListener implements ServletContextListener {
 
 		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
 		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
-		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 15000);
+		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 10000);
 		
 		TimerTask settleFinishedEventsTimerTask = TimerTaskHelper.settleFinishedEvents();
 		Timer settleFinishedEventsTimer = new Timer("settleFinishedEventsTimer");

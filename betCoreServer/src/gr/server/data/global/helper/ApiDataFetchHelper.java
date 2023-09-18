@@ -31,9 +31,10 @@ public class ApiDataFetchHelper {
 	 */
 	public static void fetchEventsIntoLeagues() {
 		List<Date> datesToFetch = getDatesToFetchList();
+		List<MatchEvent> events = eventsForDate(datesToFetch.get(1));
 		
 		for (Date date : datesToFetch) {
-			List<MatchEvent> events = eventsForDate(date);
+//			List<MatchEvent> events = eventsForDate(date);
 			splitEventsIntoLeaguesAndDays(date, events);
 			splitEventsIntoLiveLeagues(events);
 		}
