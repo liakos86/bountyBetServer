@@ -1,6 +1,6 @@
 package gr.server.def.client;
 
-import java.util.List;
+import java.util.Set;
 
 import org.bson.Document;
 
@@ -21,7 +21,7 @@ public interface MongoClientHelper {
 	 * @return
 	 * @throws UserExistsException
 	 */
-	public User createUser(User user);
+	User createUser(User user);
 	
 	/**
 	 * Creates a new {@link User} in the 'user' collection of the database.
@@ -32,7 +32,7 @@ public interface MongoClientHelper {
 	 * @return
 	 * @throws UserExistsException
 	 */
-	public void validateUser(String email);
+	void validateUser(String email);
 	
 	/**
 	 * Called to fetch the open bets for a {@link User}.
@@ -51,8 +51,10 @@ public interface MongoClientHelper {
 	 */
 	User loginUser(User user);
 
-	void settlePredictions(ClientSession session, List<MatchEvent> events) throws Exception;
+	void settlePredictions(ClientSession session, Set<MatchEvent> events) throws Exception;
 
-	//void settleBets(ClientSession session) throws Exception;
+	void settleOpenBets(ClientSession session) throws Exception;
+
+	void deleteUser(String mongoId);
 	
 }

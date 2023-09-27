@@ -44,7 +44,7 @@ public class EmailSendUtil {
 		    // message.setText("<html><body><a href=\"http://192.168.1.2:8080/betCoreServer/betServer/validateUser/" + to +"\"> Click to validate your registration</a></body></html>");  
 		       
 		     
-		     message.setContent("<html><body><a href=\"http://192.168.1.2:8080/betCoreServer/betServer/"+ email +"/validateUser/\"> Click to validate your registration</a></body></html>",  "text/html");
+		     message.setContent("<html><body><a href=\"http://192.168.1.6:8080/betCoreServer/betServer/"+ email +"/validateUser/\"> Click to validate your registration</a></body></html>",  "text/html");
 		    //send the message  
 		     Transport.send(message);  
 		  

@@ -60,15 +60,56 @@ implements Serializable{
 	
 	List<UserBounty> bounties;
 	
+	/**
+	 * Number of won slips.
+	 */
+	Integer monthlyWonSlipsCount;
+	
+	/**
+	 * Number of lost slips.
+	 */
+	Integer monthlyLostSlipsCount;
+	
+	/**
+	 * Number of won events.
+	 */
+	Integer monthlyWonEventsCount;
+	
+	/**
+	 * Number of lost events.
+	 */
+	Integer monthlyLostEventsCount;
+	
+	/**
+	 * Total/overall Number of won slips.
+	 */
+	Integer overallWonSlipsCount;
+	
+	/**
+	 * Total/overall Number of lost slips.
+	 */
+	Integer overallLostSlipsCount;
+	
+	/**
+	 * Total/overall Number of won events.
+	 */
+	Integer overallWonEventsCount;
+	
+	/**
+	 * Total/overall Number of lost events.
+	 */
+	Integer overallLostEventsCount;
+	
+	
 	public User(){}
 
 	public User(String mongoId) {
 		this.mongoId = mongoId;
 		this.balance = SportScoreApiConstants.STARTING_BALANCE;
-		this.lostEventsCount = 0;
-		this.lostSlipsCount = 0;
-		this.wonEventsCount = 0;
-		this.wonSlipsCount = 0;
+		this.monthlyLostEventsCount = 0;
+		this.monthlyLostSlipsCount = 0;
+		this.monthlyWonEventsCount = 0;
+		this.monthlyWonSlipsCount = 0;
 		this.overallLostEventsCount = 0;
 		this.overallLostSlipsCount = 0;
 		this.overallWonEventsCount = 0;
@@ -76,6 +117,85 @@ implements Serializable{
 		this.userBets = new ArrayList<UserBet>();
 		this.userAwards = new ArrayList<UserAward>();
 		this.bounties = new ArrayList<UserBounty>();
+	}
+	
+	public void init() {
+		this.balance = SportScoreApiConstants.STARTING_BALANCE;
+		this.monthlyLostEventsCount = 0;
+		this.monthlyLostSlipsCount = 0;
+		this.monthlyWonEventsCount = 0;
+		this.monthlyWonSlipsCount = 0;
+		this.overallLostEventsCount = 0;
+		this.overallLostSlipsCount = 0;
+		this.overallWonEventsCount = 0;
+		this.overallWonSlipsCount = 0;
+		this.userBets = new ArrayList<UserBet>();
+		this.userAwards = new ArrayList<UserAward>();
+		this.bounties = new ArrayList<UserBounty>();
+	}
+	
+	public Integer getOverallWonSlipsCount() {
+		return overallWonSlipsCount;
+	}
+
+	public void setOverallWonSlipsCount(Integer overallWonSlipsCount) {
+		this.overallWonSlipsCount = overallWonSlipsCount;
+	}
+
+	public Integer getOverallLostSlipsCount() {
+		return overallLostSlipsCount;
+	}
+
+	public void setOverallLostSlipsCount(Integer overallLostSlipsCount) {
+		this.overallLostSlipsCount = overallLostSlipsCount;
+	}
+
+	public Integer getOverallWonEventsCount() {
+		return overallWonEventsCount;
+	}
+
+	public void setOverallWonEventsCount(Integer overallWonEventsCount) {
+		this.overallWonEventsCount = overallWonEventsCount;
+	}
+
+	public Integer getOverallLostEventsCount() {
+		return overallLostEventsCount;
+	}
+
+	public void setOverallLostEventsCount(Integer overallLostEventsCount) {
+		this.overallLostEventsCount = overallLostEventsCount;
+	}
+
+	public Integer getMonthlyWonSlipsCount() {
+		return monthlyWonSlipsCount;
+	}
+
+	public void setMonthlyWonSlipsCount(Integer wonSlipsCount) {
+		this.monthlyWonSlipsCount = wonSlipsCount;
+	}
+
+	public Integer getMonthlyLostSlipsCount() {
+		return monthlyLostSlipsCount;
+	}
+
+	public void setMonthlyLostSlipsCount(Integer lostSlipsCount) {
+		this.monthlyLostSlipsCount = lostSlipsCount;
+	}
+
+	public Integer getMonthlyWonEventsCount() {
+		return monthlyWonEventsCount;
+	}
+
+	public void setMonthlyWonEventsCount(Integer wonEventsCount) {
+		this.monthlyWonEventsCount = wonEventsCount;
+	}
+
+	public Integer getMonthlyLostEventsCount() {
+		return monthlyLostEventsCount;
+	}
+
+	public void setMonthlyLostEventsCount(Integer lostEventsCount) {
+		this.monthlyLostEventsCount = lostEventsCount;
 	}
 	
 	public List<String> getUserAwardsIds() {

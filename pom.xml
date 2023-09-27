@@ -45,12 +45,13 @@
 		</dependency>
 
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-util</artifactId>
 			<version>8.0.36</version>
+			<version>9.0.62</version>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>javax.websocket</groupId>
@@ -184,6 +185,7 @@
 		<module>betCoreServer</module>
 		<module>betCoreCommon</module>
 		<module>betMongo</module>
+		<module>betRedisCache</module>
 	</modules>
 
 

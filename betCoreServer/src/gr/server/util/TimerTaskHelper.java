@@ -1,52 +1,26 @@
 package gr.server.util;
 
-import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.TimerTask;
+import java.util.stream.Collectors;
 
+import gr.server.application.RestApplication;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.League;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
-import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
+import gr.server.data.constants.SportScoreApiConstants;
+import gr.server.data.enums.MatchEventStatus;
 import gr.server.impl.client.MongoClientHelperImpl;
-import gr.server.mongo.util.SyncHelper;
 import gr.server.transaction.helper.TransactionalBlock;
 
 public class TimerTaskHelper {
 
-	public static TimerTask deleteStaleEventsTask() {
-		return new TimerTask() {
-			public void run() {
-				new TransactionalBlock() {
-					@Override
-					public void begin() throws Exception {
-						// new MongoClientHelperImpl().deletePastEvents();
-					}
-				}.execute();
-			}
-		};
-	}
-
-	public static TimerTask deleteBountiesTask() {
-		return new TimerTask() {
-			public void run() {
-				System.out.println("Deleting bounties for: " + new Date() + "n" + "Thread's name: "
-						+ Thread.currentThread().getName());
-
-				new TransactionalBlock() {
-					@Override
-					public void begin() throws Exception {
-						// new MongoClientHelperImpl().deleteBountiesUntil(session,
-						// DateUtils.getBountiesExpirationDate());
-					}
-				}.execute();
-			}
-		};
-	}
-
 	public static TimerTask maintainWebSocketTask(SportScoreWebSocketClient client) {
 		return new TimerTask() {
 			public void run() {
-				client.sendMessage("{\"event\":\"pusher:ping\",\"data\":{}}");
+				client.sendMessage(SportScoreApiConstants.SOCKET_KEEP_ALIVE_MSG);
 			}
 		};
 	}
@@ -62,10 +36,20 @@ public class TimerTaskHelper {
 				new TransactionalBlock() {
 					@Override
 					public void begin() throws Exception {
-						System.out.println("Working in thread: " + Thread.currentThread().getName());
-//						List<MatchEvent> todayEvents = ApiDataFetchHelper.eventsForDate(new Date());
-						List<MatchEvent> todayEvents = MockApiDataFetchHelper.fetchEvents("finishedEvents").getData();
-						new MongoClientHelperImpl().settlePredictions(session, todayEvents);
+						System.out.println("Settle predictions Working in thread: " + Thread.currentThread().getName());
+
+						Set<MatchEvent> todaysFinishedEvents = new HashSet<>(); 
+						
+						Map<League, Map<Integer, MatchEvent>> todaysLeagues = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(0);
+						todaysLeagues.values().forEach(
+								leagueMatchesMap -> {
+									Set<MatchEvent> finishedEventsForLeague = leagueMatchesMap.values().stream().filter(
+											match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus()))
+									.collect(Collectors.toSet());
+									todaysFinishedEvents.addAll(finishedEventsForLeague);
+								});
+						
+						new MongoClientHelperImpl().settlePredictions(session, todaysFinishedEvents);
 					}
 				}.execute();
 			}
@@ -79,8 +63,7 @@ public class TimerTaskHelper {
 					@Override
 					public void begin() throws Exception {
 						System.out.println("Working in thread: " + Thread.currentThread().getName());
-						SyncHelper.settleOpenBets(session);
-						//new MongoClientHelperImpl().settleBets(session);
+						new MongoClientHelperImpl().settleOpenBets(session);
 					}
 				}.execute();
 			

@@ -15,6 +15,12 @@
 			<groupId>gr.betServer</groupId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		
+		<dependency>
+			<artifactId>betRedisCache</artifactId>
+			<groupId>gr.betServer</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<dependency>
 			<artifactId>betCoreCommon</artifactId>

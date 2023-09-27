@@ -6,6 +6,8 @@ import gr.server.data.constants.ServerConstants;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class DateUtils {
 	
@@ -43,6 +45,19 @@ public class DateUtils {
 		Calendar instance = Calendar.getInstance();
 		instance.add(Calendar.DATE, -8);
 		return instance.getTime();
+	}
+	
+	public static Map<Integer, Date> getDatesToFetch() {
+		Map<Integer, Date> datesToFetch = new LinkedHashMap<>();
+		Calendar instance = Calendar.getInstance();
+		instance.add(Calendar.DATE, -1);
+		Date yesterday = instance.getTime();
+		datesToFetch.put(-1, yesterday);
+		datesToFetch.put(0, new Date());
+		instance.add(Calendar.DATE, 2);
+		Date tomorrow = instance.getTime();
+		datesToFetch.put(1, tomorrow);
+		return datesToFetch;
 	}
 	
 	public static String todayStr() {

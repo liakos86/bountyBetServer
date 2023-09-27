@@ -73,7 +73,14 @@ extends Application{
 	static int EUROPE_EURO_CUP = 846; 
 
 	static {
-		PRIORITIES_OVERRIDDE.put(EUROPE_EURO_QUAL, Integer.MAX_VALUE);
+		PRIORITIES_OVERRIDDE.put(EUROPE_EURO_QUAL, Integer.MAX_VALUE-1);
+		PRIORITIES_OVERRIDDE.put(UEFA_CHAMPIONS_LEAGUE, Integer.MAX_VALUE);
+		PRIORITIES_OVERRIDDE.put(UEFA_EUROPA_LEAGUE, Integer.MAX_VALUE - 1);
+		PRIORITIES_OVERRIDDE.put(WORLD_CUP, Integer.MAX_VALUE);
+		PRIORITIES_OVERRIDDE.put(ENGLAND_PREMIER_LEAGUE, Integer.MAX_VALUE);
+		PRIORITIES_OVERRIDDE.put(ITALY_SERIE_A, Integer.MAX_VALUE -2);
+		PRIORITIES_OVERRIDDE.put(GERMANY_BUNDESLIGA, Integer.MAX_VALUE -2);
+		PRIORITIES_OVERRIDDE.put(SPAIN_LA_LIGA, Integer.MAX_VALUE -1);
 	};
 	
 	/**
@@ -88,8 +95,9 @@ extends Application{
 	
 	/**
 	 * Maps days with the leagues and their games.
+	 * Key '0' is considered to be today, '1' is tomorrow, '-1' is yesterday etc.
 	 */
-	public static Map<String, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = new LinkedHashMap<>();
+	public static Map<Integer, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = new LinkedHashMap<>();
 	
 	/**
 	 * 

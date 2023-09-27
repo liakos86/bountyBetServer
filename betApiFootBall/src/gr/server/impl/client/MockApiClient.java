@@ -3,18 +3,12 @@ package gr.server.impl.client;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.model.events.Events;
-import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
-import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Leagues;
 import gr.server.data.api.model.league.Seasons;
 import gr.server.data.api.model.league.Sections;

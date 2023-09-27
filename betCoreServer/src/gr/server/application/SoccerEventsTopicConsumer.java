@@ -1,7 +1,5 @@
 package gr.server.application;
 
-import java.util.Map;
-
 import javax.jms.Connection;
 import javax.jms.Destination;
 import javax.jms.ExceptionListener;
@@ -9,13 +7,9 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageConsumer;
 import javax.jms.MessageListener;
-import javax.jms.MessageProducer;
 import javax.jms.Session;
-import javax.jms.TextMessage;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-
-import com.google.gson.Gson;
 
 import gr.server.data.constants.ActiveMqConstants;
 import gr.server.data.live.helper.LiveUpdatesHelper;

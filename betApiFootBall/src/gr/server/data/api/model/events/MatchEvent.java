@@ -18,7 +18,7 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	MatchEventIncidents incidents;
 
 	//ChangeEvent changeEvent;
-	boolean markedForRemoval;
+	//boolean markedForRemoval;
 
 	Object sport;
 
@@ -30,7 +30,7 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	Integer venue_id;
 	Integer referee_id;
 
-	String slug;
+	//String slug;
 	String name;
 
 	String start_at;// 2022-09-05 00:00:00
@@ -47,8 +47,9 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	TimeDetails time_details;
 	Object time_live; // can be string or int. e.g. 54 or 'Halftime'.
 
-	Integer home_team_id;
-	Integer away_team_id;
+//	Integer home_team_id;
+//	Integer away_team_id;
+	
 	Team home_team;
 	Team away_team;
 	Integer priority;
@@ -120,21 +121,21 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.sport_id = sport_id;
 	}
 
-	public Integer getHome_team_id() {
-		return home_team_id;
-	}
-
-	public void setHome_team_id(Integer home_team_id) {
-		this.home_team_id = home_team_id;
-	}
-
-	public Integer getAway_team_id() {
-		return away_team_id;
-	}
-
-	public void setAway_team_id(Integer away_team_id) {
-		this.away_team_id = away_team_id;
-	}
+//	public Integer getHome_team_id() {
+//		return home_team_id;
+//	}
+//
+//	public void setHome_team_id(Integer home_team_id) {
+//		this.home_team_id = home_team_id;
+//	}
+//
+//	public Integer getAway_team_id() {
+//		return away_team_id;
+//	}
+//
+//	public void setAway_team_id(Integer away_team_id) {
+//		this.away_team_id = away_team_id;
+//	}
 
 	public Integer getLeague_id() {
 		return league_id;
@@ -176,13 +177,13 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.referee_id = referee_id;
 	}
 
-	public String getSlug() {
-		return slug;
-	}
-
-	public void setSlug(String slug) {
-		this.slug = slug;
-	}
+//	public String getSlug() {
+//		return slug;
+//	}
+//
+//	public void setSlug(String slug) {
+//		this.slug = slug;
+//	}
 
 	public String getName() {
 		return name;
@@ -233,37 +234,12 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	}
 
 	public String getStart_at() {
-//		String format = SportScoreApiConstants.MATCH_START_TIME_FORMAT;
-//		try {
-//			Date parse = new SimpleDateFormat(format).parse(start_at);
-//			this.start_hour = parse.getHours();
-//			this.start_minute = parse.getMinutes();
-//		} catch (ParseException e) {
-//			System.out.println("START HOUR ERROR");
-//			e.printStackTrace();
-//		}
 		return start_at;
 	}
 
 	public void setStart_at(String start_at) {
 		this.start_at = start_at;
 	}
-
-//	public Integer getStart_hour() {
-//		return start_hour;
-//	}
-//
-//	public void setStart_hour(Integer start_hour) {
-//		this.start_hour = start_hour;
-//	}
-//
-//	public Integer getStart_minute() {
-//		return start_minute;
-//	}
-//
-//	public void setStart_minute(Integer start_minute) {
-//		this.start_minute = start_minute;
-//	}
 
 	public Integer getPriority() {
 		return priority;
@@ -521,13 +497,13 @@ public class MatchEvent implements Comparable<MatchEvent> {
 //		this.changeEvent = changeEvent;
 //	}
 
-	public boolean isMarkedForRemoval() {
-		return markedForRemoval;
-	}
-
-	public void setMarkedForRemoval(boolean markedForRemoval) {
-		this.markedForRemoval = markedForRemoval;
-	}
+//	public boolean isMarkedForRemoval() {
+//		return markedForRemoval;
+//	}
+//
+//	public void setMarkedForRemoval(boolean markedForRemoval) {
+//		this.markedForRemoval = markedForRemoval;
+//	}
 
 	public MatchEventIncidents getIncidents() {
 		return incidents;

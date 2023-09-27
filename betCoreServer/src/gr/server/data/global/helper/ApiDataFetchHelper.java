@@ -4,17 +4,16 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import gr.server.application.RestApplication;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
-import gr.server.data.enums.MatchEventStatus;
 import gr.server.impl.client.SportScoreClient;
 import gr.server.util.DateUtils;
 
@@ -30,13 +29,11 @@ public class ApiDataFetchHelper {
 	 * 
 	 */
 	public static void fetchEventsIntoLeagues() {
-		List<Date> datesToFetch = getDatesToFetchList();
-		List<MatchEvent> events = eventsForDate(datesToFetch.get(1));
+		Map<Integer, Date> datesToFetch = DateUtils.getDatesToFetch();
 		
-		for (Date date : datesToFetch) {
-//			List<MatchEvent> events = eventsForDate(date);
-			splitEventsIntoLeaguesAndDays(date, events);
-			splitEventsIntoLiveLeagues(events);
+		for (Entry<Integer, Date> dateEntry : datesToFetch.entrySet()) {
+			List<MatchEvent> events = eventsForDate(dateEntry.getValue());
+			splitEventsIntoLeaguesAndDays(dateEntry.getKey(), events);
 		}
 
 	}
@@ -61,18 +58,7 @@ public class ApiDataFetchHelper {
 		return events;
 	}
 
-	private static List<Date> getDatesToFetchList() {
-		List<Date> datesToFetch = new ArrayList<>();
-		Calendar instance = Calendar.getInstance();
-		instance.add(Calendar.DATE, -1);
-		Date yesterday = instance.getTime();
-		datesToFetch.add(yesterday);
-		datesToFetch.add(new Date());
-		instance.add(Calendar.DATE, 2);
-		Date tomorrow = instance.getTime();
-		datesToFetch.add(tomorrow);
-		return datesToFetch;
-	}
+	
 
 //	/**
 //	 * Gets the football events .
@@ -110,15 +96,15 @@ public class ApiDataFetchHelper {
 //
 //	}
 
-	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
-		
-		
-		for (MatchEvent matchEvent : events) {
-			if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(matchEvent.getStatus()))) {
-				continue;
-			}
-			
-			System.out.println("********* LIVE MATCH FOUND");
+//	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
+//		
+//		
+//		for (MatchEvent matchEvent : events) {
+//			if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(matchEvent.getStatus()))) {
+//				continue;
+//			}
+//			
+//			System.out.println("********* LIVE MATCH FOUND");
 			
 //			League matchLeague = matchEvent.getLeague();
 //			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
@@ -130,12 +116,12 @@ public class ApiDataFetchHelper {
 			//matchEvent.setIncidents(matchEventIncidents);
 //			RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague).put(matchEvent.getId(), matchEvent);
 			//RestApplication.MINUTE_TRACKER.track(matchEvent);
-		}
+//		}
 		
 //		int liveLeagues = RestApplication.LIVE_EVENTS_PER_LEAGUE.size();
 //		System.out.println("LIVE: " + liveLeagues);
 		
-	}
+//	}
 
 	
 	/**
@@ -145,7 +131,7 @@ public class ApiDataFetchHelper {
 	 * @param date
 	 * @param events
 	 */
-	private static void splitEventsIntoLeaguesAndDays(Date date, List<MatchEvent> events) {
+	private static void splitEventsIntoLeaguesAndDays(Integer position, List<MatchEvent> events) {
 		Map<League, Map<Integer, MatchEvent>> leaguesWithEvents = new HashMap<>();
 		for (MatchEvent event : events) {
 			League league = event.getLeague();
@@ -172,7 +158,7 @@ public class ApiDataFetchHelper {
 			}
 		}
 		
-		RestApplication.EVENTS_PER_DAY_PER_LEAGUE.put(DateUtils.dateStr(date), leaguesWithEvents);
+		RestApplication.EVENTS_PER_DAY_PER_LEAGUE.put(position, leaguesWithEvents);
 		
 	}
 

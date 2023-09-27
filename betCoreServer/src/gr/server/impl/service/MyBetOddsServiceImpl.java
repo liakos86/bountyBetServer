@@ -30,7 +30,6 @@ import gr.server.data.user.model.objects.UserBet;
 import gr.server.def.service.MyBetOddsService;
 import gr.server.email.EmailSendUtil;
 import gr.server.impl.client.MongoClientHelperImpl;
-import gr.server.mongo.util.SyncHelper;
 import gr.server.util.SecureUtils;
 
 
@@ -50,7 +49,7 @@ implements MyBetOddsService {
 		UserBet newBet =  new Gson().fromJson(userBetJson,
 				new TypeToken<UserBet>() {}.getType());
 		
-		SyncHelper.placeBet(newBet);
+		new MongoClientHelperImpl().placeBet(newBet);
 		
 		return getUser(newBet.getMongoUserId());	
 		
@@ -134,9 +133,9 @@ implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
 	public Response getLeagues(){
-		Map<String, List<League>> leaguesPerDay = new LinkedHashMap<>();
+		Map<Integer, List<League>> leaguesPerDay = new LinkedHashMap<>();
 		
-		for ( Map.Entry<String, Map<League, Map<Integer, MatchEvent>>> dailyEntry : RestApplication.EVENTS_PER_DAY_PER_LEAGUE.entrySet()) {
+		for ( Map.Entry<Integer, Map<League, Map<Integer, MatchEvent>>> dailyEntry : RestApplication.EVENTS_PER_DAY_PER_LEAGUE.entrySet()) {
 			List<League> dailyLeagues = new ArrayList<>();
 			
 			Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = dailyEntry.getValue();

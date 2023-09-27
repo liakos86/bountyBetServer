@@ -2,7 +2,7 @@ package gr.server.transaction.helper;
 
 import com.mongodb.client.ClientSession;
 
-import gr.server.mongo.util.SyncHelper;
+import gr.server.mongo.util.MongoUtils;
 
 public abstract class TransactionalBlock {
 	
@@ -12,7 +12,7 @@ public abstract class TransactionalBlock {
 	
 	public void execute(){
 		try{
-			session = SyncHelper.getMongoClient().startSession();
+			session = MongoUtils.getMongoClient().startSession();
 			session.startTransaction();
 			begin();
 			

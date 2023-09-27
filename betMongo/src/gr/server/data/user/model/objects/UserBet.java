@@ -21,19 +21,25 @@ public class UserBet implements Serializable{
 
 	String mongoUserId;
 	
+	long betPlaceMillis;
+	
 	/**
 	 * Every bet participates in a monthy contest. 
 	 * This is the yyyy/MM representation of the belonging month.
 	 */
-	String belongingMonth;
+	Integer belongingMonth;
+
+	Integer belongingYear;
 	
 	BetStatus betStatus;
+	
+	boolean predictionsSettled = false;
 	
 	double betAmount;
 	
 	List<UserPrediction> predictions;
 	
-	String betPlaceDate;
+//	String betPlaceDate;
 	
 	public String getMongoId() {
 		return mongoId;
@@ -51,13 +57,13 @@ public class UserBet implements Serializable{
 		this.mongoUserId = mongoUserId;
 	}
 
-	public String getBetPlaceDate() {
-		return betPlaceDate;
-	}
-
-	public void setBetPlaceDate(String betPlaceDate) {
-		this.betPlaceDate = betPlaceDate;
-	}
+//	public String getBetPlaceDate() {
+//		return betPlaceDate;
+//	}
+//
+//	public void setBetPlaceDate(String betPlaceDate) {
+//		this.betPlaceDate = betPlaceDate;
+//	}
 	
 	public List<UserPrediction> getPredictions() {
 		return predictions;
@@ -84,12 +90,28 @@ public class UserBet implements Serializable{
 		this.betStatus = betStatus;
 	}
 	
-	public String getBelongingMonth() {
+	public Integer getBelongingMonth() {
 		return belongingMonth;
 	}
 
-	public void setBelongingMonth(String belongingMonth) {
+	public void setBelongingMonth(Integer belongingMonth) {
 		this.belongingMonth = belongingMonth;
+	}
+
+	public long getBetPlaceMillis() {
+		return betPlaceMillis;
+	}
+
+	public void setBetPlaceMillis(long betPlaceMillis) {
+		this.betPlaceMillis = betPlaceMillis;
+	}
+	
+	public Integer getBelongingYear() {
+		return belongingYear;
+	}
+
+	public void setBelongingYear(Integer belongingYear) {
+		this.belongingYear = belongingYear;
 	}
 
 	public Double getPossibleEarnings() {

@@ -19,7 +19,7 @@ public interface MongoFields {
 	
 	String VALIDATED = "validated";
 	
-	String ID = "id";
+	//String ID = "id";
 	
 	/**
 	 * Used as foreign key for bets, awards, etc.
@@ -30,11 +30,15 @@ public interface MongoFields {
 
 	String BET_BELONGING_MONTH = "belongingMonth";
 
-	String BET_PLACE_DATE = "betPlaceDate";
+	String BET_BELONGING_YEAR = "belongingYear";
+
+	//String BET_PLACE_DATE = "betPlaceDate";
 
 	String BET_STATUS = "betStatus";
 
 	String BET_AMOUNT = "betAmount";
+	
+	//String BET_PREDICTIONS_SETTLED = "betPredictionsSettled";
 
 	String BET_MONGO_USER_ID = "mongoUserId";
 
@@ -45,6 +49,15 @@ public interface MongoFields {
 	String USER_OVERALL_WON_SLIPS = "overallWonSlipsCount";
 	
 	String USER_OVERALL_LOST_SLIPS = "overallLostSlipsCount";
+	
+	String USER_MONTHLY_WON_EVENTS = "monthlyWonEventsCount";
+	
+	String USER_MONTHLY_LOST_EVENTS = "monthlyLostEventsCount";
+	
+	String USER_MONTHLY_WON_SLIPS = "monthlyWonSlipsCount";
+	
+	String USER_MONTHLY_LOST_SLIPS = "monthlyLostSlipsCount";
+	
 
 	String AWARD_WINNER = "winner";
 	
@@ -60,18 +73,28 @@ public interface MongoFields {
 	
 	String USER_BET_PREDICTIONS = "predictions";
 	
-	String USER_BET_PREDICTION_EVENT_ID = "eventId";
+	String EVENT_ID = "eventId";
 
 	String USER_BET_PREDICTION_STATUS = "predictionStatus";
+	
+	String USER_BET_PREDICTION_SETTLE_STATUS = "predictionSettleStatus";
 	
 	String USER_BET_PREDICTION_TYPE = "predictionType";
 
 	String USER_BET_PREDICTION_BET_MONGO_ID = "mongoBetId";
+
+	String USER_BET_PLACEMENT_MILLIS = "betPlacementMillis";
 
 	String USER_BET_PREDICTION_ODD_VALUE = "oddValue";
 
 	String USER_BET_PREDICTION_CATEGORY = "predictionCategory";
 
 	String USER_BET_POSSIBLE_WINNINGS = "possibleWinnings";
+	
+	String SETTLED_EVENT_BELONGING_MONTH = "eventBelongingMonth";
+	String SETTLED_EVENT_BELONGING_DAY = "eventBelongingDay";
+	String SETTLED_EVENT_BELONGING_YEAR = "eventBelongingYear";
+
+
 
 }

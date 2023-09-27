@@ -60,7 +60,6 @@ public class SportScoreClient {
 		
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
-		events.getData().forEach(e->e.getStart_at());//TODO: not here
 		return events;
 	}
 	

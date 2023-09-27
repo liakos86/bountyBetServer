@@ -1,83 +1,279 @@
-//package gr.server.impl.client;
-//
-//import java.text.ParseException;
-//import java.text.SimpleDateFormat;
-//import java.time.LocalDateTime;
-//import java.time.ZoneId;
-//import java.time.ZoneOffset;
-//import java.time.ZonedDateTime;
-//import java.time.format.DateTimeFormatter;
-//import java.util.ArrayList;
-//import java.util.Date;
-//import java.util.List;
-//
-//import org.bson.Document;
-//import org.junit.Test;
-//
-//import com.google.gson.reflect.TypeToken;
-//
-//import gr.server.application.exception.UserExistsException;
-//import gr.server.data.api.model.league.League;
-//import gr.server.data.constants.ApiFootBallConstants;
-//import gr.server.data.constants.CollectionNames;
-//import gr.server.data.user.model.objects.UserBet;
-//import gr.server.data.user.model.objects.UserPrediction;
-//import gr.server.mongo.util.DateUtils;
-//import gr.server.mongo.util.Executor;
-//import gr.server.mongo.util.MongoCollectionUtils;
-//
-//public class TestMongoClientHelper {
-//	
-//	/**
-//	 * Calls mongo db in order to store a new document in bets collection
-//	 */
-//	@Test
-//	public void testPlacePrediction(){
-//		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
-//		UserBet userBet = new UserBet();
-//		userBet.setMongoUserId("user1");
-//		userBet.setBetAmount(30);
-//		userBet.setBetStatus(1);
-//		
-//		List<UserPrediction> preds = new ArrayList<UserPrediction>();
-//		UserPrediction pred = new UserPrediction();
-//		pred.setEventId("395975");
-//		pred.setPrediction(1);
-//		preds.add(pred);
-//		userBet.setPredictions(preds);
-//		userBet = mHelper.placeBet(userBet);
-//		System.out.println(userBet.getMongoUserId());//(placePrediction.getObjectId("_id"));
-//	}
-//	
-//	/**
-//	 * Calls mongo db in order to store a new {@link User} in user collection
-//	 * @throws UserExistsException 
-//	 */
-//	@Test//(expected=UserExistsException.class)
-//	public void testCreateUser() throws UserExistsException{
-//		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
-//		User user = new User();
-//		user.setUsername("kostas");
-//		mHelper.createUser(user);
-//	}
-//	
-//	/**
-//	 * Calls mongo db in order to retrieve {@link User}'s open bets
-//	 */
-//	@Test
-//	public void testGetOpenBets() throws UserExistsException{
-//		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
-//		User jim = mHelper.getUser("5c718c6c67a90b10dc34c244");
-//		System.out.println(jim.getUserBets().get(0).getPredictions().get(0).getPrediction());
-//	}
-//	
-//	@Test
-//	public void testGetCountriesWithCompetitions(){
-//		List<League> retrieveCompetitionsWithEventsAndOdds = new MongoClientHelperImpl().getLeagues();
-//		
-//		System.out.println(retrieveCompetitionsWithEventsAndOdds.size());
-//	}
-//	
+package gr.server.impl.client;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.bson.Document;
+import org.bson.conversions.Bson;
+import org.bson.types.ObjectId;
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.Filters;
+
+import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.bet.enums.BetStatus;
+import gr.server.data.bet.enums.PredictionCategory;
+import gr.server.data.bet.enums.PredictionType;
+import gr.server.data.constants.CollectionNames;
+import gr.server.data.constants.MongoFields;
+import gr.server.data.constants.ServerConstants;
+import gr.server.data.enums.MatchEventStatus;
+import gr.server.data.user.model.objects.User;
+import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserPrediction;
+import gr.server.mongo.util.MongoUtils;
+import gr.server.transaction.helper.TransactionalBlock;
+
+public class TestMongoClientHelper {
+	
+	/**
+	 * Creates a new user.
+	 * Places a bet for the new user.
+	 * Reads the user again to verify bet fields.
+	 * Deletes the user.
+	 * Verifies deletion.
+	 */
+	@Test
+	public void testPlaceBet(){
+
+		User user = createUser();
+		
+		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+		
+		UserBet userBet = new UserBet();
+		userBet.setMongoUserId(user.getMongoId());
+		userBet.setBetAmount(30);
+		
+		List<UserPrediction> preds = new ArrayList<UserPrediction>();
+		UserPrediction pred = new UserPrediction();
+		pred.setEventId(395975);
+		pred.setPredictionCategory(PredictionCategory.FINAL_RESULT);
+		pred.setPredictionType(PredictionType.AWAY_WIN);
+		pred.setOddValue(13.5d);
+		preds.add(pred);
+		
+		
+		userBet.setPredictions(preds);
+		mHelper.placeBet(userBet);
+		
+		Assert.assertTrue(userBet.getMongoId() != null);
+		System.out.println(userBet.getMongoId());
+		
+		user = mHelper.getUser(user.getMongoId());
+		Assert.assertEquals(1, user.getUserBets().size());
+		UserBet retrievedBet = user.getUserBets().get(0);
+		Assert.assertEquals(userBet.getMongoId(), retrievedBet.getMongoId());
+		Assert.assertEquals(BetStatus.PENDING, retrievedBet.getBetStatus());
+	
+		mHelper.deleteUser(user.getMongoId());
+		user = mHelper.getUser(user.getMongoId());
+		Assert.assertNull(user);
+		
+	}
+	
+	
+	/**
+	 * Creates a new user.
+	 * Places a bet for the new user.
+	 * Reads the user again to verify bet fields.
+	 * Deletes the user.
+	 * Verifies deletion.
+	 */
+	@SuppressWarnings("removal")
+	@Test
+	public void testSettleBetLost(){
+		
+		User user = createUser();
+		
+		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+
+		
+		UserBet userBet = new UserBet();
+		userBet.setMongoUserId(user.getMongoId());
+		userBet.setBetAmount(30);
+		
+		List<UserPrediction> preds = new ArrayList<UserPrediction>();
+		
+		UserPrediction predCorrect = new UserPrediction();
+		predCorrect.setEventId(1);
+		predCorrect.setPredictionCategory(PredictionCategory.FINAL_RESULT);
+		predCorrect.setPredictionType(PredictionType.AWAY_WIN);
+		predCorrect.setOddValue(3.5d);
+		preds.add(predCorrect);
+		
+		UserPrediction predWrong = new UserPrediction();
+		predWrong.setEventId(2);
+		predWrong.setPredictionCategory(PredictionCategory.FINAL_RESULT);
+		predWrong.setPredictionType(PredictionType.AWAY_WIN);
+		predWrong.setOddValue(2.5d);
+		preds.add(predWrong);
+		
+		userBet.setPredictions(preds);
+		mHelper.placeBet(userBet);
+		
+		Set<MatchEvent> events = new HashSet<>();
+		MatchEvent eventWon = new MatchEvent();
+		eventWon.setId(1);
+		eventWon.setStatus(MatchEventStatus.FINISHED.getStatusStr());
+		eventWon.setWinner_code(PredictionType.AWAY_WIN.getCode());
+		events.add(eventWon);
+		MatchEvent eventLost = new MatchEvent();
+		eventLost.setId(2);
+		eventLost.setStatus(MatchEventStatus.FINISHED.getStatusStr());
+		eventLost.setWinner_code(PredictionType.DRAW.getCode());
+		events.add(eventLost);
+		
+		new TransactionalBlock() {
+			@Override
+			public void begin() throws Exception {
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				mongoClientHelperImpl.settlePredictions(session, events);
+			}
+		}.execute();
+		
+		new TransactionalBlock() {
+			@Override
+			public void begin() throws Exception {
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
+		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
+		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+
+		    	
+		    	Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
+		    	FindIterable<Document> find = betsCollection.find(betFilter);
+				mongoClientHelperImpl.settleOpenBet(session, find.first(), usersCollection, predictionsCollection, betsCollection);
+			}
+		}.execute();
+		
+		user = mHelper.getUser(user.getMongoId());
+		
+		Assert.assertEquals(new Integer(1), user.getOverallLostEventsCount());
+		Assert.assertEquals(new Integer(1), user.getOverallWonEventsCount());
+		Assert.assertEquals(new Integer(0), user.getOverallWonSlipsCount());
+		Assert.assertEquals(new Integer(1), user.getOverallLostSlipsCount());
+		
+		Assert.assertEquals(new Integer(1), user.getMonthlyLostEventsCount());
+		Assert.assertEquals(new Integer(1), user.getMonthlyWonEventsCount());
+		Assert.assertEquals(new Integer(0), user.getMonthlyWonSlipsCount());
+		Assert.assertEquals(new Integer(1), user.getMonthlyLostSlipsCount());
+		
+		Double expectedBalance = ServerConstants.STARTING_BALANCE - userBet.getBetAmount();
+		Assert.assertEquals(expectedBalance, user.getBalance());
+		
+		mHelper.deleteUser(user.getMongoId());
+		mHelper.deleteSettledEvent(1);
+		mHelper.deleteSettledEvent(2);
+		
+	}
+	
+	/**
+	 * Creates a new user.
+	 * Places a bet for the new user.
+	 * Reads the user again to verify bet fields.
+	 * Deletes the user.
+	 * Verifies deletion.
+	 */
+	@SuppressWarnings("removal")
+	@Test
+	public void testSettleBetWon(){
+		
+		User user = createUser();
+		
+		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+
+		
+		UserBet userBet = new UserBet();
+		userBet.setMongoUserId(user.getMongoId());
+		userBet.setBetAmount(30);
+		
+		List<UserPrediction> preds = new ArrayList<UserPrediction>();
+		
+		UserPrediction predCorrect = new UserPrediction();
+		predCorrect.setEventId(1);
+		predCorrect.setPredictionCategory(PredictionCategory.FINAL_RESULT);
+		predCorrect.setPredictionType(PredictionType.AWAY_WIN);
+		predCorrect.setOddValue(3.5d);
+		preds.add(predCorrect);
+		
+		UserPrediction predWrong = new UserPrediction();
+		predWrong.setEventId(2);
+		predWrong.setPredictionCategory(PredictionCategory.FINAL_RESULT);
+		predWrong.setPredictionType(PredictionType.AWAY_WIN);
+		predWrong.setOddValue(2.5d);
+		preds.add(predWrong);
+		
+		userBet.setPredictions(preds);
+		mHelper.placeBet(userBet);
+		
+		user = mHelper.getUser(user.getMongoId());
+		
+		Double newBalance = 970d;
+		Assert.assertEquals(newBalance, user.getBalance());
+		
+		Set<MatchEvent> events = new HashSet<>();
+		MatchEvent eventWon = new MatchEvent();
+		eventWon.setId(1);
+		eventWon.setStatus(MatchEventStatus.FINISHED.getStatusStr());
+		eventWon.setWinner_code(PredictionType.AWAY_WIN.getCode());
+		events.add(eventWon);
+		MatchEvent eventLost = new MatchEvent();
+		eventLost.setId(2);
+		eventLost.setStatus(MatchEventStatus.FINISHED.getStatusStr());
+		eventLost.setWinner_code(PredictionType.AWAY_WIN.getCode());
+		events.add(eventLost);
+		
+		new TransactionalBlock() {
+			@Override
+			public void begin() throws Exception {
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				mongoClientHelperImpl.settlePredictions(session, events);
+			}
+		}.execute();
+		
+		new TransactionalBlock() {
+			@Override
+			public void begin() throws Exception {
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
+		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
+		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+
+		    	
+		    	Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
+		    	FindIterable<Document> find = betsCollection.find(betFilter);
+				mongoClientHelperImpl.settleOpenBet(session, find.first(), usersCollection, predictionsCollection, betsCollection);
+			}
+		}.execute();
+		
+		mHelper.deleteSettledEvent(1);
+		mHelper.deleteSettledEvent(2);
+
+		user = mHelper.getUser(user.getMongoId());
+		
+		Assert.assertEquals(new Integer(0), user.getOverallLostEventsCount());
+		Assert.assertEquals(new Integer(2), user.getOverallWonEventsCount());
+		Assert.assertEquals(new Integer(1), user.getOverallWonSlipsCount());
+		Assert.assertEquals(new Integer(0), user.getOverallLostSlipsCount());
+		
+		Assert.assertEquals(new Integer(0), user.getMonthlyLostEventsCount());
+		Assert.assertEquals(new Integer(2), user.getMonthlyWonEventsCount());
+		Assert.assertEquals(new Integer(1), user.getMonthlyWonSlipsCount());
+		Assert.assertEquals(new Integer(0), user.getMonthlyLostSlipsCount());
+		
+		Double expectedBalance = ServerConstants.STARTING_BALANCE - userBet.getBetAmount() + userBet.getPossibleEarnings();
+		Assert.assertEquals( expectedBalance, user.getBalance());
+		
+		mHelper.deleteUser(user.getMongoId());
+		
+	}
+	
+	
 //	@Test
 //	public void testGetPreviousMonthAsString(){
 //		System.out.println(DateUtils.getPastMonthAsString(1));
@@ -105,5 +301,15 @@
 //		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(ApiFootBallConstants.EVENT_DATE_TIME_FORMAT);
 //		System.out.println(simpleDateFormat.format(new Date(bets.get(0).getMatchFullDate().get$numberLong())));
 //	}
-//	
-//}
+	
+	User createUser() {
+		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+		User user = new User();
+		user.setUsername("TestUser"+System.currentTimeMillis());
+		user.setPassword("pass");
+		user.setEmail(System.currentTimeMillis() + "test@test.gr");
+		user = mHelper.createUser(user );
+		return user;
+	}
+	
+}

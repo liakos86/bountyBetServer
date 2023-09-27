@@ -2,6 +2,12 @@ package gr.server.data.constants;
 
 public interface SportScoreApiConstants {
 	
+	String SOCKET_CONN_URL = "wss://tipsscore.com:2083/app/7UXH2sNFqpVAO6FebyTKpujgfy8BUnM?protocol=7&client=js&version=5.0.3&flash=false";
+	
+	String SOCKET_BOOTSTRAP_MSG = "{\"event\":\"pusher:subscribe\",\"data\":{\"channel\":\"en-football-list\"}}";
+	
+	String SOCKET_KEEP_ALIVE_MSG = "{\"event\":\"pusher:ping\",\"data\":{}}";
+	
 	Double STARTING_BALANCE = 1000d;
 	
 	String MATCH_START_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";//2022-10-13 15:00:00
@@ -10,9 +16,9 @@ public interface SportScoreApiConstants {
 	
 	String RAPID_API_HEADER_KEY = "X-RapidAPI-Key";
 	
-//	String RAPID_API_HEADER_VALUE = "515a19444amsh5c64c4c7936b110p18da20jsnb78c0b6bdd4b";
+	String RAPID_API_HEADER_VALUE = "515a19444amsh5c64c4c7936b110p18da20jsnb78c0b6bdd4b";
 	
-	String RAPID_API_HEADER_VALUE = "85e030da0emshab164327ab5b045p1af3c4jsn649b7c8be9fd";
+//	String RAPID_API_HEADER_VALUE = "85e030da0emshab164327ab5b045p1af3c4jsn649b7c8be9fd";
 	
 	String RAPID_API_HEADER_HOST_KEY = "X-RapidAPI-Host";
 	

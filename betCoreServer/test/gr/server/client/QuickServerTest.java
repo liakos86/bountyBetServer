@@ -5,13 +5,10 @@ import java.util.Map;
 
 import javax.jms.JMSException;
 
-import org.junit.Test;
-
-import gr.server.application.RestApplication;
-import gr.server.application.SoccerEventsTopicConsumer;
 import gr.server.application.SoccerEventsTopicProducer;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.Score;
+import gr.server.redis.cache.RedisFetchHelper;
 
 public class QuickServerTest {
 	
@@ -34,7 +31,7 @@ public class QuickServerTest {
 		
 		Thread.sleep(5000);
 		
-		SoccerEventsTopicConsumer consumer = new SoccerEventsTopicConsumer();
+		//SoccerEventsTopicConsumer consumer = new SoccerEventsTopicConsumer();
 		
 		
 		//Thread.sleep(2000);
@@ -43,6 +40,12 @@ public class QuickServerTest {
 		
 		
 		//Thread.sleep(20000);
+	}
+	
+	
+	//@Test
+	public void testRedisConn() {
+		RedisFetchHelper.fetchCachedEventsIntoLeagues();
 	}
 
 }

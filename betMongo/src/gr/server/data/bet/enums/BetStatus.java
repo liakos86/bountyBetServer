@@ -13,10 +13,10 @@ public enum BetStatus implements Serializable {
 	SETTLED_FAVOURABLY(2, "Won"),
 	
 	@SerializedName("3")
-	SETTLED_UNFAVOURABLY(3, "Lost");
+	SETTLED_UNFAVOURABLY(3, "Lost"),
 	
-//	@SerializedName("4")
-//	PENDING_LOST(4, "Lost");
+	@SerializedName("4")
+	PENDING_LOST(4, "Lost");
 	
 	private static final long serialVersionUID = 1L;
 	private String statusString;
@@ -27,13 +27,13 @@ public enum BetStatus implements Serializable {
 		this.setStatusString(statusString);
 	}
 	
-	public PredictionStatus fromCode(int code) throws Exception {
-		for(PredictionStatus status : PredictionStatus.values()){
+	public static BetStatus fromCode(int code) throws Exception {
+		for(BetStatus status : BetStatus.values()){
 			if (code == status.getCode()){
 				return status;
 			}
 		}
-		throw new Exception("Prediction code: "+code+" not found");
+		throw new Exception("Bet status code: "+code+" not found");
 	}
 
 	public String getStatusString() {

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<project name="Hello World" basedir=".">
+
+<target name="compile">
+		<mkdir dir="./gen/"/>
+       <javac srcdir="./betMongo/src/gr/server/program" includeantruntime="true" includes="SettleProgram.java" destdir="./gen/"></javac>
+</target>
+
+<target name="run" depends="compile">
+       <java classname="gen.gr.server.program.SettleProgram" fork="true"></java>
+</target>
+
+</project>
