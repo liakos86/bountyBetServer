@@ -3,6 +3,8 @@ package gr.server.data.api.model.league;
 import java.util.ArrayList;
 import java.util.List;
 
+import gr.server.data.api.model.league.Section;
+
 public class Sections {
 	
 	List<Section> data;

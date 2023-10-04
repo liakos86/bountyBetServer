@@ -33,7 +33,7 @@ import gr.server.data.user.model.objects.UserPrediction;
 import gr.server.def.client.MongoClientHelper;
 import gr.server.mongo.util.Executor;
 import gr.server.mongo.util.MongoUtils;
-import gr.server.transaction.helper.TransactionalBlock;
+import gr.server.transaction.helper.MongoTransactionalBlock;
 
 public class MongoClientHelperImpl 
 implements MongoClientHelper {
@@ -47,7 +47,7 @@ implements MongoClientHelper {
 	@Override
 	public User createUser(User user) {
 		
-		new TransactionalBlock() {
+		new MongoTransactionalBlock() {
 			@Override
 			public void begin() throws Exception {
 				System.out.println("Create user Working in thread: " + Thread.currentThread().getName());
@@ -144,7 +144,7 @@ implements MongoClientHelper {
 	
 	public void placeBet(UserBet userBet) {
 		
-		new TransactionalBlock() {
+		new MongoTransactionalBlock() {
 			@Override
 			public void begin() throws Exception {
 				userBet.setBetStatus(BetStatus.PENDING);
@@ -268,48 +268,64 @@ implements MongoClientHelper {
 		}
     }
 
-	void settleOpenBet(ClientSession session, Document betDocument, MongoCollection<Document> usersCollection, MongoCollection<Document> predictionsCollection, MongoCollection<Document> betsCollection) throws Exception {
+	void settleOpenBet(ClientSession session, Document betDocument, 
+			MongoCollection<Document> usersCollection, MongoCollection<Document> predictionsCollection, MongoCollection<Document> betsCollection) throws Exception {
+		
 		String betId = betDocument.getObjectId(MongoFields.MONGO_ID).toString();
 		Bson betPredictionsByBetIdFilter = Filters.eq(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, betId);
 		FindIterable<Document> betPredictions = predictionsCollection.find(session, betPredictionsByBetIdFilter);
 		
 		if (!betPredictions.iterator().hasNext()) {
-			throw new Exception("Bet without predictions: " + betId);
+			throw new RuntimeException("Bet without predictions: " + betId);
 		}
 		
+		int allPredictions = 0;
+		
 		int pendingPredictionsCount = 0;
+		
 		int lostPredictionsCount = 0;
 		int wonPredictionsCount = 0;
 		
+		int alreadySettledLostPredictionsCount = 0;
+		int alreadySettledWonPredictionsCount = 0;
+		
 		List<Bson> betUpdateDocuments = new ArrayList<>();//what to update in UserBet collection
 		List<Bson> userUpdateDocuments = new ArrayList<>();//what to update in User collection
-		List<Bson> predictionsUpdateDocuments = new ArrayList<>();//what to update in Predictions collection
+		List<Bson> predictionsToBeSettledDocuments = new ArrayList<>();//what to update in Predictions collection
 
 		for (Document predictionDocument : betPredictions) {
+			allPredictions = allPredictions + 1;
 			int predictionStatus = predictionDocument.getInteger(MongoFields.USER_BET_PREDICTION_STATUS);
 			int predictionSettleStatus = predictionDocument.getInteger(MongoFields.USER_BET_PREDICTION_SETTLE_STATUS);
 			if (PredictionSettleStatus.SETTLED.getCode() == predictionSettleStatus) {
-				//nothing
-				continue;
+				if (PredictionStatus.MISSED.getCode() == predictionStatus) {
+					alreadySettledLostPredictionsCount = alreadySettledLostPredictionsCount + 1;
+				}else if (PredictionStatus.CORRECT.getCode() == predictionStatus){
+					alreadySettledWonPredictionsCount = alreadySettledWonPredictionsCount + 1;
+				}
 			}else if (PredictionStatus.PENDING.getCode() == predictionStatus) {
 				pendingPredictionsCount = pendingPredictionsCount + 1;
 			}else if (PredictionStatus.MISSED.getCode() == predictionStatus) {
 				lostPredictionsCount = lostPredictionsCount + 1;
-				predictionsUpdateDocuments.add(Filters.eq(MongoFields.MONGO_ID, predictionDocument.getObjectId(MongoFields.MONGO_ID)));
+				predictionsToBeSettledDocuments.add(Filters.eq(MongoFields.MONGO_ID, predictionDocument.getObjectId(MongoFields.MONGO_ID)));
 			}else if (PredictionStatus.CORRECT.getCode() == predictionStatus){
 				wonPredictionsCount = wonPredictionsCount + 1;
-				predictionsUpdateDocuments.add(Filters.eq(MongoFields.MONGO_ID, predictionDocument.getObjectId(MongoFields.MONGO_ID)));
+				predictionsToBeSettledDocuments.add(Filters.eq(MongoFields.MONGO_ID, predictionDocument.getObjectId(MongoFields.MONGO_ID)));
 			}
 		}
 		
-		
 		BetStatus betStatus = BetStatus.fromCode(betDocument.getInteger(MongoFields.BET_STATUS, 0));
-		if (lostPredictionsCount > 0 && pendingPredictionsCount > 0 && BetStatus.PENDING.equals(betStatus)) {
-			Bson setLostFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.PENDING_LOST.getCode());
-			betUpdateDocuments.add(setLostFilter);
-		}else if (pendingPredictionsCount == 0) {
+		if (pendingPredictionsCount > 0 ) {
 			
-			if (lostPredictionsCount == 0 && wonPredictionsCount > 0) {
+			if (lostPredictionsCount > 0 && ! BetStatus.PENDING_LOST.equals(betStatus)) {
+				Bson setLostFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.PENDING_LOST.getCode());
+				betUpdateDocuments.add(setLostFilter);
+			}
+			
+		}else {
+			
+			if (lostPredictionsCount == 0 && alreadySettledLostPredictionsCount == 0 
+					&& wonPredictionsCount > 0 && (wonPredictionsCount+alreadySettledWonPredictionsCount == allPredictions)) {
 				Bson updateUserBalanceDocument = Updates.inc(MongoFields.USER_BALANCE, betDocument.getDouble(MongoFields.USER_BET_POSSIBLE_WINNINGS));
 				userUpdateDocuments.add(updateUserBalanceDocument);
 				
@@ -320,51 +336,56 @@ implements MongoClientHelper {
 				
 				Bson setWonFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_FAVOURABLY.getCode());
 				betUpdateDocuments.add(setWonFilter);
-			}else if (lostPredictionsCount > 0) {
-				Bson setWonFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_UNFAVOURABLY.getCode());
-				betUpdateDocuments.add(setWonFilter);
+			}else if (lostPredictionsCount > 0 || alreadySettledLostPredictionsCount > 0){
 
 				Bson increaseLostOverallBetsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_SLIPS, 1);
 				Bson increaseLostMonthlyBetsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_SLIPS, 1);
 				userUpdateDocuments.add(increaseLostMonthlyBetsDocument);
 				userUpdateDocuments.add(increaseLostOverallBetsDocument);
+
+				Bson setWonFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_UNFAVOURABLY.getCode());
+				betUpdateDocuments.add(setWonFilter);
+			}else {
+				throw new RuntimeException();
 			}
-			
-			Bson increaseWonOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
-			Bson increaseWonMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
-			
-			userUpdateDocuments.add(increaseWonMonthlyPredictionsDocument);
-			userUpdateDocuments.add(increaseWonOverallPredictionsDocument);
-
-
-			Bson increaseLostOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
-			Bson increaseLostMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
-			
-		
-			userUpdateDocuments.add(increaseLostMonthlyPredictionsDocument);
-			userUpdateDocuments.add(increaseLostOverallPredictionsDocument);
 		
 		}
+
+		Bson increaseWonOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
+		Bson increaseWonMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
+		
+		userUpdateDocuments.add(increaseWonMonthlyPredictionsDocument);
+		userUpdateDocuments.add(increaseWonOverallPredictionsDocument);
+		
+		
+		Bson increaseLostOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
+		Bson increaseLostMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
+		
+		userUpdateDocuments.add(increaseLostMonthlyPredictionsDocument);
+		userUpdateDocuments.add(increaseLostOverallPredictionsDocument);
 
 		Bson betByIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betId));
 		
 		System.out.println("SETTLING BET "+ betId + " with " + betUpdateDocuments.size());
 		
-		betsCollection.updateOne(session, betByIdFilter, Updates.combine(betUpdateDocuments));
-		
-		Bson userIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betDocument.getString(MongoFields.BET_MONGO_USER_ID)));
-		usersCollection.updateOne(session, userIdFilter, Updates.combine(userUpdateDocuments));
-
-		if (!predictionsUpdateDocuments.isEmpty()) {
+		if (!predictionsToBeSettledDocuments.isEmpty()) {
 			Bson settledUpdate = Updates.set(MongoFields.USER_BET_PREDICTION_SETTLE_STATUS, PredictionSettleStatus.SETTLED.getCode());
-			predictionsCollection.updateMany(session, Filters.or(predictionsUpdateDocuments), settledUpdate);
+			predictionsCollection.updateMany(session, Filters.or(predictionsToBeSettledDocuments), settledUpdate);
 		}
 		
+		if (!betUpdateDocuments.isEmpty()) {
+			betsCollection.updateOne(session, betByIdFilter, Updates.combine(betUpdateDocuments));
+		}
+		
+		if (lostPredictionsCount > 0 || wonPredictionsCount > 0) {
+			Bson userIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betDocument.getString(MongoFields.BET_MONGO_USER_ID)));
+			usersCollection.updateOne(session, userIdFilter, Updates.combine(userUpdateDocuments));
+		}
 	}
 
 	@Override
 	public void validateUser(String email) {
-		new TransactionalBlock() {
+		new MongoTransactionalBlock() {
 			@Override
 			public void begin() throws Exception {
 				Document userFilter = new Document(MongoFields.EMAIL, email);
@@ -378,7 +399,7 @@ implements MongoClientHelper {
 
 	@Override
 	public void deleteUser(String mongoId) {
-		new TransactionalBlock() {
+		new MongoTransactionalBlock() {
 			@Override
 			public void begin() throws Exception {
 				Bson userMongoIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(mongoId));
@@ -492,7 +513,7 @@ implements MongoClientHelper {
 	
 	void storeSettledEvent(int eventId) {
 		
-		new TransactionalBlock() {
+		new MongoTransactionalBlock() {
 			
 			@Override
 			public void begin() throws Exception {
@@ -506,7 +527,7 @@ implements MongoClientHelper {
 	
 	void deleteSettledEvent(int eventId) {
 		
-		new TransactionalBlock() {
+		new MongoTransactionalBlock() {
 			
 			@Override
 			public void begin() throws Exception {

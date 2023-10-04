@@ -19,6 +19,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.application.RestApplication;
+import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.Score;
 import gr.server.data.api.model.league.League;
@@ -135,14 +136,15 @@ implements MyBetOddsService {
 	public Response getLeagues(){
 		Map<Integer, List<League>> leaguesPerDay = new LinkedHashMap<>();
 		
-		for ( Map.Entry<Integer, Map<League, Map<Integer, MatchEvent>>> dailyEntry : RestApplication.EVENTS_PER_DAY_PER_LEAGUE.entrySet()) {
+		for ( Map.Entry<Integer, Map<League, Map<Integer, MatchEvent>>> dailyEntry : FootballApiCache.EVENTS_PER_DAY_PER_LEAGUE.entrySet()) {
 			List<League> dailyLeagues = new ArrayList<>();
 			
 			Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = dailyEntry.getValue();
 			for (Map.Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
 				League league = entry.getKey();
 				if (league.getSection_id() > 0) {
-					Section section = RestApplication.SECTIONS.get(league.getSection_id());
+//					Section section = RestApplication.SECTIONS.get(league.getSection_id());
+					Section section = FootballApiCache.SECTIONS.get(league.getSection_id());
 					league.setSection(section);
 				}
 				
@@ -153,7 +155,7 @@ implements MyBetOddsService {
 				Collections.sort(league.getMatchEvents());
 				dailyLeagues.add(league);
 				
-				Integer priorityOverride = RestApplication.PRIORITIES_OVERRIDDE.get(league.getId());
+				Integer priorityOverride = FootballApiCache.PRIORITIES_OVERRIDDE.get(league.getId());
 				if (priorityOverride!=null && priorityOverride > 0) {
 					league.setPriority(priorityOverride);
 				}else if (league.getPriority() == null) {
@@ -229,7 +231,7 @@ implements MyBetOddsService {
 					/**
 					 * TODO: Call api here? or save event info in mongo?
 					 */
-					MatchEvent event = RestApplication.ALL_EVENTS.get(p.getEventId());
+					MatchEvent event = FootballApiCache.ALL_EVENTS.get(p.getEventId());
 					if (event == null) {
 						event = mockEvent();
 					}

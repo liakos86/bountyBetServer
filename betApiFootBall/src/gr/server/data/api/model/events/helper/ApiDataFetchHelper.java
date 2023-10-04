@@ -1,4 +1,4 @@
-package gr.server.data.global.helper;
+package gr.server.data.api.model.events.helper;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
 import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.Section;
 import gr.server.impl.client.SportScoreClient;
 
 public class ApiDataFetchHelper {
@@ -46,7 +46,7 @@ public class ApiDataFetchHelper {
 			
 			events = SportScoreClient.getEvents(date).getData();
 			events.forEach(e -> { if (!FootballApiCache.ALL_EVENTS.containsKey(e.getId())) {
-										FootballApiCache.ALL_EVENTS.put(e.getId(), e);
+											FootballApiCache.ALL_EVENTS.put(e.getId(), e);
 									}
 								}
 			);
@@ -58,72 +58,6 @@ public class ApiDataFetchHelper {
 		return events;
 	}
 
-	
-
-//	/**
-//	 * Gets the football events .
-//	 * If live events are requested {@link SportScoreApiConstants#GET_LIVE_EVENTS_BY_SPORT_URL}.
-//	 * If not, {@link SportScoreApiConstants#GET_EVENTS_BY_SPORT_DATE_URL} is used with 'today' as param.
-//	 * The latter will contain live events also.
-//	 * 
-//	 * First we obtain all the events for today with live=false.
-//	 * Then we obtain the live events.
-//	 * Every live event that was also retrieved in the first step will be replaced.
-//	 * 
-//	 * @param live
-//	 */
-//	public static void fetchLiveEventsIntoLeagues() {
-//		List<MatchEvent> events = new ArrayList<>();
-//		try {
-//			events = SportScoreClient.getLiveEvents().getData();
-//			events.forEach(e -> RestApplication.ALL_EVENTS.put(e.getId(), e));
-//		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
-//			System.out.println("LIVE EVENTS ERROR ");
-//			e.printStackTrace();
-//			return;
-//		}
-//		
-//		/**
-//		 * TODO: fixme
-//		 */
-//		
-//		MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
-//		events.forEach(e-> e.setIncidents(matchEventIncidents));
-//		
-//		events.forEach(e-> RestApplication.MINUTE_TRACKER.track(e));
-//		
-//		splitEventsIntoLiveLeagues(events);
-//
-//	}
-
-//	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
-//		
-//		
-//		for (MatchEvent matchEvent : events) {
-//			if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(matchEvent.getStatus()))) {
-//				continue;
-//			}
-//			
-//			System.out.println("********* LIVE MATCH FOUND");
-			
-//			League matchLeague = matchEvent.getLeague();
-//			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
-//			if (leagueEvents == null) {
-//				RestApplication.LIVE_EVENTS_PER_LEAGUE.put(matchLeague, new HashMap<>());
-//			}
-
-			//MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
-			//matchEvent.setIncidents(matchEventIncidents);
-//			RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague).put(matchEvent.getId(), matchEvent);
-			//RestApplication.MINUTE_TRACKER.track(matchEvent);
-//		}
-		
-//		int liveLeagues = RestApplication.LIVE_EVENTS_PER_LEAGUE.size();
-//		System.out.println("LIVE: " + liveLeagues);
-		
-//	}
-
-	
 	/**
 	 * Input is a date with all its games.
 	 * We find the league that every game belongs to and add the game to that league's games.
@@ -136,12 +70,10 @@ public class ApiDataFetchHelper {
 		for (MatchEvent event : events) {
 			League league = event.getLeague();
 			if (league == null) {
-//				league = RestApplication.LEAGUES.get(event.getLeague_id());
 				league = FootballApiCache.LEAGUES.get(event.getLeague_id());
 				if (league == null) {//can be null because we fetch mock leagues to reduce calls
 					System.out.println("CREATING DUMMY LEAGUE FOR " + event.getLeague_id());
 					league = createDummyLeague();
-//					RestApplication.LEAGUES.put(event.getLeague_id(), league);
 					FootballApiCache.LEAGUES.put(event.getLeague_id(), league);
 				}
 				event.setLeague(league);

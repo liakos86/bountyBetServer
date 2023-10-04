@@ -2,6 +2,9 @@ package gr.server.data.api.model.league;
 
 import java.util.Map;
 
+import gr.server.data.api.model.league.StandingRow;
+import gr.server.data.api.model.league.Team;
+
 public class StandingRow implements Comparable<StandingRow>{
 	
 	int position;

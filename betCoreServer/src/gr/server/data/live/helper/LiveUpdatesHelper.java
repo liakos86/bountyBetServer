@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.jms.JMSException;
 
 import gr.server.application.RestApplication;
+import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.Score;
@@ -36,7 +37,7 @@ public class LiveUpdatesHelper {
 		
 		List<MatchEvent> liveUpdates = updates.getData().getData();
 		for (MatchEvent liveEvent : liveUpdates) {
-			MatchEvent relatedMatch = RestApplication.ALL_EVENTS.get(liveEvent.getId());
+			MatchEvent relatedMatch = FootballApiCache.ALL_EVENTS.get(liveEvent.getId());
 			
 			checkHomeGoal(relatedMatch, liveEvent);
 			checkAwayGoal(relatedMatch, liveEvent);

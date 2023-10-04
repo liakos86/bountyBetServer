@@ -4,7 +4,7 @@ import com.mongodb.client.ClientSession;
 
 import gr.server.mongo.util.MongoUtils;
 
-public abstract class TransactionalBlock {
+public abstract class MongoTransactionalBlock {
 	
 	protected ClientSession session;
 	

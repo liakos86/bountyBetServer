@@ -11,12 +11,12 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+import gr.server.util.TimerTaskHelper;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.global.helper.ApiDataFetchHelper;
 import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
 import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
-import gr.server.util.TimerTaskHelper;
 
 @WebListener
 public class BetServerContextListener implements ServletContextListener {
@@ -55,13 +55,13 @@ public class BetServerContextListener implements ServletContextListener {
 		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
 		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 10000);
 		
-		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.MINUTE, 1);
-		Date inAMinute = cal.getTime();
+//		Calendar cal = Calendar.getInstance();
+//		cal.add(Calendar.MINUTE, 1);
+//		Date inAMinute = cal.getTime();
 
-		TimerTask settleFinishedEventsTimerTask = TimerTaskHelper.settleFinishedEvents();
-		Timer settleFinishedEventsTimer = new Timer("settleFinishedEventsTimer");
-		settleFinishedEventsTimer.schedule(settleFinishedEventsTimerTask,  inAMinute, 180000);
+//		TimerTask settleFinishedEventsTimerTask = TimerTaskHelper.settleFinishedEvents();
+//		Timer settleFinishedEventsTimer = new Timer("settleFinishedEventsTimer");
+//		settleFinishedEventsTimer.schedule(settleFinishedEventsTimerTask,  inAMinute, 180000);
 		
 //		TimerTask settleOpenBetsTimerTask = TimerTaskHelper.settleOpenBets();
 //		Timer settleOpenBetsTimer = new Timer("settleOpenBetsTimer");

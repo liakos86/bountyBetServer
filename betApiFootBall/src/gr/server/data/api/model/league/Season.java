@@ -1,5 +1,8 @@
 package gr.server.data.api.model.league;
 
+import gr.server.data.api.model.league.Season;
+import gr.server.data.api.model.league.Standing;
+
 public class Season implements Comparable<Season>{
 	//premier league 18686
 	int id;

@@ -11,10 +11,10 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Sections;
+import gr.server.data.api.model.events.Events;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.util.HttpHelper;
 

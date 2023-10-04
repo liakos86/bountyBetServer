@@ -7,13 +7,14 @@ import java.util.TimerTask;
 import java.util.stream.Collectors;
 
 import gr.server.application.RestApplication;
-import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.enums.MatchEventStatus;
 import gr.server.impl.client.MongoClientHelperImpl;
-import gr.server.transaction.helper.TransactionalBlock;
+import gr.server.transaction.helper.MongoTransactionalBlock;
 
 public class TimerTaskHelper {
 
@@ -33,14 +34,14 @@ public class TimerTaskHelper {
 	public static TimerTask settleFinishedEvents() {
 		return new TimerTask() {
 			public void run() {
-				new TransactionalBlock() {
+				new MongoTransactionalBlock() {
 					@Override
 					public void begin() throws Exception {
 						System.out.println("Settle predictions Working in thread: " + Thread.currentThread().getName());
 
 						Set<MatchEvent> todaysFinishedEvents = new HashSet<>(); 
 						
-						Map<League, Map<Integer, MatchEvent>> todaysLeagues = RestApplication.EVENTS_PER_DAY_PER_LEAGUE.get(0);
+						Map<League, Map<Integer, MatchEvent>> todaysLeagues = FootballApiCache.EVENTS_PER_DAY_PER_LEAGUE.get(0);
 						todaysLeagues.values().forEach(
 								leagueMatchesMap -> {
 									Set<MatchEvent> finishedEventsForLeague = leagueMatchesMap.values().stream().filter(
@@ -59,7 +60,7 @@ public class TimerTaskHelper {
 	public static TimerTask settleOpenBets() {
 		return new TimerTask() {
 			public void run() {
-				new TransactionalBlock() {
+				new MongoTransactionalBlock() {
 					@Override
 					public void begin() throws Exception {
 						System.out.println("Working in thread: " + Thread.currentThread().getName());

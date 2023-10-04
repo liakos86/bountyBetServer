@@ -2,6 +2,8 @@ package gr.server.data.api.model.league;
 
 import java.util.List;
 
+import gr.server.data.api.model.league.Team;
+
 public class Teams {
 
 	List<Team> data;

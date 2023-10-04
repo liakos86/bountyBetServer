@@ -1,13 +1,68 @@
 <?xml version="1.0"?>
-<project name="Hello World" basedir=".">
+<project name="Settling Bets" basedir=".">
 
-<target name="compile">
+	
+	<property name="m2home" value="PROVIDE FROM CMD AS -Dm2repo=" />
+
+
+	<path id="betapi-classpath">
+		<fileset dir="./betApiFootBall/target">
+			<include name="betApiFootBall-0.0.1-SNAPSHOT.jar"/>
+		</fileset>
+	</path>
+
+
+	<path id="mongo-classpath">
+		<fileset dir="./betMongo/target">
+			<include name="betMongo-0.0.1-SNAPSHOT.jar"/>
+		</fileset>
+	</path>
+	
+	<path id="mongodriver-classpath">
+				<fileset dir = "${m2repo}/org/mongodb/">
+				<include  name="/**/**.jar"/>
+				</fileset>
+		</path>
+
+	<path id="gson-classpath">
+			<fileset dir="${m2repo}/com/google/code/gson/">
+				
+			<include  name="/**/**.jar"/>
+			</fileset>
+	</path>
+	
+	
+	<target name="compile">
+
 		<mkdir dir="./gen/"/>
-       <javac srcdir="./betMongo/src/gr/server/program" includeantruntime="true" includes="SettleProgram.java" destdir="./gen/"></javac>
-</target>
+		<javac
+      	srcdir="./betMongo/src/gr/server/program"
+      	includes="SettleProgram.java"
+      	includeantruntime="true" 
+      	destdir="./gen/">
+			<classpath refid="betapi-classpath"/>
+			<classpath refid="mongo-classpath"/>
+			<classpath refid="gson-classpath"/>
+			<classpath refid="mongodriver-classpath"/>
+		</javac>
+	</target>
+	
+	<target name="settlepredictions" depends="compile" >
+		<java dir="./gen" classname="gr.server.program.SettleProgram" fork="true">
+			<classpath refid="betapi-classpath"/>
+			<classpath refid="mongo-classpath"/>
+			<classpath refid="gson-classpath"/>
+			<classpath refid="mongodriver-classpath"/>
+		</java>
+	</target>
 
-<target name="run" depends="compile">
-       <java classname="gen.gr.server.program.SettleProgram" fork="true"></java>
-</target>
+	<target name="delete">
+		<delete dir="./gen/">
+		</delete>
+	</target>
+
+	<target name="runAndDelete" depends="settlepredictions, delete">
+		<description>Main target</description>
+	</target>
 
 </project>
