@@ -65,4 +65,10 @@ public class Score {
 		return ! (score.current == this.current && score.display == this.display);
 	}
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return current+"/"+display;
+	}
+	
 }

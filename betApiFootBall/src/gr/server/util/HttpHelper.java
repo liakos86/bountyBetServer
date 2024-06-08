@@ -8,6 +8,12 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.HttpClients;
+
 import gr.server.data.constants.SportScoreApiConstants;
 
 public class HttpHelper {
@@ -56,6 +62,42 @@ public class HttpHelper {
             return response2.toString();
         }
         return null;
+    }
+	
+	public String fetchPostContentWithHeaders(String uri) throws IOException {
+		
+		HttpClient httpclient = HttpClients.createDefault();
+		HttpPost httppost = new HttpPost(uri);
+        final int OK = 200;
+        
+        httppost.addHeader("Accept", "application/json");
+        httppost.addHeader(SportScoreApiConstants.RAPID_API_HEADER_HOST_KEY, SportScoreApiConstants.RAPID_API_HEADER_HOST_VALUE);
+        httppost.addHeader(SportScoreApiConstants.RAPID_API_HEADER_KEY, SportScoreApiConstants.RAPID_API_HEADER_VALUE);
+        
+        HttpResponse response = httpclient.execute(httppost);
+        if (response.getStatusLine().getStatusCode() != OK) {
+        	return null;
+        }
+        
+        HttpEntity entity = response.getEntity();
+
+        if (entity != null) {
+            try (InputStream instream = entity.getContent()) {
+            	InputStream decompressedStream = StreamHelper.decompressStream(instream);
+            	BufferedReader in = new BufferedReader(new InputStreamReader(decompressedStream));
+                String inputLine;
+                StringBuffer response2 = new StringBuffer();
+                while ((inputLine = in.readLine()) != null) {
+                    response2.append(inputLine);
+                }
+                in.close();
+                return response2.toString();
+            }
+        }
+        
+        return null;
+        
+        
     }
 	
 }

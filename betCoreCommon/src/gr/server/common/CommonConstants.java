@@ -2,6 +2,8 @@ package gr.server.common;
 
 public interface CommonConstants {
 	
+	String SERVER_IP = "192.168.2.2";
+	
 	String GMT = "GMT";
 	
 	Double STARTING_BALANCE = 1000d;

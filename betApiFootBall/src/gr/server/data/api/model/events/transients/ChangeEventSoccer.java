@@ -4,6 +4,7 @@ import java.util.Map;
 
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.Score;
+import gr.server.data.api.model.league.Team;
 
 public class ChangeEventSoccer {
 	
@@ -15,11 +16,17 @@ public class ChangeEventSoccer {
 	
 	Score awayScore;
 	
+	Team homeTeam;
+	
+	Team awayTeam;
+	
 	public ChangeEventSoccer(Map<String, Object> props) {
 		this.eventId = (int) props.get("eventId");
 		this.changeEvent = (ChangeEvent) props.get("changeEvent");
 		this.homeScore = (Score) props.get("homeScore");
 		this.awayScore = (Score) props.get("awayScore");
+		this.homeTeam = (Team) props.get("homeTeam");
+		this.awayTeam = (Team) props.get("awayTeam");
 	}
 
 	public int getEventId() {

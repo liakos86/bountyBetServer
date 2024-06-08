@@ -32,5 +32,9 @@ public class MatchOdds {
 		this.outcome_2 = outcome_2;
 	}
 	
+	@Override
+	public String toString() {
+		return "1:"+ this.outcome_1 + " X:"+this.outcome_X + " 2:"+this.outcome_2;
+	}
 	
 }

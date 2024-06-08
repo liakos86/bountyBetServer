@@ -2,7 +2,7 @@
 <project name="Settling Bets" basedir=".">
 
 	
-	<property name="m2home" value="PROVIDE FROM CMD AS -Dm2repo=" />
+	<property name="m2repo" value="PROVIDE FROM CMD AS -Dm2repo=C:/Users/liako/.m2/repository" />
 
 
 	<path id="betapi-classpath">
@@ -18,19 +18,49 @@
 		</fileset>
 	</path>
 	
+	<path id="log4jprop-classpath">
+			<fileset dir="./betMongo/resources">
+				<include name="*.properties"/>
+			</fileset>
+		</path>
+	
+	
+	
 	<path id="mongodriver-classpath">
-				<fileset dir = "${m2repo}/org/mongodb/">
-				<include  name="/**/**.jar"/>
+				<fileset dir = "${m2repo}/org/mongodb/mongodb-driver/3.10.1/">
+				<include  name="*.jar"/>
 				</fileset>
 		</path>
+	
+	<path id="mongodrivercore-classpath">
+					<fileset dir = "${m2repo}/org/mongodb/mongodb-driver-core/3.10.1/">
+					<include  name="*.jar"/>
+					</fileset>
+			</path>
+	
+	<path id="mongobson-classpath">
+						<fileset dir = "${m2repo}/org/mongodb/bson/3.10.1/">
+						<include  name="*.jar"/>
+						</fileset>
+				</path>
 
 	<path id="gson-classpath">
-			<fileset dir="${m2repo}/com/google/code/gson/">
-				
-			<include  name="/**/**.jar"/>
+			<fileset dir="${m2repo}/com/google/code/gson/gson/2.6.2/">
+			<include  name="*.jar"/>
 			</fileset>
 	</path>
 	
+	<path id="log4j-classpath">
+				<fileset dir="${m2repo}/log4j/log4j/1.2.17/">
+				<include  name="*.jar"/>
+				</fileset>
+		</path>
+	
+	<path id="log4japi-classpath">
+					<fileset dir="${m2repo}/org/apache/logging/log4j/log4j-api/2.15.0/">
+					<include  name="*.jar"/>
+					</fileset>
+			</path>
 	
 	<target name="compile">
 
@@ -44,6 +74,9 @@
 			<classpath refid="mongo-classpath"/>
 			<classpath refid="gson-classpath"/>
 			<classpath refid="mongodriver-classpath"/>
+			<classpath refid="mongobson-classpath"/>
+			<classpath refid="mongodrivercore-classpath"/>
+			<classpath refid="log4j-classpath"/>
 		</javac>
 	</target>
 	
@@ -53,6 +86,11 @@
 			<classpath refid="mongo-classpath"/>
 			<classpath refid="gson-classpath"/>
 			<classpath refid="mongodriver-classpath"/>
+			<classpath refid="mongobson-classpath"/>
+			<classpath refid="mongodrivercore-classpath"/>
+			<classpath refid="log4j-classpath"/>
+			<classpath refid="log4japi-classpath"/>
+			<classpath refid="log4jprop-classpath"/>
 		</java>
 	</target>
 

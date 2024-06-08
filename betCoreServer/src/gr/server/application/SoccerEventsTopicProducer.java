@@ -88,7 +88,7 @@ public class SoccerEventsTopicProducer implements ExceptionListener {
 	}
 
 	public void sendTopicMessage(Map<String, Object> msg) throws JMSException {
-		if (!connected) {
+		if (!connected || session == null) { // TODO investigate null
 			connect();
 		}
 		

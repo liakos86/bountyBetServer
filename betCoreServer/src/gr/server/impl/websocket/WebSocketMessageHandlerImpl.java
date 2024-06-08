@@ -20,7 +20,7 @@ implements WebSocketMessageHandler{
 		}
 		
 		
-		System.out.println("RECEIVED " + msg);
+		//System.out.println("RECEIVED " + msg);
 		String replacedMsg = msg
 				.replace("\\\"", "\"")
 				.replace("\"{", "{")

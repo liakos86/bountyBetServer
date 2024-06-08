@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 //import org.apache.log4j.Level;
 //import org.apache.log4j.Logger;
 import org.bson.Document;
@@ -12,6 +14,7 @@ import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 
 import com.mongodb.BasicDBList;
+import com.mongodb.BasicDBObject;
 import com.mongodb.ConnectionString;
 //import com.mongodb.MongoClient;
 import com.mongodb.MongoClientSettings;
@@ -22,6 +25,9 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.Team;
 import gr.server.data.bet.enums.PredictionSettleStatus;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.constants.CollectionNames;
@@ -44,7 +50,6 @@ import gr.server.data.user.model.objects.UserPrediction;
  */
 public class MongoUtils {
 	
-	//final static String conn = "mongodb+srv://bountyBetUser:pf4dot4xNL7DBtsX@bountybetcluster.27d3j.mongodb.net/?retryWrites=true&w=majority";
 
 	static MongoClient MONGO_CLIENT;
 
@@ -75,97 +80,16 @@ public class MongoUtils {
 		 return list;
 	}
     
-	
-    
-//	/**
-//	 * We find all the pending bets.
-//	 * For every pending bet we find its predictions.
-//	 * If a lost prediction is found, the bet is lost.
-//	 * If no lost predictions found, but at least one pending found, the bet is pending.
-//	 * If no lost and no pending predictions found, the bet is won.
-//	 * If the bet is won we assign the new balance to the user.
-//	 * Finally we increase the monthly and overall won and lost predictions and bets.
-//	 * 
-//	 * @param session
-//	 * @throws Exception
-//	 */
-//    public static void settleOpenBets(ClientSession session) throws Exception {
-//    	MongoCollection<Document> betsCollection = getMongoCollection(CollectionNames.BETS);
-//    	MongoCollection<Document> predictionsCollection = getMongoCollection(CollectionNames.BET_PREDICTIONS);
-//
-//		Bson pendingBetsFilter = Filters.eq(MongoFields.BET_STATUS, BetStatus.PENDING.getCode());
-//		FindIterable<Document> pendingBets = betsCollection.find(session, pendingBetsFilter);
-//		
-//		for (Document betDocument : pendingBets) {
-//			String betId = betDocument.getObjectId(MongoFields.MONGO_ID).toString();
-//			Bson betPredictionsByBetIdFilter = Filters.eq(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, betId);
-//			FindIterable<Document> betPredictions = predictionsCollection.find(session, betPredictionsByBetIdFilter);
-//			
-//			if (!betPredictions.iterator().hasNext()) {
-//				throw new Exception("Bet without predictions: " + betId);
-//			}
-//			
-//			int pendingPredictionsCount = 0;
-//			int lostPredictionsCount = 0;
-//			int wonPredictionsCount = 0;
-//			for (Document predictionDocument : betPredictions) {
-//				
-//				int predictionStatus = predictionDocument.getInteger(MongoFields.USER_BET_PREDICTION_STATUS);
-//				
-//				if (PredictionStatus.PENDING.getCode() == predictionStatus) {
-//					pendingPredictionsCount = pendingPredictionsCount + 1;
-//				}else if (PredictionStatus.MISSED.getCode() == predictionStatus) {
-//					Bson setLostFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_UNFAVOURABLY.getCode());
-//					Bson betByIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betId));
-//					betsCollection.updateOne(session, betByIdFilter, setLostFilter);
-//			
-//					lostPredictionsCount = lostPredictionsCount + 1;
-//				}else if (PredictionStatus.CORRECT.getCode() == predictionStatus){
-//					wonPredictionsCount = wonPredictionsCount + 1;
-//				}
-//			}
-//			
-//			if (pendingPredictionsCount > 0 ) {
-//				return;
-//			}
-//			
-//			if (pendingPredictionsCount == 0 && lostPredictionsCount == 0 && wonPredictionsCount > 0) {
-//			
-//				Bson setWonFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_FAVOURABLY.getCode());
-//				Bson betByIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betId));
-//				betsCollection.updateOne(session, betByIdFilter, setWonFilter);
-//				updateUserBalance(session, betDocument.getString(MongoFields.BET_MONGO_USER_ID), betDocument.getDouble(MongoFields.USER_BET_POSSIBLE_WINNINGS));
-//			
-//			}else if (pendingPredictionsCount == 0 && lostPredictionsCount > 0) {
-//			
-//				Bson increaseWonOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
-//				Bson increaseWonMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
-//				
-//				Bson increaseLostOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
-//				Bson increaseLostMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
-//				
-//				Bson increaseWonOverallBetsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
-//				Bson increaseWonMonthlyBetsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
-//				
-//				Bson increaseLostOverallBetsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
-//				Bson increaseLostMonthlyBetsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
-//				
-//				
-//				updateMongoField(session, MongoFields.use, betPredictionsByBetIdFilter, pendingBetsFilter);
-//			
-//			}
-//			
-//			
-//		}
-//    }
-
-   
-
 	public static List<Document> getPredictionsDocuments(UserBet userBet, String newBetMongoId) {
+		
+		
 		List<Document> newBetPredictions = new ArrayList<>();
 
 		List<UserPrediction> predictions = userBet.getPredictions();
 		for (UserPrediction prediction : predictions) {
+			
+			MatchEvent matchEvent = FootballApiCache.ALL_EVENTS.get(prediction.getEventId());
+
 			Document newBetPrediction = new Document(MongoFields.EVENT_ID, prediction.getEventId())
 					.append(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, newBetMongoId)
 					.append(MongoFields.BET_MONGO_USER_ID, userBet.getMongoUserId())
@@ -173,9 +97,11 @@ public class MongoUtils {
 					.append(MongoFields.USER_BET_PREDICTION_CATEGORY, prediction.getPredictionCategory().getCategoryCode())
 					.append(MongoFields.USER_BET_PREDICTION_STATUS, PredictionStatus.PENDING.getCode())
 					.append(MongoFields.USER_BET_PREDICTION_SETTLE_STATUS, PredictionSettleStatus.UNSETTLED.getCode())
-					.append(MongoFields.USER_BET_PREDICTION_ODD_VALUE, prediction.getOddValue()
-
-					);
+					.append(MongoFields.USER_BET_PREDICTION_ODD_VALUE, prediction.getOddValue())
+					.append(MongoFields.SPORT_ID, matchEvent.getSport_id())
+					.append(MongoFields.USER_BET_PREDICTION_HOME_TEAM_ID, matchEvent.getHome_team().getId())//TODO: stored to avoid calls to API.
+					.append(MongoFields.USER_BET_PREDICTION_AWAY_TEAM_ID, matchEvent.getAway_team().getId());
+			
 			newBetPredictions.add(newBetPrediction);
 		}
 		
@@ -211,6 +137,17 @@ public class MongoUtils {
 				 
 		 .append(MongoFields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
 		 .append(MongoFields.USER_AWARDS, new BasicDBList());
+	}
+	
+	public static Document getTeamDocument(Team team) {
+		
+		BasicDBObject translations = new BasicDBObject(team.getName_translations());
+		
+		 return new Document(MongoFields.TEAM_ID, team.getId())
+					 .append(MongoFields.TEAM_NAME, team.getName())
+					 .append(MongoFields.TEAM_SPORT_ID, team.getSport_id())
+					 .append(MongoFields.TEAM_LOGO_URL, team.getLogo())
+					 .append(MongoFields.TRANSLATIONS, translations);
 	}
 	
 	public static Document getSettledEventDocument(int eventId) {
@@ -255,12 +192,6 @@ public class MongoUtils {
 		usersCollection.updateMany(startSession, new Document(), setBalance);
 	}
 
-//	public static void deleteUserBetsFor(ClientSession startSession, String pastMonthAsString) {
-//		Document belongingMonthFilter = new Document(MongoFields.BET_BELONGING_MONTH, pastMonthAsString);
-//		MongoCollection<Document> betsCollection = getMongoCollection(CollectionNames.BETS);
-//		betsCollection.deleteMany(startSession, belongingMonthFilter);
-//	}
-	
 	public static void deleteMany(String collectionName, Document deleteFilter) {
 		MongoCollection<Document> collection = getMongoCollection(collectionName);
 		collection.deleteMany(deleteFilter);
@@ -282,9 +213,10 @@ public class MongoUtils {
     		        .build();
     		MONGO_CLIENT = MongoClients.create(settings);
     		
-//    		Logger logger = Logger.getLogger("org.mongodb.driver");
-//    		logger.setLevel(Level.INFO);
     	}
+		
+		Logger logger = Logger.getLogger("org.mongodb.driver");
+		logger.setLevel(Level.INFO);
 		
 		return MONGO_CLIENT;
 	}

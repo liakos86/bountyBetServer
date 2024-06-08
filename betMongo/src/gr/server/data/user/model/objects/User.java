@@ -1,11 +1,11 @@
 package gr.server.data.user.model.objects;
 
 
-import gr.server.data.constants.SportScoreApiConstants;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import gr.server.data.constants.SportScoreApiConstants;
 
 /**
  * User of the application.
@@ -59,6 +59,8 @@ implements Serializable{
 	List<String> userAwardsIds;
 	
 	List<UserBounty> bounties;
+	
+	int level;
 	
 	/**
 	 * Number of won slips.
@@ -284,6 +286,14 @@ implements Serializable{
 
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
+	}
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
 	}
 	
 }

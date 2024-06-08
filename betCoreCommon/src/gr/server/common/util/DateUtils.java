@@ -49,14 +49,14 @@ public class DateUtils {
 	
 	public static Map<Integer, Date> getDatesToFetch() {
 		Map<Integer, Date> datesToFetch = new LinkedHashMap<>();
-		Calendar instance = Calendar.getInstance();
-		instance.add(Calendar.DATE, -1);
-		Date yesterday = instance.getTime();
-		datesToFetch.put(-1, yesterday);
+//		Calendar instance = Calendar.getInstance();
+//		instance.add(Calendar.DATE, -1);
+//		Date yesterday = instance.getTime();
+//		datesToFetch.put(-1, yesterday);
 		datesToFetch.put(0, new Date());
-		instance.add(Calendar.DATE, 2);
-		Date tomorrow = instance.getTime();
-		datesToFetch.put(1, tomorrow);
+//		instance.add(Calendar.DATE, 2);
+//		Date tomorrow = instance.getTime();
+//		datesToFetch.put(1, tomorrow);
 		return datesToFetch;
 	}
 	

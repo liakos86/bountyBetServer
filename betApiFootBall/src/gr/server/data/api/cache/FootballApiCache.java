@@ -1,11 +1,14 @@
 package gr.server.data.api.cache;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.MatchEventIncidents;
+import gr.server.data.api.model.events.MatchEventStatistics;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
 
 public class FootballApiCache {
@@ -20,10 +23,10 @@ public class FootballApiCache {
 	static int USA_MLS = 99; 
 	static int NETHERLANDS_EREDIVISIE = 133; 
 	static int RUSSIA_PREMIER_LEAGUE = 220; 
-	static int SPAIN_LA_LIGA = 251; 
+	public static int SPAIN_LA_LIGA = 251; 
 	static int TURKEY_SUPER_LIG = 284; 
 	static int SWITZERLAND_SUPER_LEAGUE = 279; 
-	static int ENGLAND_PREMIER_LEAGUE = 317; 
+	public static int ENGLAND_PREMIER_LEAGUE = 317; 
 	static int ENGLAND_FA_CUP = 318; 
 	static int ENGLAND_COMMUNITY_SHIELD = 319; 
 	static int ENGLAND_EFL_CUP = 320; 
@@ -80,10 +83,20 @@ public class FootballApiCache {
 	public static Map<Integer, League> LEAGUES = new HashMap<>();
 	
 	/**
+	 * All the standings for all leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
+	 */
+	public static Map<Integer, Season> STANDINGS = new HashMap<>();
+	
+	/**
 	 * Maps days with the leagues and their games.
 	 * Key '0' is considered to be today, '1' is tomorrow, '-1' is yesterday etc.
 	 */
-	public static Map<Integer, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = new LinkedHashMap<>();
+	public static Map<Integer, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = 
+			new ConcurrentHashMap<Integer, Map<League,Map<Integer,MatchEvent>>>(3);
+	
+	public static Map<Integer, MatchEventStatistics> STATS_PER_EVENT = new HashMap<>();
+	
+	public static Map<Integer, MatchEventIncidents> INCIDENTS_PER_EVENT = new HashMap<>();
 	
 	/**
 	 * 

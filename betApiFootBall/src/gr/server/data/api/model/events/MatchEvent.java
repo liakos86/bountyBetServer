@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 
+import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.league.Challenge;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Season;
@@ -13,12 +15,18 @@ import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
 import gr.server.data.constants.SportScoreApiConstants;
 
+/**
+ * "start_at":"2024-01-28 17:00:07","status":"inprogress","status_more":"62","time_details":{"prefix":"","initial":2700,"max":5400,"timestamp":1706465574,"extra":540},
+ * 
+ * @author liako
+ *
+ */
 public class MatchEvent implements Comparable<MatchEvent> {
 
-	MatchEventIncidents incidents;
+	MatchEventIncidents incidents = new MatchEventIncidents();
+	MatchEventStatistics statistics = new MatchEventStatistics();
 
-	//ChangeEvent changeEvent;
-	//boolean markedForRemoval;
+	int changeEvent = ChangeEvent.NONE.getChangeCode();
 
 	Object sport;
 
@@ -34,16 +42,12 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	String name;
 
 	String start_at;// 2022-09-05 00:00:00
-
-//	Integer start_hour;
-//
-//	Integer start_minute;
-
+	
+	//TODO: a match can start with delay. we need a field with actual start.
+	
 	String status;
 	String status_more;
-	//String status_loc;
 
-	//String status_for_client;
 	TimeDetails time_details;
 	Object time_live; // can be string or int. e.g. 54 or 'Halftime'.
 
@@ -74,7 +78,7 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	Integer cup_match_in_round;
 	String periods;
 	Map<String, Object> round_info;
-	String periods_time;
+	//String periods_time;
 	MatchOdds main_odds;
 	League league;
 	Challenge challenge;
@@ -417,13 +421,13 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.round_info = round_info;
 	}
 
-	public String getPeriods_time() {
-		return periods_time;
-	}
-
-	public void setPeriods_time(String periods_time) {
-		this.periods_time = periods_time;
-	}
+//	public String getPeriods_time() {
+//		return periods_time;
+//	}
+//
+//	public void setPeriods_time(String periods_time) {
+//		this.periods_time = periods_time;
+//	}
 
 	public MatchOdds getMain_odds() {
 		return main_odds;
@@ -513,46 +517,21 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.incidents = incidents;
 	}
 
-//	public void calculateLiveMinute() {
-//		if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(this.getStatus()))) {
-//			return;
-//		}
-//
-//		MatchEventPeriodStatus matchEventPeriodStatus = MatchEventPeriodStatus.fromStatusMoreText(this.getStatus_more());
-//		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(matchEventPeriodStatus)) {
-//			this.status_for_client = MatchEventPeriodStatus.INPROGRESS_HALFTIME.getStatusStr();
-//			return;
-//		}
-//
-//		SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-//		matchTimeFormat.setTimeZone(TimeZone.getTimeZone(CommonConstants.GMT));
-//
-//		Date matchTime = null;
-//		try {
-//			matchTime = matchTimeFormat.parse(getStart_at());
-//		} catch (ParseException e) {
-//			return;
-//		}
-//
-//		long x = new Date().getTime() - matchTime.getTime();
-//		int minute = (int) (x / 60000);
-//		if (MatchEventPeriodStatus.INPROGRESS_1ST_HALF.equals(matchEventPeriodStatus)) {
-//			if (minute > 45) {
-//				this.status_for_client = "45+";
-//			} else {
-//				this.status_for_client = String.valueOf(minute);
-//			}
-//		} else if (MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(matchEventPeriodStatus)) {
-//			if (minute > 90) {
-//				this.status_for_client = "90+";
-//			} else {
-//				this.status_for_client = String.valueOf(minute);
-//			}
-//		} else {// TODO: in prog extra
-//			this.status_for_client = "INV!";
-//		}
-//
-//	}
+	public int getChangeEvent() {
+		return changeEvent;
+	}
+
+	public void setChangeEvent(int changeEvent) {
+		this.changeEvent = changeEvent;
+	}
+	
+	public MatchEventStatistics getStatistics() {
+		return statistics;
+	}
+
+	public void setStatistics(MatchEventStatistics statistics) {
+		this.statistics = statistics;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -595,8 +574,11 @@ public class MatchEvent implements Comparable<MatchEvent> {
 
 	@Override
 	public String toString() {
-		return "Match with id:" + this.id + ", league:" + this.league_id + " home:" + this.home_team + " away:"
-				+ this.away_team;
+		League league = FootballApiCache.LEAGUES.get(this.league_id);
+		return "Match id:" + this.id + ", status: " + this.status + ", league:" + (league!=null ? league.getName() : league_id) + 
+				" home:" + this.home_team + " away:" + this.away_team +
+				" homescore:" +this.home_score + "awayscore:" + this.away_score +
+				"odds: " + this.main_odds;
 	}
 
 }

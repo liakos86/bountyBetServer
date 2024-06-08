@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . .
 
 
-RUN ["mvn", "clean", "install"]
+RUN ["mvn", "clean", "install", "-DskipTests"]
 
 FROM  tomcat:9-jre11 as run
 

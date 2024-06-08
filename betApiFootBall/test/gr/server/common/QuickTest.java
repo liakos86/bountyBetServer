@@ -4,13 +4,33 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TimeZone;
 
 import org.junit.Test;
 
 import gr.server.data.constants.SportScoreApiConstants;
+import gr.server.impl.client.MockApiClient;
 
-public class QuickTest { 
+public class QuickTest {
+	
+	@Test
+	public void testPlayerStats() {
+		MockApiClient.getPlayerStatisticsFromFile();
+	}
+	
+	@Test
+	public void test2(){
+		Map<String, Integer> m = new HashMap<>();
+		m.put("!", 1);
+		
+		m.put("%", 2);
+		
+		m.put("!", 3);
+		
+		System.out.println(m.get("!"));
+	}
 
 	
 	@Test

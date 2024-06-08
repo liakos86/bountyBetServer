@@ -1,0 +1,970 @@
+{
+	"data": [
+		{
+			"id": 1425922,
+			"player_id": 1,
+			"season_id": 18686,
+			"details": [
+				{
+					"statistics_items": [
+						{
+							"matches_total": "Total played"
+						},
+						{
+							"matches_starting": "Started"
+						},
+						{
+							"minutes_per_game": "Minutes per game"
+						}
+					],
+					"matches_total": "1",
+					"matches_starting": "0",
+					"minutes_per_game": "1",
+					"group_name": "Matches"
+				},
+				{
+					"statistics_items": [
+						{
+							"goals": "Goals"
+						},
+						{
+							"goals_average": "Goals per game"
+						},
+						{
+							"total_shots_per_game": "Shots per game"
+						},
+						{
+							"big_chance_missed": "Big chances missed"
+						}
+					],
+					"goals": "0",
+					"goals_average": "0.0",
+					"total_shots_per_game": "0.0",
+					"big_chance_missed": "0",
+					"more": {
+						"statistics_items": [
+							{
+								"goal_conversion": "Goal conversion"
+							},
+							{
+								"penalties": "Penalty goals"
+							},
+							{
+								"penalties_conversion": "Penalty conversion"
+							},
+							{
+								"set_piece_goals": "Free kick goals"
+							},
+							{
+								"set_pieces_conversion": "Free kick conversion"
+							},
+							{
+								"goals_inside_box": "From inside the box"
+							},
+							{
+								"goals_outside_box": "From outside the box"
+							},
+							{
+								"headed_goals": "Headed goals"
+							},
+							{
+								"left_foot_goals": "Left foot goals"
+							},
+							{
+								"right_foot_goals": "Right foot goals"
+							},
+							{
+								"penalty_won": "Penalties won"
+							}
+						],
+						"goal_conversion": "0%",
+						"penalties": "0/0",
+						"penalties_conversion": "0%",
+						"set_piece_goals": "0/0",
+						"set_pieces_conversion": "0%",
+						"goals_inside_box": "0/0",
+						"goals_outside_box": "0/0",
+						"headed_goals": "0",
+						"left_foot_goals": "0",
+						"right_foot_goals": "0",
+						"penalty_won": "0",
+						"group_name": "Attacking"
+					},
+					"group_name": "Attacking"
+				},
+				{
+					"statistics_items": [
+						{
+							"assists": "Assists"
+						},
+						{
+							"touches": "Touches"
+						},
+						{
+							"big_chance_created": "Big chances created"
+						},
+						{
+							"key_passes": "Key passes"
+						},
+						{
+							"accurate_passes_per_game": "Accurate per game"
+						},
+						{
+							"successful_passes_own_half": "Acc. own half"
+						},
+						{
+							"successful_passes_opposition_half": "Acc. opposition half"
+						},
+						{
+							"successful_long_passes": "Acc. long balls"
+						},
+						{
+							"accurate_chipped_passes": "Acc. chipped passes"
+						},
+						{
+							"successful_crosses_and_corners": "Acc. crosses"
+						}
+					],
+					"assists": "0",
+					"touches": "1.0",
+					"big_chance_created": "0",
+					"key_passes": "0.0",
+					"accurate_passes_per_game": "0.0 (0%)",
+					"successful_passes_own_half": "0.0 (0%)",
+					"successful_passes_opposition_half": "0.0 (0%)",
+					"successful_long_passes": "0.0 (0%)",
+					"accurate_chipped_passes": "0.0 (0%)",
+					"successful_crosses_and_corners": "0.0 (0%)",
+					"group_name": "Passes"
+				},
+				{
+					"statistics_items": [
+						{
+							"interceptions_per_game": "Interceptions per game"
+						},
+						{
+							"tackles_per_game": "Tackles per game"
+						},
+						{
+							"possession_won_final_third": "Possession won (final third)"
+						},
+						{
+							"challenges_lost_per_game": "Dribbled past per game"
+						},
+						{
+							"total_clearances_per_game": "Clearances per game"
+						},
+						{
+							"error_lead_to_a_shot": "Error leading to shot"
+						},
+						{
+							"error_lead_toa_goal": "Error leading to goal"
+						},
+						{
+							"penalties_conceded": "Penalty committed"
+						}
+					],
+					"interceptions_per_game": "0.0",
+					"tackles_per_game": "0.0",
+					"possession_won_final_third": "0.0",
+					"challenges_lost_per_game": "0.0",
+					"total_clearances_per_game": "0.0",
+					"error_lead_to_a_shot": "0",
+					"error_lead_toa_goal": "0",
+					"penalties_conceded": "0",
+					"group_name": "Defending"
+				},
+				{
+					"statistics_items": [
+						{
+							"successful_dribbles_per_game": "Succ. dribbles"
+						},
+						{
+							"duels_won_per_game": "Total duels won"
+						},
+						{
+							"ground_duels_won_per_game": "Ground duels won"
+						},
+						{
+							"aerial_duels_won_per_game": "Aerial duels won"
+						},
+						{
+							"possession_lost": "Possession lost"
+						},
+						{
+							"fouls": "Fouls"
+						},
+						{
+							"was_fouled": "Was fouled"
+						},
+						{
+							"offsides": "Offsides"
+						}
+					],
+					"successful_dribbles_per_game": "0.0 (0%)",
+					"duels_won_per_game": "0.0 (0%)",
+					"ground_duels_won_per_game": "0.0 (0%)",
+					"aerial_duels_won_per_game": "0.0 (0%)",
+					"possession_lost": "1.0",
+					"fouls": "0.0",
+					"was_fouled": "0.0",
+					"offsides": "0.0",
+					"group_name": "Other (per game)"
+				},
+				{
+					"statistics_items": [
+						{
+							"yellow_cards": "Yellow"
+						},
+						{
+							"yellow_red_cards": "Yellow-Red"
+						},
+						{
+							"red_cards": "Red"
+						}
+					],
+					"yellow_cards": "0",
+					"yellow_red_cards": "0",
+					"red_cards": "0",
+					"group_name": "Cards"
+				}
+			],
+			"rating": null,
+			"season": {
+				"id": 18686,
+				"league_id": 317,
+				"slug": "2022-2023",
+				"name": "Premier League 22/23",
+				"year_start": 2022,
+				"year_end": 2023
+			}
+		},
+		{
+			"id": 1668284,
+			"player_id": 1,
+			"season_id": 19367,
+			"details": [
+				{
+					"statistics_items": [
+						{
+							"matches_total": "Total played"
+						},
+						{
+							"matches_starting": "Started"
+						},
+						{
+							"minutes_per_game": "Minutes per game"
+						}
+					],
+					"matches_total": "25",
+					"matches_starting": "15",
+					"minutes_per_game": "63",
+					"group_name": "Matches"
+				},
+				{
+					"statistics_items": [
+						{
+							"goals": "Goals"
+						},
+						{
+							"goals_frequency": "Scoring frequency"
+						},
+						{
+							"goals_average": "Goals per game"
+						},
+						{
+							"total_shots_per_game": "Shots per game"
+						},
+						{
+							"big_chance_missed": "Big chances missed"
+						}
+					],
+					"goals": "5",
+					"goals_frequency": "316 min",
+					"goals_average": "0.2",
+					"total_shots_per_game": "1.9",
+					"big_chance_missed": "4",
+					"more": {
+						"statistics_items": [
+							{
+								"goal_conversion": "Goal conversion"
+							},
+							{
+								"penalties": "Penalty goals"
+							},
+							{
+								"penalties_conversion": "Penalty conversion"
+							},
+							{
+								"set_piece_goals": "Free kick goals"
+							},
+							{
+								"set_pieces_conversion": "Free kick conversion"
+							},
+							{
+								"goals_inside_box": "From inside the box"
+							},
+							{
+								"goals_outside_box": "From outside the box"
+							},
+							{
+								"headed_goals": "Headed goals"
+							},
+							{
+								"left_foot_goals": "Left foot goals"
+							},
+							{
+								"right_foot_goals": "Right foot goals"
+							},
+							{
+								"penalty_won": "Penalties won"
+							}
+						],
+						"goal_conversion": "11%",
+						"penalties": "0/0",
+						"penalties_conversion": "0%",
+						"set_piece_goals": "0/4",
+						"set_pieces_conversion": "0%",
+						"goals_inside_box": "2/28",
+						"goals_outside_box": "3/19",
+						"headed_goals": "0",
+						"left_foot_goals": "1",
+						"right_foot_goals": "4",
+						"penalty_won": "0",
+						"group_name": "Attacking"
+					},
+					"group_name": "Attacking"
+				},
+				{
+					"statistics_items": [
+						{
+							"assists": "Assists"
+						},
+						{
+							"touches": "Touches"
+						},
+						{
+							"big_chance_created": "Big chances created"
+						},
+						{
+							"key_passes": "Key passes"
+						},
+						{
+							"accurate_passes_per_game": "Accurate per game"
+						},
+						{
+							"successful_passes_own_half": "Acc. own half"
+						},
+						{
+							"successful_passes_opposition_half": "Acc. opposition half"
+						},
+						{
+							"successful_long_passes": "Acc. long balls"
+						},
+						{
+							"accurate_chipped_passes": "Acc. chipped passes"
+						},
+						{
+							"successful_crosses_and_corners": "Acc. crosses"
+						}
+					],
+					"assists": "5",
+					"touches": "38.8",
+					"big_chance_created": "6",
+					"key_passes": "1.5",
+					"accurate_passes_per_game": "18.5 (76%)",
+					"successful_passes_own_half": "6.5 (84%)",
+					"successful_passes_opposition_half": "13.1 (66%)",
+					"successful_long_passes": "1.4 (48%)",
+					"accurate_chipped_passes": "1.2 (54%)",
+					"successful_crosses_and_corners": "1.1 (36%)",
+					"group_name": "Passes"
+				},
+				{
+					"statistics_items": [
+						{
+							"interceptions_per_game": "Interceptions per game"
+						},
+						{
+							"tackles_per_game": "Tackles per game"
+						},
+						{
+							"possession_won_final_third": "Possession won (final third)"
+						},
+						{
+							"challenges_lost_per_game": "Dribbled past per game"
+						},
+						{
+							"total_clearances_per_game": "Clearances per game"
+						},
+						{
+							"error_lead_to_a_shot": "Error leading to shot"
+						},
+						{
+							"error_lead_toa_goal": "Error leading to goal"
+						},
+						{
+							"penalties_conceded": "Penalty committed"
+						}
+					],
+					"interceptions_per_game": "0.3",
+					"tackles_per_game": "0.8",
+					"possession_won_final_third": "0.6",
+					"challenges_lost_per_game": "0.5",
+					"total_clearances_per_game": "0.2",
+					"error_lead_to_a_shot": "0",
+					"error_lead_toa_goal": "0",
+					"penalties_conceded": "0",
+					"group_name": "Defending"
+				},
+				{
+					"statistics_items": [
+						{
+							"successful_dribbles_per_game": "Succ. dribbles"
+						},
+						{
+							"duels_won_per_game": "Total duels won"
+						},
+						{
+							"ground_duels_won_per_game": "Ground duels won"
+						},
+						{
+							"aerial_duels_won_per_game": "Aerial duels won"
+						},
+						{
+							"possession_lost": "Possession lost"
+						},
+						{
+							"fouls": "Fouls"
+						},
+						{
+							"was_fouled": "Was fouled"
+						},
+						{
+							"offsides": "Offsides"
+						}
+					],
+					"successful_dribbles_per_game": "1.5 (58%)",
+					"duels_won_per_game": "3.2 (48%)",
+					"ground_duels_won_per_game": "3.1 (49%)",
+					"aerial_duels_won_per_game": "0.2 (36%)",
+					"possession_lost": "11.5",
+					"fouls": "0.9",
+					"was_fouled": "0.8",
+					"offsides": "0.1",
+					"group_name": "Other (per game)"
+				},
+				{
+					"statistics_items": [
+						{
+							"yellow_cards": "Yellow"
+						},
+						{
+							"yellow_red_cards": "Yellow-Red"
+						},
+						{
+							"red_cards": "Red"
+						}
+					],
+					"yellow_cards": "5",
+					"yellow_red_cards": "0",
+					"red_cards": "0",
+					"group_name": "Cards"
+				}
+			],
+			"rating": 7.04,
+			"season": {
+				"id": 19367,
+				"league_id": 284,
+				"slug": "2022-2023",
+				"name": "Super Lig 22/23",
+				"year_start": 2022,
+				"year_end": 2023
+			}
+		},
+		{
+			"id": 2507557,
+			"player_id": 1,
+			"season_id": 31497,
+			"details": [
+				{
+					"statistics_items": [
+						{
+							"matches_total": "Total played"
+						},
+						{
+							"matches_starting": "Started"
+						},
+						{
+							"minutes_per_game": "Minutes per game"
+						}
+					],
+					"matches_total": "6",
+					"matches_starting": "0",
+					"minutes_per_game": "16",
+					"group_name": "Matches"
+				},
+				{
+					"statistics_items": [
+						{
+							"goals": "Goals"
+						},
+						{
+							"goals_average": "Goals per game"
+						},
+						{
+							"total_shots_per_game": "Shots per game"
+						},
+						{
+							"big_chance_missed": "Big chances missed"
+						}
+					],
+					"goals": "0",
+					"goals_average": "0.0",
+					"total_shots_per_game": "0.0",
+					"big_chance_missed": "0",
+					"more": {
+						"statistics_items": [
+							{
+								"goal_conversion": "Goal conversion"
+							},
+							{
+								"penalties": "Penalty goals"
+							},
+							{
+								"penalties_conversion": "Penalty conversion"
+							},
+							{
+								"set_piece_goals": "Free kick goals"
+							},
+							{
+								"set_pieces_conversion": "Free kick conversion"
+							},
+							{
+								"goals_inside_box": "From inside the box"
+							},
+							{
+								"goals_outside_box": "From outside the box"
+							},
+							{
+								"headed_goals": "Headed goals"
+							},
+							{
+								"left_foot_goals": "Left foot goals"
+							},
+							{
+								"right_foot_goals": "Right foot goals"
+							},
+							{
+								"penalty_won": "Penalties won"
+							}
+						],
+						"goal_conversion": "0%",
+						"penalties": "0/0",
+						"penalties_conversion": "0%",
+						"set_piece_goals": "0/0",
+						"set_pieces_conversion": "0%",
+						"goals_inside_box": "0/0",
+						"goals_outside_box": "0/0",
+						"headed_goals": "0",
+						"left_foot_goals": "0",
+						"right_foot_goals": "0",
+						"penalty_won": "0",
+						"group_name": "Attacking"
+					},
+					"group_name": "Attacking"
+				},
+				{
+					"statistics_items": [
+						{
+							"assists": "Assists"
+						},
+						{
+							"touches": "Touches"
+						},
+						{
+							"big_chance_created": "Big chances created"
+						},
+						{
+							"key_passes": "Key passes"
+						},
+						{
+							"accurate_passes_per_game": "Accurate per game"
+						},
+						{
+							"successful_passes_own_half": "Acc. own half"
+						},
+						{
+							"successful_passes_opposition_half": "Acc. opposition half"
+						},
+						{
+							"successful_long_passes": "Acc. long balls"
+						},
+						{
+							"accurate_chipped_passes": "Acc. chipped passes"
+						},
+						{
+							"successful_crosses_and_corners": "Acc. crosses"
+						}
+					],
+					"assists": "0",
+					"touches": "9.0",
+					"big_chance_created": "0",
+					"key_passes": "0.3",
+					"accurate_passes_per_game": "4.2 (66%)",
+					"successful_passes_own_half": "1.2 (100%)",
+					"successful_passes_opposition_half": "3.2 (58%)",
+					"successful_long_passes": "0.3 (50%)",
+					"accurate_chipped_passes": "0.0 (0%)",
+					"successful_crosses_and_corners": "0.2 (50%)",
+					"group_name": "Passes"
+				},
+				{
+					"statistics_items": [
+						{
+							"interceptions_per_game": "Interceptions per game"
+						},
+						{
+							"tackles_per_game": "Tackles per game"
+						},
+						{
+							"possession_won_final_third": "Possession won (final third)"
+						},
+						{
+							"challenges_lost_per_game": "Dribbled past per game"
+						},
+						{
+							"total_clearances_per_game": "Clearances per game"
+						},
+						{
+							"error_lead_to_a_shot": "Error leading to shot"
+						},
+						{
+							"error_lead_toa_goal": "Error leading to goal"
+						},
+						{
+							"penalties_conceded": "Penalty committed"
+						}
+					],
+					"interceptions_per_game": "0.0",
+					"tackles_per_game": "0.3",
+					"possession_won_final_third": "0.0",
+					"challenges_lost_per_game": "0.2",
+					"total_clearances_per_game": "0.2",
+					"error_lead_to_a_shot": "0",
+					"error_lead_toa_goal": "0",
+					"penalties_conceded": "0",
+					"group_name": "Defending"
+				},
+				{
+					"statistics_items": [
+						{
+							"successful_dribbles_per_game": "Succ. dribbles"
+						},
+						{
+							"duels_won_per_game": "Total duels won"
+						},
+						{
+							"ground_duels_won_per_game": "Ground duels won"
+						},
+						{
+							"aerial_duels_won_per_game": "Aerial duels won"
+						},
+						{
+							"possession_lost": "Possession lost"
+						},
+						{
+							"fouls": "Fouls"
+						},
+						{
+							"was_fouled": "Was fouled"
+						},
+						{
+							"offsides": "Offsides"
+						}
+					],
+					"successful_dribbles_per_game": "0.3 (67%)",
+					"duels_won_per_game": "1.2 (64%)",
+					"ground_duels_won_per_game": "1.0 (60%)",
+					"aerial_duels_won_per_game": "0.2 (100%)",
+					"possession_lost": "3.5",
+					"fouls": "0.2",
+					"was_fouled": "0.3",
+					"offsides": "0.2",
+					"group_name": "Other (per game)"
+				},
+				{
+					"statistics_items": [
+						{
+							"yellow_cards": "Yellow"
+						},
+						{
+							"yellow_red_cards": "Yellow-Red"
+						},
+						{
+							"red_cards": "Red"
+						}
+					],
+					"yellow_cards": "0",
+					"yellow_red_cards": "0",
+					"red_cards": "0",
+					"group_name": "Cards"
+				}
+			],
+			"rating": 6.55,
+			"season": {
+				"id": 31497,
+				"league_id": 317,
+				"slug": "2023-2024",
+				"name": "Premier League 23/24",
+				"year_start": 2023,
+				"year_end": 2024
+			}
+		},
+		{
+			"id": 2710432,
+			"player_id": 1,
+			"season_id": 31805,
+			"details": [
+				{
+					"statistics_items": [
+						{
+							"matches_total": "Total played"
+						},
+						{
+							"matches_starting": "Started"
+						},
+						{
+							"minutes_per_game": "Minutes per game"
+						}
+					],
+					"matches_total": "2",
+					"matches_starting": "2",
+					"minutes_per_game": "72",
+					"group_name": "Matches"
+				},
+				{
+					"statistics_items": [
+						{
+							"goals": "Goals"
+						},
+						{
+							"goals_average": "Goals per game"
+						},
+						{
+							"total_shots_per_game": "Shots per game"
+						},
+						{
+							"big_chance_missed": "Big chances missed"
+						}
+					],
+					"goals": "0",
+					"goals_average": "0.0",
+					"total_shots_per_game": "1.0",
+					"big_chance_missed": "0",
+					"more": {
+						"statistics_items": [
+							{
+								"goal_conversion": "Goal conversion"
+							},
+							{
+								"penalties": "Penalty goals"
+							},
+							{
+								"penalties_conversion": "Penalty conversion"
+							},
+							{
+								"set_piece_goals": "Free kick goals"
+							},
+							{
+								"set_pieces_conversion": "Free kick conversion"
+							},
+							{
+								"goals_inside_box": "From inside the box"
+							},
+							{
+								"goals_outside_box": "From outside the box"
+							},
+							{
+								"headed_goals": "Headed goals"
+							},
+							{
+								"left_foot_goals": "Left foot goals"
+							},
+							{
+								"right_foot_goals": "Right foot goals"
+							},
+							{
+								"penalty_won": "Penalties won"
+							}
+						],
+						"goal_conversion": "0%",
+						"penalties": "0/0",
+						"penalties_conversion": "0%",
+						"set_piece_goals": "0/0",
+						"set_pieces_conversion": "0%",
+						"goals_inside_box": "0/0",
+						"goals_outside_box": "0/2",
+						"headed_goals": "0",
+						"left_foot_goals": "0",
+						"right_foot_goals": "0",
+						"penalty_won": "0",
+						"group_name": "Attacking"
+					},
+					"group_name": "Attacking"
+				},
+				{
+					"statistics_items": [
+						{
+							"assists": "Assists"
+						},
+						{
+							"touches": "Touches"
+						},
+						{
+							"big_chance_created": "Big chances created"
+						},
+						{
+							"key_passes": "Key passes"
+						},
+						{
+							"accurate_passes_per_game": "Accurate per game"
+						},
+						{
+							"successful_passes_own_half": "Acc. own half"
+						},
+						{
+							"successful_passes_opposition_half": "Acc. opposition half"
+						},
+						{
+							"successful_long_passes": "Acc. long balls"
+						},
+						{
+							"accurate_chipped_passes": "Acc. chipped passes"
+						},
+						{
+							"successful_crosses_and_corners": "Acc. crosses"
+						}
+					],
+					"assists": "0",
+					"touches": "35.5",
+					"big_chance_created": "0",
+					"key_passes": "0.0",
+					"accurate_passes_per_game": "19.5 (76%)",
+					"successful_passes_own_half": "7.0 (88%)",
+					"successful_passes_opposition_half": "12.5 (66%)",
+					"successful_long_passes": "0.5 (33%)",
+					"accurate_chipped_passes": "0.5 (50%)",
+					"successful_crosses_and_corners": "0.0 (0%)",
+					"group_name": "Passes"
+				},
+				{
+					"statistics_items": [
+						{
+							"interceptions_per_game": "Interceptions per game"
+						},
+						{
+							"tackles_per_game": "Tackles per game"
+						},
+						{
+							"possession_won_final_third": "Possession won (final third)"
+						},
+						{
+							"challenges_lost_per_game": "Dribbled past per game"
+						},
+						{
+							"total_clearances_per_game": "Clearances per game"
+						},
+						{
+							"error_lead_to_a_shot": "Error leading to shot"
+						},
+						{
+							"error_lead_toa_goal": "Error leading to goal"
+						},
+						{
+							"penalties_conceded": "Penalty committed"
+						}
+					],
+					"interceptions_per_game": "0.0",
+					"tackles_per_game": "1.0",
+					"possession_won_final_third": "0.5",
+					"challenges_lost_per_game": "1.0",
+					"total_clearances_per_game": "0.0",
+					"error_lead_to_a_shot": "0",
+					"error_lead_toa_goal": "0",
+					"penalties_conceded": "0",
+					"group_name": "Defending"
+				},
+				{
+					"statistics_items": [
+						{
+							"successful_dribbles_per_game": "Succ. dribbles"
+						},
+						{
+							"duels_won_per_game": "Total duels won"
+						},
+						{
+							"ground_duels_won_per_game": "Ground duels won"
+						},
+						{
+							"aerial_duels_won_per_game": "Aerial duels won"
+						},
+						{
+							"possession_lost": "Possession lost"
+						},
+						{
+							"fouls": "Fouls"
+						},
+						{
+							"was_fouled": "Was fouled"
+						},
+						{
+							"offsides": "Offsides"
+						}
+					],
+					"successful_dribbles_per_game": "0.5 (33%)",
+					"duels_won_per_game": "2.5 (33%)",
+					"ground_duels_won_per_game": "2.5 (38%)",
+					"aerial_duels_won_per_game": "0.0 (0%)",
+					"possession_lost": "11.5",
+					"fouls": "1.5",
+					"was_fouled": "1.0",
+					"offsides": "0.0",
+					"group_name": "Other (per game)"
+				},
+				{
+					"statistics_items": [
+						{
+							"yellow_cards": "Yellow"
+						},
+						{
+							"yellow_red_cards": "Yellow-Red"
+						},
+						{
+							"red_cards": "Red"
+						}
+					],
+					"yellow_cards": "0",
+					"yellow_red_cards": "0",
+					"red_cards": "0",
+					"group_name": "Cards"
+				}
+			],
+			"rating": 6.6,
+			"season": {
+				"id": 31805,
+				"league_id": 320,
+				"slug": "2023-2024",
+				"name": "EFL Cup 23/24",
+				"year_start": 2023,
+				"year_end": 2024
+			}
+		}
+	],
+	"meta": {
+		"current_page": 1,
+		"from": 1,
+		"per_page": 50,
+		"to": 4
+	}
+}

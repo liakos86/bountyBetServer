@@ -2,7 +2,7 @@ package gr.server.data.user.model.objects;
 
 import java.io.Serializable;
 
-import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.Team;
 import gr.server.data.bet.enums.PredictionCategory;
 import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.bet.enums.PredictionType;
@@ -22,7 +22,15 @@ implements Serializable {
 
 	int eventId;
 	
-	MatchEvent event;
+	int homeTeamId;
+	
+	int awayTeamId;
+	
+	int sportId;
+	
+	Team homeTeam;
+	
+	Team awayTeam;
 	
 	PredictionCategory predictionCategory;
 	
@@ -83,12 +91,20 @@ implements Serializable {
 		this.predictionCategory = predictionCategory;
 	}
 
-	public MatchEvent getEvent() {
-		return event;
+	public Team getHomeTeam() {
+		return homeTeam;
 	}
 
-	public void setEvent(MatchEvent event) {
-		this.event = event;
+	public void setHomeTeam(Team homeTeam) {
+		this.homeTeam = homeTeam;
+	}
+
+	public Team getAwayTeam() {
+		return awayTeam;
+	}
+
+	public void setAwayTeam(Team awayTeam) {
+		this.awayTeam = awayTeam;
 	}
 
 	public String getMongoId() {
@@ -105,6 +121,30 @@ implements Serializable {
 
 	public void setMongoBetId(String mongoBetId) {
 		this.mongoBetId = mongoBetId;
+	}
+
+	public int getHomeTeamId() {
+		return homeTeamId;
+	}
+
+	public void setHomeTeamId(int homeTeamId) {
+		this.homeTeamId = homeTeamId;
+	}
+
+	public int getAwayTeamId() {
+		return awayTeamId;
+	}
+
+	public void setAwayTeamId(int awayTeamId) {
+		this.awayTeamId = awayTeamId;
+	}
+
+	public int getSportId() {
+		return sportId;
+	}
+
+	public void setSportId(int sportId) {
+		this.sportId = sportId;
 	}
 	
 }

@@ -13,15 +13,48 @@ import java.util.Map.Entry;
 import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.Player;
+import gr.server.data.api.model.events.PlayerStatistics;
+import gr.server.data.api.model.events.Players;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.LeagueInfo;
+import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
+import gr.server.data.api.model.league.StandingRow;
+import gr.server.data.api.model.league.StandingTable;
+import gr.server.data.api.model.league.Team;
 import gr.server.impl.client.SportScoreClient;
 
 public class ApiDataFetchHelper {
 
 	public static void fetchLeagueStandings() {
-		// TODO Auto-generated method stub
-		
+		for (Entry<Integer, League> leagueEntry : FootballApiCache.LEAGUES.entrySet()) {
+			if (FootballApiCache.SPAIN_LA_LIGA == leagueEntry.getKey()) {
+				//TODO this is the premier league. testing purposes
+				Season currentSeason = SportScoreClient.getCurrentSeason(leagueEntry.getKey());
+				if (currentSeason == null) {
+					continue;
+				}
+							
+				StandingTable standingTable = SportScoreClient.getSeasonStandings(currentSeason.getId());
+				currentSeason.setStandingTable(standingTable);
+				
+				
+				League league = leagueEntry.getValue();
+//				LeagueInfo leagueInfo = new LeagueInfo();
+//				leagueInfo.setHas_logo(league.isHas_logo());
+//				leagueInfo.setId(league.getId());
+//				leagueInfo.setLogo(league.getLogo());
+//				leagueInfo.setName(league.getName());
+//				leagueInfo.setName_translations(league.getName_translations());
+//				leagueInfo.setPriority(league.getPriority());
+//				leagueInfo.setSection_id(league.getSection_id());
+//				leagueInfo.setSection(league.getSection());
+				currentSeason.setLeagueInfo((LeagueInfo)league);
+				
+				FootballApiCache.STANDINGS.put(leagueEntry.getKey(), currentSeason);
+			}
+		}
 	}
 	
 	/**
@@ -147,17 +180,23 @@ public class ApiDataFetchHelper {
 				event.setLeague(league);
 			}
 			
+//			if (league.getName().contains("League")) {
+//				continue;
+//			}
+			
 			Map<Integer, MatchEvent> leagueEvents = leaguesWithEvents.get(league);
 			if (leagueEvents == null) {
 				leagueEvents = new HashMap<>();
 				leaguesWithEvents.put(league, leagueEvents);
 			}
 			
-			if (FootballApiCache.ALL_EVENTS.containsKey(event.getId())){
-				leagueEvents.put(event.getId(), FootballApiCache.ALL_EVENTS.get(event.getId()));
-			}else {
+			
+			FootballApiCache.ALL_EVENTS.put(event.getId(), event);
+//			if (FootballApiCache.ALL_EVENTS.containsKey(event.getId())){
+//				leagueEvents.put(event.getId(), FootballApiCache.ALL_EVENTS.get(event.getId()));
+//			}else {
 				leagueEvents.put(event.getId(), event);
-			}
+//			}
 		}
 		
 		FootballApiCache.EVENTS_PER_DAY_PER_LEAGUE.put(position, leaguesWithEvents);
@@ -165,7 +204,8 @@ public class ApiDataFetchHelper {
 	}
 
 	private static League createDummyLeague() {
-		League league = new League(Integer.MIN_VALUE);
+		League league = new League();
+		league.setId(Integer.MIN_VALUE);
 		league.setName("Other");
 		Section section = new Section();
 		section.setId(Integer.MIN_VALUE);
@@ -186,6 +226,38 @@ public class ApiDataFetchHelper {
 			System.out.println("SECTIONS ERROR");
 			e.printStackTrace();
 		}
+	}
+
+	public static void fetchPlayerStatistics() {//31730 laliga2024 31497
+		
+		Season season = FootballApiCache.STANDINGS.get(251);
+		
+		//for (Entry<Integer, Season> seasonStandingEntry : FootballApiCache.STANDINGS.entrySet()) {
+			//Season season = seasonStandingEntry.getValue();
+			StandingTable standingTable = season.getStandingTable();
+			Map<Player, PlayerStatistics> season_player_statistics = standingTable.getSeason_player_statistics();
+			int rows = 0;
+			for (StandingRow standingRow : standingTable.getStandings_rows()) {
+				Team team = standingRow.getTeam();
+				Players playersOfTeam = SportScoreClient.getPlayersByTeamId(team.getId());
+				int i =0;
+				for (Player player : playersOfTeam.getData()) {
+					PlayerStatistics playerStatistics = SportScoreClient.getPlayerStatistics(player.getId());
+					season_player_statistics.put(player, playerStatistics);
+					
+					if(i>1) {
+						break;
+					}
+					++i;
+					//TODO remove when ready
+				}
+				
+				if (rows > 4) {
+					break;
+				}
+			}
+		//}	
+		
 	}
 
 }

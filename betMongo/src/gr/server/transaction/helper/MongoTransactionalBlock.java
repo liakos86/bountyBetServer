@@ -10,14 +10,19 @@ public abstract class MongoTransactionalBlock {
 	
 	public abstract void begin() throws Exception;
 	
-	public void execute(){
+	public boolean execute(){
+		boolean success = false;
+		
 		try{
 			session = MongoUtils.getMongoClient().startSession();
 			session.startTransaction();
 			begin();
 			
 			session.commitTransaction();
+			
+			success = true;
 		}catch(Exception e){
+			success = false;
 			e.printStackTrace();
 			System.out.println("ROLLING BACK " + session);
 			session.abortTransaction();
@@ -25,6 +30,8 @@ public abstract class MongoTransactionalBlock {
 			System.out.println("CLOSING " + session);
 			session.close();
 		}
+		
+		return success;
 	}
 
 }

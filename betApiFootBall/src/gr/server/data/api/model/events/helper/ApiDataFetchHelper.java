@@ -97,7 +97,8 @@ public class ApiDataFetchHelper {
 	}
 
 	private static League createDummyLeague() {
-		League league = new League(Integer.MIN_VALUE);
+		League league = new League();
+		league.setId(Integer.MIN_VALUE);
 		league.setName("Other");
 		Section section = new Section();
 		section.setId(Integer.MIN_VALUE);

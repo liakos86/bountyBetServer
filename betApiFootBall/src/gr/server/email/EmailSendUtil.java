@@ -10,6 +10,7 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import gr.server.common.CommonConstants;
 import gr.server.data.constants.IgnoreConstants;
 
 public class EmailSendUtil {
@@ -44,7 +45,7 @@ public class EmailSendUtil {
 		    // message.setText("<html><body><a href=\"http://192.168.1.2:8080/betCoreServer/betServer/validateUser/" + to +"\"> Click to validate your registration</a></body></html>");  
 		       
 		     
-		     message.setContent("<html><body><a href=\"http://192.168.1.6:8080/betCoreServer/betServer/"+ email +"/validateUser/\"> Click to validate your registration</a></body></html>",  "text/html");
+		     message.setContent("<html><body><a href=\"http://" + CommonConstants.SERVER_IP + ":8080/betCoreServer/betServer/"+ email +"/validateUser/\"> Click to validate your registration</a></body></html>",  "text/html");
 		    //send the message  
 		     Transport.send(message);  
 		  

@@ -3,7 +3,6 @@ package gr.server.data.api.model.league;
 import java.util.Map;
 
 import gr.server.data.api.model.league.StandingRow;
-import gr.server.data.api.model.league.Team;
 
 public class StandingRow implements Comparable<StandingRow>{
 	
@@ -11,14 +10,46 @@ public class StandingRow implements Comparable<StandingRow>{
 	
 	int points;
 	
-	int home_points;
+	String home_points;
 	
-	int away_points;
+	String away_points;
 	
-	Map<String, String> fields;
+	int home_position;
+	
+	int away_position;
+	
+	Map<String, String> fields; 
+//	matches_total:38
+//	wins_total:19
+//	draws_total:11
+//	losses_total:8
+//	goals_total:"61:37"
+//	points_total:68
+//	percentage_total:null
+//	streak_total:null
+	
 	Map<String, String> home_fields;
+//	matches_home:19
+//	wins_home:12
+//	draws_home:6
+//	losses_home:1
+//	goals_home:"42:18"
+//	points_home:42
+//	percentage_home:null
+//	streak_home:null
+	
 	Map<String, String> away_fields;
-	Map<String, String> details;
+//	matches_away:19
+//	wins_away:7
+//	draws_away:5
+//	losses_away:7
+//	goals_away:"19:19"
+//	points_away:26
+//	percentage_away:null
+//	streak_away:null
+	
+	
+	Map<String, String> details; // "name" key indicates what ticket this position gives
 
 	Team team;
 
@@ -38,19 +69,19 @@ public class StandingRow implements Comparable<StandingRow>{
 		this.points = points;
 	}
 
-	public int getHome_points() {
+	public String getHome_points() {
 		return home_points;
 	}
 
-	public void setHome_points(int home_points) {
+	public void setHome_points(String home_points) {
 		this.home_points = home_points;
 	}
 
-	public int getAway_points() {
+	public String getAway_points() {
 		return away_points;
 	}
 
-	public void setAway_points(int away_points) {
+	public void setAway_points(String away_points) {
 		this.away_points = away_points;
 	}
 
@@ -96,8 +127,11 @@ public class StandingRow implements Comparable<StandingRow>{
 
 	@Override
 	public int compareTo(StandingRow o) {
+		if (this.getPosition() > o.getPosition()) {
+			return -1;
+		}
 		
-		return (o.getAway_points() + o.getHome_points()) - (this.away_points + this.home_points);
+		return 1;
 	}
 	
 }

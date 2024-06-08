@@ -1,5 +1,8 @@
 package gr.server.impl.client;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -15,7 +18,12 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
 
+import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.MatchEventIncidents;
+import gr.server.data.api.model.events.Player;
+import gr.server.data.api.model.league.Team;
+import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionCategory;
 import gr.server.data.bet.enums.PredictionType;
@@ -31,6 +39,7 @@ import gr.server.transaction.helper.MongoTransactionalBlock;
 
 public class TestMongoClientHelper {
 	
+	
 	/**
 	 * Creates a new user.
 	 * Places a bet for the new user.
@@ -39,9 +48,12 @@ public class TestMongoClientHelper {
 	 * Verifies deletion.
 	 */
 	@Test
-	public void testPlaceBet(){
+	public void testPlaceBet_success(){
 
 		User user = createUser();
+		
+		Integer matchEventId = 395975;
+		FootballApiCache.ALL_EVENTS.put(matchEventId, createEvent(matchEventId, MatchEventStatus.NOTSTARTED));
 		
 		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
 		
@@ -51,7 +63,7 @@ public class TestMongoClientHelper {
 		
 		List<UserPrediction> preds = new ArrayList<UserPrediction>();
 		UserPrediction pred = new UserPrediction();
-		pred.setEventId(395975);
+		pred.setEventId(matchEventId);
 		pred.setPredictionCategory(PredictionCategory.FINAL_RESULT);
 		pred.setPredictionType(PredictionType.AWAY_WIN);
 		pred.setOddValue(13.5d);
@@ -59,7 +71,8 @@ public class TestMongoClientHelper {
 		
 		
 		userBet.setPredictions(preds);
-		mHelper.placeBet(userBet);
+		BetPlacementStatus betPlacementStatus = mHelper.placeBet(userBet);
+		Assert.assertEquals(BetPlacementStatus.PLACED, betPlacementStatus);
 		
 		Assert.assertTrue(userBet.getMongoId() != null);
 		System.out.println(userBet.getMongoId());
@@ -68,6 +81,7 @@ public class TestMongoClientHelper {
 		Assert.assertEquals(1, user.getUserBets().size());
 		UserBet retrievedBet = user.getUserBets().get(0);
 		Assert.assertEquals(userBet.getMongoId(), retrievedBet.getMongoId());
+		Assert.assertEquals(30d, userBet.getBetAmount(), 0d);
 		Assert.assertEquals(BetStatus.PENDING, retrievedBet.getBetStatus());
 	
 		mHelper.deleteUser(user.getMongoId());
@@ -528,11 +542,30 @@ public class TestMongoClientHelper {
 	}
 	
 	
-//	@Test
-//	public void testGetPreviousMonthAsString(){
-//		System.out.println(DateUtils.getPastMonthAsString(1));
-//		System.out.println(DateUtils.isFirstDayOfMonth());
-//	}
+	//@Test
+	public void testGetStatsAndIncidents(){
+		try {
+			MatchEventIncidents incidents = SportScoreClient.getIncidents(2070730);
+			
+			MatchEvent e = new MatchEvent();
+			e.setId(2070730);
+			e.setIncidents(incidents);
+			
+//			MatchEventStatistics statistics = SportScoreClient.getStatistics(2070730);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 //	
 //	@Test
 //	public void testISO() throws ParseException{
@@ -564,6 +597,23 @@ public class TestMongoClientHelper {
 		user.setEmail(System.currentTimeMillis() + "test@test.gr");
 		user = mHelper.createUser(user );
 		return user;
+	}
+	
+	MatchEvent createEvent(Integer eventId, MatchEventStatus status) {
+		MatchEvent event = new MatchEvent();
+		event.setId(eventId);
+		event.setStatus(status.getStatusStr());
+		event.setHome_team(createTeam(1, "homeTeam"));
+		event.setAway_team(createTeam(2, "awayTeam"));
+		return event;
+	}
+
+
+	Team createTeam(int teamId, String teamName) {
+		Team team = new Team();
+		team.setId(teamId);
+		team.setName(teamName);
+		return team;
 	}
 	
 }

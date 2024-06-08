@@ -21,8 +21,10 @@ public class MatchOdd {
 	public void setChange(Integer change) {
 		this.change = change;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return this.value + " change:"+this.change;
+	}
 
 }

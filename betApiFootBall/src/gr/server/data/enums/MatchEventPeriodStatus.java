@@ -24,9 +24,9 @@ public enum MatchEventPeriodStatus {
 	
 	FINAL_RESULT_ONLY("FRO"),
 	
-	EMPTY("-")
+	STARTED("Started"),
 	
-	;
+	EMPTY("-");
 
 	private String statusStr;
 

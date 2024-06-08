@@ -36,58 +36,88 @@ public class LiveUpdatesHelper {
 		}
 		
 		List<MatchEvent> liveUpdates = updates.getData().getData();
+		
 		for (MatchEvent liveEvent : liveUpdates) {
 			MatchEvent relatedMatch = FootballApiCache.ALL_EVENTS.get(liveEvent.getId());
 			
-			checkHomeGoal(relatedMatch, liveEvent);
-			checkAwayGoal(relatedMatch, liveEvent);
-			checkMatchStatus(relatedMatch, liveEvent);
+			boolean homeGoalScored = checkHomeGoal(relatedMatch, liveEvent);
+			boolean awayGoalScored = checkAwayGoal(relatedMatch, liveEvent);
+			boolean matchStatusChanged = checkMatchStatus(relatedMatch, liveEvent);
+
+			if (! (homeGoalScored || awayGoalScored )){
+//					|| matchStatusChanged)) {
+				relatedMatch.setChangeEvent(ChangeEvent.NONE.getChangeCode());
+			}
+			
+//			System.out.println("Live: " + liveEvent);
+//			System.out.println("Existing: " + relatedMatch);
+//			System.out.println("*************************");
 		}
 	}
 		
-	private void checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
+	private boolean checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
 		if (matchEvent.getAway_score() == null) {
 			matchEvent.setAway_score(new Score());
 		}
 		
 		if (liveEvent.getAway_score() == null) {
-			return;
+			return false;
 		}
 		
 		if (matchEvent.awayGoalScored(liveEvent.getAway_score())) {
 			matchEvent.setAway_score(liveEvent.getAway_score());
+			matchEvent.setChangeEvent(ChangeEvent.AWAY_GOAL.getChangeCode());
 			produceTopicMessage(liveEvent, ChangeEvent.AWAY_GOAL);
+			return true;
 		} 
 		
+		return false;
 	}
 
 	private void produceTopicMessage(MatchEvent liveEvent, ChangeEvent event) {
 		Map<String, Object> msg = new HashMap<>();
+		MatchEvent cached = FootballApiCache.ALL_EVENTS.get(liveEvent.getId());
 		msg.put("eventId", liveEvent.getId());
 		msg.put("changeEvent", event);
 		msg.put("homeScore", liveEvent.getHome_score());
 		msg.put("awayScore", liveEvent.getAway_score());
-		RestApplication.sendTopicMessage(msg);
+		msg.put("homeTeam", cached.getHome_team());
+		msg.put("awayTeam", cached.getAway_team());
+		System.out.println("WILL SEND MESSAGE FOR " + liveEvent.toString());
+//		RestApplication.sendTopicMessage(msg);
+		RestApplication.sendFirebaseTopicMessage(msg);
 	}
 
-	private void checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
+	private boolean checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
+		
+		if (matchEvent == null) {
+			System.out.println("LiveEvent " + liveEvent.getId() + " not found ");
+			//TODO : probably started after server start
+			return false;
+		}
+		
 		if (matchEvent.getHome_score() == null) {
 			matchEvent.setHome_score(new Score());
 		}
 		
 		if (liveEvent.getHome_score() == null) {
-			return;
+			return false;
 		}
 
 		if (matchEvent.homeGoalScored(liveEvent.getHome_score())) {
 			matchEvent.setHome_score(liveEvent.getHome_score());
+			matchEvent.setChangeEvent(ChangeEvent.HOME_GOAL.getChangeCode());
 			produceTopicMessage(matchEvent, ChangeEvent.HOME_GOAL);
+			return true;
 		}
 		
+		return false;
 	}
 
 
-	public void checkMatchStatus(MatchEvent relatedEvent, MatchEvent liveEvent) throws JMSException {
+	public boolean checkMatchStatus(MatchEvent relatedEvent, MatchEvent liveEvent) throws JMSException {
+		boolean statusChange = false;
+		
 		String previousStatusTxt = relatedEvent.getStatus();
 		MatchEventStatus previousStatus = MatchEventStatus.fromStatusText(previousStatusTxt);
 		
@@ -97,14 +127,15 @@ public class LiveUpdatesHelper {
 		Object time_live = liveEvent.getTime_live();
 		if (time_live == null) {
 			System.out.println("***************** TIME LIVE NULL");
-			return;
 		}
 		
 		String time_live_str = time_live.toString();
 		MatchEventPeriodStatus liveEventPeriodStatus = MatchEventPeriodStatus.fromStatusMoreText(time_live_str);
 		if (MatchEventPeriodStatus.INPROGRESS_HALFTIME.equals(liveEventPeriodStatus)){
 			if (MatchEventPeriodStatus.INPROGRESS_HALFTIME != previousStatusMore) {
+				relatedEvent.setChangeEvent(ChangeEvent.HALF_TIME.getChangeCode());
 				produceTopicMessage(relatedEvent, ChangeEvent.HALF_TIME);
+				statusChange = true;
 			}
 			
 			relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
@@ -117,8 +148,10 @@ public class LiveUpdatesHelper {
 					|| previousStatusMore == MatchEventPeriodStatus.FINAL_RESULT_ONLY
 					|| previousStatusMore == MatchEventPeriodStatus.EMPTY
 					|| previousStatus == MatchEventStatus.NOTSTARTED) {
-				System.out.println("MATCH START " + relatedEvent.getHome_team().getName());
+				relatedEvent.setChangeEvent(ChangeEvent.MATCH_START.getChangeCode());
+				relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());//TODO
 				produceTopicMessage(relatedEvent, ChangeEvent.MATCH_START);
+				statusChange = true;
 			}
 			
 			relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
@@ -127,7 +160,12 @@ public class LiveUpdatesHelper {
 		
 		else if (MatchEventPeriodStatus.INPROGRESS_2ND_HALF.equals(liveEventPeriodStatus)) {
 	    	if (MatchEventPeriodStatus.INPROGRESS_HALFTIME == previousStatusMore) {
+	    		
+	    		//relatedEvent.setSecondHalfStart(current GMT millis); TODO
+	    		
+	    		relatedEvent.setChangeEvent(ChangeEvent.SECOND_HALF_START.getChangeCode());
 	    		produceTopicMessage(relatedEvent, ChangeEvent.SECOND_HALF_START);
+	    		statusChange = true;
 	    	}
 	    	
 	    	relatedEvent.setStatus(MatchEventStatus.INPROGRESS.getStatusStr());
@@ -137,16 +175,24 @@ public class LiveUpdatesHelper {
 
 		else if (MatchEventStatus.FINISHED.equals(MatchEventStatus.fromStatusText(liveEvent.getStatus()))){
 	    	if (MatchEventPeriodStatus.GAME_FINISHED != previousStatusMore) {
+	    		relatedEvent.setChangeEvent(ChangeEvent.MATCH_END.getChangeCode());
+	    		relatedEvent.setStatus(MatchEventStatus.FINISHED.getStatusStr());//TODO
 	    		produceTopicMessage(relatedEvent, ChangeEvent.MATCH_END);
+	    		statusChange = true;
 	    	}
 	    	
 			relatedEvent.setStatus(MatchEventStatus.FINISHED.getStatusStr());
 			relatedEvent.setStatus_more(MatchEventPeriodStatus.GAME_FINISHED.getStatusStr());
 			
+		}else if (liveEvent.getTime_live().equals("Awaiting extra time")) {
+			relatedEvent.setChangeEvent(ChangeEvent.AWAITING_EXTRA_TIME.getChangeCode());
+			produceTopicMessage(relatedEvent, ChangeEvent.AWAITING_EXTRA_TIME);
 		}else {
-			System.out.println("******************* OOOOOOOOOOPS no change status for " + liveEvent.getId() + " --- " + liveEvent.getStatus() + " ---- " + liveEvent.getStatus_more() + " --- " + liveEvent.getTime_live());
+			                  //TODO ******************* OOOOOOOOOOPS no change status for 2127403 --- inprogress ---- null --- Awaiting extra time
+			System.out.println("******************* OOOOOOOOOOPS no change status for " + liveEvent +  " ---- " + liveEvent.getStatus_more() + " --- " + liveEvent.getTime_live());
 		}
 		
+		return statusChange;
 	}
 
 }

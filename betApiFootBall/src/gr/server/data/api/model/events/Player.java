@@ -104,5 +104,24 @@ public class Player {
 	public void setPosition_name(String position_name) {
 		this.position_name = position_name;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Player)) {
+			return false;
+		}
+		
+		Player other = (Player)obj;
+		if (other == null || this == null) {
+			return false;
+		}
+		
+		return this.id == other.id;
+	}
+	
+	@Override
+	public int hashCode() {
+		return 33*id;
+	}
     
 }

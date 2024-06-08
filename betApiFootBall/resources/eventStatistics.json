@@ -1,0 +1,2428 @@
+{
+  "data": [
+    {
+      "id": 27107194,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "66%",
+      "away": "34%",
+      "compare_code": 1
+    },
+    {
+      "id": 27107195,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "17",
+      "away": "8",
+      "compare_code": 1
+    },
+    {
+      "id": 27107196,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "7",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 27107197,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "5",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27107198,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "5",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 27107199,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "0",
+      "away": "4",
+      "compare_code": 2
+    },
+    {
+      "id": 27107200,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "passes",
+      "name": "passes",
+      "home": "510",
+      "away": "268",
+      "compare_code": 1
+    },
+    {
+      "id": 27107201,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "451 (88%)",
+      "away": "194 (72%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107202,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "19/33 (58%)",
+      "away": "21/59 (36%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107203,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "passes",
+      "name": "crosses",
+      "home": "3/18 (17%)",
+      "away": "1/12 (8%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107204,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "8/16 (50%)",
+      "away": "4/11 (36%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107205,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "108",
+      "away": "118",
+      "compare_code": 2
+    },
+    {
+      "id": 27107206,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "45",
+      "away": "37",
+      "compare_code": 1
+    },
+    {
+      "id": 27107207,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "defending",
+      "name": "tackles",
+      "home": "16",
+      "away": "12",
+      "compare_code": 1
+    },
+    {
+      "id": 27107208,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "63%",
+      "away": "37%",
+      "compare_code": 1
+    },
+    {
+      "id": 27107209,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "6",
+      "away": "3",
+      "compare_code": 1
+    },
+    {
+      "id": 27107210,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "3",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27107211,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    },
+    {
+      "id": 27107212,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "2",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 27107213,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "0",
+      "away": "3",
+      "compare_code": 2
+    },
+    {
+      "id": 27107214,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "passes",
+      "name": "passes",
+      "home": "231",
+      "away": "136",
+      "compare_code": 1
+    },
+    {
+      "id": 27107215,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "205 (89%)",
+      "away": "107 (79%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107216,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "8/17 (47%)",
+      "away": "10/25 (40%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107217,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "passes",
+      "name": "crosses",
+      "home": "2/5 (40%)",
+      "away": "0/6 (0%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107218,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "5/8 (63%)",
+      "away": "2/8 (25%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27107219,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "40",
+      "away": "55",
+      "compare_code": 2
+    },
+    {
+      "id": 27107220,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "29",
+      "away": "18",
+      "compare_code": 1
+    },
+    {
+      "id": 27107221,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "defending",
+      "name": "tackles",
+      "home": "13",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 27107351,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "1.43",
+      "away": "1.26",
+      "compare_code": 1
+    },
+    {
+      "id": 27107352,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "6",
+      "away": "4",
+      "compare_code": 1
+    },
+    {
+      "id": 27107353,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "fouls",
+      "home": "10",
+      "away": "8",
+      "compare_code": 1
+    },
+    {
+      "id": 27107354,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "8",
+      "away": "8",
+      "compare_code": 3
+    },
+    {
+      "id": 27107355,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "19",
+      "away": "15",
+      "compare_code": 1
+    },
+    {
+      "id": 27107356,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "7",
+      "away": "10",
+      "compare_code": 2
+    },
+    {
+      "id": 27107357,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "7",
+      "away": "4",
+      "compare_code": 1
+    },
+    {
+      "id": 27107358,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "1",
+      "away": "5",
+      "compare_code": 2
+    },
+    {
+      "id": 27107359,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "goals_prevented",
+      "home": "-2.04",
+      "away": "-1.12",
+      "compare_code": 2
+    },
+    {
+      "id": 27107360,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "13",
+      "away": "13",
+      "compare_code": 3
+    },
+    {
+      "id": 27107361,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "0.26",
+      "away": "0.40",
+      "compare_code": 2
+    },
+    {
+      "id": 27107362,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "5",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27107363,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "5",
+      "away": "6",
+      "compare_code": 2
+    },
+    {
+      "id": 27107364,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "8",
+      "away": "10",
+      "compare_code": 2
+    },
+    {
+      "id": 27107365,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "5",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27107366,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "3",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 27107367,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 27107368,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "6",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 27107441,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "10",
+      "away": "4",
+      "compare_code": 1
+    },
+    {
+      "id": 27107442,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "3",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27107479,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "defending",
+      "name": "clearances",
+      "home": "9",
+      "away": "20",
+      "compare_code": 2
+    },
+    {
+      "id": 27107480,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "defending",
+      "name": "clearances",
+      "home": "2",
+      "away": "4",
+      "compare_code": 2
+    },
+    {
+      "id": 27107564,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "4",
+      "away": "12",
+      "compare_code": 2
+    },
+    {
+      "id": 27107565,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "0",
+      "away": "6",
+      "compare_code": 2
+    },
+    {
+      "id": 27107638,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "big_chances",
+      "home": "1",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 27107639,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "big_chances",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 27107844,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 27107845,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 27107846,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 27107847,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 27108243,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "1.17",
+      "away": "0.86",
+      "compare_code": 1
+    },
+    {
+      "id": 27108244,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "68%",
+      "away": "32%",
+      "compare_code": 1
+    },
+    {
+      "id": 27108245,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "11",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 27108246,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "4",
+      "away": "3",
+      "compare_code": 1
+    },
+    {
+      "id": 27108247,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "4",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 27108248,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "3",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 27108249,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "1",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 27108250,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 27108251,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "3",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27108252,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "11",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 27108253,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "2",
+      "away": "8",
+      "compare_code": 2
+    },
+    {
+      "id": 27108254,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "big_chances",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    },
+    {
+      "id": 27108255,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 27108256,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 27108257,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "7",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 27108258,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "4",
+      "away": "3",
+      "compare_code": 1
+    },
+    {
+      "id": 27108259,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "1",
+      "away": "3",
+      "compare_code": 2
+    },
+    {
+      "id": 27108260,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "passes",
+      "name": "passes",
+      "home": "279",
+      "away": "132",
+      "compare_code": 1
+    },
+    {
+      "id": 27108261,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "246 (88%)",
+      "away": "87 (66%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27108262,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "11/16 (69%)",
+      "away": "11/34 (32%)",
+      "compare_code": 1
+    },
+    {
+      "id": 27108263,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "passes",
+      "name": "crosses",
+      "home": "1/13 (8%)",
+      "away": "1/6 (17%)",
+      "compare_code": 2
+    },
+    {
+      "id": 27108264,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "3/8 (38%)",
+      "away": "2/3 (67%)",
+      "compare_code": 2
+    },
+    {
+      "id": 27108265,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "68",
+      "away": "63",
+      "compare_code": 1
+    },
+    {
+      "id": 27108266,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "16",
+      "away": "19",
+      "compare_code": 2
+    },
+    {
+      "id": 27108267,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "7",
+      "away": "8",
+      "compare_code": 2
+    },
+    {
+      "id": 27108268,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "defending",
+      "name": "tackles",
+      "home": "3",
+      "away": "7",
+      "compare_code": 2
+    },
+    {
+      "id": 27108269,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "4",
+      "away": "6",
+      "compare_code": 2
+    },
+    {
+      "id": 27108270,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "defending",
+      "name": "clearances",
+      "home": "7",
+      "away": "16",
+      "compare_code": 2
+    },
+    {
+      "id": 27108554,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "big_chances_missed",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 27108555,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "hit_woodwork",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 27108556,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "big_chances_missed",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 27108557,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "hit_woodwork",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 27108558,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "big_chances_missed",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 27108559,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "hit_woodwork",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 27108602,
+      "event_id": 2380975,
+      "period": "all",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    },
+    {
+      "id": 27108603,
+      "event_id": 2380975,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 27108604,
+      "event_id": 2380975,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    }
+    
+    ,
+	{
+      "id": 26717978,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "62%",
+      "away": "38%",
+      "compare_code": 1
+    },
+    {
+      "id": 26717979,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "13",
+      "away": "12",
+      "compare_code": 1
+    },
+    {
+      "id": 26717980,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "2",
+      "away": "3",
+      "compare_code": 2
+    },
+    {
+      "id": 26717981,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "6",
+      "away": "8",
+      "compare_code": 2
+    },
+    {
+      "id": 26717982,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "5",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26717983,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "fouls",
+      "home": "10",
+      "away": "20",
+      "compare_code": 2
+    },
+    {
+      "id": 26717984,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "19",
+      "away": "10",
+      "compare_code": 1
+    },
+    {
+      "id": 26717985,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "32",
+      "away": "29",
+      "compare_code": 1
+    },
+    {
+      "id": 26717986,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "passes",
+      "name": "passes",
+      "home": "645",
+      "away": "411",
+      "compare_code": 1
+    },
+    {
+      "id": 26717987,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "496 (77%)",
+      "away": "283 (69%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26717988,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "34/95 (36%)",
+      "away": "33/93 (35%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26717989,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "passes",
+      "name": "crosses",
+      "home": "10/38 (26%)",
+      "away": "3/15 (20%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26717990,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "13/20 (65%)",
+      "away": "14/27 (52%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26717991,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "223",
+      "away": "205",
+      "compare_code": 1
+    },
+    {
+      "id": 26717992,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "88",
+      "away": "70",
+      "compare_code": 1
+    },
+    {
+      "id": 26717993,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "36",
+      "away": "26",
+      "compare_code": 1
+    },
+    {
+      "id": 26717994,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "defending",
+      "name": "clearances",
+      "home": "16",
+      "away": "34",
+      "compare_code": 2
+    },
+    {
+      "id": 26717995,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "62%",
+      "away": "38%",
+      "compare_code": 1
+    },
+    {
+      "id": 26717996,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "6",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26717997,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "2",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26717998,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "2",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26717999,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "2",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26718000,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "7",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 26718001,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "9",
+      "away": "12",
+      "compare_code": 2
+    },
+    {
+      "id": 26718002,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "passes",
+      "name": "passes",
+      "home": "280",
+      "away": "169",
+      "compare_code": 1
+    },
+    {
+      "id": 26718003,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "222 (79%)",
+      "away": "121 (72%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26718004,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "16/33 (48%)",
+      "away": "12/38 (32%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26718005,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "passes",
+      "name": "crosses",
+      "home": "1/9 (11%)",
+      "away": "1/8 (13%)",
+      "compare_code": 2
+    },
+    {
+      "id": 26718006,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "5/10 (50%)",
+      "away": "5/16 (31%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26718007,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "90",
+      "away": "90",
+      "compare_code": 3
+    },
+    {
+      "id": 26718008,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "42",
+      "away": "31",
+      "compare_code": 1
+    },
+    {
+      "id": 26718009,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "15",
+      "away": "10",
+      "compare_code": 1
+    },
+    {
+      "id": 26718010,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "defending",
+      "name": "clearances",
+      "home": "10",
+      "away": "11",
+      "compare_code": 2
+    },
+    {
+      "id": 26718271,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "0.68",
+      "away": "0.54",
+      "compare_code": 1
+    },
+    {
+      "id": 26718272,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "11",
+      "away": "12",
+      "compare_code": 2
+    },
+    {
+      "id": 26718273,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "4",
+      "away": "7",
+      "compare_code": 2
+    },
+    {
+      "id": 26718274,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "defending",
+      "name": "tackles",
+      "home": "22",
+      "away": "21",
+      "compare_code": 1
+    },
+    {
+      "id": 26718275,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "12",
+      "away": "15",
+      "compare_code": 2
+    },
+    {
+      "id": 26718276,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "0.35",
+      "away": "0.04",
+      "compare_code": 1
+    },
+    {
+      "id": 26718277,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "3",
+      "away": "4",
+      "compare_code": 2
+    },
+    {
+      "id": 26718278,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "3",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26718279,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "defending",
+      "name": "tackles",
+      "home": "16",
+      "away": "11",
+      "compare_code": 1
+    },
+    {
+      "id": 26718280,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "4",
+      "away": "7",
+      "compare_code": 2
+    },
+    {
+      "id": 26718431,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "9",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 26718432,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "3",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26718510,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "goals_prevented",
+      "home": "0.10",
+      "away": "-0.66",
+      "compare_code": 1
+    },
+    {
+      "id": 26718628,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "6",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26718629,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26718647,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "3",
+      "away": "5",
+      "compare_code": 2
+    },
+    {
+      "id": 26718648,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "1",
+      "away": "7",
+      "compare_code": 2
+    },
+    {
+      "id": 26718649,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "2",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26718650,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26718651,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26718652,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26718887,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "0.26",
+      "away": "0.37",
+      "compare_code": 2
+    },
+    {
+      "id": 26718888,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "65%",
+      "away": "35%",
+      "compare_code": 1
+    },
+    {
+      "id": 26718889,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "6",
+      "away": "7",
+      "compare_code": 2
+    },
+    {
+      "id": 26718890,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26718891,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "3",
+      "away": "5",
+      "compare_code": 2
+    },
+    {
+      "id": 26718892,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "3",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26718893,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "2",
+      "away": "2",
+      "compare_code": 3
+    },
+    {
+      "id": 26718894,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "0",
+      "away": "4",
+      "compare_code": 2
+    },
+    {
+      "id": 26718895,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "5",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26718896,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "19",
+      "away": "7",
+      "compare_code": 1
+    },
+    {
+      "id": 26718897,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "5",
+      "away": "6",
+      "compare_code": 2
+    },
+    {
+      "id": 26718898,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "1",
+      "away": "4",
+      "compare_code": 2
+    },
+    {
+      "id": 26718899,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26718900,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "passes",
+      "name": "passes",
+      "home": "235",
+      "away": "135",
+      "compare_code": 1
+    },
+    {
+      "id": 26718901,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "187 (80%)",
+      "away": "91 (67%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26718902,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "13/31 (42%)",
+      "away": "12/31 (39%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26718903,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "passes",
+      "name": "crosses",
+      "home": "7/23 (30%)",
+      "away": "1/3 (33%)",
+      "compare_code": 2
+    },
+    {
+      "id": 26718904,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "6/8 (75%)",
+      "away": "3/4 (75%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26718905,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "81",
+      "away": "60",
+      "compare_code": 1
+    },
+    {
+      "id": 26718906,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "28",
+      "away": "19",
+      "compare_code": 1
+    },
+    {
+      "id": 26718907,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "13",
+      "away": "8",
+      "compare_code": 1
+    },
+    {
+      "id": 26718908,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "defending",
+      "name": "tackles",
+      "home": "4",
+      "away": "8",
+      "compare_code": 2
+    },
+    {
+      "id": 26718909,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "5",
+      "away": "6",
+      "compare_code": 2
+    },
+    {
+      "id": 26718910,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "defending",
+      "name": "clearances",
+      "home": "2",
+      "away": "17",
+      "compare_code": 2
+    },
+    {
+      "id": 26719025,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "4",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26719026,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "5",
+      "away": "3",
+      "compare_code": 1
+    },
+    {
+      "id": 26719249,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26719250,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26719251,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719252,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719253,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26719254,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26719381,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "0.00",
+      "away": "0.13",
+      "compare_code": 2
+    },
+    {
+      "id": 26719382,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "50%",
+      "away": "50%",
+      "compare_code": 3
+    },
+    {
+      "id": 26719383,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "0",
+      "away": "4",
+      "compare_code": 2
+    },
+    {
+      "id": 26719384,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26719385,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26719386,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719387,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719388,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26719389,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719390,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "1",
+      "away": "3",
+      "compare_code": 2
+    },
+    {
+      "id": 26719391,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "1",
+      "away": "5",
+      "compare_code": 2
+    },
+    {
+      "id": 26719392,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "3",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719393,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719394,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719395,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26719396,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26719397,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719398,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "passes",
+      "name": "passes",
+      "home": "60",
+      "away": "60",
+      "compare_code": 3
+    },
+    {
+      "id": 26719399,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "43 (72%)",
+      "away": "43 (72%)",
+      "compare_code": 3
+    },
+    {
+      "id": 26719400,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "3/16 (19%)",
+      "away": "6/9 (67%)",
+      "compare_code": 2
+    },
+    {
+      "id": 26719401,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "passes",
+      "name": "crosses",
+      "home": "0/2 (0%)",
+      "away": "1/2 (50%)",
+      "compare_code": 2
+    },
+    {
+      "id": 26719402,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "0/0 (0%)",
+      "away": "5/6 (83%)",
+      "compare_code": 2
+    },
+    {
+      "id": 26719403,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "21",
+      "away": "25",
+      "compare_code": 2
+    },
+    {
+      "id": 26719404,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "4",
+      "away": "15",
+      "compare_code": 2
+    },
+    {
+      "id": 26719405,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "3",
+      "away": "6",
+      "compare_code": 2
+    },
+    {
+      "id": 26719406,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "defending",
+      "name": "tackles",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    },
+    {
+      "id": 26719407,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "2",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26719408,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "defending",
+      "name": "clearances",
+      "home": "3",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26719508,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "expected",
+      "name": "expected_goals",
+      "home": "0.07",
+      "away": "0.00",
+      "compare_code": 1
+    },
+    {
+      "id": 26719509,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "possession",
+      "name": "ball_possession",
+      "home": "60%",
+      "away": "40%",
+      "compare_code": 1
+    },
+    {
+      "id": 26719510,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots",
+      "name": "total_shots",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719511,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots",
+      "name": "shots_on_target",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719512,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots",
+      "name": "shots_off_target",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719513,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots",
+      "name": "blocked_shots",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719514,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "corner_kicks",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719515,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "offsides",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719516,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "yellow_cards",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26719517,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "free_kicks",
+      "home": "6",
+      "away": "1",
+      "compare_code": 1
+    },
+    {
+      "id": 26719518,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "throw_ins",
+      "home": "3",
+      "away": "5",
+      "compare_code": 2
+    },
+    {
+      "id": 26719519,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "goal_kicks",
+      "home": "0",
+      "away": "2",
+      "compare_code": 2
+    },
+    {
+      "id": 26719520,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots_extra",
+      "name": "shots_inside_box",
+      "home": "1",
+      "away": "0",
+      "compare_code": 1
+    },
+    {
+      "id": 26719521,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots_extra",
+      "name": "shots_outside_box",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719522,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots_extra",
+      "name": "goalkeeper_saves",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719523,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "passes",
+      "name": "passes",
+      "home": "70",
+      "away": "47",
+      "compare_code": 1
+    },
+    {
+      "id": 26719524,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "passes",
+      "name": "accurate_passes",
+      "home": "44 (63%)",
+      "away": "28 (60%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26719525,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "passes",
+      "name": "long_balls",
+      "home": "2/15 (13%)",
+      "away": "3/15 (20%)",
+      "compare_code": 2
+    },
+    {
+      "id": 26719526,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "passes",
+      "name": "crosses",
+      "home": "2/4 (50%)",
+      "away": "0/2 (0%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26719527,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "duels",
+      "name": "dribbles",
+      "home": "2/2 (100%)",
+      "away": "1/1 (100%)",
+      "compare_code": 1
+    },
+    {
+      "id": 26719528,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "duels",
+      "name": "possession_lost",
+      "home": "31",
+      "away": "30",
+      "compare_code": 1
+    },
+    {
+      "id": 26719529,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "duels",
+      "name": "duels_won",
+      "home": "14",
+      "away": "5",
+      "compare_code": 1
+    },
+    {
+      "id": 26719530,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "duels",
+      "name": "aerials_won",
+      "home": "5",
+      "away": "2",
+      "compare_code": 1
+    },
+    {
+      "id": 26719531,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "defending",
+      "name": "tackles",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    },
+    {
+      "id": 26719532,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "defending",
+      "name": "interceptions",
+      "home": "1",
+      "away": "1",
+      "compare_code": 3
+    },
+    {
+      "id": 26719533,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "defending",
+      "name": "clearances",
+      "home": "1",
+      "away": "5",
+      "compare_code": 2
+    },
+    {
+      "id": 26719538,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots_extra",
+      "name": "counter_attacks",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719539,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "shots_extra",
+      "name": "counter_attack_shots",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719611,
+      "event_id": 2361770,
+      "period": "all",
+      "group": "tvdata",
+      "name": "red_cards",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    },
+    {
+      "id": 26719612,
+      "event_id": 2361770,
+      "period": "1st",
+      "group": "tvdata",
+      "name": "red_cards",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719613,
+      "event_id": 2361770,
+      "period": "2nd",
+      "group": "tvdata",
+      "name": "red_cards",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719614,
+      "event_id": 2361770,
+      "period": "et1",
+      "group": "tvdata",
+      "name": "red_cards",
+      "home": "0",
+      "away": "0",
+      "compare_code": 3
+    },
+    {
+      "id": 26719615,
+      "event_id": 2361770,
+      "period": "et2",
+      "group": "tvdata",
+      "name": "red_cards",
+      "home": "0",
+      "away": "1",
+      "compare_code": 2
+    }
+  
+  ],
+  "meta": null
+}

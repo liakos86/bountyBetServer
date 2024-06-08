@@ -1,19 +1,26 @@
 package gr.server.data.api.model.events;
 
-public class MatchEventIncident {
+import java.io.Serializable;
+
+public class MatchEventIncident implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	int id;
     int event_id ;
     String incident_type; //"Card"
     Integer time ;
-    Object time_over ;
+    Integer time_over ;
     Integer order ;
     String text;
     Integer scoring_team ;
     Integer player_team ;
     Integer home_score ;
     Integer away_score ;
-    String card_type ; // "Yellow"
+    String card_type ; // "Yellow" / "YellowRed" / "Red"
     boolean is_missed ;
     String reason ; //"foul"
     Integer length ;
@@ -43,10 +50,10 @@ public class MatchEventIncident {
 	public void setTime(Integer time) {
 		this.time = time;
 	}
-	public Object getTime_over() {
+	public Integer getTime_over() {
 		return time_over;
 	}
-	public void setTime_over(Object time_over) {
+	public void setTime_over(Integer time_over) {
 		this.time_over = time_over;
 	}
 	public Integer getOrder() {

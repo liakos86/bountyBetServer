@@ -1,0 +1,27 @@
+FROM maven:3.9.2 as build
+
+WORKDIR /app
+
+COPY . .
+
+RUN ["mvn", "clean", "install", "-DskipTests"]
+
+FROM build
+
+RUN ["apt-get", "update"]
+ 
+RUN ["apt-get", "install", "-y", "ant"] 
+
+RUN ["apt-get", "install", "-y", "vim"]
+
+WORKDIR /app
+
+COPY --from=build /app .
+
+CMD ["ant", "runAndDelete", "-Dm2repo=/root/.m2/repository"]
+
+
+
+
+
+

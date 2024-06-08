@@ -89,12 +89,27 @@ public interface MongoFields {
 
 	String USER_BET_PREDICTION_CATEGORY = "predictionCategory";
 
+	String USER_BET_PREDICTION_HOME_TEAM_ID = "homeTeamId";
+
+	String USER_BET_PREDICTION_AWAY_TEAM_ID = "awayTeamId";
+	
 	String USER_BET_POSSIBLE_WINNINGS = "possibleWinnings";
 	
 	String SETTLED_EVENT_BELONGING_MONTH = "eventBelongingMonth";
 	String SETTLED_EVENT_BELONGING_DAY = "eventBelongingDay";
 	String SETTLED_EVENT_BELONGING_YEAR = "eventBelongingYear";
+	
+	String TEAM_ID = "teamId";
+	
+	String TEAM_SPORT_ID = "teamSportId";
+	
+	String TEAM_LOGO_URL = "teamLogoUrl";
+	
+	String TEAM_NAME = "teamName";
+	
+	String TRANSLATIONS = "translations";
 
+	String SPORT_ID = "sportId";
 
 
 }

@@ -2,21 +2,27 @@ package gr.server.application;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.Set;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-import gr.server.util.TimerTaskHelper;
+import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
 import gr.server.data.constants.SportScoreApiConstants;
+import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.global.helper.ApiDataFetchHelper;
 import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
+import gr.server.impl.client.MongoClientHelperImpl;
 import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
+import gr.server.mongo.util.MongoUtils;
+import gr.server.transaction.helper.MongoTransactionalBlock;
 
 @WebListener
 public class BetServerContextListener implements ServletContextListener {
@@ -24,9 +30,11 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {
 		System.out.println("SERVER SHUTTING DOWN");
-		RestApplication.disconnectActiveMq();
+//		RestApplication.disconnectActiveMq();
+
+		MongoUtils.getMongoClient().close();
 	}
-	
+
 	/**
 	 * First we connect to the local active mq in order to produce live topic messages later.
 	 * Secondly we get all the available sections. (e.g. World, Africa, Greece etc.
@@ -40,33 +48,85 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		
-		RestApplication.connectActiveMq();
+//		RestApplication.connectActiveMq();
+		
+		RestApplication.connectFirebase();
 		
 		MockApiDataFetchHelper.fetchSections();//reducing calls
 		MockApiDataFetchHelper.fetchLeagues();//reducing calls
-//		
-//		//RedisFetchHelper.fetchCachedEventsIntoLeagues();
-//		
-		ApiDataFetchHelper.fetchEventsIntoLeagues();
-		
-		SportScoreWebSocketClient webSocketClient = initiateWebSocket();
 
-		TimerTask maintainWebSocketTimerTask = TimerTaskHelper.maintainWebSocketTask(webSocketClient);
-		Timer maintainWebSocketTimer = new Timer("maintainWebSocketTimer");
-		maintainWebSocketTimer.schedule(maintainWebSocketTimerTask,  new Date(), 10000);
 		
-//		Calendar cal = Calendar.getInstance();
-//		cal.add(Calendar.MINUTE, 1);
-//		Date inAMinute = cal.getTime();
+		Runnable fetchEventsTask = () -> { ApiDataFetchHelper.fetchEventsIntoLeagues(); };
+		ScheduledExecutorService fetchEventsExecutor = Executors.newSingleThreadScheduledExecutor();
+		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 0, 15, TimeUnit.MINUTES);
+		
+		Runnable fetchLeagueTablesTask = () -> { ApiDataFetchHelper.fetchLeagueStandings(); };
+		ScheduledExecutorService fetchLeagueTablesExecutor = Executors.newSingleThreadScheduledExecutor();
+//		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 0, 15, TimeUnit.MINUTES);
+		fetchLeagueTablesExecutor.schedule(fetchLeagueTablesTask, 20, TimeUnit.SECONDS);
+		
+		
+		Runnable fetchPlayerStatsTask = () -> { ApiDataFetchHelper.fetchPlayerStatistics(); };
+		ScheduledExecutorService fetchPlayerStatisticsExecutor = Executors.newSingleThreadScheduledExecutor();
+//		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 0, 15, TimeUnit.MINUTES);
+		fetchPlayerStatisticsExecutor.schedule(fetchPlayerStatsTask, 40, TimeUnit.SECONDS);
+		
+		
+		//SportScoreWebSocketClient webSocketClient = initiateWebSocket();
+		
+		//Runnable keepWebSocketAliveTask = () -> { webSocketClient.sendMessage(SportScoreApiConstants.SOCKET_KEEP_ALIVE_MSG); };
+		//ScheduledExecutorService maintainWebSocketExecutorTask = Executors.newSingleThreadScheduledExecutor();
+		//maintainWebSocketExecutorTask.scheduleAtFixedRate(keepWebSocketAliveTask, 0, 10, TimeUnit.SECONDS);
+		
+//		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+//		Runnable fetchLiveStatisticsTask = () -> { mHelper.updateLiveStats(); };
+//		ScheduledExecutorService updateStatsExecutor = Executors.newSingleThreadScheduledExecutor();
+////		updateStatsExecutor.scheduleAtFixedRate(fetchLiveStatisticsTask, 1, 60, TimeUnit.MINUTES);
+//		updateStatsExecutor.schedule(fetchLiveStatisticsTask, 1, TimeUnit.MINUTES);
+		
+		
+//		Runnable mockRedCardsTask = () -> { mHelper.mockRedCards(); };
+//		ScheduledExecutorService cExecutor = Executors.newSingleThreadScheduledExecutor();
+//		cExecutor.scheduleAtFixedRate(mockRedCardsTask, 2, 1, TimeUnit.MINUTES);
+		
+		
+//		Runnable mockRedCardsTask = () -> { RestApplication.sendMockFirebaseTopicMessage(); };
+//		ScheduledExecutorService cExecutor = Executors.newSingleThreadScheduledExecutor();
+//		cExecutor.scheduleAtFixedRate(mockRedCardsTask, 10, 20, TimeUnit.SECONDS);
+		
 
-//		TimerTask settleFinishedEventsTimerTask = TimerTaskHelper.settleFinishedEvents();
-//		Timer settleFinishedEventsTimer = new Timer("settleFinishedEventsTimer");
-//		settleFinishedEventsTimer.schedule(settleFinishedEventsTimerTask,  inAMinute, 180000);
+//		Runnable settleBetsRunnable = () -> { settleBets(); };
+//		ScheduledExecutorService settleBetsRunnableTask = Executors.newScheduledThreadPool(2);
+//		settleBetsRunnableTask.scheduleAtFixedRate(settleBetsRunnable, 0, 3, TimeUnit.MINUTES);
 		
-//		TimerTask settleOpenBetsTimerTask = TimerTaskHelper.settleOpenBets();
-//		Timer settleOpenBetsTimer = new Timer("settleOpenBetsTimer");
-//		settleOpenBetsTimer.schedule(settleOpenBetsTimerTask, inAMinute, 200000);
 		
+		// Response is a message ID string.
+		
+	}
+	
+	private void settleBets() {
+		Set<MatchEvent> todaysFinishedEvents = FootballApiCache.ALL_EVENTS.values().stream().filter(match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus())).collect(Collectors.toSet());
+		
+		new MongoTransactionalBlock() {
+			
+			@Override
+			public void begin() throws Exception {
+				int settled = new MongoClientHelperImpl().settlePredictions(session, todaysFinishedEvents);
+				//logger.log(Level.INFO, "Settled " + settled + " predictions");
+				System.out.println("Settled " + settled + " predictions");
+			}
+		}.execute();
+		
+		new MongoTransactionalBlock() {
+			@Override
+			public void begin() throws Exception {
+				System.out.println("Working in thread: " + Thread.currentThread().getName());
+				int settled = new MongoClientHelperImpl().settleOpenBets(session);
+				System.out.println("Settled " + settled + " bets");
+//				logger.log(Level.INFO, "Settled " + settled + " bets");
+				
+			}
+		}.execute();
 	}
 
 	private SportScoreWebSocketClient initiateWebSocket() {
@@ -77,10 +137,10 @@ public class BetServerContextListener implements ServletContextListener {
 			e.printStackTrace();
 			return null;
 		}
-		
+
 		SportScoreWebSocketClient client = new SportScoreWebSocketClient(uri, new WebSocketMessageHandlerImpl());
 		client.sendMessage(SportScoreApiConstants.SOCKET_BOOTSTRAP_MSG);
 		return client;
 	}
-	
+
 }
