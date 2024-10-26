@@ -1,13 +1,16 @@
 package gr.server.data.api.cache;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
 import gr.server.data.api.model.events.MatchEventStatistics;
 import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.LeagueWithData;
 import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
 
@@ -60,39 +63,56 @@ public class FootballApiCache {
 	static int UEFA_EUROPA_LEAGUE= 818; 
 	static int EUROPE_EURO_QUAL = 819; 
 	static int EUROPE_EURO_CUP = 846; 
+	static int UEFA_CONFERENCE_LEAGUE = 8911;
 
 	static {
-		PRIORITIES_OVERRIDDE.put(EUROPE_EURO_QUAL, Integer.MAX_VALUE-1);
-		PRIORITIES_OVERRIDDE.put(UEFA_CHAMPIONS_LEAGUE, Integer.MAX_VALUE);
-		PRIORITIES_OVERRIDDE.put(UEFA_EUROPA_LEAGUE, Integer.MAX_VALUE - 1);
 		PRIORITIES_OVERRIDDE.put(WORLD_CUP, Integer.MAX_VALUE);
-		PRIORITIES_OVERRIDDE.put(ENGLAND_PREMIER_LEAGUE, Integer.MAX_VALUE);
-		PRIORITIES_OVERRIDDE.put(ITALY_SERIE_A, Integer.MAX_VALUE -2);
-		PRIORITIES_OVERRIDDE.put(GERMANY_BUNDESLIGA, Integer.MAX_VALUE -2);
-		PRIORITIES_OVERRIDDE.put(SPAIN_LA_LIGA, Integer.MAX_VALUE -1);
+		PRIORITIES_OVERRIDDE.put(EUROPE_EURO_QUAL, Integer.MAX_VALUE-1);
+		
+		PRIORITIES_OVERRIDDE.put(UEFA_CHAMPIONS_LEAGUE, Integer.MAX_VALUE - 2);
+		PRIORITIES_OVERRIDDE.put(UEFA_EUROPA_LEAGUE, Integer.MAX_VALUE - 3);
+		PRIORITIES_OVERRIDDE.put(UEFA_CONFERENCE_LEAGUE, Integer.MAX_VALUE - 4);
+		PRIORITIES_OVERRIDDE.put(UEFA_SUPER_CUP, Integer.MAX_VALUE - 5);
+		
+		PRIORITIES_OVERRIDDE.put(ENGLAND_PREMIER_LEAGUE, Integer.MAX_VALUE - 6);
+		PRIORITIES_OVERRIDDE.put(ITALY_SERIE_A, Integer.MAX_VALUE - 7);
+		PRIORITIES_OVERRIDDE.put(GERMANY_BUNDESLIGA, Integer.MAX_VALUE - 8);
+		PRIORITIES_OVERRIDDE.put(SPAIN_LA_LIGA, Integer.MAX_VALUE - 9);
+		PRIORITIES_OVERRIDDE.put(FRANCE_LIGUE_1, Integer.MAX_VALUE - 10);
+
+		
+		PRIORITIES_OVERRIDDE.put(ENGLAND_FA_CUP, Integer.MAX_VALUE - 11);
+		PRIORITIES_OVERRIDDE.put(ENGLAND_LEAGUE_TROPHY, Integer.MAX_VALUE - 12);
+		PRIORITIES_OVERRIDDE.put(ENGLAND_EFL_CUP, Integer.MAX_VALUE - 13);
+		PRIORITIES_OVERRIDDE.put(ENGLAND_COMMUNITY_SHIELD, Integer.MAX_VALUE - 14);
 	};
 	
 	/**
 	 * All the available sections. e.g. World is a section, Greece is a section etc.
 	 */
-	public static Map<Integer, Section> SECTIONS = new HashMap<>();
+	public static Map<Integer, Section> ALL_SECTIONS = new HashMap<>();
 	
 	/**
 	 * All the leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
 	 */
-	public static Map<Integer, League> LEAGUES = new HashMap<>();
+	public static Map<Integer, LeagueWithData> ALL_LEAGUES_WITH_EVENTS = new HashMap<>();
+
+	public static Map<Integer, League> ALL_LEAGUES = new HashMap<>();
 	
+	public static Map<Integer, List<LeagueWithData>> ALL_LEAGUES_WITH_EVENTS_PER_DAY = new LinkedHashMap<>(3);
+
 	/**
-	 * All the standings for all leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
+	 * All the seasons for all leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
 	 */
-	public static Map<Integer, Season> STANDINGS = new HashMap<>();
+	public static Map<Integer, List<Season>> SEASONS_PER_LEAGUE = new HashMap<>();
 	
 	/**
 	 * Maps days with the leagues and their games.
 	 * Key '0' is considered to be today, '1' is tomorrow, '-1' is yesterday etc.
 	 */
-	public static Map<Integer, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = 
-			new ConcurrentHashMap<Integer, Map<League,Map<Integer,MatchEvent>>>(3);
+//	public static Map<Integer, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = 
+//			new ConcurrentHashMap<Integer, Map<League,Map<Integer,MatchEvent>>>(3);
+	
 	
 	public static Map<Integer, MatchEventStatistics> STATS_PER_EVENT = new HashMap<>();
 	
@@ -102,5 +122,11 @@ public class FootballApiCache {
 	 * 
 	 */
 	public static Map<Integer, MatchEvent> ALL_EVENTS = new HashMap<>();
+	
+	static {
+		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(-1, new ArrayList<>());
+		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(0, new ArrayList<>());
+		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(1, new ArrayList<>());
+	}
 
 }

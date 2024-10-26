@@ -1,11 +1,7 @@
 package gr.server.data.api.model.events;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
-import org.eclipse.jdt.internal.compiler.ast.ArrayAllocationExpression;
 
 public class StatisticsItem {
 	

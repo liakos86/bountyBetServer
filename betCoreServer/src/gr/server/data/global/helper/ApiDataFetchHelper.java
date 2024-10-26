@@ -9,7 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 
+import gr.server.application.BetServerContextListener;
 import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
@@ -17,43 +19,58 @@ import gr.server.data.api.model.events.Player;
 import gr.server.data.api.model.events.PlayerStatistics;
 import gr.server.data.api.model.events.Players;
 import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.LeagueInfo;
+import gr.server.data.api.model.league.LeagueWithData;
 import gr.server.data.api.model.league.Season;
-import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.StandingRow;
 import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.api.model.league.Team;
+import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.SportScoreClient;
 
 public class ApiDataFetchHelper {
 
 	public static void fetchLeagueStandings() {
-		for (Entry<Integer, League> leagueEntry : FootballApiCache.LEAGUES.entrySet()) {
+		for (Entry<Integer, League> leagueEntry : FootballApiCache.ALL_LEAGUES.entrySet()) {
 			if (FootballApiCache.SPAIN_LA_LIGA == leagueEntry.getKey()) {
 				//TODO this is the premier league. testing purposes
-				Season currentSeason = SportScoreClient.getCurrentSeason(leagueEntry.getKey());
+				Season currentSeason = null;
+				
+				if (BetServerContextListener.ENV != null && BetServerContextListener.ENV.equals("MOCK")) {
+					currentSeason = MockApiClient.getSeasonsFromFile().getData().get(0);
+				}else {
+					currentSeason = SportScoreClient.getCurrentSeason(leagueEntry.getKey());
+				}
+				
 				if (currentSeason == null) {
 					continue;
 				}
 							
-				StandingTable standingTable = SportScoreClient.getSeasonStandings(currentSeason.getId());
+				StandingTable standingTable = null;
+				if (BetServerContextListener.ENV != null && BetServerContextListener.ENV.equals("MOCK")) {
+					standingTable = MockApiClient.getStandingTableFromFile();
+				}else {
+					standingTable = SportScoreClient.getSeasonStandings(currentSeason.getId());					
+				}
+				
 				currentSeason.setStandingTable(standingTable);
 				
+//				LeagueWithData leagueWithData = leagueEntry.getValue();
 				
-				League league = leagueEntry.getValue();
-//				LeagueInfo leagueInfo = new LeagueInfo();
-//				leagueInfo.setHas_logo(league.isHas_logo());
-//				leagueInfo.setId(league.getId());
-//				leagueInfo.setLogo(league.getLogo());
-//				leagueInfo.setName(league.getName());
-//				leagueInfo.setName_translations(league.getName_translations());
-//				leagueInfo.setPriority(league.getPriority());
-//				leagueInfo.setSection_id(league.getSection_id());
-//				leagueInfo.setSection(league.getSection());
-				currentSeason.setLeagueInfo((LeagueInfo)league);
+				currentSeason.setLeague(leagueEntry.getValue());
+				List<Season> leagueSeasons = new ArrayList<>();
+				leagueSeasons.add(currentSeason);
 				
-				FootballApiCache.STANDINGS.put(leagueEntry.getKey(), currentSeason);
+				leagueEntry.getValue().getSeasonIds().add(currentSeason.getId());
+				
+				FootballApiCache.SEASONS_PER_LEAGUE.put(leagueEntry.getKey(), leagueSeasons);
 			}
+		}
+		
+		for (Entry<Integer, League> leagueEntry : FootballApiCache.ALL_LEAGUES.entrySet()) {
+			List<Season> seasons = FootballApiCache.SEASONS_PER_LEAGUE.get(FootballApiCache.SPAIN_LA_LIGA);
+			FootballApiCache.SEASONS_PER_LEAGUE.put(leagueEntry.getKey(), seasons);
+			
+			leagueEntry.getValue().getSeasonIds().add(seasons.get(0).getId());
 		}
 	}
 	
@@ -77,7 +94,15 @@ public class ApiDataFetchHelper {
 		
 		try {
 			
-			events = SportScoreClient.getEvents(date).getData();
+			
+			if (BetServerContextListener.ENV != null && BetServerContextListener.ENV.equals("MOCK")) {
+				throw new RuntimeException("MOCK ENABLED");
+//				events = MockApiClient.getEventsFromFile("events1").getData();
+			}else {
+				events = SportScoreClient.getEvents(date).getData();
+			}
+			
+			
 			events.forEach(e -> { if (!FootballApiCache.ALL_EVENTS.containsKey(e.getId())) {
 										FootballApiCache.ALL_EVENTS.put(e.getId(), e);
 									}
@@ -165,63 +190,44 @@ public class ApiDataFetchHelper {
 	 * @param events
 	 */
 	private static void splitEventsIntoLeaguesAndDays(Integer position, List<MatchEvent> events) {
-		Map<League, Map<Integer, MatchEvent>> leaguesWithEvents = new HashMap<>();
+		
+				
+		Map<Integer, LeagueWithData> incomingLeagueData = new HashMap<>();
+		
+
 		for (MatchEvent event : events) {
-			League league = event.getLeague();
-			if (league == null) {
-//				league = RestApplication.LEAGUES.get(event.getLeague_id());
-				league = FootballApiCache.LEAGUES.get(event.getLeague_id());
-				if (league == null) {//can be null because we fetch mock leagues to reduce calls
-					System.out.println("CREATING DUMMY LEAGUE FOR " + event.getLeague_id());
-					league = createDummyLeague();
-//					RestApplication.LEAGUES.put(event.getLeague_id(), league);
-					FootballApiCache.LEAGUES.put(event.getLeague_id(), league);
-				}
-				event.setLeague(league);
-			}
-			
-//			if (league.getName().contains("League")) {
-//				continue;
-//			}
-			
-			Map<Integer, MatchEvent> leagueEvents = leaguesWithEvents.get(league);
-			if (leagueEvents == null) {
-				leagueEvents = new HashMap<>();
-				leaguesWithEvents.put(league, leagueEvents);
-			}
-			
 			
 			FootballApiCache.ALL_EVENTS.put(event.getId(), event);
-//			if (FootballApiCache.ALL_EVENTS.containsKey(event.getId())){
-//				leagueEvents.put(event.getId(), FootballApiCache.ALL_EVENTS.get(event.getId()));
-//			}else {
-				leagueEvents.put(event.getId(), event);
-//			}
+			
+			League cachedLeague = FootballApiCache.ALL_LEAGUES.get(event.getLeague_id());
+					
+			//TODO: can be null because we fetch mock leagues to reduce calls, but we fetch real events
+			if (cachedLeague == null) {
+				continue;
+			}
+			
+			LeagueWithData incomingLeagueEvents = incomingLeagueData.get(event.getLeague_id());
+			
+			if (incomingLeagueEvents == null) {
+				incomingLeagueEvents = new LeagueWithData();
+				incomingLeagueEvents.setLeagueId(cachedLeague.getId());
+				incomingLeagueData.put(cachedLeague.getId(), incomingLeagueEvents);
+			}
+			
+			incomingLeagueEvents.getMatchEvents().add(event);
 		}
-		
-		FootballApiCache.EVENTS_PER_DAY_PER_LEAGUE.put(position, leaguesWithEvents);
-		
-	}
+				
 
-	private static League createDummyLeague() {
-		League league = new League();
-		league.setId(Integer.MIN_VALUE);
-		league.setName("Other");
-		Section section = new Section();
-		section.setId(Integer.MIN_VALUE);
-		section.setName("Other Section");
-		section.setPriority(0);
-		section.setSport_id(1);
-		league.setSection(section);
+		List<LeagueWithData> replacementLeaguesWithData = incomingLeagueData.values().stream().collect(Collectors.toList());
 		
-		league.setLogo("https://tipsscore.com/resb/no-league.png");
-		league.setHas_logo(true);
-		return league;
+		FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(position, replacementLeaguesWithData);
+		
+		
 	}
 
 	public static void fetchSections() {
 		try {
-			SportScoreClient.getSections().forEach(s -> FootballApiCache.SECTIONS.put(s.getId(), s));
+			SportScoreClient.getSections().forEach(s -> FootballApiCache.ALL_SECTIONS.put(s.getId(), s));
 		} catch (IOException e) {
 			System.out.println("SECTIONS ERROR");
 			e.printStackTrace();
@@ -230,7 +236,7 @@ public class ApiDataFetchHelper {
 
 	public static void fetchPlayerStatistics() {//31730 laliga2024 31497
 		
-		Season season = FootballApiCache.STANDINGS.get(251);
+		Season season = FootballApiCache.SEASONS_PER_LEAGUE.get(FootballApiCache.SPAIN_LA_LIGA).get(0);
 		
 		//for (Entry<Integer, Season> seasonStandingEntry : FootballApiCache.STANDINGS.entrySet()) {
 			//Season season = seasonStandingEntry.getValue();

@@ -26,6 +26,8 @@ import gr.server.transaction.helper.MongoTransactionalBlock;
 
 @WebListener
 public class BetServerContextListener implements ServletContextListener {
+	
+	public static String ENV = System.getProperty("gr.server.environment");
 
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {

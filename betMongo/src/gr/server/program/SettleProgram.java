@@ -1,5 +1,6 @@
 package gr.server.program;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -11,7 +12,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.api.model.events.helper.ApiDataFetchHelper;
+//import gr.server.data.api.model.events.helper.ApiDataFetchHelper;
 import gr.server.data.enums.MatchEventStatus;
 import gr.server.impl.client.MongoClientHelperImpl;
 import gr.server.logging.Mongo;
@@ -36,7 +37,7 @@ public class SettleProgram {
 	
 	static void settlePredictions() {
 
-		List<MatchEvent> todaysMatches = ApiDataFetchHelper.eventsForDate(new Date());
+		List<MatchEvent> todaysMatches = new ArrayList<>();// ApiDataFetchHelper.eventsForDate(new Date());
 		
 		Set<MatchEvent> todaysFinishedEvents = todaysMatches.stream().filter(
 							match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus()))

@@ -4,6 +4,15 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * It is the parent of a list of {@link League}s. Can be:
+ *  - England
+ *  - Europe
+ *  - World
+ *  
+ * @author liako
+ *
+ */
 public class Section implements Serializable{
 	
 	/**

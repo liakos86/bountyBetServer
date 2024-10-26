@@ -1,15 +1,14 @@
 package gr.server.util;
 
 import java.util.HashSet;
-import java.util.Map;
+import java.util.List;
 import java.util.Set;
 import java.util.TimerTask;
 import java.util.stream.Collectors;
 
-import gr.server.application.RestApplication;
-import gr.server.data.api.model.league.League;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.LeagueWithData;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.enums.MatchEventStatus;
@@ -41,10 +40,10 @@ public class TimerTaskHelper {
 
 						Set<MatchEvent> todaysFinishedEvents = new HashSet<>(); 
 						
-						Map<League, Map<Integer, MatchEvent>> todaysLeagues = FootballApiCache.EVENTS_PER_DAY_PER_LEAGUE.get(0);
-						todaysLeagues.values().forEach(
+						List<LeagueWithData> todaysLeagues = FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.get(0);
+						todaysLeagues.forEach(
 								leagueMatchesMap -> {
-									Set<MatchEvent> finishedEventsForLeague = leagueMatchesMap.values().stream().filter(
+									Set<MatchEvent> finishedEventsForLeague = leagueMatchesMap.getMatchEvents().stream().filter(
 											match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus()))
 									.collect(Collectors.toSet());
 									todaysFinishedEvents.addAll(finishedEventsForLeague);

@@ -10,7 +10,7 @@
         "ru": "Премьершип"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/northern-ireland-premiership.png",
+      "logo": "https://xscore.cc/resb/league/northern-ireland-premiership.png",
       "start_date": "2022-08-12 18:45:00",
       "end_date": "2023-06-30 23:59:00",
       "priority": 0,
@@ -74,7 +74,7 @@
         "ru": "Кубок лиги"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/northern-ireland-league-cup.png",
+      "logo": "https://xscore.cc/resb/league/northern-ireland-league-cup.png",
       "start_date": "2022-09-13 18:00:00",
       "end_date": "2023-04-30 00:00:00",
       "priority": 0,
@@ -126,7 +126,7 @@
         "ru": "Лига 1, Чемпионшип"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/northern-ireland-championship-1.png",
+      "logo": "https://xscore.cc/resb/league/northern-ireland-championship-1.png",
       "start_date": "2022-08-13 14:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -186,7 +186,7 @@
         "ru": "Кубок Северной Ирландии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/northern-ireland-irish-cup.png",
+      "logo": "https://xscore.cc/resb/league/northern-ireland-irish-cup.png",
       "start_date": "2022-01-07 19:45:00",
       "end_date": "2022-05-08 00:00:00",
       "priority": 0,
@@ -242,7 +242,7 @@
         "ru": "Премьер-лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/wales-cymru-premier.png",
+      "logo": "https://xscore.cc/resb/league/wales-cymru-premier.png",
       "start_date": "2022-08-12 18:45:00",
       "end_date": "2023-05-31 23:59:00",
       "priority": 0,
@@ -310,7 +310,7 @@
         "ru": "Кубок валлийской лиги"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/wales-league-cup.png",
+      "logo": "https://xscore.cc/resb/league/wales-league-cup.png",
       "start_date": "2022-07-22 18:30:00",
       "end_date": "2023-03-31 23:59:00",
       "priority": 0,
@@ -366,7 +366,7 @@
         "ru": "Кубок Уэльса"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/wales-faw-welsh-cup.png",
+      "logo": "https://xscore.cc/resb/league/wales-faw-welsh-cup.png",
       "start_date": "2022-09-17 13:00:00",
       "end_date": "2023-04-30 00:00:00",
       "priority": 0,
@@ -419,7 +419,7 @@
         "ru": "Первая лига Уэльса"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2018-08-10 18:30:00",
       "end_date": "2019-05-11 23:59:00",
       "priority": 0,
@@ -476,7 +476,7 @@
         "ru": "Cymru Alliance"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2018-08-10 18:30:00",
       "end_date": "2019-04-28 23:59:00",
       "priority": 0,
@@ -536,7 +536,7 @@
         "ru": "Cymru Север"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/wales-cymru-north.png",
+      "logo": "https://xscore.cc/resb/league/wales-cymru-north.png",
       "start_date": "2022-07-29 18:30:00",
       "end_date": "2023-04-10 00:00:00",
       "priority": 0,
@@ -596,7 +596,7 @@
         "ru": "Cymru Юг"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/wales-cymru-south.png",
+      "logo": "https://xscore.cc/resb/league/wales-cymru-south.png",
       "start_date": "2022-07-29 18:30:00",
       "end_date": "2023-04-10 00:00:00",
       "priority": 0,
@@ -656,7 +656,7 @@
         "ru": "Чемпионат Марокко"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/morocco-botola.png",
+      "logo": "https://xscore.cc/resb/league/morocco-botola.png",
       "start_date": "2021-09-10 18:15:00",
       "end_date": "2022-07-10 23:59:00",
       "priority": 0,
@@ -724,7 +724,7 @@
         "ru": "Кубок Трона Марокко"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/morocco-morocco-cup.png",
+      "logo": "https://xscore.cc/resb/league/morocco-morocco-cup.png",
       "start_date": "2022-03-11 19:30:00",
       "end_date": "2022-08-31 00:00:00",
       "priority": 0,
@@ -780,7 +780,7 @@
         "ru": "Второй дивизион (Ботола 2)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/morocco-botola-2.png",
+      "logo": "https://xscore.cc/resb/league/morocco-botola-2.png",
       "start_date": "2021-09-10 16:00:00",
       "end_date": "2022-05-31 23:59:00",
       "priority": 0,
@@ -848,7 +848,7 @@
         "ru": "Премьер-Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/armenia-premier-league.png",
+      "logo": "https://xscore.cc/resb/league/armenia-premier-league.png",
       "start_date": "2022-07-29 13:45:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -912,7 +912,7 @@
         "ru": "Первая Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/armenia-first-league.png",
+      "logo": "https://xscore.cc/resb/league/armenia-first-league.png",
       "start_date": "2022-08-03 13:45:00",
       "end_date": "2023-05-26 00:00:00",
       "priority": 0,
@@ -972,7 +972,7 @@
         "ru": "Кубок Армении"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/armenia-armenian-cup.png",
+      "logo": "https://xscore.cc/resb/league/armenia-armenian-cup.png",
       "start_date": "2021-09-15 11:30:00",
       "end_date": "2022-05-31 23:59:00",
       "priority": 0,
@@ -1024,7 +1024,7 @@
         "ru": "Суперкубок"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/armenia-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/armenia-super-cup.png",
       "start_date": "2021-09-24 14:30:00",
       "end_date": "2021-09-24 00:00:00",
       "priority": 0,
@@ -1068,7 +1068,7 @@
         "ru": "Примера Дивизион, Апертура"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/costa-rica-primera-division-apertura.png",
+      "logo": "https://xscore.cc/resb/league/costa-rica-primera-division-apertura.png",
       "start_date": "2022-07-19 21:00:00",
       "end_date": "2022-11-07 00:00:00",
       "priority": 0,
@@ -1125,7 +1125,7 @@
         "ru": "Примера Дивизион, Клаусура"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/costa-rica-primera-division-clausura.png",
+      "logo": "https://xscore.cc/resb/league/costa-rica-primera-division-clausura.png",
       "start_date": "2022-01-11 21:00:00",
       "end_date": "2022-06-14 23:59:00",
       "priority": 0,
@@ -1185,7 +1185,7 @@
         "ru": "Лига Де Аценсо, Апертура"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso-apertura.png",
+      "logo": "https://xscore.cc/resb/league/costa-rica-liga-de-ascenso-apertura.png",
       "start_date": "2022-07-29 21:00:00",
       "end_date": "2022-12-19 00:00:00",
       "priority": 0,
@@ -1242,7 +1242,7 @@
         "ru": "Лига Де Аценсо, Клаусура"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/costa-rica-liga-de-ascenso-clausura.png",
+      "logo": "https://xscore.cc/resb/league/costa-rica-liga-de-ascenso-clausura.png",
       "start_date": "2022-01-15 20:00:00",
       "end_date": "2022-05-23 00:00:00",
       "priority": 0,
@@ -1302,7 +1302,7 @@
         "ru": "Национальная Лига Юг"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-national-league-south.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-national-league-south.png",
       "start_date": "2022-08-06 14:00:00",
       "end_date": "2023-05-14 23:59:00",
       "priority": 0,
@@ -1359,7 +1359,7 @@
         "ru": "Национальная Лига Север"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-national-league-north.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-national-league-north.png",
       "start_date": "2022-08-06 14:00:00",
       "end_date": "2023-05-14 23:59:00",
       "priority": 0,
@@ -1420,7 +1420,7 @@
         "ru": "FA Trophy"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-fa-trophy.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-fa-trophy.png",
       "start_date": "2021-11-13 15:00:00",
       "end_date": "2022-05-22 00:00:00",
       "priority": 0,
@@ -1476,7 +1476,7 @@
         "ru": "Северная Премьер-Лига, Премьер Дивизион"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-northern-premier-league-premier-division.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-northern-premier-league-premier-division.png",
       "start_date": "2022-08-13 14:00:00",
       "end_date": "2023-05-14 00:00:00",
       "priority": 0,
@@ -1533,7 +1533,7 @@
         "ru": "Южная Футбольная Лига, Премьер Дивизион"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2017-08-12 14:00:00",
       "end_date": "2018-05-28 21:59:00",
       "priority": 0,
@@ -1590,7 +1590,7 @@
         "ru": "Премьер-Лига 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-premier-league-2.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-premier-league-2.png",
       "start_date": "2022-08-05 14:00:00",
       "end_date": "2023-05-01 00:00:00",
       "priority": 0,
@@ -1646,7 +1646,7 @@
         "ru": "Истмианская Футбольная Лига, Премьер-Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-isthmian-football-league-premier-division.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-isthmian-football-league-premier-division.png",
       "start_date": "2022-08-13 14:00:00",
       "end_date": "2023-05-07 00:00:00",
       "priority": 0,
@@ -1703,7 +1703,7 @@
         "ru": "Премьер-Лиги По Футболу"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-premier-league-cup.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-premier-league-cup.png",
       "start_date": "2022-03-09 18:00:00",
       "end_date": "2022-05-31 00:00:00",
       "priority": 0,
@@ -1752,7 +1752,7 @@
         "ru": "FA Trophy, Квалификация"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-fa-trophy-qualification.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-fa-trophy-qualification.png",
       "start_date": "2021-10-09 14:00:00",
       "end_date": "2021-11-11 00:00:00",
       "priority": 0,
@@ -1801,7 +1801,7 @@
         "ru": "FA Женская Суперлига 2"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -1833,7 +1833,7 @@
         "ru": "Южная Футбольная Лига, Премьер Дивизион Юг"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-southern-football-league-premier-division-south.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-southern-football-league-premier-division-south.png",
       "start_date": "2022-08-06 14:00:00",
       "end_date": "2023-05-14 00:00:00",
       "priority": 0,
@@ -1890,7 +1890,7 @@
         "ru": "Южная Футбольная Лига, Премьер-Лига Центральный"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-southern-football-league-premier-division-central.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-southern-football-league-premier-division-central.png",
       "start_date": "2022-08-06 14:00:00",
       "end_date": "2023-05-14 00:00:00",
       "priority": 0,
@@ -1950,7 +1950,7 @@
         "ru": "Континентальный Кубок WSL, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-fa-wsl-continental-cup-women.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-fa-wsl-continental-cup-women.png",
       "start_date": "2022-01-19 19:00:00",
       "end_date": "2022-03-05 23:59:00",
       "priority": 0,
@@ -2002,7 +2002,7 @@
         "ru": "Профессионального Развития Футбола"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/england-amateur-professional-development-league.png",
+      "logo": "https://xscore.cc/resb/league/england-amateur-professional-development-league.png",
       "start_date": "2022-08-08 10:00:00",
       "end_date": "2023-05-30 00:00:00",
       "priority": 0,
@@ -2054,7 +2054,7 @@
         "ru": "Регионаллига Норд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-regionalliga-nord.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-regionalliga-nord.png",
       "start_date": "2022-07-30 11:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2119,7 +2119,7 @@
         "ru": "Регионаллига Юг"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2011-08-05 17:00:00",
       "end_date": "2012-05-21 21:59:00",
       "priority": 0,
@@ -2168,7 +2168,7 @@
         "ru": "Оберлига Баден Вюртемберг"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-baden-wuerttemberg.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-oberliga-baden-wuerttemberg.png",
       "start_date": "2022-08-05 17:00:00",
       "end_date": "2023-05-27 00:00:00",
       "priority": 0,
@@ -2236,7 +2236,7 @@
         "ru": "Бавария"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2011-07-22 17:00:00",
       "end_date": "2012-06-08 23:59:00",
       "priority": 0,
@@ -2285,7 +2285,7 @@
         "ru": "Оберлига НОФВ Норд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-nofv-nord.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-oberliga-nofv-nord.png",
       "start_date": "2022-08-05 17:45:00",
       "end_date": "2023-06-11 00:00:00",
       "priority": 0,
@@ -2349,7 +2349,7 @@
         "ru": "Оберлига Вестфалия"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-westfalen.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-oberliga-westfalen.png",
       "start_date": "2022-08-13 15:00:00",
       "end_date": "2023-05-29 00:00:00",
       "priority": 0,
@@ -2410,7 +2410,7 @@
         "ru": "Оберлига NOFV Süd"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-nofv-sud.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-oberliga-nofv-sud.png",
       "start_date": "2022-08-05 17:00:00",
       "end_date": "2023-06-11 00:00:00",
       "priority": 0,
@@ -2467,7 +2467,7 @@
         "ru": "Гессенлига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-hessenliga.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-hessenliga.png",
       "start_date": "2022-07-29 17:00:00",
       "end_date": "2023-05-18 23:59:00",
       "priority": 0,
@@ -2531,7 +2531,7 @@
         "ru": "Оберлига Юго-Запад"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2011-08-05 17:00:00",
       "end_date": "2012-05-28 21:59:00",
       "priority": 0,
@@ -2580,7 +2580,7 @@
         "ru": "Регионаллига Запад"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-regionalliga-west.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-regionalliga-west.png",
       "start_date": "2022-07-22 17:30:00",
       "end_date": "2023-05-13 00:00:00",
       "priority": 0,
@@ -2645,7 +2645,7 @@
         "ru": "Nrw-Лига"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2011-08-06 13:00:00",
       "end_date": "2012-06-10 23:59:00",
       "priority": 0,
@@ -2694,7 +2694,7 @@
         "ru": "Бремен-Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-bremen-liga.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-bremen-liga.png",
       "start_date": "2022-08-12 17:00:00",
       "end_date": "2023-05-14 00:00:00",
       "priority": 0,
@@ -2758,7 +2758,7 @@
         "ru": "Оберлига Гамбург"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-oberliga-hamburg.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-oberliga-hamburg.png",
       "start_date": "2022-07-29 17:00:00",
       "end_date": "2023-05-07 00:00:00",
       "priority": 0,
@@ -2819,7 +2819,7 @@
         "ru": "Шлезвиг-Гольштейн-Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/germany-amateur-schleswig-holstein-liga.png",
+      "logo": "https://xscore.cc/resb/league/germany-amateur-schleswig-holstein-liga.png",
       "start_date": "2022-07-29 17:00:00",
       "end_date": "2023-05-20 00:00:00",
       "priority": 0,

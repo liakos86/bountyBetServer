@@ -1,8 +1,5 @@
 package gr.server.data.api.model.events;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Map;
 
 import gr.server.data.api.cache.FootballApiCache;
@@ -13,7 +10,6 @@ import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
-import gr.server.data.constants.SportScoreApiConstants;
 
 /**
  * "start_at":"2024-01-28 17:00:07","status":"inprogress","status_more":"62","time_details":{"prefix":"","initial":2700,"max":5400,"timestamp":1706465574,"extra":540},
@@ -21,7 +17,8 @@ import gr.server.data.constants.SportScoreApiConstants;
  * @author liako
  *
  */
-public class MatchEvent implements Comparable<MatchEvent> {
+public class MatchEvent {
+//implements Comparable<MatchEvent> {
 
 	MatchEventIncidents incidents = new MatchEventIncidents();
 	MatchEventStatistics statistics = new MatchEventStatistics();
@@ -32,7 +29,7 @@ public class MatchEvent implements Comparable<MatchEvent> {
 
 	Integer id;
 	Integer sport_id;
-	Integer league_id;
+	int league_id;
 	Integer challenge_id;
 	Integer season_id;
 	Integer venue_id;
@@ -80,10 +77,10 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	Map<String, Object> round_info;
 	//String periods_time;
 	MatchOdds main_odds;
-	League league;
-	Challenge challenge;
+//	League league;
+//	Challenge challenge;
 	Season season;
-	Section section;
+//	Section section;
 
 	public boolean homeGoalScored(Score homeScoreNew) {
 		if (this.home_score == null) {
@@ -125,27 +122,11 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.sport_id = sport_id;
 	}
 
-//	public Integer getHome_team_id() {
-//		return home_team_id;
-//	}
-//
-//	public void setHome_team_id(Integer home_team_id) {
-//		this.home_team_id = home_team_id;
-//	}
-//
-//	public Integer getAway_team_id() {
-//		return away_team_id;
-//	}
-//
-//	public void setAway_team_id(Integer away_team_id) {
-//		this.away_team_id = away_team_id;
-//	}
-
-	public Integer getLeague_id() {
+	public int getLeague_id() {
 		return league_id;
 	}
 
-	public void setLeague_id(Integer league_id) {
+	public void setLeague_id(int league_id) {
 		this.league_id = league_id;
 	}
 
@@ -180,14 +161,6 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	public void setReferee_id(Integer referee_id) {
 		this.referee_id = referee_id;
 	}
-
-//	public String getSlug() {
-//		return slug;
-//	}
-//
-//	public void setSlug(String slug) {
-//		this.slug = slug;
-//	}
 
 	public String getName() {
 		return name;
@@ -421,14 +394,6 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.round_info = round_info;
 	}
 
-//	public String getPeriods_time() {
-//		return periods_time;
-//	}
-//
-//	public void setPeriods_time(String periods_time) {
-//		this.periods_time = periods_time;
-//	}
-
 	public MatchOdds getMain_odds() {
 		return main_odds;
 	}
@@ -437,21 +402,13 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.main_odds = main_odds;
 	}
 
-	public League getLeague() {
-		return league;
-	}
-
-	public void setLeague(League league) {
-		this.league = league;
-	}
-
-	public Challenge getChallenge() {
-		return challenge;
-	}
-
-	public void setChallenge(Challenge challenge) {
-		this.challenge = challenge;
-	}
+//	public Challenge getChallenge() {
+//		return challenge;
+//	}
+//
+//	public void setChallenge(Challenge challenge) {
+//		this.challenge = challenge;
+//	}
 
 	public Season getSeason() {
 		return season;
@@ -461,22 +418,6 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		this.season = season;
 	}
 
-	public Section getSection() {
-		return section;
-	}
-
-	public void setSection(Section section) {
-		this.section = section;
-	}
-
-//	public String getStatus_loc() {
-//		return status_loc;
-//	}
-//
-//	public void setStatus_loc(String status_loc) {
-//		this.status_loc = status_loc;
-//	}
-
 	public Object getTime_live() {
 		return time_live;
 	}
@@ -484,30 +425,6 @@ public class MatchEvent implements Comparable<MatchEvent> {
 	public void setTime_live(Object time_live) {
 		this.time_live = time_live;
 	}
-
-//	public String getStatus_for_client() {
-//		return status_for_client;
-//	}
-//
-//	public void setStatus_for_client(String status_for_client) {
-//		this.status_for_client = status_for_client;
-//	}
-
-//	public ChangeEvent getChangeEvent() {
-//		return changeEvent;
-//	}
-//
-//	public void setChangeEvent(ChangeEvent changeEvent) {
-//		this.changeEvent = changeEvent;
-//	}
-
-//	public boolean isMarkedForRemoval() {
-//		return markedForRemoval;
-//	}
-//
-//	public void setMarkedForRemoval(boolean markedForRemoval) {
-//		this.markedForRemoval = markedForRemoval;
-//	}
 
 	public MatchEventIncidents getIncidents() {
 		return incidents;
@@ -542,39 +459,39 @@ public class MatchEvent implements Comparable<MatchEvent> {
 		return this.id.equals(other.id);
 	}
 
-	@Override
-	public int hashCode() {
-		return this.id * 37;
-	}
+//	@Override
+//	public int hashCode() {
+//		return this.id * 37;
+//	}
+
+//	@Override
+//	public int compareTo(MatchEvent other) {
+//
+//		if (this.time_live != null && other.time_live == null) {
+//			return 1;
+//		}
+//
+//		if (this.time_live == null && other.time_live != null) {
+//			return -1;
+//		}
+//
+//		if (this.time_live == null && other.time_live == null) {
+//			SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
+//			try {
+//				Date thisDate = matchTimeFormat.parse(this.start_at);
+//				Date otherDate = matchTimeFormat.parse(other.start_at);
+//				return (int) (thisDate.getTime() - otherDate.getTime());
+//			} catch (ParseException e) {
+//				return -1;
+//			}
+//		}
+//
+//		return 0;
+//	}
 
 	@Override
-	public int compareTo(MatchEvent other) {
-
-		if (this.time_live != null && other.time_live == null) {
-			return 1;
-		}
-
-		if (this.time_live == null && other.time_live != null) {
-			return -1;
-		}
-
-		if (this.time_live == null && other.time_live == null) {
-			SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-			try {
-				Date thisDate = matchTimeFormat.parse(this.start_at);
-				Date otherDate = matchTimeFormat.parse(other.start_at);
-				return (int) (thisDate.getTime() - otherDate.getTime());
-			} catch (ParseException e) {
-				return -1;
-			}
-		}
-
-		return 0;
-	}
-
-	@Override
-	public String toString() {
-		League league = FootballApiCache.LEAGUES.get(this.league_id);
+	public String toString() {		
+		League league = FootballApiCache.ALL_LEAGUES.get(this.league_id);
 		return "Match id:" + this.id + ", status: " + this.status + ", league:" + (league!=null ? league.getName() : league_id) + 
 				" home:" + this.home_team + " away:" + this.away_team +
 				" homescore:" +this.home_score + "awayscore:" + this.away_score +

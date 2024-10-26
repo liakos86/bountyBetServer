@@ -188,6 +188,10 @@ implements MongoClientHelper {
 	@Override
 	public BetPlacementStatus placeBet(UserBet userBet) {
 		
+		if(userBet.getBetAmount()<=0 || insufficientFundsFor(userBet)) {
+			return BetPlacementStatus.FAILED_INSUFFICIENT_FUNDS;	
+		}
+		
 		if (liveGameInPredictions(userBet.getPredictions())) {
 			return BetPlacementStatus.FAILED_MATCH_IN_PROGRESS;
 		}
@@ -264,6 +268,11 @@ implements MongoClientHelper {
 		}
 		
 		return BetPlacementStatus.FAIL_GENERIC;
+	}
+
+	private boolean insufficientFundsFor(UserBet userBet) {
+		User user = new MongoClientHelperImpl().getUser(userBet.getMongoUserId());
+		return user.getBalance() - userBet.getBetAmount() < 0;
 	}
 
 	public List<User> retrieveLeaderBoard() {

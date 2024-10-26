@@ -7,9 +7,11 @@ import java.text.ParseException;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Leagues;
 import gr.server.data.api.model.league.Seasons;
 import gr.server.data.api.model.league.Sections;
+import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.api.model.league.Teams;
 import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.events.MatchEventIncidents;
@@ -105,12 +107,14 @@ public class MockApiClient {
 		System.out.println("*************************");
 		System.out.println("*************************");
 		leagues.getData().forEach(l-> {if (l.getSection_id() ==0) {System.out.println("League without section ID: " + l.getName());}} );
-		leagues.getData().forEach(l-> {if (l.getSection() ==null) {System.out.println("League without section obj: " + l.getName());}} );
+		//leagues.getData().forEach(l-> {if (l.getSection() ==null) {System.out.println("League without section obj: " + l.getName());}} );
 
 		
 		return leagues;
 
 	}
+	
+
 
 	public static Teams getTeamsFromFile() {
 		System.out.println("GETTING MOCK API TEAMS");
@@ -210,6 +214,17 @@ public class MockApiClient {
 			System.out.println(content);
 			PlayerStatistics incidents = new Gson().fromJson(content, new TypeToken<PlayerStatistics>() {}.getType());
 			return incidents;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public static StandingTable getStandingTableFromFile() {
+		try {
+			String content = new MockHttpHelper().mockGetContentWithHeaders("standingTable.json");
+			System.out.println(content);
+			StandingTable table = new Gson().fromJson(content, new TypeToken<StandingTable>() {}.getType());
+			return table;
 		} catch (Exception e) {
 			return null;
 		}

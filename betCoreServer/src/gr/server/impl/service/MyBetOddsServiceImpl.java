@@ -1,11 +1,9 @@
 package gr.server.impl.service;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -23,8 +21,7 @@ import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
 import gr.server.data.api.model.events.MatchEventStatistics;
-import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.Section;
+import gr.server.data.api.model.league.Season;
 import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
@@ -52,7 +49,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 		if (BetPlacementStatus.PLACED != betPlacementStatus) {
 			User errorUser = new User();
 			errorUser.setErrorMessage(String.valueOf(betPlacementStatus.getCode()));
-			return Response.ok(errorUser).build();
+			return Response.ok(new Gson().toJson(errorUser)).build();
 		}
 
 		return getUser(newBet.getMongoUserId());// TODO: maybe return only the bet?
@@ -112,7 +109,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 		String userJson = new Gson().toJson(user);
 		return Response.ok(userJson).build();
 	}
-	
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -122,67 +119,51 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 		String eventsJson = new Gson().toJson(liveEvents);
 		return Response.ok(eventsJson).build();
 	}
-
+	
+	@Override
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/getSections")
+	public Response getSections() {
+		return Response.ok(new Gson().toJson(FootballApiCache.ALL_SECTIONS.values().stream().collect(Collectors.toList()))).build();
+	}
 
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
 	public Response getLeagues() {
-		Map<Integer, List<League>> leaguesPerDay = new LinkedHashMap<>();
-
-		for (Map.Entry<Integer, Map<League, Map<Integer, MatchEvent>>> dailyEntry : FootballApiCache.EVENTS_PER_DAY_PER_LEAGUE
-				.entrySet()) {
-			List<League> dailyLeagues = new ArrayList<>();
-
-			Map<League, Map<Integer, MatchEvent>> todayLeaguesWithEvents = dailyEntry.getValue();
-			for (Map.Entry<League, Map<Integer, MatchEvent>> entry : todayLeaguesWithEvents.entrySet()) {
-				League league = entry.getKey();
-				if (league.getSection_id() > 0) {
-					Section section = FootballApiCache.SECTIONS.get(league.getSection_id());
-					league.setSection(section);
-				}
-
-				Map<Integer, MatchEvent> eventsOfLeagueMap = entry.getValue();
-				List<MatchEvent> events = new ArrayList<>(eventsOfLeagueMap.values());
-				league.setMatchEvents(events);
-				events.forEach(e -> e.setLeague(null));// prevent stackoverflow
-
-				Collections.sort(league.getMatchEvents());// TODO: concurrent modification here!!!
-
-				dailyLeagues.add(league);
-
-				Integer priorityOverride = FootballApiCache.PRIORITIES_OVERRIDDE.get(league.getId());
-				if (priorityOverride != null && priorityOverride > 0) {
-					league.setPriority(priorityOverride);
-				} else if (league.getPriority() == null) {
-					league.setPriority(0);
-				}
-
-			}
-
-			//Collections.sort(dailyLeagues);
-
-		
-			
-			leaguesPerDay.put(dailyEntry.getKey(), dailyLeagues);
-		}
-
-		return Response.ok(new Gson().toJson(leaguesPerDay)).build();
-
+		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES.values().stream().collect(Collectors.toList()))).build();
+	}
+	
+	@Override
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/getLeagueEvents")
+	public Response getLeagueEvents() {
+		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY)).build();
 	}
 
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/getStandings")
-	public Response getStandings() {
-		//Response.ok().entity(FootballApiCache.STANDINGS.values()).build();
-		return Response.ok(new Gson().toJson(FootballApiCache.STANDINGS.values())).build();
-
+	@Path("/getStandingsAllWithoutTables")
+	public Response getStandingsAllWithoutTables() {
+		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES.values().stream().collect(Collectors.toList()))).build();
 	}
 
-	
+	@Override
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/getStandingsOfSeason/{leagueId}/{seasonId}")
+	public Response getStandingsOfSeason(@PathParam("leagueId") Integer leagueId,
+			@PathParam("seasonId") Integer seasonId) {
+		List<Season> seasonsOfLeague = FootballApiCache.SEASONS_PER_LEAGUE.get(leagueId);
+		Optional<Season> seasonOpt = seasonsOfLeague.stream().filter(s -> (s.getId() == seasonId)).findFirst();
+		Season season = seasonOpt.isPresent() ? seasonOpt.get() : new Season();
+		return Response.ok(new Gson().toJson(season)).build();
+	}
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -190,7 +171,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	public Response getLeaderBoard() {
 		return Response.ok(new Gson().toJson(new MongoClientHelperImpl().retrieveLeaderBoard())).build();
 	}
-	
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -198,7 +179,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	public Response getEventStatistics(@PathParam("id") Integer id) {
 		return Response.ok(FootballApiCache.STATS_PER_EVENT.getOrDefault(id, new MatchEventStatistics())).build();
 	}
-	
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

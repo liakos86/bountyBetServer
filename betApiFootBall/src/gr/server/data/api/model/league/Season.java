@@ -17,7 +17,7 @@ public class Season implements Comparable<Season>{
 	int league_id;
 	String slug;
 	String name;
-	LeagueInfo leagueInfo;
+	League league;
 	
 //	id:18686
 //	id:31497
@@ -92,12 +92,12 @@ public class Season implements Comparable<Season>{
 	
 	
 
-	public LeagueInfo getLeagueInfo() {
-		return leagueInfo;
+	public League getLeague() {
+		return league;
 	}
 
-	public void setLeagueInfo(LeagueInfo leagueInfo) {
-		this.leagueInfo = leagueInfo;
+	public void setLeague(League league) {
+		this.league = league;
 	}
 
 	@Override

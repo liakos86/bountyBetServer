@@ -8,7 +8,11 @@ public enum BetPlacementStatus implements Serializable {
 	
 	FAILED_MATCH_IN_PROGRESS(2),
 	
-	FAIL_GENERIC(3);
+	FAIL_GENERIC(3), 
+	
+	FAILED_INSUFFICIENT_FUNDS(4),
+	
+	FAILED_USER_NOT_VALIDATED(5);
 	
 	private static final long serialVersionUID = 1L;
 	private int code;

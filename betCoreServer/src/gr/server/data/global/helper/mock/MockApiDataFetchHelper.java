@@ -1,34 +1,32 @@
 package gr.server.data.global.helper.mock;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Map.Entry;
-
-import gr.server.application.RestApplication;
-import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.Leagues;
-import gr.server.data.api.model.league.Season;
-import gr.server.data.api.model.league.Seasons;
-import gr.server.data.api.model.league.Sections;
-//import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.Events;
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Leagues;
+import gr.server.data.api.model.league.Sections;
 import gr.server.impl.client.MockApiClient;
-import gr.server.impl.client.SportScoreClient;
 
 
 public class MockApiDataFetchHelper {
 
 	public static void fetchLeagues() {
 		Leagues leaguesFromFile = MockApiClient.getLeaguesFromFile();
-//		leaguesFromFile.getData().forEach(l -> RestApplication.LEAGUES.put(l.getId(), l));
-		leaguesFromFile.getData().forEach(l -> FootballApiCache.LEAGUES.put(l.getId(), l));
+		for (League league : leaguesFromFile.getData()) {
+			if (FootballApiCache.PRIORITIES_OVERRIDDE.containsKey(league.getId())) {
+				league.setPriority(FootballApiCache.PRIORITIES_OVERRIDDE.get(league.getId()));
+			}
+			FootballApiCache.ALL_LEAGUES.put(league.getId(), league);		
+		}
+
+		League zeroLeague = new League();
+		zeroLeague.setName("Other Matches");
+		FootballApiCache.ALL_LEAGUES.put(0, zeroLeague);		
 	}
 
 	public static void fetchSections() {
 		Sections sectionsFromFile = MockApiClient.getSectionsFromFile();
-		sectionsFromFile.getData().forEach(l -> FootballApiCache.SECTIONS.put(l.getId(), l));
-//		sectionsFromFile.getData().forEach(l -> RestApplication.SECTIONS.put(l.getId(), l));
+		sectionsFromFile.getData().forEach(l -> FootballApiCache.ALL_SECTIONS.put(l.getId(), l));
 	}
 	
 	public static Events fetchEvents(String filename) {
@@ -57,5 +55,21 @@ public class MockApiDataFetchHelper {
 //			}
 //		}
 //	}
+	
+	private static League createDummyLeague() {
+		League league = new League();
+		league.setId(Integer.MIN_VALUE);
+		league.setName("Other");
+//		Section section = new Section();
+//		section.setId(Integer.MIN_VALUE);
+//		section.setName("Other Section");
+//		section.setPriority(0);
+//		section.setSport_id(1);
+//		league.setSection(section);
+		
+		league.setLogo("https://tipsscore.com/resb/no-league.png");
+		league.setHas_logo(true);
+		return league;
+	}
 
 }

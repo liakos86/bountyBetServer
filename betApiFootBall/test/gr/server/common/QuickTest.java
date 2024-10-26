@@ -20,6 +20,8 @@ public class QuickTest {
 		MockApiClient.getPlayerStatisticsFromFile();
 	}
 	
+
+	
 	@Test
 	public void test2(){
 		Map<String, Integer> m = new HashMap<>();
