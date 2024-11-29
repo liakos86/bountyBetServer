@@ -61,18 +61,18 @@ extends Application{
 		FIREBASE_TOPIC_PRODUCER.connect();
 	}
 	
-	public static void sendFirebaseTopicMessage(Map<String, Object> messageParams) {
+	public static void sendFirebaseTopicMessage(Map<String, String> messageParams) {
     	
 		FIREBASE_TOPIC_PRODUCER.sendTopicMessage(messageParams);
 		
     }
 
 	public static void sendMockFirebaseTopicMessage() {
-		Map<String, Object> msg = new HashMap<>();
-		msg.put("eventId",1);
-		msg.put("changeEvent", 1);
-		msg.put("homeScore", 1);
-		msg.put("awayScore", 1);
+		Map<String, String> msg = new HashMap<>();
+		msg.put("eventId", "1");
+		msg.put("changeEvent", "1");
+		msg.put("homeScore", "1");
+		msg.put("awayScore", "1");
 //		RestApplication.sendTopicMessage(msg);
 
 		FIREBASE_TOPIC_PRODUCER.sendTopicMessage(msg);

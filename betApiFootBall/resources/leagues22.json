@@ -9,7 +9,7 @@
         "en": "Primjer Liga"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -40,7 +40,7 @@
         "en": "2. ŽNL Zagrebačka - Zapad"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/croatia-amateur-2-znl-zagrebacka-zapad.png",
+      "logo": "https://xscore.cc/resb/league/croatia-amateur-2-znl-zagrebacka-zapad.png",
       "start_date": "2022-09-03 15:30:00",
       "end_date": "2022-07-03 07:19:00",
       "priority": 0,
@@ -88,7 +88,7 @@
         "en": "3. ŽNL Istarska - Sjever"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-istarska-sjever.png",
+      "logo": "https://xscore.cc/resb/league/croatia-amateur-3-znl-istarska-sjever.png",
       "start_date": "2022-09-24 14:30:16",
       "end_date": "2022-06-11 14:06:00",
       "priority": 0,
@@ -136,7 +136,7 @@
         "en": "A.F. Lisboa I Divisão"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-lisboa-i-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-lisboa-i-divisao.png",
       "start_date": "2022-09-18 14:00:00",
       "end_date": "2021-06-27 11:51:00",
       "priority": 0,
@@ -184,7 +184,7 @@
         "en": "A.F. Setubal II Divisão "
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-setubal-ii-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-setubal-ii-divisao.png",
       "start_date": "2021-09-25 14:00:00",
       "end_date": "2021-06-27 11:58:00",
       "priority": 0,
@@ -232,7 +232,7 @@
         "en": "A.F. Coimbra Divisão de Honra"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-coimbra-divisao-de-honra.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-coimbra-divisao-de-honra.png",
       "start_date": "2021-01-16 15:00:00",
       "end_date": "2022-05-31 21:42:48",
       "priority": 0,
@@ -280,7 +280,7 @@
         "en": "3. ŽNL Istarska - Jug"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-istarska-jug.png",
+      "logo": "https://xscore.cc/resb/league/croatia-amateur-3-znl-istarska-jug.png",
       "start_date": "2022-09-03 15:00:15",
       "end_date": "2022-06-04 14:06:00",
       "priority": 0,
@@ -328,7 +328,7 @@
         "en": "A.F. Setubal I Divisão "
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-setubal-i-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-setubal-i-divisao.png",
       "start_date": "2021-09-19 14:00:00",
       "end_date": "2022-06-04 23:00:00",
       "priority": 0,
@@ -379,7 +379,7 @@
         "en": "A.F. Porto Divisão de Elite Serie 1"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-porto-divisao-de-elite-serie-1.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-porto-divisao-de-elite-serie-1.png",
       "start_date": "2022-09-04 16:00:02",
       "end_date": "2022-01-09 15:07:00",
       "priority": 0,
@@ -427,7 +427,7 @@
         "en": "A.F. Porto Divisão de Elite Serie 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-porto-divisao-de-elite-serie-2.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-porto-divisao-de-elite-serie-2.png",
       "start_date": "2022-09-04 16:00:00",
       "end_date": "2021-05-18 15:40:00",
       "priority": 0,
@@ -475,7 +475,7 @@
         "en": "A.F. Santarém I Divisão "
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-santarem-i-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-santarem-i-divisao.png",
       "start_date": "2022-09-18 15:00:03",
       "end_date": "2021-05-23 18:37:00",
       "priority": 0,
@@ -523,7 +523,7 @@
         "en": "A.F. Algarve I Divisão"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-algarve-i-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-algarve-i-divisao.png",
       "start_date": "2022-09-24 14:00:03",
       "end_date": "2022-05-14 18:00:00",
       "priority": 0,
@@ -567,7 +567,7 @@
         "en": "A.F. Beja I Divisão "
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-beja-i-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-beja-i-divisao.png",
       "start_date": "2022-09-18 16:00:00",
       "end_date": "2022-04-04 12:29:00",
       "priority": 0,
@@ -615,7 +615,7 @@
         "en": "Beogradska Zona"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-beogradska-zona.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-beogradska-zona.png",
       "start_date": "2022-08-13 09:00:43",
       "end_date": "2021-05-22 10:23:00",
       "priority": 0,
@@ -663,7 +663,7 @@
         "en": "A.F. Bragança Divisão de Honra"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-braganca-divisao-de-honra.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-braganca-divisao-de-honra.png",
       "start_date": "2022-09-25 14:30:00",
       "end_date": "2022-03-13 00:00:00",
       "priority": 0,
@@ -711,7 +711,7 @@
         "en": "Novosadska Liga"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-novosadska-liga.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-novosadska-liga.png",
       "start_date": "2022-08-20 15:30:10",
       "end_date": "2021-06-06 09:45:00",
       "priority": 0,
@@ -759,7 +759,7 @@
         "en": "A.F. Aveiro Campeonato Sabseg Zona Norte"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-aveiro-campeonato-sabseg-zona-norte.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-aveiro-campeonato-sabseg-zona-norte.png",
       "start_date": "2022-09-25 14:00:02",
       "end_date": "2021-03-14 15:27:00",
       "priority": 0,
@@ -807,7 +807,7 @@
         "en": "Međuopštinska Liga Aranđelovac-Topola"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-meduopstinska-liga-arandelovac-topola.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-meduopstinska-liga-arandelovac-topola.png",
       "start_date": "2022-09-04 09:00:40",
       "end_date": "2022-06-22 19:53:00",
       "priority": 0,
@@ -855,7 +855,7 @@
         "en": "A.F. Leiria Divisão de Honra LizSport"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-leiria-divisao-de-honra-lizsport.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-leiria-divisao-de-honra-lizsport.png",
       "start_date": "2022-09-24 19:30:00",
       "end_date": "2022-05-28 23:00:00",
       "priority": 0,
@@ -903,7 +903,7 @@
         "en": "A.F. Viseu Divisão de Honra"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-viseu-divisao-de-honra.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-viseu-divisao-de-honra.png",
       "start_date": "2022-09-18 14:00:01",
       "end_date": "2021-05-30 17:28:00",
       "priority": 0,
@@ -951,7 +951,7 @@
         "en": "1. Kantonalna liga TK"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -982,7 +982,7 @@
         "en": "Vodafone Premier League "
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/fiji-vodafone-premier-league.png",
+      "logo": "https://xscore.cc/resb/league/fiji-vodafone-premier-league.png",
       "start_date": "2023-02-19 01:00:12",
       "end_date": "2021-08-01 16:13:00",
       "priority": 0,
@@ -1033,7 +1033,7 @@
         "en": "A.F. Braga Pro-nacional Série A"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-braga-pro-nacional-serie-a.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-braga-pro-nacional-serie-a.png",
       "start_date": "2022-09-10 15:00:00",
       "end_date": "2021-04-03 10:31:00",
       "priority": 0,
@@ -1081,7 +1081,7 @@
         "en": "A.F. Braga Pro-nacional Série B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-braga-pro-nacional-serie-b.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-braga-pro-nacional-serie-b.png",
       "start_date": "2020-10-24 14:00:00",
       "end_date": "2021-04-03 10:26:00",
       "priority": 0,
@@ -1129,7 +1129,7 @@
         "en": "Telekom S-League"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/solomon-islands-telekom-s-league.png",
+      "logo": "https://xscore.cc/resb/league/solomon-islands-telekom-s-league.png",
       "start_date": "2022-07-16 01:00:19",
       "end_date": "2021-12-11 09:00:00",
       "priority": 0,
@@ -1177,7 +1177,7 @@
         "en": "Premier League"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/chinese-taipei-premier-league.png",
+      "logo": "https://xscore.cc/resb/league/chinese-taipei-premier-league.png",
       "start_date": "2021-04-11 08:30:11",
       "end_date": "2021-11-27 08:57:00",
       "priority": 0,
@@ -1232,7 +1232,7 @@
         "en": "A.F. Porto II Divisão Serie 1"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-porto-ii-divisao-serie-1.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-porto-ii-divisao-serie-1.png",
       "start_date": "2022-09-04 16:00:08",
       "end_date": "2022-05-01 14:07:00",
       "priority": 0,
@@ -1280,7 +1280,7 @@
         "en": "A.F. Algarve II Divisão"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-algarve-ii-divisao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-algarve-ii-divisao.png",
       "start_date": "2021-10-09 17:00:00",
       "end_date": "2022-05-07 16:58:35",
       "priority": 0,
@@ -1328,7 +1328,7 @@
         "en": "A.F. Leiria I Divisão Série B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-leiria-i-divisao-serie-b.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-leiria-i-divisao-serie-b.png",
       "start_date": "2021-10-03 14:00:00",
       "end_date": "2022-02-20 00:00:00",
       "priority": 0,
@@ -1376,7 +1376,7 @@
         "en": "Second Division"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/chinese-taipei-second-division.png",
+      "logo": "https://xscore.cc/resb/league/chinese-taipei-second-division.png",
       "start_date": "2021-04-17 05:00:42",
       "end_date": "2021-10-01 22:00:00",
       "priority": 0,
@@ -1427,7 +1427,7 @@
         "en": "A.F. Porto Divisão Honra Série 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-porto-divisao-honra-serie-2.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-porto-divisao-honra-serie-2.png",
       "start_date": "2021-09-11 16:00:00",
       "end_date": "2022-04-30 23:00:00",
       "priority": 0,
@@ -1475,7 +1475,7 @@
         "en": "Liga Alef South B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/israel-amateur-liga-alef-south-b.png",
+      "logo": "https://xscore.cc/resb/league/israel-amateur-liga-alef-south-b.png",
       "start_date": "2020-11-27 10:00:00",
       "end_date": "2021-05-30 08:07:00",
       "priority": 0,
@@ -1523,7 +1523,7 @@
         "en": "Liga Alef North A"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/israel-amateur-liga-alef-north-a.png",
+      "logo": "https://xscore.cc/resb/league/israel-amateur-liga-alef-north-a.png",
       "start_date": "2020-11-27 10:00:00",
       "end_date": "2021-03-13 09:07:00",
       "priority": 0,
@@ -1571,7 +1571,7 @@
         "en": "Liga Alef North B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/israel-amateur-liga-alef-north-b.png",
+      "logo": "https://xscore.cc/resb/league/israel-amateur-liga-alef-north-b.png",
       "start_date": "2022-01-21 10:00:00",
       "end_date": "2021-03-13 09:09:00",
       "priority": 0,
@@ -1619,7 +1619,7 @@
         "en": "Liga Alef South A"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/israel-amateur-liga-alef-south-a.png",
+      "logo": "https://xscore.cc/resb/league/israel-amateur-liga-alef-south-a.png",
       "start_date": "2020-11-27 10:00:00",
       "end_date": "2021-03-13 09:03:00",
       "priority": 0,
@@ -1667,7 +1667,7 @@
         "en": "Hrvatski Telekom eLiga Rijeka - Club Playoffs"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/esoccer-hrvatski-telekom-eliga-rijeka-club-playoffs.png",
+      "logo": "https://xscore.cc/resb/league/esoccer-hrvatski-telekom-eliga-rijeka-club-playoffs.png",
       "start_date": "2020-12-03 11:00:00",
       "end_date": "2020-12-13 07:29:00",
       "priority": 0,
@@ -1715,7 +1715,7 @@
         "en": "Hrvatski Telekom eLiga Dinamo - Club Playoffs"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/esoccer-hrvatski-telekom-eliga-dinamo-club-playoffs.png",
+      "logo": "https://xscore.cc/resb/league/esoccer-hrvatski-telekom-eliga-dinamo-club-playoffs.png",
       "start_date": "2020-12-05 16:00:00",
       "end_date": "2020-12-13 07:27:00",
       "priority": 0,
@@ -1763,7 +1763,7 @@
         "en": "Hrvatski Telekom eLiga Hajduk - Club Playoffs"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/esoccer-hrvatski-telekom-eliga-hajduk-club-playoffs.png",
+      "logo": "https://xscore.cc/resb/league/esoccer-hrvatski-telekom-eliga-hajduk-club-playoffs.png",
       "start_date": "2020-12-12 16:00:00",
       "end_date": "2020-12-13 07:28:00",
       "priority": 0,
@@ -1811,7 +1811,7 @@
         "en": "Hrvatski Telekom eLiga Osijek - Club Playoffs"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/esoccer-hrvatski-telekom-eliga-osijek-club-playoffs.png",
+      "logo": "https://xscore.cc/resb/league/esoccer-hrvatski-telekom-eliga-osijek-club-playoffs.png",
       "start_date": "2020-12-10 16:00:00",
       "end_date": "2020-12-13 07:28:00",
       "priority": 0,
@@ -1859,7 +1859,7 @@
         "en": "Prva Beogradska Liga A"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-prva-beogradska-liga-a.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-prva-beogradska-liga-a.png",
       "start_date": "2022-08-20 09:00:00",
       "end_date": "2022-06-15 12:08:00",
       "priority": 0,
@@ -1907,7 +1907,7 @@
         "en": "1. ŽNL Ličko-Senjska"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-licko-senjska.png",
+      "logo": "https://xscore.cc/resb/league/croatia-amateur-1-znl-licko-senjska.png",
       "start_date": "2022-09-04 14:00:01",
       "end_date": "2021-05-23 08:13:00",
       "priority": 0,
@@ -1955,7 +1955,7 @@
         "en": "Druga Rasinska Okružna Liga"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-druga-rasinska-okruzna-liga.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-druga-rasinska-okruzna-liga.png",
       "start_date": "2022-08-06 15:30:00",
       "end_date": "2022-07-20 01:42:00",
       "priority": 0,
@@ -2003,7 +2003,7 @@
         "en": "Gradska Liga Smederevo Grupa \"Šumadija\""
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-gradska-liga-smederevo-grupa-sumadija.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-gradska-liga-smederevo-grupa-sumadija.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -2034,7 +2034,7 @@
         "en": "Moravička Okružna Liga - Grupa B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-moravicka-okruzna-liga-grupa-b.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-moravicka-okruzna-liga-grupa-b.png",
       "start_date": "2022-08-21 15:00:03",
       "end_date": "2021-06-20 14:35:00",
       "priority": 0,
@@ -2082,7 +2082,7 @@
         "en": "A.F. Leiria I Divisão Série A"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-leiria-i-divisao-serie-a.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-leiria-i-divisao-serie-a.png",
       "start_date": "2021-10-03 14:00:00",
       "end_date": "2022-02-20 00:00:00",
       "priority": 0,
@@ -2133,7 +2133,7 @@
         "en": "A.F. Lisboa II Divisão Série 1"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-amateur-af-lisboa-ii-divisao-serie-1.png",
+      "logo": "https://xscore.cc/resb/league/portugal-amateur-af-lisboa-ii-divisao-serie-1.png",
       "start_date": "2020-10-04 14:00:04",
       "end_date": "2021-05-16 16:53:00",
       "priority": 0,
@@ -2181,7 +2181,7 @@
         "en": "1. ŽNL Sisačko-moslavačka"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/croatia-amateur-1-znl-sisacko-moslavacka.png",
+      "logo": "https://xscore.cc/resb/league/croatia-amateur-1-znl-sisacko-moslavacka.png",
       "start_date": "2022-08-27 15:30:25",
       "end_date": "2021-06-06 20:02:00",
       "priority": 0,
@@ -2229,7 +2229,7 @@
         "en": "PFL Zrenjanin"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-pfl-zrenjanin.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-pfl-zrenjanin.png",
       "start_date": "2021-06-05 14:30:00",
       "end_date": "2021-06-20 16:40:00",
       "priority": 0,
@@ -2277,7 +2277,7 @@
         "en": "3. ŽNL Baranjska liga"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/croatia-amateur-3-znl-baranjska-liga.png",
+      "logo": "https://xscore.cc/resb/league/croatia-amateur-3-znl-baranjska-liga.png",
       "start_date": "2022-09-04 15:00:12",
       "end_date": "2022-06-14 22:00:00",
       "priority": 0,
@@ -2325,7 +2325,7 @@
         "en": "PFL Zrenjanin"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/serbia-amateur-pfl-zrenjanin-1.png",
+      "logo": "https://xscore.cc/resb/league/serbia-amateur-pfl-zrenjanin-1.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,

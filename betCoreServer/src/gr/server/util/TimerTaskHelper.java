@@ -30,45 +30,45 @@ public class TimerTaskHelper {
 	 * We settle the mongo event (not betslip) predictions which relate to the finished events.
 	 * 
 	 */
-	public static TimerTask settleFinishedEvents() {
-		return new TimerTask() {
-			public void run() {
-				new MongoTransactionalBlock() {
-					@Override
-					public void begin() throws Exception {
-						System.out.println("Settle predictions Working in thread: " + Thread.currentThread().getName());
+//	public static TimerTask settleFinishedEvents() {
+//		return new TimerTask() {
+//			public void run() {
+//				new MongoTransactionalBlock() {
+//					@Override
+//					public void begin() throws Exception {
+//						System.out.println("Settle predictions Working in thread: " + Thread.currentThread().getName());
+//
+//						Set<MatchEvent> todaysFinishedEvents = new HashSet<>(); 
+//						
+//						List<LeagueWithData> todaysLeagues = FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.get(0);
+//						todaysLeagues.forEach(
+//								leagueMatchesMap -> {
+//									Set<MatchEvent> finishedEventsForLeague = leagueMatchesMap.getMatchEvents().stream().filter(
+//											match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus()))
+//									.collect(Collectors.toSet());
+//									todaysFinishedEvents.addAll(finishedEventsForLeague);
+//								});
+//						
+//						new MongoClientHelperImpl().settlePredictions(session, todaysFinishedEvents);
+//					}
+//				}.execute();
+//			}
+//		};
+//	}
 
-						Set<MatchEvent> todaysFinishedEvents = new HashSet<>(); 
-						
-						List<LeagueWithData> todaysLeagues = FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.get(0);
-						todaysLeagues.forEach(
-								leagueMatchesMap -> {
-									Set<MatchEvent> finishedEventsForLeague = leagueMatchesMap.getMatchEvents().stream().filter(
-											match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus()))
-									.collect(Collectors.toSet());
-									todaysFinishedEvents.addAll(finishedEventsForLeague);
-								});
-						
-						new MongoClientHelperImpl().settlePredictions(session, todaysFinishedEvents);
-					}
-				}.execute();
-			}
-		};
-	}
-
-	public static TimerTask settleOpenBets() {
-		return new TimerTask() {
-			public void run() {
-				new MongoTransactionalBlock() {
-					@Override
-					public void begin() throws Exception {
-						System.out.println("Working in thread: " + Thread.currentThread().getName());
-						new MongoClientHelperImpl().settleOpenBets(session);
-					}
-				}.execute();
-			
-			}
-		};
-	}
+//	public static TimerTask settleOpenBets() {
+//		return new TimerTask() {
+//			public void run() {
+//				new MongoTransactionalBlock() {
+//					@Override
+//					public void begin() throws Exception {
+//						System.out.println("Working in thread: " + Thread.currentThread().getName());
+//						new MongoClientHelperImpl().settleOpenBets(session);
+//					}
+//				}.execute();
+//			
+//			}
+//		};
+//	}
 
 }

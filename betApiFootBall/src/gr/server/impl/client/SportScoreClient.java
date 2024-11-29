@@ -5,20 +5,21 @@ import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.Events;
+import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
+import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.events.MatchEventStatistics;
-import gr.server.data.api.model.events.Player;
-import gr.server.data.api.model.events.PlayerStatistic;
 import gr.server.data.api.model.events.PlayerStatistics;
 import gr.server.data.api.model.events.Players;
 import gr.server.data.api.model.league.League;
@@ -28,8 +29,8 @@ import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Sections;
 import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.api.model.league.StandingTables;
-import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.constants.SportScoreApiConstants;
+import gr.server.data.enums.MatchEventStatus;
 import gr.server.util.HttpHelper;
 
 public class SportScoreClient {
@@ -72,40 +73,30 @@ public class SportScoreClient {
 		String today = simpleDateFormat.format(date);
 		url += today;
 		
+		//TODO: all pages
+		//url += "?page=1";
+		
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
-		System.out.println("EVENTS: + 0" + content);
 		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
-		MatchEventIncidents matchIncidentsFromFile = MockApiClient.getMatchIncidentsFromFile();
-		MatchEventStatistics matchStatisticsFromFile = MockApiClient.getMatchStatisticsFromFile();
-		
-		events.getData().forEach(e -> 
-			{ 	
-				FootballApiCache.INCIDENTS_PER_EVENT.putIfAbsent(e.getId(), matchIncidentsFromFile);
-				FootballApiCache.STATS_PER_EVENT.putIfAbsent(e.getId(), matchStatisticsFromFile);
-			}
-		);
-		
-		
 		return events;
 	}
 	
-//	/**
-//	 * Gets a list of the leagues for the countries we support.
-//	 * 
-//	 * @throws IOException
-//	 * @throws ParseException 
-//	 * @throws URISyntaxException 
-//	 * @throws InterruptedException 
-//	 */
-//	public static Events getLiveEvents() throws IOException, ParseException, InterruptedException, URISyntaxException {
-//		String url = SportScoreApiConstants.GET_LIVE_EVENTS_BY_SPORT_URL;
-//		String content = new HttpHelper().fetchGetContentWithHeaders(url);
-//		
-//		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
-//		events.getData().forEach(e->e.getStart_at());//TODO: not here
-//		return events;
-//	}
-//	
+	/**
+	 * Gets a list of the leagues for the countries we support.
+	 * 
+	 * @throws IOException
+	 * @throws ParseException 
+	 * @throws URISyntaxException 
+	 * @throws InterruptedException 
+	 */
+	public static Events getLiveEvents() throws IOException, ParseException, InterruptedException, URISyntaxException {
+		String url = SportScoreApiConstants.GET_LIVE_EVENTS_BY_SPORT_URL;
+		String content = new HttpHelper().fetchGetContentWithHeaders(url);
+		
+		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
+		return events;
+	}
+	
 	public static League getLeagueById(Integer leagueId) throws IOException {
 		String url = SportScoreApiConstants.GET_LEAGUE_BY_ID_URL + leagueId;
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
@@ -134,7 +125,7 @@ public class SportScoreClient {
 	 * @throws URISyntaxException 
 	 * @throws InterruptedException 
 	 */
-	public static MatchEventIncidents getIncidents(int eventId) throws IOException, ParseException, InterruptedException, URISyntaxException {
+	static MatchEventIncidents getIncidents(int eventId) throws IOException, ParseException, InterruptedException, URISyntaxException {
 		String url = SportScoreApiConstants.GET_EVENT_INCIDENTS_URL.replace(SportScoreApiConstants.REPLACEMENT, String.valueOf(eventId));
 		
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
@@ -149,7 +140,7 @@ public class SportScoreClient {
 	 * @throws URISyntaxException 
 	 * @throws InterruptedException 
 	 */
-	public static MatchEventStatistics getStatistics(int eventId) throws IOException, ParseException, InterruptedException, URISyntaxException {
+	static MatchEventStatistics getStatistics(int eventId) throws IOException, ParseException, InterruptedException, URISyntaxException {
 		String url = SportScoreApiConstants.GET_EVENT_STATISTICS_URL.replace(SportScoreApiConstants.REPLACEMENT, String.valueOf(eventId));
 		
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
@@ -234,6 +225,33 @@ public class SportScoreClient {
 		}
 
 		return playerStats;
+	}
+	
+	
+	public void updateLiveStats() {
+		Set<MatchEvent> liveEvents = FootballApiCache.ALL_EVENTS.values().stream().filter(
+				m -> MatchEventStatus.INPROGRESS.getStatusStr().equals(m.getStatus()))
+		.collect(Collectors.toSet());
+		
+		try {
+		
+			for (MatchEvent matchEvent : liveEvents) {
+				MatchEventIncidents incidents = getIncidents(matchEvent.getId());
+				MatchEventStatistics statistics = getStatistics(matchEvent.getId());
+				MatchEventIncidentsWithStatistics matchEventIncidentsWithStatistics = new MatchEventIncidentsWithStatistics();
+				matchEventIncidentsWithStatistics.setEventId(matchEvent.getId());
+				matchEventIncidentsWithStatistics.setMatchEventIncidents(incidents);
+				matchEventIncidentsWithStatistics.setMatchEventStatistics(statistics);
+				
+				FootballApiCache.ALL_MATCH_STATS.put(matchEvent.getId(), matchEventIncidentsWithStatistics);
+			}
+			
+//			logger.log(Level.INFO, "LIVE INCIDENTS:" + incidents.getData().size());
+//			logger.log(Level.INFO, "LIVE STATS:" + statistics.getData().size());
+		
+		}catch(Exception e) {
+//			logger.log(Level.ERROR, "ERROR LIVE INCIDENTS:" + incidents.getData().size());
+		}	
 	}
 	
 }

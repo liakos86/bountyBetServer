@@ -8,4 +8,6 @@ public interface StringConstants {
 	
 	String EMPTY = "";
 
+	String MINUS = "-";
+
 }

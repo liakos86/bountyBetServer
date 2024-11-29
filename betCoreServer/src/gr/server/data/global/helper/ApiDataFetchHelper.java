@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
+import javax.jms.JMSException;
+
 import gr.server.application.BetServerContextListener;
 import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
@@ -24,6 +26,9 @@ import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.StandingRow;
 import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.api.model.league.Team;
+import gr.server.data.constants.SportScoreApiConstants;
+import gr.server.data.enums.MatchEventStatus;
+import gr.server.data.live.helper.LiveUpdatesHelper;
 import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.SportScoreClient;
 
@@ -31,8 +36,10 @@ public class ApiDataFetchHelper {
 
 	public static void fetchLeagueStandings() {
 		for (Entry<Integer, League> leagueEntry : FootballApiCache.ALL_LEAGUES.entrySet()) {
-			if (FootballApiCache.SPAIN_LA_LIGA == leagueEntry.getKey()) {
-				//TODO this is the premier league. testing purposes
+			
+			
+			//TODO reducing calls for testing
+			if (FootballApiCache.SPAIN_LA_LIGA == leagueEntry.getKey().intValue()) {
 				Season currentSeason = null;
 				
 				if (BetServerContextListener.ENV != null && BetServerContextListener.ENV.equals("MOCK")) {
@@ -66,48 +73,51 @@ public class ApiDataFetchHelper {
 			}
 		}
 		
+		//TODO: all leagues have the same standings for testing purposes
+		List<Season> seasons = FootballApiCache.SEASONS_PER_LEAGUE.get(FootballApiCache.SPAIN_LA_LIGA);
 		for (Entry<Integer, League> leagueEntry : FootballApiCache.ALL_LEAGUES.entrySet()) {
-			List<Season> seasons = FootballApiCache.SEASONS_PER_LEAGUE.get(FootballApiCache.SPAIN_LA_LIGA);
-			FootballApiCache.SEASONS_PER_LEAGUE.put(leagueEntry.getKey(), seasons);
-			
+			FootballApiCache.SEASONS_PER_LEAGUE.put(leagueEntry.getKey(), seasons);		
 			leagueEntry.getValue().getSeasonIds().add(seasons.get(0).getId());
 		}
+		
 	}
 	
 	/**
 	 * Gets the football events for multiple days.
 	 * 
 	 */
-	public static void fetchEventsIntoLeagues() {
+	public static void fetchEventsIntoLeaguesAndExtractMatchEvents() {
 		Map<Integer, Date> datesToFetch = DateUtils.getDatesToFetch();
 		
 		for (Entry<Integer, Date> dateEntry : datesToFetch.entrySet()) {
 			List<MatchEvent> events = eventsForDate(dateEntry.getValue());
-			splitEventsIntoLeaguesAndDays(dateEntry.getKey(), events);
-		}
+			
+			//TODO: We should get this info from websocket
+//				try {
+					System.out.println("GETTING EVENTS");
+//					new LiveUpdatesHelper().updateEventsAndPublishFirebaseTopicMessages(events);
+					splitEventsIntoLeaguesAndDays(dateEntry.getKey(), events);
+//				} catch (JMSException e) {
+//					System.out.println("JMS ERRORRRRRRRRR");
+//					e.printStackTrace();
+//				}; 
+			};
 
 	}
 	
 	public static List<MatchEvent> eventsForDate(Date date){
 		List<MatchEvent> events = new ArrayList<>();
 		
-		
 		try {
-			
-			
 			if (BetServerContextListener.ENV != null && BetServerContextListener.ENV.equals("MOCK")) {
 				throw new RuntimeException("MOCK ENABLED");
 //				events = MockApiClient.getEventsFromFile("events1").getData();
 			}else {
+				//events = MockApiClient.getEventsFromFile("events1").getData();
+				//if (false)
 				events = SportScoreClient.getEvents(date).getData();
 			}
 			
-			
-			events.forEach(e -> { if (!FootballApiCache.ALL_EVENTS.containsKey(e.getId())) {
-										FootballApiCache.ALL_EVENTS.put(e.getId(), e);
-									}
-								}
-			);
 		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
 			System.out.println("EVENTS ERROR " + date);
 			e.printStackTrace();
@@ -118,68 +128,74 @@ public class ApiDataFetchHelper {
 
 	
 
-//	/**
-//	 * Gets the football events .
-//	 * If live events are requested {@link SportScoreApiConstants#GET_LIVE_EVENTS_BY_SPORT_URL}.
-//	 * If not, {@link SportScoreApiConstants#GET_EVENTS_BY_SPORT_DATE_URL} is used with 'today' as param.
-//	 * The latter will contain live events also.
-//	 * 
-//	 * First we obtain all the events for today with live=false.
-//	 * Then we obtain the live events.
-//	 * Every live event that was also retrieved in the first step will be replaced.
-//	 * 
-//	 * @param live
-//	 */
-//	public static void fetchLiveEventsIntoLeagues() {
-//		List<MatchEvent> events = new ArrayList<>();
-//		try {
-//			events = SportScoreClient.getLiveEvents().getData();
-//			events.forEach(e -> RestApplication.ALL_EVENTS.put(e.getId(), e));
-//		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
-//			System.out.println("LIVE EVENTS ERROR ");
-//			e.printStackTrace();
-//			return;
-//		}
-//		
-//		/**
-//		 * TODO: fixme
-//		 */
-//		
-//		MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
-//		events.forEach(e-> e.setIncidents(matchEventIncidents));
-//		
-//		events.forEach(e-> RestApplication.MINUTE_TRACKER.track(e));
-//		
-//		splitEventsIntoLiveLeagues(events);
-//
-//	}
+	/**
+	 * Gets the football events .
+	 * If live events are requested {@link SportScoreApiConstants#GET_LIVE_EVENTS_BY_SPORT_URL}.
+	 * If not, {@link SportScoreApiConstants#GET_EVENTS_BY_SPORT_DATE_URL} is used with 'today' as param.
+	 * The latter will contain live events also.
+	 * 
+	 * First we obtain all the events for today with live=false.
+	 * Then we obtain the live events.
+	 * Every live event that was also retrieved in the first step will be replaced.
+	 * 
+	 * @param live
+	 */
+	public static void fetchLiveEventsIntoLeagues() {
+		List<MatchEvent> events = new ArrayList<>();
+		try {
+			events = SportScoreClient.getLiveEvents().getData();
+			new LiveUpdatesHelper().updateEventsAndPublishFirebaseTopicMessages(events);
+			splitEventsIntoLiveLeagues(events);
+		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
+			System.out.println("LIVE EVENTS ERROR ");
+			e.printStackTrace();
+			return;
+		} catch (JMSException e) {
+			System.out.println("JMS ERROR ");
+			e.printStackTrace();
+		}
 
-//	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
-//		
-//		
-//		for (MatchEvent matchEvent : events) {
-//			if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(matchEvent.getStatus()))) {
-//				continue;
-//			}
-//			
-//			System.out.println("********* LIVE MATCH FOUND");
+	}
+
+	private static void splitEventsIntoLiveLeagues(List<MatchEvent> events) {
+		for (MatchEvent matchEvent : events) {
 			
-//			League matchLeague = matchEvent.getLeague();
-//			Map<Integer, MatchEvent> leagueEvents = RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague);
-//			if (leagueEvents == null) {
-//				RestApplication.LIVE_EVENTS_PER_LEAGUE.put(matchLeague, new HashMap<>());
-//			}
+			if (MatchEventStatus.FINISHED == MatchEventStatus.fromStatusText(matchEvent.getStatus())
+					&& matchEvent.getWinner_code() != 0) {
+				try {
+					FootballApiCache.FINISHED_EVENTS.put(matchEvent);
+					System.out.println("ADDING TO FINISHED " + matchEvent);
 
-			//MatchEventIncidents matchEventIncidents = MockApiClient.getMatchIncidentsFromFile();
-			//matchEvent.setIncidents(matchEventIncidents);
-//			RestApplication.LIVE_EVENTS_PER_LEAGUE.get(matchLeague).put(matchEvent.getId(), matchEvent);
-			//RestApplication.MINUTE_TRACKER.track(matchEvent);
-//		}
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+			if (!MatchEventStatus.INPROGRESS.equals(MatchEventStatus.fromStatusText(matchEvent.getStatus()))) {
+				FootballApiCache.LIVE_EVENTS.remove(matchEvent.getId());
+				continue;
+			}
+			
+			League matchLeague = FootballApiCache.ALL_LEAGUES.get(matchEvent.getLeague_id());
+			if (matchLeague == null) {
+				continue;
+			}
+			
+			LeagueWithData leagueWithData = FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.get(0).get(matchLeague.getId());
+			if (!leagueWithData.getMatchEvents().contains(matchEvent)) {
+				leagueWithData.getMatchEvents().add(matchEvent);
+			}
+			
+			MatchEvent liveEventFromCache = FootballApiCache.LIVE_EVENTS.get(matchEvent.getId());
+			if (liveEventFromCache == null) {
+				FootballApiCache.LIVE_EVENTS.put(matchEvent.getId(), matchEvent);
+				continue;
+			}
 		
-//		int liveLeagues = RestApplication.LIVE_EVENTS_PER_LEAGUE.size();
-//		System.out.println("LIVE: " + liveLeagues);
-		
-//	}
+			liveEventFromCache.deepCopy(matchEvent);
+		}		
+	}
 
 	
 	/**
@@ -187,26 +203,35 @@ public class ApiDataFetchHelper {
 	 * We find the league that every game belongs to and add the game to that league's games.
 	 * 
 	 * @param date
-	 * @param events
+	 * @param incomingEvents
 	 */
-	private static void splitEventsIntoLeaguesAndDays(Integer position, List<MatchEvent> events) {
+	private static void splitEventsIntoLeaguesAndDays(Integer position, List<MatchEvent> incomingEvents) {
 		
-				
+		//1. split the list of incoming events into a map of events per league
 		Map<Integer, LeagueWithData> incomingLeagueData = new HashMap<>();
-		
 
-		for (MatchEvent event : events) {
+		for (MatchEvent incomingEvent : incomingEvents) {
 			
-			FootballApiCache.ALL_EVENTS.put(event.getId(), event);
+			if (MatchEventStatus.FINISHED == MatchEventStatus.fromStatusText(incomingEvent.getStatus())
+					&& incomingEvent.getWinner_code() != 0) {
+				try {
+					System.out.println("ADDING TO FINISHED " + incomingEvent);
+					FootballApiCache.FINISHED_EVENTS.put(incomingEvent);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 			
-			League cachedLeague = FootballApiCache.ALL_LEAGUES.get(event.getLeague_id());
-					
+			League cachedLeague = FootballApiCache.ALL_LEAGUES.get(incomingEvent.getLeague_id());
 			//TODO: can be null because we fetch mock leagues to reduce calls, but we fetch real events
 			if (cachedLeague == null) {
 				continue;
 			}
 			
-			LeagueWithData incomingLeagueEvents = incomingLeagueData.get(event.getLeague_id());
+			saveOrUpdateMatchInJvmMemory(incomingEvent);
+			
+			LeagueWithData incomingLeagueEvents = incomingLeagueData.get(incomingEvent.getLeague_id());
 			
 			if (incomingLeagueEvents == null) {
 				incomingLeagueEvents = new LeagueWithData();
@@ -214,14 +239,26 @@ public class ApiDataFetchHelper {
 				incomingLeagueData.put(cachedLeague.getId(), incomingLeagueEvents);
 			}
 			
-			incomingLeagueEvents.getMatchEvents().add(event);
+			incomingLeagueEvents.getMatchEvents().add(incomingEvent);
 		}
 				
-
+		//2. replace the position's leagues with the new ones.
+		List<LeagueWithData> existingLeaguesWithEvents = FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.get(position);
 		List<LeagueWithData> replacementLeaguesWithData = incomingLeagueData.values().stream().collect(Collectors.toList());
+		if (existingLeaguesWithEvents == null || existingLeaguesWithEvents.isEmpty()) {			
+			FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(position, replacementLeaguesWithData);
+		}
 		
-		FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(position, replacementLeaguesWithData);
+		//TODO: filter differences between old and new lists of events.
+	}
+
+	private static void saveOrUpdateMatchInJvmMemory(MatchEvent incomingEvent) {
+		if (!FootballApiCache.ALL_EVENTS.containsKey(incomingEvent.getId())) {
+			FootballApiCache.ALL_EVENTS.put(incomingEvent.getId(), incomingEvent);
+			return;
+		}
 		
+		FootballApiCache.ALL_EVENTS.get(incomingEvent.getId()).deepCopy(incomingEvent);
 		
 	}
 

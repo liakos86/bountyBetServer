@@ -92,7 +92,7 @@ public class MongoUtils {
 
 			Document newBetPrediction = new Document(MongoFields.EVENT_ID, prediction.getEventId())
 					.append(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, newBetMongoId)
-					.append(MongoFields.BET_MONGO_USER_ID, userBet.getMongoUserId())
+					.append(MongoFields.MONGO_USER_ID, userBet.getMongoUserId())
 					.append(MongoFields.USER_BET_PREDICTION_TYPE, prediction.getPredictionType().getCode())
 					.append(MongoFields.USER_BET_PREDICTION_CATEGORY, prediction.getPredictionCategory().getCategoryCode())
 					.append(MongoFields.USER_BET_PREDICTION_STATUS, PredictionStatus.PENDING.getCode())
@@ -109,7 +109,7 @@ public class MongoUtils {
 	}
 
 	public static Document getBetDocument(UserBet userBet) {
-		return new Document(MongoFields.BET_MONGO_USER_ID, userBet.getMongoUserId())
+		return new Document(MongoFields.MONGO_USER_ID, userBet.getMongoUserId())
 				.append(MongoFields.BET_AMOUNT, userBet.getBetAmount())
 				.append(MongoFields.BET_STATUS, userBet.getBetStatus().getCode())
 				.append(MongoFields.BET_BELONGING_MONTH, userBet.getBelongingMonth())
@@ -136,6 +136,7 @@ public class MongoUtils {
 				 .append(MongoFields.USER_OVERALL_WON_SLIPS, 0)
 				 
 		 .append(MongoFields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
+		 .append(MongoFields.USER_BALANCE_LAST_MONTH, 0)
 		 .append(MongoFields.USER_AWARDS, new BasicDBList());
 	}
 	
@@ -148,6 +149,13 @@ public class MongoUtils {
 					 .append(MongoFields.TEAM_SPORT_ID, team.getSport_id())
 					 .append(MongoFields.TEAM_LOGO_URL, team.getLogo())
 					 .append(MongoFields.TRANSLATIONS, translations);
+	}
+	
+	public static Document getAwardDocument(String userId, Double balance, int month, int year) {
+		 return new Document(MongoFields.MONGO_USER_ID, userId)
+					 .append(MongoFields.AWARD_MONTH, month)
+					 .append(MongoFields.AWARD_YEAR, year)
+					 .append(MongoFields.AWARD_BALANCE, balance);
 	}
 	
 	public static Document getSettledEventDocument(int eventId) {

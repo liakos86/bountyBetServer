@@ -1,13 +1,13 @@
 package gr.server.util;
 
 
-import gr.server.data.constants.ServerConstants;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import gr.server.common.ServerConstants;
 
 public class DateUtils {
 	

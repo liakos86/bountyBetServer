@@ -10,7 +10,7 @@
         "ru": "Ла Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-laliga.png",
+      "logo": "https://xscore.cc/resb/league/spain-laliga.png",
       "start_date": "2022-08-12 19:00:00",
       "end_date": "2023-06-04 00:00:00",
       "priority": 295,
@@ -78,7 +78,7 @@
         "ru": "Кубок Испании"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-copa-del-rey.png",
+      "logo": "https://xscore.cc/resb/league/spain-copa-del-rey.png",
       "start_date": "2021-11-17 14:00:00",
       "end_date": "2022-04-23 23:59:00",
       "priority": 210,
@@ -138,7 +138,7 @@
         "ru": "Суперкубок Каталонии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-supercopa-de-catalunya.png",
+      "logo": "https://xscore.cc/resb/league/spain-supercopa-de-catalunya.png",
       "start_date": "2014-10-29 20:30:00",
       "end_date": "2014-10-30 22:59:00",
       "priority": 0,
@@ -179,7 +179,7 @@
         "ru": "Примера, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-primera-division-femenina.png",
+      "logo": "https://xscore.cc/resb/league/spain-primera-division-femenina.png",
       "start_date": "2022-09-11 13:00:00",
       "end_date": "2023-05-21 00:00:00",
       "priority": 0,
@@ -247,7 +247,7 @@
         "ru": "Кубок Королевы"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-copa-de-sm-la-reina.png",
+      "logo": "https://xscore.cc/resb/league/spain-copa-de-sm-la-reina.png",
       "start_date": "2021-10-06 14:15:00",
       "end_date": "2022-05-31 00:00:00",
       "priority": 0,
@@ -303,7 +303,7 @@
         "ru": "Кубок федерации"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-copa-federacion.png",
+      "logo": "https://xscore.cc/resb/league/spain-copa-federacion.png",
       "start_date": "2021-10-06 15:00:00",
       "end_date": "2021-11-24 23:59:00",
       "priority": 0,
@@ -355,7 +355,7 @@
         "ru": "Суперкубок, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-supercup-women.png",
+      "logo": "https://xscore.cc/resb/league/spain-supercup-women.png",
       "start_date": "2022-01-19 18:15:00",
       "end_date": "2022-01-24 23:59:00",
       "priority": 0,
@@ -407,7 +407,7 @@
         "ru": "Второй дивизион, LaLiga 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-laliga-2.png",
+      "logo": "https://xscore.cc/resb/league/spain-laliga-2.png",
       "start_date": "2022-08-12 19:00:00",
       "end_date": "2023-06-19 23:59:00",
       "priority": 0,
@@ -475,7 +475,7 @@
         "ru": "Сегунда B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-segunda-division-b.png",
+      "logo": "https://xscore.cc/resb/league/spain-segunda-division-b.png",
       "start_date": "2022-09-03 14:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -543,7 +543,7 @@
         "ru": "Высшая лига, Аллсвенскан"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-allsvenskan.png",
+      "logo": "https://xscore.cc/resb/league/sweden-allsvenskan.png",
       "start_date": "2022-04-02 13:00:00",
       "end_date": "2022-11-13 23:59:00",
       "priority": 0,
@@ -611,7 +611,7 @@
         "ru": "Суперэттан"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-superettan.png",
+      "logo": "https://xscore.cc/resb/league/sweden-superettan.png",
       "start_date": "2022-04-02 13:00:00",
       "end_date": "2022-11-13 23:59:00",
       "priority": 0,
@@ -679,7 +679,7 @@
         "ru": "Дивизион 1, Норра"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-1-norra.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-1-norra.png",
       "start_date": "2022-04-02 11:00:00",
       "end_date": "2022-11-06 00:00:00",
       "priority": 0,
@@ -747,7 +747,7 @@
         "ru": "Дивизион 1, Сёдра"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-1-sodra.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-1-sodra.png",
       "start_date": "2022-04-02 11:00:00",
       "end_date": "2022-11-06 00:00:00",
       "priority": 0,
@@ -815,7 +815,7 @@
         "ru": "Второй дивизион, Меллерста Гёталанд"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2009-04-18 11:00:00",
       "end_date": "2009-10-04 21:59:00",
       "priority": 0,
@@ -864,7 +864,7 @@
         "ru": "Второй дивизион, Норра Свеланд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-norra-svealand.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-norra-svealand.png",
       "start_date": "2022-04-02 10:30:00",
       "end_date": "2022-11-07 23:59:00",
       "priority": 0,
@@ -928,7 +928,7 @@
         "ru": "Второй дивизион, Норрланд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-norrland.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-norrland.png",
       "start_date": "2022-04-02 11:00:00",
       "end_date": "2022-11-06 23:59:00",
       "priority": 0,
@@ -992,7 +992,7 @@
         "ru": "Второй дивизион, Södra Götaland"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-sodra-gotaland.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-sodra-gotaland.png",
       "start_date": "2022-04-02 11:30:00",
       "end_date": "2022-11-06 00:00:00",
       "priority": 0,
@@ -1060,7 +1060,7 @@
         "ru": "Второй дивизион, Вестра Гёталанд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-vastra-gotaland.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-vastra-gotaland.png",
       "start_date": "2022-04-01 17:00:00",
       "end_date": "2022-11-06 00:00:00",
       "priority": 0,
@@ -1128,7 +1128,7 @@
         "ru": "Второй дивизион, Södra Svealand"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-sodra-svealand.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-sodra-svealand.png",
       "start_date": "2022-04-02 12:00:00",
       "end_date": "2022-11-06 23:59:00",
       "priority": 0,
@@ -1196,7 +1196,7 @@
         "ru": "Кубок Швеции"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-svenska-cupen.png",
+      "logo": "https://xscore.cc/resb/league/sweden-svenska-cupen.png",
       "start_date": "2022-06-15 17:00:00",
       "end_date": "2023-08-31 23:59:00",
       "priority": 0,
@@ -1248,7 +1248,7 @@
         "ru": "Дамаллсвенскан"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-damallsvenskan.png",
+      "logo": "https://xscore.cc/resb/league/sweden-damallsvenskan.png",
       "start_date": "2022-03-26 13:00:00",
       "end_date": "2022-11-27 00:00:00",
       "priority": 0,
@@ -1316,7 +1316,7 @@
         "ru": "Второй дивизион, Остра Гёталанд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-ostra-gotaland.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-ostra-gotaland.png",
       "start_date": "2020-04-03 17:00:00",
       "end_date": "2020-11-25 00:00:00",
       "priority": 0,
@@ -1376,7 +1376,7 @@
         "ru": "Суперкубок Швеции"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2015-11-08 18:30:00",
       "end_date": "2015-11-09 22:59:00",
       "priority": 0,
@@ -1421,7 +1421,7 @@
         "ru": "Суперкубок Швеции, Женщины"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2016-03-16 18:00:00",
       "end_date": "2016-03-17 22:59:00",
       "priority": 0,
@@ -1462,7 +1462,7 @@
         "ru": "Второй дивизион, Норра Гёталанд"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-2-norra-gotaland.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-2-norra-gotaland.png",
       "start_date": "2022-04-02 12:00:00",
       "end_date": "2022-11-06 00:00:00",
       "priority": 0,
@@ -1530,7 +1530,7 @@
         "ru": "Кубок Швеции, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-svenska-cupen-women.png",
+      "logo": "https://xscore.cc/resb/league/sweden-svenska-cupen-women.png",
       "start_date": "2021-09-28 17:30:00",
       "end_date": "2022-05-31 23:59:00",
       "priority": 0,
@@ -1583,7 +1583,7 @@
         "ru": "Второй дивизион, Раунд Продвижения"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-div-2-promotion-round.png",
+      "logo": "https://xscore.cc/resb/league/sweden-div-2-promotion-round.png",
       "start_date": "2020-11-01 12:00:00",
       "end_date": "2021-12-06 00:00:00",
       "priority": 0,
@@ -1632,7 +1632,7 @@
         "ru": "Дивизион 1, Понижение / Продвижение"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/sweden-division-1-relegationpromotion.png",
+      "logo": "https://xscore.cc/resb/league/sweden-division-1-relegationpromotion.png",
       "start_date": "2021-12-02 18:00:00",
       "end_date": "2021-12-05 23:59:00",
       "priority": 0,
@@ -1681,7 +1681,7 @@
         "ru": "Суперлига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/switzerland-super-league.png",
+      "logo": "https://xscore.cc/resb/league/switzerland-super-league.png",
       "start_date": "2022-07-16 16:00:00",
       "end_date": "2023-06-12 23:59:00",
       "priority": 0,
@@ -1749,7 +1749,7 @@
         "ru": "Вторая Лига (Челлендж-лига)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/switzerland-challenge-league.png",
+      "logo": "https://xscore.cc/resb/league/switzerland-challenge-league.png",
       "start_date": "2022-07-15 17:30:00",
       "end_date": "2023-06-12 00:00:00",
       "priority": 0,
@@ -1817,7 +1817,7 @@
         "ru": "Кубок Швейцарии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/switzerland-schweizer-cup.png",
+      "logo": "https://xscore.cc/resb/league/switzerland-schweizer-cup.png",
       "start_date": "2022-08-19 17:00:00",
       "end_date": "2023-06-04 00:00:00",
       "priority": 0,
@@ -1873,7 +1873,7 @@
         "ru": "Первая лига Промоушен"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/switzerland-erste-liga-promotion.png",
+      "logo": "https://xscore.cc/resb/league/switzerland-erste-liga-promotion.png",
       "start_date": "2022-08-06 14:00:00",
       "end_date": "2023-05-27 00:00:00",
       "priority": 0,
@@ -1934,7 +1934,7 @@
         "ru": "Национальная лига Б, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/switzerland-nla-women.png",
+      "logo": "https://xscore.cc/resb/league/switzerland-nla-women.png",
       "start_date": "2022-08-20 14:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1983,7 +1983,7 @@
         "ru": "Суперлига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-super-lig.png",
+      "logo": "https://xscore.cc/resb/league/turkey-super-lig.png",
       "start_date": "2022-08-05 18:00:00",
       "end_date": "2023-05-28 23:59:00",
       "priority": 0,
@@ -2051,7 +2051,7 @@
         "ru": "Кубок Турции"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-turkiye-kupasi.png",
+      "logo": "https://xscore.cc/resb/league/turkey-turkiye-kupasi.png",
       "start_date": "2021-09-07 12:00:00",
       "end_date": "2022-05-26 23:59:00",
       "priority": 0,
@@ -2115,7 +2115,7 @@
         "ru": "Вторая лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-tff-2-lig.png",
+      "logo": "https://xscore.cc/resb/league/turkey-tff-2-lig.png",
       "start_date": "2022-08-27 14:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -2163,7 +2163,7 @@
         "ru": "Первая лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-tff-1-lig.png",
+      "logo": "https://xscore.cc/resb/league/turkey-tff-1-lig.png",
       "start_date": "2022-08-12 18:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -2228,7 +2228,7 @@
         "ru": "Суперкубок Турции"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-tff-super-kupa.png",
+      "logo": "https://xscore.cc/resb/league/turkey-tff-super-kupa.png",
       "start_date": "2022-07-30 17:45:00",
       "end_date": "2022-07-31 00:00:00",
       "priority": 0,
@@ -2277,7 +2277,7 @@
         "ru": "Spor Toto Cup"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2012-04-14 12:00:00",
       "end_date": "2012-05-18 21:59:00",
       "priority": 0,
@@ -2326,7 +2326,7 @@
         "ru": "TFF 3. Лиг, Группа 3"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-tff-3-lig-group-3.png",
+      "logo": "https://xscore.cc/resb/league/turkey-tff-3-lig-group-3.png",
       "start_date": "2022-09-03 13:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2387,7 +2387,7 @@
         "ru": "TFF 3. Лиг, Группа 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-tff-3-lig-group-2.png",
+      "logo": "https://xscore.cc/resb/league/turkey-tff-3-lig-group-2.png",
       "start_date": "2022-09-03 14:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2444,7 +2444,7 @@
         "ru": "TFF 3. Лиг, Группа 1"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-tff-3-lig-group-1.png",
+      "logo": "https://xscore.cc/resb/league/turkey-tff-3-lig-group-1.png",
       "start_date": "2022-09-03 14:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2505,7 +2505,7 @@
         "ru": "U19 Lig, Elit A"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-u19-lig-elit-a.png",
+      "logo": "https://xscore.cc/resb/league/turkey-u19-lig-elit-a.png",
       "start_date": "2021-10-29 09:00:00",
       "end_date": "2022-06-30 23:59:00",
       "priority": 0,
@@ -2562,7 +2562,7 @@
         "ru": "U19 Lig, Elit B"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/turkey-u19-lig-elit-b.png",
+      "logo": "https://xscore.cc/resb/league/turkey-u19-lig-elit-b.png",
       "start_date": "2021-11-20 09:00:00",
       "end_date": "2022-06-30 23:59:00",
       "priority": 0,
@@ -2619,7 +2619,7 @@
         "ru": "Премьер-Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/ukraine-premier-league.png",
+      "logo": "https://xscore.cc/resb/league/ukraine-premier-league.png",
       "start_date": "2022-08-23 10:00:00",
       "end_date": "2023-06-04 00:00:00",
       "priority": 0,
@@ -2679,7 +2679,7 @@
         "ru": "Суперкубок Украины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/ukraine-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/ukraine-super-cup.png",
       "start_date": "2021-07-24 18:00:00",
       "end_date": "2021-09-23 23:59:00",
       "priority": 0,
@@ -2727,7 +2727,7 @@
         "ru": "Кубок Украины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/ukraine-ukraine-cup.png",
+      "logo": "https://xscore.cc/resb/league/ukraine-ukraine-cup.png",
       "start_date": "2021-08-17 14:00:00",
       "end_date": "2022-05-11 00:00:00",
       "priority": 0,
@@ -2787,7 +2787,7 @@
         "ru": "Первая лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/ukraine-persha-liha.png",
+      "logo": "https://xscore.cc/resb/league/ukraine-persha-liha.png",
       "start_date": "2022-08-27 09:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2844,7 +2844,7 @@
         "ru": "U21"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/ukraine-u21.png",
+      "logo": "https://xscore.cc/resb/league/ukraine-u21.png",
       "start_date": "2020-08-20 08:00:00",
       "end_date": "2021-05-15 23:59:00",
       "priority": 0,
@@ -2904,7 +2904,7 @@
         "ru": "U19"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/ukraine-u19.png",
+      "logo": "https://xscore.cc/resb/league/ukraine-u19.png",
       "start_date": "2022-08-22 08:00:00",
       "end_date": "2023-06-02 00:00:00",
       "priority": 0,

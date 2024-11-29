@@ -1,4 +1,4 @@
-package gr.server.data.constants;
+package gr.server.common;
 
 public interface ServerConstants {
 	
@@ -13,5 +13,7 @@ public interface ServerConstants {
 	String URL_FORMAT = "mF=!72kg*&;.J^1]";
 	
 	String GMT = "GMT";
+	
+	Integer BET_DAYS_OFFSET = 1;
 	
 }

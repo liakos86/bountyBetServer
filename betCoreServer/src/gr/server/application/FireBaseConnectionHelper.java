@@ -26,8 +26,9 @@ public class FireBaseConnectionHelper {
 	public boolean connect() {
 		try {			
 			InputStream serviceAccount = getClass().getClassLoader()
-					.getResourceAsStream("application_default_credentials.json");			
-			FirebaseApp.initializeApp(
+//					.getResourceAsStream("application_default_credentials.json");
+			.getResourceAsStream("bountybet-firebase-8e1e2a10a6cc.json");
+			FirebaseApp app = FirebaseApp.initializeApp(
 					FirebaseOptions.builder()
 					.setCredentials(
 							//GoogleCredentials.getApplicationDefault()
@@ -47,7 +48,7 @@ public class FireBaseConnectionHelper {
 		}
 	}
 
-	public void sendTopicMessage(Map<String, Object> messageParams) {
+	public void sendTopicMessage(Map<String, String> messageParams) {
 		if (!connected) { // TODO investigate null
 			connect();
 			if (!connected) {
@@ -55,13 +56,14 @@ public class FireBaseConnectionHelper {
 			}
 		}
 				
-		ChangeEventSoccer changeEventSoccer = new ChangeEventSoccer(messageParams);
-		String json = new Gson().toJson(changeEventSoccer);
+//		ChangeEventSoccer changeEventSoccer = new ChangeEventSoccer(messageParams);
+//		String json = new Gson().toJson(changeEventSoccer);
 
 		// See documentation on defining a message payload.
 		// Don't define a Notification. If you do so, it will always pop on device.
 		Message message = Message.builder()
-		    .putData("changeEvent", json)
+//		    .putData("changeEvent", json)
+				.putAllData(messageParams)
 		    .setTopic(FireBaseConstants.TOPIC_SOCCER_EVENTS)
 		   
 //		    .setFcmOptions(FcmOptions.builder()
@@ -79,7 +81,7 @@ public class FireBaseConnectionHelper {
 		String response;
 		try {
 			response = FirebaseMessaging.getInstance().send(message);
-			System.out.println(FireBaseConstants.TOPIC_SOCCER_EVENTS + " - EventId" + changeEventSoccer.getEventId() + ", Successfully sent message: " + response);
+			System.out.println(FireBaseConstants.TOPIC_SOCCER_EVENTS + " - EventId" + messageParams.get("eventId") + ", Successfully sent message: " + response);
 		} catch (FirebaseMessagingException e) {
 			System.out.println("Could not sent message: " + e.getMessage());
 			// TODO Auto-generated catch block

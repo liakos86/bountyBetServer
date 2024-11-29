@@ -19,8 +19,7 @@ import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.api.model.events.MatchEventIncidents;
-import gr.server.data.api.model.events.MatchEventStatistics;
+import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.league.Season;
 import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
@@ -46,13 +45,14 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 
 		BetPlacementStatus betPlacementStatus = new MongoClientHelperImpl().placeBet(newBet);
 
-		if (BetPlacementStatus.PLACED != betPlacementStatus) {
-			User errorUser = new User();
-			errorUser.setErrorMessage(String.valueOf(betPlacementStatus.getCode()));
-			return Response.ok(new Gson().toJson(errorUser)).build();
-		}
+//		if (BetPlacementStatus.PLACED != betPlacementStatus) {
+//			User errorUser = new User();
+//			errorUser.setErrorMessage(String.valueOf(betPlacementStatus.getCode()));
+//			return Response.ok(new Gson().toJson(errorUser)).build();
+//		}
 
-		return getUser(newBet.getMongoUserId());// TODO: maybe return only the bet?
+		return Response.ok(new Gson().toJson(betPlacementStatus)).build();
+//		return getUser(newBet.getMongoUserId());// TODO: maybe return only the bet?
 
 	}
 
@@ -143,6 +143,14 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	public Response getLeagueEvents() {
 		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY)).build();
 	}
+	
+	@Override
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/getLiveEvents")
+	public Response getLiveEvents() {
+		return Response.ok(new Gson().toJson(FootballApiCache.LIVE_EVENTS)).build();
+	}
 
 	@Override
 	@GET
@@ -177,16 +185,16 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("getEventStatistics/{id}")
 	public Response getEventStatistics(@PathParam("id") Integer id) {
-		return Response.ok(FootballApiCache.STATS_PER_EVENT.getOrDefault(id, new MatchEventStatistics())).build();
+		return Response.ok(FootballApiCache.ALL_MATCH_STATS.getOrDefault(id, new MatchEventIncidentsWithStatistics())).build();
 	}
 
-	@Override
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("getEventIncidents/{id}")
-	public Response getEventIncidents(@PathParam("id") Integer id) {
-		return Response.ok(FootballApiCache.INCIDENTS_PER_EVENT.getOrDefault(id, new MatchEventIncidents())).build();
-	}
+//	@Override
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	@Path("getEventIncidents/{id}")
+//	public Response getEventIncidents(@PathParam("id") Integer id) {
+//		return Response.ok(FootballApiCache.INCIDENTS_PER_EVENT.getOrDefault(id, new MatchEventIncidents())).build();
+//	}
 
 	/**
 	 * @param mongoId

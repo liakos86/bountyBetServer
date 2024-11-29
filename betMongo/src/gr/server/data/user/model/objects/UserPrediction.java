@@ -9,7 +9,7 @@ import gr.server.data.bet.enums.PredictionType;
 
 
 public class UserPrediction 
-implements Serializable {
+implements  Serializable {
 	
 	/**
 	 * 

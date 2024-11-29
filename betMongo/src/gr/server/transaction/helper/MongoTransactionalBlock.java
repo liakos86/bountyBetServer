@@ -27,7 +27,7 @@ public abstract class MongoTransactionalBlock {
 			System.out.println("ROLLING BACK " + session);
 			session.abortTransaction();
 		}finally{
-			System.out.println("CLOSING " + session);
+			System.out.println(Thread.currentThread().getName() + " CLOSING " + session);
 			session.close();
 		}
 		

@@ -8,7 +8,7 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-import gr.server.data.constants.ServerConstants;
+import gr.server.common.ServerConstants;
 
 public class SecureUtils {
 

@@ -10,7 +10,7 @@
         "ru": "Кубок Лиг"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/north-central-america-leagues-cup.png",
+      "logo": "https://xscore.cc/resb/league/north-central-america-leagues-cup.png",
       "start_date": "2021-08-11 00:00:00",
       "end_date": "2021-09-23 23:59:00",
       "priority": 0,
@@ -59,7 +59,7 @@
         "ru": "Лига Наций КОНКАКАФ"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/north-central-america-concacaf-nations-league.png",
+      "logo": "https://xscore.cc/resb/league/north-central-america-concacaf-nations-league.png",
       "start_date": "2022-06-02 20:00:00",
       "end_date": "2023-07-01 00:00:00",
       "priority": 0,
@@ -116,7 +116,7 @@
         "ru": "Кубок Америки"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-copa-america.png",
+      "logo": "https://xscore.cc/resb/league/south-america-copa-america.png",
       "start_date": "2021-06-13 21:00:00",
       "end_date": "2021-07-11 23:59:00",
       "priority": 0,
@@ -176,7 +176,7 @@
         "ru": "Чемпионат мира Qual, КОНМЕБОЛ"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-world-cup-qual-conmebol.png",
+      "logo": "https://xscore.cc/resb/league/south-america-world-cup-qual-conmebol.png",
       "start_date": "2020-10-08 22:30:00",
       "end_date": "2021-11-22 23:59:00",
       "priority": 0,
@@ -233,7 +233,7 @@
         "ru": "Кубок Либертадорес (Copa CONMEBOL Libertadores)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-libertadores.png",
+      "logo": "https://xscore.cc/resb/league/south-america-conmebol-libertadores.png",
       "start_date": "2022-02-09 00:30:00",
       "end_date": "2022-10-31 00:00:00",
       "priority": 0,
@@ -290,7 +290,7 @@
         "ru": "Южноамериканский кубок"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-sudamericana.png",
+      "logo": "https://xscore.cc/resb/league/south-america-conmebol-sudamericana.png",
       "start_date": "2022-03-08 22:15:00",
       "end_date": "2022-10-02 23:59:00",
       "priority": 0,
@@ -347,7 +347,7 @@
         "ru": "Рекопа Южной Америки"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-recopa.png",
+      "logo": "https://xscore.cc/resb/league/south-america-conmebol-recopa.png",
       "start_date": "2022-02-24 00:30:00",
       "end_date": "2022-03-04 23:59:00",
       "priority": 0,
@@ -396,7 +396,7 @@
         "ru": "Чемпионат Южной Америки, U20 CONMEBOL"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-u20-conmebol-championship.png",
+      "logo": "https://xscore.cc/resb/league/south-america-u20-conmebol-championship.png",
       "start_date": "2019-01-17 20:10:00",
       "end_date": "2019-02-12 23:59:00",
       "priority": 0,
@@ -448,7 +448,7 @@
         "ru": "U20 CONMEBOL Либертадорес"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-u20-conmebol-libertadores.png",
+      "logo": "https://xscore.cc/resb/league/south-america-u20-conmebol-libertadores.png",
       "start_date": "2022-02-05 20:00:00",
       "end_date": "2022-02-21 00:00:00",
       "priority": 0,
@@ -500,7 +500,7 @@
         "ru": "Чемпионат Южной Америки, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-u20-conmebol-championship-women.png",
+      "logo": "https://xscore.cc/resb/league/south-america-u20-conmebol-championship-women.png",
       "start_date": "2022-04-06 20:00:00",
       "end_date": "2022-04-25 23:59:00",
       "priority": 0,
@@ -560,7 +560,7 @@
         "ru": "Чемпионат Южной Америки, U17"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-u17-conmebol-championship.png",
+      "logo": "https://xscore.cc/resb/league/south-america-u17-conmebol-championship.png",
       "start_date": "2019-03-21 22:10:00",
       "end_date": "2019-04-16 23:59:00",
       "priority": 0,
@@ -609,7 +609,7 @@
         "ru": "Кубок Либертадорес, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-libertadores-women.png",
+      "logo": "https://xscore.cc/resb/league/south-america-conmebol-libertadores-women.png",
       "start_date": "2021-11-03 20:30:00",
       "end_date": "2021-11-21 23:59:00",
       "priority": 0,
@@ -661,7 +661,7 @@
         "ru": "Предолимпийский турнир КОНМЕБОЛ"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/south-america-conmebol-pre-olympic-tournament.png",
+      "logo": "https://xscore.cc/resb/league/south-america-conmebol-pre-olympic-tournament.png",
       "start_date": "2020-01-18 23:00:00",
       "end_date": "2020-02-10 23:59:00",
       "priority": 0,
@@ -710,7 +710,7 @@
         "ru": "Чемпионат мира (ОФК)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/oceania-world-cup-qual-ofc.png",
+      "logo": "https://xscore.cc/resb/league/oceania-world-cup-qual-ofc.png",
       "start_date": "2022-03-14 07:00:00",
       "end_date": "2022-03-30 23:59:00",
       "priority": 0,
@@ -763,7 +763,7 @@
         "ru": "Лига чемпионов ОФК"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/oceania-ofc-champions-league.png",
+      "logo": "https://xscore.cc/resb/league/oceania-ofc-champions-league.png",
       "start_date": "2022-08-04 00:00:00",
       "end_date": "2022-08-17 00:00:00",
       "priority": 0,
@@ -816,7 +816,7 @@
         "ru": "Суперкубок УЕФА"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-super-cup.png",
       "start_date": "2022-08-10 19:00:00",
       "end_date": "2022-08-11 00:00:00",
       "priority": 0,
@@ -865,7 +865,7 @@
         "ru": "Лига Чемпионов УЕФА"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-champions-league.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-champions-league.png",
       "start_date": "2022-06-21 13:00:00",
       "end_date": "2023-06-10 00:00:00",
       "priority": 320,
@@ -922,7 +922,7 @@
         "ru": "Лига Европы УЕФА"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-europa-league.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-europa-league.png",
       "start_date": "2022-08-04 16:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 310,
@@ -979,7 +979,7 @@
         "ru": "Квалификация чемпионата Европы"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-euro-cup-qualification.png",
+      "logo": "https://xscore.cc/resb/league/europe-euro-cup-qualification.png",
       "start_date": "2019-03-21 15:00:00",
       "end_date": "2020-11-13 23:59:00",
       "priority": 0,
@@ -1036,7 +1036,7 @@
         "ru": "Балтийская лига"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2010-09-21 16:00:00",
       "end_date": "2011-07-04 21:59:00",
       "priority": 0,
@@ -1085,7 +1085,7 @@
         "ru": "U17 Чемпионат Европы"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u17-european-championship.png",
+      "logo": "https://xscore.cc/resb/league/europe-u17-european-championship.png",
       "start_date": "2022-05-16 14:30:00",
       "end_date": "2022-06-01 00:00:00",
       "priority": 0,
@@ -1137,7 +1137,7 @@
         "ru": "U21 Чемпионат Европы"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u21-european-championship.png",
+      "logo": "https://xscore.cc/resb/league/europe-u21-european-championship.png",
       "start_date": "2021-03-24 17:00:00",
       "end_date": "2021-06-07 23:59:00",
       "priority": 0,
@@ -1197,7 +1197,7 @@
         "ru": "Чемпионат Европы среди женщин"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-womens-euro.png",
+      "logo": "https://xscore.cc/resb/league/europe-womens-euro.png",
       "start_date": "2022-07-06 19:00:00",
       "end_date": "2022-07-31 23:59:00",
       "priority": 0,
@@ -1253,7 +1253,7 @@
         "ru": "Лига чемпионов УЕФА среди женщин"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2008-11-05 17:00:00",
       "end_date": "2009-05-24 21:59:00",
       "priority": 0,
@@ -1302,7 +1302,7 @@
         "ru": "U19 Чемпионат Европы Среди Женщин"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u19-european-womens-championship.png",
+      "logo": "https://xscore.cc/resb/league/europe-u19-european-womens-championship.png",
       "start_date": "2022-06-27 09:00:00",
       "end_date": "2022-07-09 23:59:00",
       "priority": 0,
@@ -1354,7 +1354,7 @@
         "ru": "Лига Чемпионов УЕФА, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-champions-league-women.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-champions-league-women.png",
       "start_date": "2022-08-18 08:00:00",
       "end_date": "2023-06-04 00:00:00",
       "priority": 0,
@@ -1403,7 +1403,7 @@
         "ru": "Кубок Сетанта Спортс"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2014-02-24 19:45:00",
       "end_date": "2014-05-12 23:59:00",
       "priority": 0,
@@ -1452,7 +1452,7 @@
         "ru": "U19 Чемпионат Европы Среди Женщин Квалиф."
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u19-european-womens-championship-qualif.png",
+      "logo": "https://xscore.cc/resb/league/europe-u19-european-womens-championship-qualif.png",
       "start_date": "2022-10-04 09:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1501,7 +1501,7 @@
         "ru": "U19 Чемпионат Европы Qualif."
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u19-european-championship-qualif.png",
+      "logo": "https://xscore.cc/resb/league/europe-u19-european-championship-qualif.png",
       "start_date": "2022-09-21 10:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1550,7 +1550,7 @@
         "ru": "U17 Euro Womens, Qual"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u17-euro-womens-qual.png",
+      "logo": "https://xscore.cc/resb/league/europe-u17-euro-womens-qual.png",
       "start_date": "2022-03-08 11:00:00",
       "end_date": "2022-04-13 23:59:00",
       "priority": 0,
@@ -1599,7 +1599,7 @@
         "ru": "U17 Чемпионат Европы, Qual."
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u17-european-championship-qual.png",
+      "logo": "https://xscore.cc/resb/league/europe-u17-european-championship-qual.png",
       "start_date": "2021-09-23 10:00:00",
       "end_date": "2022-04-26 23:59:00",
       "priority": 0,
@@ -1648,7 +1648,7 @@
         "ru": "Чемпионат Европы, Женщин Qual."
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-world-cup-women-qual.png",
+      "logo": "https://xscore.cc/resb/league/europe-world-cup-women-qual.png",
       "start_date": "2021-09-16 16:00:00",
       "end_date": "2022-10-11 00:00:00",
       "priority": 0,
@@ -1701,7 +1701,7 @@
         "ru": "Чемпионат Европы среди женщин"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-womens-euro-qualification.png",
+      "logo": "https://xscore.cc/resb/league/europe-womens-euro-qualification.png",
       "start_date": "2019-08-29 15:30:00",
       "end_date": "2021-04-13 23:59:00",
       "priority": 0,
@@ -1762,7 +1762,7 @@
         "ru": "Dublin Super Cup"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2011-07-30 13:00:00",
       "end_date": "2011-08-01 21:59:00",
       "priority": 0,
@@ -1811,7 +1811,7 @@
         "ru": "U17 Чемпионат Европы Среди Женщин"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u17-european-womens-championship.png",
+      "logo": "https://xscore.cc/resb/league/europe-u17-european-womens-championship.png",
       "start_date": "2022-05-03 12:00:00",
       "end_date": "2022-05-15 00:00:00",
       "priority": 0,
@@ -1863,7 +1863,7 @@
         "ru": "U18 Кубок Словакии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u18-slovakia-cup.png",
+      "logo": "https://xscore.cc/resb/league/europe-u18-slovakia-cup.png",
       "start_date": "2019-05-20 10:00:00",
       "end_date": "2019-05-25 23:59:00",
       "priority": 0,
@@ -1915,7 +1915,7 @@
         "ru": "Балтийский Кубок"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-baltic-cup.png",
+      "logo": "https://xscore.cc/resb/league/europe-baltic-cup.png",
       "start_date": "2022-11-16 13:00:00",
       "end_date": "2021-06-10 00:00:00",
       "priority": 0,
@@ -1960,7 +1960,7 @@
         "ru": "NextGen Series"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2013-02-19 18:00:00",
       "end_date": "2013-04-02 21:59:00",
       "priority": 0,
@@ -2009,7 +2009,7 @@
         "ru": "Юношеская Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-youth-league.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-youth-league.png",
       "start_date": "2014-09-16 13:00:00",
       "end_date": "2015-04-28 21:59:00",
       "priority": 0,
@@ -2066,7 +2066,7 @@
         "ru": "Юношеская Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-youth-league-1.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-youth-league-1.png",
       "start_date": "2022-09-06 09:30:00",
       "end_date": "2023-04-24 00:00:00",
       "priority": 0,
@@ -2115,7 +2115,7 @@
         "ru": "УЕФА Олимпийские Квалификации, Женщины"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2016-03-02 18:30:00",
       "end_date": "2016-03-13 22:59:00",
       "priority": 0,
@@ -2164,7 +2164,7 @@
         "ru": "U21 Балтийский Кубок"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -2196,7 +2196,7 @@
         "ru": "Балтийский кубок, до 19 лет"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -2228,7 +2228,7 @@
         "ru": "Зимний Кубок По Футболу"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -2260,7 +2260,7 @@
         "ru": "Лига Наций УЕФА"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-uefa-nations-league.png",
+      "logo": "https://xscore.cc/resb/league/europe-uefa-nations-league.png",
       "start_date": "2022-06-01 16:00:00",
       "end_date": "2024-03-26 00:00:00",
       "priority": 100,
@@ -2317,7 +2317,7 @@
         "ru": "Чемпионат Европы"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-euro-cup.png",
+      "logo": "https://xscore.cc/resb/league/europe-euro-cup.png",
       "start_date": "2021-06-11 19:00:00",
       "end_date": "2021-07-11 23:59:00",
       "priority": 0,
@@ -2377,7 +2377,7 @@
         "ru": "Чешско-Словацкий Суперкубок"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2019-07-06 16:00:00",
       "end_date": "2019-07-07 23:59:00",
       "priority": 0,
@@ -2426,7 +2426,7 @@
         "ru": "Отборочный турнир Чемпионата мира, Qual. UEFA"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-world-cup-qual-uefa.png",
+      "logo": "https://xscore.cc/resb/league/europe-world-cup-qual-uefa.png",
       "start_date": "2021-03-24 17:00:00",
       "end_date": "2022-03-29 23:59:00",
       "priority": 0,
@@ -2483,7 +2483,7 @@
         "ru": "U21 Евро Квалификация"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u21-euro-qualification.png",
+      "logo": "https://xscore.cc/resb/league/europe-u21-euro-qualification.png",
       "start_date": "2021-03-25 15:30:00",
       "end_date": "2022-11-30 00:00:00",
       "priority": 0,
@@ -2540,7 +2540,7 @@
         "ru": "U19 Чемпионат Европы"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/europe-u19-european-championship.png",
+      "logo": "https://xscore.cc/resb/league/europe-u19-european-championship.png",
       "start_date": "2022-06-18 15:30:00",
       "end_date": "2022-07-01 23:59:00",
       "priority": 0,

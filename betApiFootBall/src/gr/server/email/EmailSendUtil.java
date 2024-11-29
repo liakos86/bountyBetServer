@@ -11,7 +11,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import gr.server.common.CommonConstants;
-import gr.server.data.constants.IgnoreConstants;
+import gr.server.common.IgnoreConstants;
 
 public class EmailSendUtil {
 	

@@ -22,13 +22,13 @@ public class TestFireBaseConnectionHelper {
 		}
 		
 		
-		Map<String, Object> params = new HashMap<>();
+		Map<String, String> params = new HashMap<>();
 		
-		params.put("changeEvent", ChangeEvent.HOME_GOAL);
-		params.put("eventId", 1953893);
+		params.put("changeEvent","1");// ChangeEvent.HOME_GOAL.getChangeCode().toString());
+		params.put("eventId", "2616094");
 		Score score = new Score();
-		params.put("homeScore", score );
-		params.put("awayScore", score);
+		params.put("homeScore", "4");
+		params.put("awayScore", "2");
 		
 		helper.sendTopicMessage(params );
 	}

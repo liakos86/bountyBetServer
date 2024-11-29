@@ -10,7 +10,7 @@
         "ru": "III Лига, Группа 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/poland-iii-liga-group-2.png",
+      "logo": "https://xscore.cc/resb/league/poland-iii-liga-group-2.png",
       "start_date": "2022-08-05 16:00:00",
       "end_date": "2023-06-30 23:59:00",
       "priority": 0,
@@ -67,7 +67,7 @@
         "ru": "III Лига, Группа 4"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/poland-iii-liga-group-4.png",
+      "logo": "https://xscore.cc/resb/league/poland-iii-liga-group-4.png",
       "start_date": "2022-08-06 10:00:00",
       "end_date": "2023-06-30 23:59:00",
       "priority": 0,
@@ -120,7 +120,7 @@
         "ru": "Примейра Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-primeira-liga.png",
+      "logo": "https://xscore.cc/resb/league/portugal-primeira-liga.png",
       "start_date": "2022-08-05 19:15:00",
       "end_date": "2023-05-28 00:00:00",
       "priority": 240,
@@ -188,7 +188,7 @@
         "ru": "Второй дивизион (Segunda)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-segunda-liga.png",
+      "logo": "https://xscore.cc/resb/league/portugal-segunda-liga.png",
       "start_date": "2022-08-06 10:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -256,7 +256,7 @@
         "ru": "Кубок португальской лиги"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-taca-da-liga.png",
+      "logo": "https://xscore.cc/resb/league/portugal-taca-da-liga.png",
       "start_date": "2021-07-23 19:15:00",
       "end_date": "2022-01-31 23:59:00",
       "priority": 0,
@@ -316,7 +316,7 @@
         "ru": "Кубок Португалии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-taca-de-portugal.png",
+      "logo": "https://xscore.cc/resb/league/portugal-taca-de-portugal.png",
       "start_date": "2022-09-09 18:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -376,7 +376,7 @@
         "ru": "Суперкубок Португалии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-supertaca.png",
+      "logo": "https://xscore.cc/resb/league/portugal-supertaca.png",
       "start_date": "2022-07-30 19:45:00",
       "end_date": "2022-08-01 00:00:00",
       "priority": 0,
@@ -424,7 +424,7 @@
         "ru": "Чемпионат до 19 лет"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-u19-championship.png",
+      "logo": "https://xscore.cc/resb/league/portugal-u19-championship.png",
       "start_date": "2022-08-06 16:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -492,7 +492,7 @@
         "ru": "Honor Cup"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2014-07-18 18:00:00",
       "end_date": "2014-07-21 21:59:00",
       "priority": 0,
@@ -541,7 +541,7 @@
         "ru": "Национальный чемпионат Португалии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-campeonato-de-portugal.png",
+      "logo": "https://xscore.cc/resb/league/portugal-campeonato-de-portugal.png",
       "start_date": "2022-09-18 14:00:00",
       "end_date": "2023-06-15 00:00:00",
       "priority": 0,
@@ -609,7 +609,7 @@
         "ru": "Чемпионат Португалии, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-campeonato-nacional-feminino.png",
+      "logo": "https://xscore.cc/resb/league/portugal-campeonato-nacional-feminino.png",
       "start_date": "2022-09-10 14:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -666,7 +666,7 @@
         "ru": "Чемпионат до 23 лет"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-u23-championship.png",
+      "logo": "https://xscore.cc/resb/league/portugal-u23-championship.png",
       "start_date": "2022-09-05 14:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -722,7 +722,7 @@
         "ru": "Кубок до 23 лет, Taca Revelação"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/portugal-u23-taca-revelacao.png",
+      "logo": "https://xscore.cc/resb/league/portugal-u23-taca-revelacao.png",
       "start_date": "2022-04-16 15:00:00",
       "end_date": "2022-05-24 00:00:00",
       "priority": 0,
@@ -779,7 +779,7 @@
         "ru": "Высшая лига (Лига Я)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/romania-liga-i.png",
+      "logo": "https://xscore.cc/resb/league/romania-liga-i.png",
       "start_date": "2022-07-15 15:30:00",
       "end_date": "2023-05-30 00:00:00",
       "priority": 0,
@@ -847,7 +847,7 @@
         "ru": "Кубок Румынии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/romania-romania-cup.png",
+      "logo": "https://xscore.cc/resb/league/romania-romania-cup.png",
       "start_date": "2021-08-24 14:30:00",
       "end_date": "2022-05-19 23:59:00",
       "priority": 0,
@@ -911,7 +911,7 @@
         "ru": "Лига 2"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/romania-liga-2.png",
+      "logo": "https://xscore.cc/resb/league/romania-liga-2.png",
       "start_date": "2022-08-04 14:00:00",
       "end_date": "2023-05-20 00:00:00",
       "priority": 0,
@@ -979,7 +979,7 @@
         "ru": "Лига 2, Серия 2"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2015-08-29 08:00:00",
       "end_date": "2016-06-12 21:59:00",
       "priority": 0,
@@ -1036,7 +1036,7 @@
         "ru": "Суперкубок Румынии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/romania-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/romania-super-cup.png",
       "start_date": "2022-07-09 17:30:00",
       "end_date": "2022-07-10 23:59:00",
       "priority": 0,
@@ -1088,7 +1088,7 @@
         "ru": "Кубок Лиги Румынии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/romania-cupa-ligii.png",
+      "logo": "https://xscore.cc/resb/league/romania-cupa-ligii.png",
       "start_date": "2016-08-09 16:00:00",
       "end_date": "2017-07-17 21:59:00",
       "priority": 0,
@@ -1145,7 +1145,7 @@
         "ru": "Премьер Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-premier-liga.png",
+      "logo": "https://xscore.cc/resb/league/russia-premier-liga.png",
       "start_date": "2022-07-15 17:00:00",
       "end_date": "2023-06-10 23:59:00",
       "priority": 235,
@@ -1210,7 +1210,7 @@
         "ru": "Футбол Национальная Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-football-national-league.png",
+      "logo": "https://xscore.cc/resb/league/russia-football-national-league.png",
       "start_date": "2022-07-16 15:00:00",
       "end_date": "2023-06-03 00:00:00",
       "priority": 0,
@@ -1278,7 +1278,7 @@
         "ru": "Суперкубок России"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/russia-super-cup.png",
       "start_date": "2022-07-09 16:00:00",
       "end_date": "2022-07-10 00:00:00",
       "priority": 0,
@@ -1326,7 +1326,7 @@
         "ru": "Молодежная Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-youth-league.png",
+      "logo": "https://xscore.cc/resb/league/russia-youth-league.png",
       "start_date": "2022-07-15 09:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -1394,7 +1394,7 @@
         "ru": "ПФЛ, Восток"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-pfl-east.png",
+      "logo": "https://xscore.cc/resb/league/russia-pfl-east.png",
       "start_date": "2019-08-03 09:30:00",
       "end_date": "2020-06-14 00:00:00",
       "priority": 0,
@@ -1451,7 +1451,7 @@
         "ru": "ПФЛ, Юг"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-pfl-south.png",
+      "logo": "https://xscore.cc/resb/league/russia-pfl-south.png",
       "start_date": "2022-07-23 14:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1512,7 +1512,7 @@
         "ru": "ПФЛ, Центр"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-pfl-center.png",
+      "logo": "https://xscore.cc/resb/league/russia-pfl-center.png",
       "start_date": "2022-07-16 08:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1576,7 +1576,7 @@
         "ru": "ПФЛ, Урал-Поволжье"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-pfl-ural-povolzhye.png",
+      "logo": "https://xscore.cc/resb/league/russia-pfl-ural-povolzhye.png",
       "start_date": "2022-07-24 09:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1640,7 +1640,7 @@
         "ru": "ПФЛ, Запад"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-pfl-west.png",
+      "logo": "https://xscore.cc/resb/league/russia-pfl-west.png",
       "start_date": "2022-07-15 10:00:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -1708,7 +1708,7 @@
         "ru": "Премьер Лига, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-premier-league-women.png",
+      "logo": "https://xscore.cc/resb/league/russia-premier-league-women.png",
       "start_date": "2022-03-13 12:00:00",
       "end_date": "2022-11-30 00:00:00",
       "priority": 0,
@@ -1764,7 +1764,7 @@
         "ru": "Кубок России"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/russia-russian-cup.png",
+      "logo": "https://xscore.cc/resb/league/russia-russian-cup.png",
       "start_date": "2022-08-30 16:00:00",
       "end_date": "2023-06-15 00:00:00",
       "priority": 205,
@@ -1824,7 +1824,7 @@
         "ru": "Зона Сибири"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "",
       "end_date": "",
       "priority": 0,
@@ -1856,7 +1856,7 @@
         "ru": "Профессиональная Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/saudi-arabia-saudi-professional-league.png",
+      "logo": "https://xscore.cc/resb/league/saudi-arabia-saudi-professional-league.png",
       "start_date": "2022-08-25 16:05:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -1920,7 +1920,7 @@
         "ru": "Кубок наследного принца Саудовской Аравии"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2017-09-07 17:35:00",
       "end_date": "2018-05-20 21:59:00",
       "priority": 0,
@@ -1969,7 +1969,7 @@
         "ru": "Кубок чемпионов Саудовской Аравии (Kings Cup)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/saudi-arabia-kings-cup.png",
+      "logo": "https://xscore.cc/resb/league/saudi-arabia-kings-cup.png",
       "start_date": "2021-12-19 17:00:00",
       "end_date": "2022-05-30 00:00:00",
       "priority": 0,
@@ -2029,7 +2029,7 @@
         "ru": "Суперкубок Саудовской Аравии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/saudi-arabia-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/saudi-arabia-super-cup.png",
       "start_date": "2022-01-06 17:15:00",
       "end_date": "2022-01-06 23:59:00",
       "priority": 0,
@@ -2082,7 +2082,7 @@
         "ru": "Дивизион 1"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/saudi-arabia-division-1.png",
+      "logo": "https://xscore.cc/resb/league/saudi-arabia-division-1.png",
       "start_date": "2022-08-22 16:10:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2139,7 +2139,7 @@
         "ru": "Премьер-Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/singapore-premier-league.png",
+      "logo": "https://xscore.cc/resb/league/singapore-premier-league.png",
       "start_date": "2022-02-25 11:45:00",
       "end_date": "2022-10-15 00:00:00",
       "priority": 0,
@@ -2207,7 +2207,7 @@
         "ru": "Кубок Сингапура"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/singapore-singapore-cup.png",
+      "logo": "https://xscore.cc/resb/league/singapore-singapore-cup.png",
       "start_date": "2019-09-25 11:45:00",
       "end_date": "2019-11-16 00:00:00",
       "priority": 0,
@@ -2256,7 +2256,7 @@
         "ru": "Кубок Сингапурской лиги"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/singapore-league-cup.png",
+      "logo": "https://xscore.cc/resb/league/singapore-league-cup.png",
       "start_date": "2017-07-07 11:30:00",
       "end_date": "2017-07-31 23:59:00",
       "priority": 0,
@@ -2305,7 +2305,7 @@
         "ru": "Первая Лига (Фортуна Суперлига)"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovakia-superliga.png",
+      "logo": "https://xscore.cc/resb/league/slovakia-superliga.png",
       "start_date": "2022-07-15 18:30:00",
       "end_date": "2023-05-30 23:59:00",
       "priority": 0,
@@ -2373,7 +2373,7 @@
         "ru": "Вторая лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovakia-2-liga.png",
+      "logo": "https://xscore.cc/resb/league/slovakia-2-liga.png",
       "start_date": "2022-07-15 15:00:00",
       "end_date": "2023-05-19 00:00:00",
       "priority": 0,
@@ -2430,7 +2430,7 @@
         "ru": "Кубок Словакии"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovakia-slovensky-pohar.png",
+      "logo": "https://xscore.cc/resb/league/slovakia-slovensky-pohar.png",
       "start_date": "2022-07-24 15:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2487,7 +2487,7 @@
         "ru": "Суперкубок Словакии"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2014-07-05 13:00:00",
       "end_date": "2014-07-06 21:59:00",
       "priority": 0,
@@ -2528,7 +2528,7 @@
         "ru": "Молодежная U19"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovakia-u19.png",
+      "logo": "https://xscore.cc/resb/league/slovakia-u19.png",
       "start_date": "2022-08-13 09:00:00",
       "end_date": "2023-06-10 00:00:00",
       "priority": 0,
@@ -2592,7 +2592,7 @@
         "ru": "Первая лига, Женщины"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovakia-1-league-women.png",
+      "logo": "https://xscore.cc/resb/league/slovakia-1-league-women.png",
       "start_date": "2022-08-07 09:00:00",
       "end_date": "2023-05-31 00:00:00",
       "priority": 0,
@@ -2656,7 +2656,7 @@
         "ru": "Первая Лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovenia-prvaliga.png",
+      "logo": "https://xscore.cc/resb/league/slovenia-prvaliga.png",
       "start_date": "2022-07-15 18:15:00",
       "end_date": "2023-06-30 00:00:00",
       "priority": 0,
@@ -2721,7 +2721,7 @@
         "ru": "Кубок Словении"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovenia-slovenia-cup.png",
+      "logo": "https://xscore.cc/resb/league/slovenia-slovenia-cup.png",
       "start_date": "2021-09-15 13:00:00",
       "end_date": "2022-05-31 23:59:00",
       "priority": 0,
@@ -2777,7 +2777,7 @@
         "ru": "Суперкубок Словении"
       },
       "has_logo": false,
-      "logo": "https://tipsscore.com/resb/no-league.png",
+      "logo": "https://xscore.cc/resb/no-league.png",
       "start_date": "2015-07-05 18:00:00",
       "end_date": "2015-07-06 21:59:00",
       "priority": 0,
@@ -2814,7 +2814,7 @@
         "ru": "Вторая лига"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/slovenia-2-snl.png",
+      "logo": "https://xscore.cc/resb/league/slovenia-2-snl.png",
       "start_date": "2022-07-29 16:00:00",
       "end_date": "2023-05-21 00:00:00",
       "priority": 0,
@@ -2882,7 +2882,7 @@
         "ru": "Суперкубок Испании"
       },
       "has_logo": true,
-      "logo": "https://tipsscore.com/resb/league/spain-super-cup.png",
+      "logo": "https://xscore.cc/resb/league/spain-super-cup.png",
       "start_date": "2023-01-11 17:00:00",
       "end_date": "2023-01-16 23:59:00",
       "priority": 0,

@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import gr.server.data.api.cache.FootballApiCache;
+
 /**
  * League can be a nation one, a continental one or even a world one:
  *  - English Premier League
@@ -162,7 +164,11 @@ public class League implements Serializable{
 	}
 
 	public int getPriority() {
-		return priority;
+		//if (FootballApiCache.PRIORITIES_OVERRIDDE.containsKey(getId())) {
+			return (FootballApiCache.PRIORITIES_OVERRIDDE.get(getId()));
+		//}
+		
+//		return priority;
 	}
 
 	public void setPriority(int priority) {

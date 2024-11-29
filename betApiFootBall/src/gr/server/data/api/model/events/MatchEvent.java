@@ -2,12 +2,10 @@ package gr.server.data.api.model.events;
 
 import java.util.Map;
 
+import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.enums.ChangeEvent;
-import gr.server.data.api.model.league.Challenge;
 import gr.server.data.api.model.league.League;
-import gr.server.data.api.model.league.Season;
-import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
 
@@ -20,8 +18,8 @@ import gr.server.data.api.model.league.TimeDetails;
 public class MatchEvent {
 //implements Comparable<MatchEvent> {
 
-	MatchEventIncidents incidents = new MatchEventIncidents();
-	MatchEventStatistics statistics = new MatchEventStatistics();
+//	MatchEventIncidents incidents = new MatchEventIncidents();
+//	MatchEventStatistics statistics = new MatchEventStatistics();
 
 	int changeEvent = ChangeEvent.NONE.getChangeCode();
 
@@ -79,7 +77,7 @@ public class MatchEvent {
 	MatchOdds main_odds;
 //	League league;
 //	Challenge challenge;
-	Season season;
+//	Season season;
 //	Section section;
 
 	public boolean homeGoalScored(Score homeScoreNew) {
@@ -395,6 +393,11 @@ public class MatchEvent {
 	}
 
 	public MatchOdds getMain_odds() {
+		if (DateUtils.isInNextMonth(this.start_at)) {
+			return null;
+		}
+		
+		
 		return main_odds;
 	}
 
@@ -410,13 +413,13 @@ public class MatchEvent {
 //		this.challenge = challenge;
 //	}
 
-	public Season getSeason() {
-		return season;
-	}
-
-	public void setSeason(Season season) {
-		this.season = season;
-	}
+//	public Season getSeason() {
+//		return season;
+//	}
+//
+//	public void setSeason(Season season) {
+//		this.season = season;
+//	}
 
 	public Object getTime_live() {
 		return time_live;
@@ -426,13 +429,13 @@ public class MatchEvent {
 		this.time_live = time_live;
 	}
 
-	public MatchEventIncidents getIncidents() {
-		return incidents;
-	}
-
-	public void setIncidents(MatchEventIncidents incidents) {
-		this.incidents = incidents;
-	}
+//	public MatchEventIncidents getIncidents() {
+//		return incidents;
+//	}
+//
+//	public void setIncidents(MatchEventIncidents incidents) {
+//		this.incidents = incidents;
+//	}
 
 	public int getChangeEvent() {
 		return changeEvent;
@@ -442,13 +445,13 @@ public class MatchEvent {
 		this.changeEvent = changeEvent;
 	}
 	
-	public MatchEventStatistics getStatistics() {
-		return statistics;
-	}
-
-	public void setStatistics(MatchEventStatistics statistics) {
-		this.statistics = statistics;
-	}
+//	public MatchEventStatistics getStatistics() {
+//		return statistics;
+//	}
+//
+//	public void setStatistics(MatchEventStatistics statistics) {
+//		this.statistics = statistics;
+//	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -496,6 +499,18 @@ public class MatchEvent {
 				" home:" + this.home_team + " away:" + this.away_team +
 				" homescore:" +this.home_score + "awayscore:" + this.away_score +
 				"odds: " + this.main_odds;
+	}
+
+	public void deepCopy(MatchEvent incomingEvent) {
+		this.home_score = incomingEvent.home_score;
+		this.away_score = incomingEvent.away_score;
+		this.start_at = incomingEvent.start_at;
+		this.winner_code = incomingEvent.winner_code;
+		this.aggregated_winner_code = incomingEvent.aggregated_winner_code;
+		this.lasted_period = incomingEvent.lasted_period;
+		this.status_more = incomingEvent.status_more;
+		this.status = incomingEvent.status;
+		this.main_odds = incomingEvent.main_odds;
 	}
 
 }

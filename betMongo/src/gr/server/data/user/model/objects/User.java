@@ -52,6 +52,14 @@ implements Serializable{
 	 */
 	Double balance;
 	
+	/**
+	 * Previous month balance in order to calculate award.
+	 */
+	Double balanceLastMonth;
+	
+//	List<UserMon> balances = new ArrayList<>();
+	
+	
 	List<UserBet> userBets;
 	
 	List<UserAward> userAwards; 
@@ -295,5 +303,15 @@ implements Serializable{
 	public void setLevel(int level) {
 		this.level = level;
 	}
+
+	public Double getBalanceLastMonth() {
+		return balanceLastMonth;
+	}
+
+	public void setBalanceLastMonth(Double balanceLastMonth) {
+		this.balanceLastMonth = balanceLastMonth;
+	}
+	
+	
 	
 }

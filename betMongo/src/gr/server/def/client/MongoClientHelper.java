@@ -4,8 +4,6 @@ import java.util.Set;
 
 import org.bson.Document;
 
-import com.mongodb.client.ClientSession;
-
 import gr.server.application.exception.UserExistsException;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.bet.enums.BetPlacementStatus;
@@ -53,19 +51,16 @@ public interface MongoClientHelper {
 	 */
 	User loginUser(User user);
 
-	int settlePredictions(ClientSession session, Set<MatchEvent> events) throws Exception;
+	boolean settlePredictions(Set<MatchEvent> toSettle) throws Exception;
 
-	int settleOpenBets(ClientSession session) throws Exception;
+	boolean settleOpenBets(Set<Document> pendingBets) throws Exception;
 
 	void deleteUser(String mongoId);
 	
-	
-	/**
-	 * Find all the live matches and fetch their live stats and incidents.
-	 */
-	void updateLiveStats();
 
 	BetPlacementStatus placeBet(UserBet userBet);
 
 	Set<MatchEvent> getLiveByIds(String ids);
+
+	boolean closeMonthlyBalancesAndComputeMonthWinner();
 }

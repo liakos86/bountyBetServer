@@ -2,17 +2,23 @@ package gr.server.data.api.cache;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import org.apache.activemq.util.LRUCache;
 
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.api.model.events.MatchEventIncidents;
-import gr.server.data.api.model.events.MatchEventStatistics;
+import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.LeagueWithData;
 import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
+import gr.server.data.api.model.league.Team;
 
 public class FootballApiCache {
 	
@@ -98,6 +104,8 @@ public class FootballApiCache {
 	public static Map<Integer, LeagueWithData> ALL_LEAGUES_WITH_EVENTS = new HashMap<>();
 
 	public static Map<Integer, League> ALL_LEAGUES = new HashMap<>();
+
+	public static Map<Integer, Team> ALL_TEAMS = new HashMap<>();
 	
 	public static Map<Integer, List<LeagueWithData>> ALL_LEAGUES_WITH_EVENTS_PER_DAY = new LinkedHashMap<>(3);
 
@@ -105,28 +113,53 @@ public class FootballApiCache {
 	 * All the seasons for all leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
 	 */
 	public static Map<Integer, List<Season>> SEASONS_PER_LEAGUE = new HashMap<>();
-	
-	/**
-	 * Maps days with the leagues and their games.
-	 * Key '0' is considered to be today, '1' is tomorrow, '-1' is yesterday etc.
-	 */
-//	public static Map<Integer, Map<League, Map<Integer, MatchEvent>>> EVENTS_PER_DAY_PER_LEAGUE = 
-//			new ConcurrentHashMap<Integer, Map<League,Map<Integer,MatchEvent>>>(3);
-	
-	
-	public static Map<Integer, MatchEventStatistics> STATS_PER_EVENT = new HashMap<>();
-	
-	public static Map<Integer, MatchEventIncidents> INCIDENTS_PER_EVENT = new HashMap<>();
-	
+
 	/**
 	 * 
 	 */
 	public static Map<Integer, MatchEvent> ALL_EVENTS = new HashMap<>();
 	
+	/**
+	 * 
+	 */
+	public static Map<Integer, MatchEvent> LIVE_EVENTS = new HashMap<>();
+	
+	public static Set<Integer> SUPPORTED_SECTION_IDS = new HashSet<>();
+	
+	public static BlockingQueue<MatchEvent> FINISHED_EVENTS = new LinkedBlockingQueue<MatchEvent>();
+  	
+	/**
+	 * Stats will be fetched periodically. 
+	 * Least recently used ones will be discarded.
+	 */
+	public static LRUCache<Integer, MatchEventIncidentsWithStatistics> ALL_MATCH_STATS = new LRUCache<>(512);
+	
 	static {
 		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(-1, new ArrayList<>());
 		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(0, new ArrayList<>());
 		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(1, new ArrayList<>());
+		
+		SUPPORTED_SECTION_IDS.add(1);
+		SUPPORTED_SECTION_IDS.add(2);
+		SUPPORTED_SECTION_IDS.add(3);
+		SUPPORTED_SECTION_IDS.add(4);
+		SUPPORTED_SECTION_IDS.add(5);
+		SUPPORTED_SECTION_IDS.add(7);
+		SUPPORTED_SECTION_IDS.add(8);
+		SUPPORTED_SECTION_IDS.add(9);
+		SUPPORTED_SECTION_IDS.add(13);
+		SUPPORTED_SECTION_IDS.add(18);
+		SUPPORTED_SECTION_IDS.add(19);
+		SUPPORTED_SECTION_IDS.add(21);
+		SUPPORTED_SECTION_IDS.add(22);
+		SUPPORTED_SECTION_IDS.add(24);
+		SUPPORTED_SECTION_IDS.add(25);
+		SUPPORTED_SECTION_IDS.add(26);
+		SUPPORTED_SECTION_IDS.add(27);
+		SUPPORTED_SECTION_IDS.add(30);
+		SUPPORTED_SECTION_IDS.add(31);
+		SUPPORTED_SECTION_IDS.add(32);
+		
 	}
 
 }

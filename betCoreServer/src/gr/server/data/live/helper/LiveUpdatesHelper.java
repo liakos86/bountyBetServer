@@ -37,12 +37,22 @@ public class LiveUpdatesHelper {
 		
 		List<MatchEvent> liveUpdates = updates.getData().getData();
 		
+		updateEventsAndPublishFirebaseTopicMessages(liveUpdates);
+		
+		
+	}
+	
+	public void updateEventsAndPublishFirebaseTopicMessages(List<MatchEvent> liveUpdates) throws JMSException {
 		for (MatchEvent liveEvent : liveUpdates) {
 			MatchEvent relatedMatch = FootballApiCache.ALL_EVENTS.get(liveEvent.getId());
+			if (relatedMatch == null) {
+				continue;
+			}
+			
 			
 			boolean homeGoalScored = checkHomeGoal(relatedMatch, liveEvent);
 			boolean awayGoalScored = checkAwayGoal(relatedMatch, liveEvent);
-			boolean matchStatusChanged = checkMatchStatus(relatedMatch, liveEvent);
+			//boolean matchStatusChanged = checkMatchStatus(relatedMatch, liveEvent);
 
 			if (! (homeGoalScored || awayGoalScored )){
 //					|| matchStatusChanged)) {
@@ -53,6 +63,7 @@ public class LiveUpdatesHelper {
 //			System.out.println("Existing: " + relatedMatch);
 //			System.out.println("*************************");
 		}
+
 	}
 		
 	private boolean checkAwayGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
@@ -75,26 +86,20 @@ public class LiveUpdatesHelper {
 	}
 
 	private void produceTopicMessage(MatchEvent liveEvent, ChangeEvent event) {
-		Map<String, Object> msg = new HashMap<>();
+		Map<String, String> msg = new HashMap<>();
 		MatchEvent cached = FootballApiCache.ALL_EVENTS.get(liveEvent.getId());
-		msg.put("eventId", liveEvent.getId());
-		msg.put("changeEvent", event);
-		msg.put("homeScore", liveEvent.getHome_score());
-		msg.put("awayScore", liveEvent.getAway_score());
-		msg.put("homeTeam", cached.getHome_team());
-		msg.put("awayTeam", cached.getAway_team());
+		msg.put("eventId", liveEvent.getId().toString());
+		msg.put("changeEvent", event.getChangeCode().toString());
+		msg.put("homeScore", String.valueOf(liveEvent.getHome_score().getCurrent()));
+		msg.put("awayScore", String.valueOf(liveEvent.getAway_score().getCurrent()));
+		msg.put("homeTeam", cached.getHome_team().getName());
+		msg.put("awayTeam", cached.getAway_team().getName());
 		System.out.println("WILL SEND MESSAGE FOR " + liveEvent.toString());
 //		RestApplication.sendTopicMessage(msg);
 		RestApplication.sendFirebaseTopicMessage(msg);
 	}
 
 	private boolean checkHomeGoal(MatchEvent matchEvent, MatchEvent liveEvent) throws JMSException {
-		
-		if (matchEvent == null) {
-			System.out.println("LiveEvent " + liveEvent.getId() + " not found ");
-			//TODO : probably started after server start
-			return false;
-		}
 		
 		if (matchEvent.getHome_score() == null) {
 			matchEvent.setHome_score(new Score());
@@ -115,7 +120,7 @@ public class LiveUpdatesHelper {
 	}
 
 
-	public boolean checkMatchStatus(MatchEvent relatedEvent, MatchEvent liveEvent) throws JMSException {
+	private boolean checkMatchStatus(MatchEvent relatedEvent, MatchEvent liveEvent) throws JMSException {
 		boolean statusChange = false;
 		
 		String previousStatusTxt = relatedEvent.getStatus();

@@ -52,6 +52,7 @@ public class HttpHelper {
         	
         	InputStream decompressedStream = StreamHelper.decompressStream(connection.getInputStream());
         	
+        	
             BufferedReader in = new BufferedReader(new InputStreamReader(decompressedStream));
             String inputLine;
             StringBuffer response2 = new StringBuffer();
@@ -59,8 +60,13 @@ public class HttpHelper {
                 response2.append(inputLine);
             }
             in.close();
-            return response2.toString();
+
+            String respString = response2.toString();
+//			System.out.println(uri + " response : *** " + respString);
+            return respString;
         }
+        
+//        System.out.println(uri + " response : *** NULL");
         return null;
     }
 	

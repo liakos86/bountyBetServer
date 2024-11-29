@@ -13,7 +13,9 @@ implements Serializable{
 	 */
 	String mongoId;
 	
-	String awardMonth;
+	int awardMonth;
+	
+	int awardYear;
 	
 	Double winningBalance;
 	
@@ -33,12 +35,22 @@ implements Serializable{
 		this.mongoId = mongoId;
 	}
 
-	public String getAwardMonth() {
+	public int getAwardMonth() {
 		return awardMonth;
 	}
 
-	public void setAwardMonth(String awardMonth) {
+	public void setAwardMonth(int awardMonth) {
 		this.awardMonth = awardMonth;
 	}
+
+	public int getAwardYear() {
+		return awardYear;
+	}
+
+	public void setAwardYear(int awardYear) {
+		this.awardYear = awardYear;
+	}
+	
+	
 	
 }

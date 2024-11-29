@@ -28,6 +28,9 @@ public interface MongoFields {
 	
 	String USER_BALANCE = "balance";
 
+	String USER_BALANCE_LAST_MONTH = "balanceLastMonth";
+
+//	String BET_BELONGING_MONTH_YEAR = "belongingMonthYear";
 	String BET_BELONGING_MONTH = "belongingMonth";
 
 	String BET_BELONGING_YEAR = "belongingYear";
@@ -38,9 +41,9 @@ public interface MongoFields {
 
 	String BET_AMOUNT = "betAmount";
 	
-	//String BET_PREDICTIONS_SETTLED = "betPredictionsSettled";
+//	String BET_PREDICTIONS_SETTLED = "betPredictionsSettled";
 
-	String BET_MONGO_USER_ID = "mongoUserId";
+	String MONGO_USER_ID = "mongoUserId";
 
 	String USER_OVERALL_WON_EVENTS = "overallWonEventsCount";
 	
@@ -59,7 +62,7 @@ public interface MongoFields {
 	String USER_MONTHLY_LOST_SLIPS = "monthlyLostSlipsCount";
 	
 
-	String AWARD_WINNER = "winner";
+	String AWARD_YEAR = "awardYear";
 	
 	String AWARD_MONTH = "awardMonth";
 	
