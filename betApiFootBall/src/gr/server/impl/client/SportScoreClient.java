@@ -93,7 +93,10 @@ public class SportScoreClient {
 		String url = SportScoreApiConstants.GET_LIVE_EVENTS_BY_SPORT_URL;
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 		
+		
 		Events events= new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
+		
+		
 		return events;
 	}
 	

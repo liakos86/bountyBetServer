@@ -28,6 +28,7 @@ public abstract class MongoTransactionalBlock {
 			session.abortTransaction();
 		}finally{
 			System.out.println(Thread.currentThread().getName() + " CLOSING " + session);
+			if (session.hasActiveTransaction())
 			session.close();
 		}
 		

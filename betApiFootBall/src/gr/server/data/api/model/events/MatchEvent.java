@@ -8,6 +8,7 @@ import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
+import gr.server.data.enums.MatchEventStatus;
 
 /**
  * "start_at":"2024-01-28 17:00:07","status":"inprogress","status_more":"62","time_details":{"prefix":"","initial":2700,"max":5400,"timestamp":1706465574,"extra":540},
@@ -393,7 +394,7 @@ public class MatchEvent {
 	}
 
 	public MatchOdds getMain_odds() {
-		if (DateUtils.isInNextMonth(this.start_at)) {
+		if (DateUtils.isNextMonth(this.start_at)) {
 			return null;
 		}
 		
@@ -462,10 +463,10 @@ public class MatchEvent {
 		return this.id.equals(other.id);
 	}
 
-//	@Override
-//	public int hashCode() {
-//		return this.id * 37;
-//	}
+	@Override
+	public int hashCode() {
+		return this.id * 37;
+	}
 
 //	@Override
 //	public int compareTo(MatchEvent other) {
@@ -502,15 +503,57 @@ public class MatchEvent {
 	}
 
 	public void deepCopy(MatchEvent incomingEvent) {
-		this.home_score = incomingEvent.home_score;
-		this.away_score = incomingEvent.away_score;
-		this.start_at = incomingEvent.start_at;
-		this.winner_code = incomingEvent.winner_code;
-		this.aggregated_winner_code = incomingEvent.aggregated_winner_code;
-		this.lasted_period = incomingEvent.lasted_period;
-		this.status_more = incomingEvent.status_more;
-		this.status = incomingEvent.status;
-		this.main_odds = incomingEvent.main_odds;
+		if (!this.id.equals(incomingEvent.id)) {
+			throw new RuntimeException("ERROR COPYING:" + this.id + " from " + incomingEvent.id);
+		}
+		
+		//System.out.println("COPYING " + this.home_team.getName());
+		if (incomingEvent.home_score != null) {			
+			this.home_score = incomingEvent.home_score;
+		}
+		
+		if (incomingEvent.away_score != null) {
+			this.away_score = incomingEvent.away_score;			
+		}
+		
+		if (incomingEvent.start_at != null) {
+			this.start_at = incomingEvent.start_at;
+		}
+		
+		if (incomingEvent.winner_code > 0 ) {
+			this.winner_code = incomingEvent.winner_code;
+		}
+		
+		if (incomingEvent.aggregated_winner_code != null) {
+			this.aggregated_winner_code = incomingEvent.aggregated_winner_code;
+		}
+		
+		if (incomingEvent.lasted_period != null) {
+			this.lasted_period = incomingEvent.lasted_period;
+		}
+		
+		if (incomingEvent.status_more != null) {
+			this.status_more = incomingEvent.status_more;
+		}
+		
+		if (incomingEvent.status != null) {
+			this.status = incomingEvent.status;
+		}
+		
+		if (MatchEventStatus.INPROGRESS.getStatusStr().equals(incomingEvent.status)) {
+			this.main_odds = null;
+		}else {
+			this.main_odds = incomingEvent.main_odds;
+		}
+		
+		if (incomingEvent.time_details != null) {
+			if (this.time_details == null) {
+				this.time_details = incomingEvent.time_details;
+			}else {
+				this.time_details.deepCopy(incomingEvent.time_details);
+			}
+		}
+		
 	}
 
 }

@@ -31,17 +31,30 @@ public class MockApiDataFetchHelper {
 //			if (FootballApiCache.PRIORITIES_OVERRIDDE.containsKey(league.getId())) {
 //				league.setPriority(FootballApiCache.PRIORITIES_OVERRIDDE.get(league.getId()));
 //			}
+			
+			
+			
+			
+			if (!FootballApiCache.SUPPORTED_SECTION_IDS.contains(league.getSection_id())) {
+				continue;
+			}
+			
 			FootballApiCache.ALL_LEAGUES.put(league.getId(), league);		
 		}
 
-		League zeroLeague = new League();
-		zeroLeague.setName("Other Matches");
-		FootballApiCache.ALL_LEAGUES.put(0, zeroLeague);		
+//		League zeroLeague = new League();
+//		zeroLeague.setName("Other Matches");
+//		zeroLeague.setId(0);
+//		FootballApiCache.ALL_LEAGUES.put(0, zeroLeague);		
 	}
 
 	public static void fetchSections() {
 		Sections sectionsFromFile = MockApiClient.getSectionsFromFile();
-		sectionsFromFile.getData().forEach(l -> FootballApiCache.ALL_SECTIONS.put(l.getId(), l));
+		sectionsFromFile.getData().forEach(l -> {
+		if(FootballApiCache.SUPPORTED_SECTION_IDS.contains(l.getId())) {
+			FootballApiCache.ALL_SECTIONS.put(l.getId(), l);
+		}
+		});
 	}
 	
 	public static Events fetchEvents(String filename) {

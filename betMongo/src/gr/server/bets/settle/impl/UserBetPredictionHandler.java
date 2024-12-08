@@ -19,7 +19,7 @@ public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnab
 
 	@Override
 	public boolean handle(Set<MatchEvent> toHandle) throws Exception {
-		System.out.println(Thread.currentThread().getName() +  " HANDLING "+ toHandle.size());
+//		System.out.println(Thread.currentThread().getName() +  " HANDLING "+ toHandle.size());
 		
 		if (toHandle.isEmpty()) {
 			return true;
@@ -37,7 +37,7 @@ public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnab
 	@Override
 	public void run() {
 		
-		System.out.println(Thread.currentThread().getName() + " WILL HANDLE " + batch);
+//		System.out.println(Thread.currentThread().getName() + " WILL HANDLE " + batch);
 		
 		Set<MatchEvent> batchObjects = new HashSet<>(batch);
 

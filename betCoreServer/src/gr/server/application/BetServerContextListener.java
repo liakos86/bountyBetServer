@@ -65,72 +65,54 @@ public class BetServerContextListener implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		
-//		RestApplication.connectActiveMq();
 		
 		RestApplication.connectFirebase();
 		
 		MockApiDataFetchHelper.fetchSections();//reducing calls
 		MockApiDataFetchHelper.fetchLeagues();//reducing calls
 
-//		Runnable fetchEventsTask = () -> { MockApiDataFetchHelper.fetchEventsIntoLeagues(); };
-		Runnable fetchEventsTask = () -> { ApiDataFetchHelper.fetchEventsIntoLeaguesAndExtractMatchEvents(); };
+		//events
+		ExecutorService fetchEventsService = Executors.newFixedThreadPool(1);
+
+
+		Runnable fetchEventsTask = () -> {
+			
+			fetchEventsService.submit(() -> {
+			ApiDataFetchHelper.fetchEventsIntoLeaguesAndExtractMatchEvents();
+			});
+			};
+			
+			
 		ScheduledExecutorService fetchEventsExecutor = Executors.newSingleThreadScheduledExecutor();
-		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 0, 30, TimeUnit.MINUTES);
+		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 0, 60*60, TimeUnit.SECONDS);
 		
-		Runnable fetchLiveEventsTask = () -> { ApiDataFetchHelper.fetchLiveEventsIntoLeagues(); };
+		
+		//live
+		
+		ExecutorService fetchLiveEventsService = Executors.newFixedThreadPool(1);
+
+		
+		Runnable fetchLiveEventsTask = () -> { 
+			fetchLiveEventsService.submit(() ->{
+				
+				try {
+			ApiDataFetchHelper.fetchLiveEventsIntoLeagues();
+				}catch(Exception e) {
+					e.printStackTrace();
+				}
+			});
+			};
+		
+		
 		ScheduledExecutorService fetchLiveEventsExecutor = Executors.newSingleThreadScheduledExecutor();
-		fetchLiveEventsExecutor.scheduleAtFixedRate(fetchLiveEventsTask, 1, 20, TimeUnit.MINUTES);
+		fetchLiveEventsExecutor.scheduleAtFixedRate(fetchLiveEventsTask, 10, 15*60, TimeUnit.SECONDS);
 		
-		Runnable fetchLeagueTablesTask = () -> { ApiDataFetchHelper.fetchLeagueStandings(); };
-		ScheduledExecutorService fetchLeagueTablesExecutor = Executors.newSingleThreadScheduledExecutor();
+//		Runnable fetchLeagueTablesTask = () -> { ApiDataFetchHelper.fetchLeagueStandings(); };
+//		ScheduledExecutorService fetchLeagueTablesExecutor = Executors.newSingleThreadScheduledExecutor();
 //		fetchLeagueTablesExecutor.schedule(fetchLeagueTablesTask, 20, TimeUnit.SECONDS);
 		
 		
-//		Runnable fetchPlayerStatsTask = () -> { ApiDataFetchHelper.fetchPlayerStatistics(); };
-//		ScheduledExecutorService fetchPlayerStatisticsExecutor = Executors.newSingleThreadScheduledExecutor();
-//		fetchPlayerStatisticsExecutor.schedule(fetchPlayerStatsTask, 40, TimeUnit.SECONDS);
 		
-		
-		//SportScoreWebSocketClient webSocketClient = initiateWebSocket();
-		
-		//Runnable keepWebSocketAliveTask = () -> { webSocketClient.sendMessage(SportScoreApiConstants.SOCKET_KEEP_ALIVE_MSG); };
-		//ScheduledExecutorService maintainWebSocketExecutorTask = Executors.newSingleThreadScheduledExecutor();
-		//maintainWebSocketExecutorTask.scheduleAtFixedRate(keepWebSocketAliveTask, 0, 10, TimeUnit.SECONDS);
-		
-//		MockApiDataFetchHelper mHelper = new MockApiDataFetchHelper();
-//		Runnable fetchLiveStatisticsTask = () -> { mHelper.updateLiveStats(); };
-//		ScheduledExecutorService updateStatsExecutor = Executors.newSingleThreadScheduledExecutor();
-//		updateStatsExecutor.scheduleAtFixedRate(fetchLiveStatisticsTask, 1, 100, TimeUnit.SECONDS);
-//		updateStatsExecutor.schedule(fetchLiveStatisticsTask, 1, TimeUnit.MINUTES);
-		
-		
-//		Runnable mockRedCardsTask = () -> { mHelper.mockRedCards(); };
-//		ScheduledExecutorService cExecutor = Executors.newSingleThreadScheduledExecutor();
-//		cExecutor.scheduleAtFixedRate(mockRedCardsTask, 2, 1, TimeUnit.MINUTES);
-		
-		
-//		Runnable mockRedCardsTask = () -> { RestApplication.sendMockFirebaseTopicMessage(); };
-//		ScheduledExecutorService cExecutor = Executors.newSingleThreadScheduledExecutor();
-//		cExecutor.scheduleAtFixedRate(mockRedCardsTask, 10, 20, TimeUnit.SECONDS);
-		
-
-//		Runnable settleBetsRunnable = () -> { try {
-//			new MongoClientHelperImpl().settleOpenBets();
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}};
-//		ScheduledExecutorService settleBetsRunnableTask = Executors.newScheduledThreadPool(2);
-//		settleBetsRunnableTask.scheduleAtFixedRate(settleBetsRunnable, 10, 5, TimeUnit.MINUTES);
-		
-//		Runnable settlePredsRunnable = () -> { try {
-//			new MongoClientHelperImpl().settlePredictions(FootballApiCache.FINISHED_EVENTS);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}};
-		
-//		ScheduledExecutorService settlePredsRunnableTask = Executors.newScheduledThreadPool(UserBetPredictionHandler.NUM_WORKERS);
-//		settlePredsRunnableTask.scheduleAtFixedRate(settlePredsRunnable, 10, 3, TimeUnit.MINUTES);
-//		
 		/** new preds **/
 		
 	
@@ -169,8 +151,6 @@ public class BetServerContextListener implements ServletContextListener {
 				 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
 				 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(CollectionNames.BETS, pendingOrPendingLostBetsFilter);
 				
-				 System.out.println("UNSETTLED BETS ARE: " + allUnsettledBetsSize);
-				 
 				long batchSize = (allUnsettledBetsSize / UserBetHandler.NUM_WORKERS) > 0 ?
 						allUnsettledBetsSize / UserBetHandler.NUM_WORKERS 
 						: allUnsettledBetsSize % UserBetHandler.NUM_WORKERS;
@@ -181,7 +161,7 @@ public class BetServerContextListener implements ServletContextListener {
 				for (Document bet : iterable) {
 					userBetsDocument.add(bet);
 					
-					if (userBetsDocument.size() == batchSize) {						
+					if (userBetsDocument.size() == batchSize) {
 						subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
 						userBetsDocument.clear();
 					}
@@ -198,8 +178,9 @@ public class BetServerContextListener implements ServletContextListener {
 			};
 		
 		ScheduledExecutorService settleBetsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
-		settleBetsRunnableOrchestratorTask.scheduleAtFixedRate(settleBetsRunnableOrchestrator, 6, 3, TimeUnit.MINUTES);
-		
+		settleBetsRunnableOrchestratorTask.scheduleAtFixedRate(settleBetsRunnableOrchestrator, 3, 3, TimeUnit.MINUTES);
+
+
 		
 		
 		/** close month winner **/

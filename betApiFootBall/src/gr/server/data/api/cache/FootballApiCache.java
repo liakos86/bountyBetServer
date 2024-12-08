@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import org.apache.activemq.util.LRUCache;
@@ -101,9 +102,11 @@ public class FootballApiCache {
 	/**
 	 * All the leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
 	 */
-	public static Map<Integer, LeagueWithData> ALL_LEAGUES_WITH_EVENTS = new HashMap<>();
+	public static Map<Integer, LeagueWithData> ALL_LEAGUES_WITH_EVENTS = new ConcurrentHashMap<>();
 
 	public static Map<Integer, League> ALL_LEAGUES = new HashMap<>();
+
+//	public static Map<Integer, User> LEADERBOARD = new HashMap<>();
 
 	public static Map<Integer, Team> ALL_TEAMS = new HashMap<>();
 	
@@ -112,17 +115,17 @@ public class FootballApiCache {
 	/**
 	 * All the seasons for all leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
 	 */
-	public static Map<Integer, List<Season>> SEASONS_PER_LEAGUE = new HashMap<>();
+	public static Map<Integer, List<Season>> SEASONS_PER_LEAGUE = new ConcurrentHashMap<Integer, List<Season>>();
 
 	/**
 	 * 
 	 */
-	public static Map<Integer, MatchEvent> ALL_EVENTS = new HashMap<>();
+	public static Map<Integer, MatchEvent> ALL_EVENTS = new ConcurrentHashMap<Integer, MatchEvent>();
 	
 	/**
 	 * 
 	 */
-	public static Map<Integer, MatchEvent> LIVE_EVENTS = new HashMap<>();
+	public static Map<Integer, MatchEvent> LIVE_EVENTS = new ConcurrentHashMap<Integer, MatchEvent>();
 	
 	public static Set<Integer> SUPPORTED_SECTION_IDS = new HashSet<>();
 	
@@ -159,6 +162,52 @@ public class FootballApiCache {
 		SUPPORTED_SECTION_IDS.add(30);
 		SUPPORTED_SECTION_IDS.add(31);
 		SUPPORTED_SECTION_IDS.add(32);
+		SUPPORTED_SECTION_IDS.add(33);//sweden
+		SUPPORTED_SECTION_IDS.add(34);//swiss
+		SUPPORTED_SECTION_IDS.add(35);//turk
+		SUPPORTED_SECTION_IDS.add(36);//uckra
+		SUPPORTED_SECTION_IDS.add(37);//urug
+		SUPPORTED_SECTION_IDS.add(38);//bosn
+		SUPPORTED_SECTION_IDS.add(40);//engl
+		SUPPORTED_SECTION_IDS.add(43);//alb
+		SUPPORTED_SECTION_IDS.add(44);//serbia
+		SUPPORTED_SECTION_IDS.add(46);//monten
+		SUPPORTED_SECTION_IDS.add(52);//south af
+		SUPPORTED_SECTION_IDS.add(55);//uae
+		SUPPORTED_SECTION_IDS.add(65);//austr
+		SUPPORTED_SECTION_IDS.add(67);//belar
+		SUPPORTED_SECTION_IDS.add(69);//belg
+		SUPPORTED_SECTION_IDS.add(71);//bulg
+		SUPPORTED_SECTION_IDS.add(75);//china
+		SUPPORTED_SECTION_IDS.add(77);//croa
+		SUPPORTED_SECTION_IDS.add(78);//cypr
+		SUPPORTED_SECTION_IDS.add(79);//denm
+		SUPPORTED_SECTION_IDS.add(81);//egypt
+		SUPPORTED_SECTION_IDS.add(85);//finl
+		SUPPORTED_SECTION_IDS.add(86);//france
+		SUPPORTED_SECTION_IDS.add(91);//greece
+		SUPPORTED_SECTION_IDS.add(94);//hung
+		SUPPORTED_SECTION_IDS.add(95);//iceland
+		SUPPORTED_SECTION_IDS.add(99);//ireland
+		SUPPORTED_SECTION_IDS.add(100);//israel
+		SUPPORTED_SECTION_IDS.add(101);//italy
+		SUPPORTED_SECTION_IDS.add(103);//japan
+		SUPPORTED_SECTION_IDS.add(108);//latvia
+		SUPPORTED_SECTION_IDS.add(111);//lith
+		SUPPORTED_SECTION_IDS.add(115);//mexico
+		SUPPORTED_SECTION_IDS.add(117);//scot
+		SUPPORTED_SECTION_IDS.add(118);//asia
+		SUPPORTED_SECTION_IDS.add(119);//world
+		SUPPORTED_SECTION_IDS.add(120);//world
+		SUPPORTED_SECTION_IDS.add(121);//world
+		SUPPORTED_SECTION_IDS.add(122);//world
+		SUPPORTED_SECTION_IDS.add(123);//world
+		SUPPORTED_SECTION_IDS.add(125);//world
+		SUPPORTED_SECTION_IDS.add(134);//noth mac
+		SUPPORTED_SECTION_IDS.add(135);//brazil
+		SUPPORTED_SECTION_IDS.add(379);//not cancelled ????
+		SUPPORTED_SECTION_IDS.add(487);//interna
+		
 		
 	}
 

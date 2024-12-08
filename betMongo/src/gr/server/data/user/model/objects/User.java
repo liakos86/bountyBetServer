@@ -2,9 +2,13 @@ package gr.server.data.user.model.objects;
 
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import gr.server.common.util.DateUtils;
 import gr.server.data.constants.SportScoreApiConstants;
 
 /**
@@ -48,16 +52,10 @@ implements Serializable{
 	String password;
 
 	/**
-	 * Each user has a balance, i.e. a virtual amount.
+	 * We store history dating back 12 months. Every user will have 12 records.
 	 */
-	Double balance;
-	
-	/**
-	 * Previous month balance in order to calculate award.
-	 */
-	Double balanceLastMonth;
-	
-//	List<UserMon> balances = new ArrayList<>();
+//	@JsonIgnore
+	List<UserMonthlyBalance> balances;
 	
 	
 	List<UserBet> userBets;
@@ -70,6 +68,7 @@ implements Serializable{
 	
 	int level;
 	
+	double balance;
 	/**
 	 * Number of won slips.
 	 */
@@ -115,11 +114,7 @@ implements Serializable{
 
 	public User(String mongoId) {
 		this.mongoId = mongoId;
-		this.balance = SportScoreApiConstants.STARTING_BALANCE;
-		this.monthlyLostEventsCount = 0;
-		this.monthlyLostSlipsCount = 0;
-		this.monthlyWonEventsCount = 0;
-		this.monthlyWonSlipsCount = 0;
+		
 		this.overallLostEventsCount = 0;
 		this.overallLostSlipsCount = 0;
 		this.overallWonEventsCount = 0;
@@ -127,14 +122,11 @@ implements Serializable{
 		this.userBets = new ArrayList<UserBet>();
 		this.userAwards = new ArrayList<UserAward>();
 		this.bounties = new ArrayList<UserBounty>();
+		this.balances = new ArrayList<>();
 	}
 	
 	public void init() {
-		this.balance = SportScoreApiConstants.STARTING_BALANCE;
-		this.monthlyLostEventsCount = 0;
-		this.monthlyLostSlipsCount = 0;
-		this.monthlyWonEventsCount = 0;
-		this.monthlyWonSlipsCount = 0;
+		
 		this.overallLostEventsCount = 0;
 		this.overallLostSlipsCount = 0;
 		this.overallWonEventsCount = 0;
@@ -176,37 +168,6 @@ implements Serializable{
 		this.overallLostEventsCount = overallLostEventsCount;
 	}
 
-	public Integer getMonthlyWonSlipsCount() {
-		return monthlyWonSlipsCount;
-	}
-
-	public void setMonthlyWonSlipsCount(Integer wonSlipsCount) {
-		this.monthlyWonSlipsCount = wonSlipsCount;
-	}
-
-	public Integer getMonthlyLostSlipsCount() {
-		return monthlyLostSlipsCount;
-	}
-
-	public void setMonthlyLostSlipsCount(Integer lostSlipsCount) {
-		this.monthlyLostSlipsCount = lostSlipsCount;
-	}
-
-	public Integer getMonthlyWonEventsCount() {
-		return monthlyWonEventsCount;
-	}
-
-	public void setMonthlyWonEventsCount(Integer wonEventsCount) {
-		this.monthlyWonEventsCount = wonEventsCount;
-	}
-
-	public Integer getMonthlyLostEventsCount() {
-		return monthlyLostEventsCount;
-	}
-
-	public void setMonthlyLostEventsCount(Integer lostEventsCount) {
-		this.monthlyLostEventsCount = lostEventsCount;
-	}
 	
 	public List<String> getUserAwardsIds() {
 		return userAwardsIds;
@@ -246,14 +207,6 @@ implements Serializable{
 
 	public void setUsername(String username) {
 		this.username = username;
-	}
-
-	public Double getBalance() {
-		return balance;
-	}
-
-	public void setBalance(Double balance) {
-		this.balance = balance;
 	}
 
 	public List<UserBounty> getBounties() {
@@ -303,15 +256,79 @@ implements Serializable{
 	public void setLevel(int level) {
 		this.level = level;
 	}
+	
+	
 
-	public Double getBalanceLastMonth() {
-		return balanceLastMonth;
+	public Integer getMonthlyWonSlipsCount() {
+		return monthlyWonSlipsCount;
 	}
 
-	public void setBalanceLastMonth(Double balanceLastMonth) {
-		this.balanceLastMonth = balanceLastMonth;
+	public void setMonthlyWonSlipsCount(Integer monthlyWonSlipsCount) {
+		this.monthlyWonSlipsCount = monthlyWonSlipsCount;
+	}
+
+	public Integer getMonthlyLostSlipsCount() {
+		return monthlyLostSlipsCount;
+	}
+
+	public void setMonthlyLostSlipsCount(Integer monthlyLostSlipsCount) {
+		this.monthlyLostSlipsCount = monthlyLostSlipsCount;
+	}
+
+	public Integer getMonthlyWonEventsCount() {
+		return monthlyWonEventsCount;
+	}
+
+	public void setMonthlyWonEventsCount(Integer monthlyWonEventsCount) {
+		this.monthlyWonEventsCount = monthlyWonEventsCount;
+	}
+
+	public Integer getMonthlyLostEventsCount() {
+		return monthlyLostEventsCount;
+	}
+
+	public void setMonthlyLostEventsCount(Integer monthlyLostEventsCount) {
+		this.monthlyLostEventsCount = monthlyLostEventsCount;
+	}
+
+	public List<UserMonthlyBalance> getBalances() {
+		return balances;
+	}
+
+	public void setBalances(List<UserMonthlyBalance> balances) {
+		this.balances = balances;
 	}
 	
 	
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public double getBalance() {
+		return currentMonthBalance();
+	}
+
+	public double currentMonthBalance() {
+		return monthBalanceOf(LocalDate.now().getMonthValue());
+	}
+
+	public double monthBalanceOf(Integer belongingMonth) {
+		if (1 > belongingMonth || 12 < belongingMonth) {
+			throw new RuntimeException("MONTH RANGE ERROR");
+		}
+		
+		List<UserMonthlyBalance> monthBalances = balances.stream().filter(b -> b.getMonth() == belongingMonth).collect(Collectors.toList());
+		if (monthBalances.size() != 1) {
+			throw new RuntimeException("MONTH RANGE COUNT ERROR");
+		}
+		
+		return monthBalances.get(0).getBalance();
+	}
 	
+	public UserMonthlyBalance currentBalanceObject() {
+		return  balances.stream().filter(b -> b.getMonth() == LocalDate.now().getMonthValue()).collect(Collectors.toList()).get(0);
+	}
+
+		
 }

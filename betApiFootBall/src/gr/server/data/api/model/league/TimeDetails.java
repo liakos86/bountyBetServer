@@ -68,5 +68,15 @@ public class TimeDetails {
 		}
 		return "tmst:" + currentPeriodStartTimestamp;
 	}
+	public void deepCopy(TimeDetails incoming) {
+		this.currentPeriodStartTimestamp = incoming.currentPeriodStartTimestamp;
+		this.extra = incoming.extra;
+		this.initial = incoming.initial;
+		this.injuryTime1 = incoming.injuryTime1;
+		this.injuryTime2 = incoming.injuryTime2;
+		this.max = incoming.max;
+		this.prefix = incoming.prefix;
+		this.timestamp = incoming.timestamp;	
+	}
 	
 }

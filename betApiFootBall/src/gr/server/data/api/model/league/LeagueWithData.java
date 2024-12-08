@@ -35,11 +35,31 @@ public class LeagueWithData implements Serializable{
 		this.leagueId = leagueId;
 	}
 
-
-
-
 	public List<MatchEvent> getMatchEvents() {
 		return matchEvents;
-	}	
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof LeagueWithData)) {
+			return false;
+		}
+		
+		LeagueWithData other = (LeagueWithData) obj;
+		if (this.leagueId == 0 || other.leagueId == 0) {
+			throw new RuntimeException("League with zero id: " + this.leagueId + " to " + other.leagueId);
+		}
+		
+		return this.leagueId == (other.leagueId);
+	}
+	
+	@Override
+	public int hashCode() {
+		if (leagueId > 0)
+		return 37 * leagueId ;
+		
+		
+		return 37 * matchEvents.size();
+	}
     
 }

@@ -24,11 +24,11 @@ public interface MongoFields {
 	/**
 	 * Used as foreign key for bets, awards, etc.
 	 */
-	String FOREIGN_KEY_USER_ID = "userId";
+//	String FOREIGN_KEY_USER_ID = "userId";
 	
 	String USER_BALANCE = "balance";
 
-	String USER_BALANCE_LAST_MONTH = "balanceLastMonth";
+//	String USER_BALANCE_LAST_MONTH = "balanceLastMonth";
 
 //	String BET_BELONGING_MONTH_YEAR = "belongingMonthYear";
 	String BET_BELONGING_MONTH = "belongingMonth";
@@ -65,6 +65,12 @@ public interface MongoFields {
 	String AWARD_YEAR = "awardYear";
 	
 	String AWARD_MONTH = "awardMonth";
+	
+	String AWARD_PLACEMENT = "awardPlacement";
+
+	String USER_BALANCE_MONTH = "month";
+	
+//	String USER_BALANCE_YEAR = "year";
 	
 	String AWARD_BALANCE = "winningBalance";
 

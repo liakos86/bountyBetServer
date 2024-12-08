@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -14,6 +13,8 @@ import java.util.Set;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import javax.print.Doc;
 
 import org.apache.log4j.Logger;
 import org.bson.Document;
@@ -31,12 +32,12 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Accumulators;
 import com.mongodb.client.model.Aggregates;
 import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Projections;
 import com.mongodb.client.model.UpdateManyModel;
 import com.mongodb.client.model.UpdateOneModel;
 import com.mongodb.client.model.Updates;
 import com.mongodb.client.model.WriteModel;
 
-import gr.server.common.CommonConstants;
 import gr.server.common.ServerConstants;
 import gr.server.common.StringConstants;
 import gr.server.common.util.DateUtils;
@@ -56,6 +57,7 @@ import gr.server.data.enums.UserLevel;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserAward;
 import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserMonthlyBalance;
 import gr.server.data.user.model.objects.UserPrediction;
 import gr.server.def.client.MongoClientHelper;
 import gr.server.logging.Mongo;
@@ -76,9 +78,7 @@ implements MongoClientHelper {
 			@Override
 			public void begin() throws Exception {
 				System.out.println("Create user Working in thread: " + Thread.currentThread().getName());
-				MongoClient client = MongoUtils.getMongoClient();
-				MongoCollection<Document> users = client.getDatabase(CollectionNames.BOUNTY_BET_DB)
-						.getCollection(CollectionNames.USERS);
+				MongoCollection<Document> users = MongoUtils.getMongoCollection(CollectionNames.USERS);
 
 				Document existingUserName = new Document(MongoFields.USERNAME, user.getUsername());
 				Document existingEmail = new Document(MongoFields.EMAIL, user.getEmail());
@@ -102,12 +102,22 @@ implements MongoClientHelper {
 				}
 
 				Document newUserDocument = MongoUtils.getNewUserDocument(user);
-				users.insertOne(newUserDocument);
+				users.insertOne(session, newUserDocument);
 
 				user.setMongoId(newUserDocument.getObjectId(MongoFields.MONGO_ID).toString());
 				user.init();
 				user.setUsername(newUserDocument.getString(MongoFields.USERNAME));
 				user.setEmail(newUserDocument.getString(MongoFields.EMAIL));
+				
+				
+				List<Document> monthDocuments = new ArrayList<>();
+				for (int i = 1; i < 13; i++) {
+					Document monthDocument = MongoUtils.getMonthlyBalanceDocument(user.getMongoId(), i);
+					monthDocuments.add(monthDocument);
+				}
+				MongoCollection<Document> userBalanceCol = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
+				userBalanceCol.insertMany(session, monthDocuments);
+				
 				// createdUser.setPassword(newUser.getString(Fields.PASSWORD));
 				// createdUser.setPosition(SyncHelper.userPosition(createdUser));//TODO later
 			}
@@ -163,8 +173,20 @@ implements MongoClientHelper {
 		User user = userFromMongoDocument(userFromMongo);
 		user.setUserBets(getBetsForUser(mongoId));
 		user.setUserAwards(getAwardsForUser(mongoId));
+		user.setBalances(getBalancesForUser(mongoId));
 		user.setBounties(new ArrayList<>());
 		user.setLevel(getUserLevel(user).getCode());
+
+		user.setPosition(userPosition(user));
+		
+		UserMonthlyBalance currentBalanceObject = user.currentBalanceObject();
+		
+		user.setBalance(currentBalanceObject.getBalance());
+		
+		user.setMonthlyLostEventsCount(currentBalanceObject.getMonthlyLostEventsCount());
+		user.setMonthlyWonEventsCount(currentBalanceObject.getMonthlyWonEventsCount());
+		user.setMonthlyLostSlipsCount(currentBalanceObject.getMonthlyLostSlipsCount());
+		user.setMonthlyWonSlipsCount(currentBalanceObject.getMonthlyWonSlipsCount());
 
 		return user;
 	}
@@ -197,6 +219,13 @@ implements MongoClientHelper {
 	@Override
 	public BetPlacementStatus placeBet(UserBet userBet) {
 		
+		userBet.setBetStatus(BetStatus.PENDING.getCode());
+		userBet.setBetPlaceMillis(System.currentTimeMillis());
+		
+		int currentMonth = LocalDate.now().getMonthValue();
+		userBet.setBelongingMonth(currentMonth);
+		userBet.setBelongingYear(LocalDate.now().getYear());
+		
 		if(userBet.getBetAmount()<=0 || insufficientFundsFor(userBet)) {
 			return BetPlacementStatus.FAILED_INSUFFICIENT_FUNDS;	
 		}
@@ -213,11 +242,7 @@ implements MongoClientHelper {
 			@Override
 			public void begin() throws Exception {
 				
-				userBet.setBetStatus(BetStatus.PENDING);
-				userBet.setBetPlaceMillis(System.currentTimeMillis());
 				
-				userBet.setBelongingMonth(LocalDate.now().getMonthValue());//TODO what if some events span to another month?
-				userBet.setBelongingYear(LocalDate.now().getYear());
 
 				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
 				Document newBet = MongoUtils.getBetDocument(userBet);
@@ -237,10 +262,11 @@ implements MongoClientHelper {
 				
 				userBet.setMongoId(newBetMongoId);
 				
-				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-				Bson filter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
+				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
+				Bson filterUser = Filters.eq(MongoFields.MONGO_USER_ID, userBet.getMongoUserId());
+				Bson filterMonth = Filters.eq(MongoFields.USER_BALANCE_MONTH, currentMonth);
 				Bson increaseBalanceDocument = Updates.inc(MongoFields.USER_BALANCE, (-1 * userBet.getBetAmount()));
-				usersCollection.findOneAndUpdate(session, filter, increaseBalanceDocument);
+				usersCollection.findOneAndUpdate(session, Filters.and(filterUser, filterMonth), increaseBalanceDocument);
 				
 			}
 
@@ -284,13 +310,16 @@ implements MongoClientHelper {
 	}
 
 	private boolean predictionsSpanNextMonth(List<UserPrediction> predictions) {
+		
+		List<String> startTimes = new ArrayList<>();
 		for (UserPrediction userPrediction : predictions) {
-			
 			MatchEvent matchEvent = FootballApiCache.ALL_EVENTS.get(userPrediction.getEventId());
-			if (DateUtils.isInNextMonth(matchEvent.getStart_at())) {
-				System.out.println("**********************MATCH IN NEXT MONTH");
-				return true;
-			}
+			startTimes.add(matchEvent.getStart_at());
+		}
+		
+		if (DateUtils.gamesExistInNextMonth(startTimes)) {
+//			System.out.println("**********************MATCH IN NEXT MONTH");
+			return true;
 		}
 		
 		return false;
@@ -298,24 +327,53 @@ implements MongoClientHelper {
 
 	private boolean insufficientFundsFor(UserBet userBet) {
 		User user = new MongoClientHelperImpl().getUser(userBet.getMongoUserId());
-		return user.getBalance() - userBet.getBetAmount() < 0;
+		return user.monthBalanceOf(userBet.getBelongingMonth()) - userBet.getBetAmount() < 0;
 	}
 
-	public List<User> retrieveLeaderBoard() {
-		Document sortField = new Document(MongoFields.USER_BALANCE, -1);
-		Executor<User> usersExecutor = new Executor<User>(new TypeToken<User>() {});
-		List<User> users = MongoUtils.getSorted(CollectionNames.USERS, usersExecutor, new Document(), sortField, 20);
-		users.forEach(u -> 
-		{ 
-			//TODO this will be costly - consider mongo fields
-			u.setBounties(new ArrayList<>());
-			u.setUserAwards(new ArrayList<>());
-			u.setLevel(getUserLevel(u).getCode());
+	public Map<Integer, List<User>> retrieveLeaderBoard() {
+		Map<Integer, List<User>> allLeaders = new HashMap<>();
 		
+		List<User> currentLeaders = new ArrayList<>();
+		
+		Document sortField = new Document(MongoFields.USER_BALANCE, -1);
+		
+		Document findField = new Document(MongoFields.USER_BALANCE_MONTH, DateUtils.getMonthAsInt(0));
+				
+		MongoCollection<Document> balancesCol = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
+		FindIterable<Document> find = balancesCol.find(findField).limit(20).sort(sortField);
+		 
+		for(Document doc : find)
+		{ 
+			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID));
+			if (user==null) {
+				continue;
+			}
+			currentLeaders.add(user);
 		}
 			
-		);
-		return users;
+		allLeaders.put(0, currentLeaders);
+		
+		
+		List<User> awardWinners = new ArrayList<>();
+		MongoCollection<Document> awardsCol = MongoUtils.getMongoCollection(CollectionNames.AWARDS);
+		Bson sortFieldAward = new Document(MongoFields.AWARD_PLACEMENT, -1);
+		FindIterable<Document> awardsDocs = awardsCol.find().limit(12).sort(sortFieldAward);
+		
+		for(Document doc : awardsDocs)
+		{ 
+			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID));
+			if (user==null) {
+				continue;
+			}
+			awardWinners.add(user);
+		}
+			
+		allLeaders.put(1, awardWinners);
+		
+		
+		
+		
+		return allLeaders;
 	}
 
 	/**
@@ -328,24 +386,12 @@ implements MongoClientHelper {
 	@Override
 	public boolean settlePredictions(Set<MatchEvent> toSettle) throws Exception {
 
-//		List<MatchEvent> todaysMatches = FootballApiCache.ALL_EVENTS.values().stream().collect(Collectors.toList());// ApiDataFetchHelper.eventsForDate(new Date());
-//		
-//		Set<MatchEvent> todaysFinishedEvents = todaysMatches.stream().filter(
-//							match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus()))
-//					.collect(Collectors.toSet());
-//		
-//		
-//		Set<Integer> settledEventsIds = getTodaySettledEvents();
-		
+
 		
         List<UpdateManyModel<Document>> bulkOperations = new ArrayList<>();
 
-		
-//		int settled = 0;
 		for (MatchEvent event : toSettle) {
-//			if (settledEventsIds.contains(event.getId())) {
-//				continue;
-//			}
+
 			
 			int winningPrediction = event.getWinner_code();
 			if ( winningPrediction == 0) {
@@ -412,7 +458,7 @@ implements MongoClientHelper {
 		}.execute();
 				
 
-		System.out.println(Thread.currentThread().getName() +  " SETTLED PREDICTIONS");
+//		System.out.println(Thread.currentThread().getName() +  " SETTLED PREDICTIONS");
 		
 		return updated;
 	}
@@ -450,23 +496,26 @@ implements MongoClientHelper {
 	@Override
     public boolean settleOpenBets(Set<Document> pendingBets) throws Exception {
 		
-		System.out.println("BET SETTLING " + pendingBets.size());
+//		System.out.println("BET SETTLING " + pendingBets.size());
 			
 		Map<String, List<WriteModel<Document>>> updatesPerCollection = new HashMap<>();
 		updatesPerCollection.put(CollectionNames.BET_PREDICTIONS, new ArrayList<>());
 		updatesPerCollection.put(CollectionNames.USER_BETS, new ArrayList<>());
 		updatesPerCollection.put(CollectionNames.USERS, new ArrayList<>());
+		updatesPerCollection.put(CollectionNames.USER_MONTHLY_BALANCE, new ArrayList<>());
 		
 		
 		MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
 		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
 		MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+		MongoCollection<Document> balancesCollection = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
 		for (Document betDocument : pendingBets) {
-			Map<String, List<WriteModel<Document>>> settleOpenBet = settleOpenBet(betDocument, usersCollection, predictionsCollection, betsCollection);
+			Map<String, List<WriteModel<Document>>> settleOpenBet = settleOpenBet(betDocument,  predictionsCollection);
 			
 			updatesPerCollection.get(CollectionNames.BET_PREDICTIONS).addAll( settleOpenBet.get(CollectionNames.BET_PREDICTIONS));
 			updatesPerCollection.get(CollectionNames.USER_BETS).addAll( settleOpenBet.get(CollectionNames.USER_BETS));
 			updatesPerCollection.get(CollectionNames.USERS).addAll( settleOpenBet.get(CollectionNames.USERS));
+			updatesPerCollection.get(CollectionNames.USER_MONTHLY_BALANCE).addAll( settleOpenBet.get(CollectionNames.USER_MONTHLY_BALANCE));
 		
 		}
 
@@ -475,6 +524,8 @@ implements MongoClientHelper {
 			
 			@Override
 			public void begin() throws Exception {	
+				
+				//TODO :: remove if ???????
 				
 				if (! updatesPerCollection.get(CollectionNames.BET_PREDICTIONS).isEmpty()) {					
 					BulkWriteResult bulkWrite = predictionsCollection.bulkWrite(session, updatesPerCollection.get(CollectionNames.BET_PREDICTIONS));
@@ -491,11 +542,16 @@ implements MongoClientHelper {
 					logger.info(Thread.currentThread().getName() + " bet user upd: " + bulkWrite);
 				}
 				
+				if (! updatesPerCollection.get(CollectionNames.USER_MONTHLY_BALANCE).isEmpty()) {					
+					BulkWriteResult bulkWrite = balancesCollection.bulkWrite(session, updatesPerCollection.get(CollectionNames.USER_MONTHLY_BALANCE));
+					logger.info(Thread.currentThread().getName() + " balaces user upd: " + bulkWrite);
+				}
+				
 			}
 		}.execute();
 				
 
-		System.out.println(Thread.currentThread().getName() +  " SETTLED BETS " + updated);
+//		System.out.println(Thread.currentThread().getName() +  " SETTLED BETS " + updated);
 		
 		return updated;
 				
@@ -582,62 +638,24 @@ implements MongoClientHelper {
 	}
 	
 	 boolean closeMonthlyBalances(ClientSession session) {
-		 SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.MONTH_YEAR_DATE_FORMAT);
-			String[] currentMonthYear = simpleDateFormat.format(new Date()).split(StringConstants.MINUS);
-			int month = Integer.parseInt(currentMonthYear[1]);
-			int year = Integer.parseInt(currentMonthYear[0]);
-			
-			int previousMonth = month == 1 ? 12 : month - 1;
-			int previousYear = month == 1 ? year - 1 : year;
-		 
-		 Bson openBetsOfPreviousMonthFilter = Filters.eq(MongoFields.BET_BELONGING_MONTH, previousMonth);
-			Bson openBetsOfPreviousYearFilter = Filters.eq(MongoFields.BET_BELONGING_YEAR, previousYear);
-			Bson openBetsOfPreviousMonthYearFilter = Filters.ne(MongoFields.BET_STATUS, BetStatus.PENDING.getCode());
-			
-			Bson combinedFilter = Filters.and(openBetsOfPreviousMonthFilter, openBetsOfPreviousMonthYearFilter, openBetsOfPreviousYearFilter);
-			long openBets = fetchFilterSize(CollectionNames.USER_BETS, combinedFilter);
-			
-			if(openBets > 0) {
-				System.out.println("Open bets still in place for " + currentMonthYear);
-				return false;
-			}
-			
-			MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-			usersCollection.updateMany(
-					session,
-	                new Document(),  // No filter, apply to all documents
-	             
-	                	new Document("$set", new Document(MongoFields.USER_BALANCE_LAST_MONTH, "$balance"))
-	                
-	            );
-			
-			usersCollection.updateMany(
-					session,
-	                new Document(),  // No filter, apply to all documents
-	                Updates.set(MongoFields.USER_BALANCE_LAST_MONTH, "$" + MongoFields.USER_BALANCE)  // Set columnB to the value of columnA
-	            );
-			
-			Document validDoc = new Document(MongoFields.USER_BALANCE, ServerConstants.STARTING_BALANCE);
-			Document pushDocument = new Document("$set", validDoc);
-			
-			usersCollection.updateMany(
-					session,
-	                new Document(), 
-	                pushDocument  
-	            );
-			
+			int nextMonth = DateUtils.getMonthAsInt(1);
+
+			Bson nextMonthDoc = Filters.eq(MongoFields.USER_BALANCE_MONTH, nextMonth);
+			MongoCollection<Document> userBalanceCollection = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
+			userBalanceCollection.updateMany(session, nextMonthDoc, // filter, apply to all documents
+
+					new Document("$set", new Document(MongoFields.USER_BALANCE, ServerConstants.STARTING_BALANCE))
+
+			);
+
 			return true;
 		
 	}
 	 
 	 boolean commonChecksToCloseMonth(ClientSession session) {
-			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.MONTH_YEAR_DATE_FORMAT);
-			String[] currentMonthYear = simpleDateFormat.format(new Date()).split(StringConstants.MINUS);
-			int month = Integer.parseInt(currentMonthYear[1]);
-			int year = Integer.parseInt(currentMonthYear[0]);
-			
-			int previousMonth = month == 1 ? 12 : month - 1;
-			int previousYear = month == 1 ? year - 1 : year;
+		 	int previousMonth = DateUtils.getMonthAsInt(-1);
+			int previousYear = DateUtils.getYearOfPreviousMonthAsInt();
+
 			
 			Bson monthlyWinnerMonthFilter = Filters.eq(MongoFields.AWARD_MONTH, previousMonth);
 			Bson monthlyWinnerYearFilter = Filters.eq(MongoFields.AWARD_YEAR, previousYear);
@@ -646,19 +664,19 @@ implements MongoClientHelper {
 			long existingWinner = fetchFilterSize(CollectionNames.AWARDS, combined);
 
 			if(existingWinner>0) {
-				System.out.println("Monthly winner exists");
+//				System.out.println("Monthly winner exists");
 				return false;
 			}
 			
 			Bson openBetsOfPreviousMonthFilter = Filters.eq(MongoFields.BET_BELONGING_MONTH, previousMonth);
 			Bson openBetsOfPreviousYearFilter = Filters.eq(MongoFields.BET_BELONGING_YEAR, previousYear);
-			Bson openBetsOfPreviousMonthYearFilter = Filters.ne(MongoFields.BET_STATUS, BetStatus.PENDING.getCode());
+			Bson openBetsOfPreviousMonthYearFilter = Filters.eq(MongoFields.BET_STATUS, BetStatus.PENDING.getCode());
 			
 			Bson combinedFilter = Filters.and(openBetsOfPreviousMonthFilter, openBetsOfPreviousMonthYearFilter, openBetsOfPreviousYearFilter);
 			long openBets = fetchFilterSize(CollectionNames.USER_BETS, combinedFilter);
 			
 			if(openBets > 0) {
-				System.out.println("Open bets still in place for " + currentMonthYear);
+				System.out.println("Open bets still in place for " + previousMonth);
 				return false;
 			}
 		
@@ -672,18 +690,13 @@ implements MongoClientHelper {
 	 * 2. There must not exist a monthly winner record for the previous month.
 	 */
 	boolean computeMonthWinner(ClientSession session) {
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.MONTH_YEAR_DATE_FORMAT);
-		String[] currentMonthYear = simpleDateFormat.format(new Date()).split(StringConstants.MINUS);
-		int month = Integer.parseInt(currentMonthYear[1]);
-		int year = Integer.parseInt(currentMonthYear[0]);
-		
-		int previousMonth = month == 1 ? 12 : month - 1;
-		int previousYear = month == 1 ? year - 1 : year;
-		
-		
+		int previousMonthInt = DateUtils.getMonthAsInt(-1);
+		int yearOfPreviousMonthInt = DateUtils.getYearOfPreviousMonthAsInt();
+			
 		//at this point all user balances have been reset.
 		
-		MongoCollection<Document> userCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
+//		MongoCollection<Document> userCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
+		MongoCollection<Document> userBalanceCollection = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
 		
 //		Bson kostasg = Filters.eq(MongoFields.EMAIL , "liakos86@gmail.com");
 //		FindIterable<Document> find = userCollection.find(kostasg);
@@ -697,52 +710,54 @@ implements MongoClientHelper {
 		
 		
 	//	List<Bson> pipeline = Arrays.asList(
-        Bson max =        Aggregates.group(null, Accumulators.max("maxBalance", "$"+MongoFields.USER_BALANCE_LAST_MONTH));
+        Bson max =   Aggregates.group(null, Accumulators.max("maxBalance", "$"+MongoFields.USER_BALANCE));
+        Bson month =   Filters.eq(MongoFields.USER_BALANCE_MONTH, previousMonthInt);
+        
+        //Bson and = Filters.and(max, month);
       //      );
 
         // Execute the aggregation
-        AggregateIterable<Document> result = userCollection.aggregate(Arrays.asList(max));
+//        AggregateIterable<Document> result = userBalanceCollection.aggregate(Arrays.asList(and));
+
+        AggregateIterable<Document> result = userBalanceCollection.aggregate(Arrays.asList(
+                Aggregates.match(month), // Filter for documents where columnB = 1
+                max, // Get max value of columnA
+                Aggregates.project(Projections.fields(Projections.include("maxBalance"))) // Optional projection
+            ));
+        
+       
 
         
+		Double maxValue = - 1d;
+		
+		// Retrieve and print the result
+		for (Document doc : result) {
+			// Get the maximum value
+			maxValue = doc.getDouble("maxBalance");
+			System.out.println("Max value: " + maxValue);
+		}
+		
+		Bson balanceFilter = Filters.gt(MongoFields.USER_BALANCE, maxValue - 0.2);
+		Bson combinedBalanceMonthYear = Filters.and(balanceFilter, month);
 
-        
-				Double maxValue = - 1d;
+		Bson matchMaxBalance = Aggregates.match(combinedBalanceMonthYear);
+		List<Bson> asList = Arrays.asList(matchMaxBalance);
+		
+		AggregateIterable<Document> aggregate = userBalanceCollection.aggregate(asList);
 				
-				// Retrieve and print the result
-				for (Document doc : result) {
-					// Get the maximum value
-					maxValue = doc.getDouble("maxBalance");
-					System.out.println("Max value: " + maxValue);
-				}
-				
-				Bson matchMaxBalance = Aggregates.match(Filters.gt(MongoFields.USER_BALANCE_LAST_MONTH, maxValue - 0.2));
-				List<Bson> asList = Arrays.asList(matchMaxBalance);
-				
-				 AggregateIterable<Document> aggregate = userCollection.aggregate(asList);
-				
-				
-//				Bson usersMaxBalanceFilter = Filters.eq(MongoFields.USER_BALANCE_LAST_MONTH, maxValue);
-				
-//				Double tolerance = 1d;
-//				Bson lessThanMaxBalanceFilter =Filters.gte(MongoFields.USER_BALANCE_LAST_MONTH, maxValue - tolerance);
-//				Bson greaterThanMaxBalanceFilter =Filters.lte(MongoFields.USER_BALANCE_LAST_MONTH, maxValue + tolerance);
-				
-				// Step 2: Find all records that have the maximum value
-				//FindIterable<Document> recordsWithMaxValue = userCollection.find(session, Filters.and(lessThanMaxBalanceFilter, greaterThanMaxBalanceFilter));
-				
-				List<Document> awardsDocs  = new ArrayList<>();
-				for (Document record : aggregate) {
-					Document awardDocument = MongoUtils.getAwardDocument(record.getObjectId(MongoFields.MONGO_ID).toString(), maxValue, previousMonth, previousYear);
-					System.out.println(record.toJson());
-					awardsDocs.add(awardDocument);
-				}    
-				
-				
-				MongoCollection<Document> awardsCollection = MongoUtils.getMongoCollection(CollectionNames.AWARDS);
+		List<Document> awardsDocs  = new ArrayList<>();
+		for (Document record : aggregate) {
+			Document awardDocument = MongoUtils.getAwardDocument(record.getString(MongoFields.MONGO_USER_ID).toString(), maxValue, previousMonthInt, yearOfPreviousMonthInt);
+//			System.out.println(record.toJson());
+			awardsDocs.add(awardDocument);
+		}    
+		
+		
+		MongoCollection<Document> awardsCollection = MongoUtils.getMongoCollection(CollectionNames.AWARDS);
 
-				awardsCollection.insertMany(session, awardsDocs);
-				
-				return true;	
+		awardsCollection.insertMany(session, awardsDocs);
+		
+		return true;	
 	}
 	
 	@Override
@@ -754,13 +769,13 @@ implements MongoClientHelper {
 				
 				boolean commonChecksToCloseMonth = commonChecksToCloseMonth(session);
 				if (!commonChecksToCloseMonth) {
-					System.out.println("COMMON CHECKS FOR MONTH FAILED");
+//					System.out.println("COMMON CHECKS FOR MONTH FAILED");
 					return;
 				}
 				
 				boolean closeMonthlyBalances = closeMonthlyBalances(session);
 				if (!closeMonthlyBalances) {
-					System.out.println("COULD NOT CLOSE MONTHLY BALANCE");
+//					System.out.println("COULD NOT CLOSE MONTHLY BALANCE");
 					return;
 				}
 				
@@ -771,16 +786,31 @@ implements MongoClientHelper {
 		
 	}
 	
+	/**
+	 * Collects the documents to update per collection.
+	 * No update executed here.
+	 * 
+	 * @param betDocument
+	 * @param usersCollection
+	 * @param predictionsCollection
+	 * @param betsCollection
+	 * @return
+	 * @throws Exception
+	 */
 	Map<String, List<WriteModel<Document>>> settleOpenBet( Document betDocument, 
-			MongoCollection<Document> usersCollection, MongoCollection<Document> predictionsCollection, MongoCollection<Document> betsCollection) throws Exception {
+			MongoCollection<Document> predictionsCollection) throws Exception {
 		
 		
 		Map<String, List<WriteModel<Document>>> updatesPerCollection = new HashMap<>();
 		updatesPerCollection.put(CollectionNames.BET_PREDICTIONS, new ArrayList<>());
 		updatesPerCollection.put(CollectionNames.USER_BETS, new ArrayList<>());
 		updatesPerCollection.put(CollectionNames.USERS, new ArrayList<>());
+		updatesPerCollection.put(CollectionNames.USER_MONTHLY_BALANCE, new ArrayList<>());
 		
 		String betId = betDocument.getObjectId(MongoFields.MONGO_ID).toString();
+		String userId = betDocument.getString(MongoFields.MONGO_USER_ID).toString();
+		int betMonth = betDocument.getInteger(MongoFields.BET_BELONGING_MONTH);
+		
 		Bson betPredictionsByBetIdFilter = Filters.eq(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, betId);
 		FindIterable<Document> betPredictions = predictionsCollection.find(betPredictionsByBetIdFilter);
 		
@@ -800,13 +830,19 @@ implements MongoClientHelper {
 		
 		List<Bson> betUpdateDocuments = new ArrayList<>();//what to update in UserBet collection
 		List<Bson> userUpdateDocuments = new ArrayList<>();//what to update in User collection
+		List<Bson> userBalanceUpdateDocuments = new ArrayList<>();//what to update in User month balance collection
 		List<Bson> predictionsToBeSettledDocuments = new ArrayList<>();//what to update in Predictions collection
+		
+		
+		
 
 		for (Document predictionDocument : betPredictions) {
 			allPredictions = allPredictions + 1;
+			
 			int predictionStatus = predictionDocument.getInteger(MongoFields.USER_BET_PREDICTION_STATUS);
 			int predictionSettleStatus = predictionDocument.getInteger(MongoFields.USER_BET_PREDICTION_SETTLE_STATUS);
-			if (PredictionSettleStatus.SETTLED.getCode() == predictionSettleStatus) {
+			
+			if (PredictionSettleStatus.SETTLED.getCode() == predictionSettleStatus) {// this means it has been handled on a previous run
 				if (PredictionStatus.MISSED.getCode() == predictionStatus) {
 					alreadySettledLostPredictionsCount = alreadySettledLostPredictionsCount + 1;
 				}else if (PredictionStatus.CORRECT.getCode() == predictionStatus){
@@ -823,6 +859,8 @@ implements MongoClientHelper {
 			}
 		}
 		
+		System.out.println("BET ID " + betId);
+		
 		BetStatus betStatus = BetStatus.fromCode(betDocument.getInteger(MongoFields.BET_STATUS, 0));
 		if (pendingPredictionsCount > 0 ) {
 			
@@ -835,45 +873,56 @@ implements MongoClientHelper {
 			
 			if (lostPredictionsCount == 0 && alreadySettledLostPredictionsCount == 0 
 					&& wonPredictionsCount > 0 && (wonPredictionsCount+alreadySettledWonPredictionsCount == allPredictions)) {
-				Bson updateUserBalanceDocument = Updates.inc(MongoFields.USER_BALANCE, betDocument.getDouble(MongoFields.USER_BET_POSSIBLE_WINNINGS));
-				userUpdateDocuments.add(updateUserBalanceDocument);
 				
-				Bson increaseWonOverallBetsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_SLIPS, 1);
+				// WE HAVE A WINNER!!!
+				
+				Bson incUserBalanceDocument = Updates.inc(MongoFields.USER_BALANCE, betDocument.getDouble(MongoFields.USER_BET_POSSIBLE_WINNINGS));
 				Bson increaseWonMonthlyBetsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_SLIPS, 1);
-				userUpdateDocuments.add(increaseWonMonthlyBetsDocument);
+			     
+								
+				userBalanceUpdateDocuments.add(incUserBalanceDocument);
+				userBalanceUpdateDocuments.add(increaseWonMonthlyBetsDocument);
+
+				Bson increaseWonOverallBetsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_SLIPS, 1);
 				userUpdateDocuments.add(increaseWonOverallBetsDocument);
 				
 				Bson setWonFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_FAVOURABLY.getCode());
 				betUpdateDocuments.add(setWonFilter);
+				
 			}else if (lostPredictionsCount > 0 || alreadySettledLostPredictionsCount > 0){
 
 				Bson increaseLostOverallBetsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_SLIPS, 1);
-				Bson increaseLostMonthlyBetsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_SLIPS, 1);
-				userUpdateDocuments.add(increaseLostMonthlyBetsDocument);
 				userUpdateDocuments.add(increaseLostOverallBetsDocument);
+
+				Bson increaseLostMonthlyBetsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_SLIPS, 1);
+				userBalanceUpdateDocuments.add(increaseLostMonthlyBetsDocument);
 
 				Bson setWonFilter = Updates.set(MongoFields.BET_STATUS, BetStatus.SETTLED_UNFAVOURABLY.getCode());
 				betUpdateDocuments.add(setWonFilter);
+				
 			}else {
 				throw new RuntimeException();
 			}
 		
 		}
 
-		Bson increaseWonOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
-		Bson increaseWonMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
-		
-		userUpdateDocuments.add(increaseWonMonthlyPredictionsDocument);
-		userUpdateDocuments.add(increaseWonOverallPredictionsDocument);
-		
-		
-		Bson increaseLostOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
-		Bson increaseLostMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
-		
-		userUpdateDocuments.add(increaseLostMonthlyPredictionsDocument);
-		userUpdateDocuments.add(increaseLostOverallPredictionsDocument);
+		if (wonPredictionsCount > 0) {
+			Bson increaseWonOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
+			userUpdateDocuments.add(increaseWonOverallPredictionsDocument);
 
-		Bson betByIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betId));
+			Bson increaseWonMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
+			userBalanceUpdateDocuments.add(increaseWonMonthlyPredictionsDocument);
+		}
+
+		
+		if (lostPredictionsCount > 0) {
+			Bson increaseLostOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
+			Bson increaseLostMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
+			
+			userUpdateDocuments.add(increaseLostMonthlyPredictionsDocument);
+			userUpdateDocuments.add(increaseLostOverallPredictionsDocument);
+		}
+
 		
 		
 		if (!predictionsToBeSettledDocuments.isEmpty()) {
@@ -887,33 +936,49 @@ implements MongoClientHelper {
 			
 			updatesPerCollection.get(CollectionNames.BET_PREDICTIONS).add(updateSettledPredictionsDocuments);
 			
-			//bulkOperations.add(updateSettledPredictionsDocuments);
 		}
 		
 		if (!betUpdateDocuments.isEmpty()) {
-			System.out.println("SETTLING BET "+ betId + " with " + betUpdateDocuments.size());
-			//betsCollection.updateOne(session, betByIdFilter, Updates.combine(betUpdateDocuments));
+			Bson betByIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betId));
 			
-			UpdateOneModel<Document> updatebetDocument = new UpdateOneModel<>(
-					betByIdFilter,
-					Updates.combine(betUpdateDocuments)
-			        );
 			
-			updatesPerCollection.get(CollectionNames.USER_BETS).add(updatebetDocument);
+			System.out.println("*************** SETTLING BET "+ betId + " with " + betUpdateDocuments.size());
 			
-//			bulkOperations.add(updatebetDocument);
+			
+				
+				UpdateOneModel<Document> updatebetDocument = new UpdateOneModel<>(
+						betByIdFilter,
+						Updates.combine(betUpdateDocuments)
+						);
+				
+				updatesPerCollection.get(CollectionNames.USER_BETS).add(updatebetDocument);
+			
+			
+			
+		}
+		
+		if (!userBalanceUpdateDocuments.isEmpty()) {
+			Bson monthBalanceFilter = Filters.eq(MongoFields.USER_BALANCE_MONTH, betMonth);
+			Bson userIdBalanceFilter = Filters.eq(MongoFields.MONGO_USER_ID, userId);
+			Bson monthAndUserIdFilter = Filters.and(monthBalanceFilter, userIdBalanceFilter);// all balance updates will use this.
+			
+			UpdateOneModel<Document> updateOneBalanceModel = new UpdateOneModel<>(
+                    monthAndUserIdFilter,  // Filter for document where name is "John"
+                    Updates.combine(userBalanceUpdateDocuments)
+                );
+			
+			updatesPerCollection.get(CollectionNames.USER_MONTHLY_BALANCE).add(updateOneBalanceModel);
+			
 		}
 		
 		if (lostPredictionsCount > 0 || wonPredictionsCount > 0) {
 			Bson userIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(betDocument.getString(MongoFields.MONGO_USER_ID)));
-			//usersCollection.updateOne(session, userIdFilter, Updates.combine(userUpdateDocuments));
 			
 			UpdateOneModel<Document> updateUserDocument = new UpdateOneModel<>(
 					userIdFilter,
 					Updates.combine(userUpdateDocuments)
 			        );
 			
-//			bulkOperations.add(updateUserDocument);
 			updatesPerCollection.get(CollectionNames.USERS).add(updateUserDocument);
 			
 		}
@@ -949,12 +1014,7 @@ implements MongoClientHelper {
 
 		finalUser.setMongoId(mongoId);
 		finalUser.setPassword(null);
-		finalUser.setPosition(userPosition(finalUser));
 		
-		finalUser.setMonthlyLostEventsCount(userFromMongo.getInteger(MongoFields.USER_MONTHLY_LOST_EVENTS));
-		finalUser.setMonthlyWonEventsCount(userFromMongo.getInteger(MongoFields.USER_MONTHLY_WON_EVENTS));
-		finalUser.setMonthlyLostSlipsCount(userFromMongo.getInteger(MongoFields.USER_MONTHLY_LOST_SLIPS));
-		finalUser.setMonthlyWonSlipsCount(userFromMongo.getInteger(MongoFields.USER_MONTHLY_WON_SLIPS));
 
 		finalUser.setOverallLostEventsCount(userFromMongo.getInteger(MongoFields.USER_OVERALL_LOST_EVENTS));
 		finalUser.setOverallWonEventsCount(userFromMongo.getInteger(MongoFields.USER_OVERALL_WON_EVENTS));
@@ -974,7 +1034,7 @@ implements MongoClientHelper {
 	 */
 	List<UserBet> getBetsForUser(String userId) {
 		Bson userBetsFilter = Filters.eq(MongoFields.MONGO_USER_ID, userId);
-		int threeDaysBefore = 10 * 1000 * 24 * 3600;//TODO: change accord
+		int threeDaysBefore = 10 * 1000 * 24 * 60 * 60;//TODO: change accord
 		Bson betMillisFilter = Filters.gt(MongoFields.USER_BET_PLACEMENT_MILLIS, System.currentTimeMillis() - threeDaysBefore);
 		Bson userBetsUpToThreeDaysBeforeFilter = Filters.and(userBetsFilter, betMillisFilter);
 		
@@ -1033,16 +1093,24 @@ implements MongoClientHelper {
 	
 
 	List<UserAward> getAwardsForUser(String userId) {
-		Bson userAwardsFilter = Filters.eq(MongoFields.FOREIGN_KEY_USER_ID, userId);
+		Bson userAwardsFilter = Filters.eq(MongoFields.MONGO_USER_ID, userId);
 		Executor<UserAward> awardsExecutor = new Executor<UserAward>(new TypeToken<UserAward>() {});
-		List<UserAward> awards = MongoUtils.get(CollectionNames.EVENTS, userAwardsFilter, awardsExecutor);
+		List<UserAward> awards = MongoUtils.get(CollectionNames.AWARDS, userAwardsFilter, awardsExecutor);
 		return awards;
 	}
 	
+	List<UserMonthlyBalance> getBalancesForUser(String userId) {
+		Bson userBalancesFilter = Filters.eq(MongoFields.MONGO_USER_ID, userId);
+		Executor<UserMonthlyBalance> balancesExecutor = new Executor<UserMonthlyBalance>(new TypeToken<UserMonthlyBalance>() {});
+		List<UserMonthlyBalance> balances = MongoUtils.get(CollectionNames.USER_MONTHLY_BALANCE, userBalancesFilter, balancesExecutor);
+		return balances;
+	}
+	
 	long userPosition(User user){
-		Bson greaterFromUserBalance = Filters.gt(MongoFields.USER_BALANCE, user.getBalance());
-		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-		return usersCollection.countDocuments(greaterFromUserBalance) + 1;
+		Bson greaterFromUserBalance = Filters.gt(MongoFields.USER_BALANCE, user.currentMonthBalance());
+		Bson thisMonthBalance = Filters.eq(MongoFields.USER_BALANCE_MONTH, DateUtils.getMonthAsInt(0));
+		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USER_MONTHLY_BALANCE);
+		return usersCollection.countDocuments(Filters.and(thisMonthBalance, greaterFromUserBalance)) + 1;
 	}
 	
 	UserLevel getUserLevel(User user) {

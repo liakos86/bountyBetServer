@@ -72,6 +72,7 @@ public class LiveUpdatesHelper {
 		}
 		
 		if (liveEvent.getAway_score() == null) {
+			liveEvent.setAway_score(new Score());
 			return false;
 		}
 		
@@ -86,6 +87,14 @@ public class LiveUpdatesHelper {
 	}
 
 	private void produceTopicMessage(MatchEvent liveEvent, ChangeEvent event) {
+		if (liveEvent.getHome_score() == null) {
+			liveEvent.setHome_score(new Score());
+		}
+		
+		if (liveEvent.getAway_score() == null) {
+			liveEvent.setAway_score(new Score());
+		}
+		
 		Map<String, String> msg = new HashMap<>();
 		MatchEvent cached = FootballApiCache.ALL_EVENTS.get(liveEvent.getId());
 		msg.put("eventId", liveEvent.getId().toString());
@@ -106,6 +115,7 @@ public class LiveUpdatesHelper {
 		}
 		
 		if (liveEvent.getHome_score() == null) {
+			liveEvent.setHome_score(new Score());
 			return false;
 		}
 

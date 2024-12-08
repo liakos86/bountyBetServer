@@ -3,6 +3,7 @@ package gr.server.data.constants;
 public class CollectionNames {
 	
 	public static final String USERS = "user";
+	public static final String USER_MONTHLY_BALANCE = "userMonthlyBalance";
 	public static final String EVENTS = "event";
 	public static final String USER_BETS = "userBet";
 	public static final String BET_PREDICTIONS = "betPrediction";

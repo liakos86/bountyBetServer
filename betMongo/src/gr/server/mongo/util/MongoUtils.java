@@ -25,6 +25,7 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import gr.server.common.ServerConstants;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.Team;
@@ -111,11 +112,23 @@ public class MongoUtils {
 	public static Document getBetDocument(UserBet userBet) {
 		return new Document(MongoFields.MONGO_USER_ID, userBet.getMongoUserId())
 				.append(MongoFields.BET_AMOUNT, userBet.getBetAmount())
-				.append(MongoFields.BET_STATUS, userBet.getBetStatus().getCode())
+				.append(MongoFields.BET_STATUS, userBet.getBetStatus())
 				.append(MongoFields.BET_BELONGING_MONTH, userBet.getBelongingMonth())
 				.append(MongoFields.BET_BELONGING_YEAR, userBet.getBelongingYear())
 				.append(MongoFields.USER_BET_PLACEMENT_MILLIS, userBet.getBetPlaceMillis())
 				.append(MongoFields.USER_BET_POSSIBLE_WINNINGS, userBet.getPossibleEarnings())
+				;
+	}
+	
+	public static Document getMonthlyBalanceDocument(String mongoUserId, int month) {
+		return new Document(MongoFields.MONGO_USER_ID, mongoUserId)
+				.append(MongoFields.USER_BALANCE_MONTH, month)
+				.append(MongoFields.USER_BALANCE, ServerConstants.STARTING_BALANCE)
+
+				.append(MongoFields.USER_MONTHLY_LOST_EVENTS, 0)
+				 .append(MongoFields.USER_MONTHLY_WON_EVENTS, 0)
+				 .append(MongoFields.USER_MONTHLY_LOST_SLIPS, 0)
+				 .append(MongoFields.USER_MONTHLY_WON_SLIPS, 0)
 				;
 	}
 
@@ -125,19 +138,11 @@ public class MongoUtils {
 				 .append(MongoFields.PASSWORD, user.getPassword())
 				 .append(MongoFields.VALIDATED, false)
 				 
-				 .append(MongoFields.USER_MONTHLY_LOST_EVENTS, 0)
-				 .append(MongoFields.USER_MONTHLY_WON_EVENTS, 0)
-				 .append(MongoFields.USER_MONTHLY_LOST_SLIPS, 0)
-				 .append(MongoFields.USER_MONTHLY_WON_SLIPS, 0)
-				 
+				 			 
 				 .append(MongoFields.USER_OVERALL_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_WON_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_LOST_SLIPS, 0)
-				 .append(MongoFields.USER_OVERALL_WON_SLIPS, 0)
-				 
-		 .append(MongoFields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE)
-		 .append(MongoFields.USER_BALANCE_LAST_MONTH, 0)
-		 .append(MongoFields.USER_AWARDS, new BasicDBList());
+				 .append(MongoFields.USER_OVERALL_WON_SLIPS, 0);
 	}
 	
 	public static Document getTeamDocument(Team team) {
@@ -155,6 +160,7 @@ public class MongoUtils {
 		 return new Document(MongoFields.MONGO_USER_ID, userId)
 					 .append(MongoFields.AWARD_MONTH, month)
 					 .append(MongoFields.AWARD_YEAR, year)
+					 .append(MongoFields.AWARD_PLACEMENT, System.currentTimeMillis())
 					 .append(MongoFields.AWARD_BALANCE, balance);
 	}
 	
@@ -183,14 +189,6 @@ public class MongoUtils {
 	public static void updateMongoField(ClientSession session, String collection, Bson findFilter, Bson updateFilter) {
 		MongoCollection<Document> usersCollection = getMongoCollection(collection);
 		usersCollection.findOneAndUpdate(session, findFilter, updateFilter);
-	}
-
-	public static void updateUserAwards(ClientSession startSession, User monthWinner, ObjectId awardId) {
-		Document userFilter = new Document(MongoFields.FOREIGN_KEY_USER_ID, monthWinner.getMongoId());
-		Document newAwardDocument = new Document(MongoFields.USER_AWARDS_IDS, awardId.toString());
-		Document pushDocument = new Document("$push", newAwardDocument);
-		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);
-		usersCollection.findOneAndUpdate(startSession, userFilter, pushDocument);
 	}
 
 	public static void restoreUserBalance(ClientSession startSession) {

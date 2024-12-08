@@ -31,7 +31,7 @@ public class UserBet implements Serializable{
 
 	Integer belongingYear;
 	
-	BetStatus betStatus;
+	int betStatus;
 	
 	boolean predictionsSettled = false;
 	
@@ -82,11 +82,11 @@ public class UserBet implements Serializable{
 	}
 
 
-	public BetStatus getBetStatus() {
+	public int getBetStatus() {
 		return betStatus;
 	}
 
-	public void setBetStatus(BetStatus betStatus) {
+	public void setBetStatus(int betStatus) {
 		this.betStatus = betStatus;
 	}
 	
