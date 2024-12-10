@@ -40,7 +40,8 @@ public interface MongoClientHelper {
 	 * @param id the user id
 	 * @return
 	 */
-	User getUser(String id);
+	User getUser(String id, boolean includeBets, boolean includeAwards, boolean includeBalances,
+			boolean includeBounties);
 
 	/**
 	 * Retrieves a user via login.

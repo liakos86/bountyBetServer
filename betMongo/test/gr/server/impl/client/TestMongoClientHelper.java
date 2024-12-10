@@ -76,6 +76,12 @@ public class TestMongoClientHelper {
 	public void clear() {
 		FootballApiCache.ALL_EVENTS.clear();
 	}
+	
+	
+	@Test
+	public static void leaders() {
+		new MongoClientHelperImpl().retrieveLeaderBoard();
+	}
 
 	
 //	/**
@@ -576,7 +582,7 @@ public class TestMongoClientHelper {
 		userBet.setPredictions(preds);
 		mHelper.placeBet(userBet);
 
-		user = mHelper.getUser(user.getMongoId());
+		user = mHelper.getUser(user.getMongoId(), true, true, true, true);
 
 		Double newBalance = 970d;
 		
@@ -611,7 +617,7 @@ public class TestMongoClientHelper {
 		
 		Assert.assertTrue(settled);
 
-		user = mHelper.getUser(user.getMongoId());
+		user = mHelper.getUser(user.getMongoId(), true, true, true, true);
 		mHelper.deleteUser(user.getMongoId());
 
 		Assert.assertEquals(new Integer(0), user.getOverallLostEventsCount());
@@ -830,7 +836,7 @@ public class TestMongoClientHelper {
 		user.setPassword("pass");
 		user.setEmail(System.currentTimeMillis() + "test@test.gr");
 		user = mHelper.createUser(user);
-		return mHelper.getUser(user.getMongoId());
+		return mHelper.getUser(user.getMongoId(), true, true, true, true);
 	}
 
 	MatchEvent createEvent(Integer eventId, MatchEventStatus status) {

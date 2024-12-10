@@ -11,10 +11,12 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.apache.activemq.util.LRUCache;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import gr.server.data.api.cache.FootballApiCache;
+//import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
@@ -231,30 +233,30 @@ public class SportScoreClient {
 	}
 	
 	
-	public void updateLiveStats() {
-		Set<MatchEvent> liveEvents = FootballApiCache.ALL_EVENTS.values().stream().filter(
-				m -> MatchEventStatus.INPROGRESS.getStatusStr().equals(m.getStatus()))
-		.collect(Collectors.toSet());
-		
-		try {
-		
-			for (MatchEvent matchEvent : liveEvents) {
-				MatchEventIncidents incidents = getIncidents(matchEvent.getId());
-				MatchEventStatistics statistics = getStatistics(matchEvent.getId());
-				MatchEventIncidentsWithStatistics matchEventIncidentsWithStatistics = new MatchEventIncidentsWithStatistics();
-				matchEventIncidentsWithStatistics.setEventId(matchEvent.getId());
-				matchEventIncidentsWithStatistics.setMatchEventIncidents(incidents);
-				matchEventIncidentsWithStatistics.setMatchEventStatistics(statistics);
-				
-				FootballApiCache.ALL_MATCH_STATS.put(matchEvent.getId(), matchEventIncidentsWithStatistics);
-			}
-			
-//			logger.log(Level.INFO, "LIVE INCIDENTS:" + incidents.getData().size());
-//			logger.log(Level.INFO, "LIVE STATS:" + statistics.getData().size());
-		
-		}catch(Exception e) {
-//			logger.log(Level.ERROR, "ERROR LIVE INCIDENTS:" + incidents.getData().size());
-		}	
-	}
-	
+//	void updateLiveStats(Set<MatchEvent> liveEvents, LRUCache<Integer, MatchEventIncidentsWithStatistics> stats) {
+//		Set<MatchEvent> liveEvents = FootballApiCache.ALL_EVENTS.values().stream().filter(
+//				m -> MatchEventStatus.INPROGRESS.getStatusStr().equals(m.getStatus()))
+//		.collect(Collectors.toSet());
+//		
+//		try {
+//		
+//			for (MatchEvent matchEvent : liveEvents) {
+//				MatchEventIncidents incidents = getIncidents(matchEvent.getId());
+//				MatchEventStatistics statistics = getStatistics(matchEvent.getId());
+//				MatchEventIncidentsWithStatistics matchEventIncidentsWithStatistics = new MatchEventIncidentsWithStatistics();
+//				matchEventIncidentsWithStatistics.setEventId(matchEvent.getId());
+//				matchEventIncidentsWithStatistics.setMatchEventIncidents(incidents);
+//				matchEventIncidentsWithStatistics.setMatchEventStatistics(statistics);
+//				
+//				FootballApiCache.ALL_MATCH_STATS.put(matchEvent.getId(), matchEventIncidentsWithStatistics);
+//			}
+//			
+////			logger.log(Level.INFO, "LIVE INCIDENTS:" + incidents.getData().size());
+////			logger.log(Level.INFO, "LIVE STATS:" + statistics.getData().size());
+//		
+//		}catch(Exception e) {
+////			logger.log(Level.ERROR, "ERROR LIVE INCIDENTS:" + incidents.getData().size());
+//		}	
+//	}
+//	
 }

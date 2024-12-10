@@ -5,6 +5,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -32,6 +33,7 @@ import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.global.helper.ApiDataFetchHelper;
 import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
+import gr.server.data.user.model.objects.User;
 import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.MongoClientHelperImpl;
 import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
@@ -146,11 +148,12 @@ public class BetServerContextListener implements ServletContextListener {
 		Runnable settleBetsRunnableOrchestrator = () -> { 
 			
 			try {
-				
+				System.out.println("************BETS");
 				 MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
 				 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
 				 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(CollectionNames.BETS, pendingOrPendingLostBetsFilter);
 				
+				 System.out.println("************BETS " + allUnsettledBetsSize);
 				long batchSize = (allUnsettledBetsSize / UserBetHandler.NUM_WORKERS) > 0 ?
 						allUnsettledBetsSize / UserBetHandler.NUM_WORKERS 
 						: allUnsettledBetsSize % UserBetHandler.NUM_WORKERS;
@@ -162,6 +165,7 @@ public class BetServerContextListener implements ServletContextListener {
 					userBetsDocument.add(bet);
 					
 					if (userBetsDocument.size() == batchSize) {
+						System.out.println("****NEW BATCH SUBMIT " + batchSize);
 						subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
 						userBetsDocument.clear();
 					}
@@ -197,6 +201,31 @@ public class BetServerContextListener implements ServletContextListener {
 		
 		ScheduledExecutorService closeMonthBalancesRunnableTask = Executors.newScheduledThreadPool(1);
 		closeMonthBalancesRunnableTask.scheduleAtFixedRate(closeMonthBalancesRunnable, 0, 3, TimeUnit.MINUTES);
+		
+		
+		//leader board
+		ExecutorService fetchLeadersService = Executors.newFixedThreadPool(1);
+
+
+		Runnable fetchLeadersTask = () -> {
+			try {
+			fetchLeadersService.submit(() -> {
+				Map<Integer, List<User>> retrieveLeaderBoard = new MongoClientHelperImpl().retrieveLeaderBoard();
+				FootballApiCache.LEADERS.clear();
+				FootballApiCache.LEADERS.put(0, retrieveLeaderBoard.get(0));
+				FootballApiCache.LEADERS.put(1, retrieveLeaderBoard.get(1));
+			});
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		};
+			
+			
+		ScheduledExecutorService fetchLeadersExecutor = Executors.newSingleThreadScheduledExecutor();
+		fetchLeadersExecutor.scheduleAtFixedRate(fetchLeadersTask, 60, 5*60, TimeUnit.SECONDS);
+			
+		
 		
 	
 		

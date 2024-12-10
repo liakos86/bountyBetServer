@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import gr.server.data.api.cache.FootballApiCache;
+//import gr.server.data.api.cache.FootballApiCache;
 
 /**
  * League can be a nation one, a continental one or even a world one:
@@ -165,10 +165,10 @@ public class League implements Serializable{
 
 	public int getPriority() {
 		//if (FootballApiCache.PRIORITIES_OVERRIDDE.containsKey(getId())) {
-			return (FootballApiCache.PRIORITIES_OVERRIDDE.get(getId()));
+//			return (FootballApiCache.PRIORITIES_OVERRIDDE.get(getId()));
 		//}
 		
-//		return priority;
+		return priority;
 	}
 
 	public void setPriority(int priority) {

@@ -177,7 +177,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeaderBoard")
 	public Response getLeaderBoard() {
-		return Response.ok(new Gson().toJson(new MongoClientHelperImpl().retrieveLeaderBoard())).build();
+		return Response.ok(new Gson().toJson(FootballApiCache.LEADERS)).build();
 	}
 
 	@Override
@@ -185,7 +185,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("getEventStatistics/{id}")
 	public Response getEventStatistics(@PathParam("id") Integer id) {
-		return Response.ok(FootballApiCache.ALL_MATCH_STATS.getOrDefault(id, new MatchEventIncidentsWithStatistics())).build();
+		return Response.ok(new Gson().toJson(FootballApiCache.ALL_MATCH_STATS.getOrDefault(id, new MatchEventIncidentsWithStatistics()))).build();
 	}
 
 //	@Override
@@ -201,7 +201,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	 * @return
 	 */
 	User getUserFromMongoId(String mongoId) {
-		User user = new MongoClientHelperImpl().getUser(mongoId);
+		User user = new MongoClientHelperImpl().getUser(mongoId, true, true, true, true);
 
 		return user;
 	}

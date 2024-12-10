@@ -160,7 +160,8 @@ implements MongoClientHelper {
 	}
 
 	@Override
-	public User getUser(String mongoId) {
+	public User getUser(String mongoId, boolean includeBets, boolean includeAwards, boolean includeBalances,
+			boolean includeBounties) {
 		MongoCollection<Document> users = MongoUtils.getMongoCollection(CollectionNames.USERS);
 		Bson userMongoIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(mongoId));
 		FindIterable<Document> usersFromMongo = users.find(userMongoIdFilter);
@@ -171,22 +172,33 @@ implements MongoClientHelper {
 		}
 
 		User user = userFromMongoDocument(userFromMongo);
+		
+		if (includeBets)
 		user.setUserBets(getBetsForUser(mongoId));
+		
+		if (includeAwards)
 		user.setUserAwards(getAwardsForUser(mongoId));
-		user.setBalances(getBalancesForUser(mongoId));
+		
+		if (includeBalances) {
+			user.setBalances(getBalancesForUser(mongoId));
+			UserMonthlyBalance currentBalanceObject = user.currentBalanceObject();
+			user.setBalance(currentBalanceObject.getBalance());
+			
+			user.setMonthlyLostEventsCount(currentBalanceObject.getMonthlyLostEventsCount());
+			user.setMonthlyWonEventsCount(currentBalanceObject.getMonthlyWonEventsCount());
+			user.setMonthlyLostSlipsCount(currentBalanceObject.getMonthlyLostSlipsCount());
+			user.setMonthlyWonSlipsCount(currentBalanceObject.getMonthlyWonSlipsCount());
+			user.setPosition(userPosition(user));
+		}
+		
+		if(includeBounties)
 		user.setBounties(new ArrayList<>());
+		
+		if (includeAwards && includeBounties)
 		user.setLevel(getUserLevel(user).getCode());
 
-		user.setPosition(userPosition(user));
 		
-		UserMonthlyBalance currentBalanceObject = user.currentBalanceObject();
 		
-		user.setBalance(currentBalanceObject.getBalance());
-		
-		user.setMonthlyLostEventsCount(currentBalanceObject.getMonthlyLostEventsCount());
-		user.setMonthlyWonEventsCount(currentBalanceObject.getMonthlyWonEventsCount());
-		user.setMonthlyLostSlipsCount(currentBalanceObject.getMonthlyLostSlipsCount());
-		user.setMonthlyWonSlipsCount(currentBalanceObject.getMonthlyWonSlipsCount());
 
 		return user;
 	}
@@ -326,7 +338,7 @@ implements MongoClientHelper {
 	}
 
 	private boolean insufficientFundsFor(UserBet userBet) {
-		User user = new MongoClientHelperImpl().getUser(userBet.getMongoUserId());
+		User user = new MongoClientHelperImpl().getUser(userBet.getMongoUserId(), false, false, true, false);
 		return user.monthBalanceOf(userBet.getBelongingMonth()) - userBet.getBetAmount() < 0;
 	}
 
@@ -344,7 +356,7 @@ implements MongoClientHelper {
 		 
 		for(Document doc : find)
 		{ 
-			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID));
+			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID), false, false, true, false);
 			if (user==null) {
 				continue;
 			}
@@ -361,17 +373,27 @@ implements MongoClientHelper {
 		
 		for(Document doc : awardsDocs)
 		{ 
-			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID));
+			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID), false, true, false, false);
 			if (user==null) {
 				continue;
 			}
+			
+			Integer awardMonth = doc.getInteger(MongoFields.AWARD_MONTH);
+			Integer awardYear  = doc.getInteger(MongoFields.AWARD_YEAR);
+			for (UserAward award : new ArrayList<>(user.getUserAwards())) {
+				if (!awardMonth.equals(award.getAwardMonth()) || !awardYear.equals(awardYear)) {
+					user.getUserAwards().remove(award);
+				}
+			}
+			
+			if(user.getUserAwards().size()!=1) {
+				throw new RuntimeException("awards calc error");
+			}
+			
 			awardWinners.add(user);
 		}
 			
 		allLeaders.put(1, awardWinners);
-		
-		
-		
 		
 		return allLeaders;
 	}
@@ -496,7 +518,7 @@ implements MongoClientHelper {
 	@Override
     public boolean settleOpenBets(Set<Document> pendingBets) throws Exception {
 		
-//		System.out.println("BET SETTLING " + pendingBets.size());
+		System.out.println("BET SETTLING " + pendingBets.size());
 			
 		Map<String, List<WriteModel<Document>>> updatesPerCollection = new HashMap<>();
 		updatesPerCollection.put(CollectionNames.BET_PREDICTIONS, new ArrayList<>());
@@ -551,7 +573,7 @@ implements MongoClientHelper {
 		}.execute();
 				
 
-//		System.out.println(Thread.currentThread().getName() +  " SETTLED BETS " + updated);
+		System.out.println(Thread.currentThread().getName() +  " SETTLED BETS " + updated);
 		
 		return updated;
 				

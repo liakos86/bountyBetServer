@@ -3,9 +3,7 @@ package gr.server.data.api.model.events;
 import java.util.Map;
 
 import gr.server.common.util.DateUtils;
-import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.enums.ChangeEvent;
-import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.api.model.league.TimeDetails;
 import gr.server.data.enums.MatchEventStatus;
@@ -495,8 +493,7 @@ public class MatchEvent {
 
 	@Override
 	public String toString() {		
-		League league = FootballApiCache.ALL_LEAGUES.get(this.league_id);
-		return "Match id:" + this.id + ", status: " + this.status + ", league:" + (league!=null ? league.getName() : league_id) + 
+		return  "League" +this.league_id+ "Match id:" + this.id + ", status: " + this.status + 
 				" home:" + this.home_team + " away:" + this.away_team +
 				" homescore:" +this.home_score + "awayscore:" + this.away_score +
 				"odds: " + this.main_odds;

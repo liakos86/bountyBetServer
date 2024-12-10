@@ -22,11 +22,6 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-		<dependency>
-			<artifactId>betCoreCommon</artifactId>
-			<groupId>gr.betServer</groupId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
