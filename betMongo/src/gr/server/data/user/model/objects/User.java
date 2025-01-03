@@ -3,13 +3,9 @@ package gr.server.data.user.model.objects;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import gr.server.common.util.DateUtils;
-import gr.server.data.constants.SportScoreApiConstants;
 
 /**
  * User of the application.
@@ -328,6 +324,11 @@ implements Serializable{
 	
 	public UserMonthlyBalance currentBalanceObject() {
 		return  balances.stream().filter(b -> b.getMonth() == LocalDate.now().getMonthValue()).collect(Collectors.toList()).get(0);
+	}
+	
+	@Override
+	public String toString() {
+		return "USERNAME " + this.username + " EMAIL " + this.email + " VALID " + this.validated;
 	}
 
 		

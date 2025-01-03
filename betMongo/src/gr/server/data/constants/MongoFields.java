@@ -19,7 +19,7 @@ public interface MongoFields {
 	
 	String VALIDATED = "validated";
 	
-	//String ID = "id";
+	String ID = "id";
 	
 	/**
 	 * Used as foreign key for bets, awards, etc.
@@ -84,6 +84,8 @@ public interface MongoFields {
 	
 	String EVENT_ID = "eventId";
 
+//	String SECTION_ID = "id";
+
 	String USER_BET_PREDICTION_STATUS = "predictionStatus";
 	
 	String USER_BET_PREDICTION_SETTLE_STATUS = "predictionSettleStatus";
@@ -102,7 +104,7 @@ public interface MongoFields {
 
 	String USER_BET_PREDICTION_AWAY_TEAM_ID = "awayTeamId";
 	
-	String USER_BET_POSSIBLE_WINNINGS = "possibleWinnings";
+//	String USER_BET_POSSIBLE_WINNINGS = "possibleWinnings";
 	
 	String SETTLED_EVENT_BELONGING_MONTH = "eventBelongingMonth";
 	String SETTLED_EVENT_BELONGING_DAY = "eventBelongingDay";

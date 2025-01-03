@@ -16,7 +16,10 @@ public enum BetStatus implements Serializable {
 	SETTLED_UNFAVOURABLY(3, "Lost"),
 	
 	@SerializedName("4")
-	PENDING_LOST(4, "Lost");
+	PENDING_LOST(4, "Lost"),
+
+	@SerializedName("5")
+	SETTLED_WITHDRAWN(5, "Withdrawn");
 	
 	private static final long serialVersionUID = 1L;
 	private String statusString;

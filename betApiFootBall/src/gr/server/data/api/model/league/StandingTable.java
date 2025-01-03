@@ -1,11 +1,11 @@
 package gr.server.data.api.model.league;
 
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
-import gr.server.data.api.model.events.Player;
-import gr.server.data.api.model.events.PlayerStatistics;
+import gr.server.data.api.model.events.PlayerSeasonStatistic;
 
 public class StandingTable {
 	
@@ -22,9 +22,9 @@ public class StandingTable {
 	Map<String, String> away_keys; 
 	
 	List<StandingRow> standings_rows;
-	
+		
 	//added by me
-	Map<Player, PlayerStatistics> season_player_statistics = new HashMap<>();
+	Set<PlayerSeasonStatistic> season_player_statistics = new HashSet<>();
 
 	public int getId() {
 		return id;
@@ -82,7 +82,7 @@ public class StandingTable {
 		this.away_keys = away_keys;
 	}
 
-	public Map<Player, PlayerStatistics> getSeason_player_statistics() {
+	public Set<PlayerSeasonStatistic> getSeason_player_statistics() {
 		return season_player_statistics;
 	}
 	

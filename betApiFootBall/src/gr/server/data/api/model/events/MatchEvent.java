@@ -15,10 +15,6 @@ import gr.server.data.enums.MatchEventStatus;
  *
  */
 public class MatchEvent {
-//implements Comparable<MatchEvent> {
-
-//	MatchEventIncidents incidents = new MatchEventIncidents();
-//	MatchEventStatistics statistics = new MatchEventStatistics();
 
 	int changeEvent = ChangeEvent.NONE.getChangeCode();
 
@@ -37,17 +33,17 @@ public class MatchEvent {
 
 	String start_at;// 2022-09-05 00:00:00
 	
-	//TODO: a match can start with delay. we need a field with actual start.
 	
 	String status;
 	String status_more;
 
+	/**
+	 *  a match can start with delay. this field holds the actual start.
+	 */
 	TimeDetails time_details;
+	
 	Object time_live; // can be string or int. e.g. 54 or 'Halftime'.
 
-//	Integer home_team_id;
-//	Integer away_team_id;
-	
 	Team home_team;
 	Team away_team;
 	Integer priority;
@@ -404,22 +400,6 @@ public class MatchEvent {
 		this.main_odds = main_odds;
 	}
 
-//	public Challenge getChallenge() {
-//		return challenge;
-//	}
-//
-//	public void setChallenge(Challenge challenge) {
-//		this.challenge = challenge;
-//	}
-
-//	public Season getSeason() {
-//		return season;
-//	}
-//
-//	public void setSeason(Season season) {
-//		this.season = season;
-//	}
-
 	public Object getTime_live() {
 		return time_live;
 	}
@@ -428,14 +408,6 @@ public class MatchEvent {
 		this.time_live = time_live;
 	}
 
-//	public MatchEventIncidents getIncidents() {
-//		return incidents;
-//	}
-//
-//	public void setIncidents(MatchEventIncidents incidents) {
-//		this.incidents = incidents;
-//	}
-
 	public int getChangeEvent() {
 		return changeEvent;
 	}
@@ -443,14 +415,6 @@ public class MatchEvent {
 	public void setChangeEvent(int changeEvent) {
 		this.changeEvent = changeEvent;
 	}
-	
-//	public MatchEventStatistics getStatistics() {
-//		return statistics;
-//	}
-//
-//	public void setStatistics(MatchEventStatistics statistics) {
-//		this.statistics = statistics;
-//	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -466,34 +430,9 @@ public class MatchEvent {
 		return this.id * 37;
 	}
 
-//	@Override
-//	public int compareTo(MatchEvent other) {
-//
-//		if (this.time_live != null && other.time_live == null) {
-//			return 1;
-//		}
-//
-//		if (this.time_live == null && other.time_live != null) {
-//			return -1;
-//		}
-//
-//		if (this.time_live == null && other.time_live == null) {
-//			SimpleDateFormat matchTimeFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-//			try {
-//				Date thisDate = matchTimeFormat.parse(this.start_at);
-//				Date otherDate = matchTimeFormat.parse(other.start_at);
-//				return (int) (thisDate.getTime() - otherDate.getTime());
-//			} catch (ParseException e) {
-//				return -1;
-//			}
-//		}
-//
-//		return 0;
-//	}
-
 	@Override
 	public String toString() {		
-		return  "League" +this.league_id+ "Match id:" + this.id + ", status: " + this.status + 
+		return  "League" +this.league_id+ "Match id:" + this.id + ", status: " + this.status + ", status_more: " + this.status_more + 
 				" home:" + this.home_team + " away:" + this.away_team +
 				" homescore:" +this.home_score + "awayscore:" + this.away_score +
 				"odds: " + this.main_odds;
@@ -504,7 +443,6 @@ public class MatchEvent {
 			throw new RuntimeException("ERROR COPYING:" + this.id + " from " + incomingEvent.id);
 		}
 		
-		//System.out.println("COPYING " + this.home_team.getName());
 		if (incomingEvent.home_score != null) {			
 			this.home_score = incomingEvent.home_score;
 		}

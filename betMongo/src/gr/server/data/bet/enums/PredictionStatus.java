@@ -25,7 +25,11 @@ public enum PredictionStatus implements Serializable{
 	CORRECT(2, "Correct"),
 	
 	@SerializedName("3")
-	MISSED(3, "Missed");
+	MISSED(3, "Missed"),
+	
+	@SerializedName("4")
+	WITHDRAWN(4, "Withdrawn");
+	
 	
 	private static final long serialVersionUID = 1L;
 	private String statusString;

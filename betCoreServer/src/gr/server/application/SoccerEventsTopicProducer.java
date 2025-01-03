@@ -10,13 +10,13 @@ import javax.jms.MessageProducer;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 
-import org.apache.activemq.ActiveMQConnectionFactory;
+//import org.apache.activemq.ActiveMQConnectionFactory;
 
 import com.google.gson.Gson;
 
-import gr.server.data.api.model.events.transients.ChangeEventSoccer;
-import gr.server.data.constants.ActiveMqConstants;
-import gr.server.data.live.helper.LiveUpdatesHelper;
+//import gr.server.data.api.model.events.transients.ChangeEventSoccer;
+//import gr.server.data.constants.ActiveMqConstants;
+//import gr.server.data.live.helper.LiveUpdatesHelper;
 
 /**
  * 
@@ -62,49 +62,49 @@ public class SoccerEventsTopicProducer implements ExceptionListener {
 
 	private void _connect() throws Exception {
 
-		try {
-			ActiveMQConnectionFactory cf = new ActiveMQConnectionFactory(ActiveMqConstants.CONNECTION_TCP_URL);
-			connection = cf.createConnection();
-			connection.start();
-			connection.setExceptionListener(this);
-			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-			Destination destination = session.createTopic(ActiveMqConstants.TOPIC_SOCCER_EVENTS);
-			producer = session.createProducer(destination);
-			producer.setTimeToLive(2000);
-			connected = true;
-			System.out.println("*******************ACTIVEMQ ");
-		} catch (JMSException e) {
-			connection.close();
-			connected = false;
-			throw new Exception(e.getMessage());
-		} catch (Exception e) {
-			connection.close();
-			connected = false;
-			throw new Exception(e.getMessage());
-		} finally {
-
-		}
+//		try {
+//			ActiveMQConnectionFactory cf = new ActiveMQConnectionFactory(ActiveMqConstants.CONNECTION_TCP_URL);
+//			connection = cf.createConnection();
+//			connection.start();
+//			connection.setExceptionListener(this);
+//			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+//			Destination destination = session.createTopic(ActiveMqConstants.TOPIC_SOCCER_EVENTS);
+//			producer = session.createProducer(destination);
+//			producer.setTimeToLive(2000);
+//			connected = true;
+//			System.out.println("*******************ACTIVEMQ ");
+//		} catch (JMSException e) {
+//			connection.close();
+//			connected = false;
+//			throw new Exception(e.getMessage());
+//		} catch (Exception e) {
+//			connection.close();
+//			connected = false;
+//			throw new Exception(e.getMessage());
+//		} finally {
+//
+//		}
 
 	}
 
 	public void sendTopicMessage(Map<String, Object> msg) throws JMSException {
-		if (!connected || session == null) { // TODO investigate null
-			connect();
-		}
-		
-		TextMessage testMessage;
-		try {
-			testMessage = session.createTextMessage();
-			ChangeEventSoccer changeEventSoccer = new ChangeEventSoccer(msg);
-			String json = new Gson().toJson(changeEventSoccer);
-			testMessage.setText(json);
-			producer.send(testMessage);
-			System.out.println("SENDING: " + changeEventSoccer.getChangeEvent());
-		} catch (JMSException e) {
-			connection.close();
-			connected = false;
-			e.printStackTrace();
-		}
+//		if (!connected || session == null) { // TODO investigate null
+//			connect();
+//		}
+//		
+//		TextMessage testMessage;
+//		try {
+//			testMessage = session.createTextMessage();
+//			ChangeEventSoccer changeEventSoccer = new ChangeEventSoccer(msg);
+//			String json = new Gson().toJson(changeEventSoccer);
+//			testMessage.setText(json);
+//			producer.send(testMessage);
+//			System.out.println("SENDING: " + changeEventSoccer.getChangeEvent());
+//		} catch (JMSException e) {
+//			connection.close();
+//			connected = false;
+//			e.printStackTrace();
+//		}
 	}
 
 	@Override

@@ -5,6 +5,7 @@ import java.util.Set;
 import org.bson.Document;
 
 import gr.server.application.exception.UserExistsException;
+import gr.server.data.api.model.dto.LoginResponseDto;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
@@ -50,9 +51,11 @@ public interface MongoClientHelper {
 	 * @param user
 	 * @return
 	 */
-	User loginUser(User user);
+	LoginResponseDto loginUser(String username, String email, String password);
 
 	boolean settlePredictions(Set<MatchEvent> toSettle) throws Exception;
+	
+	boolean settleWithdrawnPredictions(Set<MatchEvent> toSettle) throws Exception;
 
 	boolean settleOpenBets(Set<Document> pendingBets) throws Exception;
 

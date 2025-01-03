@@ -8,25 +8,24 @@ import gr.server.data.api.model.events.MatchEvent;
 import gr.server.handle.def.TaskHandler;
 import gr.server.impl.client.MongoClientHelperImpl;
 
-public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnable {
+public class UserBetWithdrawnPredictionHandler implements TaskHandler<MatchEvent>, Runnable {
 	
-	public static final int NUM_WORKERS = 4; // Number of worker threads
+	public static final int NUM_WORKERS = 1; // Number of worker threads
 	private int batch;// = 10;
 
-	public UserBetPredictionHandler(int batch) {
+	public UserBetWithdrawnPredictionHandler(int batch) {
 		this.batch = batch;
 	}
 
 	@Override
 	public boolean handle(Set<MatchEvent> toHandle) throws Exception {
-//		System.out.println(Thread.currentThread().getName() +  " HANDLING "+ toHandle.size());
 		
 		if (toHandle.isEmpty()) {
 			return true;
 		}
 		
 		try {
-			return new MongoClientHelperImpl().settlePredictions(toHandle);
+			return new MongoClientHelperImpl().settleWithdrawnPredictions(toHandle);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -37,16 +36,14 @@ public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnab
 	@Override
 	public void run() {
 		
-//		System.out.println(Thread.currentThread().getName() + " WILL HANDLE " + batch);
 		
 		Set<MatchEvent> batchObjects = new HashSet<>(batch);
 
-        // Collect 10 UserPredictions before processing
         for (int i = 0; i < batch; i++) {
             MatchEvent finishedEventId;
 			try {
 				
-				finishedEventId = FootballApiCache.FINISHED_EVENTS.take();
+				finishedEventId = FootballApiCache.WITHDRAWN_EVENTS.take();
 				batchObjects.add(finishedEventId);
 			} catch (InterruptedException e) {
 				reEnqueueMatches(batchObjects);
@@ -58,6 +55,7 @@ public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnab
 
         // Process the batch of 10 UserPredictions
         try {
+        	batchObjects.stream().map(MatchEvent::getId).toList();
 			boolean handled = handle(batchObjects);
 			if (!handled) {
 				reEnqueueMatches(batchObjects);
@@ -73,7 +71,7 @@ public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnab
 	void reEnqueueMatches(Set<MatchEvent> batchObjects) {
 		for (MatchEvent eventId : batchObjects) {
 			try {
-				FootballApiCache.FINISHED_EVENTS.put(eventId);
+				FootballApiCache.WITHDRAWN_EVENTS.put(eventId);
 			} catch (InterruptedException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

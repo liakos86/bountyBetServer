@@ -1,24 +1,16 @@
 package gr.server.impl.client;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.logging.log4j.core.async.EventRoute;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
@@ -33,18 +25,18 @@ import com.mongodb.client.model.Filters;
 
 import gr.server.bets.settle.impl.UserBetHandler;
 import gr.server.bets.settle.impl.UserBetPredictionHandler;
+import gr.server.bets.settle.impl.UserBetWithdrawnPredictionHandler;
+import gr.server.common.MongoCollectionConstants;
 import gr.server.common.ServerConstants;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.api.model.events.MatchEventIncidents;
-import gr.server.data.api.model.events.Player;
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
-import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.bet.enums.BetStatus;
 import gr.server.data.bet.enums.PredictionCategory;
+import gr.server.data.bet.enums.PredictionStatus;
 import gr.server.data.bet.enums.PredictionType;
-import gr.server.data.constants.CollectionNames;
-//import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.MongoFields;
 import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.user.model.objects.User;
@@ -56,6 +48,8 @@ import gr.server.transaction.helper.MongoTransactionalBlock;
 
 public class TestMongoClientHelper {
 
+	final double odd_value = 3.5d;
+	
 	Team homeTeam;
 
 	Team awayTeam;
@@ -75,12 +69,6 @@ public class TestMongoClientHelper {
 	@After
 	public void clear() {
 		FootballApiCache.ALL_EVENTS.clear();
-	}
-	
-	
-	@Test
-	public static void leaders() {
-		new MongoClientHelperImpl().retrieveLeaderBoard();
 	}
 
 	
@@ -205,9 +193,9 @@ public class TestMongoClientHelper {
 //		mongoClientHelperImpl.settlePredictions(events);
 //
 //		
-//		MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
-//		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-//		MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+//		MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
+//		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
+//		MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.BET_PREDICTIONS);
 //		
 //		
 //		Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
@@ -319,9 +307,9 @@ public class TestMongoClientHelper {
 //			@Override
 //			public void begin() throws Exception {
 //				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
-//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
-//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
+//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
+//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.BET_PREDICTIONS);
 //
 //		    	
 //		    	Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
@@ -357,9 +345,9 @@ public class TestMongoClientHelper {
 //			@Override
 //			public void begin() throws Exception {
 //				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
-//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
-//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
+//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
+//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.BET_PREDICTIONS);
 //
 //		    	
 //		    	Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
@@ -466,9 +454,9 @@ public class TestMongoClientHelper {
 //			@Override
 //			public void begin() throws Exception {
 //				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
-//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
-//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
+//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
+//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.BET_PREDICTIONS);
 //
 //		    	
 //		    	Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
@@ -490,9 +478,9 @@ public class TestMongoClientHelper {
 //			@Override
 //			public void begin() throws Exception {
 //				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
-//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
-//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
-//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+//				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
+//		    	MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
+//		    	MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.BET_PREDICTIONS);
 //
 //		    	
 //		    	Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
@@ -569,7 +557,7 @@ public class TestMongoClientHelper {
 		predCorrect.setEventId(1);
 		predCorrect.setPredictionCategory(PredictionCategory.FINAL_RESULT);
 		predCorrect.setPredictionType(PredictionType.AWAY_WIN);
-		predCorrect.setOddValue(3.5d);
+		predCorrect.setOddValue(odd_value);
 		preds.add(predCorrect);
 
 		UserPrediction predWrong = new UserPrediction();
@@ -600,10 +588,10 @@ public class TestMongoClientHelper {
 			@Override
 			public void begin() throws Exception {
 				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
-				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(CollectionNames.USER_BETS);
-				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
+				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
+				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
 				MongoCollection<Document> predictionsCollection = MongoUtils
-						.getMongoCollection(CollectionNames.BET_PREDICTIONS);
+						.getMongoCollection(MongoCollectionConstants.USER_BET_PREDICTIONS);
 
 				Bson betFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoId()));
 				FindIterable<Document> find = betsCollection.find(betFilter);
@@ -636,100 +624,263 @@ public class TestMongoClientHelper {
 		Assert.assertEquals(expectedBalance, new Double( user.currentMonthBalance()));
 
 	}
-
-	@Test
-	public void testSettleInThreads() throws InterruptedException {
-
-		List<User> users = new ArrayList<>();
-
-//		for (int i = 0; i < 2; i++) {
-//			User createUser = createUser();
-//			users.add(createUser);
-//
-//			createEventAndPlaceBet(createUser, i);
-//		}
-
-//		List<Future> taskList = new LinkedList();
-//
-//		ExecutorService subscribers = Executors.newFixedThreadPool(UserBetPredictionHandler.NUM_WORKERS);
-//
-//		Runnable settlePredsRunnableOrchestrator = () -> {
-
-//			try {
-			//System.out.println("WE have " + FootballApiCache.FINISHED_EVENTS.size() + " finished");
-
-//			int batch = FootballApiCache.FINISHED_EVENTS.size() / 4 > 0 ? FootballApiCache.FINISHED_EVENTS.size() / 4 : FootballApiCache.FINISHED_EVENTS.size() % 4;
-//
-//			for (int i = 0; i < UserBetPredictionHandler.NUM_WORKERS; i++) {
-//				Future f = subscribers.submit(new UserBetPredictionHandler(batch));
-//				taskList.add(f);
-//			}
-
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		};
-
-//		ScheduledExecutorService settlePredsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
-//		settlePredsRunnableOrchestratorTask.scheduleAtFixedRate(settlePredsRunnableOrchestrator, 0, 10,
-//				TimeUnit.SECONDS);
-		
 	
+	
+	/**
+	 * Creates a new user. Places a bet for the new user. Reads the user again to
+	 * verify bet fields. Deletes the user. Verifies deletion.
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void testSettleMultipleBets() throws Exception {
+
+		User user = createUser();
+		System.out.println("USERID IS :::::" +user.getMongoId());
 		
-		// bets
+		createEvent(10);
 		
-				ExecutorService subscribersBetSettling = Executors.newFixedThreadPool(1);// (UserBetHandler.NUM_WORKERS);
-				
-				Runnable settleBetsRunnableOrchestrator = () -> { 
-					
-					try {
-						
-						 MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
-						 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
-						 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(CollectionNames.USER_BETS, pendingOrPendingLostBetsFilter);
-						
-						long batchSize = (allUnsettledBetsSize / UserBetHandler.NUM_WORKERS) > 0 ?
-								allUnsettledBetsSize / UserBetHandler.NUM_WORKERS 
-								: allUnsettledBetsSize % UserBetHandler.NUM_WORKERS;
-						
-						FindIterable<Document> iterable = MongoUtils.getMongoCollection(CollectionNames.USER_BETS).find(pendingOrPendingLostBetsFilter).batchSize((int) batchSize);
-					
-						List<Document> userBetsDocument = new ArrayList<>();
-						for (Document bet : iterable) {
-							userBetsDocument.add(bet);
-							
-							if (userBetsDocument.size() == batchSize) {
-								subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
-								userBetsDocument.clear();
-							}
-							
-				        }
-						
-						if (!userBetsDocument.isEmpty()) {
-							subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
-						}
-					
-						}catch (Exception e) {
-							e.printStackTrace();
-						}
-					};
-				
-				ScheduledExecutorService settleBetsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
-				settleBetsRunnableOrchestratorTask.scheduleAtFixedRate(settleBetsRunnableOrchestrator, 5, 15, TimeUnit.SECONDS);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+		placeBetForEvent(10, user.getMongoId(), PredictionType.AWAY_WIN);
+
+		settleEvent(10, MatchEventStatus.FINISHED, PredictionType.AWAY_WIN);
+
+
+		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+
+		user = mHelper.getUser(user.getMongoId(), true, true, true, true);
+
+		Double newBalance = 1000d - (24 * 30);
+		
+		Assert.assertEquals(newBalance, Double.valueOf(user.currentMonthBalance()));
+		
+
+		System.out.println("BALANCE IS " + newBalance);
+		
+		settlePredictionsInThreads();
+		settleBetsInThreads(user.getMongoId());
+		
+		
+		Thread.sleep(20000);
+		
+		user = mHelper.getUser(user.getMongoId(), true, true, true, true);
+
+		newBalance = newBalance + (24 * 30 * odd_value);// odd 
+		
+		Assert.assertEquals(newBalance, Double.valueOf(user.currentMonthBalance()));
+		
+		
+		mHelper.deleteUser(user.getMongoId());
 		
 		
 
-		Thread.sleep(500000);
 
-		for (User user : users) {
-			new MongoClientHelperImpl().deleteUser(user.getMongoId());
-		}
+	}
+	
+	
+	@Test
+	public void testSections() {
+		
+		new MongoTransactionalBlock() {
+			
+			@Override
+			public void begin() throws Exception {
+				// TODO Auto-generated method stub
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				List<Section> sectionsFromDb = mongoClientHelperImpl.getSectionsFromDb(session);
+				mongoClientHelperImpl.updateSections(sectionsFromDb);
+				
+				
+				List<Section> incomingSections = MockApiClient.getSectionsFromFile().getData();
+				mongoClientHelperImpl.updateSections(incomingSections);
+				
+				sectionsFromDb = mongoClientHelperImpl.getSectionsFromDb(session);
+				System.out.println(sectionsFromDb.get(0).getName_translations().get("en"));
+				
+			}
+		};
+		
 	}
 	
 	@Test
+	public void testLeagues() {
+		
+		new MongoTransactionalBlock() {
+			
+			@Override
+			public void begin() throws Exception {
+				// TODO Auto-generated method stub
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				List<League> sectionsFromDb = mongoClientHelperImpl.getLeaguesFromDb(session);
+				mongoClientHelperImpl.updateLeagues(sectionsFromDb);
+				
+				
+				List<League> incomingSections = MockApiClient.getLeaguesFromFile().getData();
+				mongoClientHelperImpl.updateLeagues(incomingSections);
+				
+				sectionsFromDb = mongoClientHelperImpl.getLeaguesFromDb(session);
+				System.out.println(sectionsFromDb.get(0).getName_translations().get("en"));
+				
+			}
+		};
+		
+	}
+
+	@Test
+	public void testSettleInThreadss() throws InterruptedException {
+
+		User createUser = createUser();
+		createEvent(1);
+		placeBetForEvent(1, createUser.getMongoId(), PredictionType.AWAY_WIN);
+		settleEvent(1, MatchEventStatus.FINISHED, PredictionType.AWAY_WIN);
+
+		
+		settlePredictionsInThreads();
+		settleWithdrawnPredictionsInThreads();
+		settleBetsInThreads(createUser.getMongoId());
+
+		Thread.sleep(10000);
+		
+		createUser = new MongoClientHelperImpl().getUser(createUser.getMongoId(), true, false, true, false);
+
+		Assert.assertEquals(ServerConstants.STARTING_BALANCE, new Double(createUser.getBalance()));
+		
+		UserBet userBet = createUser.getUserBets().get(0);
+		
+		Assert.assertEquals(BetStatus.SETTLED_WITHDRAWN.getCode(), userBet.getBetStatus());
+		
+		UserPrediction userPrediction = userBet.getPredictions().get(0);
+		Assert.assertEquals(PredictionStatus.WITHDRAWN.getCode(), userPrediction.getPredictionStatus().getCode());
+		
+		new MongoClientHelperImpl().deleteUser(createUser.getMongoId());
+	}
+	
+	private void settleWithdrawnPredictionsInThreads() {
+/** withdrawn preds **/
+		
+		
+		ExecutorService subscribersWithDrawnPredictionSettling = Executors.newFixedThreadPool(UserBetWithdrawnPredictionHandler.NUM_WORKERS);
+		
+		Runnable settleWithdrawnPredsRunnableOrchestrator = () -> { 
+			
+			try {
+				subscribersWithDrawnPredictionSettling.submit(new UserBetWithdrawnPredictionHandler(FootballApiCache.WITHDRAWN_EVENTS.size()));
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			};
+		
+		ScheduledExecutorService settleWithdrawnPredsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
+		settleWithdrawnPredsRunnableOrchestratorTask.scheduleAtFixedRate(settleWithdrawnPredsRunnableOrchestrator, 0, 10, TimeUnit.SECONDS);
+		
+	}
+
+	private void settlePredictionsInThreads() {
+/** new preds **/
+		
+		
+		ExecutorService subscribersPredictionSettling = Executors.newFixedThreadPool(UserBetPredictionHandler.NUM_WORKERS);
+		
+		Runnable settlePredsRunnableOrchestrator = () -> { 
+			
+			try {
+					int batch = (FootballApiCache.FINISHED_EVENTS.size() / UserBetPredictionHandler.NUM_WORKERS) > 0 ?
+							FootballApiCache.FINISHED_EVENTS.size() / UserBetPredictionHandler.NUM_WORKERS 
+							: FootballApiCache.FINISHED_EVENTS.size() % UserBetPredictionHandler.NUM_WORKERS;
+				
+					for (int i = 0; i < UserBetPredictionHandler.NUM_WORKERS; i++) {
+			            subscribersPredictionSettling.submit(new UserBetPredictionHandler(batch));
+			        }
+			
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			};
+		
+		ScheduledExecutorService settlePredsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
+		settlePredsRunnableOrchestratorTask.scheduleAtFixedRate(settlePredsRunnableOrchestrator, 3, 13, TimeUnit.SECONDS);
+		
+	}
+
+	private void settleBetsInThreads(String mongoId) {
+		// bets
+		
+		ExecutorService subscribersBetSettling = Executors.newFixedThreadPool(1);// (UserBetHandler.NUM_WORKERS);
+		
+		Runnable settleBetsRunnableOrchestrator = () -> { 
+		
+			try {
+				
+				 MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
+				 Bson pendingOfUserFilter = Filters.eq(MongoFields.MONGO_USER_ID, mongoId);
+
+				 Bson finalFilter = Filters.and(pendingOrPendingLostBetsFilter, pendingOfUserFilter);
+				 
+				 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(MongoCollectionConstants.USER_BETS, finalFilter);
+				System.out.println("ALL UNSETTLED BETS:::" +allUnsettledBetsSize);
+				if (allUnsettledBetsSize == 0) {
+					System.out.println("NOTHING TO SETTLE");
+					return;
+				}
+				
+				long batchSize = (allUnsettledBetsSize / UserBetHandler.NUM_WORKERS) > 0 ?
+						allUnsettledBetsSize / UserBetHandler.NUM_WORKERS 
+						: allUnsettledBetsSize % UserBetHandler.NUM_WORKERS;
+				
+				FindIterable<Document> iterable = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS).find(pendingOrPendingLostBetsFilter).batchSize((int) batchSize);
+			
+				List<Document> userBetsDocument = new ArrayList<>();
+				for (Document bet : iterable) {
+					userBetsDocument.add(bet);
+					
+					if (userBetsDocument.size() == batchSize) {
+						subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
+						userBetsDocument.clear();
+					}
+					
+		        }
+				
+				if (!userBetsDocument.isEmpty()) {
+					subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
+				}
+			
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			};
+	
+		ScheduledExecutorService settleBetsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
+		settleBetsRunnableOrchestratorTask.scheduleAtFixedRate(settleBetsRunnableOrchestrator, 5, 15, TimeUnit.SECONDS);
+		
+	}
+
+	@Test
 	public void testAwardWinner() {
 		
-//		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(CollectionNames.USERS);
+//		MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
 //		
 //		new Random().nextDouble(10000);
 //		
@@ -779,7 +930,7 @@ public class TestMongoClientHelper {
 ////		
 ////		Document search = new Document("match_id", "408642");
 ////		Executor<Event> betsExecutor = new Executor<Event>(new TypeToken<Event>() { });
-////		List<Event> bets = MongoCollectionUtils.get(CollectionNames.EVENTS, search, betsExecutor);
+////		List<Event> bets = MongoCollectionUtils.get(MongoCollectionConstants.EVENTS, search, betsExecutor);
 ////		Event event = bets.get(0);
 ////		String inpt = event.getMatchDate()+ " "+event.getMatchTime();
 ////		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(ApiFootBallConstants.EVENT_DATE_TIME_FORMAT);
@@ -796,7 +947,7 @@ public class TestMongoClientHelper {
 ////	}
 //	
 
-	void createEventAndPlaceBet(User user, int eventId) throws InterruptedException {
+	void createEvent(int eventId) throws InterruptedException {
 		MatchEvent eventWon = new MatchEvent();
 		eventWon.setId(eventId);
 		eventWon.setHome_team(homeTeam);
@@ -805,9 +956,29 @@ public class TestMongoClientHelper {
 		eventWon.setStatus(MatchEventStatus.NOTSTARTED.getStatusStr());
 
 		FootballApiCache.ALL_EVENTS.put(eventWon.getId(), eventWon);
+		
+		
+	}
+
+	private void settleEvent(int eventId, MatchEventStatus settle, PredictionType predictionType) throws InterruptedException {
+		MatchEvent eventWon = FootballApiCache.ALL_EVENTS.get(eventId);
+		eventWon.setStatus(settle.getStatusStr());
+		eventWon.setWinner_code(predictionType.getCode());
+
+		
+		if (MatchEventStatus.POSTPONED == settle) {
+			FootballApiCache.WITHDRAWN_EVENTS.put(eventWon);
+		}else {
+			FootballApiCache.FINISHED_EVENTS.put(eventWon);			
+		}
+
+	
+	}
+
+	private void placeBetForEvent(Integer eventId, String mongoId, PredictionType predictionType) {
 
 		UserBet userBet = new UserBet();
-		userBet.setMongoUserId(user.getMongoId());
+		userBet.setMongoUserId(mongoId);
 		userBet.setBetAmount(30);
 
 		List<UserPrediction> preds = new ArrayList<UserPrediction>();
@@ -815,18 +986,14 @@ public class TestMongoClientHelper {
 		UserPrediction predCorrect = new UserPrediction();
 		predCorrect.setEventId(eventId);
 		predCorrect.setPredictionCategory(PredictionCategory.FINAL_RESULT);
-		predCorrect.setPredictionType(eventId % 2 == 0 ? PredictionType.AWAY_WIN : PredictionType.HOME_WIN);
+		predCorrect.setPredictionType(predictionType);
 		predCorrect.setOddValue(3.5d);
 		preds.add(predCorrect);
 
 		userBet.setPredictions(preds);
 
 		new MongoClientHelperImpl().placeBet(userBet);
-
-		eventWon.setStatus(MatchEventStatus.FINISHED.getStatusStr());
-		eventWon.setWinner_code(PredictionType.AWAY_WIN.getCode());
-
-		FootballApiCache.FINISHED_EVENTS.put(eventWon);
+	
 	}
 
 	User createUser() {

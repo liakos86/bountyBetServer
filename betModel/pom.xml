@@ -7,18 +7,14 @@
 	<artifactId>betServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>betApiFootBall</artifactId>
+	<artifactId>betModel</artifactId>
 	
 	<dependencies>
-	<dependency>
-		<groupId>gr.betServer</groupId>
-		<artifactId>betModel</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</dependency>
+		<dependency>
+			<artifactId>betCoreCommon</artifactId>
+			<groupId>gr.betServer</groupId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
-	
-	
-	
-
 	
 	</project>

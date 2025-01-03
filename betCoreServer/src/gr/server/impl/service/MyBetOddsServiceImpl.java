@@ -14,13 +14,18 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.google.api.client.auth.oauth2.TokenResponse;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import gr.server.common.auth.JwtUtils;
+import gr.server.common.bean.AuthorizationBean;
 import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.model.dto.LoginResponseDto;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.league.Season;
+import gr.server.data.api.model.league.Section;
 import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
@@ -79,22 +84,39 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Consumes("application/json; charset=UTF-8")
 	@Produces("application/json; charset=UTF-8")
 	public Response loginUser(String userJson) throws Exception {
-		User newUser = new Gson().fromJson(userJson, new TypeToken<User>() {
-		}.getType());
-		String userEmail = SecureUtils.decode(newUser.getEmail().trim());
-		newUser.setEmail(userEmail);
-		newUser = new MongoClientHelperImpl().loginUser(newUser);
-		if (newUser.getErrorMessage() == null) {
-			newUser = getUserFromMongoId(newUser.getMongoId());
-			System.out.println("RETURNING " + newUser.getEmail());
+		User incomingUser = new Gson().fromJson(userJson, new TypeToken<User>() {}.getType());
+		String userEmail = SecureUtils.decode(incomingUser.getEmail().trim());
+		LoginResponseDto loginResponse = new MongoClientHelperImpl().loginUser(incomingUser.getUsername(), userEmail, incomingUser.getPassword());
+		
+		User responseUser = null;
+		if (loginResponse.getMongoId() != null) {
+			responseUser = getUserFromMongoId(loginResponse.getMongoId());
+			System.out.println("RETURNING " + responseUser);
 		}
-		return Response.ok(new Gson().toJson(newUser)).build();
+		
+		return Response.ok(new Gson().toJson(responseUser)).build();
+	}
+	
+	@Override
+	@POST
+	@Path("/authorize")
+	@Consumes("application/json; charset=UTF-8")
+	@Produces("application/json; charset=UTF-8")
+	public Response authorize(String uniqueDeviceId) throws Exception {
+		Gson gson = new Gson();
+		AuthorizationBean authBean = gson.fromJson(uniqueDeviceId, AuthorizationBean.class);
+		String decodedString = SecureUtils.validateDeviceId(authBean);
+		String generateToken = JwtUtils.generateToken(decodedString);
+		TokenResponse tokenResponse = new TokenResponse();
+		tokenResponse.setAccessToken(generateToken);
+		
+		return Response.ok(gson.toJson(tokenResponse)).build();
 	}
 
 	@Override
 	@GET
 	@Produces(MediaType.TEXT_HTML)
-	@Path("{email}/validateUser")
+	@Path("/{email}/validateUser")
 	public String validateUser(@PathParam("email") String email) throws Exception {
 		new MongoClientHelperImpl().validateUser(email);
 		return "<html><head><body>Your email is validated. Please return to the app and Login again.</body></head></html>";
@@ -103,7 +125,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("getUser/{id}")
+	@Path("/getUser/{id}")
 	public Response getUser(@PathParam("id") String id) {
 		User user = getUserFromMongoId(id);
 		String userJson = new Gson().toJson(user);
@@ -141,6 +163,16 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagueEvents")
 	public Response getLeagueEvents() {
+//		for(MatchEvent e: FootballApiCache.ALL_EVENTS.values()) {
+//			if (e.getHome_team().getName().contains("Al-Sailiya") || e.getHome_team().getName().contains("CD Vitoria")
+//					||  e.getHome_team().getName().contains("Molenbeek")
+//					||  e.getHome_team().getName().contains("Savoia 1908")
+//					||  e.getHome_team().getName().contains("SSD Pro")
+//					||  e.getHome_team().getName().contains("Ivory Coast")) {
+//				System.out.println("EVENT:::::::" + e);
+//			}
+//		}
+		
 		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY)).build();
 	}
 	
@@ -149,15 +181,13 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLiveEvents")
 	public Response getLiveEvents() {
+		for(MatchEvent e : FootballApiCache.LIVE_EVENTS.values()) {
+			if (e.getHome_team().getName().contains("AEL L")) {
+				System.out.println(e);
+			}
+		}
+		
 		return Response.ok(new Gson().toJson(FootballApiCache.LIVE_EVENTS)).build();
-	}
-
-	@Override
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/getStandingsAllWithoutTables")
-	public Response getStandingsAllWithoutTables() {
-		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES.values().stream().collect(Collectors.toList()))).build();
 	}
 
 	@Override
@@ -183,18 +213,17 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("getEventStatistics/{id}")
+	@Path("/getEventStatistics/{id}")
 	public Response getEventStatistics(@PathParam("id") Integer id) {
-		return Response.ok(new Gson().toJson(FootballApiCache.ALL_MATCH_STATS.getOrDefault(id, new MatchEventIncidentsWithStatistics()))).build();
+		MatchEventIncidentsWithStatistics src = FootballApiCache.ALL_MATCH_STATS.get(id);
+		if (src == null) {
+			src = FootballApiCache.ALL_MATCH_STATS.get(2576311);
+//			src = new MatchEventIncidentsWithStatistics();
+		}
+//		System.out.println("STATS::" + src.getMatchEventStatistics().getData().size());
+//		System.out.println("InCIS::" + src.getMatchEventIncidents().getData().size());
+		return Response.ok(new Gson().toJson(src)).build();
 	}
-
-//	@Override
-//	@GET
-//	@Produces(MediaType.APPLICATION_JSON)
-//	@Path("getEventIncidents/{id}")
-//	public Response getEventIncidents(@PathParam("id") Integer id) {
-//		return Response.ok(FootballApiCache.INCIDENTS_PER_EVENT.getOrDefault(id, new MatchEventIncidents())).build();
-//	}
 
 	/**
 	 * @param mongoId
@@ -202,7 +231,6 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	 */
 	User getUserFromMongoId(String mongoId) {
 		User user = new MongoClientHelperImpl().getUser(mongoId, true, true, true, true);
-
 		return user;
 	}
 

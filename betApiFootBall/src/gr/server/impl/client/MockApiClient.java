@@ -3,17 +3,23 @@ package gr.server.impl.client;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
+import java.util.Random;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.api.model.events.Events;
+import gr.server.data.api.model.events.MatchEventIncident;
 import gr.server.data.api.model.events.MatchEventIncidents;
+import gr.server.data.api.model.events.MatchEventStatistic;
 import gr.server.data.api.model.events.MatchEventStatistics;
+import gr.server.data.api.model.events.PlayerSeasonStatistic;
 import gr.server.data.api.model.events.PlayerStatistics;
+import gr.server.data.api.model.events.Players;
 import gr.server.data.api.model.league.Leagues;
 import gr.server.data.api.model.league.Seasons;
 import gr.server.data.api.model.league.Sections;
+import gr.server.data.api.model.league.StandingRow;
 import gr.server.data.api.model.league.StandingTable;
 import gr.server.data.api.model.league.Teams;
 import gr.server.util.MockHttpHelper;
@@ -141,7 +147,7 @@ public class MockApiClient {
 
 		Sections sections = new Sections();
 
-		for (int i = 1; i < 5; i++) {
+		for (int i = 1; i < 4; i++) {
 
 			try {
 				String content = new MockHttpHelper().mockGetContentWithHeaders("sections" + i + ".json");
@@ -188,8 +194,11 @@ public class MockApiClient {
 	public static MatchEventIncidents getMatchIncidentsFromFile() {
 		try {
 			String content = new MockHttpHelper().mockGetContentWithHeaders("eventIncidents.json");
-			System.out.println(content);
+//			System.out.println(content);
 			MatchEventIncidents incidents = new Gson().fromJson(content, new TypeToken<MatchEventIncidents>() {}.getType());
+			
+			//TODO: add a test incident
+			
 			return incidents;
 		} catch (Exception e) {
 			return null;
@@ -199,20 +208,37 @@ public class MockApiClient {
 	public static MatchEventStatistics getMatchStatisticsFromFile() {
 		try {
 			String content = new MockHttpHelper().mockGetContentWithHeaders("eventStatistics.json");
-			System.out.println(content);
+//			System.out.println(content);
 			MatchEventStatistics incidents = new Gson().fromJson(content, new TypeToken<MatchEventStatistics>() {}.getType());
+			
+			int random = new Random().nextInt(0, 10);
+			for (MatchEventStatistic st : incidents.getData()) {
+				if ("shots".equals(st.getGroup())) {
+					
+					int old1 =	Integer.parseInt(st.getHome());
+					int old2 =	Integer.parseInt(st.getAway());
+					
+					st.setHome( String.valueOf(old1 + random) );
+					st.setAway( String.valueOf(old2 + random) );
+					
+//					System.out.println("SHOTS ARE NOW" + st.getHome());
+				
+				
+				}
+			}
+			
 			return incidents;
 		} catch (Exception e) {
 			return null;
 		}
 	}
 	
-	public static PlayerStatistics getPlayerStatisticsFromFile() {
+	public static PlayerSeasonStatistic getPlayerStatisticsFromFile() {
 		try {
 			String content = new MockHttpHelper().mockGetContentWithHeaders("playerStatistics.json");
-			System.out.println(content);
+//			System.out.println(content);
 			PlayerStatistics incidents = new Gson().fromJson(content, new TypeToken<PlayerStatistics>() {}.getType());
-			return incidents;
+			return incidents.getData().get(0);
 		} catch (Exception e) {
 			return null;
 		}
@@ -221,12 +247,29 @@ public class MockApiClient {
 	public static StandingTable getStandingTableFromFile() {
 		try {
 			String content = new MockHttpHelper().mockGetContentWithHeaders("standingTable.json");
-			System.out.println(content);
+//			System.out.println(content);
 			StandingTable table = new Gson().fromJson(content, new TypeToken<StandingTable>() {}.getType());
+			int random = new Random().nextInt(-3, 3);
+			for (StandingRow row : table.getStandings_rows()) {
+				int old = row.getPoints();
+				row.setPoints(old + random);
+			}
 			return table;
 		} catch (Exception e) {
 			return null;
 		}
 	}
+	
+	public static Players getPlayersOfTeamFromFile(int teamId) {
+		try {
+			String content = new MockHttpHelper().mockGetContentWithHeaders("players.json");
+//			System.out.println(content);
+			Players table = new Gson().fromJson(content, new TypeToken<Players>() {}.getType());
+			return table;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
 
 }

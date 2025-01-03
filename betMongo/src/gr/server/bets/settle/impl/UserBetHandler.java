@@ -4,7 +4,7 @@ import java.util.Set;
 
 import org.bson.Document;
 
-import gr.server.bets.settle.def.TaskHandler;
+import gr.server.handle.def.TaskHandler;
 import gr.server.impl.client.MongoClientHelperImpl;
 
 public class UserBetHandler implements TaskHandler<Document>, Runnable {

@@ -5,6 +5,8 @@ public enum MatchEventStatus {
 	INPROGRESS("inprogress"),
 	
 	CANCELLED("cancelled"),
+
+	CANCELED("canceled"),
 	
 	NOTSTARTED("notstarted"),
 	

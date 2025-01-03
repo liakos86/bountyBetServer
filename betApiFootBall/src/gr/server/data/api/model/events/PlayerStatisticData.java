@@ -1,18 +1,27 @@
 package gr.server.data.api.model.events;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class PlayerStatisticData {
+public class PlayerStatisticData implements Serializable{
 	
+/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 //	Map<String, String> statistics_items = new HashMap<>();
-	List<StatisticsItem> statistics_items ;
+//	List<StatisticsItem> statistics_items ;
 	
+	String group_name;// "Matches", "Attacking", "Passes", "Defending", "Cards", "Other (per game)"
 	Integer matches_total;
+	Integer goals;
+	Integer assists;
+
+	
 //	Integer matches_starting;
 //	Integer minutes_per_game;
-	String group_name;// "Matches", "Attacking", "Passes", "Defending", "Cards", "Other (per game)"
 	
-	Integer goals;
 //	Double goals_average;
 //	Double total_shots_per_game;
 //	Integer big_chance_missed;
@@ -32,7 +41,6 @@ public class PlayerStatisticData {
 //	"penalty_won": "0",
 //	"group_name": "Attacking"
 	
-	Integer assists;
 //	"touches": "1.0",
 //	"big_chance_created": "0",
 //	"key_passes": "0.0",
@@ -153,12 +161,12 @@ public class PlayerStatisticData {
 	public void setRed_cards(Integer red_cards) {
 		this.red_cards = red_cards;
 	}
-	public List<StatisticsItem> getStatistics_items() {
-		return statistics_items;
-	}
-	public void setStatistics_items(List<StatisticsItem> statistics_items) {
-		this.statistics_items = statistics_items;
-	}
+//	public List<StatisticsItem> getStatistics_items() {
+//		return statistics_items;
+//	}
+//	public void setStatistics_items(List<StatisticsItem> statistics_items) {
+//		this.statistics_items = statistics_items;
+//	}
 	
 	
 	

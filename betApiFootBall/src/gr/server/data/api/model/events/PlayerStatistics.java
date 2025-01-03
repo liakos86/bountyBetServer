@@ -5,16 +5,16 @@ import java.util.List;
 
 public class PlayerStatistics {
 	
-	List<PlayerStatistic> data = new ArrayList<>();
+	
+	List<PlayerSeasonStatistic> data = new ArrayList<>();
 
-	public List<PlayerStatistic> getData() {
+	public List<PlayerSeasonStatistic> getData() {
 		return data;
 	}
 
-	public void setData(List<PlayerStatistic> data) {
+	public void setData(List<PlayerSeasonStatistic> data) {
 		this.data = data;
 	}
 
-	
-	
+
 }

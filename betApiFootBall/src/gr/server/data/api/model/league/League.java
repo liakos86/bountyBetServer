@@ -28,23 +28,23 @@ public class League implements Serializable{
 	int id;
 	int sport_id;
 	int section_id;
-	String slug;
+//	String slug;
 	String name;
 	Map<String, String> name_translations;
-	boolean has_logo;
+//	boolean has_logo;
 	String logo;
     int priority;
  
 	String start_date;
     String end_date;
     
-    Map<String, Object> host;
+//    Map<String, Object> host;
     
-    Integer tennis_points;
-    Integer most_count;
+//    Integer tennis_points;
+//    Integer most_count;
 
     List<Integer> seasonIds = new ArrayList<>();
-    List<Map<String, String>>facts;
+//    List<Map<String, String>>facts;
      
     
 	public String getStart_date() {
@@ -67,37 +67,37 @@ public class League implements Serializable{
 		this.end_date = end_date;
 	}
 
-	public Map<String, Object> getHost() {
-		return host;
-	}
+//	public Map<String, Object> getHost() {
+//		return host;
+//	}
+//
+//	public void setHost(Map<String, Object> host) {
+//		this.host = host;
+//	}
+//
+//	public Integer getTennis_points() {
+//		return tennis_points;
+//	}
+//
+//	public void setTennis_points(Integer tennis_points) {
+//		this.tennis_points = tennis_points;
+//	}
 
-	public void setHost(Map<String, Object> host) {
-		this.host = host;
-	}
+//	public List<Map<String, String>> getFacts() {
+//		return facts;
+//	}
+//
+//	public void setFacts(List<Map<String, String>> facts) {
+//		this.facts = facts;
+//	}
 
-	public Integer getTennis_points() {
-		return tennis_points;
-	}
-
-	public void setTennis_points(Integer tennis_points) {
-		this.tennis_points = tennis_points;
-	}
-
-	public List<Map<String, String>> getFacts() {
-		return facts;
-	}
-
-	public void setFacts(List<Map<String, String>> facts) {
-		this.facts = facts;
-	}
-
-	public Integer getMost_count() {
-		return most_count;
-	}
-
-	public void setMost_count(Integer most_count) {
-		this.most_count = most_count;
-	}
+//	public Integer getMost_count() {
+//		return most_count;
+//	}
+//
+//	public void setMost_count(Integer most_count) {
+//		this.most_count = most_count;
+//	}
 		
 	public int getId() {
 		return id;
@@ -123,13 +123,13 @@ public class League implements Serializable{
 		this.section_id = section_id;
 	}
 
-	public String getSlug() {
-		return slug;
-	}
-
-	public void setSlug(String slug) {
-		this.slug = slug;
-	}
+//	public String getSlug() {
+//		return slug;
+//	}
+//
+//	public void setSlug(String slug) {
+//		this.slug = slug;
+//	}
 
 	public String getName() {
 		return name;
@@ -147,13 +147,13 @@ public class League implements Serializable{
 		this.name_translations = name_translations;
 	}
 
-	public boolean isHas_logo() {
-		return has_logo;
-	}
-
-	public void setHas_logo(boolean has_logo) {
-		this.has_logo = has_logo;
-	}
+//	public boolean isHas_logo() {
+//		return has_logo;
+//	}
+//
+//	public void setHas_logo(boolean has_logo) {
+//		this.has_logo = has_logo;
+//	}
 
 	public String getLogo() {
 		return logo;

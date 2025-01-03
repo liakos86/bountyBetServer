@@ -30,8 +30,6 @@ public interface MyBetOddsService {
 	
 	Response getEventStatistics(Integer id);
 	
-	Response getStandingsAllWithoutTables();
-	
 	Response getStandingsOfSeason(Integer leagueId, Integer seasonId);
 
 	Response getLeagueEvents();
@@ -39,5 +37,7 @@ public interface MyBetOddsService {
 	Response getSections();
 
 	Response getLiveEvents();
+
+	Response authorize(String uniqueDeviceId) throws Exception;
 
 }

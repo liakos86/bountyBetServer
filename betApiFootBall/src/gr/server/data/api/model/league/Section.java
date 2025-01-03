@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.bson.Document;
+
 /**
  * It is the parent of a list of {@link League}s. Can be:
  *  - England
@@ -72,8 +74,24 @@ public class Section implements Serializable{
 	}
 	
 	@Override
-	public String toString() {
-		return "Section: " + this.name + " with priority " + this.priority;
+	public boolean equals(Object obj) {
+		if (! (obj instanceof Section) ) {
+			return false;
+		}
+		
+		Section other = (Section) obj;
+		return this.id == other.id;
 	}
+	
+	@Override
+	public int hashCode() {
+		return this.id * 37;
+	}
+	
+	@Override
+	public String toString() {
+		return "Section: " + this.name + " with id " + this.id + " with priority " + this.priority;
+	}
+	
 	
 }

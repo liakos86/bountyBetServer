@@ -9,5 +9,26 @@
 	<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>betCoreCommon</artifactId>
+	
+	<dependencies>
+	
+<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt</artifactId>
+    <version>0.9.1</version>
+</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.bucket4j/bucket4j-core 
+<dependency>
+    <groupId>com.bucket4j</groupId>
+    <artifactId>bucket4j-core</artifactId>
+    <version>8.9.0</version>
+</dependency>-->
+
+
+
+	
+	</dependencies>
 		
 </project>

@@ -1,4 +1,4 @@
-package gr.server.bets.settle.def;
+package gr.server.handle.def;
 
 import java.util.Set;
 

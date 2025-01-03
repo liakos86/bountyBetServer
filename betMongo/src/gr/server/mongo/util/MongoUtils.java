@@ -4,6 +4,7 @@ package gr.server.mongo.util;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -11,7 +12,6 @@ import org.apache.log4j.Logger;
 //import org.apache.log4j.Logger;
 import org.bson.Document;
 import org.bson.conversions.Bson;
-import org.bson.types.ObjectId;
 
 import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;
@@ -25,13 +25,15 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import gr.server.common.MongoCollectionConstants;
 import gr.server.common.ServerConstants;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.bet.enums.PredictionSettleStatus;
 import gr.server.data.bet.enums.PredictionStatus;
-import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.MongoFields;
 import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.user.model.objects.User;
@@ -51,10 +53,12 @@ import gr.server.data.user.model.objects.UserPrediction;
  */
 public class MongoUtils {
 	
+	public static volatile boolean DB_DATA_FETCHED = false;
 
 	static MongoClient MONGO_CLIENT;
+	
 
-    public static <E> ArrayList<E> get(String collectionString, Bson filter, Executor<E> e){
+    public static <E> ArrayList<E> get(ClientSession session, String collectionString, Bson filter, Executor<E> e){
 		MongoCollection<Document> collection = getMongoCollection(collectionString);
 		FindIterable<Document> find = collection.find(filter);
 		ArrayList<E> list  = new ArrayList<E>();
@@ -116,9 +120,46 @@ public class MongoUtils {
 				.append(MongoFields.BET_BELONGING_MONTH, userBet.getBelongingMonth())
 				.append(MongoFields.BET_BELONGING_YEAR, userBet.getBelongingYear())
 				.append(MongoFields.USER_BET_PLACEMENT_MILLIS, userBet.getBetPlaceMillis())
-				.append(MongoFields.USER_BET_POSSIBLE_WINNINGS, userBet.getPossibleEarnings())
 				;
 	}
+	
+	public static Document getSectionDocument(Section section) {
+        return new Document(MongoFields.ID, section.getId())
+                .append("sport_id", section.getSport_id())
+//                .append("slug", section.getSlug())
+                .append("name", section.getName())
+                .append("priority", section.getPriority())
+                .append("flag", section.getFlag())
+                .append("name_translations", section.getName_translations());
+    }
+	
+	public static Document getLeagueDocument(League l) {
+        return new Document(MongoFields.ID, l.getId())
+                .append("sport_id", l.getSport_id())
+                .append("section_id", l.getSection_id())
+                .append("name", l.getName())
+                .append("name_translations", l.getName_translations())
+                .append("logo", l.getLogo())
+                .append("priority", l.getPriority())
+                .append("start_date", l.getStart_date())
+                .append("end_date", l.getEnd_date())
+                .append("seasonIds", l.getSeasonIds());
+    }
+	
+//	// Method to populate Section from a MongoDB Document
+//    public static Section getSectionFromDocument(Document doc) {
+//        Section section = new Section();
+//        section.setId(doc.getInteger(MongoFields.SECTION_ID, 0));
+//        section.setSport_id( doc.getInteger("sport_id", 0));
+//        section.setName( doc.getString("name"));
+//        section.setPriority( doc.getInteger("priority", 0));
+//        section.setFlag( doc.getString("flag"));
+//        section.setName_translations( doc.get("name_translations", Map.class)); // Cast map from the document
+//        return section;
+//    }
+	
+	
+	
 	
 	public static Document getMonthlyBalanceDocument(String mongoUserId, int month) {
 		return new Document(MongoFields.MONGO_USER_ID, mongoUserId)
@@ -194,7 +235,7 @@ public class MongoUtils {
 	public static void restoreUserBalance(ClientSession startSession) {
 		Document balanceFilter = new Document(MongoFields.USER_BALANCE, SportScoreApiConstants.STARTING_BALANCE);
 		Document setBalance = new Document("$set", balanceFilter);
-		MongoCollection<Document> usersCollection = getMongoCollection(CollectionNames.USERS);
+		MongoCollection<Document> usersCollection = getMongoCollection(MongoCollectionConstants.USERS);
 		usersCollection.updateMany(startSession, new Document(), setBalance);
 	}
 
@@ -207,7 +248,7 @@ public class MongoUtils {
 	//********************************************************************//
 
 	public static MongoCollection<Document> getMongoCollection(String collectionName){
-    	MongoDatabase database = getMongoClient().getDatabase(CollectionNames.BOUNTY_BET_DB);
+    	MongoDatabase database = getMongoClient().getDatabase(MongoCollectionConstants.BOUNTY_BET_DB);
         return database.getCollection(collectionName);
     }
 	

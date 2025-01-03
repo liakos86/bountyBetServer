@@ -1,11 +1,15 @@
 package gr.server.data.api.model.league;
 
+import java.io.Serializable;
 import java.util.Map;
 
-import gr.server.data.api.model.league.StandingRow;
-
-public class StandingRow implements Comparable<StandingRow>{
+public class StandingRow implements Comparable<StandingRow>, Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	int position;
 	
 	int points;
@@ -18,11 +22,13 @@ public class StandingRow implements Comparable<StandingRow>{
 	
 	int away_position;
 	
+//	String goals_total;
+//	String matches_total;//:38
+//	String wins_total;//:19
+//	String draws_total;//:11
+//	String losses_total;//:8
+	
 	Map<String, String> fields; 
-//	matches_total:38
-//	wins_total:19
-//	draws_total:11
-//	losses_total:8
 //	goals_total:"61:37"
 //	points_total:68
 //	percentage_total:null
@@ -124,6 +130,67 @@ public class StandingRow implements Comparable<StandingRow>{
 	public void setTeam(Team team) {
 		this.team = team;
 	}
+	
+	
+
+	public int getHome_position() {
+		return home_position;
+	}
+
+	public void setHome_position(int home_position) {
+		this.home_position = home_position;
+	}
+
+	public int getAway_position() {
+		return away_position;
+	}
+
+	public void setAway_position(int away_position) {
+		this.away_position = away_position;
+	}
+
+	
+	
+	
+//	public String getGoals_total() {
+//		return goals_total;
+//	}
+//
+//	public void setGoals_total(String goals_total) {
+//		this.goals_total = goals_total;
+//	}
+//
+//	public String getMatches_total() {
+//		return matches_total;
+//	}
+//
+//	public void setMatches_total(String matches_total) {
+//		this.matches_total = matches_total;
+//	}
+//
+//	public String getWins_total() {
+//		return wins_total;
+//	}
+//
+//	public void setWins_total(String wins_total) {
+//		this.wins_total = wins_total;
+//	}
+//
+//	public String getDraws_total() {
+//		return draws_total;
+//	}
+//
+//	public void setDraws_total(String draws_total) {
+//		this.draws_total = draws_total;
+//	}
+//
+//	public String getLosses_total() {
+//		return losses_total;
+//	}
+//
+//	public void setLosses_total(String losses_total) {
+//		this.losses_total = losses_total;
+//	}
 
 	@Override
 	public int compareTo(StandingRow o) {

@@ -3,6 +3,7 @@ package gr.server.application;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +12,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -21,24 +21,28 @@ import org.bson.Document;
 import org.bson.conversions.Bson;
 
 import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
 
 import gr.server.bets.settle.impl.UserBetHandler;
 import gr.server.bets.settle.impl.UserBetPredictionHandler;
+import gr.server.bets.settle.impl.UserBetWithdrawnPredictionHandler;
+import gr.server.common.MongoCollectionConstants;
 import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.handler.LeagueStatsHandler;
 import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
+import gr.server.data.api.model.league.League;
+import gr.server.data.api.model.league.Leagues;
+import gr.server.data.api.model.league.Section;
+import gr.server.data.api.model.league.Sections;
 import gr.server.data.api.websocket.SportScoreWebSocketClient;
-import gr.server.data.constants.CollectionNames;
 import gr.server.data.constants.SportScoreApiConstants;
-import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.global.helper.ApiDataFetchHelper;
-import gr.server.data.global.helper.mock.MockApiDataFetchHelper;
 import gr.server.data.user.model.objects.User;
 import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.impl.client.SportScoreClient;
 import gr.server.impl.websocket.WebSocketMessageHandlerImpl;
 import gr.server.mongo.util.MongoUtils;
-import gr.server.program.SettleProgram;
 import gr.server.transaction.helper.MongoTransactionalBlock;
 
 @WebListener
@@ -66,12 +70,58 @@ public class BetServerContextListener implements ServletContextListener {
 	 */
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
-		
+
 		
 		RestApplication.connectFirebase();
 		
-		MockApiDataFetchHelper.fetchSections();//reducing calls
-		MockApiDataFetchHelper.fetchLeagues();//reducing calls
+		
+		fetchSectionsAndLeaguesFromDbIntoCache();
+		
+		
+		//sections
+		ExecutorService fetchSectionsService = Executors.newFixedThreadPool(1);
+
+
+		Runnable fetchSectionsTask = () -> {
+			
+			fetchSectionsService.submit(() -> {
+				Sections sectionsFromFile = MockApiClient.getSectionsFromFile();// TODO change to api
+				if (sectionsFromFile==null || sectionsFromFile.getData()==null || sectionsFromFile.getData().isEmpty()) {
+					return;
+				}
+				
+				new MongoClientHelperImpl().updateSections(sectionsFromFile.getData());
+			});
+			
+		};
+			
+			
+		ScheduledExecutorService fetchSectionsExecutor = Executors.newSingleThreadScheduledExecutor();
+		fetchSectionsExecutor.scheduleAtFixedRate(fetchSectionsTask, 5, 48*60*60, TimeUnit.SECONDS);
+		
+		
+		//leagues
+		ExecutorService fetchLeaguesService = Executors.newFixedThreadPool(1);
+
+
+		Runnable fetchLeaguesTask = () -> {
+			
+			fetchLeaguesService.submit(() -> {
+				Leagues leaguesFromFile = MockApiClient.getLeaguesFromFile();// TODO change to api
+				if (leaguesFromFile==null || leaguesFromFile.getData()==null || leaguesFromFile.getData().isEmpty()) {
+					return;
+				}
+				
+				new MongoClientHelperImpl().updateLeagues(leaguesFromFile.getData());
+			});
+			
+		};
+			
+			
+		ScheduledExecutorService fetchLeaguesExecutor = Executors.newSingleThreadScheduledExecutor();
+		fetchLeaguesExecutor.scheduleAtFixedRate(fetchLeaguesTask, 60, 48*60*60, TimeUnit.SECONDS);
+		
+		
 
 		//events
 		ExecutorService fetchEventsService = Executors.newFixedThreadPool(1);
@@ -86,7 +136,7 @@ public class BetServerContextListener implements ServletContextListener {
 			
 			
 		ScheduledExecutorService fetchEventsExecutor = Executors.newSingleThreadScheduledExecutor();
-		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 0, 60*60, TimeUnit.SECONDS);
+		fetchEventsExecutor.scheduleAtFixedRate(fetchEventsTask, 20, 60*60, TimeUnit.SECONDS);
 		
 		
 		//live
@@ -107,12 +157,7 @@ public class BetServerContextListener implements ServletContextListener {
 		
 		
 		ScheduledExecutorService fetchLiveEventsExecutor = Executors.newSingleThreadScheduledExecutor();
-		fetchLiveEventsExecutor.scheduleAtFixedRate(fetchLiveEventsTask, 10, 15*60, TimeUnit.SECONDS);
-		
-//		Runnable fetchLeagueTablesTask = () -> { ApiDataFetchHelper.fetchLeagueStandings(); };
-//		ScheduledExecutorService fetchLeagueTablesExecutor = Executors.newSingleThreadScheduledExecutor();
-//		fetchLeagueTablesExecutor.schedule(fetchLeagueTablesTask, 20, TimeUnit.SECONDS);
-		
+		fetchLiveEventsExecutor.scheduleAtFixedRate(fetchLiveEventsTask, 30, 15*60, TimeUnit.SECONDS);
 		
 		
 		/** new preds **/
@@ -139,6 +184,23 @@ public class BetServerContextListener implements ServletContextListener {
 		ScheduledExecutorService settlePredsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
 		settlePredsRunnableOrchestratorTask.scheduleAtFixedRate(settlePredsRunnableOrchestrator, 3, 3, TimeUnit.MINUTES);
 		
+		/** withdrawn preds **/
+		
+		
+		ExecutorService subscribersWithDrawnPredictionSettling = Executors.newFixedThreadPool(UserBetWithdrawnPredictionHandler.NUM_WORKERS);
+		
+		Runnable settleWithdrawnPredsRunnableOrchestrator = () -> { 
+			
+			try {
+				subscribersWithDrawnPredictionSettling.submit(new UserBetWithdrawnPredictionHandler(FootballApiCache.WITHDRAWN_EVENTS.size()));
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			};
+		
+		ScheduledExecutorService settleWithdrawnPredsRunnableOrchestratorTask = Executors.newScheduledThreadPool(1);
+		settleWithdrawnPredsRunnableOrchestratorTask.scheduleAtFixedRate(settleWithdrawnPredsRunnableOrchestrator, 3, 3, TimeUnit.MINUTES);
+		
 		
 		
 		// bets
@@ -148,17 +210,20 @@ public class BetServerContextListener implements ServletContextListener {
 		Runnable settleBetsRunnableOrchestrator = () -> { 
 			
 			try {
-				System.out.println("************BETS");
 				 MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
 				 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
-				 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(CollectionNames.BETS, pendingOrPendingLostBetsFilter);
+				 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(MongoCollectionConstants.USER_BETS, pendingOrPendingLostBetsFilter);
 				
-				 System.out.println("************BETS " + allUnsettledBetsSize);
-				long batchSize = (allUnsettledBetsSize / UserBetHandler.NUM_WORKERS) > 0 ?
+				 System.out.println("************ALL UNSETTLED BETS " + allUnsettledBetsSize);
+				if (allUnsettledBetsSize == 0) {
+					return;
+				}
+				 
+				 long batchSize = (allUnsettledBetsSize / UserBetHandler.NUM_WORKERS) > 0 ?
 						allUnsettledBetsSize / UserBetHandler.NUM_WORKERS 
 						: allUnsettledBetsSize % UserBetHandler.NUM_WORKERS;
 				
-				FindIterable<Document> iterable = MongoUtils.getMongoCollection(CollectionNames.BETS).find(pendingOrPendingLostBetsFilter).batchSize((int) batchSize);
+				FindIterable<Document> iterable = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS).find(pendingOrPendingLostBetsFilter).batchSize((int) batchSize);
 			
 				List<Document> userBetsDocument = new ArrayList<>();
 				for (Document bet : iterable) {
@@ -224,37 +289,98 @@ public class BetServerContextListener implements ServletContextListener {
 			
 		ScheduledExecutorService fetchLeadersExecutor = Executors.newSingleThreadScheduledExecutor();
 		fetchLeadersExecutor.scheduleAtFixedRate(fetchLeadersTask, 60, 5*60, TimeUnit.SECONDS);
+		
+		
+		//standings
+		ExecutorService fetchStandingsService = Executors.newFixedThreadPool(1);//LeagueStatsHandler.NUM_WORKERS);
+
+
+		Runnable fetchStandingsTask = () -> {
+			try {
+				
+//				int size = FootballApiCache.ALL_LEAGUES.size();
+//				int batchSize = size / 1;// LeagueStatsHandler.NUM_WORKERS;
+				Set<League> batchLeagues = new HashSet<>();
+					
+				fetchStandingsService.submit(() -> {
+					new ApiDataFetchHelper().fetchLeagueStandings(batchLeagues);
+//					new LeagueStatsHandler(batchLeagues);
+				});
 			
+		}catch(Exception e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		};
+			
+			
+		ScheduledExecutorService fetchStandingsExecutor = Executors.newSingleThreadScheduledExecutor();
+		fetchStandingsExecutor.scheduleAtFixedRate(fetchStandingsTask, 60, 3*60, TimeUnit.SECONDS);
 		
 		
-	
+		//live statistics
+		ExecutorService fetchStatsService = Executors.newFixedThreadPool(4);//LeagueStatsHandler.NUM_WORKERS);
+
+		Runnable fetchStatsTask = () -> {
+			try {
+				
+				Set<Integer> eventIds = FootballApiCache.LIVE_EVENTS.keySet();
+				int batchSize = eventIds.size() / 4;
+				
+				List<Integer> eventsToHandle = new ArrayList<>();
+				for (Integer eventId : eventIds) {
+					eventsToHandle.add(eventId);
+					
+					if (eventsToHandle.size() == batchSize) {
+						System.out.println("****NEW LIVE STATS SUBMIT " + batchSize);
+						
+						fetchStatsService.submit(() -> {
+							new ApiDataFetchHelper().fetchEventStatistics(eventIds);
+							
+						});
+						
+						eventsToHandle.clear();
+					}
+		        }
+				
+				if (!eventsToHandle.isEmpty()) {
+					System.out.println("****NEW LIVE STATS SUBMIT EXTRA " + batchSize);
+					fetchStatsService.submit(() -> {
+						new ApiDataFetchHelper().fetchEventStatistics(eventIds);
+					});
+				}
+			
+		}catch(Exception e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		};
+			
+			
+		ScheduledExecutorService fetchStatsExecutor = Executors.newSingleThreadScheduledExecutor();
+		fetchStatsExecutor.scheduleAtFixedRate(fetchStatsTask, 120, 3*60, TimeUnit.SECONDS);
+			
+	}
+
+	private void fetchSectionsAndLeaguesFromDbIntoCache() {
+		
+		new MongoTransactionalBlock() {
+			
+			@Override
+			public void begin() throws Exception {
+				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
+				List<Section> sectionsFromDb = mongoClientHelperImpl.getSectionsFromDb(session);
+				sectionsFromDb.forEach(s->FootballApiCache.ALL_SECTIONS.put(s.getId(), s));
+				
+				List<League> leaguesFromDb = mongoClientHelperImpl.getLeaguesFromDb(session);
+				leaguesFromDb.forEach(l->FootballApiCache.ALL_LEAGUES.put(l.getId(), l));
+				
+				MongoUtils.DB_DATA_FETCHED = true;
+				
+			}
+		}.execute();
 		
 	}
-	
-//	private void settleBets() {
-//		Set<MatchEvent> todaysFinishedEvents = FootballApiCache.ALL_EVENTS.values().stream().filter(match -> MatchEventStatus.FINISHED.getStatusStr().equals(match.getStatus())).collect(Collectors.toSet());
-//		
-//		new MongoTransactionalBlock() {
-//			
-//			@Override
-//			public void begin() throws Exception {
-//				int settled = new MongoClientHelperImpl().settlePredictions(session, todaysFinishedEvents);
-//				//logger.log(Level.INFO, "Settled " + settled + " predictions");
-//				System.out.println("Settled " + settled + " predictions");
-//			}
-//		}.execute();
-//		
-//		new MongoTransactionalBlock() {
-//			@Override
-//			public void begin() throws Exception {
-//				System.out.println("Working in thread: " + Thread.currentThread().getName());
-//				int settled = new MongoClientHelperImpl().settleOpenBets(session);
-//				System.out.println("Settled " + settled + " bets");
-////				logger.log(Level.INFO, "Settled " + settled + " bets");
-//				
-//			}
-//		}.execute();
-//	}
 
 	private SportScoreWebSocketClient initiateWebSocket() {
 		URI uri = null;

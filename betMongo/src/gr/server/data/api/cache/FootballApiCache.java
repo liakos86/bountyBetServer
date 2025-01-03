@@ -11,7 +11,10 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import org.apache.activemq.util.LRUCache;
+
+import gr.server.common.util.ConcurrentLRUCache;
+
+//import org.apache.activemq.util.LRUCache;
 
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
@@ -98,14 +101,14 @@ public class FootballApiCache {
 	/**
 	 * All the available sections. e.g. World is a section, Greece is a section etc.
 	 */
-	public static Map<Integer, Section> ALL_SECTIONS = new HashMap<>();
+	public static Map<Integer, Section> ALL_SECTIONS = new ConcurrentHashMap<>();
 	
 	/**
 	 * All the leagues in the system. Every league belongs to a section. e.g. Club Friendlies belong to World section.
 	 */
 	public static Map<Integer, LeagueWithData> ALL_LEAGUES_WITH_EVENTS = new ConcurrentHashMap<>();
 
-	public static Map<Integer, League> ALL_LEAGUES = new HashMap<>();
+	public static Map<Integer, League> ALL_LEAGUES = new ConcurrentHashMap<>();
 
 //	public static Map<Integer, User> LEADERBOARD = new HashMap<>();
 
@@ -132,13 +135,18 @@ public class FootballApiCache {
 	
 	public static Set<Integer> SUPPORTED_SECTION_IDS = new HashSet<>();
 	
+	public static Set<Integer> SUPPORTED_LEAGUE_IDS = new HashSet<>();
+	
 	public static BlockingQueue<MatchEvent> FINISHED_EVENTS = new LinkedBlockingQueue<MatchEvent>();
+
+	public static BlockingQueue<MatchEvent> WITHDRAWN_EVENTS = new LinkedBlockingQueue<MatchEvent>();
   	
 	/**
 	 * Stats will be fetched periodically. 
 	 * Least recently used ones will be discarded.
 	 */
-	public static LRUCache<Integer, MatchEventIncidentsWithStatistics> ALL_MATCH_STATS = new LRUCache<>(512);
+//	public static LRUCache<Integer, MatchEventIncidentsWithStatistics> ALL_MATCH_STATS = new LRUCache<>(512);
+	public static ConcurrentLRUCache<Integer, MatchEventIncidentsWithStatistics> ALL_MATCH_STATS = new ConcurrentLRUCache<>(256);
 	
 	static {
 		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(-1, new ArrayList<>());
@@ -147,11 +155,11 @@ public class FootballApiCache {
 		
 		SUPPORTED_SECTION_IDS.add(1);
 		SUPPORTED_SECTION_IDS.add(2);
-		SUPPORTED_SECTION_IDS.add(3);
-		SUPPORTED_SECTION_IDS.add(4);
-		SUPPORTED_SECTION_IDS.add(5);
-		SUPPORTED_SECTION_IDS.add(7);
-		SUPPORTED_SECTION_IDS.add(8);
+//		SUPPORTED_SECTION_IDS.add(3);morocco
+//		SUPPORTED_SECTION_IDS.add(4);armenia
+//		SUPPORTED_SECTION_IDS.add(5);costa rica
+//		SUPPORTED_SECTION_IDS.add(7);amateur germany
+//		SUPPORTED_SECTION_IDS.add(8);san marino
 		SUPPORTED_SECTION_IDS.add(9);
 		SUPPORTED_SECTION_IDS.add(13);
 		SUPPORTED_SECTION_IDS.add(18);
@@ -175,10 +183,10 @@ public class FootballApiCache {
 		SUPPORTED_SECTION_IDS.add(43);//alb
 		SUPPORTED_SECTION_IDS.add(44);//serbia
 		SUPPORTED_SECTION_IDS.add(46);//monten
-		SUPPORTED_SECTION_IDS.add(52);//south af
+//		SUPPORTED_SECTION_IDS.add(52);//south af
 		SUPPORTED_SECTION_IDS.add(55);//uae
 		SUPPORTED_SECTION_IDS.add(65);//austr
-		SUPPORTED_SECTION_IDS.add(67);//belar
+//		SUPPORTED_SECTION_IDS.add(67);//belar
 		SUPPORTED_SECTION_IDS.add(69);//belg
 		SUPPORTED_SECTION_IDS.add(71);//bulg
 		SUPPORTED_SECTION_IDS.add(75);//china
@@ -210,6 +218,13 @@ public class FootballApiCache {
 		SUPPORTED_SECTION_IDS.add(135);//brazil
 		SUPPORTED_SECTION_IDS.add(379);//not cancelled ????
 		SUPPORTED_SECTION_IDS.add(487);//interna
+		
+		
+		
+		//TODO whitelist
+		SUPPORTED_LEAGUE_IDS.add(-1111); 
+		
+		
 		
 		
 	}
