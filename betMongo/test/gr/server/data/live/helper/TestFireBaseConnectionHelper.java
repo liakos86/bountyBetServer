@@ -1,4 +1,4 @@
-package gr.server.application;
+package gr.server.data.live.helper;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.Score;
+import gr.server.data.live.helper.FireBaseConnectionHelper;
 
 public class TestFireBaseConnectionHelper {
 	

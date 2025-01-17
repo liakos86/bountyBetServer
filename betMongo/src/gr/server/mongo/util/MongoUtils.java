@@ -4,7 +4,6 @@ package gr.server.mongo.util;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -72,9 +71,9 @@ public class MongoUtils {
 		return list;
 	}
     
-    public static <E> ArrayList<E> getSorted(String collectionString,  Executor<E> e, Document findFilter, Document sortFilter, int limit){
+    public static <E> ArrayList<E> getSorted(ClientSession session, String collectionString,  Executor<E> e, Bson findFilter, Document sortFilter, int limit){
 		 MongoCollection<Document> collection = getMongoCollection(collectionString);
-		 FindIterable<Document> find = collection.find(findFilter).limit(limit).sort(sortFilter);
+		 FindIterable<Document> find = collection.find(session, findFilter).limit(limit).sort(sortFilter);
 		 ArrayList<E> list  = new ArrayList<E>();
 		 for (Document document : find) {
 			 String json = document.toJson();
@@ -96,8 +95,13 @@ public class MongoUtils {
 			MatchEvent matchEvent = FootballApiCache.ALL_EVENTS.get(prediction.getEventId());
 
 			Document newBetPrediction = new Document(MongoFields.EVENT_ID, prediction.getEventId())
-					.append(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, newBetMongoId)
+					
 					.append(MongoFields.MONGO_USER_ID, userBet.getMongoUserId())
+					.append(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, newBetMongoId)
+					
+					.append(MongoFields.USER_BET_PREDICTION_BET_LEAGUE_ID, matchEvent.getLeague_id())
+					.append(MongoFields.USER_BET_PREDICTION_BET_START_AT, matchEvent.getStart_at())
+
 					.append(MongoFields.USER_BET_PREDICTION_TYPE, prediction.getPredictionType().getCode())
 					.append(MongoFields.USER_BET_PREDICTION_CATEGORY, prediction.getPredictionCategory().getCategoryCode())
 					.append(MongoFields.USER_BET_PREDICTION_STATUS, PredictionStatus.PENDING.getCode())
@@ -119,7 +123,7 @@ public class MongoUtils {
 				.append(MongoFields.BET_STATUS, userBet.getBetStatus())
 				.append(MongoFields.BET_BELONGING_MONTH, userBet.getBelongingMonth())
 				.append(MongoFields.BET_BELONGING_YEAR, userBet.getBelongingYear())
-				.append(MongoFields.USER_BET_PLACEMENT_MILLIS, userBet.getBetPlaceMillis())
+				.append(MongoFields.USER_BET_PLACEMENT_MILLIS, userBet.getBetPlacementMillis())
 				;
 	}
 	
@@ -166,6 +170,7 @@ public class MongoUtils {
 				.append(MongoFields.USER_BALANCE_MONTH, month)
 				.append(MongoFields.USER_BALANCE, ServerConstants.STARTING_BALANCE)
 
+				.append(MongoFields.USER_BALANCE_BET_AMOUNT_MONTHLY, 0)
 				.append(MongoFields.USER_MONTHLY_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_MONTHLY_WON_EVENTS, 0)
 				 .append(MongoFields.USER_MONTHLY_LOST_SLIPS, 0)
@@ -180,6 +185,7 @@ public class MongoUtils {
 				 .append(MongoFields.VALIDATED, false)
 				 
 				 			 
+				 .append(MongoFields.USER_BET_AMOUNT_OVERALL, 0)
 				 .append(MongoFields.USER_OVERALL_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_WON_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_LOST_SLIPS, 0)
@@ -190,10 +196,10 @@ public class MongoUtils {
 		
 		BasicDBObject translations = new BasicDBObject(team.getName_translations());
 		
-		 return new Document(MongoFields.TEAM_ID, team.getId())
-					 .append(MongoFields.TEAM_NAME, team.getName())
-					 .append(MongoFields.TEAM_SPORT_ID, team.getSport_id())
-					 .append(MongoFields.TEAM_LOGO_URL, team.getLogo())
+		 return new Document(MongoFields.ID, team.getId())
+					 .append(MongoFields.NAME, team.getName())
+					 .append(MongoFields.SPORT_ID, team.getSport_id())
+					 .append(MongoFields.LOGO_URL, team.getLogo())
 					 .append(MongoFields.TRANSLATIONS, translations);
 	}
 	

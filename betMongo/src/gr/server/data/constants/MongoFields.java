@@ -41,6 +41,9 @@ public interface MongoFields {
 
 	String BET_AMOUNT = "betAmount";
 	
+	String USER_BET_AMOUNT_OVERALL = "overallBetAmount";
+	String USER_BALANCE_BET_AMOUNT_MONTHLY = "monthlyBetAmount";
+	
 //	String BET_PREDICTIONS_SETTLED = "betPredictionsSettled";
 
 	String MONGO_USER_ID = "mongoUserId";
@@ -94,6 +97,10 @@ public interface MongoFields {
 
 	String USER_BET_PREDICTION_BET_MONGO_ID = "mongoBetId";
 
+	String USER_BET_PREDICTION_BET_LEAGUE_ID = "leagueId";
+
+	String USER_BET_PREDICTION_BET_START_AT = "startAt";
+
 	String USER_BET_PLACEMENT_MILLIS = "betPlacementMillis";
 
 	String USER_BET_PREDICTION_ODD_VALUE = "oddValue";
@@ -110,17 +117,16 @@ public interface MongoFields {
 	String SETTLED_EVENT_BELONGING_DAY = "eventBelongingDay";
 	String SETTLED_EVENT_BELONGING_YEAR = "eventBelongingYear";
 	
-	String TEAM_ID = "teamId";
 	
-	String TEAM_SPORT_ID = "teamSportId";
+	String SPORT_ID = "sport_id";
 	
-	String TEAM_LOGO_URL = "teamLogoUrl";
+	String LOGO_URL = "logo";
 	
-	String TEAM_NAME = "teamName";
+	String NAME = "name";
 	
-	String TRANSLATIONS = "translations";
+	String TRANSLATIONS = "name_translations";
 
-	String SPORT_ID = "sportId";
+//	String SPORT_ID = "sportId";
 
 
 }

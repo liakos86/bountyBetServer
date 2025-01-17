@@ -2,7 +2,6 @@ package gr.server.impl.service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.ws.rs.Consumes;
@@ -25,7 +24,6 @@ import gr.server.data.api.model.dto.LoginResponseDto;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.league.Season;
-import gr.server.data.api.model.league.Section;
 import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
@@ -84,19 +82,21 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Consumes("application/json; charset=UTF-8")
 	@Produces("application/json; charset=UTF-8")
 	public Response loginUser(String userJson) throws Exception {
-		User incomingUser = new Gson().fromJson(userJson, new TypeToken<User>() {}.getType());
+		User incomingUser = new Gson().fromJson(userJson, new TypeToken<User>() {
+		}.getType());
 		String userEmail = SecureUtils.decode(incomingUser.getEmail().trim());
-		LoginResponseDto loginResponse = new MongoClientHelperImpl().loginUser(incomingUser.getUsername(), userEmail, incomingUser.getPassword());
-		
+		LoginResponseDto loginResponse = new MongoClientHelperImpl().loginUser(incomingUser.getUsername(), userEmail,
+				incomingUser.getPassword());
+
 		User responseUser = null;
 		if (loginResponse.getMongoId() != null) {
 			responseUser = getUserFromMongoId(loginResponse.getMongoId());
 			System.out.println("RETURNING " + responseUser);
 		}
-		
+
 		return Response.ok(new Gson().toJson(responseUser)).build();
 	}
-	
+
 	@Override
 	@POST
 	@Path("/authorize")
@@ -109,7 +109,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 		String generateToken = JwtUtils.generateToken(decodedString);
 		TokenResponse tokenResponse = new TokenResponse();
 		tokenResponse.setAccessToken(generateToken);
-		
+
 		return Response.ok(gson.toJson(tokenResponse)).build();
 	}
 
@@ -132,22 +132,25 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 		return Response.ok(userJson).build();
 	}
 
-	@Override
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	@Path("getLiveSpecific/{ids}")
-	public Response getLiveSpecific(@PathParam("ids") String ids) {
-		Set<MatchEvent> liveEvents = new MongoClientHelperImpl().getLiveByIds(ids);
-		String eventsJson = new Gson().toJson(liveEvents);
-		return Response.ok(eventsJson).build();
-	}
-	
+//
+//	@Override
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	@Path("getLiveSpecific/{ids}")
+//	public Response getLiveSpecific(@PathParam("ids") String ids) {
+//		Set<MatchEvent> liveEvents = new MongoClientHelperImpl().getLiveByIds(ids);
+//		String eventsJson = new Gson().toJson(liveEvents);
+//		return Response.ok(eventsJson).build();
+//	}
+//	
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getSections")
 	public Response getSections() {
-		return Response.ok(new Gson().toJson(FootballApiCache.ALL_SECTIONS.values().stream().collect(Collectors.toList()))).build();
+		return Response
+				.ok(new Gson().toJson(FootballApiCache.ALL_SECTIONS.values().stream().collect(Collectors.toList())))
+				.build();
 	}
 
 	@Override
@@ -155,9 +158,11 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagues")
 	public Response getLeagues() {
-		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES.values().stream().collect(Collectors.toList()))).build();
+		return Response
+				.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES.values().stream().collect(Collectors.toList())))
+				.build();
 	}
-	
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -172,21 +177,21 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 //				System.out.println("EVENT:::::::" + e);
 //			}
 //		}
-		
+
 		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY)).build();
 	}
-	
+
 	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLiveEvents")
 	public Response getLiveEvents() {
-		for(MatchEvent e : FootballApiCache.LIVE_EVENTS.values()) {
+		for (MatchEvent e : FootballApiCache.LIVE_EVENTS.values()) {
 			if (e.getHome_team().getName().contains("AEL L")) {
 				System.out.println(e);
 			}
 		}
-		
+
 		return Response.ok(new Gson().toJson(FootballApiCache.LIVE_EVENTS)).build();
 	}
 
@@ -215,14 +220,8 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getEventStatistics/{id}")
 	public Response getEventStatistics(@PathParam("id") Integer id) {
-		MatchEventIncidentsWithStatistics src = FootballApiCache.ALL_MATCH_STATS.get(id);
-		if (src == null) {
-			src = FootballApiCache.ALL_MATCH_STATS.get(2576311);
-//			src = new MatchEventIncidentsWithStatistics();
-		}
-//		System.out.println("STATS::" + src.getMatchEventStatistics().getData().size());
-//		System.out.println("InCIS::" + src.getMatchEventIncidents().getData().size());
-		return Response.ok(new Gson().toJson(src)).build();
+		MatchEventIncidentsWithStatistics stats = FootballApiCache.ALL_MATCH_STATS.get(id);
+		return Response.ok(new Gson().toJson(stats)).build();
 	}
 
 	/**
@@ -230,7 +229,8 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	 * @return
 	 */
 	User getUserFromMongoId(String mongoId) {
-		User user = new MongoClientHelperImpl().getUser(mongoId, true, true, true, true);
+		long fiveDaysBefore = 5 * 1000 * 24 * 60 * 60;
+		User user = new MongoClientHelperImpl().getUser(mongoId, 20, fiveDaysBefore, true, true, true);
 		return user;
 	}
 

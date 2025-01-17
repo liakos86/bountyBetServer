@@ -17,6 +17,7 @@ public class UserMonthlyBalance implements Serializable{
 	private int monthlyLostSlipsCount;
 	private int monthlyWonEventsCount;
 	private int monthlyWonSlipsCount;
+	private Double monthlyBetAmount;
 
 	private Double balance;
 
@@ -82,6 +83,16 @@ public class UserMonthlyBalance implements Serializable{
 	public void setMonth(int month) {
 		this.month = month;
 	}
+
+	public Double getMonthlyBetAmount() {
+		return monthlyBetAmount;
+	}
+
+	public void setMonthlyBetAmount(Double monthlyBetAmount) {
+		this.monthlyBetAmount = monthlyBetAmount;
+	}
+	
+	
 	
 
 }

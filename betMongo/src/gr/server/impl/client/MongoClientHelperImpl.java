@@ -1,18 +1,18 @@
 package gr.server.impl.client;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import javax.persistence.Tuple;
 
 import org.apache.log4j.Logger;
 import org.bson.Document;
@@ -38,10 +38,11 @@ import com.mongodb.client.model.WriteModel;
 
 import gr.server.common.MongoCollectionConstants;
 import gr.server.common.ServerConstants;
-import gr.server.common.StringConstants;
 import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
+import gr.server.data.api.model.bean.OpenBetDelayedLeagueDatesBean;
 import gr.server.data.api.model.dto.LoginResponseDto;
+import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
@@ -74,7 +75,7 @@ implements MongoClientHelper {
 	@Override
 	public User createUser(User user) {
 		
-		new MongoTransactionalBlock() {
+		boolean userCreated = new MongoTransactionalBlock<Void>() {
 			@Override
 			public void begin() throws Exception {
 				System.out.println("Create user Working in thread: " + Thread.currentThread().getName());
@@ -87,7 +88,7 @@ implements MongoClientHelper {
 				filters.add(existingUserName);
 				Document orDocument = MongoUtils.getAndOrDocument(filters, MongoFields.OR);
 
-				FindIterable<Document> find = users.find(orDocument);
+				FindIterable<Document> find = users.find(session, orDocument);
 				Document existingUser = find.first();
 				if (existingUser != null) {
 
@@ -117,11 +118,13 @@ implements MongoClientHelper {
 				}
 				MongoCollection<Document> userBalanceCol = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_MONTHLY_BALANCE);
 				userBalanceCol.insertMany(session, monthDocuments);
-				
-				// createdUser.setPassword(newUser.getString(Fields.PASSWORD));
-				// createdUser.setPosition(SyncHelper.userPosition(createdUser));//TODO later
+			
 			}
 		}.execute();
+		
+		if (userCreated && logger.isInfoEnabled()) {
+			logger.info("Created new user:" + user);
+		}
 		
 		return user;
 		
@@ -172,8 +175,8 @@ implements MongoClientHelper {
 	}
 
 	@Override
-	public User getUser(String mongoId, boolean includeBets, boolean includeAwards, boolean includeBalances,
-			boolean includeBounties) {
+	public User getUser(String mongoId, int maxBetsToFetch, long millisToSearchBets, 
+			boolean includeAwards, boolean includeBalances, boolean includeBounties) {
 		
 		MongoTransactionalBlock<User> mongoBlock = new MongoTransactionalBlock<User>() {
 			
@@ -197,8 +200,8 @@ implements MongoClientHelper {
 
 				result = userFromMongoDocument(userFromMongo);
 				
-				if (includeBets) {
-					result.setUserBets(getBetsForUser(session, mongoId));
+				if (maxBetsToFetch > 0) {
+					result.setUserBets(getBetsForUser(session, mongoId, maxBetsToFetch, millisToSearchBets));
 				}
 				
 				if (includeAwards) {
@@ -210,12 +213,12 @@ implements MongoClientHelper {
 					UserMonthlyBalance currentBalanceObject = result.currentBalanceObject();
 					result.setBalance(currentBalanceObject.getBalance());
 					
+					result.setMonthlyBetAmount(currentBalanceObject.getMonthlyBetAmount() != null ? currentBalanceObject.getMonthlyBetAmount() : 0);
 					result.setMonthlyLostEventsCount(currentBalanceObject.getMonthlyLostEventsCount());
 					result.setMonthlyWonEventsCount(currentBalanceObject.getMonthlyWonEventsCount());
 					result.setMonthlyLostSlipsCount(currentBalanceObject.getMonthlyLostSlipsCount());
 					result.setMonthlyWonSlipsCount(currentBalanceObject.getMonthlyWonSlipsCount());
 					result.setPosition(userPosition(session, result));
-					
 					//System.out.println("Position is " + result.getPosition() + " for " + result.getUsername());
 				}
 				
@@ -234,36 +237,36 @@ implements MongoClientHelper {
 		return mongoBlock.getResult();
 	}
 	
-	@Override
-	public Set<MatchEvent> getLiveByIds(String ids) {
-		// TODO in the future maybe call SportScore??
-		if (ids == null || ids.trim().length() == 0) {
-			return new HashSet<>();
-		}
-		
-		String[] eventIds = ids.trim().replace(StringConstants.EMPTY, StringConstants.EMPTY)
-			.split(StringConstants.COMMA);
-		
-		Set<MatchEvent> favs = new HashSet<>();
-		for (String eventId : eventIds) {
-			if (eventId.equals(StringConstants.EMPTY)) {
-				continue;
-			}
-			
-			MatchEvent matchEvent = FootballApiCache.ALL_EVENTS.get(Integer.parseInt(eventId));
-			if (matchEvent != null) {
-				favs.add(matchEvent);
-			}
-		}
-		
-		return favs;
-	}
+//	@Override
+//	public Set<MatchEvent> getLiveByIds(String ids) {
+//		// TODO in the future maybe call SportScore??
+//		if (ids == null || ids.trim().length() == 0) {
+//			return new HashSet<>();
+//		}
+//		
+//		String[] eventIds = ids.trim().replace(StringConstants.EMPTY, StringConstants.EMPTY)
+//			.split(StringConstants.COMMA);
+//		
+//		Set<MatchEvent> favs = new HashSet<>();
+//		for (String eventId : eventIds) {
+//			if (eventId.equals(StringConstants.EMPTY)) {
+//				continue;
+//			}
+//			
+//			MatchEvent matchEvent = FootballApiCache.ALL_EVENTS.get(Integer.parseInt(eventId));
+//			if (matchEvent != null) {
+//				favs.add(matchEvent);
+//			}
+//		}
+//		
+//		return favs;
+//	}
 	
 	@Override
 	public BetPlacementStatus placeBet(UserBet userBet) {
 		
 		userBet.setBetStatus(BetStatus.PENDING.getCode());
-		userBet.setBetPlaceMillis(System.currentTimeMillis());
+		userBet.setBetPlacementMillis(System.currentTimeMillis());
 		
 		int currentMonth = LocalDate.now().getMonthValue();
 		userBet.setBelongingMonth(currentMonth);
@@ -278,10 +281,11 @@ implements MongoClientHelper {
 		}
 		
 		if (predictionsSpanNextMonth(userBet.getPredictions())) {
+			logger.info("Matches exist into next month");
 			return BetPlacementStatus.FAIL_GENERIC;
 		}
 		
-		boolean inserted = new MongoTransactionalBlock() {
+		boolean inserted = new MongoTransactionalBlock<Void>() {
 			@Override
 			public void begin() throws Exception {
 				
@@ -303,11 +307,22 @@ implements MongoClientHelper {
 				
 				userBet.setMongoId(newBetMongoId);
 				
-				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_MONTHLY_BALANCE);
+				MongoCollection<Document> userBalanceCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_MONTHLY_BALANCE);
 				Bson filterUser = Filters.eq(MongoFields.MONGO_USER_ID, userBet.getMongoUserId());
 				Bson filterMonth = Filters.eq(MongoFields.USER_BALANCE_MONTH, currentMonth);
+				
 				Bson increaseBalanceDocument = Updates.inc(MongoFields.USER_BALANCE, (-1 * userBet.getBetAmount()));
-				usersCollection.findOneAndUpdate(session, Filters.and(filterUser, filterMonth), increaseBalanceDocument);
+				Bson increaseBetAmountDocument = Updates.inc(MongoFields.USER_BALANCE_BET_AMOUNT_MONTHLY, (1 * userBet.getBetAmount()));
+				Bson userCombinedUpdates = Updates.combine(increaseBalanceDocument, increaseBetAmountDocument);
+				
+				
+				userBalanceCollection.findOneAndUpdate(session, Filters.and(filterUser, filterMonth), userCombinedUpdates);
+				
+				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
+				Bson filterUserMongoId = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
+
+				Bson increaseBetAmountOverallDocument = Updates.inc(MongoFields.USER_BET_AMOUNT_OVERALL, (1 * userBet.getBetAmount()));
+				usersCollection.findOneAndUpdate(session, filterUserMongoId, increaseBetAmountOverallDocument);
 				
 			}
 
@@ -318,13 +333,13 @@ implements MongoClientHelper {
 				teamsToInsert.put(matchEvent.getHome_team().getId(), matchEvent.getHome_team());
 				teamsToInsert.put(matchEvent.getAway_team().getId(), matchEvent.getAway_team());
 				MongoCollection<Document> teamsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.TEAM);
-				Bson homeTeamFilter = Filters.eq(MongoFields.TEAM_ID, matchEvent.getHome_team().getId());
-				Bson awayTeamFilter = Filters.eq(MongoFields.TEAM_ID, matchEvent.getAway_team().getId());
+				Bson homeTeamFilter = Filters.eq(MongoFields.ID, matchEvent.getHome_team().getId());
+				Bson awayTeamFilter = Filters.eq(MongoFields.ID, matchEvent.getAway_team().getId());
 				Bson orFilter = Filters.or(homeTeamFilter, awayTeamFilter);
 				FindIterable<Document> teamsDocuments = teamsCollection.find(orFilter);
 				
 				for (Document document : teamsDocuments) {
-					Integer teamId = document.getInteger(MongoFields.TEAM_ID);
+					Integer teamId = document.getInteger(MongoFields.ID);
 					if (teamsToInsert.containsKey(teamId)) {
 						teamsToInsert.remove(teamId);
 					}
@@ -367,7 +382,7 @@ implements MongoClientHelper {
 	}
 
 	private boolean insufficientFundsFor(UserBet userBet) {
-		User user = new MongoClientHelperImpl().getUser(userBet.getMongoUserId(), false, false, true, false);
+		User user = new MongoClientHelperImpl().getUser(userBet.getMongoUserId(), 0, 0, false, true, false);
 		return user.monthBalanceOf(userBet.getBelongingMonth()) - userBet.getBetAmount() < 0;
 	}
 
@@ -383,9 +398,10 @@ implements MongoClientHelper {
 		MongoCollection<Document> balancesCol = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_MONTHLY_BALANCE);
 		FindIterable<Document> find = balancesCol.find(findField).limit(20).sort(sortField);
 		 
+		long fiveDaysBefore = 5 * 1000 * 24 * 60 * 60;
 		for(Document doc : find)
 		{ 
-			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID), false, false, true, false);
+			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID), 5, fiveDaysBefore, false, true, false);
 			if (user==null) {
 				continue;
 			}
@@ -402,7 +418,7 @@ implements MongoClientHelper {
 		
 		for(Document doc : awardsDocs)
 		{ 
-			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID), false, true, false, false);
+			User user = getUser(doc.getString(MongoFields.MONGO_USER_ID), 0, 0, true, false, false);
 			if (user==null) {
 				continue;
 			}
@@ -443,6 +459,7 @@ implements MongoClientHelper {
 
 		for (MatchEvent event : toSettle) {
 
+			System.out.println("SETTLING " + event.getHome_team().getName());
 			
 			int winningPrediction = event.getWinner_code();
 			if ( winningPrediction == 0) {
@@ -637,7 +654,7 @@ implements MongoClientHelper {
 		}
 
 		
-		boolean updated = new MongoTransactionalBlock() {
+		MongoTransactionalBlock<Void> mongoBlock = new MongoTransactionalBlock<Void>() {
 			
 			@Override
 			public void begin() throws Exception {	
@@ -665,7 +682,10 @@ implements MongoClientHelper {
 				}
 				
 			}
-		}.execute();
+		};
+		
+		mongoBlock.setRetries(5);
+		boolean updated = mongoBlock.execute();
 				
 
 		System.out.println(Thread.currentThread().getName() +  " SETTLED BETS " + updated);
@@ -674,6 +694,37 @@ implements MongoClientHelper {
 				
 		
     }
+	
+	public boolean settleDelayedOpenPredictions(Set<OpenBetDelayedLeagueDatesBean> toHandle) {
+		for (OpenBetDelayedLeagueDatesBean openBetDelayedLeagueDatesBean : toHandle) {
+			for (String date : openBetDelayedLeagueDatesBean.getMissingDates()) {
+				
+				try {
+					Events leagueEventsByDate = SportScoreClient.getLeagueEventsByDate(openBetDelayedLeagueDatesBean.getLeagueId(), date);
+					if (leagueEventsByDate == null || leagueEventsByDate.getData() == null || leagueEventsByDate.getData().isEmpty()) {
+						System.out.println("NO DELAYED EVENTS FOUND!!!!!!!!!!!");
+						continue;
+					}
+					
+					for (MatchEvent incomingEvent : leagueEventsByDate.getData()) {
+						System.out.println("DELAYED EVENT FOUND:::" + incomingEvent.getId());
+						
+						FootballApiCache.checkForCaching(incomingEvent);
+						
+					
+					}
+					
+				} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+		}
+		
+		return false;
+	}
+
 	
 	/**
 	 * We find all the bets which have unsettled predictions.
@@ -737,7 +788,7 @@ implements MongoClientHelper {
 
 	@Override
 	public void deleteUser(String mongoId) {
-		new MongoTransactionalBlock() {
+		boolean deleted = new MongoTransactionalBlock() {
 			@Override
 			public void begin() throws Exception {
 				Bson userMongoIdFilter = Filters.eq(MongoFields.MONGO_ID, new ObjectId(mongoId));
@@ -746,12 +797,16 @@ implements MongoClientHelper {
 				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
 				MongoCollection<Document> betsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BETS);
 				MongoCollection<Document> predictionsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_BET_PREDICTIONS);
+				MongoCollection<Document> balancesCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USER_MONTHLY_BALANCE);
 
 				predictionsCollection.deleteMany(userBetFilter);
 				betsCollection.deleteMany(userBetFilter);
+				balancesCollection.deleteMany(userBetFilter);
 				usersCollection.deleteOne(userMongoIdFilter);
 			}
 		}.execute();
+		
+		System.out.println("DELETED " +deleted+ "::" + mongoId);
 	}
 	
 	 boolean closeMonthlyBalances(ClientSession session) {
@@ -793,7 +848,7 @@ implements MongoClientHelper {
 			long openBets = fetchFilterSize(MongoCollectionConstants.USER_BETS, combinedFilter);
 			
 			if(openBets > 0) {
-				System.out.println("Open bets still in place for " + previousMonth);
+				System.out.println(openBets + " open bets still in place for " + previousMonth);
 				return false;
 			}
 		
@@ -1042,9 +1097,9 @@ implements MongoClientHelper {
 
 		if (wonPredictionsCount > 0) {
 			Bson increaseWonOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_WON_EVENTS, wonPredictionsCount);
-			userUpdateDocuments.add(increaseWonOverallPredictionsDocument);
-
 			Bson increaseWonMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_WON_EVENTS, wonPredictionsCount);
+
+			userUpdateDocuments.add(increaseWonOverallPredictionsDocument);
 			userBalanceUpdateDocuments.add(increaseWonMonthlyPredictionsDocument);
 		}
 
@@ -1053,8 +1108,8 @@ implements MongoClientHelper {
 			Bson increaseLostOverallPredictionsDocument = Updates.inc(MongoFields.USER_OVERALL_LOST_EVENTS, lostPredictionsCount);
 			Bson increaseLostMonthlyPredictionsDocument = Updates.inc(MongoFields.USER_MONTHLY_LOST_EVENTS, lostPredictionsCount);
 			
-			userUpdateDocuments.add(increaseLostMonthlyPredictionsDocument);
 			userUpdateDocuments.add(increaseLostOverallPredictionsDocument);
+			userBalanceUpdateDocuments.add(increaseLostMonthlyPredictionsDocument);
 		}
 
 		
@@ -1150,6 +1205,7 @@ implements MongoClientHelper {
 		finalUser.setPassword(null);
 		
 
+		finalUser.setOverallBetAmount(userFromMongo.getDouble(MongoFields.USER_BET_AMOUNT_OVERALL));
 		finalUser.setOverallLostEventsCount(userFromMongo.getInteger(MongoFields.USER_OVERALL_LOST_EVENTS));
 		finalUser.setOverallWonEventsCount(userFromMongo.getInteger(MongoFields.USER_OVERALL_WON_EVENTS));
 		finalUser.setOverallLostSlipsCount(userFromMongo.getInteger(MongoFields.USER_OVERALL_LOST_SLIPS));
@@ -1164,16 +1220,19 @@ implements MongoClientHelper {
 	 * Fetch bets for the last 3 days only.
 	 * 
 	 * @param userId
+	 * @param millisToSearchBets 
+	 * @param maxBetsToFetch 
 	 * @return
 	 */
-	List<UserBet> getBetsForUser(ClientSession session, String userId) {
+	List<UserBet> getBetsForUser(ClientSession session, String userId, int maxBetsToFetch, long millisToSearchBets) {
 		Bson userBetsFilter = Filters.eq(MongoFields.MONGO_USER_ID, userId);
-		int threeDaysBefore = 10 * 1000 * 24 * 60 * 60;//TODO: change accord
-		Bson betMillisFilter = Filters.gt(MongoFields.USER_BET_PLACEMENT_MILLIS, System.currentTimeMillis() - threeDaysBefore);
+		//int threeDaysBefore = 3 * 1000 * 24 * 60 * 60;//TODO: change accord
+		Bson betMillisFilter = Filters.gt(MongoFields.USER_BET_PLACEMENT_MILLIS, System.currentTimeMillis() - millisToSearchBets);
 		Bson userBetsUpToThreeDaysBeforeFilter = Filters.and(userBetsFilter, betMillisFilter);
 		
 		Executor<UserBet> betsExecutor = new Executor<UserBet>(new TypeToken<UserBet>() {});
-		List<UserBet> bets = MongoUtils.get(session, MongoCollectionConstants.USER_BETS, userBetsUpToThreeDaysBeforeFilter, betsExecutor);
+		Document sortFilter = new Document(MongoFields.USER_BET_PLACEMENT_MILLIS, -1);
+		List<UserBet> bets = MongoUtils.getSorted(session, MongoCollectionConstants.USER_BETS, betsExecutor, userBetsUpToThreeDaysBeforeFilter, sortFilter, maxBetsToFetch);
 
 		for (UserBet bet : bets) {
 			Bson userBetPredictionsFilter = Filters.eq(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID,
@@ -1198,31 +1257,41 @@ implements MongoClientHelper {
 			return;
 		}
 		
-		Bson homeTeamFilter = Filters.eq(MongoFields.TEAM_ID, p.getHomeTeamId());
-		Bson awayTeamFilter = Filters.eq(MongoFields.TEAM_ID, p.getHomeTeamId());
+		Team homeTeam = FootballApiCache.ALL_TEAMS.get(p.getHomeTeamId());
+		Team awayTeam = FootballApiCache.ALL_TEAMS.get(p.getAwayTeamId());
+		if (homeTeam != null && awayTeam != null) {
+			p.setHomeTeam(homeTeam);
+			p.setAwayTeam(awayTeam);
+			return;
+		}
+		
+		Bson homeTeamFilter = Filters.eq(MongoFields.ID, p.getHomeTeamId());
+		Bson awayTeamFilter = Filters.eq(MongoFields.ID, p.getAwayTeamId());
 		Bson orFilter = Filters.or(homeTeamFilter, awayTeamFilter);
 		Executor<Team> teamExecutor = new Executor<Team>(new TypeToken<Team>() {});
 		List<Team> teams = MongoUtils.get(session, MongoCollectionConstants.TEAM, orFilter, teamExecutor);
-//		if (teams.isEmpty()) {
+		
+		if (teams.size() != 2) {
 			Team mockTeam = new Team();
 			mockTeam.setName("Missing team");
-			mockTeam.setLogo("https://xscore.cc/resb/team/asteras-tripolis.png");
+			//mockTeam.setLogo("https://xscore.cc/resb/team/asteras-tripolis.png");
 			mockTeam.setId(-1);
 			
 			p.setHomeTeam(mockTeam);
 			p.setAwayTeam(mockTeam);
-			return;
-//		}
+		}else {
+			for (Team team : teams) {
+				if (p.getHomeTeamId() == team.getId()) {
+					p.setHomeTeam(team);
+				}
+				
+				if (p.getAwayTeamId() == team.getId()) {
+					p.setAwayTeam(team);
+				}
+			}
+		}
+	
 		
-//		for (Team team : teams) {
-//			if (p.getHomeTeamId() == team.getId()) {
-//				p.setHomeTeam(team);
-//			}
-//			
-//			if (p.getAwayTeamId() == team.getId()) {
-//				p.setAwayTeam(team);
-//			}
-//		}
 	}
 	
 
@@ -1243,7 +1312,7 @@ implements MongoClientHelper {
 		List<Section> newSections = new ArrayList<>();
 		for (Section section : incoming) {
 			if (MongoUtils.DB_DATA_FETCHED && !FootballApiCache.ALL_SECTIONS.containsKey(section.getId()) 
-					&& FootballApiCache.SUPPORTED_SECTION_IDS.contains(section.getId())) {
+					&& FootballApiCache.SUPPORTED_SECTION_IDS.containsKey(section.getId())) {
 				Document sectionDocument = MongoUtils.getSectionDocument(section);
 				sectionDocuments.add(sectionDocument);
 				newSections.add(section);
@@ -1276,7 +1345,8 @@ implements MongoClientHelper {
 		List<League> newLeagues = new ArrayList<>();
 		for (League league : incoming) {
 			if (MongoUtils.DB_DATA_FETCHED && !FootballApiCache.ALL_LEAGUES.containsKey(league.getId())
-					&& FootballApiCache.SUPPORTED_SECTION_IDS.contains(league.getSection_id())) {
+					&& FootballApiCache.SUPPORTED_SECTION_IDS.containsKey(league.getSection_id())
+					&& FootballApiCache.SUPPORTED_SECTION_IDS.get(league.getSection_id()).contains(league.getId())) {
 				//TODO: add supported league ids check!
 				Document leagueDocument = MongoUtils.getLeagueDocument(league);
 				leagueDocuments.add(leagueDocument);
@@ -1401,10 +1471,41 @@ implements MongoClientHelper {
 		return false;
 	}
 
-	
+	public List<Team> getTeamsFromDb(ClientSession session) {
+		Executor<Team> teamsExecutor = new Executor<Team>(new TypeToken<Team>() {});
+		List<Team> teams = MongoUtils.get(session, MongoCollectionConstants.TEAM, new Document(), teamsExecutor);
+		return teams;
+	}
 
-	
+	public void updateTeams(Set<Team> teams) {
+		List<Document> teamsDoc = new ArrayList<>();
+		for (Team team : teams) {
+			if (FootballApiCache.ALL_TEAMS.containsKey(team.getId()) || team.getId() == 0) {
+				continue;
+			}
+			
+			teamsDoc.add(MongoUtils.getTeamDocument(team));
+			
+		}
+		
+		if (!teamsDoc.isEmpty()) {
+			
+			boolean inserted = new MongoTransactionalBlock<Void>() {
 
-
+				@Override
+				public void begin() throws Exception {
+					MongoCollection<Document> teamsCol = MongoUtils.getMongoCollection(MongoCollectionConstants.TEAM);
+					teamsCol.insertMany(session, teamsDoc);
+				}
+			}.execute();
+			
+			if (inserted) {
+				teams.forEach(t -> FootballApiCache.ALL_TEAMS.put(t.getId(), t));
+			}
+		}
+		
+		
+		
+	}
 
 }

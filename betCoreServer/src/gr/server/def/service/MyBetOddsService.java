@@ -26,7 +26,7 @@ public interface MyBetOddsService {
 
 	String validateUser(String email) throws Exception;
 
-	Response getLiveSpecific(String ids);
+//	Response getLiveSpecific(String ids);
 	
 	Response getEventStatistics(Integer id);
 	

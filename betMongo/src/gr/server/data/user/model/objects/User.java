@@ -65,6 +65,12 @@ implements Serializable{
 	int level;
 	
 	double balance;
+	
+	double overallBetAmount;
+
+	double monthlyBetAmount;
+	
+	
 	/**
 	 * Number of won slips.
 	 */
@@ -303,6 +309,24 @@ implements Serializable{
 
 	public double getBalance() {
 		return currentMonthBalance();
+	}
+	
+	
+
+	public double getOverallBetAmount() {
+		return overallBetAmount;
+	}
+
+	public void setOverallBetAmount(double overallBetAmount) {
+		this.overallBetAmount = overallBetAmount;
+	}
+
+	public double getMonthlyBetAmount() {
+		return monthlyBetAmount;
+	}
+
+	public void setMonthlyBetAmount(double monthlyBetAmount) {
+		this.monthlyBetAmount = monthlyBetAmount;
 	}
 
 	public double currentMonthBalance() {

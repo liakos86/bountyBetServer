@@ -3,8 +3,6 @@ package gr.server.data.user.model.objects;
 import java.io.Serializable;
 import java.util.List;
 
-import gr.server.data.bet.enums.BetStatus;
-
 
 /**
  * A bet that is placed by a {@link User}.
@@ -21,7 +19,7 @@ public class UserBet implements Serializable{
 
 	String mongoUserId;
 	
-	long betPlaceMillis;
+	Long betPlacementMillis;
 	
 	/**
 	 * Every bet participates in a monthy contest. 
@@ -98,12 +96,12 @@ public class UserBet implements Serializable{
 		this.belongingMonth = belongingMonth;
 	}
 
-	public long getBetPlaceMillis() {
-		return betPlaceMillis;
+	public Long getBetPlacementMillis() {
+		return betPlacementMillis;
 	}
 
-	public void setBetPlaceMillis(long betPlaceMillis) {
-		this.betPlaceMillis = betPlaceMillis;
+	public void setBetPlacementMillis(Long betPlacementMillis) {
+		this.betPlacementMillis = betPlacementMillis;
 	}
 	
 	public Integer getBelongingYear() {

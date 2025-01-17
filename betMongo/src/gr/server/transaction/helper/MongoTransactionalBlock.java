@@ -2,6 +2,7 @@ package gr.server.transaction.helper;
 
 import com.mongodb.client.ClientSession;
 
+import gr.server.logging.Mongo;
 import gr.server.mongo.util.MongoUtils;
 
 public abstract class MongoTransactionalBlock<T> {
@@ -12,33 +13,44 @@ public abstract class MongoTransactionalBlock<T> {
 	
 	protected T result;
 	
+	protected int retries = 0;
+	
 	public boolean execute(){
 		boolean success = false;
 		
-		try{
-			session = MongoUtils.getMongoClient().startSession();
-			
-			if (session == null) {
-				throw new Exception("MONGO SESSION NULL");
-			}
-			
-			session.startTransaction();
-			begin();
-			
-			session.commitTransaction();
-			
-			success = true;
-		}catch(Exception e){
-			success = false;
-			e.printStackTrace();
-//			System.out.println("ROLLING BACK " + session);
-			if (session != null && session.hasActiveTransaction()) {
-				session.abortTransaction();
-			}
-		}finally{
-//			System.out.println(Thread.currentThread().getName() + " CLOSING " + session);
-			if (session != null) {
-				session.close();
+		session = MongoUtils.getMongoClient().startSession();
+		if (session == null) {
+			throw new RuntimeException("MONGO SESSION NULL");
+		}
+		
+		for(int i = 0; i <= retries; i++) {
+		
+			try{
+				session.startTransaction();
+				begin();
+				session.commitTransaction();
+				success = true;
+				break;
+			}catch(Exception e){
+				result = null;
+				success = false;
+				if (session != null && session.hasActiveTransaction()) {
+					session.abortTransaction();
+				}
+				
+				if (i == retries) {
+					Mongo.logger.error(this.getClass().getCanonicalName() + ": " + e.getStackTrace());
+					e.printStackTrace();
+//					break;
+				}else {
+					Mongo.logger.warn(this.getClass().getCanonicalName() + " will retry: " + e.getStackTrace());
+					System.out.println("RETRYING AFTER ::::: " + e.getClass().getCanonicalName());
+				}
+				
+			}finally{
+				if (session != null && (success || i == retries)) {
+					session.close();
+				}
 			}
 		}
 		
@@ -47,6 +59,10 @@ public abstract class MongoTransactionalBlock<T> {
 	
 	public T getResult() {
 		return result;
+	}
+	
+	public void setRetries(int retries) {
+		this.retries = retries;
 	}
 
 }

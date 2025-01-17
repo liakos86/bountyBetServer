@@ -2,7 +2,11 @@ package gr.server.data.constants;
 
 public interface SportScoreApiConstants {
 
-	String REPLACEMENT = "_REPLACE_";
+	String REPLACEMENT_LEAGUE_ID = "_REPLACE_LEAGUE_ID_";
+
+	String REPLACEMENT_DATE_FROM = "_REPLACE_DATE_FROM_";
+
+	String REPLACEMENT_DATE_TO = "_REPLACE_DATE_TO_";
 	
 	String SOCKET_CONN_URL = "wss://tipsscore.com:2083/app/7UXH2sNFqpVAO6FebyTKpujgfy8BUnM?protocol=7&client=js&version=5.0.3&flash=false";
 	
@@ -33,6 +37,9 @@ public interface SportScoreApiConstants {
 	 * '1' is for football. we need to fetch sports to iterate.
 	 */
 	String GET_EVENTS_BY_SPORT_DATE_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/sports/1/events/date/";											
+
+	//https://sportscore1.p.rapidapi.com/events/search?league_id=317&date_start=2025-01-04
+	String GET_EVENTS_BY_LEAGUE_SPORT_DATE_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/events/search?league_id=" + REPLACEMENT_LEAGUE_ID + "&date_start=" + REPLACEMENT_DATE_FROM + "&date_end=" + REPLACEMENT_DATE_TO ;	//to = exclusive										
 	
 	
 	String GET_LEAGUE_BY_ID_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/leagues/";
@@ -40,12 +47,12 @@ public interface SportScoreApiConstants {
 	String GET_SECTIONS_BY_SPORT_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/sports/1/sections?page=";
 	
 
-	String GET_SEASONS_BY_LEAGUE_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/seasons/search?league_id=" + REPLACEMENT;
+	String GET_SEASONS_BY_LEAGUE_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/seasons/search?league_id=" + REPLACEMENT_LEAGUE_ID;
 	
 	
-	String GET_PLAYERS_BY_TEAM_ID = "https://" + RAPID_API_HEADER_HOST_VALUE + "/teams/" + REPLACEMENT + "/players";
+	String GET_PLAYERS_BY_TEAM_ID = "https://" + RAPID_API_HEADER_HOST_VALUE + "/teams/" + REPLACEMENT_LEAGUE_ID + "/players";
 	
-	String GET_STATISTICS_BY_PLAYER_ID = "https://" + RAPID_API_HEADER_HOST_VALUE + "/players/" + REPLACEMENT + "/statistics";
+	String GET_STATISTICS_BY_PLAYER_ID = "https://" + RAPID_API_HEADER_HOST_VALUE + "/players/" + REPLACEMENT_LEAGUE_ID + "/statistics";
 	
 	/**
 	 * '1' is for football. we need to fetch sports to iterate.
@@ -56,10 +63,10 @@ public interface SportScoreApiConstants {
 
 	String GET_LIVE_EVENTS_BY_SPORT_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/sports/1/events/live";
 	
-	String GET_EVENT_INCIDENTS_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/events/" + REPLACEMENT + "/incidents";
+	String GET_EVENT_INCIDENTS_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/events/" + REPLACEMENT_LEAGUE_ID + "/incidents";
 
-	String GET_EVENT_STATISTICS_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/events/" + REPLACEMENT + "/statistics";
+	String GET_EVENT_STATISTICS_URL = "https://" + RAPID_API_HEADER_HOST_VALUE + "/events/" + REPLACEMENT_LEAGUE_ID + "/statistics";
 
-	String GET_SEASON_TABLE_STANDINGS = "https://" + RAPID_API_HEADER_HOST_VALUE + "/seasons/" + REPLACEMENT + "/standings-tables";
+	String GET_SEASON_TABLE_STANDINGS = "https://" + RAPID_API_HEADER_HOST_VALUE + "/seasons/" + REPLACEMENT_LEAGUE_ID + "/standings-tables";
 	
 }

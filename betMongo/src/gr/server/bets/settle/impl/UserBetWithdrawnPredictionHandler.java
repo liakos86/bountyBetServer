@@ -55,7 +55,7 @@ public class UserBetWithdrawnPredictionHandler implements TaskHandler<MatchEvent
 
         // Process the batch of 10 UserPredictions
         try {
-        	batchObjects.stream().map(MatchEvent::getId).toList();
+        	//batchObjects.stream().map(MatchEvent::getId).toList();
 			boolean handled = handle(batchObjects);
 			if (!handled) {
 				reEnqueueMatches(batchObjects);

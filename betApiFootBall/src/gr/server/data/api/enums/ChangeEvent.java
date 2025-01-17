@@ -31,7 +31,10 @@ public enum ChangeEvent implements Serializable{
 	SECOND_HALF_START(7),
 	
 	@SerializedName("8")
-	AWAITING_EXTRA_TIME(8);
+	AWAITING_EXTRA_TIME(8),
+	
+	@SerializedName("9")
+	DISALLOWED_GOAL(9);
 	
 	private static final long serialVersionUID = 1L;
 

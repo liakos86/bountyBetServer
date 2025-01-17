@@ -1,6 +1,7 @@
 package gr.server.data.api.cache;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -23,7 +24,9 @@ import gr.server.data.api.model.league.LeagueWithData;
 import gr.server.data.api.model.league.Season;
 import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
+import gr.server.data.enums.MatchEventStatus;
 import gr.server.data.user.model.objects.User;
+import gr.server.impl.client.MongoClientHelperImpl;
 
 public class FootballApiCache {
 	
@@ -133,9 +136,11 @@ public class FootballApiCache {
 	 */
 	public static Map<Integer, MatchEvent> LIVE_EVENTS = new ConcurrentHashMap<Integer, MatchEvent>();
 	
-	public static Set<Integer> SUPPORTED_SECTION_IDS = new HashSet<>();
+	public static Map<Integer, List<Integer>> SUPPORTED_SECTION_IDS = new HashMap<>();
 	
-	public static Set<Integer> SUPPORTED_LEAGUE_IDS = new HashSet<>();
+//	public static Set<Integer> SUPPORTED_LEAGUE_IDS = new HashSet<>();
+	
+	public static Set<Integer> SETTLED_EVENTS = Collections.newSetFromMap(new ConcurrentHashMap<>());
 	
 	public static BlockingQueue<MatchEvent> FINISHED_EVENTS = new LinkedBlockingQueue<MatchEvent>();
 
@@ -153,79 +158,421 @@ public class FootballApiCache {
 		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(0, new ArrayList<>());
 		ALL_LEAGUES_WITH_EVENTS_PER_DAY.put(1, new ArrayList<>());
 		
-		SUPPORTED_SECTION_IDS.add(1);
-		SUPPORTED_SECTION_IDS.add(2);
-//		SUPPORTED_SECTION_IDS.add(3);morocco
-//		SUPPORTED_SECTION_IDS.add(4);armenia
-//		SUPPORTED_SECTION_IDS.add(5);costa rica
-//		SUPPORTED_SECTION_IDS.add(7);amateur germany
-//		SUPPORTED_SECTION_IDS.add(8);san marino
-		SUPPORTED_SECTION_IDS.add(9);
-		SUPPORTED_SECTION_IDS.add(13);
-		SUPPORTED_SECTION_IDS.add(18);
-		SUPPORTED_SECTION_IDS.add(19);
-		SUPPORTED_SECTION_IDS.add(21);
-		SUPPORTED_SECTION_IDS.add(22);
-		SUPPORTED_SECTION_IDS.add(24);
-		SUPPORTED_SECTION_IDS.add(25);
-		SUPPORTED_SECTION_IDS.add(26);
-		SUPPORTED_SECTION_IDS.add(27);
-		SUPPORTED_SECTION_IDS.add(30);
-		SUPPORTED_SECTION_IDS.add(31);
-		SUPPORTED_SECTION_IDS.add(32);
-		SUPPORTED_SECTION_IDS.add(33);//sweden
-		SUPPORTED_SECTION_IDS.add(34);//swiss
-		SUPPORTED_SECTION_IDS.add(35);//turk
-		SUPPORTED_SECTION_IDS.add(36);//uckra
-		SUPPORTED_SECTION_IDS.add(37);//urug
-		SUPPORTED_SECTION_IDS.add(38);//bosn
-		SUPPORTED_SECTION_IDS.add(40);//engl
-		SUPPORTED_SECTION_IDS.add(43);//alb
-		SUPPORTED_SECTION_IDS.add(44);//serbia
-		SUPPORTED_SECTION_IDS.add(46);//monten
-//		SUPPORTED_SECTION_IDS.add(52);//south af
-		SUPPORTED_SECTION_IDS.add(55);//uae
-		SUPPORTED_SECTION_IDS.add(65);//austr
-//		SUPPORTED_SECTION_IDS.add(67);//belar
-		SUPPORTED_SECTION_IDS.add(69);//belg
-		SUPPORTED_SECTION_IDS.add(71);//bulg
-		SUPPORTED_SECTION_IDS.add(75);//china
-		SUPPORTED_SECTION_IDS.add(77);//croa
-		SUPPORTED_SECTION_IDS.add(78);//cypr
-		SUPPORTED_SECTION_IDS.add(79);//denm
-		SUPPORTED_SECTION_IDS.add(81);//egypt
-		SUPPORTED_SECTION_IDS.add(85);//finl
-		SUPPORTED_SECTION_IDS.add(86);//france
-		SUPPORTED_SECTION_IDS.add(91);//greece
-		SUPPORTED_SECTION_IDS.add(94);//hung
-		SUPPORTED_SECTION_IDS.add(95);//iceland
-		SUPPORTED_SECTION_IDS.add(99);//ireland
-		SUPPORTED_SECTION_IDS.add(100);//israel
-		SUPPORTED_SECTION_IDS.add(101);//italy
-		SUPPORTED_SECTION_IDS.add(103);//japan
-		SUPPORTED_SECTION_IDS.add(108);//latvia
-		SUPPORTED_SECTION_IDS.add(111);//lith
-		SUPPORTED_SECTION_IDS.add(115);//mexico
-		SUPPORTED_SECTION_IDS.add(117);//scot
-		SUPPORTED_SECTION_IDS.add(118);//asia
-		SUPPORTED_SECTION_IDS.add(119);//world
-		SUPPORTED_SECTION_IDS.add(120);//world
-		SUPPORTED_SECTION_IDS.add(121);//world
-		SUPPORTED_SECTION_IDS.add(122);//world
-		SUPPORTED_SECTION_IDS.add(123);//world
-		SUPPORTED_SECTION_IDS.add(125);//world
-		SUPPORTED_SECTION_IDS.add(134);//noth mac
-		SUPPORTED_SECTION_IDS.add(135);//brazil
-		SUPPORTED_SECTION_IDS.add(379);//not cancelled ????
-		SUPPORTED_SECTION_IDS.add(487);//interna
+		SUPPORTED_SECTION_IDS.put(1, new ArrayList<>());//ireland
+		SUPPORTED_SECTION_IDS.get(1).add(1);
+		SUPPORTED_SECTION_IDS.get(1).add(2);
+		SUPPORTED_SECTION_IDS.get(1).add(3);
+		SUPPORTED_SECTION_IDS.get(1).add(4);
+		
+		SUPPORTED_SECTION_IDS.put(2, new ArrayList<>());//wales
+		SUPPORTED_SECTION_IDS.get(2).add(5);
+		SUPPORTED_SECTION_IDS.get(2).add(6);
+		
+		
+		SUPPORTED_SECTION_IDS.put(9, new ArrayList<>());//norway
+		SUPPORTED_SECTION_IDS.get(9).add(70);
+		SUPPORTED_SECTION_IDS.get(9).add(71);
+		SUPPORTED_SECTION_IDS.get(9).add(72);
+		SUPPORTED_SECTION_IDS.get(9).add(75);
+		
+		
+		SUPPORTED_SECTION_IDS.put(13, new ArrayList<>());//usa
+		SUPPORTED_SECTION_IDS.get(13).add(99);
+		SUPPORTED_SECTION_IDS.get(13).add(100);
+		
+		
+		SUPPORTED_SECTION_IDS.put(18, new ArrayList<>());//nether
+		SUPPORTED_SECTION_IDS.get(18).add(133);
+		SUPPORTED_SECTION_IDS.get(18).add(134);
+		SUPPORTED_SECTION_IDS.get(18).add(135);
+		SUPPORTED_SECTION_IDS.get(18).add(136);
+		
+		
+		SUPPORTED_SECTION_IDS.put(19, new ArrayList<>());//chech
+		SUPPORTED_SECTION_IDS.get(19).add(140);
+		SUPPORTED_SECTION_IDS.get(19).add(141);
+		SUPPORTED_SECTION_IDS.get(19).add(142);
+		SUPPORTED_SECTION_IDS.get(19).add(143);
+		
+		
+		SUPPORTED_SECTION_IDS.put(21, new ArrayList<>());//argent
+		SUPPORTED_SECTION_IDS.get(21).add(154);
+		SUPPORTED_SECTION_IDS.get(21).add(156);
+		SUPPORTED_SECTION_IDS.get(21).add(159);
+		
+		
+		SUPPORTED_SECTION_IDS.put(22, new ArrayList<>());//austral
+		SUPPORTED_SECTION_IDS.get(22).add(165);
+		SUPPORTED_SECTION_IDS.get(22).add(173);
 		
 		
 		
-		//TODO whitelist
-		SUPPORTED_LEAGUE_IDS.add(-1111); 
+		SUPPORTED_SECTION_IDS.put(24, new ArrayList<>());//poland
+		SUPPORTED_SECTION_IDS.get(24).add(191);
+		SUPPORTED_SECTION_IDS.get(24).add(193);
+		SUPPORTED_SECTION_IDS.get(24).add(194);
+		
+		
+		SUPPORTED_SECTION_IDS.put(25, new ArrayList<>());//portug
+		SUPPORTED_SECTION_IDS.get(25).add(203);
+		SUPPORTED_SECTION_IDS.get(25).add(205);
+		SUPPORTED_SECTION_IDS.get(25).add(206);
+		SUPPORTED_SECTION_IDS.get(25).add(207);
 		
 		
 		
+		SUPPORTED_SECTION_IDS.put(26, new ArrayList<>());//rom
+		SUPPORTED_SECTION_IDS.get(26).add(214);
+		SUPPORTED_SECTION_IDS.get(26).add(215);
+		SUPPORTED_SECTION_IDS.get(26).add(218);
+		SUPPORTED_SECTION_IDS.get(26).add(219);
+		
+		
+		SUPPORTED_SECTION_IDS.put(27, new ArrayList<>());//russ
+		SUPPORTED_SECTION_IDS.get(27).add(220);
+		SUPPORTED_SECTION_IDS.get(27).add(222);
+		SUPPORTED_SECTION_IDS.get(27).add(230);
+		
+		
+		SUPPORTED_SECTION_IDS.put(30, new ArrayList<>());//slovak
+		SUPPORTED_SECTION_IDS.get(30).add(240);
+		SUPPORTED_SECTION_IDS.get(30).add(242);
+		SUPPORTED_SECTION_IDS.get(30).add(243);
+		
+		
+		SUPPORTED_SECTION_IDS.put(31, new ArrayList<>());//sloven
+		SUPPORTED_SECTION_IDS.get(31).add(246);
+		SUPPORTED_SECTION_IDS.get(31).add(247);
+		SUPPORTED_SECTION_IDS.get(31).add(248);
+		
+		
+		SUPPORTED_SECTION_IDS.put(32, new ArrayList<>());//spain
+		SUPPORTED_SECTION_IDS.get(32).add(250);
+		SUPPORTED_SECTION_IDS.get(32).add(251);
+		SUPPORTED_SECTION_IDS.get(32).add(252);
+		SUPPORTED_SECTION_IDS.get(32).add(256);
+		SUPPORTED_SECTION_IDS.get(32).add(257);
+		SUPPORTED_SECTION_IDS.get(32).add(258);
+		
+		
+		
+		SUPPORTED_SECTION_IDS.put(33, new ArrayList<>());//sweden
+		SUPPORTED_SECTION_IDS.get(33).add(260);
+		SUPPORTED_SECTION_IDS.get(33).add(261);
+		SUPPORTED_SECTION_IDS.get(33).add(270);
+		SUPPORTED_SECTION_IDS.get(33).add(273);
+		
+		
+		
+		
+		SUPPORTED_SECTION_IDS.put(34, new ArrayList<>());//swiss
+		SUPPORTED_SECTION_IDS.get(34).add(279);
+		SUPPORTED_SECTION_IDS.get(34).add(281);
+		
+		
+		
+		SUPPORTED_SECTION_IDS.put(35, new ArrayList<>());//turk
+		SUPPORTED_SECTION_IDS.get(35).add(284);
+		SUPPORTED_SECTION_IDS.get(35).add(285);
+		SUPPORTED_SECTION_IDS.get(35).add(288);
+		SUPPORTED_SECTION_IDS.get(35).add(289);
+		
+		
+		SUPPORTED_SECTION_IDS.put(36, new ArrayList<>());//uckra
+		SUPPORTED_SECTION_IDS.get(36).add(295);
+		SUPPORTED_SECTION_IDS.get(36).add(296);
+		SUPPORTED_SECTION_IDS.get(36).add(297);
+		
+		
+		SUPPORTED_SECTION_IDS.put(37, new ArrayList<>());//urug
+		SUPPORTED_SECTION_IDS.get(36).add(302);
+		SUPPORTED_SECTION_IDS.get(36).add(303);
+		SUPPORTED_SECTION_IDS.get(36).add(305);
+		SUPPORTED_SECTION_IDS.get(36).add(306);
+		
+		
+		SUPPORTED_SECTION_IDS.put(38, new ArrayList<>());//bosn
+		SUPPORTED_SECTION_IDS.get(38).add(307);
+		SUPPORTED_SECTION_IDS.get(38).add(308);
+		
+		
+		SUPPORTED_SECTION_IDS.put(40, new ArrayList<>());//engl
+		SUPPORTED_SECTION_IDS.get(40).add(317);
+		SUPPORTED_SECTION_IDS.get(40).add(318);
+		SUPPORTED_SECTION_IDS.get(40).add(319);
+		SUPPORTED_SECTION_IDS.get(40).add(320);
+		SUPPORTED_SECTION_IDS.get(40).add(321);
+		SUPPORTED_SECTION_IDS.get(40).add(322);
+		SUPPORTED_SECTION_IDS.get(40).add(326);
+		SUPPORTED_SECTION_IDS.get(40).add(327);
+		
+		SUPPORTED_SECTION_IDS.put(86, new ArrayList<>());//france
+		SUPPORTED_SECTION_IDS.get(86).add(498);
+		SUPPORTED_SECTION_IDS.get(86).add(499);
+		SUPPORTED_SECTION_IDS.get(86).add(500);
+		SUPPORTED_SECTION_IDS.get(86).add(501);
+		SUPPORTED_SECTION_IDS.get(86).add(503);
+		
+		
+		
+		SUPPORTED_SECTION_IDS.put(91, new ArrayList<>());//greece
+		SUPPORTED_SECTION_IDS.get(91).add(523);
+		SUPPORTED_SECTION_IDS.get(91).add(525);
+		
+		
+		SUPPORTED_SECTION_IDS.put(101, new ArrayList<>());//italy
+		SUPPORTED_SECTION_IDS.get(101).add(592);
+		SUPPORTED_SECTION_IDS.get(101).add(593);
+		SUPPORTED_SECTION_IDS.get(101).add(594);
+		SUPPORTED_SECTION_IDS.get(101).add(595);
+		
+
+		
+		SUPPORTED_SECTION_IDS.put(43, new ArrayList<>());//alb
+		SUPPORTED_SECTION_IDS.get(43).add(340);
+		SUPPORTED_SECTION_IDS.get(43).add(342);
+		SUPPORTED_SECTION_IDS.get(43).add(343);
+		
+		SUPPORTED_SECTION_IDS.put(44, new ArrayList<>());//serbia
+		SUPPORTED_SECTION_IDS.get(44).add(344);
+		SUPPORTED_SECTION_IDS.get(44).add(345);
+		
+		
+		SUPPORTED_SECTION_IDS.put(46, new ArrayList<>());//monten
+		SUPPORTED_SECTION_IDS.get(46).add(360);
+		
+		
+		SUPPORTED_SECTION_IDS.put(55, new ArrayList<>());//uae
+		SUPPORTED_SECTION_IDS.get(55).add(376);
+		SUPPORTED_SECTION_IDS.get(55).add(377);
+		SUPPORTED_SECTION_IDS.get(55).add(378);
+		SUPPORTED_SECTION_IDS.get(55).add(379);
+		
+		
+		SUPPORTED_SECTION_IDS.put(65, new ArrayList<>());//austri
+		SUPPORTED_SECTION_IDS.get(65).add(402);
+		SUPPORTED_SECTION_IDS.get(65).add(404);
+		
+		
+		SUPPORTED_SECTION_IDS.put(69, new ArrayList<>());//belg
+		SUPPORTED_SECTION_IDS.get(69).add(416);
+		SUPPORTED_SECTION_IDS.get(69).add(417);
+		SUPPORTED_SECTION_IDS.get(69).add(418);
+		
+		
+		SUPPORTED_SECTION_IDS.put(71, new ArrayList<>());//bulg
+		SUPPORTED_SECTION_IDS.get(71).add(425);
+		SUPPORTED_SECTION_IDS.get(71).add(426);
+		SUPPORTED_SECTION_IDS.get(71).add(427);
+		
+		
+		SUPPORTED_SECTION_IDS.put(75, new ArrayList<>());//china
+		SUPPORTED_SECTION_IDS.get(75).add(442);
+		SUPPORTED_SECTION_IDS.get(75).add(444);
+		SUPPORTED_SECTION_IDS.get(75).add(445);
+		
+		
+		SUPPORTED_SECTION_IDS.put(77, new ArrayList<>());//croa
+		SUPPORTED_SECTION_IDS.get(77).add(454);
+		SUPPORTED_SECTION_IDS.get(77).add(455);
+		SUPPORTED_SECTION_IDS.get(77).add(457);
+		
+		
+		SUPPORTED_SECTION_IDS.put(78, new ArrayList<>());//cypr
+		SUPPORTED_SECTION_IDS.get(78).add(458);
+		SUPPORTED_SECTION_IDS.get(78).add(459);
+		SUPPORTED_SECTION_IDS.get(78).add(460);
+		
+		
+		SUPPORTED_SECTION_IDS.put(79, new ArrayList<>());//denm
+		SUPPORTED_SECTION_IDS.get(79).add(463);
+		SUPPORTED_SECTION_IDS.get(79).add(466);
+		
+		
+		SUPPORTED_SECTION_IDS.put(81, new ArrayList<>());//egypt
+		SUPPORTED_SECTION_IDS.get(81).add(472);
+		SUPPORTED_SECTION_IDS.get(81).add(473);
+		SUPPORTED_SECTION_IDS.get(81).add(475);
+		
+		SUPPORTED_SECTION_IDS.put(85, new ArrayList<>());//finl
+		SUPPORTED_SECTION_IDS.get(85).add(487);
+		SUPPORTED_SECTION_IDS.get(85).add(489);
+		SUPPORTED_SECTION_IDS.get(85).add(493);
+		
+		
+		SUPPORTED_SECTION_IDS.put(94, new ArrayList<>());//hung
+		SUPPORTED_SECTION_IDS.get(94).add(545);
+		SUPPORTED_SECTION_IDS.get(94).add(546);
+		SUPPORTED_SECTION_IDS.get(94).add(547);
+		SUPPORTED_SECTION_IDS.get(94).add(548);
+		
+		
+		
+		SUPPORTED_SECTION_IDS.put(95, new ArrayList<>());//iceland
+		SUPPORTED_SECTION_IDS.get(95).add(553);
+		SUPPORTED_SECTION_IDS.get(95).add(554);
+		SUPPORTED_SECTION_IDS.get(95).add(556);
+		SUPPORTED_SECTION_IDS.get(95).add(557);
+		
+		
+		SUPPORTED_SECTION_IDS.put(99, new ArrayList<>());//ireland
+		SUPPORTED_SECTION_IDS.get(99).add(576);
+		SUPPORTED_SECTION_IDS.get(99).add(578);
+		SUPPORTED_SECTION_IDS.get(99).add(579);
+		
+		
+		SUPPORTED_SECTION_IDS.put(100, new ArrayList<>());//israel
+		SUPPORTED_SECTION_IDS.get(100).add(582);
+		
+		
+		SUPPORTED_SECTION_IDS.put(103, new ArrayList<>());//japan
+		SUPPORTED_SECTION_IDS.get(103).add(627);
+		SUPPORTED_SECTION_IDS.get(103).add(628);
+		SUPPORTED_SECTION_IDS.get(103).add(629);
+		SUPPORTED_SECTION_IDS.get(103).add(630);
+		
+		
+		SUPPORTED_SECTION_IDS.put(108, new ArrayList<>());//latvia
+		SUPPORTED_SECTION_IDS.get(108).add(649);
+		
+		
+		SUPPORTED_SECTION_IDS.put(111, new ArrayList<>());//lith
+		SUPPORTED_SECTION_IDS.get(111).add(658);
+		SUPPORTED_SECTION_IDS.get(111).add(660);
+		SUPPORTED_SECTION_IDS.get(111).add(661);
+		
+		
+		SUPPORTED_SECTION_IDS.put(115, new ArrayList<>());//mexico
+		SUPPORTED_SECTION_IDS.get(115).add(673);
+		SUPPORTED_SECTION_IDS.get(115).add(674);
+		SUPPORTED_SECTION_IDS.get(115).add(678);
+		
+		
+		SUPPORTED_SECTION_IDS.put(117, new ArrayList<>());//scot
+		SUPPORTED_SECTION_IDS.get(117).add(688);
+		SUPPORTED_SECTION_IDS.get(117).add(692);
+		SUPPORTED_SECTION_IDS.get(117).add(693);
+		SUPPORTED_SECTION_IDS.get(117).add(694);
+		
+		
+		SUPPORTED_SECTION_IDS.put(118, new ArrayList<>());//asia
+		SUPPORTED_SECTION_IDS.get(118).add(699);
+		SUPPORTED_SECTION_IDS.get(118).add(700);
+		SUPPORTED_SECTION_IDS.get(118).add(703);
+		
+		
+		SUPPORTED_SECTION_IDS.put(119, new ArrayList<>());//world
+		SUPPORTED_SECTION_IDS.get(119).add(726);
+		SUPPORTED_SECTION_IDS.get(119).add(731);
+		SUPPORTED_SECTION_IDS.get(119).add(732);
+		SUPPORTED_SECTION_IDS.get(119).add(734);
+		SUPPORTED_SECTION_IDS.get(119).add(735);
+		SUPPORTED_SECTION_IDS.get(119).add(764);
+		SUPPORTED_SECTION_IDS.get(119).add(766);
+		SUPPORTED_SECTION_IDS.get(119).add(769);
+		SUPPORTED_SECTION_IDS.get(119).add(776);
+		SUPPORTED_SECTION_IDS.get(119).add(780);
+		SUPPORTED_SECTION_IDS.get(119).add(781);
+		SUPPORTED_SECTION_IDS.get(119).add(782);
+		SUPPORTED_SECTION_IDS.get(119).add(8713);
+		SUPPORTED_SECTION_IDS.get(119).add(8702);
+		
+		
+		SUPPORTED_SECTION_IDS.put(120, new ArrayList<>());//world
+		SUPPORTED_SECTION_IDS.get(120).add(783);
+		SUPPORTED_SECTION_IDS.get(120).add(786);
+		SUPPORTED_SECTION_IDS.get(120).add(797);
+		
+		SUPPORTED_SECTION_IDS.put(121, new ArrayList<>());//world
+		SUPPORTED_SECTION_IDS.get(121).add(803);
+		SUPPORTED_SECTION_IDS.get(121).add(804);
+		SUPPORTED_SECTION_IDS.get(121).add(805);
+		SUPPORTED_SECTION_IDS.get(121).add(806);
+		SUPPORTED_SECTION_IDS.get(121).add(807);
+		
+		
+		SUPPORTED_SECTION_IDS.put(122, new ArrayList<>());//world
+		SUPPORTED_SECTION_IDS.get(122).add(814);
+		SUPPORTED_SECTION_IDS.get(122).add(815);
+		
+		
+		SUPPORTED_SECTION_IDS.put(123, new ArrayList<>());//world
+		SUPPORTED_SECTION_IDS.get(123).add(816);
+		SUPPORTED_SECTION_IDS.get(123).add(817);
+		SUPPORTED_SECTION_IDS.get(123).add(818);
+		SUPPORTED_SECTION_IDS.get(123).add(819);
+		SUPPORTED_SECTION_IDS.get(123).add(821);
+		SUPPORTED_SECTION_IDS.get(123).add(822);
+		SUPPORTED_SECTION_IDS.get(123).add(823);
+		SUPPORTED_SECTION_IDS.get(123).add(839);
+		SUPPORTED_SECTION_IDS.get(123).add(845);
+		SUPPORTED_SECTION_IDS.get(123).add(846);
+		SUPPORTED_SECTION_IDS.get(123).add(848);
+		
+		
+		SUPPORTED_SECTION_IDS.put(125, new ArrayList<>());//world
+		SUPPORTED_SECTION_IDS.get(125).add(869);
+		SUPPORTED_SECTION_IDS.get(125).add(870);
+		SUPPORTED_SECTION_IDS.get(125).add(871);
+		SUPPORTED_SECTION_IDS.get(125).add(873);
+		SUPPORTED_SECTION_IDS.get(125).add(874);
+		SUPPORTED_SECTION_IDS.get(125).add(875);
+		SUPPORTED_SECTION_IDS.get(125).add(879);
+		
+		
+		SUPPORTED_SECTION_IDS.put(134, new ArrayList<>());//noth mac
+		SUPPORTED_SECTION_IDS.get(134).add(889);
+		SUPPORTED_SECTION_IDS.get(134).add(890);
+		SUPPORTED_SECTION_IDS.get(134).add(892);
+		
+		
+		SUPPORTED_SECTION_IDS.put(135, new ArrayList<>());//brazil
+		SUPPORTED_SECTION_IDS.get(135).add(893);
+		SUPPORTED_SECTION_IDS.get(135).add(894);
+		SUPPORTED_SECTION_IDS.get(135).add(896);
+		
+		
+		SUPPORTED_SECTION_IDS.put(379, new ArrayList<>());//not cancelled ????
+		
+		
+		SUPPORTED_SECTION_IDS.put(487, new ArrayList<>());//interna
+		
+		
+		
+		
+		
+		
+	}
+
+	public static void checkForCaching(MatchEvent incomingEvent) {
+		if (!FootballApiCache.SETTLED_EVENTS.contains(incomingEvent.getId())
+				&& MatchEventStatus.FINISHED.getStatusStr().equals(incomingEvent.getStatus())
+				&& incomingEvent.getWinner_code() != 0
+				&& !FootballApiCache.FINISHED_EVENTS.contains(incomingEvent)) {
+			
+				System.out.println("ADDING TO FINISHED " + incomingEvent);
+				try {
+					FootballApiCache.FINISHED_EVENTS.put(incomingEvent);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
+		}else if( (MatchEventStatus.POSTPONED.getStatusStr().equals(incomingEvent.getStatus())
+				|| MatchEventStatus.CANCELLED.getStatusStr().equals(incomingEvent.getStatus())
+				|| MatchEventStatus.CANCELED.getStatusStr().equals(incomingEvent.getStatus())
+				|| MatchEventStatus.SUSPENDED.getStatusStr().equals(incomingEvent.getStatus()))
+				&& !FootballApiCache.WITHDRAWN_EVENTS.contains(incomingEvent)) {
+			
+			System.out.println("WITHDRAWING:::" + incomingEvent);
+				try {
+					FootballApiCache.WITHDRAWN_EVENTS.put(incomingEvent);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
+		}
 		
 	}
 

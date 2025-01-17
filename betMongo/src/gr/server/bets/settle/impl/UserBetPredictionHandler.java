@@ -61,6 +61,8 @@ public class UserBetPredictionHandler implements TaskHandler<MatchEvent>, Runnab
 			boolean handled = handle(batchObjects);
 			if (!handled) {
 				reEnqueueMatches(batchObjects);
+			}else {
+				batchObjects.forEach(e -> FootballApiCache.SETTLED_EVENTS.add(e.getId()));
 			}
 			
 		} catch (Exception e) {

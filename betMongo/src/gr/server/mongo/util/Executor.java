@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.bson.Document;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import gr.server.data.constants.MongoFields;
@@ -20,7 +21,10 @@ public class Executor<T> {
     }
 
     public T execute(String json) {
-        return new Gson().fromJson(json, responseType.getType());
+    	Gson gson = new GsonBuilder()
+    		    .registerTypeAdapter(Long.class, new LongTypeAdapter())
+    		    .create();
+        return gson.fromJson(json, responseType.getType());
     }
     
     public void tidy(T object, Document document) {

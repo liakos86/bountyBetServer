@@ -36,12 +36,12 @@ public interface MongoClientHelper {
 	void validateUser(String email);
 	
 	/**
-	 * Called to fetch the open bets for a {@link User}.
+	 * Called to fetch a user with desired metadata for a {@link User}.
 	 * 
 	 * @param id the user id
 	 * @return
 	 */
-	User getUser(String id, boolean includeBets, boolean includeAwards, boolean includeBalances,
+	User getUser(String id, int maxBetsToFetch, long millisToSearchBets, boolean includeAwards, boolean includeBalances,
 			boolean includeBounties);
 
 	/**
@@ -64,7 +64,7 @@ public interface MongoClientHelper {
 
 	BetPlacementStatus placeBet(UserBet userBet);
 
-	Set<MatchEvent> getLiveByIds(String ids);
+//	Set<MatchEvent> getLiveByIds(String ids);
 
 	boolean closeMonthlyBalancesAndComputeMonthWinner();
 }

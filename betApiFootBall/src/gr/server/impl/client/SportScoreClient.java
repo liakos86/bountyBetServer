@@ -5,6 +5,7 @@ import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
@@ -67,7 +68,7 @@ public class SportScoreClient {
 	 * @throws URISyntaxException
 	 * @throws InterruptedException
 	 */
-	public static Events getEvents(Date date)
+	public static Events getEventsByDate(Date date)
 			throws IOException, ParseException, InterruptedException, URISyntaxException {
 		String url = SportScoreApiConstants.GET_EVENTS_BY_SPORT_DATE_URL;
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.GET_EVENTS_DATE_FORMAT);
@@ -80,6 +81,44 @@ public class SportScoreClient {
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 		Events events = new Gson().fromJson(content, new TypeToken<Events>() {
 		}.getType());
+		return events;
+	}
+	
+	/**
+	 * Gets a list of the leagues for the countries we support.
+	 * 
+	 * @throws IOException
+	 * @throws ParseException
+	 * @throws URISyntaxException
+	 * @throws InterruptedException
+	 */
+	public static Events getLeagueEventsByDate(Integer leagueId, String dateFromStr)
+			throws IOException, ParseException, InterruptedException, URISyntaxException {
+		String url = SportScoreApiConstants.GET_EVENTS_BY_LEAGUE_SPORT_DATE_URL;
+		
+		url = url.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID, leagueId.toString());
+		
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.GET_EVENTS_DATE_FORMAT);
+		Date date = simpleDateFormat.parse(dateFromStr);
+		
+		url = url.replace(SportScoreApiConstants.REPLACEMENT_DATE_FROM, dateFromStr);
+
+		
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		cal.add(Calendar.DAY_OF_MONTH, 1);
+
+        Date tomorrow = cal.getTime();
+        String dateToStr = simpleDateFormat.format(tomorrow);
+        url = url.replace(SportScoreApiConstants.REPLACEMENT_DATE_TO, dateToStr);
+		
+		// TODO: all pages
+		// url += "?page=1";
+        
+        System.out.println(url);
+
+		String content = new HttpHelper().fetchPostContentWithHeaders(url);
+		Events events = new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
 		return events;
 	}
 
@@ -166,7 +205,7 @@ public class SportScoreClient {
 	}
 
 	public static Season getCurrentSeason(Integer leagueId) {// 31497
-		String url = SportScoreApiConstants.GET_SEASONS_BY_LEAGUE_URL.replace(SportScoreApiConstants.REPLACEMENT,
+		String url = SportScoreApiConstants.GET_SEASONS_BY_LEAGUE_URL.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(leagueId));
 
 		String content = null;
@@ -187,7 +226,7 @@ public class SportScoreClient {
 	}
 
 	public static StandingTable getSeasonStandings(Integer seasonId) {
-		String url = SportScoreApiConstants.GET_SEASON_TABLE_STANDINGS.replace(SportScoreApiConstants.REPLACEMENT,
+		String url = SportScoreApiConstants.GET_SEASON_TABLE_STANDINGS.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(seasonId));
 
 		String content = null;
@@ -210,7 +249,7 @@ public class SportScoreClient {
 	}
 
 	public static Players getPlayersByTeamId(Integer teamId) {
-		String url = SportScoreApiConstants.GET_PLAYERS_BY_TEAM_ID.replace(SportScoreApiConstants.REPLACEMENT,
+		String url = SportScoreApiConstants.GET_PLAYERS_BY_TEAM_ID.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(teamId));
 
 		String content = null;
@@ -230,7 +269,7 @@ public class SportScoreClient {
 	}
 
 	public static PlayerSeasonStatistic getPlayerStatisticsForSeason(Integer playerId, int seasonId) {
-		String url = SportScoreApiConstants.GET_STATISTICS_BY_PLAYER_ID.replace(SportScoreApiConstants.REPLACEMENT,
+		String url = SportScoreApiConstants.GET_STATISTICS_BY_PLAYER_ID.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(playerId));
 
 		String content = null;

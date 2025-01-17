@@ -211,7 +211,7 @@ public class MockApiClient {
 //			System.out.println(content);
 			MatchEventStatistics incidents = new Gson().fromJson(content, new TypeToken<MatchEventStatistics>() {}.getType());
 			
-			int random = new Random().nextInt(0, 10);
+			int random = new Random().nextInt(10);
 			for (MatchEventStatistic st : incidents.getData()) {
 				if ("shots".equals(st.getGroup())) {
 					
@@ -249,7 +249,7 @@ public class MockApiClient {
 			String content = new MockHttpHelper().mockGetContentWithHeaders("standingTable.json");
 //			System.out.println(content);
 			StandingTable table = new Gson().fromJson(content, new TypeToken<StandingTable>() {}.getType());
-			int random = new Random().nextInt(-3, 3);
+			int random = new Random().nextInt(3);
 			for (StandingRow row : table.getStandings_rows()) {
 				int old = row.getPoints();
 				row.setPoints(old + random);
