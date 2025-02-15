@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * User of the application.
  * 
@@ -50,7 +52,7 @@ implements Serializable{
 	/**
 	 * We store history dating back 12 months. Every user will have 12 records.
 	 */
-//	@JsonIgnore
+	@JsonIgnore
 	List<UserMonthlyBalance> balances;
 	
 	
@@ -61,14 +63,18 @@ implements Serializable{
 	List<String> userAwardsIds;
 	
 	List<UserBounty> bounties;
+
+	List<UserPurchase> monthlyPurchases;
 	
 	int level;
 	
-	double balance;
+	Double balance;
 	
-	double overallBetAmount;
+	Double balanceLeaderBoard;
+	
+	Double overallBetAmount;
 
-	double monthlyBetAmount;
+	Double monthlyBetAmount;
 	
 	
 	/**
@@ -307,8 +313,8 @@ implements Serializable{
 		this.balance = balance;
 	}
 
-	public double getBalance() {
-		return currentMonthBalance();
+	public Double getBalance() {
+		return currentMonthBalance().getBalance();
 	}
 	
 	
@@ -328,12 +334,28 @@ implements Serializable{
 	public void setMonthlyBetAmount(double monthlyBetAmount) {
 		this.monthlyBetAmount = monthlyBetAmount;
 	}
+	
+	public List<UserPurchase> getMonthlyPurchases() {
+		return monthlyPurchases;
+	}
 
-	public double currentMonthBalance() {
+	public void setMonthlyPurchases(List<UserPurchase> monthlyPurchases) {
+		this.monthlyPurchases = monthlyPurchases;
+	}
+	
+	public Double getBalanceLeaderBoard() {
+		return currentMonthBalance().getBalanceForLeaderBoard();
+	}
+
+	public void setBalanceLeaderBoard(double balanceLeaderBoard) {
+		this.balanceLeaderBoard = balanceLeaderBoard;
+	}
+
+	public UserMonthlyBalance currentMonthBalance() {
 		return monthBalanceOf(LocalDate.now().getMonthValue());
 	}
 
-	public double monthBalanceOf(Integer belongingMonth) {
+	public UserMonthlyBalance monthBalanceOf(Integer belongingMonth) {
 		if (1 > belongingMonth || 12 < belongingMonth) {
 			throw new RuntimeException("MONTH RANGE ERROR");
 		}
@@ -343,11 +365,11 @@ implements Serializable{
 			throw new RuntimeException("MONTH RANGE COUNT ERROR");
 		}
 		
-		return monthBalances.get(0).getBalance();
+		return monthBalances.get(0);
 	}
 	
-	public UserMonthlyBalance currentBalanceObject() {
-		return  balances.stream().filter(b -> b.getMonth() == LocalDate.now().getMonthValue()).collect(Collectors.toList()).get(0);
+	public Double getRemainingCredits() {
+		return balances.get(0).getUserPurchaseCredits();
 	}
 	
 	@Override

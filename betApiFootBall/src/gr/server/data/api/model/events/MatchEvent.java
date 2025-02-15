@@ -435,7 +435,8 @@ public class MatchEvent {
 		return  "League" +this.league_id+ "Match id:" + this.id + ", status: " + this.status + ", status_more: " + this.status_more + 
 				" home:" + this.home_team + " away:" + this.away_team +
 				" homescore:" +this.home_score + "awayscore:" + this.away_score +
-				"odds: " + this.main_odds;
+				"odds: " + this.main_odds +
+				"lasted_per: " + this.lasted_period;
 	}
 
 	public void deepCopy(MatchEvent incomingEvent) {

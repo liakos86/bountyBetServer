@@ -347,14 +347,8 @@ public class ExecutorsBetHelper {
 		
 	}
 
-	public void scheduleFetchLeaderBoard() {
-		// TODO Auto-generated method stub
-		
-
-		
-		//leader board
+	public void scheduleFetchLeaderBoard(int initialDelay, int repeatInterval, TimeUnit timeunit) {
 		ExecutorService fetchLeadersService = Executors.newFixedThreadPool(1);
-
 
 		Runnable fetchLeadersTask = () -> {
 			try {
@@ -372,30 +366,19 @@ public class ExecutorsBetHelper {
 			
 			
 		ScheduledExecutorService fetchLeadersExecutor = Executors.newSingleThreadScheduledExecutor();
-		fetchLeadersExecutor.scheduleAtFixedRate(fetchLeadersTask, 60, 5*60, TimeUnit.SECONDS);
-		
-		
-		
+		fetchLeadersExecutor.scheduleAtFixedRate(fetchLeadersTask, initialDelay, repeatInterval, timeunit);
 	}
 
 	public void scheduleFetchStandings() {
-		// TODO Auto-generated method stub
-		
-
-		//standings
 		ExecutorService fetchStandingsService = Executors.newFixedThreadPool(1);//LeagueStatsHandler.NUM_WORKERS);
-
 
 		Runnable fetchStandingsTask = () -> {
 			try {
 				
-//				int size = FootballApiCache.ALL_LEAGUES.size();
-//				int batchSize = size / 1;// LeagueStatsHandler.NUM_WORKERS;
 				Set<League> batchLeagues = new HashSet<>();
 					
 				fetchStandingsService.submit(() -> {
 					new ApiDataFetchHelper().fetchLeagueStandings(batchLeagues);
-//					new LeagueStatsHandler(batchLeagues);
 				});
 			
 		}catch(Exception e) {

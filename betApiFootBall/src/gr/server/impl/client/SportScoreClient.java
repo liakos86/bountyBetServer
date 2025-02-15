@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import gr.server.common.ratelimit.RateLimiter;
 //import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.events.MatchEvent;
@@ -35,6 +36,9 @@ import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.util.HttpHelper;
 
 public class SportScoreClient {
+	
+	
+	private static final RateLimiter rateLimiter = new RateLimiter(5);
 
 	/**
 	 * Gets a list of the leagues for the countries we support.
@@ -77,7 +81,7 @@ public class SportScoreClient {
 
 		// TODO: all pages
 		// url += "?page=1";
-
+		rateLimiter.acquirePermit();
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 		Events events = new Gson().fromJson(content, new TypeToken<Events>() {
 		}.getType());
@@ -117,6 +121,7 @@ public class SportScoreClient {
         
         System.out.println(url);
 
+        rateLimiter.acquirePermit();
 		String content = new HttpHelper().fetchPostContentWithHeaders(url);
 		Events events = new Gson().fromJson(content, new TypeToken<Events>() {}.getType());
 		return events;
@@ -132,6 +137,8 @@ public class SportScoreClient {
 	 */
 	public static Events getLiveEvents() throws IOException, ParseException, InterruptedException, URISyntaxException {
 		String url = SportScoreApiConstants.GET_LIVE_EVENTS_BY_SPORT_URL;
+		
+		rateLimiter.acquirePermit();
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 
 		Events events = new Gson().fromJson(content, new TypeToken<Events>() {
@@ -140,8 +147,9 @@ public class SportScoreClient {
 		return events;
 	}
 
-	public static League getLeagueById(Integer leagueId) throws IOException {
+	public static League getLeagueById(Integer leagueId) throws IOException, InterruptedException {
 		String url = SportScoreApiConstants.GET_LEAGUE_BY_ID_URL + leagueId;
+		rateLimiter.acquirePermit();
 		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 
 		League league = new Gson().fromJson(content, new TypeToken<League>() {
@@ -149,11 +157,12 @@ public class SportScoreClient {
 		return league;
 	}
 
-	public static List<Section> getSections() throws IOException {
+	public static List<Section> getSections() throws IOException, InterruptedException {
 		List<Section> allSections = new ArrayList<>();
 
 		String url = SportScoreApiConstants.GET_SECTIONS_BY_SPORT_URL;
 		for (int page = 1; page <= 3; page++) {
+			rateLimiter.acquirePermit();
 			String content = new HttpHelper().fetchGetContentWithHeaders(url + page);
 			Sections pageSections = new Gson().fromJson(content, new TypeToken<Sections>() {
 			}.getType());
@@ -176,7 +185,7 @@ public class SportScoreClient {
 		
 //		String url = SportScoreApiConstants.GET_EVENT_INCIDENTS_URL.replace(SportScoreApiConstants.REPLACEMENT,
 //				String.valueOf(eventId));
-//
+//      rateLimiter.acquirePermit();
 //		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 //		MatchEventIncidents incidents = new Gson().fromJson(content, new TypeToken<MatchEventIncidents>() {
 //		}.getType());
@@ -197,19 +206,20 @@ public class SportScoreClient {
 		
 //		String url = SportScoreApiConstants.GET_EVENT_STATISTICS_URL.replace(SportScoreApiConstants.REPLACEMENT,
 //				String.valueOf(eventId));
-//
+//      rateLimiter.acquirePermit();
 //		String content = new HttpHelper().fetchGetContentWithHeaders(url);
 //		MatchEventStatistics stats = new Gson().fromJson(content, new TypeToken<MatchEventStatistics>() {
 //		}.getType());
 //		return stats;
 	}
 
-	public static Season getCurrentSeason(Integer leagueId) {// 31497
+	public static Season getCurrentSeason(Integer leagueId) throws InterruptedException {// 31497
 		String url = SportScoreApiConstants.GET_SEASONS_BY_LEAGUE_URL.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(leagueId));
 
 		String content = null;
 		try {
+			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchPostContentWithHeaders(url);
 		} catch (IOException e) {
 
@@ -225,12 +235,13 @@ public class SportScoreClient {
 		return currentSeason;
 	}
 
-	public static StandingTable getSeasonStandings(Integer seasonId) {
+	public static StandingTable getSeasonStandings(Integer seasonId) throws InterruptedException {
 		String url = SportScoreApiConstants.GET_SEASON_TABLE_STANDINGS.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(seasonId));
 
 		String content = null;
 		try {
+			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchGetContentWithHeaders(url);
 		} catch (IOException e) {
 
@@ -248,12 +259,13 @@ public class SportScoreClient {
 
 	}
 
-	public static Players getPlayersByTeamId(Integer teamId) {
+	public static Players getPlayersByTeamId(Integer teamId) throws InterruptedException {
 		String url = SportScoreApiConstants.GET_PLAYERS_BY_TEAM_ID.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(teamId));
 
 		String content = null;
 		try {
+			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchGetContentWithHeaders(url);
 		} catch (IOException e) {
 			System.out.println("GET PLAYERS ERROR: " + e.getStackTrace());
@@ -268,12 +280,13 @@ public class SportScoreClient {
 		return players;
 	}
 
-	public static PlayerSeasonStatistic getPlayerStatisticsForSeason(Integer playerId, int seasonId) {
+	public static PlayerSeasonStatistic getPlayerStatisticsForSeason(Integer playerId, int seasonId) throws InterruptedException {
 		String url = SportScoreApiConstants.GET_STATISTICS_BY_PLAYER_ID.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID,
 				String.valueOf(playerId));
 
 		String content = null;
 		try {
+			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchGetContentWithHeaders(url);
 		} catch (IOException e) {
 			System.out.println("GET PLAYER STATS ERROR: " + e.getStackTrace());
@@ -311,6 +324,10 @@ public class SportScoreClient {
 //			logger.log(Level.ERROR, "ERROR LIVE INCIDENTS:" + incidents.getData().size());
 			return null;
 		}
+	}
+	
+	public static void shutDown() {
+		rateLimiter.shutdown();
 	}
 
 }

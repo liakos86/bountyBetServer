@@ -309,12 +309,13 @@ public class ApiDataFetchHelper {
 	public static void fetchSections() {
 		try {
 			SportScoreClient.getSections().forEach(s -> FootballApiCache.ALL_SECTIONS.put(s.getId(), s));
-		} catch (IOException e) {
+		} catch (IOException | InterruptedException e) {
 			System.out.println("SECTIONS ERROR");
 			e.printStackTrace();
 		}
 	}
 
+	
 	
 	public void fetchEventStatistics(Set<Integer> eventIds) {
 //		Set<MatchEventIncidentsWithStatistics> stats = new HashSet<>();

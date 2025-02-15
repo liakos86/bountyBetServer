@@ -13,6 +13,7 @@ public class MongoCollectionConstants {
 	public static final String BOUNTIES = "bounty";
 	public static final String SETTLED_EVENTS = "settledEvents";
 	public static final String TEAM = "team";
+	public static final String USER_PURCHASES = "userPurchase";
 	
 	
 	public static final String BOUNTY_BET_DB = "bountyBetDB";

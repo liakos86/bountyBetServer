@@ -1,6 +1,7 @@
 package gr.server.application;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -12,6 +13,7 @@ import gr.server.data.api.model.league.Section;
 import gr.server.data.api.model.league.Team;
 import gr.server.data.live.helper.FireBaseConnectionHelper;
 import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.impl.client.SportScoreClient;
 import gr.server.mongo.util.MongoUtils;
 import gr.server.transaction.helper.ExecutorsBetHelper;
 import gr.server.transaction.helper.MongoTransactionalBlock;
@@ -25,6 +27,8 @@ public class BetServerContextListener implements ServletContextListener {
 	public void contextDestroyed(ServletContextEvent arg0) {
 		System.out.println("SERVER SHUTTING DOWN");
 //		RestApplication.disconnectActiveMq();
+		
+		SportScoreClient.shutDown();
 
 		MongoUtils.getMongoClient().close();
 	}
@@ -53,7 +57,7 @@ public class BetServerContextListener implements ServletContextListener {
 		betHelper.scheduleSettleDelayedPredictions();
 		betHelper.scheduleSettleBets();
 		betHelper.scheduleMonthWinnerCheck();
-		betHelper.scheduleFetchLeaderBoard();
+		betHelper.scheduleFetchLeaderBoard(60, 3*60, TimeUnit.SECONDS);
 		betHelper.scheduleFetchStandings();
 		betHelper.scheduleFetchStatistics();
 	}

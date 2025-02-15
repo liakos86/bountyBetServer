@@ -27,6 +27,10 @@ public interface MongoFields {
 //	String FOREIGN_KEY_USER_ID = "userId";
 	
 	String USER_BALANCE = "balance";
+	String USER_BALANCE_LEADERBOARD = "balanceForLeaderBoard";
+	String USER_PURCHASE_CREDITS = "userPurchaseCredits";
+	String USER_BALANCE_MONTH = "month";
+
 
 //	String USER_BALANCE_LAST_MONTH = "balanceLastMonth";
 
@@ -34,6 +38,10 @@ public interface MongoFields {
 	String BET_BELONGING_MONTH = "belongingMonth";
 
 	String BET_BELONGING_YEAR = "belongingYear";
+
+	String PURCHASE_YEAR = "puchaseYear";
+	String PURCHASE_MONTH = "purchaseMonth";
+//	String PURCHASE_CREDITS_REMAINING = "purchaseCreditsRemaining";
 
 	//String BET_PLACE_DATE = "betPlaceDate";
 
@@ -71,7 +79,6 @@ public interface MongoFields {
 	
 	String AWARD_PLACEMENT = "awardPlacement";
 
-	String USER_BALANCE_MONTH = "month";
 	
 //	String USER_BALANCE_YEAR = "year";
 	
@@ -125,6 +132,12 @@ public interface MongoFields {
 	String NAME = "name";
 	
 	String TRANSLATIONS = "name_translations";
+
+	String PLATFORM = "platform";
+	String PRODUCT_ID = "productId";
+	String TOKEN = "token";
+	String STATUS = "status";
+	String MILLISECONDS = "millis";
 
 //	String SPORT_ID = "sportId";
 

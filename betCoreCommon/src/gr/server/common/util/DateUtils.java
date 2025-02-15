@@ -194,4 +194,19 @@ public class DateUtils {
 		return currMonth == 1 ? currYear - 1 : currYear;
 	}
 
+	public static int getNextMonthOf(int month) {
+		if (month < 1 || month > 12) {
+			throw new RuntimeException("Invalid month " + month);
+		}
+		
+		int desired = month + 1;
+		
+		if (desired > 12) {
+			return (desired - 12);
+		}
+		
+		
+		return desired;
+	}
+
 }

@@ -508,6 +508,7 @@ public class FootballApiCache {
 		SUPPORTED_SECTION_IDS.get(123).add(845);
 		SUPPORTED_SECTION_IDS.get(123).add(846);
 		SUPPORTED_SECTION_IDS.get(123).add(848);
+		SUPPORTED_SECTION_IDS.get(123).add(8911);
 		
 		
 		SUPPORTED_SECTION_IDS.put(125, new ArrayList<>());//world

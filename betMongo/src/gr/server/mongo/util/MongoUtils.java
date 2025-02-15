@@ -38,6 +38,7 @@ import gr.server.data.constants.SportScoreApiConstants;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPrediction;
+import gr.server.data.user.model.objects.UserPurchase;
 
 /**
  * 
@@ -150,31 +151,34 @@ public class MongoUtils {
                 .append("seasonIds", l.getSeasonIds());
     }
 	
-//	// Method to populate Section from a MongoDB Document
-//    public static Section getSectionFromDocument(Document doc) {
-//        Section section = new Section();
-//        section.setId(doc.getInteger(MongoFields.SECTION_ID, 0));
-//        section.setSport_id( doc.getInteger("sport_id", 0));
-//        section.setName( doc.getString("name"));
-//        section.setPriority( doc.getInteger("priority", 0));
-//        section.setFlag( doc.getString("flag"));
-//        section.setName_translations( doc.get("name_translations", Map.class)); // Cast map from the document
-//        return section;
-//    }
-	
-	
-	
-	
 	public static Document getMonthlyBalanceDocument(String mongoUserId, int month) {
 		return new Document(MongoFields.MONGO_USER_ID, mongoUserId)
 				.append(MongoFields.USER_BALANCE_MONTH, month)
 				.append(MongoFields.USER_BALANCE, ServerConstants.STARTING_BALANCE)
+				.append(MongoFields.USER_BALANCE_LEADERBOARD, ServerConstants.STARTING_BALANCE)
+				.append(MongoFields.USER_PURCHASE_CREDITS, 0.0d)
 
-				.append(MongoFields.USER_BALANCE_BET_AMOUNT_MONTHLY, 0)
+				.append(MongoFields.USER_BALANCE_BET_AMOUNT_MONTHLY, 0.0d)
 				.append(MongoFields.USER_MONTHLY_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_MONTHLY_WON_EVENTS, 0)
 				 .append(MongoFields.USER_MONTHLY_LOST_SLIPS, 0)
 				 .append(MongoFields.USER_MONTHLY_WON_SLIPS, 0)
+				;
+	}
+	
+	public static Document getUserPurchaseDocument(UserPurchase purchaseVerificationBean) {
+		int belongingMonth = LocalDate.now().getMonthValue();
+		int belongingYear = LocalDate.now().getYear();
+		
+		return new Document(MongoFields.MONGO_USER_ID, purchaseVerificationBean.getMongoUserId())
+				.append(MongoFields.PLATFORM, purchaseVerificationBean.getPlatform())
+				.append(MongoFields.PRODUCT_ID, purchaseVerificationBean.getProductId())
+				.append(MongoFields.TOKEN, purchaseVerificationBean.getPurchaseToken())
+				.append(MongoFields.STATUS, purchaseVerificationBean.getStatus())
+				.append(MongoFields.MILLISECONDS, System.currentTimeMillis())
+				
+				.append(MongoFields.PURCHASE_MONTH, belongingMonth)
+				.append(MongoFields.PURCHASE_YEAR, belongingYear)
 				;
 	}
 
@@ -183,9 +187,7 @@ public class MongoUtils {
 				 .append(MongoFields.EMAIL, user.getEmail())
 				 .append(MongoFields.PASSWORD, user.getPassword())
 				 .append(MongoFields.VALIDATED, false)
-				 
-				 			 
-				 .append(MongoFields.USER_BET_AMOUNT_OVERALL, 0)
+				 .append(MongoFields.USER_BET_AMOUNT_OVERALL, 0.0d)
 				 .append(MongoFields.USER_OVERALL_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_WON_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_LOST_SLIPS, 0)

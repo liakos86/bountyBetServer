@@ -26,8 +26,6 @@ public interface MyBetOddsService {
 
 	String validateUser(String email) throws Exception;
 
-//	Response getLiveSpecific(String ids);
-	
 	Response getEventStatistics(Integer id);
 	
 	Response getStandingsOfSeason(Integer leagueId, Integer seasonId);
@@ -37,6 +35,8 @@ public interface MyBetOddsService {
 	Response getSections();
 
 	Response getLiveEvents();
+	
+	Response verifyPurchase(String verificationString);
 
 	Response authorize(String uniqueDeviceId) throws Exception;
 

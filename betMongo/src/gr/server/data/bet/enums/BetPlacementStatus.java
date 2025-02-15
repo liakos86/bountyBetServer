@@ -19,7 +19,10 @@ public enum BetPlacementStatus implements Serializable {
 	FAILED_INSUFFICIENT_FUNDS(4),
 	
 	@SerializedName("FAILED_USER_NOT_VALIDATED")
-	FAILED_USER_NOT_VALIDATED(5);
+	FAILED_USER_NOT_VALIDATED(5),
+	
+	@SerializedName("FAILED_MATCH_IN_NEXT_MONTH")
+	FAILED_MATCH_IN_NEXT_MONTH(6);
 	
 	private static final long serialVersionUID = 1L;
 	private int code;

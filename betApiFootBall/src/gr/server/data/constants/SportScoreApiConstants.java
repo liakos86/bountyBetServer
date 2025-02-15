@@ -25,9 +25,9 @@ public interface SportScoreApiConstants {
 	String RAPID_API_HEADER_KEY = "X-RapidAPI-Key";
 	
 	//TODO this is liakos86 key
-	//String RAPID_API_HEADER_VALUE = "515a19444amsh5c64c4c7936b110p18da20jsnb78c0b6bdd4b";
+	String RAPID_API_HEADER_VALUE = "515a19444amsh5c64c4c7936b110p18da20jsnb78c0b6bdd4b";
 	
-	String RAPID_API_HEADER_VALUE = "85e030da0emshab164327ab5b045p1af3c4jsn649b7c8be9fd";
+//	String RAPID_API_HEADER_VALUE = "85e030da0emshab164327ab5b045p1af3c4jsn649b7c8be9fd";
 	
 	String RAPID_API_HEADER_HOST_KEY = "X-RapidAPI-Host";
 	

@@ -20,6 +20,8 @@ public class UserMonthlyBalance implements Serializable{
 	private Double monthlyBetAmount;
 
 	private Double balance;
+	private Double balanceForLeaderBoard;
+	private Double userPurchaseCredits;
 
 	public UserMonthlyBalance(int month) {
 		this.balance = ServerConstants.STARTING_BALANCE;
@@ -91,8 +93,21 @@ public class UserMonthlyBalance implements Serializable{
 	public void setMonthlyBetAmount(Double monthlyBetAmount) {
 		this.monthlyBetAmount = monthlyBetAmount;
 	}
-	
-	
-	
 
+	public Double getUserPurchaseCredits() {
+		return userPurchaseCredits;
+	}
+
+	public void setUserPurchaseCredits(Double userPurchaseCredits) {
+		this.userPurchaseCredits = userPurchaseCredits;
+	}
+
+	public Double getBalanceForLeaderBoard() {
+		return balanceForLeaderBoard;
+	}
+
+	public void setBalanceForLeaderBoard(Double balanceForLeaderBoard) {
+		this.balanceForLeaderBoard = balanceForLeaderBoard;
+	}
+	
 }

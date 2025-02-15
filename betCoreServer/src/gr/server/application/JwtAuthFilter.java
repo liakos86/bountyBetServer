@@ -14,11 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.http.HttpStatus;
 
-import com.google.api.client.http.HttpResponse;
-import com.google.api.gax.rpc.UnauthenticatedException;
 
 import gr.server.common.CommonConstants;
-import gr.server.logging.Mongo;
+import gr.server.common.logging.CommonLogger;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 //import javax.ws.rs.NotAuthorizedException;
@@ -48,7 +46,7 @@ public class JwtAuthFilter implements Filter {
             String token = authHeader.substring("Bearer".length()).trim();
             
             if (token == null) {
-            	Mongo.logger.error("Missing Bearer token in auth header" + authHeader);
+            	CommonLogger.logger.error("Missing Bearer token in auth header" + authHeader);
             	System.out.println("AUTH ERROR TOKEN MISSING*************************");
                 ((HttpServletResponse) response).setStatus(HttpStatus.SC_TOO_MANY_REQUESTS);
             	return;
@@ -57,7 +55,7 @@ public class JwtAuthFilter implements Filter {
             
             
             if (token != null && new RateLimitService().isRateLimitExceeded(token)) {
-            	Mongo.logger.error("Request limit exceeded for" + token);
+            	CommonLogger.logger.error("Request limit exceeded for" + token);
             	System.out.println("AUTH ERROR RATE EXCEED " + token );
                 ((HttpServletResponse) response).setStatus(HttpStatus.SC_TOO_MANY_REQUESTS);
                 return;

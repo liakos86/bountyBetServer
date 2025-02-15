@@ -19,17 +19,19 @@ import com.google.gson.reflect.TypeToken;
 
 import gr.server.common.auth.JwtUtils;
 import gr.server.common.bean.AuthorizationBean;
+import gr.server.common.bean.PurchaseVerificationResponseBean;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.dto.LoginResponseDto;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.league.Season;
-import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserPurchase;
 import gr.server.def.service.MyBetOddsService;
 import gr.server.email.EmailSendUtil;
 import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.mongo.bean.PlaceBetResponseBean;
 import gr.server.util.SecureUtils;
 
 @Path("/betServer")
@@ -39,24 +41,32 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 
 	@Override
 	@POST
+	@Path("/verifyPurchase")
+	@Consumes("application/json; charset=UTF-8")
+	@Produces("application/json; charset=UTF-8")
+	public Response verifyPurchase(String verificationString) {
+		UserPurchase verificationBean = new Gson().fromJson(verificationString, new TypeToken<UserPurchase>() {}.getType());
+
+		boolean verifiedPurchase = true;//TODO
+		boolean applied = false;
+		if (verifiedPurchase) {
+			applied = new MongoClientHelperImpl().storePurchase(verificationBean);
+		}
+
+		return Response.ok(new Gson().toJson(new PurchaseVerificationResponseBean(applied))).build();
+
+	}
+
+	
+	@Override
+	@POST
 	@Path("/placeBet")
 	@Consumes("application/json; charset=UTF-8")
 	@Produces("application/json; charset=UTF-8")
 	public Response placeBet(String userBetJson) {
-		UserBet newBet = new Gson().fromJson(userBetJson, new TypeToken<UserBet>() {
-		}.getType());
-
-		BetPlacementStatus betPlacementStatus = new MongoClientHelperImpl().placeBet(newBet);
-
-//		if (BetPlacementStatus.PLACED != betPlacementStatus) {
-//			User errorUser = new User();
-//			errorUser.setErrorMessage(String.valueOf(betPlacementStatus.getCode()));
-//			return Response.ok(new Gson().toJson(errorUser)).build();
-//		}
-
-		return Response.ok(new Gson().toJson(betPlacementStatus)).build();
-//		return getUser(newBet.getMongoUserId());// TODO: maybe return only the bet?
-
+		UserBet newBet = new Gson().fromJson(userBetJson, new TypeToken<UserBet>() {}.getType());
+		PlaceBetResponseBean betPlacementResp = new MongoClientHelperImpl().placeBet(newBet);
+		return Response.ok(new Gson().toJson(betPlacementResp)).build();
 	}
 
 	@Override
@@ -168,15 +178,15 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/getLeagueEvents")
 	public Response getLeagueEvents() {
-//		for(MatchEvent e: FootballApiCache.ALL_EVENTS.values()) {
-//			if (e.getHome_team().getName().contains("Al-Sailiya") || e.getHome_team().getName().contains("CD Vitoria")
-//					||  e.getHome_team().getName().contains("Molenbeek")
-//					||  e.getHome_team().getName().contains("Savoia 1908")
-//					||  e.getHome_team().getName().contains("SSD Pro")
-//					||  e.getHome_team().getName().contains("Ivory Coast")) {
-//				System.out.println("EVENT:::::::" + e);
-//			}
-//		}
+		for(MatchEvent e: FootballApiCache.ALL_EVENTS.values()) {
+			if (e.getHome_team().getName().contains("Leipzig") || e.getHome_team().getName().contains("CD Vitoria")
+//					||  e.getHome_team().getName().contains("rentina")
+					||  e.getHome_team().getName().contains("Savoia 1908")
+					||  e.getHome_team().getName().contains("SSD Pro")
+					||  e.getHome_team().getName().contains("Ivory Coast")) {
+				System.out.println("EVENT:::::::" + e);
+			}
+		}
 
 		return Response.ok(new Gson().toJson(FootballApiCache.ALL_LEAGUES_WITH_EVENTS_PER_DAY)).build();
 	}
@@ -230,7 +240,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	 */
 	User getUserFromMongoId(String mongoId) {
 		long fiveDaysBefore = 5 * 1000 * 24 * 60 * 60;
-		User user = new MongoClientHelperImpl().getUser(mongoId, 20, fiveDaysBefore, true, true, true);
+		User user = new MongoClientHelperImpl().getUser(mongoId, 20, fiveDaysBefore, true, true, true, true);
 		return user;
 	}
 

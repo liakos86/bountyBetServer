@@ -1,5 +1,7 @@
 package gr.server.def.client;
 
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.bson.Document;
@@ -10,6 +12,8 @@ import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
+import gr.server.data.user.model.objects.UserPurchase;
+import gr.server.mongo.bean.PlaceBetResponseBean;
 
 public interface MongoClientHelper {
 
@@ -41,8 +45,8 @@ public interface MongoClientHelper {
 	 * @param id the user id
 	 * @return
 	 */
-	User getUser(String id, int maxBetsToFetch, long millisToSearchBets, boolean includeAwards, boolean includeBalances,
-			boolean includeBounties);
+	User getUser(String id, int maxBetsToFetch, long millisToSearchBets, boolean includeUnsettled,
+			boolean includeAwards, boolean includeBalances, boolean includeBounties);
 
 	/**
 	 * Retrieves a user via login.
@@ -62,9 +66,13 @@ public interface MongoClientHelper {
 	void deleteUser(String mongoId);
 	
 
-	BetPlacementStatus placeBet(UserBet userBet);
+	PlaceBetResponseBean placeBet(UserBet userBet);
 
 //	Set<MatchEvent> getLiveByIds(String ids);
 
 	boolean closeMonthlyBalancesAndComputeMonthWinner();
+
+	boolean storePurchase(UserPurchase verificationBean);
+
+	Map<Integer, List<User>> retrieveLeaderBoard();
 }

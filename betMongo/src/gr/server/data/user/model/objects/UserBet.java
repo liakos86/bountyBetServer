@@ -30,6 +30,8 @@ public class UserBet implements Serializable{
 	Integer belongingYear;
 	
 	int betStatus;
+
+	int betPlacementStatus;
 	
 	boolean predictionsSettled = false;
 	
@@ -110,6 +112,16 @@ public class UserBet implements Serializable{
 
 	public void setBelongingYear(Integer belongingYear) {
 		this.belongingYear = belongingYear;
+	}
+	
+	
+
+	public int getBetPlacementStatus() {
+		return betPlacementStatus;
+	}
+
+	public void setBetPlacementStatus(int betPlacementStatus) {
+		this.betPlacementStatus = betPlacementStatus;
 	}
 
 	public Double getPossibleEarnings() {

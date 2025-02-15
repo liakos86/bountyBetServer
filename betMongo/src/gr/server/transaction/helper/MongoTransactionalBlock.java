@@ -2,7 +2,7 @@ package gr.server.transaction.helper;
 
 import com.mongodb.client.ClientSession;
 
-import gr.server.logging.Mongo;
+import gr.server.common.logging.CommonLogger;
 import gr.server.mongo.util.MongoUtils;
 
 public abstract class MongoTransactionalBlock<T> {
@@ -39,11 +39,11 @@ public abstract class MongoTransactionalBlock<T> {
 				}
 				
 				if (i == retries) {
-					Mongo.logger.error(this.getClass().getCanonicalName() + ": " + e.getStackTrace());
+					CommonLogger.logger.error(this.getClass().getCanonicalName() + ": " + e.getStackTrace());
 					e.printStackTrace();
 //					break;
 				}else {
-					Mongo.logger.warn(this.getClass().getCanonicalName() + " will retry: " + e.getStackTrace());
+					CommonLogger.logger.warn(this.getClass().getCanonicalName() + " will retry: " + e.getStackTrace());
 					System.out.println("RETRYING AFTER ::::: " + e.getClass().getCanonicalName());
 				}
 				
