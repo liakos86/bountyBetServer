@@ -7,6 +7,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Section;
@@ -45,6 +46,9 @@ public class BetServerContextListener implements ServletContextListener {
 	 */
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
+		CommonLogger.logger.error("error hoorayyyyy");
+		CommonLogger.logger.info("info hoorayyyyy");
+		
 		FireBaseConnectionHelper.connectFirebase();
 		fetchSectionsAndLeaguesAndTeamsFromDbIntoCache();
 		ExecutorsBetHelper betHelper = new ExecutorsBetHelper();

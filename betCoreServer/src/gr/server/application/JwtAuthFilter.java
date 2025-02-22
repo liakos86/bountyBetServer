@@ -14,14 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.http.HttpStatus;
 
-
 import gr.server.common.CommonConstants;
 import gr.server.common.logging.CommonLogger;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-//import javax.ws.rs.NotAuthorizedException;
 
-//@WebFilter("/*") // This annotation can be used for automatic registration, but it's optional
 @WebFilter("/*") // This annotation can be used for automatic registration, but it's optional
 public class JwtAuthFilter implements Filter {
 
@@ -38,8 +35,7 @@ public class JwtAuthFilter implements Filter {
 
     	 HttpServletRequest httpRequest = (HttpServletRequest) request;
     	 String path = httpRequest.getRequestURL().toString();
-    	 if (!path.endsWith("/authorize")) {
-         	
+    	 if (!path.endsWith("/authorize") && !path.endsWith("/getLeagues")) {
          String authHeader = httpRequest.getHeader("Authorization");// You can cast to ContainerRequest if using Jersey
         
          if (authHeader != null && authHeader.startsWith("Bearer ")) {
@@ -47,16 +43,12 @@ public class JwtAuthFilter implements Filter {
             
             if (token == null) {
             	CommonLogger.logger.error("Missing Bearer token in auth header" + authHeader);
-            	System.out.println("AUTH ERROR TOKEN MISSING*************************");
                 ((HttpServletResponse) response).setStatus(HttpStatus.SC_TOO_MANY_REQUESTS);
             	return;
             }
             
-            
-            
             if (token != null && new RateLimitService().isRateLimitExceeded(token)) {
             	CommonLogger.logger.error("Request limit exceeded for" + token);
-            	System.out.println("AUTH ERROR RATE EXCEED " + token );
                 ((HttpServletResponse) response).setStatus(HttpStatus.SC_TOO_MANY_REQUESTS);
                 return;
             }
@@ -73,14 +65,13 @@ public class JwtAuthFilter implements Filter {
 //                throw new NotAuthorizedException("Invalid or expired token");
             }
         }else {
-        	System.out.println("AUTH ERROR HEADER MISSING*************************");
+        	CommonLogger.logger.warn("AUTH ERROR HEADER MISSING*************************");
             ((HttpServletResponse) response).setStatus(HttpStatus.SC_TOO_MANY_REQUESTS);
             return;
 
         }
     	 }
 
-        // Continue with the filter chain
         chain.doFilter(request, response);
     }
 

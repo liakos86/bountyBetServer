@@ -34,7 +34,7 @@ import gr.server.impl.client.MongoClientHelperImpl;
 import gr.server.mongo.bean.PlaceBetResponseBean;
 import gr.server.util.SecureUtils;
 
-@Path("/betServer")
+@Path("/rest")
 @Consumes(MediaType.APPLICATION_XML)
 @Produces(MediaType.APPLICATION_XML)
 public class MyBetOddsServiceImpl implements MyBetOddsService {
@@ -179,10 +179,11 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Path("/getLeagueEvents")
 	public Response getLeagueEvents() {
 		for(MatchEvent e: FootballApiCache.ALL_EVENTS.values()) {
-			if (e.getHome_team().getName().contains("Leipzig") || e.getHome_team().getName().contains("CD Vitoria")
+			if (e.getHome_team().getName().contains("Leipzig") 
+//					|| e.getHome_team().getName().contains("CD Vitoria")
 //					||  e.getHome_team().getName().contains("rentina")
-					||  e.getHome_team().getName().contains("Savoia 1908")
-					||  e.getHome_team().getName().contains("SSD Pro")
+//					||  e.getHome_team().getName().contains("Savoia 1908")
+//					||  e.getHome_team().getName().contains("SSD Pro")
 					||  e.getHome_team().getName().contains("Ivory Coast")) {
 				System.out.println("EVENT:::::::" + e);
 			}

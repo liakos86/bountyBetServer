@@ -1,17 +1,17 @@
 version: "3.8"
 services:
-  #active_mq:
-   #build: ./active_mq_docker/
-   #container_name: active_mq_c1
-   #ports: 
-   #  - '8161:8161'
-   #  - '61616:61616'
-   #  - '1883:1883'
   betserver:
    build: ./
-   container_name: betserver_c1
-   #depends_on:
-    #  - active_mq
+   container_name: betserver-c1
    ports: 
-     - '9090:8080'
+     - '9090:8080'   
+  nginx:
+    image: nginx:latest
+    container_name: nginx_proxy
+    ports:
+      - "8080:8080"
+    volumes:
+      - /c/Users/liako/git/bountyBetServer/betCoreServer/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - betserver
    

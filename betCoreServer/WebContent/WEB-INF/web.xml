@@ -11,7 +11,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Jersey Web Application</servlet-name>
-    <url-pattern>/ws/*</url-pattern>
+    <url-pattern>/betCoreServer/*</url-pattern>
   </servlet-mapping>
   <servlet>
     <description>JAX-RS Tools Generated - Do not modify</description>
