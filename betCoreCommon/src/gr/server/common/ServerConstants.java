@@ -10,8 +10,6 @@ public interface ServerConstants {
 	
 	String BASE_DATE_FORMAT = "yyyy-MM-dd";
 	
-	String URL_FORMAT = "mF=!72kg*&;.J^1]";
-	
 	String GMT = "GMT";
 	
 	Integer BET_DAYS_OFFSET = 1;

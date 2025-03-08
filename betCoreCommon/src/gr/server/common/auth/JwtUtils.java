@@ -6,10 +6,11 @@ import io.jsonwebtoken.Claims;
 import java.util.Date;
 import java.util.UUID;
 
+import gr.server.common.IgnoreConstants;
 import gr.server.common.ServerConstants;
 
 public class JwtUtils {
-    private static final String SECRET_KEY = ServerConstants.URL_FORMAT; // Keep this safe!
+    private static final String SECRET_KEY = IgnoreConstants.URL_FORMAT; // Keep this safe!
 
     // Generate JWT Token
     public static String generateToken(String token) {

@@ -20,6 +20,8 @@ import com.google.gson.reflect.TypeToken;
 import gr.server.common.auth.JwtUtils;
 import gr.server.common.bean.AuthorizationBean;
 import gr.server.common.bean.PurchaseVerificationResponseBean;
+import gr.server.common.logging.CommonLogger;
+import gr.server.common.util.FileHelperUtils;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.dto.LoginResponseDto;
 import gr.server.data.api.model.events.MatchEvent;
@@ -75,8 +77,7 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Consumes("application/json; charset=UTF-8")
 	@Produces("application/json; charset=UTF-8")
 	public Response registerUser(String userJson) throws Exception {
-		User newUser = new Gson().fromJson(userJson, new TypeToken<User>() {
-		}.getType());
+		User newUser = new Gson().fromJson(userJson, new TypeToken<User>() {}.getType());
 		String userEmail = SecureUtils.decode(newUser.getEmail());
 		newUser.setEmail(userEmail);
 		newUser = new MongoClientHelperImpl().createUser(newUser);
@@ -128,8 +129,9 @@ public class MyBetOddsServiceImpl implements MyBetOddsService {
 	@Produces(MediaType.TEXT_HTML)
 	@Path("/{email}/validateUser")
 	public String validateUser(@PathParam("email") String email) throws Exception {
+		CommonLogger.logger.error("VALIDATING " + email);
 		new MongoClientHelperImpl().validateUser(email);
-		return "<html><head><body>Your email is validated. Please return to the app and Login again.</body></head></html>";
+		return new FileHelperUtils().getFileContents("html/validation_success.html");
 	}
 
 	@Override

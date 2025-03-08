@@ -78,7 +78,7 @@ implements MongoClientHelper {
 	@Override
 	public User createUser(User user) {
 		
-		boolean userCreated = new MongoTransactionalBlock<Void>() {
+		MongoTransactionalBlock<Void> userBlock = new MongoTransactionalBlock<Void>() {
 			@Override
 			public void begin() throws Exception {
 				System.out.println("Create user Working in thread: " + Thread.currentThread().getName());
@@ -123,7 +123,11 @@ implements MongoClientHelper {
 				userBalanceCol.insertMany(session, monthDocuments);
 			
 			}
-		}.execute();
+		};
+		
+		userBlock.setRetries(3);
+		
+		boolean userCreated = userBlock.execute();
 		
 		if (userCreated && logger.isInfoEnabled()) {
 			logger.info("Created new user:" + user);
@@ -193,7 +197,7 @@ implements MongoClientHelper {
 				try {
 					userFromMongo = usersFromMongo.first();
 				}catch(Exception e) {
-					System.out.println("COULD NOT RETRIEVE USER " + e.getClass().getCanonicalName());
+					CommonLogger.logger.error("COULD NOT RETRIEVE USER " + e.getClass().getCanonicalName());
 					return;
 				}
 				
@@ -308,7 +312,7 @@ implements MongoClientHelper {
 				MongoCollection<Document> usersCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.USERS);
 				Bson filterUserMongoId = Filters.eq(MongoFields.MONGO_ID, new ObjectId(userBet.getMongoUserId()));
 
-				Bson increaseBetAmountOverallDocument = Updates.inc(MongoFields.USER_BET_AMOUNT_OVERALL, (1 * userBet.getBetAmount()));
+				Bson increaseBetAmountOverallDocument = Updates.inc(MongoFields.USER_BET_AMOUNT_OVERALL, (1.0d * userBet.getBetAmount()));
 				usersCollection.findOneAndUpdate(session, filterUserMongoId, increaseBetAmountOverallDocument);
 				
 				double remainingCredits = user.getRemainingCredits();
@@ -959,7 +963,7 @@ implements MongoClientHelper {
 			long existingWinner = fetchFilterSize(MongoCollectionConstants.AWARDS, combined);
 
 			if(existingWinner>0) {
-//				System.out.println("Monthly winner exists");
+				CommonLogger.logger.info("Monthly winner exists");
 				return false;
 			}
 			
@@ -971,7 +975,7 @@ implements MongoClientHelper {
 			long openBets = fetchFilterSize(MongoCollectionConstants.USER_BETS, combinedFilter);
 			
 			if(openBets > 0) {
-				System.out.println(openBets + " open bets still in place for " + previousMonth);
+				CommonLogger.logger.info(openBets + " open bets still in place for " + previousMonth);
 				return false;
 			}
 		
@@ -1026,6 +1030,11 @@ implements MongoClientHelper {
 			awardsDocs.add(awardDocument);
 		}    
 		
+		if(awardsDocs.isEmpty()) {
+			Document awardDocument = MongoUtils.getAwardDocument("-1", 0d, previousMonthInt, yearOfPreviousMonthInt);
+			awardsDocs.add(awardDocument);
+			CommonLogger.logger.error("No winner found for " + previousMonthInt);
+		}
 		
 		MongoCollection<Document> awardsCollection = MongoUtils.getMongoCollection(MongoCollectionConstants.AWARDS);
 

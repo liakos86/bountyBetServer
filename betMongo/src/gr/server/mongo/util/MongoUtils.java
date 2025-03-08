@@ -26,6 +26,7 @@ import com.mongodb.client.MongoDatabase;
 
 import gr.server.common.MongoCollectionConstants;
 import gr.server.common.ServerConstants;
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.league.League;
@@ -257,16 +258,47 @@ public class MongoUtils {
 
 	public static MongoCollection<Document> getMongoCollection(String collectionName){
     	MongoDatabase database = getMongoClient().getDatabase(MongoCollectionConstants.BOUNTY_BET_DB);
-        return database.getCollection(collectionName);
+    	MongoCollection<Document> collection = database.getCollection(collectionName);
+    	if(collection == null) {
+    		CommonLogger.logger.error("Collection missing:" + collectionName);
+    		throw new RuntimeException("Collection missing:" + collectionName);
+		}
+    	return collection;
     }
 	
 	public static MongoClient getMongoClient() {
 		if (MONGO_CLIENT == null) {
-    		ConnectionString connectionString = new ConnectionString("mongodb+srv://bountyBetUser:a7fdy4hTXZWeL1kP@bountybetcluster.27d3j.mongodb.net/?retryWrites=true&w=majority");
+			
+			try {
+			
+			String mongoUri = System.getenv("MONGO_CONNECTION_STRING");
+
+	        if (mongoUri == null || mongoUri.isEmpty()) {
+	        	
+	        	mongoUri = System.getProperty("MONGO_CONNECTION_STRING");
+	        	
+	        	if (mongoUri == null || mongoUri.isEmpty()) {
+	        		CommonLogger.logger.error("MONGO_CONNECTION_STRING environment variable is not set!");
+	        		throw new RuntimeException("MONGO_CONNECTION_STRING environment variable is not set!");
+	        	}
+	        	
+	        }else {
+	        	CommonLogger.logger.error("MONGO_CONNECTION_STRING = " + mongoUri);
+	        }
+			
+//    		ConnectionString connectionString = new ConnectionString("mongodb+srv://bountyBetUser:a7fdy4hTXZWeL1kP@bountybetcluster.27d3j.mongodb.net/?retryWrites=true&w=majority");
+    		ConnectionString connectionString = new ConnectionString(mongoUri);
     		MongoClientSettings settings = MongoClientSettings.builder()
     		        .applyConnectionString(connectionString)
     		        .build();
     		MONGO_CLIENT = MongoClients.create(settings);
+    		
+    		CommonLogger.logger.error("Mongo client created: " + MONGO_CLIENT);
+    		
+			}catch(Exception e) {
+				CommonLogger.logger.error(e.getStackTrace());
+				throw e;
+			}
     		
     	}
 		

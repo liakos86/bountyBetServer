@@ -2,7 +2,7 @@ package gr.server.common;
 
 public interface CommonConstants {
 	
-	String SERVER_IP = "192.168.1.53";
+	String SERVER_IP = "192.168.1.6";
 	
 	String GMT = "GMT";
 	

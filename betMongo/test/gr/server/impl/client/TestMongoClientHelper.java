@@ -525,6 +525,17 @@ public class TestMongoClientHelper {
 //	}
 //
 //	
+	
+	@Test
+	public void testGetUser() {//172.21.0.2
+	    String s =  "mongodb://bountyBetUser:a7fdy4hTXZWeL1kP@localhost:27017/bountyBetDB?replicaSet=rs0";
+
+		System.setProperty("MONGO_CONNECTION_STRING", s);
+		MongoClientHelperImpl mHelper = new MongoClientHelperImpl();
+		User user = mHelper.getUser("67c89d26ad2886582c9c76c6", 10, 100000000, true, true, true, true);
+		System.out.println("POS " + user.getPosition());
+	}
+	
 	/**
 	 * Creates a new user. Places a bet for the new user. Reads the user again to
 	 * verify bet fields. Deletes the user. Verifies deletion.

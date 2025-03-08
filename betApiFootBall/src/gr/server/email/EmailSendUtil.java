@@ -1,5 +1,6 @@
 package gr.server.email;
 
+import java.io.IOException;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -12,10 +13,12 @@ import javax.mail.internet.MimeMessage;
 
 import gr.server.common.CommonConstants;
 import gr.server.common.IgnoreConstants;
+import gr.server.common.logging.CommonLogger;
+import gr.server.common.util.FileHelperUtils;
 
 public class EmailSendUtil {
 	
-	public static void doSend(String email) {
+	public static boolean doSend(String email) {
 		  final String host= IgnoreConstants.SMTP_HOST;  
 		  final String user= IgnoreConstants.MAIL_USER;
 		  final String password= IgnoreConstants.MAIL_PASS;  
@@ -41,19 +44,36 @@ public class EmailSendUtil {
 		     MimeMessage message = new MimeMessage(session);  
 		     message.setFrom(new InternetAddress(user));  
 		     message.addRecipient(Message.RecipientType.TO,new InternetAddress(email));  
-		     message.setSubject("flutter athentication email");  
-		    // message.setText("<html><body><a href=\"http://192.168.1.2:8080/betCoreServer/betServer/validateUser/" + to +"\"> Click to validate your registration</a></body></html>");  
+		     message.setSubject("FantasyTips authentication email");  
 		       
+            String template;
+			try {
+				template = new FileHelperUtils().getFileContents("html/send_email.html");
+			} catch (IOException e) {
+				e.printStackTrace();
+				CommonLogger.logger.error(e.getMessage());
+				return false;
+			}
+
+            // Replace placeholders
+            template = template.replace("{SERVER_IP}", CommonConstants.SERVER_IP);
+
+            template = template.replace("{EMAIL}", email);
+	     
+            message.setContent(template,  "text/html");
 		     
-		     message.setContent("<html><body><a href=\"http://" + CommonConstants.SERVER_IP + ":8080/betCoreServer/betServer/"+ email +"/validateUser/\"> Click to validate your registration</a></body></html>",  "text/html");
-		    //send the message  
+		     //send the message  
 		     Transport.send(message);  
 		  
 		     System.out.println("message sent successfully...");  
 		   
-		     } catch (MessagingException e) {e.printStackTrace();}  
+		     } catch (MessagingException e) {
+		    	 e.printStackTrace();
+		    	 CommonLogger.logger.error(e.getMessage());
+		    	 return false;
+		     }
+		    
+		    return true;
 		 }  
 	
-
-
 }

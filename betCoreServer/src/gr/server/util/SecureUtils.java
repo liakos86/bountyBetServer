@@ -9,6 +9,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
 import gr.server.common.CommonConstants;
+import gr.server.common.IgnoreConstants;
 import gr.server.common.ServerConstants;
 import gr.server.common.bean.AuthorizationBean;
 
@@ -20,7 +21,7 @@ public class SecureUtils {
 
 	public static String decode(String cipherText) throws Exception {
 
-		String substring = createKey(ServerConstants.URL_FORMAT);
+		String substring = createKey(IgnoreConstants.URL_FORMAT);
 		byte[] encoded = substring.getBytes(UTF_8);
 		SecretKey originalKey = new SecretKeySpec(encoded, "AES");
 

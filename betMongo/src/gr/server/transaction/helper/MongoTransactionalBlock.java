@@ -18,9 +18,21 @@ public abstract class MongoTransactionalBlock<T> {
 	public boolean execute(){
 		boolean success = false;
 		
+		try {
+		
 		session = MongoUtils.getMongoClient().startSession();
+		}catch(Exception e) {
+//			CommonLogger.logger.error("Session start error " + e.getMessage());
+			CommonLogger.logger.error("Session start error " + e);
+			throw e;
+		}
+		
+		
 		if (session == null) {
+			CommonLogger.logger.error(this.getClass().getSimpleName() + " NULL SESSION");
 			throw new RuntimeException("MONGO SESSION NULL");
+		}else {
+			//CommonLogger.logger.error(this.getClass().getSimpleName() + session);
 		}
 		
 		for(int i = 0; i <= retries; i++) {
@@ -32,6 +44,7 @@ public abstract class MongoTransactionalBlock<T> {
 				success = true;
 				break;
 			}catch(Exception e){
+				CommonLogger.logger.error("Mongo TransactionalBlock error:" + e.getMessage());
 				result = null;
 				success = false;
 				if (session != null && session.hasActiveTransaction()) {
