@@ -57,7 +57,6 @@ public abstract class MongoTransactionalBlock<T> {
 //					break;
 				}else {
 					CommonLogger.logger.warn(this.getClass().getCanonicalName() + " will retry: " + e.getStackTrace());
-					System.out.println("RETRYING AFTER ::::: " + e.getClass().getCanonicalName());
 				}
 				
 			}finally{

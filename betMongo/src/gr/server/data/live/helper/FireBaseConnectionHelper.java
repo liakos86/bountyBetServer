@@ -18,6 +18,7 @@ import com.google.firebase.messaging.Notification;
 import com.google.gson.Gson;
 
 import gr.server.common.FireBaseConstants;
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.api.model.events.transients.ChangeEventSoccer;
 
 public class FireBaseConnectionHelper {
@@ -85,9 +86,9 @@ public class FireBaseConnectionHelper {
 		String response;
 		try {
 			response = FirebaseMessaging.getInstance().send(message);
-			System.out.println(FireBaseConstants.TOPIC_SOCCER_EVENTS + " - EventId" + messageParams.get("eventId") + ", Successfully sent message: " + response);
+			//System.out.println(FireBaseConstants.TOPIC_SOCCER_EVENTS + " - EventId" + messageParams.get("eventId") + ", Successfully sent message: " + response);
 		} catch (FirebaseMessagingException e) {
-			System.out.println("Could not sent message: " + e.getMessage());
+			CommonLogger.logger.error("Could not sent message: " + message + " because " + e.getMessage());
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -30,9 +30,7 @@ extends Application{
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> resources = new HashSet<Class<?>>();
-        System.out.println("REST configuration starting: getClasses()");      
         resources.add(MyBetOddsServiceImpl.class);
-        System.out.println("REST configuration ended successfully.");
         return resources;
     }
     

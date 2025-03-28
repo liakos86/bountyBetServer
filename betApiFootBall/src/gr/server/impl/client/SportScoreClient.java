@@ -9,16 +9,15 @@ import java.util.Calendar;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import gr.server.common.logging.CommonLogger;
 import gr.server.common.ratelimit.RateLimiter;
 //import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.events.Events;
-import gr.server.data.api.model.events.MatchEvent;
 import gr.server.data.api.model.events.MatchEventIncidents;
 import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.events.MatchEventStatistics;
@@ -118,8 +117,6 @@ public class SportScoreClient {
 		
 		// TODO: all pages
 		// url += "?page=1";
-        
-        System.out.println(url);
 
         rateLimiter.acquirePermit();
 		String content = new HttpHelper().fetchPostContentWithHeaders(url);
@@ -181,6 +178,30 @@ public class SportScoreClient {
 	 */
 	MatchEventIncidents getIncidents(int eventId)
 			throws IOException, ParseException, InterruptedException, URISyntaxException {
+		CommonLogger.logger.error("stats BEFPRE:: " );
+
+		String url = SportScoreApiConstants.GET_EVENT_INCIDENTS_URL.replace(SportScoreApiConstants.REPLACEMENT_LEAGUE_ID, String.valueOf(eventId));
+		rateLimiter.acquirePermit();
+		String content = new HttpHelper().fetchGetContentWithHeaders(url);
+		if(content == null) {
+			return new MatchEventIncidents();
+		}
+		
+		MatchEventIncidents incidents = new Gson().fromJson(content, new TypeToken<MatchEventIncidents>() {}.getType());
+		CommonLogger.logger.error("stats SIZE:: " +  incidents.getData().size());
+
+		return incidents;
+	}
+	
+	/**
+	 * 
+	 * @throws IOException
+	 * @throws ParseException
+	 * @throws URISyntaxException
+	 * @throws InterruptedException
+	 */
+	MatchEventIncidents getIncidentsFromFile(int eventId)
+			throws IOException, ParseException, InterruptedException, URISyntaxException {
 		return MockApiClient.getMatchIncidentsFromFile();
 		
 //		String url = SportScoreApiConstants.GET_EVENT_INCIDENTS_URL.replace(SportScoreApiConstants.REPLACEMENT,
@@ -222,8 +243,7 @@ public class SportScoreClient {
 			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchPostContentWithHeaders(url);
 		} catch (IOException e) {
-
-			System.out.println("GET SEASONS ERROR: " + e.getStackTrace());
+			CommonLogger.logger.error("GET SEASONS ERROR: " + e.getStackTrace());
 		}
 		Seasons seasons = new Gson().fromJson(content, new TypeToken<Seasons>() {
 		}.getType());
@@ -245,7 +265,7 @@ public class SportScoreClient {
 			content = new HttpHelper().fetchGetContentWithHeaders(url);
 		} catch (IOException e) {
 
-			System.out.println("GET TABLES ERROR: " + e.getStackTrace());
+			CommonLogger.logger.error("GET TABLES ERROR: " + e.getStackTrace());
 		}
 		StandingTables standingTables = new Gson().fromJson(content, new TypeToken<StandingTables>() {
 		}.getType());
@@ -268,7 +288,7 @@ public class SportScoreClient {
 			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchGetContentWithHeaders(url);
 		} catch (IOException e) {
-			System.out.println("GET PLAYERS ERROR: " + e.getStackTrace());
+			CommonLogger.logger.error("GET PLAYERS ERROR: " + e.getStackTrace());
 			return new Players();
 		}
 		Players players = new Gson().fromJson(content, new TypeToken<Players>() {
@@ -289,12 +309,11 @@ public class SportScoreClient {
 			rateLimiter.acquirePermit();
 			content = new HttpHelper().fetchGetContentWithHeaders(url);
 		} catch (IOException e) {
-			System.out.println("GET PLAYER STATS ERROR: " + e.getStackTrace());
+			CommonLogger.logger.error("GET PLAYER STATS ERROR: " + e.getStackTrace());
 			return new PlayerSeasonStatistic();
 		}
-		// com.google.gson.JsonSyntaxException: java.lang.IllegalStateException:
-		// Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 91 path
-		// $.data[0].details[0].statistics_items[0]
+
+
 		PlayerStatistics playerStats = new Gson().fromJson(content, new TypeToken<PlayerStatistics>() {
 		}.getType());
 		if (playerStats == null || playerStats.getData() == null || playerStats.getData().isEmpty()) {
@@ -316,12 +335,12 @@ public class SportScoreClient {
 			matchEventIncidentsWithStatistics.setMatchEventIncidents(incidents);
 			matchEventIncidentsWithStatistics.setMatchEventStatistics(statistics);
 
-//			logger.log(Level.INFO, "LIVE INCIDENTS:" + incidents.getData().size());
-//			logger.log(Level.INFO, "LIVE STATS:" + statistics.getData().size());
+//			CommonLogger.logger.error("LIVE INCIDENTS:" + incidents.getData().size());
+//			CommonLogger.logger.error( "LIVE STATS:" + statistics.getData().size());
 
 			return matchEventIncidentsWithStatistics;
 		} catch (Exception e) {
-//			logger.log(Level.ERROR, "ERROR LIVE INCIDENTS:" + incidents.getData().size());
+			CommonLogger.logger.error("ERROR LIVE INCIDENTS:" + liveEventId);
 			return null;
 		}
 	}

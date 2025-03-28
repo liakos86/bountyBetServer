@@ -8,6 +8,7 @@ import java.util.Random;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.api.model.events.Events;
 import gr.server.data.api.model.events.MatchEventIncident;
 import gr.server.data.api.model.events.MatchEventIncidents;
@@ -103,17 +104,19 @@ public class MockApiClient {
 		leagues.getData().forEach(l-> l.setName(l.getName_translations().get("en")));
 
 		
-		System.out.println("*************************");
-		System.out.println("*************************");
-		System.out.println("*************************");
-		System.out.println("ALL leagues are: " + leagues.getData().size());
-		leagues.getData().forEach(l-> {if (l.getId() ==0) {System.out.println("League without ID: " + l.getName());}} );
-		System.out.println("*************************");
-		System.out.println("*************************");
-		System.out.println("*************************");
-		leagues.getData().forEach(l-> {if (l.getSection_id() ==0) {System.out.println("League without section ID: " + l.getName());}} );
-		//leagues.getData().forEach(l-> {if (l.getSection() ==null) {System.out.println("League without section obj: " + l.getName());}} );
-
+		CommonLogger.logger.error("*************************");
+		CommonLogger.logger.error("ALL leagues are: " + leagues.getData().size());
+		leagues.getData().forEach(l-> {
+			if (l.getId() ==0) {
+				CommonLogger.logger.error("League without ID: " + l.getName());
+				}
+			} );
+		CommonLogger.logger.error("*************************");
+		leagues.getData().forEach(l-> {
+			if (l.getSection_id() ==0) {
+				CommonLogger.logger.error("League without section ID: " + l.getName());
+				}
+			} );
 		
 		return leagues;
 
@@ -121,30 +124,28 @@ public class MockApiClient {
 	
 
 
-	public static Teams getTeamsFromFile() {
-		System.out.println("GETTING MOCK API TEAMS");
-
-		Teams teams = new Teams();
-
-		for (int i = 1; i < 10; i++) {
-
-			try {
-				String content = new MockHttpHelper().mockGetContentWithHeaders("teams" + i + ".json");
-				Teams teamsFromUrl = new Teams();
-				teamsFromUrl = new Gson().fromJson(content, new TypeToken<Teams>() {
-				}.getType());
-				teams.getData().addAll(teamsFromUrl.getData());
-			} catch (Exception e) {
-				continue;
-			}
-		}
-		return teams;
-
-	}
+//	public static Teams getTeamsFromFile() {
+//		System.out.println("GETTING MOCK API TEAMS");
+//
+//		Teams teams = new Teams();
+//
+//		for (int i = 1; i < 10; i++) {
+//
+//			try {
+//				String content = new MockHttpHelper().mockGetContentWithHeaders("teams" + i + ".json");
+//				Teams teamsFromUrl = new Teams();
+//				teamsFromUrl = new Gson().fromJson(content, new TypeToken<Teams>() {
+//				}.getType());
+//				teams.getData().addAll(teamsFromUrl.getData());
+//			} catch (Exception e) {
+//				continue;
+//			}
+//		}
+//		return teams;
+//
+//	}
 
 	public static Sections getSectionsFromFile() {
-		System.out.println("GETTING MOCK API SECTIONS");
-
 		Sections sections = new Sections();
 
 		for (int i = 1; i < 4; i++) {
@@ -155,6 +156,7 @@ public class MockApiClient {
 				sectionsInner = new Gson().fromJson(content, new TypeToken<Sections>() {}.getType());
 				sections.getData().addAll(sectionsInner.getData());
 			} catch (Exception e) {
+				CommonLogger.logger.error("MockApiClient Sections error: " + e.getMessage());
 				continue;
 			}
 		}

@@ -3,6 +3,7 @@ package gr.server.common.util;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashMap;
@@ -26,6 +27,12 @@ public class DateUtils {
 //	           return date2am;
 //	      }
 
+	 public static long millisSinceStartOfMonth() {
+	        ZonedDateTime now = ZonedDateTime.now();
+	        ZonedDateTime startOfMonth = now.withDayOfMonth(1).withHour(0).withMinute(0).withSecond(0).withNano(0);
+	        return startOfMonth.toInstant().toEpochMilli();
+	    }
+	
 	 
 	 public static boolean isNextMonth(String dateStr) {
 

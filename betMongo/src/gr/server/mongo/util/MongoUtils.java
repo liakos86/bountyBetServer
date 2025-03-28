@@ -59,7 +59,7 @@ public class MongoUtils {
 	static MongoClient MONGO_CLIENT;
 	
 
-    public static <E> ArrayList<E> get(ClientSession session, String collectionString, Bson filter, Executor<E> e){
+    public static <E> ArrayList<E> get(String collectionString, Bson filter, Executor<E> e){
 		MongoCollection<Document> collection = getMongoCollection(collectionString);
 		FindIterable<Document> find = collection.find(filter);
 		ArrayList<E> list  = new ArrayList<E>();
@@ -155,11 +155,13 @@ public class MongoUtils {
 	public static Document getMonthlyBalanceDocument(String mongoUserId, int month) {
 		return new Document(MongoFields.MONGO_USER_ID, mongoUserId)
 				.append(MongoFields.USER_BALANCE_MONTH, month)
+//				.append(MongoFields.USER_BALANCE_YEAR, year)
 				.append(MongoFields.USER_BALANCE, ServerConstants.STARTING_BALANCE)
 				.append(MongoFields.USER_BALANCE_LEADERBOARD, ServerConstants.STARTING_BALANCE)
 				.append(MongoFields.USER_PURCHASE_CREDITS, 0.0d)
 
 				.append(MongoFields.USER_BALANCE_BET_AMOUNT_MONTHLY, 0.0d)
+				.append(MongoFields.USER_BALANCE_BET_AMOUNT_RETURN_MONTHLY, 0.0d)
 				.append(MongoFields.USER_MONTHLY_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_MONTHLY_WON_EVENTS, 0)
 				 .append(MongoFields.USER_MONTHLY_LOST_SLIPS, 0)
@@ -188,7 +190,7 @@ public class MongoUtils {
 				 .append(MongoFields.EMAIL, user.getEmail())
 				 .append(MongoFields.PASSWORD, user.getPassword())
 				 .append(MongoFields.VALIDATED, false)
-				 .append(MongoFields.USER_BET_AMOUNT_OVERALL, 0.0d)
+				 .append(MongoFields.USER_BET_AMOUNT_OVERALL,  new Double(0.0))
 				 .append(MongoFields.USER_OVERALL_LOST_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_WON_EVENTS, 0)
 				 .append(MongoFields.USER_OVERALL_LOST_SLIPS, 0)

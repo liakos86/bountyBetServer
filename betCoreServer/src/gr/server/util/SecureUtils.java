@@ -12,6 +12,7 @@ import gr.server.common.CommonConstants;
 import gr.server.common.IgnoreConstants;
 import gr.server.common.ServerConstants;
 import gr.server.common.bean.AuthorizationBean;
+import gr.server.common.logging.CommonLogger;
 
 public class SecureUtils {
 
@@ -20,6 +21,8 @@ public class SecureUtils {
 	private static final Charset UTF_8 = StandardCharsets.UTF_8;
 
 	public static String decode(String cipherText) throws Exception {
+		
+		CommonLogger.logger.error("Decoding " + cipherText);
 
 		String substring = createKey(IgnoreConstants.URL_FORMAT);
 		byte[] encoded = substring.getBytes(UTF_8);

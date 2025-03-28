@@ -13,11 +13,16 @@ public class UserMonthlyBalance implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private int month;
+	private int year;
+	
+	
+	
 	private int monthlyLostEventsCount;
 	private int monthlyLostSlipsCount;
 	private int monthlyWonEventsCount;
 	private int monthlyWonSlipsCount;
 	private Double monthlyBetAmount;
+	private Double monthlyBetAmountReturned;
 
 	private Double balance;
 	private Double balanceForLeaderBoard;
@@ -93,6 +98,14 @@ public class UserMonthlyBalance implements Serializable{
 	public void setMonthlyBetAmount(Double monthlyBetAmount) {
 		this.monthlyBetAmount = monthlyBetAmount;
 	}
+	
+	public Double getMonthlyBetAmountReturned() {
+		return monthlyBetAmountReturned;
+	}
+
+	public void setMonthlyBetAmountReturned(Double monthlyBetAmountReturned) {
+		this.monthlyBetAmountReturned = monthlyBetAmountReturned;
+	}
 
 	public Double getUserPurchaseCredits() {
 		return userPurchaseCredits;
@@ -108,6 +121,14 @@ public class UserMonthlyBalance implements Serializable{
 
 	public void setBalanceForLeaderBoard(Double balanceForLeaderBoard) {
 		this.balanceForLeaderBoard = balanceForLeaderBoard;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
 	}
 	
 }

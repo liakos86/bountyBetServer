@@ -35,7 +35,7 @@ public class JwtAuthFilter implements Filter {
 
     	 HttpServletRequest httpRequest = (HttpServletRequest) request;
     	 String path = httpRequest.getRequestURL().toString();
-    	 if (!path.endsWith("/authorize") && !path.endsWith("/validateUser") && !path.endsWith("/getLeagues")) {
+    	 if (!path.endsWith("/authorize") && !path.endsWith("/validateUser") && !path.endsWith("/getLeagueEvents")) {
          String authHeader = httpRequest.getHeader("Authorization");// You can cast to ContainerRequest if using Jersey
         
          if (authHeader != null && authHeader.startsWith("Bearer ")) {

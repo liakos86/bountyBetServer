@@ -9,7 +9,6 @@ import org.bson.Document;
 import gr.server.application.exception.UserExistsException;
 import gr.server.data.api.model.dto.LoginResponseDto;
 import gr.server.data.api.model.events.MatchEvent;
-import gr.server.data.bet.enums.BetPlacementStatus;
 import gr.server.data.user.model.objects.User;
 import gr.server.data.user.model.objects.UserBet;
 import gr.server.data.user.model.objects.UserPurchase;
@@ -47,6 +46,14 @@ public interface MongoClientHelper {
 	 */
 	User getUser(String id, int maxBetsToFetch, long millisToSearchBets, boolean includeUnsettled,
 			boolean includeAwards, boolean includeBalances, boolean includeBounties);
+	
+	/**
+	 * Called to fetch a user with all available metadata for a {@link User}.
+	 * 
+	 * @param id the user id
+	 * @return
+	 */
+	User getUserFull(String id);
 
 	/**
 	 * Retrieves a user via login.

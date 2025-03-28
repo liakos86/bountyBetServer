@@ -147,4 +147,26 @@ implements  Serializable {
 		this.sportId = sportId;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof UserPrediction)) {
+			return false;
+		}
+		
+		UserPrediction other = (UserPrediction) obj;
+		
+		return this.eventId == other.eventId && this.predictionCategory.getCategoryCode() == other.predictionCategory.getCategoryCode()
+				&& this.predictionType.getCode() == other.predictionType.getCode();
+	}
+	
+	@Override
+	public int hashCode() {
+		return 31 * eventId * predictionCategory.getCategoryCode() * predictionType.getCode();
+	}
+	
+	@Override
+	public String toString() {
+		return this.eventId + " / " + this.predictionCategory + " / " + this.predictionType;
+	}
+	
 }

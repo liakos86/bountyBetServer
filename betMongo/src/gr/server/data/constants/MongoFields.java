@@ -30,6 +30,7 @@ public interface MongoFields {
 	String USER_BALANCE_LEADERBOARD = "balanceForLeaderBoard";
 	String USER_PURCHASE_CREDITS = "userPurchaseCredits";
 	String USER_BALANCE_MONTH = "month";
+	String USER_BALANCE_YEAR = "year";
 
 
 //	String USER_BALANCE_LAST_MONTH = "balanceLastMonth";
@@ -51,6 +52,8 @@ public interface MongoFields {
 	
 	String USER_BET_AMOUNT_OVERALL = "overallBetAmount";
 	String USER_BALANCE_BET_AMOUNT_MONTHLY = "monthlyBetAmount";
+	
+	String USER_BALANCE_BET_AMOUNT_RETURN_MONTHLY = "monthlyBetAmountReturned";
 	
 //	String BET_PREDICTIONS_SETTLED = "betPredictionsSettled";
 

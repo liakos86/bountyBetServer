@@ -12,6 +12,8 @@ public class LoginResponseDto implements Serializable{
 	String mongoId;
 	
 	String errorMessage;
+	
+	boolean validated;
 
 	public String getMongoId() {
 		return mongoId;
@@ -27,6 +29,20 @@ public class LoginResponseDto implements Serializable{
 
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
+	}
+
+	public boolean isValidated() {
+		return validated;
+	}
+
+	public void setValidated(boolean validated) {
+		this.validated = validated;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.getClass().getSimpleName() + " / " + this.errorMessage + " / " + this.mongoId + " / " + this.validated;
 	}
 	
 }

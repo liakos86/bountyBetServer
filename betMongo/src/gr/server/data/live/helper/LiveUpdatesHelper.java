@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.jms.JMSException;
 
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.enums.ChangeEvent;
 import gr.server.data.api.model.events.MatchEvent;
@@ -65,9 +66,6 @@ public class LiveUpdatesHelper {
 				relatedMatch.setChangeEvent(ChangeEvent.NONE.getChangeCode());
 			}
 			
-//			System.out.println("Live: " + liveEvent);
-//			System.out.println("Existing: " + relatedMatch);
-//			System.out.println("*************************");
 		}
 
 	}
@@ -147,7 +145,8 @@ public class LiveUpdatesHelper {
 		
 		Object time_live = liveEvent.getTime_live();
 		if (time_live == null) {
-			System.out.println("***************** TIME LIVE NULL");
+			CommonLogger.logger.error("***************** TIME LIVE NULL FOR " + relatedEvent);
+			return false;
 		}
 		
 		String time_live_str = time_live.toString();
@@ -210,7 +209,7 @@ public class LiveUpdatesHelper {
 			produceTopicMessage(relatedEvent, ChangeEvent.AWAITING_EXTRA_TIME);
 		}else {
 			                  //TODO ******************* OOOOOOOOOOPS no change status for 2127403 --- inprogress ---- null --- Awaiting extra time
-			System.out.println("******************* OOOOOOOOOOPS no change status for " + liveEvent +  " ---- " + liveEvent.getStatus_more() + " --- " + liveEvent.getTime_live());
+			CommonLogger.logger.error("******************* OOOOOOOOOOPS no change status for " + liveEvent +  " ---- " + liveEvent.getStatus_more() + " --- " + liveEvent.getTime_live());
 		}
 		
 		return statusChange;

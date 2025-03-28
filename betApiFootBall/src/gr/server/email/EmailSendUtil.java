@@ -65,11 +65,11 @@ public class EmailSendUtil {
 		     //send the message  
 		     Transport.send(message);  
 		  
-		     System.out.println("message sent successfully...");  
+		     //System.out.println("message sent successfully...");  
 		   
 		     } catch (MessagingException e) {
 		    	 e.printStackTrace();
-		    	 CommonLogger.logger.error(e.getMessage());
+		    	 CommonLogger.logger.error("EmailSendUtil " + e.getMessage());
 		    	 return false;
 		     }
 		    

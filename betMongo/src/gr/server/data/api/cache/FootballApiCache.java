@@ -285,16 +285,22 @@ public class FootballApiCache {
 		
 		
 		SUPPORTED_SECTION_IDS.put(37, new ArrayList<>());//urug
-		SUPPORTED_SECTION_IDS.get(36).add(302);
-		SUPPORTED_SECTION_IDS.get(36).add(303);
-		SUPPORTED_SECTION_IDS.get(36).add(305);
-		SUPPORTED_SECTION_IDS.get(36).add(306);
+		SUPPORTED_SECTION_IDS.get(37).add(302);
+		SUPPORTED_SECTION_IDS.get(37).add(303);
+		SUPPORTED_SECTION_IDS.get(37).add(305);
+		SUPPORTED_SECTION_IDS.get(37).add(306);
 		
 		
 		SUPPORTED_SECTION_IDS.put(38, new ArrayList<>());//bosn
 		SUPPORTED_SECTION_IDS.get(38).add(307);
 		SUPPORTED_SECTION_IDS.get(38).add(308);
 		
+		SUPPORTED_SECTION_IDS.put(88, new ArrayList<>());//germ
+		SUPPORTED_SECTION_IDS.get(88).add(511);
+		SUPPORTED_SECTION_IDS.get(88).add(512);
+		SUPPORTED_SECTION_IDS.get(88).add(513);
+		SUPPORTED_SECTION_IDS.get(88).add(516);
+		SUPPORTED_SECTION_IDS.get(88).add(518);
 		
 		SUPPORTED_SECTION_IDS.put(40, new ArrayList<>());//engl
 		SUPPORTED_SECTION_IDS.get(40).add(317);
@@ -551,7 +557,7 @@ public class FootballApiCache {
 				&& incomingEvent.getWinner_code() != 0
 				&& !FootballApiCache.FINISHED_EVENTS.contains(incomingEvent)) {
 			
-				System.out.println("ADDING TO FINISHED " + incomingEvent);
+				//System.out.println("ADDING TO FINISHED " + incomingEvent);
 				try {
 					FootballApiCache.FINISHED_EVENTS.put(incomingEvent);
 				} catch (InterruptedException e) {
@@ -565,7 +571,7 @@ public class FootballApiCache {
 				|| MatchEventStatus.SUSPENDED.getStatusStr().equals(incomingEvent.getStatus()))
 				&& !FootballApiCache.WITHDRAWN_EVENTS.contains(incomingEvent)) {
 			
-			System.out.println("WITHDRAWING:::" + incomingEvent);
+			//System.out.println("WITHDRAWING:::" + incomingEvent);
 				try {
 					FootballApiCache.WITHDRAWN_EVENTS.put(incomingEvent);
 				} catch (InterruptedException e) {

@@ -55,7 +55,9 @@ implements Serializable{
 	@JsonIgnore
 	List<UserMonthlyBalance> balances;
 	
-	
+	/**
+	 * Bets belonging to current month.
+	 */
 	List<UserBet> userBets;
 	
 	List<UserAward> userAwards; 
@@ -75,6 +77,8 @@ implements Serializable{
 	Double overallBetAmount;
 
 	Double monthlyBetAmount;
+
+	Double monthlyBetAmountReturned;
 	
 	
 	/**
@@ -309,7 +313,7 @@ implements Serializable{
 	
 	
 
-	public void setBalance(double balance) {
+	public void setBalance(Double balance) {
 		this.balance = balance;
 	}
 
@@ -319,22 +323,30 @@ implements Serializable{
 	
 	
 
-	public double getOverallBetAmount() {
+	public Double getOverallBetAmount() {
 		return overallBetAmount;
 	}
 
-	public void setOverallBetAmount(double overallBetAmount) {
+	public void setOverallBetAmount(Double overallBetAmount) {
 		this.overallBetAmount = overallBetAmount;
 	}
 
-	public double getMonthlyBetAmount() {
+	public Double getMonthlyBetAmount() {
 		return monthlyBetAmount;
 	}
 
-	public void setMonthlyBetAmount(double monthlyBetAmount) {
+	public void setMonthlyBetAmount(Double monthlyBetAmount) {
 		this.monthlyBetAmount = monthlyBetAmount;
 	}
 	
+	public Double getMonthlyBetAmountReturned() {
+		return monthlyBetAmountReturned;
+	}
+
+	public void setMonthlyBetAmountReturned(Double monthlyBetAmountReturned) {
+		this.monthlyBetAmountReturned = monthlyBetAmountReturned;
+	}
+
 	public List<UserPurchase> getMonthlyPurchases() {
 		return monthlyPurchases;
 	}
@@ -347,7 +359,7 @@ implements Serializable{
 		return currentMonthBalance().getBalanceForLeaderBoard();
 	}
 
-	public void setBalanceLeaderBoard(double balanceLeaderBoard) {
+	public void setBalanceLeaderBoard(Double balanceLeaderBoard) {
 		this.balanceLeaderBoard = balanceLeaderBoard;
 	}
 

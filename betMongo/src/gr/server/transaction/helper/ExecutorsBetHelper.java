@@ -31,8 +31,11 @@ import gr.server.bets.settle.impl.UserBetHandler;
 import gr.server.bets.settle.impl.UserBetPredictionHandler;
 import gr.server.bets.settle.impl.UserBetWithdrawnPredictionHandler;
 import gr.server.common.MongoCollectionConstants;
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.api.cache.FootballApiCache;
 import gr.server.data.api.model.bean.OpenBetDelayedLeagueDatesBean;
+import gr.server.data.api.model.events.MatchEvent;
+import gr.server.data.api.model.events.MatchEventIncidentsWithStatistics;
 import gr.server.data.api.model.league.League;
 import gr.server.data.api.model.league.Leagues;
 import gr.server.data.api.model.league.Sections;
@@ -44,6 +47,7 @@ import gr.server.data.global.helper.ApiDataFetchHelper;
 import gr.server.data.user.model.objects.User;
 import gr.server.impl.client.MockApiClient;
 import gr.server.impl.client.MongoClientHelperImpl;
+import gr.server.impl.client.SportScoreClient;
 import gr.server.mongo.util.MongoUtils;
 
 public class ExecutorsBetHelper {
@@ -153,8 +157,7 @@ public class ExecutorsBetHelper {
 			        }
 			
 				}catch (Exception e) {
-					System.out.println("SETTLED PRED ERROR");
-					e.printStackTrace();
+					CommonLogger.logger.error("ExecutorsBetHelper ERROR " + e.getMessage());
 				}
 			};
 		
@@ -171,12 +174,10 @@ public class ExecutorsBetHelper {
 			MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
 			 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
 			 long millisYesterday = System.currentTimeMillis() - ( 12 * 60 * 60 * 1000);
-			// System.out.println("MILLL::" + millisYesterday);
 			 Bson beforeYesterdayBetsFilter = Filters.lt(MongoFields.USER_BET_PLACEMENT_MILLIS, millisYesterday);
 			 Bson combined = Filters.and(pendingOrPendingLostBetsFilter, beforeYesterdayBetsFilter);
 			 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(MongoCollectionConstants.USER_BETS, combined);
 			
-			 System.out.println("************ALL UNSETTLED BETS BEFORE YESTERDAY:::" + allUnsettledBetsSize);
 			if (allUnsettledBetsSize == 0) {
 				return;
 			}
@@ -188,17 +189,15 @@ public class ExecutorsBetHelper {
 			Map<Integer, Set<String>> beansMap = new HashMap<>();
 			for (Document doc : delayedDocs) {
 				String mongoBetId = doc.getObjectId(MongoFields.MONGO_ID).toString();
-				System.out.println("OPEN BET:::" + mongoBetId);
 				Bson betIdFilter = Filters.eq(MongoFields.USER_BET_PREDICTION_BET_MONGO_ID, mongoBetId);
 				Bson predStatusFilter = Filters.eq(MongoFields.USER_BET_PREDICTION_STATUS, PredictionStatus.PENDING.getCode());
 				Bson filter = Filters.and(betIdFilter, predStatusFilter);
 				FindIterable<Document> delayedPreds = predsCollection.find(filter);
 				for (Document pr : delayedPreds) {
 					Integer leagueId = pr.getInteger(MongoFields.USER_BET_PREDICTION_BET_LEAGUE_ID);
-					System.out.println("OPEN PRED FOR LEAGUE:::"+ leagueId);
 					if (leagueId == null) {
-						System.out.println("LEAGUE MISSING:::");
-						throw new RuntimeException("LEAGUE MISSING");
+						CommonLogger.logger.error("ExecutorsBetHelper LEAGUE MISSING::: " + leagueId);
+						continue;
 					}
 					
 					if (beansMap.get(leagueId) == null) {
@@ -210,19 +209,15 @@ public class ExecutorsBetHelper {
 					
 					String startAt = pr.getString(MongoFields.USER_BET_PREDICTION_BET_START_AT);
 					
-//					System.out.println("START IS::" +startAt);
-					
 					SimpleDateFormat matchDateFormat = new SimpleDateFormat(SportScoreApiConstants.MATCH_START_TIME_FORMAT);
-					Date dateFromStr;
+					Date dateFromStr = null;
 					try {
 						dateFromStr = matchDateFormat.parse(startAt);
 						SimpleDateFormat simpleDateFormat = new SimpleDateFormat(SportScoreApiConstants.GET_EVENTS_DATE_FORMAT);
 						String finalDateStr = simpleDateFormat.format(dateFromStr);
 						datesForLeague.add(finalDateStr);
-						System.out.println("NEW DATE " + finalDateStr + " FOR " + leagueId);
 					} catch (ParseException e) {
-						System.out.println("DATE PARSE ERROR");
-						e.printStackTrace();
+						CommonLogger.logger.error("ExecutorsBetHelper DATE PARSE ERROR " + dateFromStr);
 					}
 					
 					
@@ -263,7 +258,7 @@ public class ExecutorsBetHelper {
 				 Bson pendingOrPendingLostBetsFilter = mongoClientHelperImpl.pendingOrPendingLostBetsFilter();
 				 long allUnsettledBetsSize = mongoClientHelperImpl.fetchFilterSize(MongoCollectionConstants.USER_BETS, pendingOrPendingLostBetsFilter);
 				
-				 System.out.println("************ALL UNSETTLED BETS " + allUnsettledBetsSize);
+				CommonLogger.logger.error("************ALL UNSETTLED BETS " + allUnsettledBetsSize);
 				if (allUnsettledBetsSize == 0) {
 					return;
 				}
@@ -279,7 +274,6 @@ public class ExecutorsBetHelper {
 					userBetsDocument.add(bet);
 					
 					if (userBetsDocument.size() == batchSize) {
-						System.out.println("****NEW BATCH SUBMIT " + batchSize);
 						subscribersBetSettling.submit(new UserBetHandler(new HashSet<>(userBetsDocument)));
 						userBetsDocument.clear();
 					}
@@ -382,8 +376,7 @@ public class ExecutorsBetHelper {
 				});
 			
 		}catch(Exception e) {
-			System.out.println(e);
-			e.printStackTrace();
+			CommonLogger.logger.error("ExecutorsBetHelper " +  e.getMessage());
 		}
 		};
 			
@@ -395,51 +388,57 @@ public class ExecutorsBetHelper {
 	}
 
 	public void scheduleFetchStatistics() {
-		// TODO Auto-generated method stub
-		
-
-		
-		//live statistics
 		ExecutorService fetchStatsService = Executors.newFixedThreadPool(4);//LeagueStatsHandler.NUM_WORKERS);
 
 		Runnable fetchStatsTask = () -> {
 			try {
 				
-				Set<Integer> eventIds = FootballApiCache.LIVE_EVENTS.keySet();
-				int batchSize = eventIds.size() / 4;
+				MatchEventIncidentsWithStatistics updateLiveStats = new SportScoreClient().updateLiveStats(2940499);
+				CommonLogger.logger.error("SIZE stats:: " +  updateLiveStats.getMatchEventIncidents().getData().size());
+				Set<Integer> eventIds = new HashSet<>(FootballApiCache.LIVE_EVENTS.keySet());
 				
-				List<Integer> eventsToHandle = new ArrayList<>();
-				for (Integer eventId : eventIds) {
-					eventsToHandle.add(eventId);
-					
-					if (eventsToHandle.size() == batchSize) {
-//						System.out.println("****NEW LIVE STATS SUBMIT " + batchSize);
-						
-						fetchStatsService.submit(() -> {
-							new ApiDataFetchHelper().fetchEventStatistics(eventIds);
-							
-						});
-						
-						eventsToHandle.clear();
-					}
-		        }
-				
-				if (!eventsToHandle.isEmpty()) {
-//					System.out.println("****NEW LIVE STATS SUBMIT EXTRA " + batchSize);
-					fetchStatsService.submit(() -> {
-						new ApiDataFetchHelper().fetchEventStatistics(eventIds);
-					});
+				//TODO
+				for(int id : FootballApiCache.ALL_EVENTS.keySet() ) {
+					eventIds.add(id);
 				}
+				
+				for(int eventId : eventIds) {
+					FootballApiCache.ALL_MATCH_STATS.put(eventId, updateLiveStats);
+				}
+				
+				
+//				int batchSize = eventIds.size() / 4;
+//				
+//				List<Integer> eventsToHandle = new ArrayList<>();
+//				for (Integer eventId : eventIds) {
+//					eventsToHandle.add(eventId);
+//					
+//					if (eventsToHandle.size() == batchSize) {
+//						
+//						fetchStatsService.submit(() -> {
+//							new ApiDataFetchHelper().fetchEventStatistics(eventIds);
+//							
+//						});
+//						
+//						eventsToHandle.clear();
+//					}
+//		        }
+//				
+//				if (!eventsToHandle.isEmpty()) {
+//					fetchStatsService.submit(() -> {
+//						new ApiDataFetchHelper().fetchEventStatistics(eventIds);
+//					});
+//				}
 			
 		}catch(Exception e) {
-			System.out.println(e);
 			e.printStackTrace();
+			CommonLogger.logger.error("ExecutorsBetHelper fetching stats:: " +  e);
 		}
 		};
 			
 			
 		ScheduledExecutorService fetchStatsExecutor = Executors.newSingleThreadScheduledExecutor();
-		fetchStatsExecutor.scheduleAtFixedRate(fetchStatsTask, 120, 3*60, TimeUnit.SECONDS);
+		fetchStatsExecutor.scheduleAtFixedRate(fetchStatsTask, 120, 7*60, TimeUnit.SECONDS);
 		
 		
 	}

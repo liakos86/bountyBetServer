@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 import javax.jms.JMSException;
 
+import gr.server.common.logging.CommonLogger;
 //import gr.server.application.BetServerContextListener;
 import gr.server.common.util.DateUtils;
 import gr.server.data.api.cache.FootballApiCache;
@@ -104,7 +105,7 @@ public class ApiDataFetchHelper {
 
 			// TODO: We should get this info from websocket
 //				try {
-			System.out.println("GETTING EVENTS " + events.size());
+			CommonLogger.logger.error("GETTING EVENTS " + events.size());
 			if (events.isEmpty()) {
 				continue;
 			}
@@ -130,8 +131,10 @@ public class ApiDataFetchHelper {
 //			}
 
 		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
-			System.out.println("EVENTS ERROR " + date);
-			e.printStackTrace();
+			CommonLogger.logger.error("EVENTS ERROR " + date + "   " +  e);
+		}catch (Exception e) {
+			CommonLogger.logger.error("ERROR EVENTS " + e);
+			
 		}
 
 		return events;
@@ -153,18 +156,20 @@ public class ApiDataFetchHelper {
 		List<MatchEvent> events = new ArrayList<>();
 		try {
 			events = SportScoreClient.getLiveEvents().getData();
-			System.out.println(Thread.currentThread().getName() + " LLIVE EVENTS ARE " + events.size());
+			CommonLogger.logger.error(Thread.currentThread().getName() + " LIVE EVENTS ARE " + events.size());
 	
 			// we mutate the existing score and event status here.
 			new LiveUpdatesHelper().updateEventsAndPublishFirebaseTopicMessages(events);
 			splitEventsIntoLeaguesAndDays(0, events, true);
 		} catch (IOException | ParseException | InterruptedException | URISyntaxException e) {
-			System.out.println("LIVE EVENTS ERROR " + e.getClass().getCanonicalName());
+			CommonLogger.logger.error("LIVE EVENTS ERROR " + e);
 //			e.printStackTrace();
 			return;
 		} catch (JMSException e) {
-			System.out.println("JMS ERROR ");
+			CommonLogger.logger.error("JMS ERROR LIVE");
 			e.printStackTrace();
+		}catch (Exception e) {
+			CommonLogger.logger.error("ERROR LIVE " + e.getMessage());
 		}
 
 	}
@@ -318,11 +323,9 @@ public class ApiDataFetchHelper {
 	
 	
 	public void fetchEventStatistics(Set<Integer> eventIds) {
-//		Set<MatchEventIncidentsWithStatistics> stats = new HashSet<>();
 		SportScoreClient sportScoreClient = new SportScoreClient();
 		for (Integer eventId : eventIds) {
 			MatchEventIncidentsWithStatistics updateLiveStats = sportScoreClient.updateLiveStats(eventId);
-//			stats.add(updateLiveStats);
 			if (FootballApiCache.ALL_MATCH_STATS.containsKey(eventId)) {
 				FootballApiCache.ALL_MATCH_STATS.remove(eventId);
 			}
@@ -331,7 +334,6 @@ public class ApiDataFetchHelper {
 			FootballApiCache.ALL_MATCH_STATS.put(eventId, updateLiveStats);
 		}
 		
-//		return stats;
 	}
 	
 }

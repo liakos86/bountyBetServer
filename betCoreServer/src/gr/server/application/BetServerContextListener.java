@@ -26,7 +26,7 @@ public class BetServerContextListener implements ServletContextListener {
 
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {
-		System.out.println("SERVER SHUTTING DOWN");
+		CommonLogger.logger.error("SERVER SHUTTING DOWN");
 //		RestApplication.disconnectActiveMq();
 		
 		SportScoreClient.shutDown();
@@ -46,38 +46,22 @@ public class BetServerContextListener implements ServletContextListener {
 	 */
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
-		CommonLogger.logger.error("context init...");
-		CommonLogger.logger.info("context init...");
 		
 		FireBaseConnectionHelper.connectFirebase();
-		CommonLogger.logger.error("firebase init...");
 		fetchSectionsAndLeaguesAndTeamsFromDbIntoCache();
-		CommonLogger.logger.error("sections leagues init...");
 		ExecutorsBetHelper betHelper = new ExecutorsBetHelper();
 		betHelper.scheduleSections();
-		CommonLogger.logger.error("sched section init...");
 		betHelper.scheduleLeagues();
-		CommonLogger.logger.error("sched leagues init...");
 		betHelper.scheduleEvents();
-		CommonLogger.logger.error("sched events init...");
 		betHelper.scheduleLiveEvents();
-		CommonLogger.logger.error("sched live init...");
 		betHelper.scheduleSettlePredictions();
-		CommonLogger.logger.error("settle pred init...");
 		betHelper.scheduleSettleWithdrawnPredictions();
-		CommonLogger.logger.error("settle w pred init...");
 		betHelper.scheduleSettleDelayedPredictions();
-		CommonLogger.logger.error("settle del pred init...");
 		betHelper.scheduleSettleBets();
-		CommonLogger.logger.error("settle bet init...");
 		betHelper.scheduleMonthWinnerCheck();
-		CommonLogger.logger.error("winner init...");
 		betHelper.scheduleFetchLeaderBoard(60, 3*60, TimeUnit.SECONDS);
-		CommonLogger.logger.error("lead init...");
 		betHelper.scheduleFetchStandings();
-		CommonLogger.logger.error("stand init...");
 		betHelper.scheduleFetchStatistics();
-		CommonLogger.logger.error("stats init...");
 	}
 
 	private void fetchSectionsAndLeaguesAndTeamsFromDbIntoCache() {
@@ -88,7 +72,7 @@ public class BetServerContextListener implements ServletContextListener {
 			public void begin() throws Exception {
 				MongoClientHelperImpl mongoClientHelperImpl = new MongoClientHelperImpl();
 				List<Section> sectionsFromDb = mongoClientHelperImpl.getSectionsFromDb(session);
-				CommonLogger.logger.error("sections " + sectionsFromDb.size());
+//				CommonLogger.logger.error("sections " + sectionsFromDb.size());
 
 				sectionsFromDb.forEach(
 						s-> {
@@ -97,22 +81,22 @@ public class BetServerContextListener implements ServletContextListener {
 							}
 						});
 				
-				CommonLogger.logger.error("section OK");
+				//CommonLogger.logger.error("section OK");
 				List<League> leaguesFromDb = mongoClientHelperImpl.getLeaguesFromDb(session);
 				leaguesFromDb.forEach(
 						l->{
 							if (FootballApiCache.SUPPORTED_SECTION_IDS.containsKey(l.getSection_id())
 									&& FootballApiCache.SUPPORTED_SECTION_IDS.get(l.getSection_id()).contains(l.getId())) {
 								FootballApiCache.ALL_LEAGUES.put(l.getId(), l);	
-								CommonLogger.logger.error("section OK");
+								//CommonLogger.logger.error("section OK");
 							}
 						});
 				
-				CommonLogger.logger.error("leagues OK");
+//				CommonLogger.logger.error("leagues OK");
 				List<Team> teamsFromDb = mongoClientHelperImpl.getTeamsFromDb(session);
 				teamsFromDb.forEach(l->FootballApiCache.ALL_TEAMS.put(l.getId(), l));
 
-				CommonLogger.logger.error("teams OK");
+//				CommonLogger.logger.error("teams OK");
 				
 				MongoUtils.DB_DATA_FETCHED = true;
 			}

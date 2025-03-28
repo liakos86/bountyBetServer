@@ -14,6 +14,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClients;
 
+import gr.server.common.logging.CommonLogger;
 import gr.server.data.constants.SportScoreApiConstants;
 
 public class HttpHelper {
@@ -62,11 +63,11 @@ public class HttpHelper {
             in.close();
 
             String respString = response2.toString();
-//			System.out.println(uri + " response : *** " + respString);
             return respString;
+        }else {
+        	CommonLogger.logger.error(uri + ":: RESPONSE WAS:: " +  responseCode );
         }
         
-//        System.out.println(uri + " response : *** NULL");
         return null;
     }
 	

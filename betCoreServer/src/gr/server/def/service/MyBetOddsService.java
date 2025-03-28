@@ -40,4 +40,6 @@ public interface MyBetOddsService {
 
 	Response authorize(String uniqueDeviceId) throws Exception;
 
+	Response getUserBalances(String id);
+
 }
